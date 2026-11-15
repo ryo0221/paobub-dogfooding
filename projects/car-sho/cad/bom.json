@@ -2,7 +2,7 @@
   "format": "editor-platform.cad-bom",
   "version": 1,
   "name": "「翔」",
-  "contentHash": "80c91384e639eca967160d1f2e58a8d7feeeca96117c8528e8e7df234a3bd0be",
+  "contentHash": "c5cb4be0ee5dec08624277d3a64fd8bf9f8ce76940e5b0943dbbbb8991970359",
   "mode": "flat",
   "rows": [
     {
@@ -225,8 +225,8 @@
       "name": "側面吸気ダクト（右）",
       "description": "",
       "quantity": 1,
-      "unitMassKg": 1.6438432000000052,
-      "massKg": 1.6438432000000052
+      "unitMassKg": 1.150744800000003,
+      "massKg": 1.150744800000003
     },
     {
       "item": "23",
@@ -236,8 +236,8 @@
       "name": "側面吸気ダクト（左）",
       "description": "",
       "quantity": 1,
-      "unitMassKg": 1.6438432000000052,
-      "massKg": 1.6438432000000052
+      "unitMassKg": 1.150744800000003,
+      "massKg": 1.150744800000003
     },
     {
       "item": "24",
@@ -318,7 +318,7 @@
     }
   ],
   "totals": {
-    "massKg": 70.52430592018648,
+    "massKg": 69.53810912018646,
     "cost": 0,
     "bySourcing": {
       "make": {

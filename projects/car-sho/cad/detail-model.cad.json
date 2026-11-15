@@ -19423,7 +19423,42 @@
     "skin-intake-duct-right"
    ],
    "args": {
-    "openFaces": [],
+    "openFaces": [
+     {
+      "kind": "face",
+      "featureId": "skin-intake-duct-right",
+      "name": [
+       [
+        "+y"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        1910,
+        840,
+        450
+       ],
+       "size": 105600
+      }
+     },
+     {
+      "kind": "face",
+      "featureId": "skin-intake-duct-right",
+      "name": [
+       [
+        "+x"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        2130,
+        720,
+        450
+       ],
+       "size": 57600
+      }
+     }
+    ],
     "thickness": {
      "literalMm": 2
     },
@@ -19474,7 +19509,42 @@
     "skin-intake-duct-left"
    ],
    "args": {
-    "openFaces": [],
+    "openFaces": [
+     {
+      "kind": "face",
+      "featureId": "skin-intake-duct-left",
+      "name": [
+       [
+        "-y"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        1910,
+        -840,
+        450
+       ],
+       "size": 105600
+      }
+     },
+     {
+      "kind": "face",
+      "featureId": "skin-intake-duct-left",
+      "name": [
+       [
+        "+x"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        2130,
+        -720,
+        450
+       ],
+       "size": 57600
+      }
+     }
+    ],
     "thickness": {
      "literalMm": 2
     },

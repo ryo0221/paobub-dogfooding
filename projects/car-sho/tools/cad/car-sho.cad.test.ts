@@ -117,11 +117,16 @@ function detailModel(kernel: { id: string; buildHash: string }) {
   const text = JSON.stringify(doc).replace(/"([a-zA-Z-]+-body)"/g, (m, id) => (map[id] ? `"${map[id]}"` : m));
   const out = JSON.parse(text) as CadDocument;
   assertCad(out);
-  // v2 (DM-03): each intake duct a 2 mm CFRP wall (a shell of its box, closed) instead of a solid block.
+  // v2 (DM-03): each intake duct a 2 mm CFRP wall instead of a solid block: a shell of its box
+  // (440 × 240 × 240 from (1690, ±600/−840, 330)) with the inlet open on the side intake (the outer
+  // face) and the outlet open to the engine bay and the radiator behind (the rear face, +x).
   for (const side of ['right', 'left']) {
     const box = out.features.find((f) => f.id === `skin-intake-duct-${side}`)!;
     const shellId = `skin-intake-duct-${side}-wall`;
-    out.features.splice(out.features.indexOf(box) + 1, 0, { id: shellId, name: `側面吸気ダクトの壁（${side === 'right' ? '右' : '左'}）`, type: 'shell', inputFeatureIds: [box.id], args: { openFaces: [], thickness: { literalMm: 2 }, side: 'inside' } } as never);
+    const y = side === 'right' ? 1 : -1;
+    const face = (name: string, centroid: [number, number, number], size: number) => ({ kind: 'face', featureId: box.id, name: [[name]], hint: { centroid, size } });
+    const openFaces = [face(y > 0 ? '+y' : '-y', [1910, 840 * y, 450], 440 * 240), face('+x', [2130, 720 * y, 450], 240 * 240)];
+    out.features.splice(out.features.indexOf(box) + 1, 0, { id: shellId, name: `側面吸気ダクトの壁（${side === 'right' ? '右' : '左'}）`, type: 'shell', inputFeatureIds: [box.id], args: { openFaces, thickness: { literalMm: 2 }, side: 'inside' } } as never);
     out.features.find((f) => f.id === `skin-intake-duct-${side}-placement`)!.inputFeatureIds = [shellId] as never;
   }
   assertCad(out);
