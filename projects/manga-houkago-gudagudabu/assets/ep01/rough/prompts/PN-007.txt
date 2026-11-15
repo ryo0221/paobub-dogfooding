@@ -1,0 +1,17 @@
+Use your image generation tool. Make ONE image: a manga ROUGH (ラフ) for one panel of a Japanese school gag-comedy manga, drawn the way a manga artist roughs a panel before inking.
+Style: loose but clear grey pencil lines on white paper, monochrome only, no colour, no finished rendering. Characters are cute super-deformed, exactly 4 heads tall (4頭身), big heads, small simple hands and feet. Faces must show the direction of the face and the expression; bodies must show the pose with readable joints; hands and contacts must be clear.
+The FIRST attached image fixes the composition: it is a 3D stand-in made of blocks seen through the panel's camera. Keep its camera angle, horizon, perspective, and where each figure and object sits and how big it is in the frame. Redraw the blocky stand-ins as the real characters and a real Japanese high-school room (walls, windows, furniture, floor) — draw the background too, not only the people. Grey margins around the image are padding: leave them empty.
+
+The SECOND attached image is the model sheet (front, side, back) of 西園寺れいか: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-007（PN-007 れいかの目が一瞬止まる）. Place: LO-03 生徒会室. Scene SC-001.
+What the panel shows: 「……必要ありません」. Pacing: 台詞の前に目だけの1コマ。読者だけが気づく.
+Camera: exactly as in the 3D camera view (アップ・れいかの目と眉のみ).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): れいか「……必要ありません」
+People:
+- FG-010 西園寺れいか: head at 50% from the left and 47% from the top of the panel. 向き：正面・わずかに下（こたつの想像先）。姿勢：背筋を伸ばして直立し、片腕にバインダーを抱える。表情：目は丸く、黒目が小さく揺れる、口は小さく開く。描写する範囲：顔のアップ。
+Continuity for this scene（続く状態）: After school, daylight from the west windows behind the president's seat (she is a little backlit). れいか wears the 生徒会長 armband on her LEFT arm and holds a binder or the club application sheet. ねむ carries nothing; her blazer sleeves cover her hands.
+Art rules: AR-02 4頭身; AR-05 this is the STUDENT COUNCIL ROOM (生徒会室), NOT the clubroom: conference desks in a U shape (コの字) opening to the east, the president's seat at the west end with the west windows behind her, chairs along the desks, steel shelves of club files along the north wall, a whiteboard on the east wall. There is NO kotatsu, NO cushions and NO sink in this room; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Square 1024x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

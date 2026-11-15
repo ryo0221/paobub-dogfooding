@@ -1,0 +1,21 @@
+Use your image generation tool. Make ONE image: a manga ROUGH (ラフ) for one panel of a Japanese school gag-comedy manga, drawn the way a manga artist roughs a panel before inking.
+Style: loose but clear grey pencil lines on white paper, monochrome only, no colour, no finished rendering. Characters are cute super-deformed, exactly 4 heads tall (4頭身), big heads, small simple hands and feet. Faces must show the direction of the face and the expression; bodies must show the pose with readable joints; hands and contacts must be clear.
+The FIRST attached image fixes the composition: it is a 3D stand-in made of blocks seen through the panel's camera. Keep its camera angle, horizon, perspective, and where each figure and object sits and how big it is in the frame. Redraw the blocky stand-ins as the real characters and a real Japanese high-school room (walls, windows, furniture, floor) — draw the background too, not only the people. Grey margins around the image are padding: leave them empty.
+
+The SECOND attached image is the model sheet (front, side, back) of 朝比奈ねむ: keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 小鳥遊すず: keep that character design exactly (hair, face, uniform, silhouette).
+The FOURTH attached image is the model sheet (front, side, back) of 権田原たけし: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-023（PN-023 ねむが開眼して屁理屈）. Place: LO-01 部室. Scene SC-004.
+What the panel shows: 「何もしないことを、活動と呼びます」. Pacing: 開眼の引きのコマ。ここでたけしを東の辺に薄く入れる（AR-07、AR-08）.
+Camera: exactly as in the 3D camera view (広角：部屋全体が入る。左に北壁の貼り紙、右に南の窓、奥にスチール棚、手前に西の座布団).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): ねむ「いい？ まず、何もしないことを、活動と呼びます」；ねむ「活動なので、実績です。はい、解決」
+People:
+- FG-034 朝比奈ねむ: head at 23% from the left and 35% from the top of the panel. 向き：正面。姿勢：こたつから上体を起こし、人差し指を立てる。表情：目を大きく開き、口が横に広がる（早口）。描写する範囲：こたつ座り。
+- FG-035 小鳥遊すず: head at 79% from the left and 32% from the top of the panel. 向き：北（ねむへ）。姿勢：正座のまま固まる。表情：目は丸く、口は小さく閉じる。描写する範囲：こたつ座り。
+- FG-036 権田原たけし: head at 50% from the left and 27% from the top of the panel. 向き：西。姿勢：猫背で膝を抱えるように座り、肩をすぼめる。表情：前髪で目は隠れる。描写する範囲：こたつ座り。
+Continuity for this scene（続く状態）: Inside the clubroom: kotatsu in the middle with its quilt, a tray and a teapot on top (no cups yet). ねむ sits at the NORTH side, すず kneels (seiza) at the SOUTH side with her 入部届 and bag beside her, たけし sits hugging his knees at the EAST side in front of the steel shelf. Two notices on the north wall: the club application and the 廃部 notice.
+Art rules: AR-02 4頭身; AR-05 draw props of the clubroom in their fixed places (kotatsu in the middle with cushions on four sides, sink on the west wall, steel shelf on the east wall, notices on the north wall); AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Landscape 1536x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

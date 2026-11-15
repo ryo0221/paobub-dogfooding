@@ -1,0 +1,15 @@
+Use your image generation tool. Make ONE image: the FINISHED black-and-white manga panel (仕上げ) from the attached ink line art, for a Japanese school gag-comedy manga printed in monochrome.
+Keep EVERY line of the FIRST attached image exactly where it is (same drawing, same size, same composition); only add: solid black fills (ベタ) on black hair, and ONE kind of light dot screentone (網点) on the dark school blazers and on shadows where it helps the mood. Per character (model sheets, AR-04/AR-08): Nemu, Suzu, Reika and Tanahashi have solid black hair; the tall boy Takeshi (long fringe hiding his eyes) has NO black at all, only a lighter dot tone on his hair and uniform. Keep faces, skin, shirts and most of the background white. No colour, no grey gradients, no new objects, no text. Grey margins are padding: leave them empty.
+
+
+Panel PN-004（PN-004 れいか「なければ、廃部です」）. Place: LO-03 生徒会室. Scene SC-001.
+What the panel shows: 大きめのコマ. Pacing: 「学期末までに」と「廃部です」の間に1コマ分の沈黙。コマを大きく取り、あおりを強める.
+Camera: exactly as in the 3D camera view (標準・あおり（AR-07）).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): れいか「学期末までに、活動実績を作りなさい」；れいか「なければ、廃部です」
+People:
+- FG-005 西園寺れいか: head at 50% from the left and 42% from the top of the panel. 向き：東・下（ねむへ）。姿勢：立ち上がり、両手を机について身を乗り出す。表情：切れ長の目、眉は水平、口は一文字。描写する範囲：膝上。
+Continuity for this scene（続く状態）: After school, daylight from the west windows behind the president's seat (she is a little backlit). れいか wears the 生徒会長 armband on her LEFT arm and holds a binder or the club application sheet. ねむ carries nothing; her blazer sleeves cover her hands.
+Art rules: AR-02 4頭身; AR-05 this is the STUDENT COUNCIL ROOM (生徒会室), NOT the clubroom: conference desks in a U shape (コの字) opening to the east, the president's seat at the west end with the west windows behind her, chairs along the desks, steel shelves of club files along the north wall, a whiteboard on the east wall. There is NO kotatsu, NO cushions and NO sink in this room; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Landscape 1536x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

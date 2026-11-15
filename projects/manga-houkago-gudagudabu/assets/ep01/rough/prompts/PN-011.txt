@@ -1,0 +1,19 @@
+Use your image generation tool. Make ONE image: a manga ROUGH (ラフ) for one panel of a Japanese school gag-comedy manga, drawn the way a manga artist roughs a panel before inking.
+Style: loose but clear grey pencil lines on white paper, monochrome only, no colour, no finished rendering. Characters are cute super-deformed, exactly 4 heads tall (4頭身), big heads, small simple hands and feet. Faces must show the direction of the face and the expression; bodies must show the pose with readable joints; hands and contacts must be clear.
+The FIRST attached image fixes the composition: it is a 3D stand-in made of blocks seen through the panel's camera. Keep its camera angle, horizon, perspective, and where each figure and object sits and how big it is in the frame. Redraw the blocky stand-ins as the real characters and a real Japanese high-school room (walls, windows, furniture, floor) — draw the background too, not only the people. Grey margins around the image are padding: leave them empty.
+
+The SECOND attached image is the model sheet (front, side, back) of 小鳥遊すず: keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 権田原たけし: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-011（PN-011 引き戸ごしの部室の引き）. Place: LO-01 部室. Scene SC-002.
+What the panel shows: 誰もいないこたつと、スチール棚の陰のたけし. Pacing: AR-07 の引きのコマ。すずの視線は中央だけを見ている。たけしは薄い線で、読者にだけ見せる.
+Camera: exactly as in the 3D camera view (広角の一部：戸の枠ごしに部屋の中央が入る); 戸口の外、すずの肩ごしに部屋へ.
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): すず「……誰も、いない」；たけし「……あ、いる。ここに、いる、けど」
+People:
+- FG-014 小鳥遊すず: head at 30% from the left and 52% from the top of the panel. 向き：南（部屋の中央へ）。姿勢：戸に手をかけたまま固まる。表情：目は丸く大きめ、口は小さく真一文字。描写する範囲：後ろ姿の腰上。
+- FG-015 権田原たけし: head at 45% from the left and 38% from the top of the panel. 向き：西（戸口の方）。姿勢：猫背で膝を抱えるように座り、肩をすぼめる。表情：前髪で目は隠れ、口はごく小さい波線。描写する範囲：こたつ座り。
+Continuity for this scene（続く状態）: Old-building 3rd-floor corridor. すず holds her club entry form (入部届) — NO stamp on it yet — and a big school bag on her shoulder. The clubroom sliding door is opened only a little; a paper notice 「生徒会室。すぐ戻る（たぶん）」 is taped on the door. たけし is inside, sitting at the east side of the kotatsu in front of the steel shelf.
+Art rules: AR-02 4頭身; AR-05 draw props of the clubroom in their fixed places (kotatsu in the middle with cushions on four sides, sink on the west wall, steel shelf on the east wall, notices on the north wall); AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Landscape 1536x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

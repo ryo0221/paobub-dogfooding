@@ -1,0 +1,22 @@
+Use your image generation tool. Make ONE image: the clean INK LINE ART (線画) of one panel of a Japanese school gag-comedy manga.
+Style: professional manga line art on pure white, drawn with THREE pure pen colours so the layers can be separated afterwards (手本：gulliver-manga の三色の線画):
+- PURE BLACK (#000000) for the characters and everything they wear or hold (outlines thicker and slightly rounded, inner lines thinner); solid black only on hair that the model sheet shows as black;
+- PURE BLUE (#0000FF) for the whole background: room, walls, windows, furniture, floor, props not held by a character (thin, clean lines, simpler than the figures, AR-03);
+- PURE RED (#FF0000) only for manga effect marks (speed lines, impact or emotion marks, sweat drops, steam); omit red if the panel needs no effect.
+Never mix the colours on one object; no grey, no screentone, no shading, no other colours (tone comes later). Characters are cute super-deformed, exactly 4 heads tall.
+The FIRST attached image is the approved pencil ROUGH of this panel: trace it — keep exactly its composition, poses, faces and expressions, and where everything sits. The SECOND attached image is the 3D camera view of the same panel: use it for perspective and proportions of the room and furniture. Draw the background (room, windows, furniture) in every panel unless told otherwise. Grey margins are padding: leave them empty.
+
+The SECOND attached image is the 3D camera view of this panel (perspective and proportions only): keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 小鳥遊すず: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-017（PN-017 判子つきの入部届を見て少し安心するすず）. Place: LO-02 旧校舎3階の廊下. Scene SC-003.
+What the panel shows: PN-017 判子つきの入部届を見て少し安心するすず. Pacing: 崩しのあとの通常の顔。ほっとする間.
+Camera: exactly as in the 3D camera view (アップ・判子つきの入部届と、すずの顔の下半分).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): すず「でも、顧問の先生がいるなら……ちゃんとした部、ですよね」
+People:
+- FG-024 小鳥遊すず: head at 50% from the left and 47% from the top of the panel. 向き：正面。姿勢：両手で入部届を持ち、判子に目を落とす。表情：目は細く、口元がゆるむ。描写する範囲：胸上。
+Continuity for this scene（続く状態）: Same corridor. 棚橋先生 in a white shirt, loose tie, sandals, an attendance book under his arm. After he stamps it (from PN-014 on), すず's 入部届 has a round red-ink stamp (draw it as a small circle). Door still slightly open; たけし still inside at the kotatsu.
+Art rules: AR-02 4頭身; AR-05 this is the old school building's 3rd-floor CORRIDOR (旧校舎3階の廊下): a long corridor with windows along the north side, classroom sliding doors along the south side; the clubroom door is slightly open with a paper notice taped on it; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Portrait 1024x1536.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

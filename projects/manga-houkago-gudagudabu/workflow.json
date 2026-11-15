@@ -1,0 +1,349 @@
+{
+ "format": 1,
+ "name": "放課後ぐだぐだ部",
+ "definition": {
+  "id": "fiction-manga",
+  "version": "1.5.0"
+ },
+ "citations": "trace/citations.json",
+ "deliverables": {
+  "process-map": [
+   {
+    "path": "docs/process-map.json",
+    "as": "plain"
+   }
+  ],
+  "concept-doc": [
+   {
+    "path": "docs/concept-doc.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "theme",
+      "match": "^### (TH-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "art-guide": [
+   {
+    "path": "docs/art-guide.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "art-rule",
+      "match": "^### (AR-\\d+)\\b"
+     },
+     {
+      "kind": "layer",
+      "match": "^### (LY-\\d+)\\b"
+     },
+     {
+      "kind": "sample",
+      "match": "^### (SM-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "character-sheet": [
+   {
+    "path": "docs/character-sheet.json",
+    "as": "json",
+    "kind": "character",
+    "at": "rows"
+   }
+  ],
+  "relationship-map": [
+   {
+    "path": "docs/relationship-map.json",
+    "as": "plain"
+   }
+  ],
+  "character-art": [
+   {
+    "path": "docs/character-art.json",
+    "as": "plain"
+   }
+  ],
+  "stage-notes": [
+   {
+    "path": "docs/stage-notes.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "stage-map": [
+   {
+    "path": "docs/stage-map.json",
+    "as": "json",
+    "kind": "location",
+    "at": "features",
+    "where": {
+     "featureKind": "place"
+    }
+   },
+   {
+    "path": "docs/stage-map.json",
+    "as": "json",
+    "kind": "route",
+    "at": "features",
+    "where": {
+     "featureKind": "path"
+    }
+   }
+  ],
+  "stage-art": [
+   {
+    "path": "docs/stage-art.json",
+    "as": "plain"
+   }
+  ],
+  "stage-model": [
+   {
+    "path": "docs/stage-model.json",
+    "as": "plain"
+   }
+  ],
+  "term-dictionary": [
+   {
+    "path": "docs/term-dictionary.json",
+    "as": "json",
+    "kind": "term",
+    "at": "rows"
+   }
+  ],
+  "story-ledger": [
+   {
+    "path": "docs/story-ledger.json",
+    "as": "json",
+    "kind": "plot-thread",
+    "at": "plot-thread"
+   },
+   {
+    "path": "docs/story-ledger.json",
+    "as": "json",
+    "kind": "event",
+    "at": "event"
+   },
+   {
+    "path": "docs/story-ledger.json",
+    "as": "json",
+    "kind": "foreshadowing",
+    "at": "foreshadowing"
+   }
+  ],
+  "structure-map": [
+   {
+    "path": "docs/structure-map.json",
+    "as": "json",
+    "kind": "occurrence",
+    "at": "nodes"
+   }
+  ],
+  "script-doc": [
+   {
+    "path": "docs/script-doc.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "scene",
+      "match": "^### (SC-\\d+)\\b"
+     },
+     {
+      "kind": "dialogue",
+      "match": "^#### (DL-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "storyboard-pages": [
+   {
+    "path": "docs/storyboard-pages.json",
+    "as": "json",
+    "kind": "page",
+    "at": "page",
+    "layout": [
+     "at",
+     "frame"
+    ]
+   },
+   {
+    "path": "docs/storyboard-pages.json",
+    "as": "json",
+    "kind": "panel",
+    "at": "panel",
+    "layout": [
+     "at",
+     "frame"
+    ]
+   },
+   {
+    "path": "docs/storyboard-pages.json",
+    "as": "json",
+    "kind": "figure",
+    "at": "figure",
+    "layout": [
+     "at",
+     "frame"
+    ]
+   }
+  ],
+  "rough-pages": [
+   {
+    "path": "docs/rough-pages.json",
+    "as": "plain"
+   }
+  ],
+  "ink-pages": [
+   {
+    "path": "docs/ink-pages.json",
+    "as": "plain"
+   }
+  ],
+  "finished-pages": [
+   {
+    "path": "docs/finished-pages.json",
+    "as": "plain"
+   }
+  ],
+  "lettering-record": [
+   {
+    "path": "docs/lettering-record.json",
+    "as": "json",
+    "kind": "balloon",
+    "at": "rows"
+   }
+  ],
+  "editorial-record": [
+   {
+    "path": "docs/editorial-record.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "review",
+      "match": "^### (RV-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "output-record": [
+   {
+    "path": "docs/output-record.json",
+    "as": "plain"
+   }
+  ],
+  "learning-record": [
+   {
+    "path": "docs/learning-record.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "learning",
+      "match": "^### (LE-\\d+)\\b"
+     }
+    ]
+   }
+  ]
+ },
+ "phases": {
+  "process": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T17:03:48.130Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "concept": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T17:15:52.047Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "character": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T18:45:50.732Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "stage": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T19:22:27.609Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "story": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T17:47:45.356Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "script": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T18:10:48.364Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "storyboard": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T19:08:30.892Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "rough": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T19:44:31.005Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "ink": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T20:44:28.940Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "finish": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T21:04:21.568Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "read": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T21:22:18.805Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "output": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T21:30:04.390Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  },
+  "learning": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-14T21:33:35.860Z",
+   "acceptedBy": "P-1ea11b75168f97b3",
+   "acceptedOrg": "org_beb3a2566cbc493e"
+  }
+ },
+ "editorBindings": {
+  "rough-pages": {
+   "editor": "design-pages"
+  },
+  "ink-pages": {
+   "editor": "design-pages"
+  },
+  "finished-pages": {
+   "editor": "design-pages"
+  },
+  "character-art": {
+   "editor": "design-pages"
+  },
+  "stage-art": {
+   "editor": "design-pages"
+  },
+  "relationship-map": {},
+  "stage-map": {
+   "editor": "fiction-map"
+  }
+ }
+}

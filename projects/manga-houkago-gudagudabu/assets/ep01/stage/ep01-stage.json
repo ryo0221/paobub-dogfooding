@@ -1,0 +1,3040 @@
+{
+ "sets": [
+  "council",
+  "club"
+ ],
+ "panels": [
+  {
+   "panel": "PN-001",
+   "set": "council",
+   "model": {
+    "artifactId": "artifact_f8cae243-cfdc-4fbe-8b0a-6bf146fac2f0",
+    "name": "第1話 舞台：生徒会室",
+    "assets": [
+     {
+      "id": "room-council/mesh",
+      "sha256": "sha256:cb4ac2854ec161bac04e100728942d700d9e630999c9b6d3249970809f36aff2"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "reika/mesh",
+      "sha256": "sha256:d3a7391cab1c722d4854a7becf635ca2ed63d592dc4a2f5395df02f95cc3c186"
+     }
+    ]
+   },
+   "cam_mm": [
+    7600,
+    -350,
+    1500
+   ],
+   "look_mm": [
+    1000,
+    -3000,
+    1000
+   ],
+   "fov_deg": [
+    62.7,
+    26.6
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-001",
+     "who": "CH-04",
+     "at_mm": [
+      800,
+      -3000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "chair-hands",
+     "head_in_frame": true,
+     "head_at": [
+      0.508,
+      0.424
+     ],
+     "head_r": 0.062
+    },
+    {
+     "fg": "FG-002",
+     "who": "CH-01",
+     "at_mm": [
+      5700,
+      -1500,
+      0
+     ],
+     "facing_deg": 107.0,
+     "pose": "slump",
+     "head_in_frame": true,
+     "head_at": [
+      0.366,
+      0.544
+     ],
+     "head_r": 0.191
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-002",
+   "set": "council",
+   "model": {
+    "artifactId": "artifact_f8cae243-cfdc-4fbe-8b0a-6bf146fac2f0",
+    "name": "第1話 舞台：生徒会室",
+    "assets": [
+     {
+      "id": "room-council/mesh",
+      "sha256": "sha256:cb4ac2854ec161bac04e100728942d700d9e630999c9b6d3249970809f36aff2"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "reika/mesh",
+      "sha256": "sha256:d3a7391cab1c722d4854a7becf635ca2ed63d592dc4a2f5395df02f95cc3c186"
+     }
+    ]
+   },
+   "cam_mm": [
+    3300,
+    -3000,
+    800
+   ],
+   "look_mm": [
+    800,
+    -3000,
+    1150
+   ],
+   "fov_deg": [
+    29.5,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-003",
+     "who": "CH-04",
+     "at_mm": [
+      800,
+      -3000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "chair-paper",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.439
+     ],
+     "head_r": 0.13
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-003",
+   "set": "council",
+   "model": {
+    "artifactId": "artifact_f8cae243-cfdc-4fbe-8b0a-6bf146fac2f0",
+    "name": "第1話 舞台：生徒会室",
+    "assets": [
+     {
+      "id": "room-council/mesh",
+      "sha256": "sha256:cb4ac2854ec161bac04e100728942d700d9e630999c9b6d3249970809f36aff2"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "reika/mesh",
+      "sha256": "sha256:d3a7391cab1c722d4854a7becf635ca2ed63d592dc4a2f5395df02f95cc3c186"
+     }
+    ]
+   },
+   "cam_mm": [
+    1500,
+    -2000,
+    1400
+   ],
+   "look_mm": [
+    4000,
+    -3000,
+    1150
+   ],
+   "fov_deg": [
+    29.5,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-004",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "hand-up",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.412
+     ],
+     "head_r": 0.117
+    },
+    {
+     "fg": null,
+     "who": "CH-04",
+     "at_mm": [
+      800,
+      -3000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "chair-paper",
+     "head_in_frame": false,
+     "head_at": null,
+     "head_r": null
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-004",
+   "set": "council",
+   "model": {
+    "artifactId": "artifact_f8cae243-cfdc-4fbe-8b0a-6bf146fac2f0",
+    "name": "第1話 舞台：生徒会室",
+    "assets": [
+     {
+      "id": "room-council/mesh",
+      "sha256": "sha256:cb4ac2854ec161bac04e100728942d700d9e630999c9b6d3249970809f36aff2"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "reika/mesh",
+      "sha256": "sha256:d3a7391cab1c722d4854a7becf635ca2ed63d592dc4a2f5395df02f95cc3c186"
+     }
+    ]
+   },
+   "cam_mm": [
+    4200,
+    -3000,
+    800
+   ],
+   "look_mm": [
+    800,
+    -3000,
+    1300
+   ],
+   "fov_deg": [
+    62.7,
+    29.1
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-005",
+     "who": "CH-04",
+     "at_mm": [
+      1000,
+      -3000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "lean-desk",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.423
+     ],
+     "head_r": 0.123
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-005",
+   "set": "council",
+   "model": {
+    "artifactId": "artifact_f8cae243-cfdc-4fbe-8b0a-6bf146fac2f0",
+    "name": "第1話 舞台：生徒会室",
+    "assets": [
+     {
+      "id": "room-council/mesh",
+      "sha256": "sha256:cb4ac2854ec161bac04e100728942d700d9e630999c9b6d3249970809f36aff2"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "reika/mesh",
+      "sha256": "sha256:d3a7391cab1c722d4854a7becf635ca2ed63d592dc4a2f5395df02f95cc3c186"
+     }
+    ]
+   },
+   "cam_mm": [
+    2350,
+    -250,
+    1350
+   ],
+   "look_mm": [
+    2300,
+    -3000,
+    1000
+   ],
+   "fov_deg": [
+    62.7,
+    32.7
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-006",
+     "who": "CH-01",
+     "at_mm": [
+      3700,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "point-up",
+     "head_in_frame": true,
+     "head_at": [
+      0.076,
+      0.315
+     ],
+     "head_r": 0.126
+    },
+    {
+     "fg": "FG-007",
+     "who": "CH-04",
+     "at_mm": [
+      800,
+      -3000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "chair",
+     "head_in_frame": true,
+     "head_at": [
+      0.944,
+      0.346
+     ],
+     "head_r": 0.133
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-006",
+   "set": "council",
+   "model": {
+    "artifactId": "artifact_f8cae243-cfdc-4fbe-8b0a-6bf146fac2f0",
+    "name": "第1話 舞台：生徒会室",
+    "assets": [
+     {
+      "id": "room-council/mesh",
+      "sha256": "sha256:cb4ac2854ec161bac04e100728942d700d9e630999c9b6d3249970809f36aff2"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "reika/mesh",
+      "sha256": "sha256:d3a7391cab1c722d4854a7becf635ca2ed63d592dc4a2f5395df02f95cc3c186"
+     }
+    ]
+   },
+   "cam_mm": [
+    7700,
+    -300,
+    1500
+   ],
+   "look_mm": [
+    1000,
+    -3000,
+    1000
+   ],
+   "fov_deg": [
+    62.7,
+    29.6
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-008",
+     "who": "CH-01",
+     "at_mm": [
+      6200,
+      -1200,
+      0
+     ],
+     "facing_deg": -33.7,
+     "pose": "look-back",
+     "head_in_frame": true,
+     "head_at": [
+      0.371,
+      0.588
+     ],
+     "head_r": 0.216
+    },
+    {
+     "fg": "FG-009",
+     "who": "CH-04",
+     "at_mm": [
+      800,
+      -3000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "chair",
+     "head_in_frame": true,
+     "head_at": [
+      0.508,
+      0.433
+     ],
+     "head_r": 0.055
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-007",
+   "set": "council",
+   "model": {
+    "artifactId": "artifact_f8cae243-cfdc-4fbe-8b0a-6bf146fac2f0",
+    "name": "第1話 舞台：生徒会室",
+    "assets": [
+     {
+      "id": "room-council/mesh",
+      "sha256": "sha256:cb4ac2854ec161bac04e100728942d700d9e630999c9b6d3249970809f36aff2"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "reika/mesh",
+      "sha256": "sha256:d3a7391cab1c722d4854a7becf635ca2ed63d592dc4a2f5395df02f95cc3c186"
+     }
+    ]
+   },
+   "cam_mm": [
+    1950,
+    -3000,
+    1380
+   ],
+   "look_mm": [
+    800,
+    -3000,
+    1380
+   ],
+   "fov_deg": [
+    41.8,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-010",
+     "who": "CH-04",
+     "at_mm": [
+      800,
+      -3000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "hold-front",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.469
+     ],
+     "head_r": 0.294
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-008",
+   "set": "council",
+   "model": {
+    "artifactId": "artifact_f8cae243-cfdc-4fbe-8b0a-6bf146fac2f0",
+    "name": "第1話 舞台：生徒会室",
+    "assets": [
+     {
+      "id": "room-council/mesh",
+      "sha256": "sha256:cb4ac2854ec161bac04e100728942d700d9e630999c9b6d3249970809f36aff2"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "reika/mesh",
+      "sha256": "sha256:d3a7391cab1c722d4854a7becf635ca2ed63d592dc4a2f5395df02f95cc3c186"
+     }
+    ]
+   },
+   "cam_mm": [
+    2600,
+    -3000,
+    1000
+   ],
+   "look_mm": [
+    800,
+    -3000,
+    1050
+   ],
+   "fov_deg": [
+    28.6,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-011",
+     "who": "CH-04",
+     "at_mm": [
+      800,
+      -3000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "chair-hands",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.325
+     ],
+     "head_r": 0.186
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-009",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    2450,
+    950,
+    1350
+   ],
+   "look_mm": [
+    2150,
+    70,
+    1300
+   ],
+   "fov_deg": [
+    47.0,
+    35.0
+   ],
+   "note": "貼り紙の寄り。すずの手が戸に掛かる",
+   "people": [
+    {
+     "fg": "FG-012",
+     "who": "CH-02",
+     "at_mm": [
+      1300,
+      450,
+      0
+     ],
+     "facing_deg": -116.6,
+     "pose": "reach",
+     "head_in_frame": false,
+     "head_at": [
+      1.751,
+      0.747
+     ],
+     "head_r": 0.332
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": [
+    "FG-012"
+   ]
+  },
+  {
+   "panel": "PN-010",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    2700,
+    550,
+    1250
+   ],
+   "look_mm": [
+    1200,
+    400,
+    950
+   ],
+   "fov_deg": [
+    39.9,
+    35.0
+   ],
+   "note": "戸口の東から、戸を引くすずを横から",
+   "people": [
+    {
+     "fg": "FG-013",
+     "who": "CH-02",
+     "at_mm": [
+      1100,
+      500,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "reach",
+     "head_in_frame": true,
+     "head_at": [
+      0.595,
+      0.265
+     ],
+     "head_r": 0.184
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-011",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    -1100,
+    1650,
+    1650
+   ],
+   "look_mm": [
+    4600,
+    -3000,
+    500
+   ],
+   "fov_deg": [
+    57.2,
+    35.0
+   ],
+   "note": "戸口の外、すずの肩ごしに部屋へ",
+   "people": [
+    {
+     "fg": "FG-014",
+     "who": "CH-02",
+     "at_mm": [
+      1450,
+      350,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "reach",
+     "head_in_frame": true,
+     "head_at": [
+      0.305,
+      0.523
+     ],
+     "head_r": 0.099
+    },
+    {
+     "fg": "FG-015",
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-hug",
+     "head_in_frame": true,
+     "head_at": [
+      0.452,
+      0.385
+     ],
+     "head_r": 0.046
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-012",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1250,
+    50,
+    1050
+   ],
+   "look_mm": [
+    1200,
+    1000,
+    1100
+   ],
+   "fov_deg": [
+    39.0,
+    35.0
+   ],
+   "note": "崩し顔の寄り：戸の前から廊下側へ振り返る形で撮る（すずが戸に向いたままでは顔が写らないため、すずを戸口の北1mに置いた）",
+   "people": [
+    {
+     "fg": "FG-016",
+     "who": "CH-02",
+     "at_mm": [
+      1200,
+      1000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "fist-up",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.382
+     ],
+     "head_r": 0.291
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-013",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1600,
+    150,
+    1100
+   ],
+   "look_mm": [
+    1200,
+    1000,
+    950
+   ],
+   "fov_deg": [
+    39.0,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-017",
+     "who": "CH-02",
+     "at_mm": [
+      1200,
+      1000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "hold-front",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.122
+     ],
+     "head_r": 0.326
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-014",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    -2500,
+    1900,
+    1350
+   ],
+   "look_mm": [
+    2000,
+    1200,
+    950
+   ],
+   "fov_deg": [
+    36.5,
+    35.0
+   ],
+   "note": "廊下の西から。歩いてくる先生の正面と、すずの背中",
+   "people": [
+    {
+     "fg": "FG-019",
+     "who": "CH-02",
+     "at_mm": [
+      1200,
+      800,
+      0
+     ],
+     "facing_deg": -66.0,
+     "pose": "hold-front",
+     "head_in_frame": true,
+     "head_at": [
+      0.705,
+      0.435
+     ],
+     "head_r": 0.074
+    },
+    {
+     "fg": "FG-018",
+     "who": "CH-05",
+     "at_mm": [
+      3000,
+      1600,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "walk",
+     "head_in_frame": true,
+     "head_at": [
+      0.347,
+      0.355
+     ],
+     "head_r": 0.061
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-015",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    3600,
+    300,
+    1250
+   ],
+   "look_mm": [
+    1600,
+    1200,
+    950
+   ],
+   "fov_deg": [
+    36.5,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-020",
+     "who": "CH-02",
+     "at_mm": [
+      1200,
+      1000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "fist-up",
+     "head_in_frame": true,
+     "head_at": [
+      0.287,
+      0.334
+     ],
+     "head_r": 0.116
+    },
+    {
+     "fg": "FG-021",
+     "who": "CH-05",
+     "at_mm": [
+      2200,
+      1500,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "wave",
+     "head_in_frame": true,
+     "head_at": [
+      0.954,
+      0.174
+     ],
+     "head_r": 0.197
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-016",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    -6000,
+    2300,
+    1500
+   ],
+   "look_mm": [
+    8000,
+    1000,
+    1000
+   ],
+   "fov_deg": [
+    62.7,
+    28.6
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-023",
+     "who": "CH-02",
+     "at_mm": [
+      1200,
+      1000,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "reach",
+     "head_in_frame": true,
+     "head_at": [
+      0.571,
+      0.519
+     ],
+     "head_r": 0.048
+    },
+    {
+     "fg": "FG-022",
+     "who": "CH-05",
+     "at_mm": [
+      11200,
+      1400,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "walk",
+     "head_in_frame": true,
+     "head_at": [
+      0.467,
+      0.445
+     ],
+     "head_r": 0.024
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-017",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1700,
+    100,
+    1050
+   ],
+   "look_mm": [
+    1200,
+    1000,
+    1150
+   ],
+   "fov_deg": [
+    27.0,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-024",
+     "who": "CH-02",
+     "at_mm": [
+      1200,
+      1000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "hold-front",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.467
+     ],
+     "head_r": 0.266
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-018",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    -1100,
+    1650,
+    1650
+   ],
+   "look_mm": [
+    4800,
+    -3000,
+    500
+   ],
+   "fov_deg": [
+    39.5,
+    35.0
+   ],
+   "note": "戸口の外から、すずの背中と戸の奥のたけし",
+   "people": [
+    {
+     "fg": "FG-026",
+     "who": "CH-02",
+     "at_mm": [
+      1500,
+      400,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "hold-front",
+     "head_in_frame": true,
+     "head_at": [
+      0.194,
+      0.526
+     ],
+     "head_r": 0.098
+    },
+    {
+     "fg": "FG-025",
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-raise",
+     "head_in_frame": true,
+     "head_at": [
+      0.451,
+      0.39
+     ],
+     "head_r": 0.046
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-019",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    3200,
+    2200,
+    1300
+   ],
+   "look_mm": [
+    800,
+    600,
+    1000
+   ],
+   "fov_deg": [
+    39.6,
+    35.0
+   ],
+   "note": "ねむが戸口から顔を出す。廊下の東から",
+   "people": [
+    {
+     "fg": "FG-027",
+     "who": "CH-01",
+     "at_mm": [
+      1100,
+      350,
+      0
+     ],
+     "facing_deg": 21.8,
+     "pose": "wave",
+     "head_in_frame": true,
+     "head_at": [
+      0.312,
+      0.335
+     ],
+     "head_r": 0.115
+    },
+    {
+     "fg": "FG-028",
+     "who": "CH-02",
+     "at_mm": [
+      400,
+      950,
+      0
+     ],
+     "facing_deg": -90.0,
+     "pose": "hold-front",
+     "head_in_frame": true,
+     "head_at": [
+      0.736,
+      0.403
+     ],
+     "head_r": 0.094
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-020",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1000,
+    -5600,
+    1150
+   ],
+   "look_mm": [
+    4000,
+    -3000,
+    550
+   ],
+   "fov_deg": [
+    31.0,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-029",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza-offer",
+     "head_in_frame": true,
+     "head_at": [
+      0.937,
+      0.368
+     ],
+     "head_r": 0.087
+    },
+    {
+     "fg": "FG-030",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": true,
+     "head_at": [
+      0.204,
+      0.357
+     ],
+     "head_r": 0.069
+    },
+    {
+     "fg": null,
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-hug",
+     "head_in_frame": true,
+     "head_at": [
+      0.803,
+      0.311
+     ],
+     "head_r": 0.075
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-021",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1000,
+    -4400,
+    1200
+   ],
+   "look_mm": [
+    3300,
+    -1400,
+    900
+   ],
+   "fov_deg": [
+    35.3,
+    35.0
+   ],
+   "note": "貼り紙の前のすずと、こたつのねむ。南西から",
+   "people": [
+    {
+     "fg": "FG-031",
+     "who": "CH-02",
+     "at_mm": [
+      2700,
+      -800,
+      0
+     ],
+     "facing_deg": -20.6,
+     "pose": "point-up",
+     "head_in_frame": true,
+     "head_at": [
+      0.16,
+      0.386
+     ],
+     "head_r": 0.073
+    },
+    {
+     "fg": "FG-032",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": true,
+     "head_at": [
+      0.886,
+      0.513
+     ],
+     "head_r": 0.084
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-022",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1000,
+    -3000,
+    1000
+   ],
+   "look_mm": [
+    4000,
+    -3600,
+    600
+   ],
+   "fov_deg": [
+    35.3,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-033",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza-lean",
+     "head_in_frame": true,
+     "head_at": [
+      0.721,
+      0.328
+     ],
+     "head_r": 0.091
+    },
+    {
+     "fg": null,
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": false,
+     "head_at": [
+      -0.399,
+      0.367
+     ],
+     "head_r": 0.116
+    },
+    {
+     "fg": null,
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-hug",
+     "head_in_frame": true,
+     "head_at": [
+      0.183,
+      0.294
+     ],
+     "head_r": 0.089
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-023",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1000,
+    -3000,
+    1000
+   ],
+   "look_mm": [
+    4300,
+    -3000,
+    600
+   ],
+   "fov_deg": [
+    62.7,
+    29.6
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-034",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-point",
+     "head_in_frame": true,
+     "head_at": [
+      0.226,
+      0.351
+     ],
+     "head_r": 0.126
+    },
+    {
+     "fg": "FG-035",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza",
+     "head_in_frame": true,
+     "head_at": [
+      0.788,
+      0.315
+     ],
+     "head_r": 0.114
+    },
+    {
+     "fg": "FG-036",
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-hug",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.272
+     ],
+     "head_r": 0.104
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-024",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    4000,
+    -2700,
+    950
+   ],
+   "look_mm": [
+    4000,
+    -4050,
+    800
+   ],
+   "fov_deg": [
+    42.1,
+    35.0
+   ],
+   "note": "すずの崩し顔の寄り。ねむの頭の上から",
+   "people": [
+    {
+     "fg": "FG-037",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza-point",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.348
+     ],
+     "head_r": 0.214
+    },
+    {
+     "fg": null,
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": false,
+     "head_at": null,
+     "head_r": null
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-025",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1000,
+    -3000,
+    1000
+   ],
+   "look_mm": [
+    4000,
+    -3000,
+    550
+   ],
+   "fov_deg": [
+    42.1,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-038",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": true,
+     "head_at": [
+      0.064,
+      0.33
+     ],
+     "head_r": 0.107
+    },
+    {
+     "fg": "FG-039",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza",
+     "head_in_frame": true,
+     "head_at": [
+      0.959,
+      0.3
+     ],
+     "head_r": 0.097
+    },
+    {
+     "fg": null,
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-hug",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.264
+     ],
+     "head_r": 0.087
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-026",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    400,
+    -400,
+    2200
+   ],
+   "look_mm": [
+    4600,
+    -3300,
+    400
+   ],
+   "fov_deg": [
+    55.6,
+    35.0
+   ],
+   "note": "部室の大きな引き。北西の角の上から",
+   "people": [
+    {
+     "fg": "FG-040",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": true,
+     "head_at": [
+      0.331,
+      0.486
+     ],
+     "head_r": 0.074
+    },
+    {
+     "fg": "FG-041",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza",
+     "head_in_frame": true,
+     "head_at": [
+      0.676,
+      0.354
+     ],
+     "head_r": 0.054
+    },
+    {
+     "fg": "FG-042",
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-raise",
+     "head_in_frame": true,
+     "head_at": [
+      0.395,
+      0.305
+     ],
+     "head_r": 0.065
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-027",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    4000,
+    -2750,
+    950
+   ],
+   "look_mm": [
+    4000,
+    -4050,
+    750
+   ],
+   "fov_deg": [
+    42.1,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-043",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza-slump",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.281
+     ],
+     "head_r": 0.226
+    },
+    {
+     "fg": null,
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": false,
+     "head_at": null,
+     "head_r": null
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-028",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    4000,
+    -3200,
+    700
+   ],
+   "look_mm": [
+    4000,
+    -2000,
+    600
+   ],
+   "fov_deg": [
+    42.1,
+    35.0
+   ],
+   "note": "ねむの顔の寄り。こたつの南から（掲示の下からではねむの後頭部になるため）",
+   "people": [
+    {
+     "fg": "FG-044",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.135
+     ],
+     "head_r": 0.273
+    },
+    {
+     "fg": null,
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza",
+     "head_in_frame": false,
+     "head_at": null,
+     "head_r": null
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-029",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    6000,
+    -5400,
+    1300
+   ],
+   "look_mm": [
+    4000,
+    -3000,
+    450
+   ],
+   "fov_deg": [
+    45.0,
+    35.0
+   ],
+   "note": "南の窓の前から、夕日を背に",
+   "people": [
+    {
+     "fg": "FG-045",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": true,
+     "head_at": [
+      0.7,
+      0.25
+     ],
+     "head_r": 0.083
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": [
+    "FG-045"
+   ]
+  },
+  {
+   "panel": "PN-030",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1000,
+    -3000,
+    1000
+   ],
+   "look_mm": [
+    4000,
+    -2400,
+    600
+   ],
+   "fov_deg": [
+    35.3,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-046",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-pour",
+     "head_in_frame": true,
+     "head_at": [
+      0.303,
+      0.358
+     ],
+     "head_r": 0.101
+    },
+    {
+     "fg": null,
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza",
+     "head_in_frame": false,
+     "head_at": [
+      1.433,
+      0.334
+     ],
+     "head_r": 0.106
+    },
+    {
+     "fg": null,
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-hug",
+     "head_in_frame": true,
+     "head_at": [
+      0.817,
+      0.294
+     ],
+     "head_r": 0.089
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-031",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1600,
+    -3600,
+    1300
+   ],
+   "look_mm": [
+    4000,
+    -3200,
+    500
+   ],
+   "fov_deg": [
+    58.9,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-047",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza-reach",
+     "head_in_frame": true,
+     "head_at": [
+      0.823,
+      0.248
+     ],
+     "head_r": 0.127
+    },
+    {
+     "fg": "FG-048",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-chin",
+     "head_in_frame": true,
+     "head_at": [
+      0.102,
+      0.249
+     ],
+     "head_r": 0.123
+    },
+    {
+     "fg": null,
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-hug",
+     "head_in_frame": true,
+     "head_at": [
+      0.502,
+      0.119
+     ],
+     "head_r": 0.105
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-032",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1300,
+    -1000,
+    1700
+   ],
+   "look_mm": [
+    4300,
+    -3400,
+    550
+   ],
+   "fov_deg": [
+    62.7,
+    28.6
+   ],
+   "note": "こたつの上の湯のみ3つの寄り。見下ろし",
+   "people": [
+    {
+     "fg": "FG-049",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza",
+     "head_in_frame": true,
+     "head_at": [
+      0.64,
+      0.301
+     ],
+     "head_r": 0.086
+    },
+    {
+     "fg": "FG-050",
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-hug",
+     "head_in_frame": true,
+     "head_at": [
+      0.329,
+      0.244
+     ],
+     "head_r": 0.104
+    },
+    {
+     "fg": null,
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu",
+     "head_in_frame": true,
+     "head_at": [
+      0.24,
+      0.506
+     ],
+     "head_r": 0.133
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-033",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    4000,
+    -3900,
+    900
+   ],
+   "look_mm": [
+    4000,
+    -2600,
+    600
+   ],
+   "fov_deg": [
+    40.6,
+    35.0
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-051",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-drink",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.158
+     ],
+     "head_r": 0.177
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": [
+    "FG-051"
+   ]
+  },
+  {
+   "panel": "PN-034",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    3500,
+    -3400,
+    950
+   ],
+   "look_mm": [
+    5250,
+    -3000,
+    800
+   ],
+   "fov_deg": [
+    47.8,
+    35.0
+   ],
+   "note": "たけしの寄り。こたつの西から（棚の脇ではたけしの背中になるため）",
+   "people": [
+    {
+     "fg": "FG-052",
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-drink",
+     "head_in_frame": true,
+     "head_at": [
+      0.5,
+      0.326
+     ],
+     "head_r": 0.205
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-035",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    400,
+    -400,
+    2200
+   ],
+   "look_mm": [
+    4400,
+    -3200,
+    500
+   ],
+   "fov_deg": [
+    62.7,
+    23.4
+   ],
+   "note": null,
+   "people": [
+    {
+     "fg": "FG-053",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-drink",
+     "head_in_frame": true,
+     "head_at": [
+      0.349,
+      0.489
+     ],
+     "head_r": 0.112
+    },
+    {
+     "fg": "FG-054",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza-drink",
+     "head_in_frame": true,
+     "head_at": [
+      0.647,
+      0.286
+     ],
+     "head_r": 0.082
+    },
+    {
+     "fg": "FG-055",
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-drink",
+     "head_in_frame": true,
+     "head_at": [
+      0.404,
+      0.213
+     ],
+     "head_r": 0.099
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  },
+  {
+   "panel": "PN-036",
+   "set": "club",
+   "model": {
+    "artifactId": "artifact_33a81cb8-ff7c-4f9d-b8d7-402b70b21011",
+    "name": "第1話 舞台：部室と旧校舎3階の廊下",
+    "assets": [
+     {
+      "id": "room-club/mesh",
+      "sha256": "sha256:daeb4586632a816a6269b473b7e685d613fec96adf331c9c01aa85fc280000bf"
+     },
+     {
+      "id": "cups-club/mesh",
+      "sha256": "sha256:adcf0dc272335d7c3b813db44a41c0f218810b540741dbfe016d09df1651f69f"
+     },
+     {
+      "id": "nemu/mesh",
+      "sha256": "sha256:5bc1e16759e6be918e5011bf04656e74ac1ff52007e3fb5d497d8e2a24ababb5"
+     },
+     {
+      "id": "suzu/mesh",
+      "sha256": "sha256:ea22ff804b5aab6c33ef89e088beddb39aeaf7438653ae489d774c644a56d1bc"
+     },
+     {
+      "id": "takeshi/mesh",
+      "sha256": "sha256:6aa7daa38e2b9d097a14fa0130de5b36516b1279e94bc7aa9f009d9bb75432eb"
+     },
+     {
+      "id": "tanahashi/mesh",
+      "sha256": "sha256:ddb7e8e0cbf643ac2b2359dd5ff51dea9beab4c12354287c69c8bc43cd574f1c"
+     }
+    ]
+   },
+   "cam_mm": [
+    1200,
+    -5500,
+    1600
+   ],
+   "look_mm": [
+    4400,
+    -2800,
+    500
+   ],
+   "fov_deg": [
+    49.8,
+    35.0
+   ],
+   "note": "最後のコマ。南西の窓の前から、こたつを囲む3人と戸口",
+   "people": [
+    {
+     "fg": "FG-056",
+     "who": "CH-01",
+     "at_mm": [
+      4000,
+      -2000,
+      0
+     ],
+     "facing_deg": 180.0,
+     "pose": "kotatsu-drink",
+     "head_in_frame": true,
+     "head_at": [
+      0.289,
+      0.352
+     ],
+     "head_r": 0.071
+    },
+    {
+     "fg": "FG-057",
+     "who": "CH-02",
+     "at_mm": [
+      4000,
+      -4050,
+      0
+     ],
+     "facing_deg": 0.0,
+     "pose": "seiza-drink",
+     "head_in_frame": true,
+     "head_at": [
+      0.739,
+      0.433
+     ],
+     "head_r": 0.089
+    },
+    {
+     "fg": "FG-058",
+     "who": "CH-03",
+     "at_mm": [
+      5250,
+      -3000,
+      0
+     ],
+     "facing_deg": 90.0,
+     "pose": "kotatsu-drink",
+     "head_in_frame": true,
+     "head_at": [
+      0.66,
+      0.294
+     ],
+     "head_r": 0.078
+    }
+   ],
+   "fg_not_staged": [],
+   "subjects_framed": true,
+   "hands_only": []
+  }
+ ]
+}

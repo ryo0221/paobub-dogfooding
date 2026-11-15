@@ -1,0 +1,16 @@
+Use your image generation tool. Make ONE image: the FINISHED black-and-white manga panel (仕上げ) from the attached ink line art, for a Japanese school gag-comedy manga printed in monochrome.
+Keep EVERY line of the FIRST attached image exactly where it is (same drawing, same size, same composition); only add: solid black fills (ベタ) on black hair, and ONE kind of light dot screentone (網点) on the dark school blazers and on shadows where it helps the mood. Per character (model sheets, AR-04/AR-08): Nemu, Suzu, Reika and Tanahashi have solid black hair; the tall boy Takeshi (long fringe hiding his eyes) has NO black at all, only a lighter dot tone on his hair and uniform. Keep faces, skin, shirts and most of the background white. No colour, no grey gradients, no new objects, no text. Grey margins are padding: leave them empty.
+
+
+Panel PN-018（PN-018 戸口の奥で、たけしが手を少し上げかけてやめる）. Place: LO-01 部室. Scene SC-003.
+What the panel shows: PN-018 戸口の奥で、たけしが手を少し上げかけてやめる. Pacing: 4ページのオチ。「……えっと。先生、ぼくは」の声の小ささを、コマの余白の大きさで受ける.
+Camera: exactly as in the 3D camera view (広角の一部：戸の枠ごしに部屋の中央が入る); 戸口の外から、すずの背中と戸の奥のたけし.
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): たけし「……えっと。先生、ぼくは」
+People:
+- FG-025 権田原たけし: head at 45% from the left and 39% from the top of the panel. 向き：西（戸口の方）。姿勢：右手を肩の高さまで上げかけ、下ろす途中。表情：前髪で目は隠れ、口が小さく開く。描写する範囲：こたつ座り。
+- FG-026 小鳥遊すず: head at 19% from the left and 53% from the top of the panel. 向き：北（廊下側）。姿勢：入部届を見たまま。表情：目は丸く大きめ、口は小さく真一文字。描写する範囲：後ろ姿の腰上。
+Continuity for this scene（続く状態）: Same corridor. 棚橋先生 in a white shirt, loose tie, sandals, an attendance book under his arm. After he stamps it (from PN-014 on), すず's 入部届 has a round red-ink stamp (draw it as a small circle). Door still slightly open; たけし still inside at the kotatsu.
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Square 1024x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

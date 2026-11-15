@@ -1,0 +1,22 @@
+Use your image generation tool. Make ONE image: the clean INK LINE ART (線画) of one panel of a Japanese school gag-comedy manga.
+Style: professional manga line art on pure white, drawn with THREE pure pen colours so the layers can be separated afterwards (手本：gulliver-manga の三色の線画):
+- PURE BLACK (#000000) for the characters and everything they wear or hold (outlines thicker and slightly rounded, inner lines thinner); solid black only on hair that the model sheet shows as black;
+- PURE BLUE (#0000FF) for the whole background: room, walls, windows, furniture, floor, props not held by a character (thin, clean lines, simpler than the figures, AR-03);
+- PURE RED (#FF0000) only for manga effect marks (speed lines, impact or emotion marks, sweat drops, steam); omit red if the panel needs no effect.
+Never mix the colours on one object; no grey, no screentone, no shading, no other colours (tone comes later). Characters are cute super-deformed, exactly 4 heads tall.
+The FIRST attached image is the approved pencil ROUGH of this panel: trace it — keep exactly its composition, poses, faces and expressions, and where everything sits. The SECOND attached image is the 3D camera view of the same panel: use it for perspective and proportions of the room and furniture. Draw the background (room, windows, furniture) in every panel unless told otherwise. Grey margins are padding: leave them empty.
+
+The SECOND attached image is the 3D camera view of this panel (perspective and proportions only): keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 西園寺れいか: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-004（PN-004 れいか「なければ、廃部です」）. Place: LO-03 生徒会室. Scene SC-001.
+What the panel shows: 大きめのコマ. Pacing: 「学期末までに」と「廃部です」の間に1コマ分の沈黙。コマを大きく取り、あおりを強める.
+Camera: exactly as in the 3D camera view (標準・あおり（AR-07）).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): れいか「学期末までに、活動実績を作りなさい」；れいか「なければ、廃部です」
+People:
+- FG-005 西園寺れいか: head at 50% from the left and 42% from the top of the panel. 向き：東・下（ねむへ）。姿勢：立ち上がり、両手を机について身を乗り出す。表情：切れ長の目、眉は水平、口は一文字。描写する範囲：膝上。
+Continuity for this scene（続く状態）: After school, daylight from the west windows behind the president's seat (she is a little backlit). れいか wears the 生徒会長 armband on her LEFT arm and holds a binder or the club application sheet. ねむ carries nothing; her blazer sleeves cover her hands.
+Art rules: AR-02 4頭身; AR-05 this is the STUDENT COUNCIL ROOM (生徒会室), NOT the clubroom: conference desks in a U shape (コの字) opening to the east, the president's seat at the west end with the west windows behind her, chairs along the desks, steel shelves of club files along the north wall, a whiteboard on the east wall. There is NO kotatsu, NO cushions and NO sink in this room; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Landscape 1536x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

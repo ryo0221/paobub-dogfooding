@@ -1,0 +1,15 @@
+Use your image generation tool. Make ONE image: the FINISHED black-and-white manga panel (仕上げ) from the attached ink line art, for a Japanese school gag-comedy manga printed in monochrome.
+Keep EVERY line of the FIRST attached image exactly where it is (same drawing, same size, same composition); only add: solid black fills (ベタ) on black hair, and ONE kind of light dot screentone (網点) on the dark school blazers and on shadows where it helps the mood. Per character (model sheets, AR-04/AR-08): Nemu, Suzu, Reika and Tanahashi have solid black hair; the tall boy Takeshi (long fringe hiding his eyes) has NO black at all, only a lighter dot tone on his hair and uniform. Keep faces, skin, shirts and most of the background white. No colour, no grey gradients, no new objects, no text. Grey margins are padding: leave them empty.
+
+
+Panel PN-033（PN-033 ねむが湯のみを配る手）. Place: LO-01 部室. Scene SC-005.
+What the panel shows: PN-033 ねむが湯のみを配る手. Pacing: 台詞なし。静かな手元の1コマ.
+Camera: exactly as in the 3D camera view (湯のみを持つ手・手元).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): 台詞なし（間のコマ）
+People:
+- FG-051 朝比奈ねむ: head at 50% from the left and 16% from the top of the panel. 向き：やや下（湯のみへ）。姿勢：両手で湯のみを持ち、湯気に顔を寄せてすする。表情：目を閉じ、口は湯のみの縁。描写する範囲：手元。
+Continuity for this scene（続く状態）: Evening sun through the south windows (long light patches, can be shown later with tone). Same seats as SC-004. From PN-032 on there are THREE teacups (湯のみ) on the kotatsu, one each for ねむ, すず and たけし; steam rises from them.
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Square 1024x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

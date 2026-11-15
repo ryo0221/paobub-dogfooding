@@ -1,0 +1,19 @@
+Use your image generation tool. Make ONE image: a manga ROUGH (ラフ) for one panel of a Japanese school gag-comedy manga, drawn the way a manga artist roughs a panel before inking.
+Style: loose but clear grey pencil lines on white paper, monochrome only, no colour, no finished rendering. Characters are cute super-deformed, exactly 4 heads tall (4頭身), big heads, small simple hands and feet. Faces must show the direction of the face and the expression; bodies must show the pose with readable joints; hands and contacts must be clear.
+The FIRST attached image fixes the composition: it is a 3D stand-in made of blocks seen through the panel's camera. Keep its camera angle, horizon, perspective, and where each figure and object sits and how big it is in the frame. Redraw the blocky stand-ins as the real characters and a real Japanese high-school room (walls, windows, furniture, floor) — draw the background too, not only the people. Grey margins around the image are padding: leave them empty.
+
+The SECOND attached image is the model sheet (front, side, back) of 小鳥遊すず: keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 権田原たけし: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-018（PN-018 戸口の奥で、たけしが手を少し上げかけてやめる）. Place: LO-01 部室. Scene SC-003.
+What the panel shows: PN-018 戸口の奥で、たけしが手を少し上げかけてやめる. Pacing: 4ページのオチ。「……えっと。先生、ぼくは」の声の小ささを、コマの余白の大きさで受ける.
+Camera: exactly as in the 3D camera view (広角の一部：戸の枠ごしに部屋の中央が入る); 戸口の外から、すずの背中と戸の奥のたけし.
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): たけし「……えっと。先生、ぼくは」
+People:
+- FG-025 権田原たけし: head at 45% from the left and 39% from the top of the panel. 向き：西（戸口の方）。姿勢：右手を肩の高さまで上げかけ、下ろす途中。表情：前髪で目は隠れ、口が小さく開く。描写する範囲：こたつ座り。
+- FG-026 小鳥遊すず: head at 19% from the left and 53% from the top of the panel. 向き：北（廊下側）。姿勢：入部届を見たまま。表情：目は丸く大きめ、口は小さく真一文字。描写する範囲：後ろ姿の腰上。
+Continuity for this scene（続く状態）: Same corridor. 棚橋先生 in a white shirt, loose tie, sandals, an attendance book under his arm. After he stamps it (from PN-014 on), すず's 入部届 has a round red-ink stamp (draw it as a small circle). Door still slightly open; たけし still inside at the kotatsu.
+Art rules: AR-02 4頭身; AR-05 draw props of the clubroom in their fixed places (kotatsu in the middle with cushions on four sides, sink on the west wall, steel shelf on the east wall, notices on the north wall); AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Square 1024x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

@@ -1,0 +1,841 @@
+{
+ "tool": "codex-cli 0.164.0（Codex CLI の画像生成。画像のモデル名は出力に出ない）",
+ "panels": {
+  "PN-001": {
+   "image": "assets/ep01/rough/panels/PN-001.png",
+   "sha256": "45321d4506a15f62b2ba26dd4bfacb9be22babe1943da17e2ed115950576f34b",
+   "raw_sha256": "afaba018c384d81b3724e9b2addaef3c57711801090b907606b5f39b611edd44",
+   "prompt": "assets/ep01/rough/prompts/PN-001.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-001.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 西園寺れいか",
+     "path": "assets/character/reika.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": [
+    {
+     "raw_sha256": "9c059f7b77ec69a161cea639cf1ac26c7b58c453c0778eb54734d592778489fc"
+    }
+   ]
+  },
+  "PN-002": {
+   "image": "assets/ep01/rough/panels/PN-002.png",
+   "sha256": "047410b086b9b7510b0da1dfd7dcd9615ebfa8e0ece8c40e9ef5aa06cba31829",
+   "raw_sha256": "4e448bc6d0e896b7c1d750b7ca66986d8f86651c7e8d015f1d3b9862f4d8f80c",
+   "prompt": "assets/ep01/rough/prompts/PN-002.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-002.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 西園寺れいか",
+     "path": "assets/character/reika.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": [
+    {
+     "raw_sha256": "48b5fa6b4c857d548703e595895b40f4d007fd3412c03e22440b03147d7a2629"
+    }
+   ]
+  },
+  "PN-003": {
+   "image": "assets/ep01/rough/panels/PN-003.png",
+   "sha256": "252eaa726bb9b4c14abec77dcc60c58aca253175207eb6588ba83b85d1c84420",
+   "raw_sha256": "47cd829afef45dc00b3d9b48e277f8c5fa857d7f9ca7ce5729aa7e419b342081",
+   "prompt": "assets/ep01/rough/prompts/PN-003.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-003.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 西園寺れいか",
+     "path": "assets/character/reika.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": [
+    {
+     "raw_sha256": "3d6094665a33544cf1cfc377bb940bf28c31edddbc5c79067be05aac0cf2fe86"
+    }
+   ]
+  },
+  "PN-004": {
+   "image": "assets/ep01/rough/panels/PN-004.png",
+   "sha256": "8712e7784ecaa1403e9f3752e60435922d30a6b780bba2b4128055dc6eca52f3",
+   "raw_sha256": "f786d0f340786600f8a4196f1d0e0598eb2068c6c655516b98483e6f0c8e3523",
+   "prompt": "assets/ep01/rough/prompts/PN-004.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-004.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 西園寺れいか",
+     "path": "assets/character/reika.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": [
+    {
+     "raw_sha256": "e9a5f10f8e5f5a7624529933949c3bbc9afeadd738472e8049ce28218f312cee"
+    }
+   ]
+  },
+  "PN-009": {
+   "image": "assets/ep01/rough/panels/PN-009.png",
+   "sha256": "6304e89aa53de6a15c2c34d3495542da2916435b1734498a29d0934c9f46ed02",
+   "raw_sha256": "c129995ed2943a96c2cb81ca6d13f5a09120e8e970fed13a86c294b76d977d6f",
+   "prompt": "assets/ep01/rough/prompts/PN-009.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-009.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-011": {
+   "image": "assets/ep01/rough/panels/PN-011.png",
+   "sha256": "f29452b5b9a101a475311f65408832f57d13b54d5cb6c4fdc94151ad789634ad",
+   "raw_sha256": "9c2823ae4458a9d8338f517c5396a3d060c4207eb936acf0ff5240289894ae42",
+   "prompt": "assets/ep01/rough/prompts/PN-011.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-011.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-012": {
+   "image": "assets/ep01/rough/panels/PN-012.png",
+   "sha256": "af8714547d6f65b136d96e0e8b5cff820be441f1fcab4208b3572412e93a2074",
+   "raw_sha256": "d9628e19eaf7b060ff86b6a5ceda77973c44af10460684c724d1d9045bf2d87a",
+   "prompt": "assets/ep01/rough/prompts/PN-012.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-012.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-013": {
+   "image": "assets/ep01/rough/panels/PN-013.png",
+   "sha256": "9fd5453a2e0f30a380ff7718e78177f16a3c33e58ef4b9fe6b7cee3b24d713e4",
+   "raw_sha256": "b63ac1cc5ffba679e9571a4fca4028455e764674ae1b9b0ba771d106db027e07",
+   "prompt": "assets/ep01/rough/prompts/PN-013.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-013.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-014": {
+   "image": "assets/ep01/rough/panels/PN-014.png",
+   "sha256": "4326e9f573ed0624b6ffe6b855a2737be7072b009a152e914896ea337badce6a",
+   "raw_sha256": "e0ad37d8ee46223c02efab9f4559d7460d7fb4ba7861167e9aa8edef505741f9",
+   "prompt": "assets/ep01/rough/prompts/PN-014.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-014.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 棚橋先生",
+     "path": "assets/character/tanahashi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-015": {
+   "image": "assets/ep01/rough/panels/PN-015.png",
+   "sha256": "51821212560c13b467f0d505eea79adbee2b842227ce674530e91d999e65f761",
+   "raw_sha256": "cb44291b6f3a6d61209c174740228f01228a6805739c45ef87c88a20036f3524",
+   "prompt": "assets/ep01/rough/prompts/PN-015.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-015.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 棚橋先生",
+     "path": "assets/character/tanahashi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-016": {
+   "image": "assets/ep01/rough/panels/PN-016.png",
+   "sha256": "f834b8fa3138bed3164f280647296a620dd332c8cddada4486254d35ea70c2a2",
+   "raw_sha256": "e2ef3d926694c3dde4845ef90b2dafa1a319736ab1b2c285ac1c87c4478c4241",
+   "prompt": "assets/ep01/rough/prompts/PN-016.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-016.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 棚橋先生",
+     "path": "assets/character/tanahashi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-017": {
+   "image": "assets/ep01/rough/panels/PN-017.png",
+   "sha256": "3bf4c65cae70107f762dbdf24334192588240c6d141ca88390c410d5dc02f320",
+   "raw_sha256": "5f4e5cec841cdcf1802bf869b928bdfcda56f5da75709981a631b88397d13334",
+   "prompt": "assets/ep01/rough/prompts/PN-017.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-017.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-018": {
+   "image": "assets/ep01/rough/panels/PN-018.png",
+   "sha256": "e1a10228005934bcf54913e02c6a5751ec2be90b3ad43d76b86c410bf2b98c86",
+   "raw_sha256": "35a9c323092795fbeb7a3dd36bf5125c0743033fba28db13354f31b42036b627",
+   "prompt": "assets/ep01/rough/prompts/PN-018.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-018.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-019": {
+   "image": "assets/ep01/rough/panels/PN-019.png",
+   "sha256": "a00ec5b5a551226b7762670da13490f73243a8ad81f7649867f795fa939aca49",
+   "raw_sha256": "2a7ebedd05ecb4a9883e75e325ec7cf56d9adcfc391bb65e1f7bd532acc1ee32",
+   "prompt": "assets/ep01/rough/prompts/PN-019.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-019.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-020": {
+   "image": "assets/ep01/rough/panels/PN-020.png",
+   "sha256": "f85dbc20fa67ec1241dc9d7de137e6f0397f201de904c4675b62f4b0dc8de488",
+   "raw_sha256": "1160d8f4c6dc594e5243cc698b92a10736036e1658141a1720a137138a80d90a",
+   "prompt": "assets/ep01/rough/prompts/PN-020.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-020.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-021": {
+   "image": "assets/ep01/rough/panels/PN-021.png",
+   "sha256": "c88b1ded0cb9b770abecf1174a8e3814022ad07abe5fbe933628863160034127",
+   "raw_sha256": "e607553b6c1e8118ebab26eccd979e57ef7bc0210f4ce051a380b3e7ffdb2327",
+   "prompt": "assets/ep01/rough/prompts/PN-021.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-021.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-022": {
+   "image": "assets/ep01/rough/panels/PN-022.png",
+   "sha256": "8027fa9307c4d34d00fc3c8a54c9697cfff797c1745788fc7e0eb46e08644a6f",
+   "raw_sha256": "cc8d40e9021b31783da0a8115c5925ed36919e44249334e3ae4590037ace8505",
+   "prompt": "assets/ep01/rough/prompts/PN-022.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-022.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-023": {
+   "image": "assets/ep01/rough/panels/PN-023.png",
+   "sha256": "ba0c3881ce09bbb8f00552f59aa1e84731a15e62d7c651c8f80c5dacee8109a5",
+   "raw_sha256": "f557e0bb5783f0148452884eab9530f41093ac1280d647ab31dc917d11889d17",
+   "prompt": "assets/ep01/rough/prompts/PN-023.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-023.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-024": {
+   "image": "assets/ep01/rough/panels/PN-024.png",
+   "sha256": "3ed009ee2440de11ff4a1012a2f5462948ea99a16e068fd8758a7aaa72c3498b",
+   "raw_sha256": "f5637044eae023b41817cdd5981584407ab706e2e4048cc73508c53d1ea41b1b",
+   "prompt": "assets/ep01/rough/prompts/PN-024.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-024.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-025": {
+   "image": "assets/ep01/rough/panels/PN-025.png",
+   "sha256": "23e50fffc448679b2f7499b8f0ed606c7db80afe69459ac275cd005bf1a15df0",
+   "raw_sha256": "3d0804133d47a699a3278f5566a4ae2b0fafe11938ddc5b3e3454df30538df1d",
+   "prompt": "assets/ep01/rough/prompts/PN-025.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-025.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-026": {
+   "image": "assets/ep01/rough/panels/PN-026.png",
+   "sha256": "ff3b2824d14e29136dd736c95e018c58dde46af5054049e573bfeb26dc41416e",
+   "raw_sha256": "b7e81856e9f6a85a5d7ff8cd2598188ab1866167484649ecef23b5f4fd742e0e",
+   "prompt": "assets/ep01/rough/prompts/PN-026.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-026.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-027": {
+   "image": "assets/ep01/rough/panels/PN-027.png",
+   "sha256": "c149b10e7dfd201ac4727c4c800c92eb1deeaa7ade0d0a4bf828ce1c183c6c0c",
+   "raw_sha256": "6f585d800ac3c220f182d3f4455787ca5856e876bf86341ba51fff242e2b7477",
+   "prompt": "assets/ep01/rough/prompts/PN-027.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-027.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-028": {
+   "image": "assets/ep01/rough/panels/PN-028.png",
+   "sha256": "62643397339eb79e198303e338909401ee180e8cde1252820304f9454b30fc0a",
+   "raw_sha256": "c4b5cc0a1161c30f977fe2e974d902a6097f0e5706279ee93be163be552421eb",
+   "prompt": "assets/ep01/rough/prompts/PN-028.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-028.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-029": {
+   "image": "assets/ep01/rough/panels/PN-029.png",
+   "sha256": "64f947d797c7b9f2947769733b344a6a2177c88af60848cb3494239b0f4f4b14",
+   "raw_sha256": "cae7d6ea8ce6a7fc22d5d6ab89baef6d25650ee906d4b0aa91632410b34f90f6",
+   "prompt": "assets/ep01/rough/prompts/PN-029.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-029.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-030": {
+   "image": "assets/ep01/rough/panels/PN-030.png",
+   "sha256": "4db759f78a95a5bf0d56ef929d3361125c8c1a6e0eb43b1f390e9595a7fb42f2",
+   "raw_sha256": "d7efaf383f1327acd1c276495b8f0f09e137ff55a6581e30fa30f100db4896fd",
+   "prompt": "assets/ep01/rough/prompts/PN-030.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-030.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-031": {
+   "image": "assets/ep01/rough/panels/PN-031.png",
+   "sha256": "d8a1ff107ac478a3717a868a228ab3e6332a73f76b9f2205b2da6deba04b8c79",
+   "raw_sha256": "09e4a14219f12845d7f24f2ee8109d34365b769881a305e97726ede9b7411de2",
+   "prompt": "assets/ep01/rough/prompts/PN-031.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-031.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-032": {
+   "image": "assets/ep01/rough/panels/PN-032.png",
+   "sha256": "96dbf53321a4d10bbf166769e3f32cf7aaa5af08d49953db093c89d52720e1d2",
+   "raw_sha256": "25c050381631d3ebe2ad9770592ab24875043db6c9f189d67faef97447b89c86",
+   "prompt": "assets/ep01/rough/prompts/PN-032.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-032.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-033": {
+   "image": "assets/ep01/rough/panels/PN-033.png",
+   "sha256": "0fa23bae483c4008064551a078d12e20553e8d9dd72716b05a8575653267224e",
+   "raw_sha256": "3c421c481f14436fdead98fb24e5e8a8ee8c56409a60747f3747352ed102efec",
+   "prompt": "assets/ep01/rough/prompts/PN-033.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-033.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-034": {
+   "image": "assets/ep01/rough/panels/PN-034.png",
+   "sha256": "9c3960d8813094c9786e87ce71a46e6398332617cfacf49707ee1b52f57c331b",
+   "raw_sha256": "5507c9a3029c96271405f3aa88bc755d4ebac8cdac28933509bff7bfb39acbdd",
+   "prompt": "assets/ep01/rough/prompts/PN-034.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-034.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-035": {
+   "image": "assets/ep01/rough/panels/PN-035.png",
+   "sha256": "11c3200e1e0780e4386b65ef7f1fcb6a4c89f86000fe52ae2aa6f8e8e0149f2e",
+   "raw_sha256": "5b54f9ba683e8da535dcdfd181cf4d846fce59c8e947a27ca9929deddff19908",
+   "prompt": "assets/ep01/rough/prompts/PN-035.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-035.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-036": {
+   "image": "assets/ep01/rough/panels/PN-036.png",
+   "sha256": "23c5a731be7f7f1d59fa491728dcf864c879d808b14a05a7a173747e1da82fba",
+   "raw_sha256": "7d980a7f4748e15553821e256b29642f95de59cf5804d1fae41e5a29ce5bfd6e",
+   "prompt": "assets/ep01/rough/prompts/PN-036.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-036.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 権田原たけし",
+     "path": "assets/character/takeshi.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-005": {
+   "image": "assets/ep01/rough/panels/PN-005.png",
+   "sha256": "024b52d66145bdf5d6a502395ea906e6d4f7dfb899d7767eaa80c5e462fa518d",
+   "raw_sha256": "18a0525b6dbf568a13ab4fa078f60ed502bef7e50c1eb39cb66d5b4e6fb7c6d8",
+   "prompt": "assets/ep01/rough/prompts/PN-005.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-005.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 西園寺れいか",
+     "path": "assets/character/reika.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-006": {
+   "image": "assets/ep01/rough/panels/PN-006.png",
+   "sha256": "402a232a4a2bbcd37ef1875bca01f8cca5c18866e8ae085c9c32ece1b3d3b1fc",
+   "raw_sha256": "80d3fc27ec767a2d49b6281bbf401ac9ea06073f631a856088695d73c9a332dc",
+   "prompt": "assets/ep01/rough/prompts/PN-006.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-006.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 朝比奈ねむ",
+     "path": "assets/character/nemu.png"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 西園寺れいか",
+     "path": "assets/character/reika.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-007": {
+   "image": "assets/ep01/rough/panels/PN-007.png",
+   "sha256": "02882a646a8fa3071bd6c445c603a462a508cd976c484e691e3fb2a666fe93f3",
+   "raw_sha256": "09de2ab2ddb9643344c13ae749fc7e5b8bb6e59d7a3b69b3ea9080ce878e64a1",
+   "prompt": "assets/ep01/rough/prompts/PN-007.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-007.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 西園寺れいか",
+     "path": "assets/character/reika.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-008": {
+   "image": "assets/ep01/rough/panels/PN-008.png",
+   "sha256": "03789fd2f69cea570dba21aee525c9c63933516b41b53028efc5a1a10433b0dd",
+   "raw_sha256": "cc0072d3b159d5a4fa77ad386d201176bda69910a5715e7da9e196400266fac2",
+   "prompt": "assets/ep01/rough/prompts/PN-008.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-008.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 西園寺れいか",
+     "path": "assets/character/reika.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  },
+  "PN-010": {
+   "image": "assets/ep01/rough/panels/PN-010.png",
+   "sha256": "28803f0672bbe9acc22dda90d3f44f797dc1bea893464ac2b532645743c8617b",
+   "raw_sha256": "ab82be6f94b7438620fb5f17eb4449cc0bc96219d89d32997683363980e89517",
+   "prompt": "assets/ep01/rough/prompts/PN-010.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep01/stage/underlay/PN-010.jpg"
+    },
+    {
+     "what": "the model sheet (front, side, back) of 小鳥遊すず",
+     "path": "assets/character/suzu.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {},
+   "retakes": []
+  }
+ }
+}

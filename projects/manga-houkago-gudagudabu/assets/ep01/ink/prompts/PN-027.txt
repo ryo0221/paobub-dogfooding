@@ -1,0 +1,23 @@
+Use your image generation tool. Make ONE image: the clean INK LINE ART (線画) of one panel of a Japanese school gag-comedy manga.
+Style: professional manga line art on pure white, drawn with THREE pure pen colours so the layers can be separated afterwards (手本：gulliver-manga の三色の線画):
+- PURE BLACK (#000000) for the characters and everything they wear or hold (outlines thicker and slightly rounded, inner lines thinner); solid black only on hair that the model sheet shows as black;
+- PURE BLUE (#0000FF) for the whole background: room, walls, windows, furniture, floor, props not held by a character (thin, clean lines, simpler than the figures, AR-03);
+- PURE RED (#FF0000) only for manga effect marks (speed lines, impact or emotion marks, sweat drops, steam); omit red if the panel needs no effect.
+Never mix the colours on one object; no grey, no screentone, no shading, no other colours (tone comes later). Characters are cute super-deformed, exactly 4 heads tall.
+The FIRST attached image is the approved pencil ROUGH of this panel: trace it — keep exactly its composition, poses, faces and expressions, and where everything sits. The SECOND attached image is the 3D camera view of the same panel: use it for perspective and proportions of the room and furniture. Draw the background (room, windows, furniture) in every panel unless told otherwise. Grey margins are padding: leave them empty.
+
+The SECOND attached image is the 3D camera view of this panel (perspective and proportions only): keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 小鳥遊すず: keep that character design exactly (hair, face, uniform, silhouette).
+The FOURTH attached image is the model sheet (front, side, back) of 朝比奈ねむ: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-027（PN-027 すず「何かが変です」「ツッコミ役になってませんか？」）. Place: LO-01 部室. Scene SC-004.
+What the panel shows: PN-027 すず「何かが変です」「ツッコミ役になってませんか？」. Pacing: 心の声の間。がっくりと肩を落とす.
+Camera: exactly as in the 3D camera view (標準).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): すず「何かが変です。でも、言い返せない」；すず「……わたし、ツッコミ役になってませんか？」
+People:
+- FG-043 小鳥遊すず: head at 50% from the left and 28% from the top of the panel. 向き：正面。姿勢：正座のまま肩を落とし、片手を額に当てる。表情：目は半分閉じ、口は「へ」の字。描写する範囲：こたつ座り。
+Continuity for this scene（続く状態）: Inside the clubroom: kotatsu in the middle with its quilt, a tray and a teapot on top (no cups yet). ねむ sits at the NORTH side, すず kneels (seiza) at the SOUTH side with her 入部届 and bag beside her, たけし sits hugging his knees at the EAST side in front of the steel shelf. Two notices on the north wall: the club application and the 廃部 notice.
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Square 1024x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

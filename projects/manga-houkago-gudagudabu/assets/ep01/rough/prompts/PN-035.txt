@@ -1,0 +1,21 @@
+Use your image generation tool. Make ONE image: a manga ROUGH (ラフ) for one panel of a Japanese school gag-comedy manga, drawn the way a manga artist roughs a panel before inking.
+Style: loose but clear grey pencil lines on white paper, monochrome only, no colour, no finished rendering. Characters are cute super-deformed, exactly 4 heads tall (4頭身), big heads, small simple hands and feet. Faces must show the direction of the face and the expression; bodies must show the pose with readable joints; hands and contacts must be clear.
+The FIRST attached image fixes the composition: it is a 3D stand-in made of blocks seen through the panel's camera. Keep its camera angle, horizon, perspective, and where each figure and object sits and how big it is in the frame. Redraw the blocky stand-ins as the real characters and a real Japanese high-school room (walls, windows, furniture, floor) — draw the background too, not only the people. Grey margins around the image are padding: leave them empty.
+
+The SECOND attached image is the model sheet (front, side, back) of 朝比奈ねむ: keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 小鳥遊すず: keep that character design exactly (hair, face, uniform, silhouette).
+The FOURTH attached image is the model sheet (front, side, back) of 権田原たけし: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-035（PN-035 3人が同時に湯のみを持ち上げる）. Place: LO-01 部室. Scene SC-005.
+What the panel shows: PN-035 3人が同時に湯のみを持ち上げる. Pacing: オチの前の、音のない一拍.
+Camera: exactly as in the 3D camera view (広角：こたつの四辺と奥のスチール棚、南の窓が入る).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): 台詞なし（間のコマ）
+People:
+- FG-053 朝比奈ねむ: head at 35% from the left and 49% from the top of the panel. 向き：やや下（湯のみへ）。姿勢：両手で湯のみを持ち、湯気に顔を寄せてすする。表情：目を閉じ、口は湯のみの縁。描写する範囲：こたつ座り。
+- FG-054 小鳥遊すず: head at 65% from the left and 29% from the top of the panel. 向き：北東。姿勢：両手で湯のみを包み、肩の力が抜けて座る。表情：目は細く、口元がゆるむ。描写する範囲：こたつ座り。
+- FG-055 権田原たけし: head at 40% from the left and 21% from the top of the panel. 向き：西。姿勢：両手で湯のみを持ち、背を丸めてすする。表情：目は前髪の下、口元が少し上がる。描写する範囲：こたつ座り。
+Continuity for this scene（続く状態）: Evening sun through the south windows (long light patches, can be shown later with tone). Same seats as SC-004. From PN-032 on there are THREE teacups (湯のみ) on the kotatsu, one each for ねむ, すず and たけし; steam rises from them.
+Art rules: AR-02 4頭身; AR-05 draw props of the clubroom in their fixed places (kotatsu in the middle with cushions on four sides, sink on the west wall, steel shelf on the east wall, notices on the north wall); AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Landscape 1536x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.
