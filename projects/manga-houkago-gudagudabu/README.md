@@ -89,6 +89,11 @@ python3 tools/pages/build-design.py finish assets/ep01/finish/pages/balloons.jso
 - 自動で置けなかった吹き出しは、`assets/ep01/lettering-notes.json` に `{"DL-040": {"at": [x, y], "why": "..."}}` で位置を決めます。x と y は、コマの幅・高さに対する割合です。
 - できた Design は、Editor Platform の `isDesignWithPaths` で確かめてから PaoBub で開きます。
 
+## メイキング動画を作る
+
+この Project の制作の流れを、約10分の紹介動画（ナレーション・字幕つき）にする道具と手順は、[`tools/video/README.md`](tools/video/README.md) にあります。
+PaoBub の画面を録画し、`assets/` の絵から作った図と合わせて、合成音声のナレーションで書き出します。
+
 ## 経緯
 
 - 2026-11-14：PaoBub の通し試験として、全 13 工程を通しました。
