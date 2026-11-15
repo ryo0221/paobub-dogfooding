@@ -128,7 +128,7 @@
    "part": "train-bridge",
    "body": "BD-014",
    "name": "輪列受けのねじ 1 のすり割り",
-   "g": 1.3272000000000033e-05
+   "g": 0.000013272000000000033
   },
   {
    "part": "train-bridge",
@@ -140,7 +140,7 @@
    "part": "train-bridge",
    "body": "BD-016",
    "name": "輪列受けのねじ 2 のすり割り",
-   "g": 1.3272000000000037e-05
+   "g": 0.000013272000000000037
   },
   {
    "part": "barrel-bridge",
@@ -158,7 +158,7 @@
    "part": "barrel-bridge",
    "body": "BD-019",
    "name": "香箱受けのねじ 1 のすり割り",
-   "g": 1.3272000000000033e-05
+   "g": 0.000013272000000000033
   },
   {
    "part": "barrel-bridge",
@@ -170,7 +170,7 @@
    "part": "barrel-bridge",
    "body": "BD-021",
    "name": "香箱受けのねじ 2 のすり割り",
-   "g": 1.3272000000000037e-05
+   "g": 0.000013272000000000037
   },
   {
    "part": "balance-cock",
@@ -194,7 +194,7 @@
    "part": "balance-cock",
    "body": "BD-025",
    "name": "てんぷ受けのねじのすり割り",
-   "g": 1.3272000000000033e-05
+   "g": 0.000013272000000000033
   },
   {
    "part": "barrel",
@@ -308,7 +308,7 @@
    "part": "fourth",
    "body": "BD-041",
    "name": "秒針のパイプ",
-   "g": 2.7139119376933427e-05
+   "g": 0.000027139119376933427
   },
   {
    "part": "fourth",
@@ -350,13 +350,13 @@
    "part": "pallet",
    "body": "BD-048",
    "name": "入り爪石",
-   "g": 7.522199999999992e-05
+   "g": 0.00007522199999999992
   },
   {
    "part": "pallet",
    "body": "BD-049",
    "name": "出爪石",
-   "g": 7.52219999999999e-05
+   "g": 0.0000752219999999999
   },
   {
    "part": "pallet",
@@ -380,7 +380,7 @@
    "part": "balance",
    "body": "BD-053",
    "name": "振り石",
-   "g": 1.3503821862190334e-05
+   "g": 0.000013503821862190334
   },
   {
    "part": "balance",
@@ -524,7 +524,7 @@
    "part": "case-back",
    "body": "BD-077",
    "name": "裏ぶた",
-   "g": 1.0168514706007437
+   "g": 1.0069554537419356
   },
   {
    "part": "case-back",
@@ -1143,7 +1143,7 @@
      },
      "max": 0.045,
      "unit": "kg",
-     "value": 0.02341186410058621,
+     "value": 0.023401968083727402,
      "status": "pass"
     }
    ]
@@ -1355,7 +1355,7 @@
     ],
     "rays": 736,
     "samples": 736,
-    "triangles": 80974
+    "triangles": 81606
    },
    {
     "id": "SC-02",
@@ -1390,13 +1390,142 @@
     ],
     "rays": 736,
     "samples": 736,
-    "triangles": 80974
+    "triangles": 81606
+   }
+  ]
+ },
+ "thickness": {
+  "format": "editor-platform/cad-design-targets@1",
+  "document": "sk01-watch",
+  "summary": {
+   "pass": 1,
+   "fail": 0,
+   "unknown": 0
+  },
+  "targets": [
+   {
+    "id": "TG-09",
+    "name": "ケースの厚み（ねじの頭を含む）",
+    "requirement": "RQ-05",
+    "measure": {
+     "kind": "extent",
+     "bodyIds": [
+      "c-plate:BD-001",
+      "c-plate:BD-002",
+      "c-plate:BD-003",
+      "c-plate:BD-004",
+      "c-plate:BD-005",
+      "c-plate:BD-006",
+      "c-plate:BD-007",
+      "c-train-bridge:BD-008",
+      "c-train-bridge:BD-009",
+      "c-train-bridge:BD-010",
+      "c-train-bridge:BD-011",
+      "c-train-bridge:BD-012",
+      "c-train-bridge:BD-013",
+      "c-train-bridge:BD-014",
+      "c-train-bridge:BD-015",
+      "c-train-bridge:BD-016",
+      "c-barrel-bridge:BD-017",
+      "c-barrel-bridge:BD-018",
+      "c-barrel-bridge:BD-019",
+      "c-barrel-bridge:BD-020",
+      "c-barrel-bridge:BD-021",
+      "c-balance-cock:BD-022",
+      "c-balance-cock:BD-023",
+      "c-balance-cock:BD-024",
+      "c-balance-cock:BD-025",
+      "c-barrel:BD-026",
+      "c-barrel:BD-027",
+      "c-barrel:BD-028",
+      "c-barrel:BD-029",
+      "c-barrel:BD-092",
+      "c-barrel:BD-093",
+      "c-barrel:BD-094",
+      "c-centre:BD-030",
+      "c-centre:BD-031",
+      "c-centre:BD-032",
+      "c-centre:BD-033",
+      "c-centre:BD-034",
+      "c-centre:BD-035",
+      "c-third:BD-036",
+      "c-third:BD-037",
+      "c-third:BD-038",
+      "c-fourth:BD-039",
+      "c-fourth:BD-040",
+      "c-fourth:BD-041",
+      "c-fourth:BD-042",
+      "c-fourth:BD-043",
+      "c-escape:BD-044",
+      "c-escape:BD-045",
+      "c-escape:BD-046",
+      "c-pallet:BD-047",
+      "c-pallet:BD-048",
+      "c-pallet:BD-049",
+      "c-pallet:BD-050",
+      "c-balance:BD-051",
+      "c-balance:BD-052",
+      "c-balance:BD-053",
+      "c-balance:BD-054",
+      "c-balance:BD-056",
+      "c-balance:BD-057",
+      "c-balance:BD-058",
+      "c-balance:BD-059",
+      "c-balance:BD-060",
+      "c-balance:BD-055",
+      "c-minute:BD-061",
+      "c-minute:BD-062",
+      "c-minute:BD-063",
+      "c-hour:BD-064",
+      "c-hour:BD-065",
+      "c-hour:BD-066",
+      "c-hour:BD-067",
+      "c-case:BD-068",
+      "c-case:BD-069",
+      "c-case:BD-070",
+      "c-case:BD-071",
+      "c-case:BD-072",
+      "c-case:BD-073",
+      "c-case:BD-074",
+      "c-bezel:BD-075",
+      "c-bezel:BD-076",
+      "c-case-back:BD-077",
+      "c-case-back:BD-078",
+      "c-chapter-ring:BD-079",
+      "c-chapter-ring:BD-080",
+      "c-chapter-ring:BD-081",
+      "c-chapter-ring:BD-082",
+      "c-chapter-ring:BD-083",
+      "c-chapter-ring:BD-084",
+      "c-chapter-ring:BD-085",
+      "c-chapter-ring:BD-086",
+      "c-chapter-ring:BD-087",
+      "c-chapter-ring:BD-088",
+      "c-chapter-ring:BD-089",
+      "c-chapter-ring:BD-090",
+      "c-chapter-ring:BD-091",
+      "c-case-screw-1:BD-095",
+      "c-case-screw-2:BD-095",
+      "c-case-screw-3:BD-095",
+      "c-case-screw-4:BD-095",
+      "c-case-screw-5:BD-095",
+      "c-case-screw-6:BD-095",
+      "c-gasket:BD-096",
+      "c-spring-bar-1:BD-097",
+      "c-spring-bar-2:BD-097"
+     ],
+     "axis": "z"
+    },
+    "max": 8,
+    "unit": "mm",
+    "value": 7.899999997615814,
+    "status": "pass"
    }
   ]
  },
  "bom": {
   "totals": {
-   "massKg": 0.023411864100586204,
+   "massKg": 0.023401968083727395,
    "cost": 0,
    "currency": "JPY",
    "bySourcing": {

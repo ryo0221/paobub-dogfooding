@@ -390,7 +390,7 @@
     "kind": "version",
     "artifactId": "cad/detail/case-back.cad.json",
     "versionId": "p4",
-    "contentHash": "9d3170566a5fd793d9f21fbfff0dea3fc849af0d2748e6da57bfd85cafd1fc66"
+    "contentHash": "48c0f49401483807209d95ac2b47c208ccecf7920d131f7cc8d3c1627bb0fd5c"
    },
    "hint": {
     "boundsMm": [
@@ -1809,7 +1809,7 @@
        "literalMm": 8.399999999999999
       },
       {
-       "literalMm": 5
+       "literalMm": 4.85
       }
      ],
      "rotation": [
@@ -1882,7 +1882,7 @@
        "literalMm": 16.8
       },
       {
-       "literalMm": 5
+       "literalMm": 4.85
       }
      ],
      "rotation": [
@@ -1955,7 +1955,7 @@
        "literalMm": 8.399999999999999
       },
       {
-       "literalMm": 5
+       "literalMm": 4.85
       }
      ],
      "rotation": [
@@ -2028,7 +2028,7 @@
        "literalMm": -8.400000000000002
       },
       {
-       "literalMm": 5
+       "literalMm": 4.85
       }
      ],
      "rotation": [
@@ -2101,7 +2101,7 @@
        "literalMm": -16.8
       },
       {
-       "literalMm": 5
+       "literalMm": 4.85
       }
      ],
      "rotation": [
@@ -2174,7 +2174,7 @@
        "literalMm": -8.400000000000007
       },
       {
-       "literalMm": 5
+       "literalMm": 4.85
       }
      ],
      "rotation": [
@@ -2554,7 +2554,7 @@
    "translationMm": [
     14.54922678357857,
     8.399999999999999,
-    5
+    4.85
    ],
    "rotation": [
     0,
@@ -2567,7 +2567,7 @@
    "translationMm": [
     1.0287033112837768e-15,
     16.8,
-    5
+    4.85
    ],
    "rotation": [
     0,
@@ -2580,7 +2580,7 @@
    "translationMm": [
     -14.54922678357857,
     8.399999999999999,
-    5
+    4.85
    ],
    "rotation": [
     0,
@@ -2593,7 +2593,7 @@
    "translationMm": [
     -14.549226783578568,
     -8.400000000000002,
-    5
+    4.85
    ],
    "rotation": [
     0,
@@ -2606,7 +2606,7 @@
    "translationMm": [
     -3.08610993385133e-15,
     -16.8,
-    5
+    4.85
    ],
    "rotation": [
     0,
@@ -2619,7 +2619,7 @@
    "translationMm": [
     14.549226783578565,
     -8.400000000000007,
-    5
+    4.85
    ],
    "rotation": [
     0,

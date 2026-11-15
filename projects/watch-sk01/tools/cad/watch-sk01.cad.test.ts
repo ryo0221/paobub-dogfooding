@@ -211,7 +211,9 @@ const v2 = Object.freeze({
   hairspring: { thickness: 0.03, innerRadius: 0.52, pitch: (1.9 - 0.52) / 7, turns: 7, amplitudeDeg: 300 },
   // The screwed back (PD4): six M0.8×2 watch screws at r 16.8, a face gasket 31.3 × 0.6 in a groove
   // 32.5 across on the back's underside, sealing on the middle's top face.
-  screws: { r: 16.8, anglesDeg: [30, 90, 150, 210, 270, 330], clearance: 0.9, tap: 0.82, spec: { family: 'screw', standard: 'watch', size: 'M0.8', length: 2 } as const },
+  // The heads (1.5 across, 0.55 high) sit 0.15 down in counterbores 1.6 across, so the case stays
+  // under RQ-05's 8 mm (proud heads made it 8.05): 0.08 mm is left over the groove's outer edge (DM-08).
+  screws: { r: 16.8, anglesDeg: [30, 90, 150, 210, 270, 330], clearance: 0.9, tap: 0.82, counterbore: { radius: 0.8, depth: 0.15 }, spec: { family: 'screw', standard: 'watch', size: 'M0.8', length: 2 } as const },
   gasket: { innerDiameter: 31.3, section: 0.6, custom: true, grooveOuter: 32.5 },
   // The strap's spring bars (PD4) in 1.0 holes, 1.15 deep into the lugs, 2 mm from the lugs' ends.
   springBar: { spec: { family: 'spring-bar', length: 16, diameter: 1.8 } as const, y: 19.6, z: 1.2, hole: 1.0, depth: 1.15 },
@@ -289,7 +291,12 @@ function editParts(parts: { key: string; content: CadDocument }[], kernel: Kerne
     const t = (a * Math.PI) / 180;
     return b.cylinder(`Back screw clearance ${i + 1}`, { radius: v2.screws.clearance / 2, height: C.back[1] - C.back[0] + 0.2, origin: [v2.screws.r * Math.cos(t), v2.screws.r * Math.sin(t), C.back[0] - 0.1] });
   });
-  b.boolean(back, holes, 'cut', 'Back screw clearances');
+  const cbore = v2.screws.counterbore;
+  const counterbores = v2.screws.anglesDeg.map((a, i) => {
+    const t = (a * Math.PI) / 180;
+    return b.cylinder(`Back screw counterbore ${i + 1}`, { radius: cbore.radius, height: cbore.depth + 0.1, origin: [v2.screws.r * Math.cos(t), v2.screws.r * Math.sin(t), C.back[1] - cbore.depth] });
+  });
+  b.boolean(back, [...holes, ...counterbores], 'cut', 'Back screw clearances');
   b.cylinder('Back crystal', { radius: C.backCrystal.r, height: C.backCrystal.z[1] - C.backCrystal.z[0], origin: [0, 0, C.backCrystal.z[0]] }, crystalLook);
   const backDoc = b.build().document;
   // PD3: the gasket's squeeze, from the section, the groove's depth and the seat's gap (BG-02's 0.02).
@@ -502,7 +509,7 @@ describe.skipIf(!dist)('watch-sk01 CAD v2', () => {
     for (const [i, a] of v2.screws.anglesDeg.entries()) {
       const t = (a * Math.PI) / 180;
       asm.components.push({ id: `c-case-screw-${i + 1}`, name: `裏ぶたのねじ ${i + 1}`, partId: 'part-case-screw', placement: null, bom: 'include' } as never);
-      asm.joints.push(follower(`j-case-screw-${i + 1}`, `裏ぶたのねじ ${i + 1}`, `c-case-screw-${i + 1}`, [v2.screws.r * Math.cos(t), v2.screws.r * Math.sin(t), C.back[1]]));
+      asm.joints.push(follower(`j-case-screw-${i + 1}`, `裏ぶたのねじ ${i + 1}`, `c-case-screw-${i + 1}`, [v2.screws.r * Math.cos(t), v2.screws.r * Math.sin(t), C.back[1] - v2.screws.counterbore.depth]));
     }
     // The ring (its section from z 0 up to the section) with its top on the groove's floor: drawn
     // free, it reaches into the middle by the squeeze (TS-01), the one contact meant to be there.
@@ -610,6 +617,11 @@ describe.skipIf(!dist)('watch-sk01 CAD v2', () => {
       { id: 'SC-02', name: 'てんぷが風防から見える', requirement: 'RQ-09', measure: { kind: 'visibleFraction', eyes: [[bx, by, -250]], targetIds: balance, clearIds: idsOf('c-bezel', (n) => n === '風防') }, min: 0.4 },
     ] } as CadDocument;
     report.sight = sightCheckReport(sightDoc, measureSightChecks(sightDoc, { meshes: flat }), 'sk01-watch');
+    // RQ-05 on the whole watch in place, screw heads included (the case's parts alone read 7.5).
+    const thicknessDoc = { ...asm, designTargets: [
+      { id: 'TG-09', name: 'ケースの厚み（ねじの頭を含む）', requirement: 'RQ-05', measure: { kind: 'extent', bodyIds: [...new Set(flat.map((f) => f.bodyId))], axis: 'z' }, max: 8.0 },
+    ] } as CadDocument;
+    report.thickness = designTargetReport(thicknessDoc, measureDesignTargets(thicknessDoc, { meshes: flat }), 'sk01-watch');
     phase('sight done');
     report.bom = { totals: (bomFlat as { totals?: unknown }).totals, leftOut: (bomFlat as { leftOut?: unknown }).leftOut };
     writeFileSync(`${out}/cad/check-report.json`, `${JSON.stringify(report, null, 1)}\n`);

@@ -20,7 +20,7 @@ PaoBub の「メカニカル製品の開発」（product-design-engineering 1.0.
 | 詳細の 3D モデル（部品 20 ファイル・形 97。ぜんまい・ひげぜんまい・裏ぶたのねじ・パッキン・ばね棒を含む） | `cad/detail/*.cad.json`、組んだ状態は `cad/detail/sk01-watch.assembly.cad.json` |
 | 部品表・設計FMEA・調達の方針 | `docs/ebom.json`、`docs/dfmea.json`、`docs/sourcing-plan.json` |
 | 解析（輪列・ぜんまい・干渉・質量・噛み合い・寸法・つぶし代・中心距離・見え方） | `docs/analysis-report.md`、生データは `cad/check-report.json` |
-| 設計の目標 TG-01〜08・公差の積み上げ TS-01・02・視界の検査 SC-01・02 | 各部品の `cad/detail/*.cad.json` の中、結果は `cad/check-report.json` |
+| 設計の目標 TG-01〜09・公差の積み上げ TS-01・02・視界の検査 SC-01・02 | 各部品の `cad/detail/*.cad.json` の中、結果は `cad/check-report.json` |
 | 部品表（3D モデルから出したもの。品番・材料・調達の区分。費用は空） | `cad/bom.json` |
 | 外装の確認の画像 | `assets/appearance/*.jpg` |
 | 引用の表と、網羅から除いた項目の理由 | `trace/citations.json` |
@@ -35,11 +35,12 @@ PaoBub の「メカニカル製品の開発」（product-design-engineering 1.0.
 - 防水のパッキン：つぶし代 0.13 mm、RSS 0.09〜0.17 mm で帯 0.09〜0.18 に入る。最悪の組合せ 0.07〜0.19 は外れ、モンテカルロで帯の外 0.12 %（AN-09）。
 - 四番車とがんぎかなの中心距離：3.622〜3.658 mm で帯の中（AN-10）。
 - てんぷの見え方：裏から 81.5 %、表から 41.0 %（40 % 以上）（AN-11）。
-- 質量：23.41 g（ベルトを除く。部品表の合計）。
-- 設計の目標 8 件すべて合格。
+- 厚み：裏ぶたのねじの頭を含めて 7.90 mm（8.0 以下）。頭はざぐりで 0.15 mm 沈めた（AN-06）。
+- 質量：23.40 g（ベルトを除く。部品表の合計）。
+- 設計の目標 9 件すべて合格。
 - 輪列：がんぎ車 12 回転/分 → 四番車 1 回転/分 → 二番車 1 回転/時 → 香箱 1 回転/8 時間。
 
-PaoBub の読み込み（項目の索引と規則の評価、editor-platform は main a1ae9f2e）で、問題 0・規則の違反 0 でした。項目 291、引用 463。
+PaoBub の読み込み（項目の索引と規則の評価、editor-platform は main a1ae9f2e）で、問題 0・規則の違反 0 でした。項目 292、引用 467。
 
 ## この版でまだ無いもの
 
@@ -57,7 +58,7 @@ PaoBub の読み込み（項目の索引と規則の評価、editor-platform は
 
 ## 3D モデルを作り直す
 
-`tools/cad/watch-sk01.cad.test.ts` が、editor-platform の `sk01Watch`・`sk01Layout` から配置と詳細の 3D モデルを書き、第 2 版の直し（香箱のくり抜きとぜんまい、ひげぜんまい、標準品、裏ぶたの溝とねじ、公差、設計の目標）を足して、カーネルで干渉・動きの確かめ・噛み合い・質量・見え方を確かめ、`cad/check-report.json` と `cad/bom.json` を書きます。全部で 30 分ほどかかります（1 分の確かめ 約 10 分、12 時間の確かめ 約 19 分）。
+`tools/cad/watch-sk01.cad.test.ts` が、editor-platform の `sk01Watch`・`sk01Layout` から配置と詳細の 3D モデルを書き、第 2 版の直し（香箱のくり抜きとぜんまい、ひげぜんまい、標準品、裏ぶたの溝とねじ、公差、設計の目標）を足して、カーネルで干渉・動きの確かめ・噛み合い・質量・見え方を確かめ、`cad/check-report.json` と `cad/bom.json` を書きます。全部で 35 分ほどかかります（1 分の確かめ 約 12 分、12 時間の確かめ 約 21 分）。
 
 ```sh
 cd /path/to/editor-platform && npm ci && npm run cad:kernel:fetch

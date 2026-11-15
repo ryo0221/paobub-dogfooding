@@ -2,7 +2,7 @@
   "format": "editor-platform.cad-bom",
   "version": 1,
   "name": "SK-01",
-  "contentHash": "75f2eb96279d8564521a662d21cca708a3eb34d030e16b12a75156660ffe7454",
+  "contentHash": "be8c08b54fd483d1af83ab92fd7326db3ebfc080bd7a6a1bbb9a382d95455dbd",
   "mode": "flat",
   "rows": [
     {
@@ -288,11 +288,11 @@
         "artifactId": "cad/detail/case-back.cad.json",
         "versionId": "p4"
       },
-      "contentHash": "9d3170566a5fd793d9f21fbfff0dea3fc849af0d2748e6da57bfd85cafd1fc66",
+      "contentHash": "48c0f49401483807209d95ac2b47c208ccecf7920d131f7cc8d3c1627bb0fd5c",
       "material": "ステンレス鋼 316L",
       "sourcing": "outsource",
-      "unitMassKg": 0.002027937628993483,
-      "massKg": 0.002027937628993483
+      "unitMassKg": 0.002018041612134675,
+      "massKg": 0.002018041612134675
     },
     {
       "item": "17",
@@ -368,7 +368,7 @@
     }
   ],
   "totals": {
-    "massKg": 0.023411864100586204,
+    "massKg": 0.023401968083727395,
     "cost": 0,
     "currency": "JPY",
     "bySourcing": {

@@ -721,6 +721,354 @@
    }
   },
   {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": 14.54922678357857
+     },
+     {
+      "literalMm": 8.399999999999999
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-1-cylinder",
+   "name": "Back screw counterbore 1"
+  },
+  {
+   "id": "back-screw-counterbore-1-placement",
+   "name": "Back screw counterbore 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-1-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": 1.0287033112837768e-15
+     },
+     {
+      "literalMm": 16.8
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-2-cylinder",
+   "name": "Back screw counterbore 2"
+  },
+  {
+   "id": "back-screw-counterbore-2-placement",
+   "name": "Back screw counterbore 2 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-2-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": -14.54922678357857
+     },
+     {
+      "literalMm": 8.399999999999999
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-3-cylinder",
+   "name": "Back screw counterbore 3"
+  },
+  {
+   "id": "back-screw-counterbore-3-placement",
+   "name": "Back screw counterbore 3 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-3-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": -14.549226783578568
+     },
+     {
+      "literalMm": -8.400000000000002
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-4-cylinder",
+   "name": "Back screw counterbore 4"
+  },
+  {
+   "id": "back-screw-counterbore-4-placement",
+   "name": "Back screw counterbore 4 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-4-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": -3.08610993385133e-15
+     },
+     {
+      "literalMm": -16.8
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-5-cylinder",
+   "name": "Back screw counterbore 5"
+  },
+  {
+   "id": "back-screw-counterbore-5-placement",
+   "name": "Back screw counterbore 5 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-5-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": 14.549226783578565
+     },
+     {
+      "literalMm": -8.400000000000007
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-6-cylinder",
+   "name": "Back screw counterbore 6"
+  },
+  {
+   "id": "back-screw-counterbore-6-placement",
+   "name": "Back screw counterbore 6 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-6-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
    "id": "back-screw-clearances",
    "name": "Back screw clearances",
    "type": "boolean",
@@ -731,7 +1079,13 @@
     "back-screw-clearance-3-placement",
     "back-screw-clearance-4-placement",
     "back-screw-clearance-5-placement",
-    "back-screw-clearance-6-placement"
+    "back-screw-clearance-6-placement",
+    "back-screw-counterbore-1-placement",
+    "back-screw-counterbore-2-placement",
+    "back-screw-counterbore-3-placement",
+    "back-screw-counterbore-4-placement",
+    "back-screw-counterbore-5-placement",
+    "back-screw-counterbore-6-placement"
    ],
    "args": {
     "mode": "cut"
@@ -929,6 +1283,78 @@
    "name": "Back screw clearance 6",
    "kind": "solid",
    "resultFeatureId": "back-screw-clearance-6-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-1",
+   "name": "Back screw counterbore 1",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-1-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-2",
+   "name": "Back screw counterbore 2",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-2-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-3",
+   "name": "Back screw counterbore 3",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-3-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-4",
+   "name": "Back screw counterbore 4",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-4-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-5",
+   "name": "Back screw counterbore 5",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-5-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-6",
+   "name": "Back screw counterbore 6",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-6-placement",
    "appearance": {
     "color": "#9aa4b1",
     "opacity": 1
