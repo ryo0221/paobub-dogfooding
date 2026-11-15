@@ -1,0 +1,1948 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "chapter-ring-ring",
+   "name": "Chapter ring ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "c1": [
+     0,
+     0
+    ],
+    "o0": [
+     14.9,
+     0
+    ],
+    "o1": [
+     12.3,
+     0
+    ]
+   }
+  },
+  {
+   "id": "index-12-outline",
+   "name": "Index 12 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     -0.4999999999999992,
+     12.600000000000001
+    ],
+    "p0_1": [
+     -0.4999999999999991,
+     14.5
+    ],
+    "p0_2": [
+     0.5000000000000009,
+     14.5
+    ],
+    "p0_3": [
+     0.5000000000000008,
+     12.600000000000001
+    ]
+   }
+  },
+  {
+   "id": "index-1-outline",
+   "name": "Index 1 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     6.083493649053893,
+     11.036920087683928
+    ],
+    "p0_1": [
+     7.033493649053892,
+     12.68236835487436
+    ],
+    "p0_2": [
+     7.466506350946111,
+     12.43236835487436
+    ],
+    "p0_3": [
+     6.516506350946112,
+     10.786920087683928
+    ]
+   }
+  },
+  {
+   "id": "index-2-outline",
+   "name": "Index 2 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     10.78692008768393,
+     6.516506350946109
+    ],
+    "p0_1": [
+     12.432368354874361,
+     7.4665063509461085
+    ],
+    "p0_2": [
+     12.682368354874361,
+     7.03349364905389
+    ],
+    "p0_3": [
+     11.03692008768393,
+     6.0834936490538905
+    ]
+   }
+  },
+  {
+   "id": "index-3-outline",
+   "name": "Index 3 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     12.600000000000001,
+     0.25
+    ],
+    "p0_1": [
+     14.5,
+     0.25
+    ],
+    "p0_2": [
+     14.5,
+     -0.25
+    ],
+    "p0_3": [
+     12.600000000000001,
+     -0.25
+    ]
+   }
+  },
+  {
+   "id": "index-4-outline",
+   "name": "Index 4 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     11.03692008768393,
+     -6.0834936490538905
+    ],
+    "p0_1": [
+     12.682368354874361,
+     -7.03349364905389
+    ],
+    "p0_2": [
+     12.432368354874361,
+     -7.4665063509461085
+    ],
+    "p0_3": [
+     10.78692008768393,
+     -6.516506350946109
+    ]
+   }
+  },
+  {
+   "id": "index-5-outline",
+   "name": "Index 5 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     6.516506350946112,
+     -10.786920087683928
+    ],
+    "p0_1": [
+     7.466506350946111,
+     -12.43236835487436
+    ],
+    "p0_2": [
+     7.033493649053892,
+     -12.68236835487436
+    ],
+    "p0_3": [
+     6.083493649053893,
+     -11.036920087683928
+    ]
+   }
+  },
+  {
+   "id": "index-6-outline",
+   "name": "Index 6 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     0.2500000000000008,
+     -12.600000000000001
+    ],
+    "p0_1": [
+     0.2500000000000009,
+     -14.5
+    ],
+    "p0_2": [
+     -0.2499999999999991,
+     -14.5
+    ],
+    "p0_3": [
+     -0.24999999999999922,
+     -12.600000000000001
+    ]
+   }
+  },
+  {
+   "id": "index-7-outline",
+   "name": "Index 7 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     -6.083493649053889,
+     -11.03692008768393
+    ],
+    "p0_1": [
+     -7.033493649053887,
+     -12.682368354874361
+    ],
+    "p0_2": [
+     -7.466506350946106,
+     -12.432368354874361
+    ],
+    "p0_3": [
+     -6.516506350946107,
+     -10.78692008768393
+    ]
+   }
+  },
+  {
+   "id": "index-8-outline",
+   "name": "Index 8 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     -10.78692008768393,
+     -6.516506350946109
+    ],
+    "p0_1": [
+     -12.432368354874361,
+     -7.4665063509461085
+    ],
+    "p0_2": [
+     -12.682368354874361,
+     -7.03349364905389
+    ],
+    "p0_3": [
+     -11.03692008768393,
+     -6.0834936490538905
+    ]
+   }
+  },
+  {
+   "id": "index-9-outline",
+   "name": "Index 9 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     -12.600000000000001,
+     -0.25000000000000155
+    ],
+    "p0_1": [
+     -14.5,
+     -0.2500000000000018
+    ],
+    "p0_2": [
+     -14.5,
+     0.24999999999999822
+    ],
+    "p0_3": [
+     -12.600000000000001,
+     0.24999999999999845
+    ]
+   }
+  },
+  {
+   "id": "index-10-outline",
+   "name": "Index 10 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     -11.036920087683928,
+     6.083493649053893
+    ],
+    "p0_1": [
+     -12.68236835487436,
+     7.033493649053892
+    ],
+    "p0_2": [
+     -12.43236835487436,
+     7.466506350946111
+    ],
+    "p0_3": [
+     -10.786920087683928,
+     6.516506350946112
+    ]
+   }
+  },
+  {
+   "id": "index-11-outline",
+   "name": "Index 11 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.25
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     -6.516506350946115,
+     10.786920087683926
+    ],
+    "p0_1": [
+     -7.466506350946116,
+     12.432368354874358
+    ],
+    "p0_2": [
+     -7.033493649053897,
+     12.682368354874358
+    ],
+    "p0_3": [
+     -6.083493649053897,
+     11.036920087683926
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "chapter-ring-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.2
+    },
+    "direction": 1
+   },
+   "id": "chapter-ring-extrude",
+   "name": "Chapter ring"
+  },
+  {
+   "id": "chapter-ring-placement",
+   "name": "Chapter ring placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "chapter-ring-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-12-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-12-extrude",
+   "name": "Index 12"
+  },
+  {
+   "id": "index-12-placement",
+   "name": "Index 12 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-12-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-1-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-1-extrude",
+   "name": "Index 1"
+  },
+  {
+   "id": "index-1-placement",
+   "name": "Index 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-1-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-2-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-2-extrude",
+   "name": "Index 2"
+  },
+  {
+   "id": "index-2-placement",
+   "name": "Index 2 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-2-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-3-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-3-extrude",
+   "name": "Index 3"
+  },
+  {
+   "id": "index-3-placement",
+   "name": "Index 3 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-3-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-4-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-4-extrude",
+   "name": "Index 4"
+  },
+  {
+   "id": "index-4-placement",
+   "name": "Index 4 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-4-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-5-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-5-extrude",
+   "name": "Index 5"
+  },
+  {
+   "id": "index-5-placement",
+   "name": "Index 5 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-5-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-6-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-6-extrude",
+   "name": "Index 6"
+  },
+  {
+   "id": "index-6-placement",
+   "name": "Index 6 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-6-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-7-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-7-extrude",
+   "name": "Index 7"
+  },
+  {
+   "id": "index-7-placement",
+   "name": "Index 7 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-7-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-8-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-8-extrude",
+   "name": "Index 8"
+  },
+  {
+   "id": "index-8-placement",
+   "name": "Index 8 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-8-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-9-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-9-extrude",
+   "name": "Index 9"
+  },
+  {
+   "id": "index-9-placement",
+   "name": "Index 9 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-9-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-10-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-10-extrude",
+   "name": "Index 10"
+  },
+  {
+   "id": "index-10-placement",
+   "name": "Index 10 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-10-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "index-11-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.05
+    },
+    "direction": -1
+   },
+   "id": "index-11-extrude",
+   "name": "Index 11"
+  },
+  {
+   "id": "index-11-placement",
+   "name": "Index 11 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "index-11-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-079",
+   "name": "見返しリング",
+   "kind": "solid",
+   "resultFeatureId": "chapter-ring-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#f2efe6",
+    "opacity": 1,
+    "metalness": 0.2,
+    "roughness": 0.5
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-080",
+   "name": "インデックス 12",
+   "kind": "solid",
+   "resultFeatureId": "index-12-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-081",
+   "name": "インデックス 1",
+   "kind": "solid",
+   "resultFeatureId": "index-1-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-082",
+   "name": "インデックス 2",
+   "kind": "solid",
+   "resultFeatureId": "index-2-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-083",
+   "name": "インデックス 3",
+   "kind": "solid",
+   "resultFeatureId": "index-3-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-084",
+   "name": "インデックス 4",
+   "kind": "solid",
+   "resultFeatureId": "index-4-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-085",
+   "name": "インデックス 5",
+   "kind": "solid",
+   "resultFeatureId": "index-5-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-086",
+   "name": "インデックス 6",
+   "kind": "solid",
+   "resultFeatureId": "index-6-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-087",
+   "name": "インデックス 7",
+   "kind": "solid",
+   "resultFeatureId": "index-7-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-088",
+   "name": "インデックス 8",
+   "kind": "solid",
+   "resultFeatureId": "index-8-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-089",
+   "name": "インデックス 9",
+   "kind": "solid",
+   "resultFeatureId": "index-9-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-090",
+   "name": "インデックス 10",
+   "kind": "solid",
+   "resultFeatureId": "index-10-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-091",
+   "name": "インデックス 11",
+   "kind": "solid",
+   "resultFeatureId": "index-11-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

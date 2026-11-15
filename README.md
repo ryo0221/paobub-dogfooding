@@ -9,6 +9,8 @@
 | フォルダー | 工程の定義 | 中身 |
 | --- | --- | --- |
 | [projects/manga-houkago-gudagudabu](projects/manga-houkago-gudagudabu/) | 漫画の制作（fiction-manga 1.5.0） | 学園ギャグ漫画「放課後ぐだぐだ部」の第1話（8 ページ・36 コマ）。全 13 工程。3D の舞台・設定画・ラフ・線画・白黒の仕上げまで |
+| [projects/watch-sk01](projects/watch-sk01/) | メカニカル製品の開発（product-design-engineering 1.0.0） | スケルトンの手巻き腕時計 SK-01。進め方〜詳細設計（P0〜P4）。配置と部品ごとの詳細の 3D モデル、干渉と噛み合いの解析 |
+| [projects/car-sho](projects/car-sho/) | メカニカル製品の開発（product-design-engineering 1.0.0） | ミッドシップの 2 人乗り「翔」。進め方〜詳細設計（P0〜P4）。配置の 3D モデルと外形（外板・窓・床）の詳細の 3D モデル |
 
 ## Project を PaoBub で開く
 

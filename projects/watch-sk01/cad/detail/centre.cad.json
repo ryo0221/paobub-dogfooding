@@ -1,0 +1,682 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "minute-hand-outline",
+   "name": "Minute hand outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.55
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "point",
+     "id": "p0_4"
+    },
+    {
+     "type": "point",
+     "id": "p0_5"
+    },
+    {
+     "type": "point",
+     "id": "p0_6"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_4"
+    },
+    {
+     "type": "line",
+     "id": "l0_4",
+     "start": "p0_4",
+     "end": "p0_5"
+    },
+    {
+     "type": "line",
+     "id": "l0_5",
+     "start": "p0_5",
+     "end": "p0_6"
+    },
+    {
+     "type": "line",
+     "id": "l0_6",
+     "start": "p0_6",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     0,
+     11
+    ],
+    "p0_1": [
+     -0.4,
+     8.8
+    ],
+    "p0_2": [
+     -0.24,
+     0
+    ],
+    "p0_3": [
+     -0.32000000000000006,
+     -1.6
+    ],
+    "p0_4": [
+     0.32000000000000006,
+     -1.6
+    ],
+    "p0_5": [
+     0.24,
+     0
+    ],
+    "p0_6": [
+     0.4,
+     8.8
+    ]
+   }
+  },
+  {
+   "id": "minute-hand-boss-ring",
+   "name": "Minute hand boss ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.55
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "o0": [
+     0.36000000000000004,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.12
+    },
+    "height": {
+     "literalMm": 4.95
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.55
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "centre-arbor-cylinder",
+   "name": "Centre arbor"
+  },
+  {
+   "id": "centre-arbor-placement",
+   "name": "Centre arbor placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "centre-arbor-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "minute-hand-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3",
+      "l0_4",
+      "l0_5",
+      "l0_6"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.06000000000000005
+    },
+    "direction": 1
+   },
+   "id": "minute-hand-extrude",
+   "name": "Minute hand"
+  },
+  {
+   "id": "minute-hand-placement",
+   "name": "Minute hand placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "minute-hand-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "minute-hand-boss-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.06000000000000005
+    },
+    "direction": 1
+   },
+   "id": "minute-hand-boss-extrude",
+   "name": "Minute hand boss"
+  },
+  {
+   "id": "minute-hand-boss-placement",
+   "name": "Minute hand boss placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "minute-hand-boss-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.15
+    },
+    "teeth": {
+     "literal": 10
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 80
+    },
+    "toothThickness": 0.4,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.6
+    },
+    "bore": {
+     "literalMm": 0
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.9
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "centre-pinion-spurgear",
+   "name": "Centre pinion"
+  },
+  {
+   "id": "centre-pinion-placement",
+   "name": "Centre pinion placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "centre-pinion-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.1
+    },
+    "teeth": {
+     "literal": 64
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 10
+    },
+    "toothThickness": 0.5,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.19999999999999996
+    },
+    "bore": {
+     "literalMm": 0
+    },
+    "spokes": {
+     "count": {
+      "literal": 5
+     },
+     "rim": {
+      "literalMm": 0.35000000000000003
+     },
+     "hub": {
+      "literalMm": 0.4
+     },
+     "width": {
+      "literalMm": 0.25
+     }
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 1.7
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "centre-wheel-spurgear",
+   "name": "Centre wheel"
+  },
+  {
+   "id": "centre-wheel-placement",
+   "name": "Centre wheel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "centre-wheel-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.1
+    },
+    "teeth": {
+     "literal": 12
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 36
+    },
+    "toothThickness": 0.4,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.39999999999999997
+    },
+    "bore": {
+     "literalMm": 0
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.7
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "cannon-pinion-spurgear",
+   "name": "Cannon pinion"
+  },
+  {
+   "id": "cannon-pinion-placement",
+   "name": "Cannon pinion placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "cannon-pinion-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-030",
+   "name": "二番真",
+   "kind": "solid",
+   "resultFeatureId": "centre-arbor-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-031",
+   "name": "分針",
+   "kind": "solid",
+   "resultFeatureId": "minute-hand-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-032",
+   "name": "分針のパイプ",
+   "kind": "solid",
+   "resultFeatureId": "minute-hand-boss-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-033",
+   "name": "二番かな",
+   "kind": "solid",
+   "resultFeatureId": "centre-pinion-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-034",
+   "name": "二番車",
+   "kind": "solid",
+   "resultFeatureId": "centre-wheel-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-035",
+   "name": "筒かな",
+   "kind": "solid",
+   "resultFeatureId": "cannon-pinion-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

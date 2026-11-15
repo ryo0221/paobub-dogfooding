@@ -1,0 +1,1150 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "barrel-bridge-outline",
+   "name": "Barrel bridge outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 3.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0_0"
+    },
+    {
+     "type": "point",
+     "id": "s0_0"
+    },
+    {
+     "type": "point",
+     "id": "e0_0"
+    },
+    {
+     "type": "point",
+     "id": "c0_1"
+    },
+    {
+     "type": "point",
+     "id": "s0_1"
+    },
+    {
+     "type": "point",
+     "id": "e0_1"
+    },
+    {
+     "type": "point",
+     "id": "c0_2"
+    },
+    {
+     "type": "point",
+     "id": "s0_2"
+    },
+    {
+     "type": "point",
+     "id": "e0_2"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "point",
+     "id": "c2"
+    },
+    {
+     "type": "point",
+     "id": "c3"
+    },
+    {
+     "type": "point",
+     "id": "c4"
+    },
+    {
+     "type": "point",
+     "id": "c5"
+    },
+    {
+     "type": "point",
+     "id": "c6"
+    },
+    {
+     "type": "point",
+     "id": "c7"
+    },
+    {
+     "type": "point",
+     "id": "c8"
+    },
+    {
+     "type": "point",
+     "id": "c9"
+    },
+    {
+     "type": "point",
+     "id": "c10"
+    },
+    {
+     "type": "point",
+     "id": "c11"
+    },
+    {
+     "type": "arc",
+     "id": "a0_0",
+     "center": "c0_0",
+     "start": "s0_0",
+     "end": "e0_0",
+     "clockwise": false
+    },
+    {
+     "type": "line",
+     "id": "b0_0",
+     "start": "e0_0",
+     "end": "s0_1"
+    },
+    {
+     "type": "arc",
+     "id": "a0_1",
+     "center": "c0_1",
+     "start": "s0_1",
+     "end": "e0_1",
+     "clockwise": false
+    },
+    {
+     "type": "line",
+     "id": "b0_1",
+     "start": "e0_1",
+     "end": "s0_2"
+    },
+    {
+     "type": "arc",
+     "id": "a0_2",
+     "center": "c0_2",
+     "start": "s0_2",
+     "end": "e0_2",
+     "clockwise": false
+    },
+    {
+     "type": "line",
+     "id": "b0_2",
+     "start": "e0_2",
+     "end": "s0_0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o2",
+     "center": "c2"
+    },
+    {
+     "type": "circle",
+     "id": "o3",
+     "center": "c3"
+    },
+    {
+     "type": "circle",
+     "id": "o4",
+     "center": "c4"
+    },
+    {
+     "type": "circle",
+     "id": "o5",
+     "center": "c5"
+    },
+    {
+     "type": "circle",
+     "id": "o6",
+     "center": "c6"
+    },
+    {
+     "type": "circle",
+     "id": "o7",
+     "center": "c7"
+    },
+    {
+     "type": "circle",
+     "id": "o8",
+     "center": "c8"
+    },
+    {
+     "type": "circle",
+     "id": "o9",
+     "center": "c9"
+    },
+    {
+     "type": "circle",
+     "id": "o10",
+     "center": "c10"
+    },
+    {
+     "type": "circle",
+     "id": "o11",
+     "center": "c11"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0_0": [
+     -4.527532275595525,
+     7.418906922787004
+    ],
+    "s0_0": [
+     -4.928448692234753,
+     12.001402534009033
+    ],
+    "e0_0": [
+     -5.326313892863404,
+     2.888791258930847
+    ],
+    "c0_1": [
+     -0.5883012635466931,
+     6.724314212119283
+    ],
+    "s0_1": [
+     -1.3870828808145725,
+     2.1941985482631257
+    ],
+    "e0_1": [
+     0.9849913957513825,
+     2.401728156504104
+    ],
+    "c0_2": [
+     3.1704692195969404,
+     8.092394785421957
+    ],
+    "s0_2": [
+     4.743761878895016,
+     3.769808729806779
+    ],
+    "e0_2": [
+     2.769552802957713,
+     12.674890396643987
+    ],
+    "c1": [
+     -3.128,
+     4.874
+    ],
+    "c2": [
+     -2.878,
+     9.874
+    ],
+    "c3": [
+     2.122,
+     5.374
+    ],
+    "c4": [
+     1.122,
+     10.124
+    ],
+    "c5": [
+     -7.128,
+     7.374
+    ],
+    "c6": [
+     5.622,
+     8.874
+    ],
+    "c7": [
+     5.372,
+     5.874
+    ],
+    "c8": [
+     -6.128,
+     10.124
+    ],
+    "c9": [
+     -0.378,
+     3.624
+    ],
+    "c10": [
+     -6.378,
+     4.624
+    ],
+    "c11": [
+     3.872,
+     11.374
+    ],
+    "o1": [
+     1.8,
+     0
+    ],
+    "o2": [
+     1.8,
+     0
+    ],
+    "o3": [
+     1.8,
+     0
+    ],
+    "o4": [
+     1.758,
+     0
+    ],
+    "o5": [
+     1.527,
+     0
+    ],
+    "o6": [
+     1.523,
+     0
+    ],
+    "o7": [
+     1.01,
+     0
+    ],
+    "o8": [
+     0.949,
+     0
+    ],
+    "o9": [
+     0.771,
+     0
+    ],
+    "o10": [
+     0.767,
+     0
+    ],
+    "o11": [
+     0.766,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "barrel-bridge-outline",
+    "region": {
+     "outer": [
+      "a0_0",
+      "b0_0",
+      "a0_1",
+      "b0_1",
+      "a0_2",
+      "b0_2"
+     ],
+     "holes": [
+      [
+       "o1"
+      ],
+      [
+       "o2"
+      ],
+      [
+       "o3"
+      ],
+      [
+       "o4"
+      ],
+      [
+       "o5"
+      ],
+      [
+       "o6"
+      ],
+      [
+       "o7"
+      ],
+      [
+       "o8"
+      ],
+      [
+       "o9"
+      ],
+      [
+       "o10"
+      ],
+      [
+       "o11"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.6000000000000001
+    },
+    "direction": 1
+   },
+   "id": "barrel-bridge-extrude",
+   "name": "Barrel bridge"
+  },
+  {
+   "id": "barrel-bridge-placement",
+   "name": "Barrel bridge placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-bridge-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "barrel-bridge-chamfer",
+   "name": "Anglage",
+   "type": "chamfer",
+   "inputFeatureIds": [
+    "barrel-bridge-placement"
+   ],
+   "args": {
+    "edges": [
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:a0_0"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -9.12315409487207,
+        7.6195561046675495,
+        4
+       ],
+       "size": 13.24704902263696
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:b0_0"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -3.3566983868389886,
+        2.5414949035969863,
+        4
+       ],
+       "size": 3.999999999999999
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:a0_1"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -0.1873848469074657,
+        2.1418186008972535,
+        4
+       ],
+       "size": 2.4085543677521737
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:b0_1"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        2.8643766373231996,
+        3.0857684431554415,
+        4
+       ],
+       "size": 4
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:a0_2"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        7.661430852348634,
+        9.08801700953723,
+        4
+       ],
+       "size": 13.247049022636961
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:b0_2"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -1.07944794463852,
+        12.33814646532651,
+        4
+       ],
+       "size": 7.727406610312546
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o1"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -3.128,
+        4.874,
+        4
+       ],
+       "size": 11.309733552923255
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o2"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -2.878,
+        9.874,
+        4
+       ],
+       "size": 11.309733552923255
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o3"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        2.122,
+        5.374,
+        4
+       ],
+       "size": 11.309733552923255
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o4"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        1.122,
+        10.124,
+        4
+       ],
+       "size": 11.045839770021713
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o5"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -7.128,
+        7.374,
+        4
+       ],
+       "size": 9.594423964063228
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o6"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        5.622,
+        8.874,
+        4
+       ],
+       "size": 9.56929122283451
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o7"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        5.372,
+        5.874,
+        4
+       ],
+       "size": 6.346017160251382
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o8"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -6.128,
+        10.124,
+        4
+       ],
+       "size": 5.962742856513427
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o9"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -0.378,
+        3.624,
+        4
+       ],
+       "size": 4.844335871835461
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o10"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -6.378,
+        4.624,
+        4
+       ],
+       "size": 4.819203130606743
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "barrel-bridge-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o11"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        3.872,
+        11.374,
+        4
+       ],
+       "size": 4.812919945299563
+      }
+     }
+    ],
+    "distance": {
+     "literalMm": 0.06
+    }
+   }
+  },
+  {
+   "id": "barrel-bridge-chamfer-placement",
+   "name": "Barrel bridge placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-bridge-chamfer"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.38
+    },
+    "height": {
+     "literalMm": 0.22
+    },
+    "origin": [
+     {
+      "literalMm": 3.1704692195969404
+     },
+     {
+      "literalMm": 8.092394785421957
+     },
+     {
+      "literalMm": 4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-bridge-screw-1-cylinder",
+   "name": "Barrel bridge screw 1"
+  },
+  {
+   "id": "barrel-bridge-screw-1-placement",
+   "name": "Barrel bridge screw 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-bridge-screw-1-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 0.7
+     },
+     {
+      "literalMm": 0.08
+     },
+     {
+      "literalMm": 0.03
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": 2.8204692195969403
+     },
+     {
+      "literalMm": 8.052394785421958
+     },
+     {
+      "literalMm": 4.22
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-bridge-screw-1-slot-box",
+   "name": "Barrel bridge screw 1 slot"
+  },
+  {
+   "id": "barrel-bridge-screw-1-slot-placement",
+   "name": "Barrel bridge screw 1 slot placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-bridge-screw-1-slot-box"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.38
+    },
+    "height": {
+     "literalMm": 0.22
+    },
+    "origin": [
+     {
+      "literalMm": -4.527532275595525
+     },
+     {
+      "literalMm": 7.418906922787004
+     },
+     {
+      "literalMm": 4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-bridge-screw-2-cylinder",
+   "name": "Barrel bridge screw 2"
+  },
+  {
+   "id": "barrel-bridge-screw-2-placement",
+   "name": "Barrel bridge screw 2 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-bridge-screw-2-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 0.7
+     },
+     {
+      "literalMm": 0.08
+     },
+     {
+      "literalMm": 0.03
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": -4.877532275595525
+     },
+     {
+      "literalMm": 7.378906922787004
+     },
+     {
+      "literalMm": 4.22
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-bridge-screw-2-slot-box",
+   "name": "Barrel bridge screw 2 slot"
+  },
+  {
+   "id": "barrel-bridge-screw-2-slot-placement",
+   "name": "Barrel bridge screw 2 slot placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-bridge-screw-2-slot-box"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-017",
+   "name": "香箱受け",
+   "kind": "solid",
+   "resultFeatureId": "barrel-bridge-chamfer-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#a9adb4",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.4
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-018",
+   "name": "香箱受けのねじ 1",
+   "kind": "solid",
+   "resultFeatureId": "barrel-bridge-screw-1-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-019",
+   "name": "香箱受けのねじ 1 のすり割り",
+   "kind": "solid",
+   "resultFeatureId": "barrel-bridge-screw-1-slot-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#10142e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.5
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-020",
+   "name": "香箱受けのねじ 2",
+   "kind": "solid",
+   "resultFeatureId": "barrel-bridge-screw-2-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-021",
+   "name": "香箱受けのねじ 2 のすり割り",
+   "kind": "solid",
+   "resultFeatureId": "barrel-bridge-screw-2-slot-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#10142e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.5
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

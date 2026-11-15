@@ -1,0 +1,405 @@
+{
+ "format": 1,
+ "name": "SK-01 スケルトン手巻き腕時計",
+ "definition": {
+  "id": "product-design-engineering",
+  "version": "1.0.0"
+ },
+ "citations": "trace/citations.json",
+ "deliverables": {
+  "process-map": [
+   {
+    "path": "docs/process-map.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "gate",
+      "match": "^### (GT-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "product-plan": [
+   {
+    "path": "docs/product-plan.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "use-case",
+      "match": "^### (UC-\\d+)\\b"
+     },
+     {
+      "kind": "benchmark",
+      "match": "^### (BM-\\d+)\\b"
+     },
+     {
+      "kind": "regulation",
+      "match": "^### (RG-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "requirement-list": [
+   {
+    "path": "docs/requirement-list.json",
+    "as": "json",
+    "kind": "requirement",
+    "at": "rows"
+   }
+  ],
+  "concept-study": [
+   {
+    "path": "docs/concept-study.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "concept",
+      "match": "^### (CN-\\d+)\\b"
+     },
+     {
+      "kind": "design-theme",
+      "match": "^### (DT-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "hard-points": [
+   {
+    "path": "docs/hard-points.json",
+    "as": "json",
+    "kind": "hard-point",
+    "at": "rows"
+   }
+  ],
+  "risk-register": [
+   {
+    "path": "docs/risk-register.json",
+    "as": "json",
+    "kind": "risk",
+    "at": "rows"
+   }
+  ],
+  "architecture": [
+   {
+    "path": "docs/architecture.json",
+    "as": "json",
+    "kind": "subsystem",
+    "at": "subsystem",
+    "layout": [
+     "at",
+     "frame"
+    ]
+   },
+   {
+    "path": "docs/architecture.json",
+    "as": "json",
+    "kind": "interface",
+    "at": "interface",
+    "layout": [
+     "at",
+     "frame"
+    ]
+   }
+  ],
+  "layout-model": [
+   {
+    "path": "cad/layout-model.cad.json",
+    "as": "cad",
+    "parameterKind": "parameter",
+    "bodyKind": "envelope"
+   }
+  ],
+  "budget": [
+   {
+    "path": "docs/budget.json",
+    "as": "json",
+    "kind": "budget",
+    "at": "rows"
+   }
+  ],
+  "ebom": [
+   {
+    "path": "docs/ebom.json",
+    "as": "json",
+    "kind": "part",
+    "at": "rows"
+   }
+  ],
+  "dfmea": [
+   {
+    "path": "docs/dfmea.json",
+    "as": "json",
+    "kind": "failure-mode",
+    "at": "rows"
+   }
+  ],
+  "sourcing-plan": [
+   {
+    "path": "docs/sourcing-plan.json",
+    "as": "json",
+    "kind": "sourcing-decision",
+    "at": "rows"
+   }
+  ],
+  "detail-model": [
+   {
+    "path": "cad/detail/balance-cock.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/balance.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/barrel-bridge.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/barrel.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/bezel.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/case-back.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/case.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/centre.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/chapter-ring.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/escape.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/fourth.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/hour.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/minute.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/pallet.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/plate.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/sk01-watch.assembly.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/third.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/train-bridge.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   }
+  ],
+  "drawings": [
+   {
+    "path": "docs/drawings.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "drawing",
+      "match": "^### (DW-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "key-characteristics": [
+   {
+    "path": "docs/key-characteristics.json",
+    "as": "json",
+    "kind": "key-characteristic",
+    "at": "rows"
+   }
+  ],
+  "analysis-report": [
+   {
+    "path": "docs/analysis-report.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "analysis",
+      "match": "^### (AN-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "appearance-review": [
+   {
+    "path": "docs/appearance-review.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "appearance",
+      "match": "^### (AP-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "dfm-review": [
+   {
+    "path": "docs/dfm-review.json",
+    "as": "json",
+    "kind": "dfm-finding",
+    "at": "rows"
+   }
+  ],
+  "dv-plan": [
+   {
+    "path": "docs/dv-plan.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "dv-report": [
+   {
+    "path": "docs/dv-report.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "quote-comparison": [
+   {
+    "path": "docs/quote-comparison.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "part-approval": [
+   {
+    "path": "docs/part-approval.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "process-flow": [
+   {
+    "path": "docs/process-flow.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "control-plan": [
+   {
+    "path": "docs/control-plan.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "pv-report": [
+   {
+    "path": "docs/pv-report.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "launch-record": [
+   {
+    "path": "docs/launch-record.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "learning-record": [
+   {
+    "path": "docs/learning-record.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ]
+ },
+ "phases": {
+  "process": {
+   "state": "進行中"
+  },
+  "planning": {
+   "state": "進行中"
+  },
+  "concept": {
+   "state": "進行中"
+  },
+  "system-design": {
+   "state": "進行中"
+  },
+  "detail-design": {
+   "state": "進行中"
+  },
+  "design-verification": {
+   "state": "未着手"
+  },
+  "sourcing": {
+   "state": "未着手"
+  },
+  "process-design": {
+   "state": "未着手"
+  },
+  "production-validation": {
+   "state": "未着手"
+  },
+  "launch": {
+   "state": "未着手"
+  },
+  "sustain": {
+   "state": "未着手"
+  }
+ }
+}

@@ -1,0 +1,236 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "bezel-ring",
+   "name": "Bezel ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -2.5
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "c1": [
+     0,
+     0
+    ],
+    "o0": [
+     17.6,
+     0
+    ],
+    "o1": [
+     15.25,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "bezel-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 1.58
+    },
+    "direction": 1
+   },
+   "id": "bezel-extrude",
+   "name": "Bezel"
+  },
+  {
+   "id": "bezel-placement",
+   "name": "Bezel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "bezel-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 15.2
+    },
+    "height": {
+     "literalMm": 0.3999999999999999
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -2.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "front-crystal-cylinder",
+   "name": "Front crystal"
+  },
+  {
+   "id": "front-crystal-placement",
+   "name": "Front crystal placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "front-crystal-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-075",
+   "name": "ベゼル",
+   "kind": "solid",
+   "resultFeatureId": "bezel-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d7d9dd",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.18
+   },
+   "mass": {
+    "densityKgM3": 8000
+   }
+  },
+  {
+   "id": "BD-076",
+   "name": "風防",
+   "kind": "solid",
+   "resultFeatureId": "front-crystal-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#f4f8ff",
+    "opacity": 0.18,
+    "metalness": 0,
+    "roughness": 0.02,
+    "transmission": 1,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

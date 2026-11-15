@@ -1,0 +1,293 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [],
+ "features": [
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.12
+    },
+    "height": {
+     "literalMm": 1.15
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.15
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "minute-arbor-cylinder",
+   "name": "Minute arbor"
+  },
+  {
+   "id": "minute-arbor-placement",
+   "name": "Minute arbor placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "minute-arbor-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.1
+    },
+    "teeth": {
+     "literal": 36
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 12
+    },
+    "toothThickness": 0.5,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.19999999999999996
+    },
+    "bore": {
+     "literalMm": 0
+    },
+    "spokes": {
+     "count": {
+      "literal": 4
+     },
+     "rim": {
+      "literalMm": 0.35000000000000003
+     },
+     "hub": {
+      "literalMm": 0.4
+     },
+     "width": {
+      "literalMm": 0.25
+     }
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.7
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "minute-wheel-spurgear",
+   "name": "Minute wheel"
+  },
+  {
+   "id": "minute-wheel-placement",
+   "name": "Minute wheel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "minute-wheel-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.096
+    },
+    "teeth": {
+     "literal": 10
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 40
+    },
+    "toothThickness": 0.4,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.5000000000000001
+    },
+    "bore": {
+     "literalMm": 0
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.1
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "minute-pinion-spurgear",
+   "name": "Minute pinion"
+  },
+  {
+   "id": "minute-pinion-placement",
+   "name": "Minute pinion placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "minute-pinion-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-061",
+   "name": "日の裏車の真",
+   "kind": "solid",
+   "resultFeatureId": "minute-arbor-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-062",
+   "name": "日の裏車",
+   "kind": "solid",
+   "resultFeatureId": "minute-wheel-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-063",
+   "name": "日の裏かな",
+   "kind": "solid",
+   "resultFeatureId": "minute-pinion-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

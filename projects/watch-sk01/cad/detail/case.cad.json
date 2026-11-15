@@ -1,0 +1,624 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "case-middle-ring",
+   "name": "Case middle ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -0.9
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "c1": [
+     0,
+     0
+    ],
+    "o0": [
+     17.6,
+     0
+    ],
+    "o1": [
+     15.25,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "case-middle-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 5.2
+    },
+    "direction": 1
+   },
+   "id": "case-middle-extrude",
+   "name": "Case middle"
+  },
+  {
+   "id": "case-middle-placement",
+   "name": "Case middle placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "case-middle-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 2.8
+     },
+     {
+      "literalMm": 8.2
+     },
+     {
+      "literalMm": 3.2
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": -10.8
+     },
+     {
+      "literalMm": 13.4
+     },
+     {
+      "literalMm": -0.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "lug-1-box",
+   "name": "Lug 1"
+  },
+  {
+   "id": "lug-1-placement",
+   "name": "Lug 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-1-box"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 2.8
+     },
+     {
+      "literalMm": 8.2
+     },
+     {
+      "literalMm": 3.2
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": 8
+     },
+     {
+      "literalMm": 13.4
+     },
+     {
+      "literalMm": -0.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "lug-2-box",
+   "name": "Lug 2"
+  },
+  {
+   "id": "lug-2-placement",
+   "name": "Lug 2 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-2-box"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 2.8
+     },
+     {
+      "literalMm": 8.2
+     },
+     {
+      "literalMm": 3.2
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": -10.8
+     },
+     {
+      "literalMm": -21.6
+     },
+     {
+      "literalMm": -0.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "lug-3-box",
+   "name": "Lug 3"
+  },
+  {
+   "id": "lug-3-placement",
+   "name": "Lug 3 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-3-box"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 2.8
+     },
+     {
+      "literalMm": 8.2
+     },
+     {
+      "literalMm": 3.2
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": 8
+     },
+     {
+      "literalMm": -21.6
+     },
+     {
+      "literalMm": -0.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "lug-4-box",
+   "name": "Lug 4"
+  },
+  {
+   "id": "lug-4-placement",
+   "name": "Lug 4 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-4-box"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.45
+    },
+    "height": {
+     "literalMm": 0.9
+    },
+    "origin": [
+     {
+      "literalMm": 17
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 1.7
+     }
+    ],
+    "orientation": [
+     0,
+     0.7071067811865476,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "id": "crown-stem-cylinder",
+   "name": "Crown stem"
+  },
+  {
+   "id": "crown-stem-placement",
+   "name": "Crown stem placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "crown-stem-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 1.5
+    },
+    "height": {
+     "literalMm": 1.8
+    },
+    "origin": [
+     {
+      "literalMm": 17.7
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 1.7
+     }
+    ],
+    "orientation": [
+     0,
+     0.7071067811865476,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "id": "crown-cylinder",
+   "name": "Crown"
+  },
+  {
+   "id": "crown-placement",
+   "name": "Crown placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "crown-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-068",
+   "name": "胴",
+   "kind": "solid",
+   "resultFeatureId": "case-middle-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d7d9dd",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.18
+   },
+   "mass": {
+    "densityKgM3": 8000
+   }
+  },
+  {
+   "id": "BD-069",
+   "name": "ラグ 1",
+   "kind": "solid",
+   "resultFeatureId": "lug-1-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d7d9dd",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.18
+   },
+   "mass": {
+    "densityKgM3": 8000
+   }
+  },
+  {
+   "id": "BD-070",
+   "name": "ラグ 2",
+   "kind": "solid",
+   "resultFeatureId": "lug-2-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d7d9dd",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.18
+   },
+   "mass": {
+    "densityKgM3": 8000
+   }
+  },
+  {
+   "id": "BD-071",
+   "name": "ラグ 3",
+   "kind": "solid",
+   "resultFeatureId": "lug-3-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d7d9dd",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.18
+   },
+   "mass": {
+    "densityKgM3": 8000
+   }
+  },
+  {
+   "id": "BD-072",
+   "name": "ラグ 4",
+   "kind": "solid",
+   "resultFeatureId": "lug-4-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d7d9dd",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.18
+   },
+   "mass": {
+    "densityKgM3": 8000
+   }
+  },
+  {
+   "id": "BD-073",
+   "name": "巻真",
+   "kind": "solid",
+   "resultFeatureId": "crown-stem-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-074",
+   "name": "リューズ",
+   "kind": "solid",
+   "resultFeatureId": "crown-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d7d9dd",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.18
+   },
+   "mass": {
+    "densityKgM3": 8000
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}
