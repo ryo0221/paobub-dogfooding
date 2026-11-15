@@ -1,0 +1,462 @@
+{
+  "format": "editor-platform.cad-bom",
+  "version": 1,
+  "name": "「翔」",
+  "contentHash": "80c91384e639eca967160d1f2e58a8d7feeeca96117c8528e8e7df234a3bd0be",
+  "mode": "flat",
+  "rows": [
+    {
+      "item": "1",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "右前輪（タイヤとホイール）",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "2",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "左前輪（タイヤとホイール）",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "3",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "右後輪（タイヤとホイール）",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "4",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "左後輪（タイヤとホイール）",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "5",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "運転者の胴",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "6",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "運転者の頭",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "7",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "運転者の腿",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "8",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "運転者の脛",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "9",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "同乗者の胴",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "10",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "同乗者の頭",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "11",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "同乗者の腿",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "12",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "同乗者の脛",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "13",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "エンジン",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "14",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "変速機",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "15",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "燃料タンク",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "16",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "右ラジエーター",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "17",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "左ラジエーター",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "18",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "前の荷室",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "19",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "窓ガラス（キャノピー）",
+      "description": "",
+      "quantity": 1,
+      "massLeftOut": 1
+    },
+    {
+      "item": "20",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "ボディ外板（右）",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 17.98011813822169,
+      "massKg": 17.98011813822169
+    },
+    {
+      "item": "21",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "キャノピー外板（右）",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 2.9994856324126657,
+      "massKg": 2.9994856324126657
+    },
+    {
+      "item": "22",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "側面吸気ダクト（右）",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 1.6438432000000052,
+      "massKg": 1.6438432000000052
+    },
+    {
+      "item": "23",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "側面吸気ダクト（左）",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 1.6438432000000052,
+      "massKg": 1.6438432000000052
+    },
+    {
+      "item": "24",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "ボディ外板（左）",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 17.98011813822169,
+      "massKg": 17.98011813822169
+    },
+    {
+      "item": "25",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "キャノピー外板（左）",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 2.9994856324126657,
+      "massKg": 2.9994856324126657
+    },
+    {
+      "item": "26",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "ノーズの面",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 0.719899566139586,
+      "massKg": 0.719899566139586
+    },
+    {
+      "item": "27",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "テールの面",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 2.9158836371167904,
+      "massKg": 2.9158836371167904
+    },
+    {
+      "item": "28",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "フラットフロア",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 16.504256248775686,
+      "massKg": 16.504256248775686
+    },
+    {
+      "item": "29",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "ディフューザーのトンネル（右）",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 2.568686263442839,
+      "massKg": 2.568686263442839
+    },
+    {
+      "item": "30",
+      "level": 0,
+      "kind": "body",
+      "partNumber": "",
+      "name": "ディフューザーのトンネル（左）",
+      "description": "",
+      "quantity": 1,
+      "unitMassKg": 2.568686263442838,
+      "massKg": 2.568686263442838
+    }
+  ],
+  "totals": {
+    "massKg": 70.52430592018648,
+    "cost": 0,
+    "bySourcing": {
+      "make": {
+        "quantity": 0,
+        "cost": 0
+      },
+      "outsource": {
+        "quantity": 0,
+        "cost": 0
+      },
+      "buy": {
+        "quantity": 0,
+        "cost": 0
+      },
+      "standard": {
+        "quantity": 0,
+        "cost": 0
+      },
+      "unset": {
+        "quantity": 0,
+        "cost": 0
+      }
+    },
+    "leftOut": [
+      {
+        "item": "1",
+        "name": "右前輪（タイヤとホイール）",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "2",
+        "name": "左前輪（タイヤとホイール）",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "3",
+        "name": "右後輪（タイヤとホイール）",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "4",
+        "name": "左後輪（タイヤとホイール）",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "5",
+        "name": "運転者の胴",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "6",
+        "name": "運転者の頭",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "7",
+        "name": "運転者の腿",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "8",
+        "name": "運転者の脛",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "9",
+        "name": "同乗者の胴",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "10",
+        "name": "同乗者の頭",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "11",
+        "name": "同乗者の腿",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "12",
+        "name": "同乗者の脛",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "13",
+        "name": "エンジン",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "14",
+        "name": "変速機",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "15",
+        "name": "燃料タンク",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "16",
+        "name": "右ラジエーター",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "17",
+        "name": "左ラジエーター",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "18",
+        "name": "前の荷室",
+        "bodyName": "",
+        "code": "mass-missing"
+      },
+      {
+        "item": "19",
+        "name": "窓ガラス（キャノピー）",
+        "bodyName": "",
+        "code": "mass-missing"
+      }
+    ]
+  }
+}

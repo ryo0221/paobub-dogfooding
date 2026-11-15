@@ -282,8 +282,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-014",
+  "description": "三番車",
+  "material": {
+   "name": "真鍮・焼入れ鋼",
+   "densityKgM3": 8500
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],

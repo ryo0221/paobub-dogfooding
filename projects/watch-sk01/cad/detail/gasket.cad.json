@@ -1,0 +1,155 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "o-ring-31-3-0-6-custom-size-section",
+   "name": "O-ring 31.3×0.6 (custom size) section",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "orientation": [
+     0.7071067811865476,
+     0,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c"
+    },
+    {
+     "type": "circle",
+     "id": "o",
+     "center": "c"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c": [
+     15.950000000000001,
+     0.3
+    ],
+    "o": [
+     0.3,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "revolve",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "o-ring-31-3-0-6-custom-size-section",
+    "region": {
+     "outer": [
+      "o"
+     ],
+     "holes": []
+    },
+    "axisOrigin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "axisDirection": [
+     0,
+     1
+    ],
+    "angle": {
+     "literalRad": 6.283185307179586
+    }
+   },
+   "id": "o-ring-31-3-0-6-custom-size-revolve",
+   "name": "O-ring 31.3×0.6 (custom size)"
+  },
+  {
+   "id": "o-ring-31-3-0-6-custom-size-placement",
+   "name": "O-ring 31.3×0.6 (custom size) placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "o-ring-31-3-0-6-custom-size-revolve"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-096",
+   "name": "裏ぶたのパッキン",
+   "kind": "solid",
+   "resultFeatureId": "o-ring-31-3-0-6-custom-size-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#202020",
+    "opacity": 1,
+    "metalness": 0,
+    "roughness": 0.85
+   },
+   "mass": {
+    "densityKgM3": 1000
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "PT-035",
+  "description": "裏ぶたのパッキン（O-ring 31.3×0.6）",
+  "material": {
+   "name": "ニトリルゴム",
+   "densityKgM3": 1000
+  },
+  "sourcing": "standard"
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

@@ -19416,6 +19416,21 @@
    }
   },
   {
+   "id": "skin-intake-duct-right-wall",
+   "name": "側面吸気ダクトの壁（右）",
+   "type": "shell",
+   "inputFeatureIds": [
+    "skin-intake-duct-right"
+   ],
+   "args": {
+    "openFaces": [],
+    "thickness": {
+     "literalMm": 2
+    },
+    "side": "inside"
+   }
+  },
+  {
    "id": "skin-intake-duct-left",
    "name": "Intake duct left",
    "type": "box",
@@ -19449,6 +19464,21 @@
      0,
      1
     ]
+   }
+  },
+  {
+   "id": "skin-intake-duct-left-wall",
+   "name": "側面吸気ダクトの壁（左）",
+   "type": "shell",
+   "inputFeatureIds": [
+    "skin-intake-duct-left"
+   ],
+   "args": {
+    "openFaces": [],
+    "thickness": {
+     "literalMm": 2
+    },
+    "side": "inside"
    }
   },
   {
@@ -19510,7 +19540,7 @@
    "name": "Intake duct right placement",
    "type": "transform",
    "inputFeatureIds": [
-    "skin-intake-duct-right"
+    "skin-intake-duct-right-wall"
    ],
    "args": {
     "translation": [
@@ -19537,7 +19567,7 @@
    "name": "Intake duct left placement",
    "type": "transform",
    "inputFeatureIds": [
-    "skin-intake-duct-left"
+    "skin-intake-duct-left-wall"
    ],
    "args": {
     "translation": [
@@ -20510,6 +20540,9 @@
    "appearance": {
     "color": "#15181c",
     "opacity": 1
+   },
+   "mass": {
+    "densityKgM3": 1550
    }
   },
   {
@@ -20521,6 +20554,9 @@
    "appearance": {
     "color": "#15181c",
     "opacity": 1
+   },
+   "mass": {
+    "densityKgM3": 1550
    }
   },
   {
@@ -20632,8 +20668,9 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "SH-P4",
+  "description": "「翔」の外板・床（炭素繊維の板）と配置の確認用の形",
+  "sourcing": "make"
  },
  "parts": [],
  "components": [],
@@ -20686,5 +20723,129 @@
     "max": 20
    }
   ]
- }
+ },
+ "designTargets": [
+  {
+   "id": "TG-01",
+   "name": "全長",
+   "requirement": "RQ-01",
+   "measure": {
+    "kind": "extent",
+    "bodyIds": [
+     "BD-020",
+     "BD-021",
+     "BD-024",
+     "BD-025",
+     "BD-026",
+     "BD-027"
+    ],
+    "axis": "x"
+   },
+   "max": 4350
+  },
+  {
+   "id": "TG-02",
+   "name": "全幅（車輪を含む）",
+   "requirement": "RQ-02",
+   "measure": {
+    "kind": "extent",
+    "bodyIds": [
+     "BD-020",
+     "BD-021",
+     "BD-024",
+     "BD-025",
+     "BD-026",
+     "BD-027",
+     "BD-001",
+     "BD-002",
+     "BD-003",
+     "BD-004"
+    ],
+    "axis": "y"
+   },
+   "max": 1950
+  },
+  {
+   "id": "TG-03",
+   "name": "全高（地面から）",
+   "requirement": "RQ-03",
+   "measure": {
+    "kind": "extent",
+    "bodyIds": [
+     "BD-020",
+     "BD-021",
+     "BD-024",
+     "BD-025",
+     "BD-026",
+     "BD-027",
+     "BD-019",
+     "BD-001",
+     "BD-002",
+     "BD-003",
+     "BD-004"
+    ],
+    "axis": "z"
+   },
+   "max": 1130
+  },
+  {
+   "id": "TG-04",
+   "name": "ホイールベースと全長の比",
+   "requirement": "RQ-04",
+   "measure": {
+    "kind": "proportion",
+    "metric": "wheelbaseToLength"
+   },
+   "min": 0.58,
+   "max": 0.62
+  },
+  {
+   "id": "TG-05",
+   "name": "運転者の頭上のすき間",
+   "requirement": "RQ-05",
+   "measure": {
+    "kind": "distance",
+    "a": [
+     "BD-006"
+    ],
+    "b": [
+     "BD-021"
+    ]
+   },
+   "min": 50
+  },
+  {
+   "id": "TG-06",
+   "name": "外板と床の質量",
+   "requirement": "RQ-14",
+   "measure": {
+    "kind": "mass",
+    "bodyIds": [
+     "BD-020",
+     "BD-021",
+     "BD-024",
+     "BD-025",
+     "BD-026",
+     "BD-027",
+     "BD-028",
+     "BD-029",
+     "BD-030",
+     "BD-022",
+     "BD-023"
+    ]
+   },
+   "max": 80
+  },
+  {
+   "id": "TG-07",
+   "name": "タイヤとフェンダーのすき間",
+   "requirement": "RQ-15",
+   "measure": {
+    "kind": "proportion",
+    "metric": "wheelToFender"
+   },
+   "min": 0,
+   "max": 20
+  }
+ ]
 }

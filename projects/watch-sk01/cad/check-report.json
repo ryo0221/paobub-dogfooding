@@ -1,4 +1,5 @@
 {
+ "version": 2,
  "kernel": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
  "layout": {
   "contentHash": "0d10a91386235fa1c099090b659e6a75c8b96ebd4551722be28bae1418464548",
@@ -127,7 +128,7 @@
    "part": "train-bridge",
    "body": "BD-014",
    "name": "輪列受けのねじ 1 のすり割り",
-   "g": 0.000013272000000000033
+   "g": 1.3272000000000033e-05
   },
   {
    "part": "train-bridge",
@@ -139,7 +140,7 @@
    "part": "train-bridge",
    "body": "BD-016",
    "name": "輪列受けのねじ 2 のすり割り",
-   "g": 0.000013272000000000037
+   "g": 1.3272000000000037e-05
   },
   {
    "part": "barrel-bridge",
@@ -157,7 +158,7 @@
    "part": "barrel-bridge",
    "body": "BD-019",
    "name": "香箱受けのねじ 1 のすり割り",
-   "g": 0.000013272000000000033
+   "g": 1.3272000000000033e-05
   },
   {
    "part": "barrel-bridge",
@@ -169,7 +170,7 @@
    "part": "barrel-bridge",
    "body": "BD-021",
    "name": "香箱受けのねじ 2 のすり割り",
-   "g": 0.000013272000000000037
+   "g": 1.3272000000000037e-05
   },
   {
    "part": "balance-cock",
@@ -193,19 +194,19 @@
    "part": "balance-cock",
    "body": "BD-025",
    "name": "てんぷ受けのねじのすり割り",
-   "g": 0.000013272000000000033
+   "g": 1.3272000000000033e-05
   },
   {
    "part": "barrel",
    "body": "BD-026",
    "name": "香箱のドラム",
-   "g": 0.5024537626445358
+   "g": 0.12044630614414206
   },
   {
    "part": "barrel",
    "body": "BD-027",
    "name": "香箱の歯車",
-   "g": 0.2841464153180566
+   "g": 0.07577871177238718
   },
   {
    "part": "barrel",
@@ -218,6 +219,24 @@
    "body": "BD-029",
    "name": "角穴車",
    "g": 0.02516604211084636
+  },
+  {
+   "part": "barrel",
+   "body": "BD-092",
+   "name": "香箱真の芯",
+   "g": 0.03494456340440991
+  },
+  {
+   "part": "barrel",
+   "body": "BD-093",
+   "name": "ぜんまい",
+   "g": 0.11547141479001262
+  },
+  {
+   "part": "barrel",
+   "body": "BD-094",
+   "name": "香箱のふた",
+   "g": 0.08374229377408934
   },
   {
    "part": "centre",
@@ -289,7 +308,7 @@
    "part": "fourth",
    "body": "BD-041",
    "name": "秒針のパイプ",
-   "g": 0.000027139119376933427
+   "g": 2.7139119376933427e-05
   },
   {
    "part": "fourth",
@@ -331,13 +350,13 @@
    "part": "pallet",
    "body": "BD-048",
    "name": "入り爪石",
-   "g": 0.00007522199999999992
+   "g": 7.522199999999992e-05
   },
   {
    "part": "pallet",
    "body": "BD-049",
    "name": "出爪石",
-   "g": 0.0000752219999999999
+   "g": 7.52219999999999e-05
   },
   {
    "part": "pallet",
@@ -361,19 +380,13 @@
    "part": "balance",
    "body": "BD-053",
    "name": "振り石",
-   "g": 0.000013503821862190334
+   "g": 1.3503821862190334e-05
   },
   {
    "part": "balance",
    "body": "BD-054",
    "name": "ひげ玉",
    "g": 0.0009306968236259734
-  },
-  {
-   "part": "balance",
-   "body": "BD-055",
-   "name": "ひげぜんまい",
-   "g": 0.0018797873352573828
   },
   {
    "part": "balance",
@@ -404,6 +417,12 @@
    "body": "BD-060",
    "name": "てん輪のハブ",
    "g": 0.0008545132017764221
+  },
+  {
+   "part": "balance",
+   "body": "BD-055",
+   "name": "ひげぜんまい",
+   "g": 0.0019133851221999091
   },
   {
    "part": "minute",
@@ -451,31 +470,31 @@
    "part": "case",
    "body": "BD-068",
    "name": "胴",
-   "g": 10.0889609132207
+   "g": 10.050937589015769
   },
   {
    "part": "case",
    "body": "BD-069",
    "name": "ラグ 1",
-   "g": 0.587776
+   "g": 0.5805503368967434
   },
   {
    "part": "case",
    "body": "BD-070",
    "name": "ラグ 2",
-   "g": 0.587776
+   "g": 0.5805503368967434
   },
   {
    "part": "case",
    "body": "BD-071",
    "name": "ラグ 3",
-   "g": 0.5877759999999999
+   "g": 0.5805503368967433
   },
   {
    "part": "case",
    "body": "BD-072",
    "name": "ラグ 4",
-   "g": 0.5877759999999999
+   "g": 0.5805503368967434
   },
   {
    "part": "case",
@@ -505,7 +524,7 @@
    "part": "case-back",
    "body": "BD-077",
    "name": "裏ぶた",
-   "g": 1.3193256578827068
+   "g": 1.0168514706007437
   },
   {
    "part": "case-back",
@@ -523,73 +542,91 @@
    "part": "chapter-ring",
    "body": "BD-080",
    "name": "インデックス 12",
-   "g": 0.0007504999999999991
+   "g": 0.003001999999999997
   },
   {
    "part": "chapter-ring",
    "body": "BD-081",
    "name": "インデックス 1",
-   "g": 0.0003752499999999992
+   "g": 0.0015009999999999971
   },
   {
    "part": "chapter-ring",
    "body": "BD-082",
    "name": "インデックス 2",
-   "g": 0.0003752499999999991
+   "g": 0.001500999999999997
   },
   {
    "part": "chapter-ring",
    "body": "BD-083",
    "name": "インデックス 3",
-   "g": 0.00037524999999999955
+   "g": 0.0015009999999999984
   },
   {
    "part": "chapter-ring",
    "body": "BD-084",
    "name": "インデックス 4",
-   "g": 0.00037524999999999923
+   "g": 0.0015009999999999973
   },
   {
    "part": "chapter-ring",
    "body": "BD-085",
    "name": "インデックス 5",
-   "g": 0.000375249999999999
+   "g": 0.0015009999999999963
   },
   {
    "part": "chapter-ring",
    "body": "BD-086",
    "name": "インデックス 6",
-   "g": 0.0003752499999999996
+   "g": 0.0015009999999999984
   },
   {
    "part": "chapter-ring",
    "body": "BD-087",
    "name": "インデックス 7",
-   "g": 0.00037524999999999907
+   "g": 0.0015009999999999965
   },
   {
    "part": "chapter-ring",
    "body": "BD-088",
    "name": "インデックス 8",
-   "g": 0.0003752499999999991
+   "g": 0.001500999999999997
   },
   {
    "part": "chapter-ring",
    "body": "BD-089",
    "name": "インデックス 9",
-   "g": 0.00037524999999999955
+   "g": 0.0015009999999999984
   },
   {
    "part": "chapter-ring",
    "body": "BD-090",
    "name": "インデックス 10",
-   "g": 0.00037524999999999923
+   "g": 0.0015009999999999971
   },
   {
    "part": "chapter-ring",
    "body": "BD-091",
    "name": "インデックス 11",
-   "g": 0.0003752499999999991
+   "g": 0.001500999999999997
+  },
+  {
+   "part": "case-screw",
+   "body": "BD-095",
+   "name": "裏ぶたのねじ",
+   "g": 0.014737171268802146
+  },
+  {
+   "part": "gasket",
+   "body": "BD-096",
+   "name": "裏ぶたのパッキン",
+   "g": 0.028335634235527436
+  },
+  {
+   "part": "spring-bar",
+   "body": "BD-097",
+   "name": "ばね棒",
+   "g": 0.3196943589155221
   }
  ],
  "bodyMap": {
@@ -622,6 +659,9 @@
   "barrel-gear": "BD-027",
   "barrel-arbor": "BD-028",
   "barrel-ratchet": "BD-029",
+  "barrel-arbor-core": "BD-092",
+  "mainspring": "BD-093",
+  "barrel-cover": "BD-094",
   "centre-arbor": "BD-030",
   "minute-hand": "BD-031",
   "minute-hand-boss": "BD-032",
@@ -647,12 +687,12 @@
   "roller": "BD-052",
   "impulse-pin": "BD-053",
   "collet": "BD-054",
-  "hairspring": "BD-055",
   "balance-rim": "BD-056",
   "balance-arm-1": "BD-057",
   "balance-arm-2": "BD-058",
   "balance-arm-3": "BD-059",
   "balance-hub": "BD-060",
+  "hairspring": "BD-055",
   "minute-arbor": "BD-061",
   "minute-wheel": "BD-062",
   "minute-pinion": "BD-063",
@@ -683,20 +723,488 @@
   "index-8": "BD-088",
   "index-9": "BD-089",
   "index-10": "BD-090",
-  "index-11": "BD-091"
+  "index-11": "BD-091",
+  "slotted-watch-screw-m0-8-2": "BD-095",
+  "o-ring-31-3-0-6-custom-size": "BD-096",
+  "spring-bar-for-16-mm-lugs-body-1-8": "BD-097"
+ },
+ "springs": {
+  "barrel/Mainspring": {
+   "form": "spiral",
+   "use": "mainspring",
+   "rate": 0.03081406205759963,
+   "rateUnit": "N·mm/rad",
+   "stripLengthMm": 278.55247767362886,
+   "barrel": {
+    "woundTurns": 17.803255385318394,
+    "letDownTurns": 9.595411783777603,
+    "usableTurns": 8.207843601540791,
+    "fill": 0.37810664163968327,
+    "fullTorqueNmm": 1.5891243915114646,
+    "fullStressMpa": 1906.949269813757,
+    "runHours": 65.66274881232633,
+    "hoursPerTurn": 8
+   }
+  },
+  "balance/Hairspring": {
+   "form": "spiral",
+   "use": "hairspring",
+   "rate": 0.0011897403825675938,
+   "rateUnit": "N·mm/rad",
+   "stripLengthMm": 53.89831339641592,
+   "working": {
+    "angleRad": 5.235987755982989,
+    "torqueNmm": 0.006229466075922438,
+    "stressMpa": 276.8651589298864
+   }
+  }
+ },
+ "gasketGland": {
+  "kind": "axial",
+  "depth": 0.44999999999999996,
+  "width": 0.7853981633974484,
+  "inner": 30.9292036732051,
+  "outer": 32.5,
+  "squeeze": 0.25,
+  "fill": 0.8,
+  "stretch": 0,
+  "warnings": [],
+  "featureId": "gasket-groove-cut"
+ },
+ "stacks": {
+  "case-back": {
+   "format": "editor-platform/cad-tolerance-stacks@1",
+   "document": "case-back",
+   "stacks": [
+    {
+     "id": "TS-01",
+     "name": "パッキンのつぶし代",
+     "requirement": "RQ-06",
+     "min": 0.09,
+     "max": 0.18,
+     "unit": "mm",
+     "status": "ok",
+     "contributors": [
+      {
+       "id": "c-section",
+       "name": "パッキンの太さ",
+       "source": {
+        "kind": "parameter",
+        "parameterId": "gasket-section",
+        "lower": -0.03,
+        "upper": 0.03
+       },
+       "sign": 1,
+       "distribution": "normal",
+       "nominal": 0.6,
+       "lower": -0.03,
+       "upper": 0.03,
+       "share": 0.5625
+      },
+      {
+       "id": "c-depth",
+       "name": "溝の深さ",
+       "source": {
+        "kind": "parameter",
+        "parameterId": "groove-depth",
+        "lower": -0.02,
+        "upper": 0.02
+       },
+       "sign": -1,
+       "distribution": "normal",
+       "nominal": 0.44999999999999996,
+       "lower": -0.02,
+       "upper": 0.02,
+       "share": 0.25000000000000006
+      },
+      {
+       "id": "c-gap",
+       "name": "すき間",
+       "source": {
+        "kind": "parameter",
+        "parameterId": "seat-gap",
+        "lower": -0.01,
+        "upper": 0.01
+       },
+       "sign": -1,
+       "distribution": "uniform",
+       "nominal": 0.020000000000000462,
+       "lower": -0.01,
+       "upper": 0.01,
+       "share": 0.1875
+      }
+     ],
+     "nominal": 0.12999999999999956,
+     "worst": {
+      "min": 0.06999999999999951,
+      "max": 0.1899999999999996,
+      "status": "fail"
+     },
+     "rss": {
+      "min": 0.08999999999999955,
+      "max": 0.16999999999999957,
+      "status": "pass"
+     },
+     "monteCarlo": {
+      "runs": 100000,
+      "seed": 6,
+      "mean": 0.12999762316525162,
+      "sigma": 0.013348599139617239,
+      "min": 0.07003267543642303,
+      "max": 0.18940030795098617,
+      "outside": 119,
+      "outsideFraction": 0.00119,
+      "status": "pass",
+      "maxOutside": 0.0027
+     }
+    }
+   ]
+  },
+  "plate": {
+   "format": "editor-platform/cad-tolerance-stacks@1",
+   "document": "plate",
+   "stacks": [
+    {
+     "id": "TS-02",
+     "name": "四番車とがんぎかなの中心距離",
+     "requirement": "RQ-14",
+     "min": 3.622,
+     "max": 3.6579999999999995,
+     "unit": "mm",
+     "status": "ok",
+     "contributors": [
+      {
+       "id": "c-nominal",
+       "name": "図面の中心距離",
+       "source": {
+        "kind": "parameter",
+        "parameterId": "cd-fourth-escape",
+        "lower": 0,
+        "upper": 0
+       },
+       "sign": 1,
+       "distribution": "normal",
+       "nominal": 3.6399999999999997,
+       "lower": 0,
+       "upper": 0,
+       "share": 0
+      },
+      {
+       "id": "c-hole-4",
+       "name": "四番の穴の位置",
+       "source": {
+        "kind": "parameter",
+        "parameterId": "hole-fourth",
+        "lower": -0.004,
+        "upper": 0.004
+       },
+       "sign": 1,
+       "distribution": "normal",
+       "nominal": 0,
+       "lower": -0.004,
+       "upper": 0.004,
+       "share": 0.0879120879120879
+      },
+      {
+       "id": "c-hole-e",
+       "name": "がんぎの穴の位置",
+       "source": {
+        "kind": "parameter",
+        "parameterId": "hole-escape",
+        "lower": -0.004,
+        "upper": 0.004
+       },
+       "sign": -1,
+       "distribution": "normal",
+       "nominal": 0,
+       "lower": -0.004,
+       "upper": 0.004,
+       "share": 0.0879120879120879
+      },
+      {
+       "id": "c-pivot-4",
+       "name": "四番のほぞのすきま",
+       "source": {
+        "kind": "parameter",
+        "parameterId": "pivot-fourth",
+        "lower": -0.005,
+        "upper": 0.005
+       },
+       "sign": 1,
+       "distribution": "uniform",
+       "nominal": 0,
+       "lower": -0.005,
+       "upper": 0.005,
+       "share": 0.4120879120879121
+      },
+      {
+       "id": "c-pivot-e",
+       "name": "がんぎのほぞのすきま",
+       "source": {
+        "kind": "parameter",
+        "parameterId": "pivot-escape",
+        "lower": -0.005,
+        "upper": 0.005
+       },
+       "sign": 1,
+       "distribution": "uniform",
+       "nominal": 0,
+       "lower": -0.005,
+       "upper": 0.005,
+       "share": 0.4120879120879121
+      }
+     ],
+     "nominal": 3.6399999999999997,
+     "worst": {
+      "min": 3.622,
+      "max": 3.6579999999999995,
+      "status": "pass"
+     },
+     "rss": {
+      "min": 3.626509262436768,
+      "max": 3.6534907375632315,
+      "status": "pass"
+     },
+     "monteCarlo": {
+      "runs": 100000,
+      "seed": 4,
+      "mean": 3.6399940571262874,
+      "sigma": 0.004500108944635529,
+      "min": 3.624538744080237,
+      "max": 3.6569235699009206,
+      "outside": 0,
+      "outsideFraction": 0,
+      "status": "pass",
+      "maxOutside": 0.0027
+     }
+    }
+   ]
+  }
+ },
+ "designTargets": {
+  "barrel": {
+   "format": "editor-platform/cad-design-targets@1",
+   "document": "barrel",
+   "summary": {
+    "pass": 2,
+    "fail": 0,
+    "unknown": 0
+   },
+   "targets": [
+    {
+     "id": "TG-04",
+     "name": "パワーリザーブ",
+     "requirement": "RQ-02",
+     "measure": {
+      "kind": "spring",
+      "featureId": "mainspring-spring",
+      "quantity": "runHours"
+     },
+     "min": 40,
+     "unit": "h",
+     "value": 65.66274881232633,
+     "status": "pass"
+    },
+    {
+     "id": "TG-05",
+     "name": "ぜんまいの曲げ応力（巻き上げたとき）",
+     "measure": {
+      "kind": "spring",
+      "featureId": "mainspring-spring",
+      "quantity": "fullStress"
+     },
+     "max": 2000,
+     "unit": "MPa",
+     "value": 1906.949269813757,
+     "status": "pass"
+    }
+   ]
+  },
+  "case": {
+   "format": "editor-platform/cad-design-targets@1",
+   "document": "case",
+   "summary": {
+    "pass": 3,
+    "fail": 0,
+    "unknown": 0
+   },
+   "targets": [
+    {
+     "id": "TG-01",
+     "name": "ラグの内幅（12 時側）",
+     "requirement": "RQ-10",
+     "measure": {
+      "kind": "distance",
+      "a": [
+       "BD-069"
+      ],
+      "b": [
+       "BD-070"
+      ]
+     },
+     "min": 16,
+     "max": 16.1,
+     "unit": "mm",
+     "value": 16.000000047683717,
+     "status": "pass"
+    },
+    {
+     "id": "TG-02",
+     "name": "ラグの内幅（6 時側）",
+     "requirement": "RQ-10",
+     "measure": {
+      "kind": "distance",
+      "a": [
+       "BD-071"
+      ],
+      "b": [
+       "BD-072"
+      ]
+     },
+     "min": 16,
+     "max": 16.1,
+     "unit": "mm",
+     "value": 16.000000047683717,
+     "status": "pass"
+    },
+    {
+     "id": "TG-03",
+     "name": "ケースの径",
+     "requirement": "RQ-04",
+     "measure": {
+      "kind": "extent",
+      "bodyIds": [
+       "BD-068"
+      ],
+      "axis": "x"
+     },
+     "min": 35,
+     "max": 36,
+     "unit": "mm",
+     "value": 35.17505645751953,
+     "status": "pass"
+    }
+   ]
+  },
+  "case-back": {
+   "format": "editor-platform/cad-design-targets@1",
+   "document": "case-back",
+   "summary": {
+    "pass": 2,
+    "fail": 0,
+    "unknown": 0
+   },
+   "targets": [
+    {
+     "id": "TG-06",
+     "name": "パッキンのつぶし代（RSS の下限）",
+     "requirement": "RQ-06",
+     "measure": {
+      "kind": "tolerance-stack",
+      "stackId": "TS-01",
+      "value": "rss-min"
+     },
+     "min": 0.09,
+     "unit": "mm",
+     "value": 0.08999999999999955,
+     "status": "pass"
+    },
+    {
+     "id": "TG-07",
+     "name": "パッキンのつぶし代（RSS の上限）",
+     "requirement": "RQ-06",
+     "measure": {
+      "kind": "tolerance-stack",
+      "stackId": "TS-01",
+      "value": "rss-max"
+     },
+     "max": 0.18,
+     "unit": "mm",
+     "value": 0.16999999999999957,
+     "status": "pass"
+    }
+   ]
+  },
+  "assembly": {
+   "format": "editor-platform/cad-design-targets@1",
+   "document": "sk01-watch",
+   "summary": {
+    "pass": 1,
+    "fail": 0,
+    "unknown": 0
+   },
+   "targets": [
+    {
+     "id": "TG-08",
+     "name": "質量（ベルト除く）",
+     "requirement": "RQ-11",
+     "measure": {
+      "kind": "mass"
+     },
+     "max": 0.045,
+     "unit": "kg",
+     "value": 0.02341186410058621,
+     "status": "pass"
+    }
+   ]
+  }
  },
  "interference": {
   "assembled": {
-   "findings": [],
+   "findings": [
+    "c-case–c-gasket",
+    "c-case-back–c-gasket"
+   ],
    "unchecked": []
   },
   "exploded": {
-   "findings": [],
+   "findings": [
+    "c-case-back–c-gasket"
+   ],
    "unchecked": []
   },
+  "meantContacts": [
+   "c-case–c-gasket",
+   "c-case-back–c-gasket"
+  ],
   "handsOver12h": {
    "samples": 97,
-   "hits": [],
+   "pairs": {
+    "counts": {
+     "c-case–c-gasket": 97,
+     "c-case-back–c-gasket": 97
+    },
+    "unexpected": []
+   },
+   "unchecked": []
+  },
+  "coverageOneMinute": {
+   "steps": 864,
+   "worstPartStepMm": 0.24063386160440633,
+   "unmeasured": [],
+   "pairs": {
+    "counts": {
+     "c-case–c-gasket": 865,
+     "c-case-back–c-gasket": 865
+    },
+    "unexpected": []
+   },
+   "jumps": 0,
+   "unchecked": []
+  },
+  "coverageMotionWorks12h": {
+   "steps": 1735,
+   "worstPartStepMm": 0.49945305045699817,
+   "unmeasured": [],
+   "pairs": {
+    "counts": {
+     "c-centre–c-third": 1558,
+     "c-case–c-gasket": 1736,
+     "c-case-back–c-gasket": 1736
+    },
+    "unexpected": []
+   },
+   "jumps": 0,
    "unchecked": []
   }
  },
@@ -803,5 +1311,238 @@
     "pitch": 0.15707963267948966
    }
   }
- ]
+ ],
+ "sight": {
+  "format": "editor-platform/cad-sight-checks@1",
+  "document": "sk01-watch",
+  "basis": "display-meshes",
+  "summary": {
+   "pass": 2,
+   "fail": 0,
+   "unknown": 0
+  },
+  "checks": [
+   {
+    "id": "SC-01",
+    "name": "てんぷが裏ぶたのガラスから見える",
+    "requirement": "RQ-09",
+    "measure": {
+     "kind": "visibleFraction",
+     "eyes": [
+      [
+       2.725268397101521,
+       -8.264428879246807,
+       250
+      ]
+     ],
+     "targetIds": [
+      "c-balance:BD-056",
+      "c-balance:BD-057",
+      "c-balance:BD-058",
+      "c-balance:BD-059",
+      "c-balance:BD-060"
+     ],
+     "clearIds": [
+      "c-case-back:BD-078"
+     ]
+    },
+    "min": 0.4,
+    "unit": "ratio",
+    "status": "pass",
+    "value": 0.8147729628372586,
+    "perEye": [
+     0.8147729628372586
+    ],
+    "rays": 736,
+    "samples": 736,
+    "triangles": 80974
+   },
+   {
+    "id": "SC-02",
+    "name": "てんぷが風防から見える",
+    "requirement": "RQ-09",
+    "measure": {
+     "kind": "visibleFraction",
+     "eyes": [
+      [
+       2.725268397101521,
+       -8.264428879246807,
+       -250
+      ]
+     ],
+     "targetIds": [
+      "c-balance:BD-056",
+      "c-balance:BD-057",
+      "c-balance:BD-058",
+      "c-balance:BD-059",
+      "c-balance:BD-060"
+     ],
+     "clearIds": [
+      "c-bezel:BD-076"
+     ]
+    },
+    "min": 0.4,
+    "unit": "ratio",
+    "status": "pass",
+    "value": 0.41046301887056585,
+    "perEye": [
+     0.41046301887056585
+    ],
+    "rays": 736,
+    "samples": 736,
+    "triangles": 80974
+   }
+  ]
+ },
+ "bom": {
+  "totals": {
+   "massKg": 0.023411864100586204,
+   "cost": 0,
+   "currency": "JPY",
+   "bySourcing": {
+    "make": {
+     "quantity": 4,
+     "cost": 0
+    },
+    "outsource": {
+     "quantity": 13,
+     "cost": 0
+    },
+    "buy": {
+     "quantity": 0,
+     "cost": 0
+    },
+    "standard": {
+     "quantity": 9,
+     "cost": 0
+    },
+    "unset": {
+     "quantity": 0,
+     "cost": 0
+    }
+   },
+   "leftOut": [
+    {
+     "item": "1",
+     "name": "Main plate",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "2",
+     "name": "Train bridge",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "3",
+     "name": "Barrel bridge",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "4",
+     "name": "Balance cock",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "5",
+     "name": "Barrel",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "6",
+     "name": "Centre wheel",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "7",
+     "name": "Third wheel",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "8",
+     "name": "Fourth wheel",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "9",
+     "name": "Escape wheel",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "10",
+     "name": "Pallet fork",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "11",
+     "name": "Balance",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "12",
+     "name": "Minute wheel",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "13",
+     "name": "Hour wheel",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "14",
+     "name": "Case middle",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "15",
+     "name": "Bezel",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "16",
+     "name": "Case back",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "17",
+     "name": "Chapter ring",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "18",
+     "name": "裏ぶたのねじ",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "19",
+     "name": "裏ぶたのパッキン",
+     "bodyName": "",
+     "code": "cost-missing"
+    },
+    {
+     "item": "20",
+     "name": "ばね棒",
+     "bodyName": "",
+     "code": "cost-missing"
+    }
+   ]
+  }
+ }
 }

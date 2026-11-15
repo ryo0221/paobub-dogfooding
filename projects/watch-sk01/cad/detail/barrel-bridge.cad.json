@@ -1139,8 +1139,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-005",
+  "description": "香箱受け",
+  "material": {
+   "name": "真鍮 C3604",
+   "densityKgM3": 8500
+  },
+  "sourcing": "make"
  },
  "parts": [],
  "components": [],

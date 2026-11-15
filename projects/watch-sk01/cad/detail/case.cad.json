@@ -494,6 +494,786 @@
      1
     ]
    }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.5
+    },
+    "height": {
+     "literalMm": 1.25
+    },
+    "origin": [
+     {
+      "literalMm": -9.15
+     },
+     {
+      "literalMm": 19.6
+     },
+     {
+      "literalMm": 1.2
+     }
+    ],
+    "orientation": [
+     0,
+     0.7071067811865476,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "id": "lug-1-bar-hole-cylinder",
+   "name": "lug-1 bar hole"
+  },
+  {
+   "id": "lug-1-bar-hole-placement",
+   "name": "lug-1 bar hole placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-1-bar-hole-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.5
+    },
+    "height": {
+     "literalMm": 1.25
+    },
+    "origin": [
+     {
+      "literalMm": 7.9
+     },
+     {
+      "literalMm": 19.6
+     },
+     {
+      "literalMm": 1.2
+     }
+    ],
+    "orientation": [
+     0,
+     0.7071067811865476,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "id": "lug-2-bar-hole-cylinder",
+   "name": "lug-2 bar hole"
+  },
+  {
+   "id": "lug-2-bar-hole-placement",
+   "name": "lug-2 bar hole placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-2-bar-hole-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.5
+    },
+    "height": {
+     "literalMm": 1.25
+    },
+    "origin": [
+     {
+      "literalMm": -9.15
+     },
+     {
+      "literalMm": -19.6
+     },
+     {
+      "literalMm": 1.2
+     }
+    ],
+    "orientation": [
+     0,
+     0.7071067811865476,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "id": "lug-3-bar-hole-cylinder",
+   "name": "lug-3 bar hole"
+  },
+  {
+   "id": "lug-3-bar-hole-placement",
+   "name": "lug-3 bar hole placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-3-bar-hole-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.5
+    },
+    "height": {
+     "literalMm": 1.25
+    },
+    "origin": [
+     {
+      "literalMm": 7.9
+     },
+     {
+      "literalMm": -19.6
+     },
+     {
+      "literalMm": 1.2
+     }
+    ],
+    "orientation": [
+     0,
+     0.7071067811865476,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "id": "lug-4-bar-hole-cylinder",
+   "name": "lug-4 bar hole"
+  },
+  {
+   "id": "lug-4-bar-hole-placement",
+   "name": "lug-4 bar hole placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-4-bar-hole-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.41
+    },
+    "height": {
+     "literalMm": 1.6
+    },
+    "origin": [
+     {
+      "literalMm": 14.54922678357857
+     },
+     {
+      "literalMm": 8.399999999999999
+     },
+     {
+      "literalMm": 2.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-hole-1-cylinder",
+   "name": "Back screw hole 1"
+  },
+  {
+   "id": "back-screw-hole-1-placement",
+   "name": "Back screw hole 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-hole-1-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.41
+    },
+    "height": {
+     "literalMm": 1.6
+    },
+    "origin": [
+     {
+      "literalMm": 1.0287033112837768e-15
+     },
+     {
+      "literalMm": 16.8
+     },
+     {
+      "literalMm": 2.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-hole-2-cylinder",
+   "name": "Back screw hole 2"
+  },
+  {
+   "id": "back-screw-hole-2-placement",
+   "name": "Back screw hole 2 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-hole-2-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.41
+    },
+    "height": {
+     "literalMm": 1.6
+    },
+    "origin": [
+     {
+      "literalMm": -14.54922678357857
+     },
+     {
+      "literalMm": 8.399999999999999
+     },
+     {
+      "literalMm": 2.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-hole-3-cylinder",
+   "name": "Back screw hole 3"
+  },
+  {
+   "id": "back-screw-hole-3-placement",
+   "name": "Back screw hole 3 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-hole-3-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.41
+    },
+    "height": {
+     "literalMm": 1.6
+    },
+    "origin": [
+     {
+      "literalMm": -14.549226783578568
+     },
+     {
+      "literalMm": -8.400000000000002
+     },
+     {
+      "literalMm": 2.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-hole-4-cylinder",
+   "name": "Back screw hole 4"
+  },
+  {
+   "id": "back-screw-hole-4-placement",
+   "name": "Back screw hole 4 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-hole-4-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.41
+    },
+    "height": {
+     "literalMm": 1.6
+    },
+    "origin": [
+     {
+      "literalMm": -3.08610993385133e-15
+     },
+     {
+      "literalMm": -16.8
+     },
+     {
+      "literalMm": 2.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-hole-5-cylinder",
+   "name": "Back screw hole 5"
+  },
+  {
+   "id": "back-screw-hole-5-placement",
+   "name": "Back screw hole 5 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-hole-5-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.41
+    },
+    "height": {
+     "literalMm": 1.6
+    },
+    "origin": [
+     {
+      "literalMm": 14.549226783578565
+     },
+     {
+      "literalMm": -8.400000000000007
+     },
+     {
+      "literalMm": 2.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-hole-6-cylinder",
+   "name": "Back screw hole 6"
+  },
+  {
+   "id": "back-screw-hole-6-placement",
+   "name": "Back screw hole 6 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-hole-6-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "lug-1-bar-hole-cut",
+   "name": "cut lug-1 bar hole",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "lug-1-placement",
+    "lug-1-bar-hole-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "lug-1-bar-hole-cut-placement",
+   "name": "Lug 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-1-bar-hole-cut"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "lug-2-bar-hole-cut",
+   "name": "cut lug-2 bar hole",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "lug-2-placement",
+    "lug-2-bar-hole-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "lug-2-bar-hole-cut-placement",
+   "name": "Lug 2 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-2-bar-hole-cut"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "lug-3-bar-hole-cut",
+   "name": "cut lug-3 bar hole",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "lug-3-placement",
+    "lug-3-bar-hole-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "lug-3-bar-hole-cut-placement",
+   "name": "Lug 3 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-3-bar-hole-cut"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "lug-4-bar-hole-cut",
+   "name": "cut lug-4 bar hole",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "lug-4-placement",
+    "lug-4-bar-hole-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "lug-4-bar-hole-cut-placement",
+   "name": "Lug 4 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "lug-4-bar-hole-cut"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "back-screw-holes",
+   "name": "cut 6 bodies",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "case-middle-placement",
+    "back-screw-hole-1-placement",
+    "back-screw-hole-2-placement",
+    "back-screw-hole-3-placement",
+    "back-screw-hole-4-placement",
+    "back-screw-hole-5-placement",
+    "back-screw-hole-6-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "back-screw-holes-placement",
+   "name": "Case middle placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-holes"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
   }
  ],
  "bodies": [
@@ -501,7 +1281,7 @@
    "id": "BD-068",
    "name": "胴",
    "kind": "solid",
-   "resultFeatureId": "case-middle-placement",
+   "resultFeatureId": "back-screw-holes-placement",
    "state": "active",
    "appearance": {
     "color": "#d7d9dd",
@@ -517,7 +1297,7 @@
    "id": "BD-069",
    "name": "ラグ 1",
    "kind": "solid",
-   "resultFeatureId": "lug-1-placement",
+   "resultFeatureId": "lug-1-bar-hole-cut-placement",
    "state": "active",
    "appearance": {
     "color": "#d7d9dd",
@@ -533,7 +1313,7 @@
    "id": "BD-070",
    "name": "ラグ 2",
    "kind": "solid",
-   "resultFeatureId": "lug-2-placement",
+   "resultFeatureId": "lug-2-bar-hole-cut-placement",
    "state": "active",
    "appearance": {
     "color": "#d7d9dd",
@@ -549,7 +1329,7 @@
    "id": "BD-071",
    "name": "ラグ 3",
    "kind": "solid",
-   "resultFeatureId": "lug-3-placement",
+   "resultFeatureId": "lug-3-bar-hole-cut-placement",
    "state": "active",
    "appearance": {
     "color": "#d7d9dd",
@@ -565,7 +1345,7 @@
    "id": "BD-072",
    "name": "ラグ 4",
    "kind": "solid",
-   "resultFeatureId": "lug-4-placement",
+   "resultFeatureId": "lug-4-bar-hole-cut-placement",
    "state": "active",
    "appearance": {
     "color": "#d7d9dd",
@@ -608,17 +1388,190 @@
    "mass": {
     "densityKgM3": 8000
    }
+  },
+  {
+   "id": "lug-1-bar-hole",
+   "name": "lug-1 bar hole",
+   "kind": "solid",
+   "resultFeatureId": "lug-1-bar-hole-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "lug-1-bar-hole-cut"
+  },
+  {
+   "id": "lug-2-bar-hole",
+   "name": "lug-2 bar hole",
+   "kind": "solid",
+   "resultFeatureId": "lug-2-bar-hole-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "lug-2-bar-hole-cut"
+  },
+  {
+   "id": "lug-3-bar-hole",
+   "name": "lug-3 bar hole",
+   "kind": "solid",
+   "resultFeatureId": "lug-3-bar-hole-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "lug-3-bar-hole-cut"
+  },
+  {
+   "id": "lug-4-bar-hole",
+   "name": "lug-4 bar hole",
+   "kind": "solid",
+   "resultFeatureId": "lug-4-bar-hole-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "lug-4-bar-hole-cut"
+  },
+  {
+   "id": "back-screw-hole-1",
+   "name": "Back screw hole 1",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-hole-1-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-holes"
+  },
+  {
+   "id": "back-screw-hole-2",
+   "name": "Back screw hole 2",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-hole-2-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-holes"
+  },
+  {
+   "id": "back-screw-hole-3",
+   "name": "Back screw hole 3",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-hole-3-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-holes"
+  },
+  {
+   "id": "back-screw-hole-4",
+   "name": "Back screw hole 4",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-hole-4-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-holes"
+  },
+  {
+   "id": "back-screw-hole-5",
+   "name": "Back screw hole 5",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-hole-5-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-holes"
+  },
+  {
+   "id": "back-screw-hole-6",
+   "name": "Back screw hole 6",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-hole-6-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-holes"
   }
  ],
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-026",
+  "description": "胴（ラグ一体）と巻真・リューズ",
+  "material": {
+   "name": "ステンレス鋼 316L",
+   "densityKgM3": 8000
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],
  "componentPatterns": [],
  "joints": [],
- "solvedPoses": {}
+ "solvedPoses": {},
+ "designTargets": [
+  {
+   "id": "TG-01",
+   "name": "ラグの内幅（12 時側）",
+   "requirement": "RQ-10",
+   "measure": {
+    "kind": "distance",
+    "a": [
+     "BD-069"
+    ],
+    "b": [
+     "BD-070"
+    ]
+   },
+   "min": 16,
+   "max": 16.1
+  },
+  {
+   "id": "TG-02",
+   "name": "ラグの内幅（6 時側）",
+   "requirement": "RQ-10",
+   "measure": {
+    "kind": "distance",
+    "a": [
+     "BD-071"
+    ],
+    "b": [
+     "BD-072"
+    ]
+   },
+   "min": 16,
+   "max": 16.1
+  },
+  {
+   "id": "TG-03",
+   "name": "ケースの径",
+   "requirement": "RQ-04",
+   "measure": {
+    "kind": "extent",
+    "bodyIds": [
+     "BD-068"
+    ],
+    "axis": "x"
+   },
+   "min": 35,
+   "max": 36
+  }
+ ]
 }

@@ -225,8 +225,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-029",
+  "description": "ベゼルと風防",
+  "material": {
+   "name": "ステンレス鋼 316L",
+   "densityKgM3": 8000
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],

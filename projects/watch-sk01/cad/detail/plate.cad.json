@@ -10,7 +10,38 @@
   "angularToleranceRad": 1e-9,
   "maxResultLinearToleranceMm": 0.0001
  },
- "parameters": [],
+ "parameters": [
+  {
+   "id": "cd-fourth-escape",
+   "name": "四番とがんぎの中心距離",
+   "type": "length",
+   "value": 3.6399999999999997
+  },
+  {
+   "id": "hole-fourth",
+   "name": "四番の穴の位置のずれ",
+   "type": "length",
+   "value": 0
+  },
+  {
+   "id": "hole-escape",
+   "name": "がんぎの穴の位置のずれ",
+   "type": "length",
+   "value": 0
+  },
+  {
+   "id": "pivot-fourth",
+   "name": "四番のほぞのすきま（片側）",
+   "type": "length",
+   "value": 0
+  },
+  {
+   "id": "pivot-escape",
+   "name": "がんぎのほぞのすきま（片側）",
+   "type": "length",
+   "value": 0
+  }
+ ],
  "profiles": [],
  "sketches": [
   {
@@ -2091,12 +2122,90 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-001",
+  "description": "地板",
+  "material": {
+   "name": "真鍮 C3604、ロジウムめっき",
+   "densityKgM3": 8500
+  },
+  "sourcing": "make"
  },
  "parts": [],
  "components": [],
  "componentPatterns": [],
  "joints": [],
- "solvedPoses": {}
+ "solvedPoses": {},
+ "toleranceStacks": [
+  {
+   "id": "TS-02",
+   "name": "四番車とがんぎかなの中心距離",
+   "requirement": "RQ-14",
+   "contributors": [
+    {
+     "id": "c-nominal",
+     "name": "図面の中心距離",
+     "source": {
+      "kind": "parameter",
+      "parameterId": "cd-fourth-escape",
+      "lower": 0,
+      "upper": 0
+     },
+     "sign": 1,
+     "distribution": "normal"
+    },
+    {
+     "id": "c-hole-4",
+     "name": "四番の穴の位置",
+     "source": {
+      "kind": "parameter",
+      "parameterId": "hole-fourth",
+      "lower": -0.004,
+      "upper": 0.004
+     },
+     "sign": 1,
+     "distribution": "normal"
+    },
+    {
+     "id": "c-hole-e",
+     "name": "がんぎの穴の位置",
+     "source": {
+      "kind": "parameter",
+      "parameterId": "hole-escape",
+      "lower": -0.004,
+      "upper": 0.004
+     },
+     "sign": -1,
+     "distribution": "normal"
+    },
+    {
+     "id": "c-pivot-4",
+     "name": "四番のほぞのすきま",
+     "source": {
+      "kind": "parameter",
+      "parameterId": "pivot-fourth",
+      "lower": -0.005,
+      "upper": 0.005
+     },
+     "sign": 1,
+     "distribution": "uniform"
+    },
+    {
+     "id": "c-pivot-e",
+     "name": "がんぎのほぞのすきま",
+     "source": {
+      "kind": "parameter",
+      "parameterId": "pivot-escape",
+      "lower": -0.005,
+      "upper": 0.005
+     },
+     "sign": 1,
+     "distribution": "uniform"
+    }
+   ],
+   "min": 3.622,
+   "max": 3.6579999999999995,
+   "runs": 100000,
+   "seed": 4
+  }
+ ]
 }

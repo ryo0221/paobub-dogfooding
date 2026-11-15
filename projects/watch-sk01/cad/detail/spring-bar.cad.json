@@ -1,0 +1,287 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "spring-bar-for-16-mm-lugs-body-1-8-outline",
+   "name": "Spring bar for 16 mm lugs, body 1.8 outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "orientation": [
+     0.7071067811865476,
+     0,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0"
+    },
+    {
+     "type": "point",
+     "id": "p1"
+    },
+    {
+     "type": "point",
+     "id": "p2"
+    },
+    {
+     "type": "point",
+     "id": "p3"
+    },
+    {
+     "type": "point",
+     "id": "p4"
+    },
+    {
+     "type": "point",
+     "id": "p5"
+    },
+    {
+     "type": "point",
+     "id": "p6"
+    },
+    {
+     "type": "point",
+     "id": "p7"
+    },
+    {
+     "type": "point",
+     "id": "p8"
+    },
+    {
+     "type": "point",
+     "id": "p9"
+    },
+    {
+     "type": "line",
+     "id": "l0",
+     "start": "p0",
+     "end": "p1"
+    },
+    {
+     "type": "line",
+     "id": "l1",
+     "start": "p1",
+     "end": "p2"
+    },
+    {
+     "type": "line",
+     "id": "l2",
+     "start": "p2",
+     "end": "p3"
+    },
+    {
+     "type": "line",
+     "id": "l3",
+     "start": "p3",
+     "end": "p4"
+    },
+    {
+     "type": "line",
+     "id": "l4",
+     "start": "p4",
+     "end": "p5"
+    },
+    {
+     "type": "line",
+     "id": "l5",
+     "start": "p5",
+     "end": "p6"
+    },
+    {
+     "type": "line",
+     "id": "l6",
+     "start": "p6",
+     "end": "p7"
+    },
+    {
+     "type": "line",
+     "id": "l7",
+     "start": "p7",
+     "end": "p8"
+    },
+    {
+     "type": "line",
+     "id": "l8",
+     "start": "p8",
+     "end": "p9"
+    },
+    {
+     "type": "line",
+     "id": "l9",
+     "start": "p9",
+     "end": "p0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0": [
+     0,
+     0
+    ],
+    "p1": [
+     0.45,
+     0
+    ],
+    "p2": [
+     0.45,
+     0.9
+    ],
+    "p3": [
+     0.75,
+     0.9
+    ],
+    "p4": [
+     0.9,
+     1.05
+    ],
+    "p5": [
+     0.9,
+     16.25
+    ],
+    "p6": [
+     0.75,
+     16.4
+    ],
+    "p7": [
+     0.45,
+     16.4
+    ],
+    "p8": [
+     0.45,
+     17.3
+    ],
+    "p9": [
+     0,
+     17.3
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "revolve",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "spring-bar-for-16-mm-lugs-body-1-8-outline",
+    "region": {
+     "outer": [
+      "l0",
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "l7",
+      "l8",
+      "l9"
+     ],
+     "holes": []
+    },
+    "axisOrigin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "axisDirection": [
+     0,
+     1
+    ],
+    "angle": {
+     "literalRad": 6.283185307179586
+    }
+   },
+   "id": "spring-bar-for-16-mm-lugs-body-1-8-revolve",
+   "name": "Spring bar for 16 mm lugs, body 1.8"
+  },
+  {
+   "id": "spring-bar-for-16-mm-lugs-body-1-8-placement",
+   "name": "Spring bar for 16 mm lugs, body 1.8 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "spring-bar-for-16-mm-lugs-body-1-8-revolve"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-097",
+   "name": "ばね棒",
+   "kind": "solid",
+   "resultFeatureId": "spring-bar-for-16-mm-lugs-body-1-8-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#9aa3ab",
+    "opacity": 1,
+    "metalness": 0.9,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "PT-038",
+  "description": "ばね棒（Spring bar 16×1.8）",
+  "material": {
+   "name": "ステンレス鋼",
+   "densityKgM3": 7900
+  },
+  "sourcing": "standard"
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

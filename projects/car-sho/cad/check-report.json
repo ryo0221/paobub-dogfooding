@@ -2,7 +2,7 @@
  "kernel": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
  "layout": {
   "contentHash": "1b1117e42a8759edc8a59c77c3480943bf422a3ecde0eca6a738d73d31862ce2",
-  "ms": 530,
+  "ms": 514,
   "bodies": [
    {
     "id": "EN-001",
@@ -223,8 +223,8 @@
   ]
  },
  "detail": {
-  "contentHash": "7dc4f9574180bfba554d48b5300c8925af397048a4cb0dc2bb562d999e926876",
-  "ms": 2019,
+  "contentHash": "80c91384e639eca967160d1f2e58a8d7feeeca96117c8528e8e7df234a3bd0be",
+  "ms": 2543,
   "bodies": [
    {
     "id": "BD-001",
@@ -482,25 +482,27 @@
     "id": "BD-022",
     "name": "側面吸気ダクト（右）",
     "kind": "solid",
-    "volumeMm3": 25343999.999999993,
-    "areaMm2": 537600,
+    "volumeMm3": 1060544.0000000033,
+    "areaMm2": 1060576,
     "centroidMm": [
-     1910,
-     720,
-     450
-    ]
+     1910.000000000007,
+     720.0000000000003,
+     450.00000000000017
+    ],
+    "kg": 1.6438432000000052
    },
    {
     "id": "BD-023",
     "name": "側面吸気ダクト（左）",
     "kind": "solid",
-    "volumeMm3": 25343999.999999993,
-    "areaMm2": 537600,
+    "volumeMm3": 1060544.0000000033,
+    "areaMm2": 1060576,
     "centroidMm": [
-     1910,
-     -720,
-     450
-    ]
+     1910.000000000007,
+     -720.0000000000022,
+     450.00000000000017
+    ],
+    "kg": 1.6438432000000052
    },
    {
     "id": "BD-024",
@@ -618,6 +620,542 @@
    "aero-floor-body": "BD-028",
    "aero-tunnel-right-body": "BD-029",
    "aero-tunnel-left-body": "BD-030"
+  }
+ },
+ "designTargets": {
+  "format": "editor-platform/cad-design-targets@1",
+  "document": "car-sho",
+  "summary": {
+   "pass": 4,
+   "fail": 3,
+   "unknown": 0
+  },
+  "targets": [
+   {
+    "id": "TG-01",
+    "name": "全長",
+    "requirement": "RQ-01",
+    "measure": {
+     "kind": "extent",
+     "bodyIds": [
+      "BD-020",
+      "BD-021",
+      "BD-024",
+      "BD-025",
+      "BD-026",
+      "BD-027"
+     ],
+     "axis": "x"
+    },
+    "max": 4350,
+    "unit": "mm",
+    "value": 4350.000000000002,
+    "status": "fail"
+   },
+   {
+    "id": "TG-02",
+    "name": "全幅（車輪を含む）",
+    "requirement": "RQ-02",
+    "measure": {
+     "kind": "extent",
+     "bodyIds": [
+      "BD-020",
+      "BD-021",
+      "BD-024",
+      "BD-025",
+      "BD-026",
+      "BD-027",
+      "BD-001",
+      "BD-002",
+      "BD-003",
+      "BD-004"
+     ],
+     "axis": "y"
+    },
+    "max": 1950,
+    "unit": "mm",
+    "value": 1951.8794169423923,
+    "status": "fail"
+   },
+   {
+    "id": "TG-03",
+    "name": "全高（地面から）",
+    "requirement": "RQ-03",
+    "measure": {
+     "kind": "extent",
+     "bodyIds": [
+      "BD-020",
+      "BD-021",
+      "BD-024",
+      "BD-025",
+      "BD-026",
+      "BD-027",
+      "BD-019",
+      "BD-001",
+      "BD-002",
+      "BD-003",
+      "BD-004"
+     ],
+     "axis": "z"
+    },
+    "max": 1130,
+    "unit": "mm",
+    "value": 1106.6680144701968,
+    "status": "pass"
+   },
+   {
+    "id": "TG-04",
+    "name": "ホイールベースと全長の比",
+    "requirement": "RQ-04",
+    "measure": {
+     "kind": "proportion",
+     "metric": "wheelbaseToLength"
+    },
+    "min": 0.58,
+    "max": 0.62,
+    "unit": "ratio",
+    "value": 0.6091400532338809,
+    "status": "pass"
+   },
+   {
+    "id": "TG-05",
+    "name": "運転者の頭上のすき間",
+    "requirement": "RQ-05",
+    "measure": {
+     "kind": "distance",
+     "a": [
+      "BD-006"
+     ],
+     "b": [
+      "BD-021"
+     ]
+    },
+    "min": 50,
+    "unit": "mm",
+    "value": 0,
+    "status": "fail"
+   },
+   {
+    "id": "TG-06",
+    "name": "外板と床の質量",
+    "requirement": "RQ-14",
+    "measure": {
+     "kind": "mass",
+     "bodyIds": [
+      "BD-020",
+      "BD-021",
+      "BD-024",
+      "BD-025",
+      "BD-026",
+      "BD-027",
+      "BD-028",
+      "BD-029",
+      "BD-030",
+      "BD-022",
+      "BD-023"
+     ]
+    },
+    "max": 80,
+    "unit": "kg",
+    "value": 70.52430592018648,
+    "status": "pass"
+   },
+   {
+    "id": "TG-07",
+    "name": "タイヤとフェンダーのすき間",
+    "requirement": "RQ-15",
+    "measure": {
+     "kind": "proportion",
+     "metric": "wheelToFender"
+    },
+    "min": 0,
+    "max": 20,
+    "unit": "mm",
+    "value": 8.190807104008627,
+    "status": "pass"
+   }
+  ]
+ },
+ "headCheck": {
+  "headMin": [
+   1360,
+   270,
+   800
+  ],
+  "headMax": [
+   1580,
+   470,
+   1036
+  ],
+  "canopyOverHeadMinZ": 944.8460644488448,
+  "canopyOverHeadMaxZ": 1069.4434460406417,
+  "canopyPointsInsideHead": 21,
+  "inside": [
+   [
+    1487.4,
+    467.6,
+    967.5
+   ],
+   [
+    1554.6,
+    452.6,
+    961.9
+   ],
+   [
+    1565.7,
+    456.7,
+    953.5
+   ],
+   [
+    1576.6,
+    460.5,
+    944.8
+   ],
+   [
+    1532.4,
+    395.4,
+    1013
+   ],
+   [
+    1397,
+    415.9,
+    1022.1
+   ],
+   [
+    1363,
+    445.4,
+    1004.8
+   ],
+   [
+    1374.3,
+    452.8,
+    998.6
+   ],
+   [
+    1397,
+    466.5,
+    985.1
+   ],
+   [
+    1419.6,
+    395.3,
+    1031.8
+   ],
+   [
+    1464.9,
+    407.3,
+    1019.4
+   ],
+   [
+    1419.6,
+    447.7,
+    998.1
+   ],
+   [
+    1430.9,
+    438,
+    1004.1
+   ],
+   [
+    1442.2,
+    428,
+    1009.6
+   ],
+   [
+    1464.9,
+    456.9,
+    983.1
+   ],
+   [
+    1498.8,
+    375,
+    1031.1
+   ],
+   [
+    1487.5,
+    437.2,
+    994.7
+   ],
+   [
+    1498.8,
+    427,
+    999.9
+   ],
+   [
+    1510,
+    416.6,
+    1004.7
+   ],
+   [
+    1532.4,
+    443.4,
+    977.9
+   ],
+   [
+    1565.7,
+    412.8,
+    992.6
+   ]
+  ]
+ },
+ "sight": {
+  "format": "editor-platform/cad-sight-checks@1",
+  "document": "car-sho",
+  "basis": "display-meshes",
+  "summary": {
+   "pass": 0,
+   "fail": 2,
+   "unknown": 0
+  },
+  "checks": [
+   {
+    "id": "SC-01",
+    "name": "A ピラー（運転席側）が両眼から隠す角度",
+    "requirement": "RQ-07",
+    "measure": {
+     "kind": "obstruction",
+     "eyes": [
+      [
+       1380,
+       402,
+       938
+      ],
+      [
+       1380,
+       338,
+       938
+      ]
+     ],
+     "forward": [
+      -1,
+      0,
+      0
+     ],
+     "up": [
+      0,
+      0,
+      1
+     ],
+     "fromDeg": -90,
+     "toDeg": 0,
+     "bodyIds": [
+      "BD-021"
+     ]
+    },
+    "max": 6,
+    "unit": "deg",
+    "status": "fail",
+    "value": 90,
+    "perEye": [
+     90,
+     90
+    ],
+    "hidden": [
+     [
+      -90,
+      0
+     ]
+    ],
+    "stepDeg": 0.1,
+    "rays": 1800,
+    "triangles": 1089
+   },
+   {
+    "id": "SC-02",
+    "name": "A ピラー（助手席側）が両眼から隠す角度",
+    "requirement": "RQ-07",
+    "measure": {
+     "kind": "obstruction",
+     "eyes": [
+      [
+       1380,
+       402,
+       938
+      ],
+      [
+       1380,
+       338,
+       938
+      ]
+     ],
+     "forward": [
+      -1,
+      0,
+      0
+     ],
+     "up": [
+      0,
+      0,
+      1
+     ],
+     "fromDeg": 0,
+     "toDeg": 90,
+     "bodyIds": [
+      "BD-025"
+     ]
+    },
+    "max": 6,
+    "unit": "deg",
+    "status": "fail",
+    "value": 57.5,
+    "perEye": [
+     57.5,
+     61.900000000000006
+    ],
+    "hidden": [
+     [
+      32.5,
+      90
+     ]
+    ],
+    "stepDeg": 0.1,
+    "rays": 1800,
+    "triangles": 1089
+   }
+  ]
+ },
+ "bom": {
+  "totals": {
+   "massKg": 70.52430592018648,
+   "cost": 0,
+   "bySourcing": {
+    "make": {
+     "quantity": 0,
+     "cost": 0
+    },
+    "outsource": {
+     "quantity": 0,
+     "cost": 0
+    },
+    "buy": {
+     "quantity": 0,
+     "cost": 0
+    },
+    "standard": {
+     "quantity": 0,
+     "cost": 0
+    },
+    "unset": {
+     "quantity": 0,
+     "cost": 0
+    }
+   },
+   "leftOut": [
+    {
+     "item": "1",
+     "name": "右前輪（タイヤとホイール）",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "2",
+     "name": "左前輪（タイヤとホイール）",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "3",
+     "name": "右後輪（タイヤとホイール）",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "4",
+     "name": "左後輪（タイヤとホイール）",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "5",
+     "name": "運転者の胴",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "6",
+     "name": "運転者の頭",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "7",
+     "name": "運転者の腿",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "8",
+     "name": "運転者の脛",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "9",
+     "name": "同乗者の胴",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "10",
+     "name": "同乗者の頭",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "11",
+     "name": "同乗者の腿",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "12",
+     "name": "同乗者の脛",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "13",
+     "name": "エンジン",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "14",
+     "name": "変速機",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "15",
+     "name": "燃料タンク",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "16",
+     "name": "右ラジエーター",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "17",
+     "name": "左ラジエーター",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "18",
+     "name": "前の荷室",
+     "bodyName": "",
+     "code": "mass-missing"
+    },
+    {
+     "item": "19",
+     "name": "窓ガラス（キャノピー）",
+     "bodyName": "",
+     "code": "mass-missing"
+    }
+   ]
   }
  }
 }
