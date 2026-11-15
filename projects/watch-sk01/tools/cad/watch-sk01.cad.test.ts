@@ -234,7 +234,11 @@ describe.skipIf(!dist)('watch-sk01 CAD', () => {
     for (const [id, values] of Object.entries(asm.configurations!.find((c) => c.id === 'form-exploded')!.values))
       exploded.joints.find((j) => j.id === id)!.values = structuredClone(values);
     const { joints } = solve(asm);
-    const samples = Array.from({ length: 49 }, (_, i) => ({ tick: i, values: new Map([['j-escape', { angle: -(i / 48) * 8640 * 2 * Math.PI }]]) }));
+    // 12 h is 8640 escape-wheel turns, 720 seconds-hand turns, 12 minute-hand turns. 97 samples (a prime, so
+    // no hand repeats an angle): each step moves the seconds hand 720/97 turns, so all three hands visit 97
+    // different angles. Evenly spaced samples that divide 720 (e.g. every 15 min) would show one seconds-hand angle.
+    const N = 97;
+    const samples = Array.from({ length: N }, (_, i) => ({ tick: i, values: new Map([['j-escape', { angle: -(i / N) * 8640 * 2 * Math.PI }]]) }));
     const along = checkCadInterferenceAlong({ doc: asm, lookup, meshesOf: (h) => meshes.get(h), joints }, samples as { tick: number; values: Map<string, CadResolvedJointValues> }[]);
     const sol = solve(asm);
     report.interference = {
