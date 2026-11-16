@@ -1,0 +1,13 @@
+import { readFileSync } from 'node:fs';
+import { bimElementMass, deriveBim } from '@editor-platform/bim-core';
+import { checkCranes, scheduleConstruction, siteTerrain } from '@editor-platform/construction-core';
+import { boxBodies } from './boxes';
+const bim = JSON.parse(readFileSync('/mnt/project-files/skytree-twin/d1/twin-bim.json', 'utf8'));
+const doc = JSON.parse(readFileSync('/mnt/project-files/skytree-twin/d1/twin-construction.json', 'utf8'));
+const derived = deriveBim(bim);
+const plan = scheduleConstruction(doc);
+const terrain = siteTerrain(doc.site);
+const world = { bodies: boxBodies(bim), mass: (id: string) => { const m = bimElementMass(bim, derived, id); return m.status === 'ok' ? { kg: m.kg } : { reason: m.status }; }, ground: (p: [number, number]) => terrain.heightAt(p) };
+const t = performance.now();
+const r = checkCranes(doc, plan, world as never);
+console.log(Math.round(performance.now() - t), r.length);
