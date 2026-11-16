@@ -42,7 +42,7 @@ Community現候補 `e311000`、実装試験は`4492487`と同一のWeb/APIコー
 失敗と対処: sandbox proxy不通→許可済み環境側通信、Node24 SQLite assertion→Node22再構築、workflow phases不足→設定修正、Playwright専用ffmpeg不足→既存CDP録画方式。
 誤った末尾slash URL・見出しlocator・個人組織招待も失敗し、現行仕様の正規経路へ修正した。
 未実施: 差し戻しと修正、仕様変更演習、旧承認失効、親子成果物受渡し、作者A/Bと閲覧者、Native形式確定・Remix、dev/Staging/本番、復旧、公開A/B全受入。
-CIを追加したが、GitHub Actionsの結果はこの記録時点では未確認。
+GitHub Actionsも exact head `e31100010266531811ed075e4c26c5bc0a46cbad` で成功（3試験とbuild）。実行: https://github.com/ryo0221/open-editor-community/actions/runs/43945569904 。remote配備や公開受入の成功ではない。
 
 ## 映像・保存・残る操作
 
