@@ -1,0 +1,179 @@
+{
+ "format": 1,
+ "name": "スカイツリーの近似のデジタルツイン 施工計画",
+ "definition": {
+  "id": "construction-planning",
+  "version": "1.0.0"
+ },
+ "citations": "trace/citations.json",
+ "deliverables": {
+  "process-map": [
+   {
+    "path": "docs/process-map.json",
+    "as": "plain"
+   }
+  ],
+  "site-conditions": [
+   {
+    "path": "docs/site-conditions.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "constraint",
+      "match": "^### (CO-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "construction-model": [
+   {
+    "path": "docs/construction-model.json",
+    "as": "json",
+    "kind": "work-unit",
+    "at": "work-unit"
+   },
+   {
+    "path": "bim/construction-model.bim.json",
+    "as": "plain"
+   }
+  ],
+  "method-statement": [
+   {
+    "path": "docs/method-statement.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "method",
+      "match": "^### (MT-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "master-schedule": [
+   {
+    "path": "docs/master-schedule.json",
+    "as": "json",
+    "kind": "task",
+    "at": "task"
+   },
+   {
+    "path": "docs/master-schedule.json",
+    "as": "json",
+    "kind": "milestone",
+    "at": "milestone"
+   },
+   {
+    "path": "construction/skytree-twin.construction.json",
+    "as": "plain"
+   }
+  ],
+  "site-logistics-plan": [
+   {
+    "path": "docs/site-logistics-plan.json",
+    "as": "json",
+    "kind": "equipment",
+    "at": "equipment"
+   },
+   {
+    "path": "docs/site-logistics-plan.json",
+    "as": "json",
+    "kind": "route",
+    "at": "route"
+   },
+   {
+    "path": "docs/site-logistics-plan.json",
+    "as": "json",
+    "kind": "temporary",
+    "at": "temporary"
+   }
+  ],
+  "simulation-record": [
+   {
+    "path": "docs/simulation-record.json",
+    "as": "json",
+    "kind": "sim-issue",
+    "at": "sim-issue"
+   }
+  ],
+  "hazard-review": [
+   {
+    "path": "docs/hazard-review.json",
+    "as": "json",
+    "kind": "hazard",
+    "at": "rows"
+   }
+  ],
+  "staging-analysis": [
+   {
+    "path": "docs/staging-analysis.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "analysis-case",
+      "match": "^### (AC-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "plan-approval": [
+   {
+    "path": "docs/plan-approval.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "decision",
+      "match": "^### (DC-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "presentation-record": [
+   {
+    "path": "docs/presentation-record.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "presentation-scene",
+      "match": "^### (PS-\\d+)\\b"
+     }
+    ]
+   }
+  ]
+ },
+ "phases": {
+  "process": {
+   "state": "受け入れ待ち"
+  },
+  "conditions": {
+   "state": "受け入れ待ち"
+  },
+  "model": {
+   "state": "受け入れ待ち"
+  },
+  "method": {
+   "state": "受け入れ待ち"
+  },
+  "schedule": {
+   "state": "受け入れ待ち"
+  },
+  "logistics": {
+   "state": "受け入れ待ち"
+  },
+  "simulation": {
+   "state": "受け入れ待ち"
+  },
+  "safety": {
+   "state": "受け入れ待ち"
+  },
+  "structure": {
+   "state": "省いた",
+   "reason": "段階ごとの解析の道具（CalculiX を入れた Reference Host）が、この版を作った環境に無かった。代わりに、タワークレーンの昇りの支えがその日に建っていることを揚重の検査で確かめた（SI-008）。次の版で、クレーンが昇った日とゲイン塔の引き上げの日を解析する"
+  },
+  "approval": {
+   "state": "進行中"
+  },
+  "presentation": {
+   "state": "進行中"
+  }
+ }
+}
