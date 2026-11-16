@@ -54,4 +54,5 @@ export VIDEO_WORK=/path/to/work FONT_DIR=/path/to/@expo-google-fonts/noto-sans-j
 python tools/video/tts.py && python tools/video/graphics.py && python tools/video/make.py && python tools/video/final.py
 ```
 
-- 素材（Playground の録画と工程の動画）は `$VIDEO_WORK/src/` に置きます。動画そのものはこのリポジトリに入れていません。
+- 素材の映像（`tt5.demo.ts` の `CLIPS` で撮った `clips.webm` と、工程の動画 `tt5-schedule.mp4`）は `$VIDEO_WORK/src/` に置きます。動画そのものはこのリポジトリに入れていません。
+- 静止画は `assets/*.jpg` を使います。撮り直した PNG を使うときは `TT5_OUT` にその置き場を指定します。

@@ -57,10 +57,15 @@ label(c,W//2,870,'道具に足した機能：昇るクレーン・引き上げ�
 save(c,'checks')
 
 # Stills from the Playground (crop the 3D view and the panel as they are)
-SRC=os.environ.get('TT5_OUT','/mnt/project-files/skytree-twin/tt5')
+# The Playground's outputs (TT5_OUT, PNG) when given, else the copies committed in assets/ (JPEG).
+SRC=os.environ.get('TT5_OUT')
+ASSETS=os.path.join(HERE,'..','..','assets')
+def source(name):
+    for p in ([f'{SRC}/{name}.png'] if SRC else [])+[os.path.join(ASSETS,f'{name}.jpg')]:
+        if os.path.exists(p): return p
+    exit(f'{name} が見つかりません（TT5_OUT か assets/ に置いてください）')
 def still(name,crop=None,cap=None):
-    p=f'{SRC}/{name}.png'
-    if not os.path.exists(p): print('missing',p); return
+    p=source(name)
     im=Image.open(p).convert('RGB')
     if crop: im=im.crop(crop)
     c=canvas((230,233,237)); f=fit(im,W-120,H-120-(70 if cap else 0)); x=(W-f.width)//2; y=60+(H-120-(70 if cap else 0)-f.height)//2
@@ -76,8 +81,8 @@ still('tt5-cranes-checked',crop=(950,540,1430,880))
 v=os.path.join(WORK,'src','tt5-schedule.mp4')
 if os.path.exists(v):
     subprocess.run(['ffmpeg','-v','error','-y','-sseof','-0.1','-i',v,'-frames:v','1','-update','1','-vf','crop=1049:590:115:130,scale=1920:1080:flags=lanczos','img/tt5-634m-full.png'],check=True)
-p=f'{SRC}/tt5-634m-render.png'
-if os.path.exists(p): c=canvas((20,22,26)); f=fit(Image.open(p),W,H); c.paste(f,((W-f.width)//2,(H-f.height)//2)); save(c,'render')
+p=source('tt5-634m-render')
+if p: c=canvas((20,22,26)); f=fit(Image.open(p),W,H); c.paste(f,((W-f.width)//2,(H-f.height)//2)); save(c,'render')
 
 # End
 c=canvas((250,250,248))
