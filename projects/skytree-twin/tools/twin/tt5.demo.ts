@@ -43,6 +43,21 @@ async function importJson(page: Page, name: string, value: unknown) {
     buffer: Buffer.from(JSON.stringify(value)),
   });
 }
+/** CLIPS: the 3D view over the whole page (on), or back in its place (off). */
+async function full(page: Page, on: boolean) {
+  await page.evaluate((v) => {
+    let el = document.getElementById('demo-full');
+    if (v && !el) {
+      el = document.createElement('style');
+      el.id = 'demo-full';
+      el.textContent =
+        '.construction-canvas{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;z-index:9998!important;background:#eef1f4}';
+      document.head.append(el);
+    }
+    if (!v && el) el.remove();
+  }, on);
+  await page.waitForTimeout(1200);
+}
 async function shut(page: Page, title: string) {
   const summary = page.locator('summary', { hasText: new RegExp(`^${title}$`) }).first();
   const details = summary.locator('..');
@@ -118,8 +133,9 @@ test('TT5 tower', async ({ page }) => {
       buffered: true,
     });
   });
+  const start = Date.now();
   await page.goto('/');
-  await caption(page, '東京スカイツリーを題材にした近似のデジタルツイン（公開の情報からの近似。実物の図面ではなく、所有者・施工者とは関係ありません）', 4000);
+  if (!process.env.CLIPS) await caption(page, '東京スカイツリーを題材にした近似のデジタルツイン（公開の情報からの近似。実物の図面ではなく、所有者・施工者とは関係ありません）', 4000);
 
   await create(page, 'bim');
   await expect(page.getByTestId('bim-model-state')).toHaveText('Model up to date', { timeout: 90_000 });
@@ -151,7 +167,7 @@ test('TT5 tower', async ({ page }) => {
   note(`longest tasks on the page's thread since load (start s, length s): ${top.map(([a, d]) => `${(a / 1000).toFixed(1)}/${(d / 1000).toFixed(1)}`).join(', ')}`);
   await page.getByLabel('Cranes', { exact: true }).first().scrollIntoViewIfNeeded();
   await shot(page, 'tt5-cranes-checked');
-  await caption(page, `工程 ${doc.tasks.length} 作業、吊り ${doc.site!.lifts!.length} 回。届く範囲・荷重表・干渉・昇りの支えを検査（残るのは旋回範囲の重なりの注意だけ）`, 5000);
+  if (!process.env.CLIPS) await caption(page, `工程 ${doc.tasks.length} 作業、吊り ${doc.site!.lifts!.length} 回。届く範囲・荷重表・干渉・昇りの支えを検査（残るのは旋回範囲の重なりの注意だけ）`, 5000);
   if (process.env.EXPLORE) {
     await page.getByLabel('Date', { exact: true }).fill(day('top'));
     await page.waitForTimeout(4000);
@@ -163,6 +179,85 @@ test('TT5 tower', async ({ page }) => {
     return;
   }
 
+  if (process.env.CLIPS) {
+    // Clean clips of the 3D view over the whole page, no captions: their times in the page's video.
+    const t0 = start;
+    const mark = (name: string, a: number) => note(`clip ${name}: ${((a - t0) / 1000).toFixed(1)}–${((Date.now() - t0) / 1000).toFixed(1)} s`);
+    const steps = JSON.parse(process.env.CLIPS) as Record<string, Parameters<typeof camera>[1][]>;
+    const cam = async (k: string) => { for (const st of steps[k] ?? []) await camera(page, st); };
+    await full(page, true);
+    await cam('base');
+    await shot(page, 'clip-base');
+    await full(page, false);
+    // A: crawler cranes lifting.
+    await page.getByLabel('Date', { exact: true }).fill(addDays(day('steel-07'), 3));
+    await page.waitForTimeout(4000);
+    await full(page, true);
+    await cam('a');
+    await shot(page, 'clip-a');
+    await full(page, false);
+    await page.getByRole('button', { name: 'Play lifts', exact: true }).click();
+    await full(page, true);
+    let a = Date.now();
+    await page.waitForTimeout(16000);
+    mark('a crawlers', a);
+    await full(page, false);
+    { const b = page.getByRole('button', { name: 'Stop lifts', exact: true }); if (await b.isVisible()) await b.click(); }
+    // B: tower cranes lifting.
+    await full(page, true);
+    await cam('a-back');
+    await full(page, false);
+    await page.getByLabel('Date', { exact: true }).fill(addDays(day('steel-25'), 3));
+    await page.waitForTimeout(4000);
+    await full(page, true);
+    await cam('b');
+    await shot(page, 'clip-b');
+    await full(page, false);
+    await page.getByRole('button', { name: 'Play lifts', exact: true }).click();
+    await full(page, true);
+    a = Date.now();
+    await page.waitForTimeout(16000);
+    mark('b tower cranes', a);
+    await full(page, false);
+    { const b = page.getByRole('button', { name: 'Stop lifts', exact: true }); if (await b.isVisible()) await b.click(); }
+    // C: trucks on the clock.
+    await open(page, 'People and trucks');
+    await page.getByLabel('Time', { exact: true }).fill('530');
+    await full(page, true);
+    await cam('c');
+    await shot(page, 'clip-c');
+    await full(page, false);
+    await page.getByRole('button', { name: 'Play time', exact: true }).click();
+    await full(page, true);
+    a = Date.now();
+    await page.waitForTimeout(16000);
+    mark('c trucks', a);
+    await full(page, false);
+    { const b = page.getByRole('button', { name: 'Stop time', exact: true }); if (await b.isVisible()) await b.click(); }
+    // D: 634 m, turning around it.
+    await full(page, true);
+    await cam('c-back');
+    await full(page, false);
+    await page.getByLabel('Date', { exact: true }).fill(day('top'));
+    await page.waitForTimeout(4000);
+    await full(page, true);
+    await cam('d');
+    await shot(page, 'clip-d');
+    const c = (await page.locator('.construction-canvas canvas').first().boundingBox())!;
+    a = Date.now();
+    await page.mouse.move(c.x + c.width / 2, c.y + c.height * 0.3);
+    await page.mouse.down();
+    for (let k = 1; k <= 240; k++) {
+      await page.mouse.move(c.x + c.width / 2 - k * 2.5, c.y + c.height * 0.3);
+      await page.waitForTimeout(50);
+    }
+    await page.mouse.up();
+    await page.waitForTimeout(1000);
+    mark('d orbit', a);
+    await shot(page, 'clip-d-end');
+    await writeFile(`${out}/tt5-clips.txt`, log.join('\n') + '\n');
+    return;
+  }
   // The whole tower in view: the tower's foot to the bottom middle of the canvas.
   await camera(page, { pan: [[0.41, 0.87], [0.5, 0.92]] });
   if (process.env.RECORD_ONLY) {
@@ -197,7 +292,7 @@ test('TT5 tower', async ({ page }) => {
   await caption(page, '0〜170 m：三角形の足元の3面に、1,350 t級のクローラークレーン（想定）', 4500);
   await page.getByRole('button', { name: 'Play lifts', exact: true }).click();
   await caption(page, 'トラックが部材を運び込み、荷台から吊って据え付ける', 9000);
-  await page.getByRole('button', { name: 'Stop lifts', exact: true }).click();
+  { const b = page.getByRole('button', { name: 'Stop lifts', exact: true }); if (await b.isVisible()) await b.click(); }
 
   // Tower cranes climbing.
   await camera(page, { wheel: 3 });
@@ -207,7 +302,7 @@ test('TT5 tower', async ({ page }) => {
   await caption(page, '170 m から上：中心の吹き抜けに4台のタワークレーン。鉄骨と一緒に昇る（TT1）', 4500);
   await page.getByRole('button', { name: 'Play lifts', exact: true }).click();
   await caption(page, '部材はトラックで足元の中心へ。吹き抜けを吊り上げ、外周へ旋回', 9000);
-  await page.getByRole('button', { name: 'Stop lifts', exact: true }).click();
+  { const b = page.getByRole('button', { name: 'Stop lifts', exact: true }); if (await b.isVisible()) await b.click(); }
 
   // The gain tower lift-up.
   await page.getByLabel('Date', { exact: true }).fill(addDays(day('raise-3'), 5));
@@ -229,7 +324,7 @@ test('TT5 tower', async ({ page }) => {
   await page.getByLabel('Time', { exact: true }).fill('530');
   await page.getByRole('button', { name: 'Play time', exact: true }).click();
   await caption(page, '時刻の再生：吊りの時刻に合わせてトラックが着き、荷を下ろして帰る（TT3）', 9000);
-  await page.getByRole('button', { name: 'Stop time', exact: true }).click();
+  { const b = page.getByRole('button', { name: 'Stop time', exact: true }); if (await b.isVisible()) await b.click(); }
   await shot(page, 'tt5-trucks');
   await camera(page, { wheel: 4 });
 

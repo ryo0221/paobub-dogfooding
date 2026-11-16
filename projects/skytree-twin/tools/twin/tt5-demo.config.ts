@@ -17,8 +17,8 @@ export default defineConfig({
       name: 'desktop',
       use: {
         ...devices['Desktop Chrome'],
-        viewport: { width: 1440, height: 900 },
-        video: { mode: 'on', size: { width: 1440, height: 900 } },
+        viewport: process.env.CLIPS ? { width: 1920, height: 1080 } : { width: 1440, height: 900 },
+        video: { mode: 'on', size: process.env.CLIPS ? { width: 1920, height: 1080 } : { width: 1440, height: 900 } },
       },
     },
   ],

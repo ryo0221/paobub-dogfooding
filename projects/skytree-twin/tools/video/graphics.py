@@ -1,3 +1,4 @@
+import subprocess
 # Still pictures for the promo video: cards drawn here, and the Playground stills framed.
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import os, sys, json
@@ -66,7 +67,15 @@ def still(name,crop=None,cap=None):
     shadow_paste(c,f,x,y)
     if cap: label(c,W//2,y+f.height+50,cap,32,w=5)
     save(c,name)
-for n in ['tt5-crawlers','tt5-tower-cranes','tt5-gain-tower','tt5-634m','tt5-trucks','tt5-cranes-checked']: still(n)
+for n in ['tt5-crawlers','tt5-tower-cranes','tt5-gain-tower','tt5-634m']: still(n)
+# The trucks: their trips and the dangers on the clock (the panel; in the 3D view they are too small to see).
+still('tt5-trucks',crop=(950,240,1430,890))
+# The crane check's result: the notices left and the cranes (the panel only).
+still('tt5-cranes-checked',crop=(950,540,1430,880))
+# The whole tower at 634 m: the last frame of the schedule video, around the tower.
+v=os.path.join(WORK,'src','tt5-schedule.mp4')
+if os.path.exists(v):
+    subprocess.run(['ffmpeg','-v','error','-y','-sseof','-0.1','-i',v,'-frames:v','1','-update','1','-vf','crop=1049:590:115:130,scale=1920:1080:flags=lanczos','img/tt5-634m-full.png'],check=True)
 p=f'{SRC}/tt5-634m-render.png'
 if os.path.exists(p): c=canvas((20,22,26)); f=fit(Image.open(p),W,H); c.paste(f,((W-f.width)//2,(H-f.height)//2)); save(c,'render')
 
