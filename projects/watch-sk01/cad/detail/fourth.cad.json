@@ -584,8 +584,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-015",
+  "description": "四番車と秒針",
+  "material": {
+   "name": "真鍮・焼入れ鋼",
+   "densityKgM3": 8500
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],

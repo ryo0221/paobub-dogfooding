@@ -258,6 +258,395 @@
      1
     ]
    }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 5.1
+    },
+    "height": {
+     "literalMm": 0.65
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.95
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-cavity-cylinder",
+   "name": "Barrel cavity"
+  },
+  {
+   "id": "barrel-cavity-placement",
+   "name": "Barrel cavity placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-cavity-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 5.1
+    },
+    "height": {
+     "literalMm": 0.65
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.95
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-gear-cavity-cylinder",
+   "name": "Barrel gear cavity"
+  },
+  {
+   "id": "barrel-gear-cavity-placement",
+   "name": "Barrel gear cavity placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-gear-cavity-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 1.6
+    },
+    "height": {
+     "literalMm": 0.55
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.95
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-arbor-core-cylinder",
+   "name": "Barrel arbor core"
+  },
+  {
+   "id": "barrel-arbor-core-placement",
+   "name": "Barrel arbor core placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-arbor-core-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spring",
+   "inputFeatureIds": [],
+   "args": {
+    "form": "spiral",
+    "use": "mainspring",
+    "thickness": {
+     "literalMm": 0.1
+    },
+    "height": {
+     "literalMm": 0.5
+    },
+    "innerRadius": {
+     "literalMm": 1.8
+    },
+    "pitch": {
+     "literalMm": 0.24
+    },
+    "turns": 13,
+    "material": {
+     "youngsModulusMpa": 206000
+    },
+    "barrel": {
+     "innerRadius": {
+      "literalMm": 5.1
+     },
+     "arborRadius": {
+      "literalMm": 1.6
+     },
+     "hoursPerTurn": 8
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.97
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "mainspring-spring",
+   "name": "Mainspring"
+  },
+  {
+   "id": "mainspring-placement",
+   "name": "Mainspring placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "mainspring-spring"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 5.6
+    },
+    "height": {
+     "literalMm": 0.1
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 1.5
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-cover-cylinder",
+   "name": "Barrel cover"
+  },
+  {
+   "id": "barrel-cover-placement",
+   "name": "Barrel cover placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-cover-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "barrel-drum-hollow",
+   "name": "cut Barrel cavity",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "barrel-drum-placement",
+    "barrel-cavity-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "barrel-drum-hollow-placement",
+   "name": "Barrel drum placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-drum-hollow"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "barrel-gear-hollow",
+   "name": "cut Barrel gear cavity",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "barrel-gear-placement",
+    "barrel-gear-cavity-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "barrel-gear-hollow-placement",
+   "name": "Barrel gear placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-gear-hollow"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
   }
  ],
  "bodies": [
@@ -265,7 +654,7 @@
    "id": "BD-026",
    "name": "香箱のドラム",
    "kind": "solid",
-   "resultFeatureId": "barrel-drum-placement",
+   "resultFeatureId": "barrel-drum-hollow-placement",
    "state": "active",
    "appearance": {
     "color": "#d8b46a",
@@ -281,7 +670,7 @@
    "id": "BD-027",
    "name": "香箱の歯車",
    "kind": "solid",
-   "resultFeatureId": "barrel-gear-placement",
+   "resultFeatureId": "barrel-gear-hollow-placement",
    "state": "active",
    "appearance": {
     "color": "#d8b46a",
@@ -324,17 +713,118 @@
    "mass": {
     "densityKgM3": 7900
    }
+  },
+  {
+   "id": "barrel-cavity",
+   "name": "Barrel cavity",
+   "kind": "solid",
+   "resultFeatureId": "barrel-cavity-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "barrel-drum-hollow"
+  },
+  {
+   "id": "barrel-gear-cavity",
+   "name": "Barrel gear cavity",
+   "kind": "solid",
+   "resultFeatureId": "barrel-gear-cavity-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "barrel-gear-hollow"
+  },
+  {
+   "id": "BD-092",
+   "name": "香箱真の芯",
+   "kind": "solid",
+   "resultFeatureId": "barrel-arbor-core-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-093",
+   "name": "ぜんまい",
+   "kind": "solid",
+   "resultFeatureId": "mainspring-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#4a5a8a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.35
+   },
+   "mass": {
+    "densityKgM3": 8300
+   }
+  },
+  {
+   "id": "BD-094",
+   "name": "香箱のふた",
+   "kind": "solid",
+   "resultFeatureId": "barrel-cover-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
   }
  ],
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-007",
+  "description": "香箱（ドラム・歯車・真・角穴車・ぜんまい）",
+  "material": {
+   "name": "真鍮",
+   "densityKgM3": 8500
+  },
+  "sourcing": "outsource",
+  "supplier": "SS-01 の外注先（未決）"
  },
  "parts": [],
  "components": [],
  "componentPatterns": [],
  "joints": [],
- "solvedPoses": {}
+ "solvedPoses": {},
+ "designTargets": [
+  {
+   "id": "TG-04",
+   "name": "パワーリザーブ",
+   "requirement": "RQ-02",
+   "measure": {
+    "kind": "spring",
+    "featureId": "mainspring-spring",
+    "quantity": "runHours"
+   },
+   "min": 40
+  },
+  {
+   "id": "TG-05",
+   "name": "ぜんまいの曲げ応力（巻き上げたとき）",
+   "measure": {
+    "kind": "spring",
+    "featureId": "mainspring-spring",
+    "quantity": "fullStress"
+   },
+   "max": 2000
+  }
+ ]
 }

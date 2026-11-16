@@ -179,6 +179,12 @@
     "bodyKind": "body"
    },
    {
+    "path": "cad/detail/case-screw.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
     "path": "cad/detail/case.cad.json",
     "as": "cad",
     "parameterKind": "detail-parameter",
@@ -209,6 +215,12 @@
     "bodyKind": "body"
    },
    {
+    "path": "cad/detail/gasket.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
     "path": "cad/detail/hour.cad.json",
     "as": "cad",
     "parameterKind": "detail-parameter",
@@ -234,6 +246,12 @@
    },
    {
     "path": "cad/detail/sk01-watch.assembly.cad.json",
+    "as": "cad",
+    "parameterKind": "detail-parameter",
+    "bodyKind": "body"
+   },
+   {
+    "path": "cad/detail/spring-bar.cad.json",
     "as": "cad",
     "parameterKind": "detail-parameter",
     "bodyKind": "body"

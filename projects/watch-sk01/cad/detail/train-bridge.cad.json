@@ -1579,8 +1579,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-003",
+  "description": "輪列受け",
+  "material": {
+   "name": "真鍮 C3604",
+   "densityKgM3": 8500
+  },
+  "sourcing": "make"
  },
  "parts": [],
  "components": [],

@@ -3432,8 +3432,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-017",
+  "description": "がんぎ車",
+  "material": {
+   "name": "焼入れ鋼",
+   "densityKgM3": 7900
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],

@@ -671,8 +671,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-011",
+  "description": "二番車と二番かな・筒かな・分針",
+  "material": {
+   "name": "真鍮・焼入れ鋼",
+   "densityKgM3": 8500
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],

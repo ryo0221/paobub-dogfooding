@@ -7358,33 +7358,6 @@
    "name": "Hairspring"
   },
   {
-   "id": "hairspring-placement",
-   "name": "Hairspring placement",
-   "type": "transform",
-   "inputFeatureIds": [
-    "hairspring-extrude"
-   ],
-   "args": {
-    "translation": [
-     {
-      "literalMm": 0
-     },
-     {
-      "literalMm": 0
-     },
-     {
-      "literalMm": 0
-     }
-    ],
-    "rotation": [
-     0,
-     0,
-     0,
-     1
-    ]
-   }
-  },
-  {
    "type": "extrude",
    "inputFeatureIds": [],
    "args": {
@@ -7638,6 +7611,79 @@
      1
     ]
    }
+  },
+  {
+   "type": "spring",
+   "inputFeatureIds": [],
+   "args": {
+    "form": "spiral",
+    "use": "hairspring",
+    "thickness": {
+     "literalMm": 0.03
+    },
+    "height": {
+     "literalMm": 0.1499999999999999
+    },
+    "innerRadius": {
+     "literalMm": 0.52
+    },
+    "pitch": {
+     "literalMm": 0.19714285714285712
+    },
+    "turns": 7,
+    "material": {
+     "youngsModulusMpa": 190000
+    },
+    "angle": {
+     "literalRad": 5.235987755982989
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 2.5
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "hairspring-spring",
+   "name": "Hairspring"
+  },
+  {
+   "id": "hairspring-placement",
+   "name": "Hairspring placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "hairspring-spring"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
   }
  ],
  "bodies": [
@@ -7702,22 +7748,6 @@
     "opacity": 1,
     "metalness": 1,
     "roughness": 0.25
-   },
-   "mass": {
-    "densityKgM3": 7900
-   }
-  },
-  {
-   "id": "BD-055",
-   "name": "ひげぜんまい",
-   "kind": "solid",
-   "resultFeatureId": "hairspring-placement",
-   "state": "active",
-   "appearance": {
-    "color": "#24306e",
-    "opacity": 1,
-    "metalness": 1,
-    "roughness": 0.3
    },
    "mass": {
     "densityKgM3": 7900
@@ -7802,13 +7832,34 @@
    "mass": {
     "densityKgM3": 8500
    }
+  },
+  {
+   "id": "BD-055",
+   "name": "ひげぜんまい",
+   "kind": "solid",
+   "resultFeatureId": "hairspring-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
   }
  ],
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-020",
+  "description": "てんぷ（てん輪・てん真・振り座・ひげぜんまい）",
+  "material": {
+   "name": "ベリリウム銅・焼入れ鋼",
+   "densityKgM3": 8500
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],

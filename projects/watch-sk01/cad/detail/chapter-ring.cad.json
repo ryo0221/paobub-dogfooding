@@ -1150,7 +1150,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1199,7 +1199,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1248,7 +1248,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1297,7 +1297,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1346,7 +1346,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1395,7 +1395,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1444,7 +1444,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1493,7 +1493,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1542,7 +1542,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1591,7 +1591,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1640,7 +1640,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1689,7 +1689,7 @@
      "holes": []
     },
     "distance": {
-     "literalMm": 0.05
+     "literalMm": 0.2
     },
     "direction": -1
    },
@@ -1937,8 +1937,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-033",
+  "description": "見返しリングとインデックス",
+  "material": {
+   "name": "真鍮、塗装",
+   "densityKgM3": 8500
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],

@@ -1,0 +1,519 @@
+{
+  "format": "editor-platform.cad-bom",
+  "version": 1,
+  "name": "SK-01",
+  "contentHash": "be8c08b54fd483d1af83ab92fd7326db3ebfc080bd7a6a1bbb9a382d95455dbd",
+  "mode": "flat",
+  "rows": [
+    {
+      "item": "1",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-001",
+      "name": "Main plate",
+      "description": "地板",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/plate.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "2157fcbfc48874a3e8cd45fa4a188eb72970d14e0c25309a83014cf198d10b74",
+      "material": "真鍮 C3604、ロジウムめっき",
+      "sourcing": "make",
+      "unitMassKg": 0.0023303674582438125,
+      "massKg": 0.0023303674582438125
+    },
+    {
+      "item": "2",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-003",
+      "name": "Train bridge",
+      "description": "輪列受け",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/train-bridge.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "7551d1881bed3384348bf1d118ff63375f158f581102c1d43e03680e939d5de3",
+      "material": "真鍮 C3604",
+      "sourcing": "make",
+      "unitMassKg": 0.00014698678919929437,
+      "massKg": 0.00014698678919929437
+    },
+    {
+      "item": "3",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-005",
+      "name": "Barrel bridge",
+      "description": "香箱受け",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/barrel-bridge.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "6876635d9e0f61abcd0f4c02a48ad85cb43e4881f9110f46ffdbf4d3ffd1ef15",
+      "material": "真鍮 C3604",
+      "sourcing": "make",
+      "unitMassKg": 0.00038900320602154543,
+      "massKg": 0.00038900320602154543
+    },
+    {
+      "item": "4",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-006",
+      "name": "Balance cock",
+      "description": "てんぷ受け",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/balance-cock.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "8b3b410791136b62f4bbb12b6a737371ba576233f1f18e6cff34504fe469d7e9",
+      "material": "真鍮 C3604",
+      "sourcing": "make",
+      "unitMassKg": 0.0000497390757559182,
+      "massKg": 0.0000497390757559182
+    },
+    {
+      "item": "5",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-007",
+      "name": "Barrel",
+      "description": "香箱（ドラム・歯車・真・角穴車・ぜんまい）",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/barrel.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "abdf2846d2e6b310a0ab68786068ebe367036806dd47ec72466733be434c4e23",
+      "material": "真鍮",
+      "sourcing": "outsource",
+      "supplier": "SS-01 の外注先（未決）",
+      "unitMassKg": 0.00045979330951162196,
+      "massKg": 0.00045979330951162196
+    },
+    {
+      "item": "6",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-011",
+      "name": "Centre wheel",
+      "description": "二番車と二番かな・筒かな・分針",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/centre.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "7c45eb4ff5154f360042f002df537fa40efc3480beb3e314731358c31ccc4d1b",
+      "material": "真鍮・焼入れ鋼",
+      "sourcing": "outsource",
+      "unitMassKg": 0.00003614271206194355,
+      "massKg": 0.00003614271206194355
+    },
+    {
+      "item": "7",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-014",
+      "name": "Third wheel",
+      "description": "三番車",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/third.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "6fdf7436ea55b16133e7efddc8408fcb15cc12451cb45c3cd0b73f2175430b44",
+      "material": "真鍮・焼入れ鋼",
+      "sourcing": "outsource",
+      "unitMassKg": 0.000022957798874578296,
+      "massKg": 0.000022957798874578296
+    },
+    {
+      "item": "8",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-015",
+      "name": "Fourth wheel",
+      "description": "四番車と秒針",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/fourth.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "bf5157727a956a4cb31d068d30bfb9b50a1de44916a6a1de345aab75d96a9083",
+      "material": "真鍮・焼入れ鋼",
+      "sourcing": "outsource",
+      "unitMassKg": 0.000020856490104274972,
+      "massKg": 0.000020856490104274972
+    },
+    {
+      "item": "9",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-017",
+      "name": "Escape wheel",
+      "description": "がんぎ車",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/escape.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "1405c615ddf759b36e4c8e12ff70d7c9eb52e76518fbf7c1dd5f79f2b974f33a",
+      "material": "焼入れ鋼",
+      "sourcing": "outsource",
+      "unitMassKg": 0.000009506196380716491,
+      "massKg": 0.000009506196380716491
+    },
+    {
+      "item": "10",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-018",
+      "name": "Pallet fork",
+      "description": "アンクル",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/pallet.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "751fcb2a3933682209ff7dd15c831889e6ea46dbf0183651f6c888a53412a827",
+      "material": "焼入れ鋼",
+      "sourcing": "outsource",
+      "unitMassKg": 0.0000014002679695686246,
+      "massKg": 0.0000014002679695686246
+    },
+    {
+      "item": "11",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-020",
+      "name": "Balance",
+      "description": "てんぷ（てん輪・てん真・振り座・ひげぜんまい）",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/balance.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "0762e288fc8ece72ccc14d78a35a546d0b785efdc107bbba200fb50c8aec44b4",
+      "material": "ベリリウム銅・焼入れ鋼",
+      "sourcing": "outsource",
+      "unitMassKg": 0.00003553129886264192,
+      "massKg": 0.00003553129886264192
+    },
+    {
+      "item": "12",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-023",
+      "name": "Minute wheel",
+      "description": "日の裏車",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/minute.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "8da6f9af55b5c07bd2748b13ed2c95f4818390fb4f124c983b897022d0c6495b",
+      "material": "真鍮・鋼",
+      "sourcing": "outsource",
+      "unitMassKg": 0.000013029624280806096,
+      "massKg": 0.000013029624280806096
+    },
+    {
+      "item": "13",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-024",
+      "name": "Hour wheel",
+      "description": "筒車と時針",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/hour.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "f8816b2247c575af2bd0cfc309d33a48e12b12a12cdfae30c0908c0930edb1d7",
+      "material": "真鍮",
+      "sourcing": "outsource",
+      "unitMassKg": 0.000014788296370135649,
+      "massKg": 0.000014788296370135649
+    },
+    {
+      "item": "14",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-026",
+      "name": "Case middle",
+      "description": "胴（ラグ一体）と巻真・リューズ",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/case.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "a93547dbc8b6e3107706d68d51d3bcbabe2e6e8cefaa5dec9718dd212c7322d7",
+      "material": "ステンレス鋼 316L",
+      "sourcing": "outsource",
+      "unitMassKg": 0.012479449725141877,
+      "massKg": 0.012479449725141877
+    },
+    {
+      "item": "15",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-029",
+      "name": "Bezel",
+      "description": "ベゼルと風防",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/bezel.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "60b07fddf1b7a9aa5f9f0b9cee4576df69cd4f469170c7b661a189504c8103a5",
+      "material": "ステンレス鋼 316L",
+      "sourcing": "outsource",
+      "unitMassKg": 0.004221019007949423,
+      "massKg": 0.004221019007949423
+    },
+    {
+      "item": "16",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-031",
+      "name": "Case back",
+      "description": "裏ぶたと裏ぶたのガラス",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/case-back.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "48c0f49401483807209d95ac2b47c208ccecf7920d131f7cc8d3c1627bb0fd5c",
+      "material": "ステンレス鋼 316L",
+      "sourcing": "outsource",
+      "unitMassKg": 0.002018041612134675,
+      "massKg": 0.002018041612134675
+    },
+    {
+      "item": "17",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-033",
+      "name": "Chapter ring",
+      "description": "見返しリングとインデックス",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/chapter-ring.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "2492646a1b7ce5633c79d038239c9b192a5c1da4f0e090f7a0688c3e61108939",
+      "material": "真鍮、塗装",
+      "sourcing": "outsource",
+      "unitMassKg": 0.0003972078351851784,
+      "massKg": 0.0003972078351851784
+    },
+    {
+      "item": "18",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-039",
+      "name": "裏ぶたのねじ",
+      "description": "裏ぶたのねじ（Watch screw M0.8×2）",
+      "quantity": 6,
+      "reference": {
+        "artifactId": "cad/detail/case-screw.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "16d5c56bfd83c3a26379bda0954c91b86eb2ee25c3fe6f5a0bcf2358f765fd4a",
+      "material": "ステンレス鋼",
+      "sourcing": "standard",
+      "unitMassKg": 0.000014737171268802147,
+      "massKg": 0.00008842302761281288
+    },
+    {
+      "item": "19",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-035",
+      "name": "裏ぶたのパッキン",
+      "description": "裏ぶたのパッキン（O-ring 31.3×0.6）",
+      "quantity": 1,
+      "reference": {
+        "artifactId": "cad/detail/gasket.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "a2ca735bb637f13adad9d5256118a232ea3da28398650a30b667ab2a28783c4a",
+      "material": "ニトリルゴム",
+      "sourcing": "standard",
+      "unitMassKg": 0.00002833563423552744,
+      "massKg": 0.00002833563423552744
+    },
+    {
+      "item": "20",
+      "level": 0,
+      "kind": "part",
+      "partNumber": "PT-038",
+      "name": "ばね棒",
+      "description": "ばね棒（Spring bar 16×1.8）",
+      "quantity": 2,
+      "reference": {
+        "artifactId": "cad/detail/spring-bar.cad.json",
+        "versionId": "p4"
+      },
+      "contentHash": "bae52e8304637d53de64bd2ef7140832e0089da18133f27af88c7ff126073b3a",
+      "material": "ステンレス鋼",
+      "sourcing": "standard",
+      "unitMassKg": 0.0003196943589155221,
+      "massKg": 0.0006393887178310442
+    }
+  ],
+  "totals": {
+    "massKg": 0.023401968083727395,
+    "cost": 0,
+    "currency": "JPY",
+    "bySourcing": {
+      "make": {
+        "quantity": 4,
+        "cost": 0
+      },
+      "outsource": {
+        "quantity": 13,
+        "cost": 0
+      },
+      "buy": {
+        "quantity": 0,
+        "cost": 0
+      },
+      "standard": {
+        "quantity": 9,
+        "cost": 0
+      },
+      "unset": {
+        "quantity": 0,
+        "cost": 0
+      }
+    },
+    "leftOut": [
+      {
+        "item": "1",
+        "name": "Main plate",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "2",
+        "name": "Train bridge",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "3",
+        "name": "Barrel bridge",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "4",
+        "name": "Balance cock",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "5",
+        "name": "Barrel",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "6",
+        "name": "Centre wheel",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "7",
+        "name": "Third wheel",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "8",
+        "name": "Fourth wheel",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "9",
+        "name": "Escape wheel",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "10",
+        "name": "Pallet fork",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "11",
+        "name": "Balance",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "12",
+        "name": "Minute wheel",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "13",
+        "name": "Hour wheel",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "14",
+        "name": "Case middle",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "15",
+        "name": "Bezel",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "16",
+        "name": "Case back",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "17",
+        "name": "Chapter ring",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "18",
+        "name": "裏ぶたのねじ",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "19",
+        "name": "裏ぶたのパッキン",
+        "bodyName": "",
+        "code": "cost-missing"
+      },
+      {
+        "item": "20",
+        "name": "ばね棒",
+        "bodyName": "",
+        "code": "cost-missing"
+      }
+    ]
+  }
+}

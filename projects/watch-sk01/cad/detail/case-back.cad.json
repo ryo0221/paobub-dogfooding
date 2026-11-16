@@ -10,13 +10,124 @@
   "angularToleranceRad": 1e-9,
   "maxResultLinearToleranceMm": 0.0001
  },
- "parameters": [],
+ "parameters": [
+  {
+   "id": "gasket-section",
+   "name": "パッキンの太さ",
+   "type": "length",
+   "value": 0.6
+  },
+  {
+   "id": "groove-depth",
+   "name": "パッキン溝の深さ",
+   "type": "length",
+   "value": 0.44999999999999996
+  },
+  {
+   "id": "seat-gap",
+   "name": "裏ぶたと胴のすき間",
+   "type": "length",
+   "value": 0.020000000000000462
+  }
+ ],
  "profiles": [],
  "sketches": [
   {
-   "id": "case-back-ring",
-   "name": "Case back ring",
+   "id": "gasket-groove-outline",
+   "name": "Gasket groove outline",
    "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "orientation": [
+     0.7071067811865476,
+     0,
+     0,
+     -0.7071067811865476
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0"
+    },
+    {
+     "type": "point",
+     "id": "p1"
+    },
+    {
+     "type": "point",
+     "id": "p2"
+    },
+    {
+     "type": "point",
+     "id": "p3"
+    },
+    {
+     "type": "line",
+     "id": "l0",
+     "start": "p0",
+     "end": "p1"
+    },
+    {
+     "type": "line",
+     "id": "l1",
+     "start": "p1",
+     "end": "p2"
+    },
+    {
+     "type": "line",
+     "id": "l2",
+     "start": "p2",
+     "end": "p3"
+    },
+    {
+     "type": "line",
+     "id": "l3",
+     "start": "p3",
+     "end": "p0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0": [
+     15.46460183660255,
+     -4.7700000000000005
+    ],
+    "p1": [
+     16.25,
+     -4.7700000000000005
+    ],
+    "p2": [
+     16.25,
+     -3.87
+    ],
+    "p3": [
+     15.46460183660255,
+     -3.87
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 17.6
+    },
+    "height": {
+     "literalMm": 0.6799999999999997
+    },
     "origin": [
      {
       "literalMm": 0
@@ -35,69 +146,7 @@
      1
     ]
    },
-   "entities": [
-    {
-     "type": "point",
-     "id": "c0"
-    },
-    {
-     "type": "point",
-     "id": "c1"
-    },
-    {
-     "type": "circle",
-     "id": "o0",
-     "center": "c0"
-    },
-    {
-     "type": "circle",
-     "id": "o1",
-     "center": "c1"
-    }
-   ],
-   "constraints": [],
-   "solved": {
-    "c0": [
-     0,
-     0
-    ],
-    "c1": [
-     0,
-     0
-    ],
-    "o0": [
-     17.6,
-     0
-    ],
-    "o1": [
-     15.25,
-     0
-    ]
-   }
-  }
- ],
- "features": [
-  {
-   "type": "extrude",
-   "inputFeatureIds": [],
-   "args": {
-    "sketchId": "case-back-ring",
-    "region": {
-     "outer": [
-      "o0"
-     ],
-     "holes": [
-      [
-       "o1"
-      ]
-     ]
-    },
-    "distance": {
-     "literalMm": 0.6799999999999997
-    },
-    "direction": 1
-   },
-   "id": "case-back-extrude",
+   "id": "case-back-cylinder",
    "name": "Case back"
   },
   {
@@ -105,7 +154,949 @@
    "name": "Case back placement",
    "type": "transform",
    "inputFeatureIds": [
-    "case-back-extrude"
+    "case-back-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 15.25
+    },
+    "height": {
+     "literalMm": 0.8799999999999997
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 4.220000000000001
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "case-back-bore-cylinder",
+   "name": "Case back bore"
+  },
+  {
+   "id": "case-back-bore-placement",
+   "name": "Case back bore placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "case-back-bore-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "case-back-bore-cut",
+   "name": "Case back bore cut",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "case-back-placement",
+    "case-back-bore-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "case-back-bore-cut-placement",
+   "name": "Case back placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "case-back-bore-cut"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "revolve",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "gasket-groove-outline",
+    "region": {
+     "outer": [
+      "l0",
+      "l1",
+      "l2",
+      "l3"
+     ],
+     "holes": []
+    },
+    "axisOrigin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "axisDirection": [
+     0,
+     1
+    ],
+    "angle": {
+     "literalRad": 6.283185307179586
+    }
+   },
+   "id": "gasket-groove-revolve",
+   "name": "Gasket groove"
+  },
+  {
+   "id": "gasket-groove-placement",
+   "name": "Gasket groove placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "gasket-groove-revolve"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gasket-groove-cut",
+   "name": "Gasket groove cut",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "case-back-bore-cut-placement",
+    "gasket-groove-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "gasket-groove-cut-placement",
+   "name": "Case back placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "gasket-groove-cut"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.45
+    },
+    "height": {
+     "literalMm": 0.8799999999999997
+    },
+    "origin": [
+     {
+      "literalMm": 14.54922678357857
+     },
+     {
+      "literalMm": 8.399999999999999
+     },
+     {
+      "literalMm": 4.220000000000001
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-clearance-1-cylinder",
+   "name": "Back screw clearance 1"
+  },
+  {
+   "id": "back-screw-clearance-1-placement",
+   "name": "Back screw clearance 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-clearance-1-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.45
+    },
+    "height": {
+     "literalMm": 0.8799999999999997
+    },
+    "origin": [
+     {
+      "literalMm": 1.0287033112837768e-15
+     },
+     {
+      "literalMm": 16.8
+     },
+     {
+      "literalMm": 4.220000000000001
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-clearance-2-cylinder",
+   "name": "Back screw clearance 2"
+  },
+  {
+   "id": "back-screw-clearance-2-placement",
+   "name": "Back screw clearance 2 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-clearance-2-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.45
+    },
+    "height": {
+     "literalMm": 0.8799999999999997
+    },
+    "origin": [
+     {
+      "literalMm": -14.54922678357857
+     },
+     {
+      "literalMm": 8.399999999999999
+     },
+     {
+      "literalMm": 4.220000000000001
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-clearance-3-cylinder",
+   "name": "Back screw clearance 3"
+  },
+  {
+   "id": "back-screw-clearance-3-placement",
+   "name": "Back screw clearance 3 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-clearance-3-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.45
+    },
+    "height": {
+     "literalMm": 0.8799999999999997
+    },
+    "origin": [
+     {
+      "literalMm": -14.549226783578568
+     },
+     {
+      "literalMm": -8.400000000000002
+     },
+     {
+      "literalMm": 4.220000000000001
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-clearance-4-cylinder",
+   "name": "Back screw clearance 4"
+  },
+  {
+   "id": "back-screw-clearance-4-placement",
+   "name": "Back screw clearance 4 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-clearance-4-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.45
+    },
+    "height": {
+     "literalMm": 0.8799999999999997
+    },
+    "origin": [
+     {
+      "literalMm": -3.08610993385133e-15
+     },
+     {
+      "literalMm": -16.8
+     },
+     {
+      "literalMm": 4.220000000000001
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-clearance-5-cylinder",
+   "name": "Back screw clearance 5"
+  },
+  {
+   "id": "back-screw-clearance-5-placement",
+   "name": "Back screw clearance 5 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-clearance-5-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.45
+    },
+    "height": {
+     "literalMm": 0.8799999999999997
+    },
+    "origin": [
+     {
+      "literalMm": 14.549226783578565
+     },
+     {
+      "literalMm": -8.400000000000007
+     },
+     {
+      "literalMm": 4.220000000000001
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-clearance-6-cylinder",
+   "name": "Back screw clearance 6"
+  },
+  {
+   "id": "back-screw-clearance-6-placement",
+   "name": "Back screw clearance 6 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-clearance-6-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": 14.54922678357857
+     },
+     {
+      "literalMm": 8.399999999999999
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-1-cylinder",
+   "name": "Back screw counterbore 1"
+  },
+  {
+   "id": "back-screw-counterbore-1-placement",
+   "name": "Back screw counterbore 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-1-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": 1.0287033112837768e-15
+     },
+     {
+      "literalMm": 16.8
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-2-cylinder",
+   "name": "Back screw counterbore 2"
+  },
+  {
+   "id": "back-screw-counterbore-2-placement",
+   "name": "Back screw counterbore 2 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-2-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": -14.54922678357857
+     },
+     {
+      "literalMm": 8.399999999999999
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-3-cylinder",
+   "name": "Back screw counterbore 3"
+  },
+  {
+   "id": "back-screw-counterbore-3-placement",
+   "name": "Back screw counterbore 3 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-3-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": -14.549226783578568
+     },
+     {
+      "literalMm": -8.400000000000002
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-4-cylinder",
+   "name": "Back screw counterbore 4"
+  },
+  {
+   "id": "back-screw-counterbore-4-placement",
+   "name": "Back screw counterbore 4 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-4-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": -3.08610993385133e-15
+     },
+     {
+      "literalMm": -16.8
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-5-cylinder",
+   "name": "Back screw counterbore 5"
+  },
+  {
+   "id": "back-screw-counterbore-5-placement",
+   "name": "Back screw counterbore 5 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-5-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.8
+    },
+    "height": {
+     "literalMm": 0.25
+    },
+    "origin": [
+     {
+      "literalMm": 14.549226783578565
+     },
+     {
+      "literalMm": -8.400000000000007
+     },
+     {
+      "literalMm": 4.85
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-screw-counterbore-6-cylinder",
+   "name": "Back screw counterbore 6"
+  },
+  {
+   "id": "back-screw-counterbore-6-placement",
+   "name": "Back screw counterbore 6 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-counterbore-6-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "back-screw-clearances",
+   "name": "Back screw clearances",
+   "type": "boolean",
+   "inputFeatureIds": [
+    "gasket-groove-cut-placement",
+    "back-screw-clearance-1-placement",
+    "back-screw-clearance-2-placement",
+    "back-screw-clearance-3-placement",
+    "back-screw-clearance-4-placement",
+    "back-screw-clearance-5-placement",
+    "back-screw-clearance-6-placement",
+    "back-screw-counterbore-1-placement",
+    "back-screw-counterbore-2-placement",
+    "back-screw-counterbore-3-placement",
+    "back-screw-counterbore-4-placement",
+    "back-screw-counterbore-5-placement",
+    "back-screw-counterbore-6-placement"
+   ],
+   "args": {
+    "mode": "cut"
+   }
+  },
+  {
+   "id": "back-screw-clearances-placement",
+   "name": "Case back placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-screw-clearances"
    ],
    "args": {
     "translation": [
@@ -191,7 +1182,7 @@
    "id": "BD-077",
    "name": "裏ぶた",
    "kind": "solid",
-   "resultFeatureId": "case-back-placement",
+   "resultFeatureId": "back-screw-clearances-placement",
    "state": "active",
    "appearance": {
     "color": "#d7d9dd",
@@ -202,6 +1193,174 @@
    "mass": {
     "densityKgM3": 8000
    }
+  },
+  {
+   "id": "case-back-bore",
+   "name": "Case back bore",
+   "kind": "solid",
+   "resultFeatureId": "case-back-bore-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "case-back-bore-cut"
+  },
+  {
+   "id": "gasket-groove",
+   "name": "Gasket groove",
+   "kind": "solid",
+   "resultFeatureId": "gasket-groove-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "gasket-groove-cut"
+  },
+  {
+   "id": "back-screw-clearance-1",
+   "name": "Back screw clearance 1",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-clearance-1-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-clearance-2",
+   "name": "Back screw clearance 2",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-clearance-2-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-clearance-3",
+   "name": "Back screw clearance 3",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-clearance-3-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-clearance-4",
+   "name": "Back screw clearance 4",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-clearance-4-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-clearance-5",
+   "name": "Back screw clearance 5",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-clearance-5-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-clearance-6",
+   "name": "Back screw clearance 6",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-clearance-6-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-1",
+   "name": "Back screw counterbore 1",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-1-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-2",
+   "name": "Back screw counterbore 2",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-2-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-3",
+   "name": "Back screw counterbore 3",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-3-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-4",
+   "name": "Back screw counterbore 4",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-4-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-5",
+   "name": "Back screw counterbore 5",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-5-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
+  },
+  {
+   "id": "back-screw-counterbore-6",
+   "name": "Back screw counterbore 6",
+   "kind": "solid",
+   "resultFeatureId": "back-screw-counterbore-6-placement",
+   "appearance": {
+    "color": "#9aa4b1",
+    "opacity": 1
+   },
+   "state": "consumed",
+   "consumedByFeatureId": "back-screw-clearances"
   },
   {
    "id": "BD-078",
@@ -225,12 +1384,90 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-031",
+  "description": "裏ぶたと裏ぶたのガラス",
+  "material": {
+   "name": "ステンレス鋼 316L",
+   "densityKgM3": 8000
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],
  "componentPatterns": [],
  "joints": [],
- "solvedPoses": {}
+ "solvedPoses": {},
+ "toleranceStacks": [
+  {
+   "id": "TS-01",
+   "name": "パッキンのつぶし代",
+   "requirement": "RQ-06",
+   "contributors": [
+    {
+     "id": "c-section",
+     "name": "パッキンの太さ",
+     "source": {
+      "kind": "parameter",
+      "parameterId": "gasket-section",
+      "lower": -0.03,
+      "upper": 0.03
+     },
+     "sign": 1,
+     "distribution": "normal"
+    },
+    {
+     "id": "c-depth",
+     "name": "溝の深さ",
+     "source": {
+      "kind": "parameter",
+      "parameterId": "groove-depth",
+      "lower": -0.02,
+      "upper": 0.02
+     },
+     "sign": -1,
+     "distribution": "normal"
+    },
+    {
+     "id": "c-gap",
+     "name": "すき間",
+     "source": {
+      "kind": "parameter",
+      "parameterId": "seat-gap",
+      "lower": -0.01,
+      "upper": 0.01
+     },
+     "sign": -1,
+     "distribution": "uniform"
+    }
+   ],
+   "min": 0.09,
+   "max": 0.18,
+   "runs": 100000,
+   "seed": 6
+  }
+ ],
+ "designTargets": [
+  {
+   "id": "TG-06",
+   "name": "パッキンのつぶし代（RSS の下限）",
+   "requirement": "RQ-06",
+   "measure": {
+    "kind": "tolerance-stack",
+    "stackId": "TS-01",
+    "value": "rss-min"
+   },
+   "min": 0.09
+  },
+  {
+   "id": "TG-07",
+   "name": "パッキンのつぶし代（RSS の上限）",
+   "requirement": "RQ-06",
+   "measure": {
+    "kind": "tolerance-stack",
+    "stackId": "TS-01",
+    "value": "rss-max"
+   },
+   "max": 0.18
+  }
+ ]
 }

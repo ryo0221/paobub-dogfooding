@@ -593,8 +593,13 @@
  "namedViews": [],
  "assets": [],
  "partProperties": {
-  "partNumber": "",
-  "description": ""
+  "partNumber": "PT-024",
+  "description": "筒車と時針",
+  "material": {
+   "name": "真鍮",
+   "densityKgM3": 8500
+  },
+  "sourcing": "outsource"
  },
  "parts": [],
  "components": [],
