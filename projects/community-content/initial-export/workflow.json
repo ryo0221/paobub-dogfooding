@@ -1,0 +1,73 @@
+{
+ "format": 1,
+ "name": "Community掲載コンテンツ",
+ "definition": {
+  "id": "community-content-release",
+  "version": "0.1.0"
+ },
+ "citations": "trace/citations.json",
+ "deliverables": {
+  "record-1": [
+   {
+    "path": "docs/record-1.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "record-2": [
+   {
+    "path": "docs/record-2.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "record-3": [
+   {
+    "path": "docs/record-3.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "record-4": [
+   {
+    "path": "docs/record-4.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "record-5": [
+   {
+    "path": "docs/record-5.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "record-6": [
+   {
+    "path": "docs/record-6.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ]
+ },
+ "phases": {
+  "step-1": {
+   "state": "進行中"
+  },
+  "step-2": {
+   "state": "未着手"
+  },
+  "step-3": {
+   "state": "未着手"
+  },
+  "step-4": {
+   "state": "未着手"
+  },
+  "step-5": {
+   "state": "未着手"
+  },
+  "step-6": {
+   "state": "未着手"
+  }
+ }
+}

@@ -36,3 +36,5 @@ GitHub Releaseへのraw保存案は自動承認レビューに保存方針違反
 
 Node 22でWorker 3 passed/0 failed/0 skipped、Staging dry-run再ビルド成功。
 差し戻し・変更演習・古い承認の失効・親子成果物受渡し・Native Remix・dev/Staging実URL・公開B・復旧は未実施。
+
+QA直人は版比較画面で2 commitを選び、差分表示を確認（qa-compare.txt/png）。工程の人による承認ではない。
