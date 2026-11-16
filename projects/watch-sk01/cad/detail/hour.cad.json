@@ -1,0 +1,604 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "hour-pipe-ring",
+   "name": "Hour pipe ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.35
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "c1": [
+     0,
+     0
+    ],
+    "o0": [
+     0.32,
+     0
+    ],
+    "o1": [
+     0.2,
+     0
+    ]
+   }
+  },
+  {
+   "id": "hour-hand-outline",
+   "name": "Hour hand outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.35
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "point",
+     "id": "p0_4"
+    },
+    {
+     "type": "point",
+     "id": "p0_5"
+    },
+    {
+     "type": "point",
+     "id": "p0_6"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_4"
+    },
+    {
+     "type": "line",
+     "id": "l0_4",
+     "start": "p0_4",
+     "end": "p0_5"
+    },
+    {
+     "type": "line",
+     "id": "l0_5",
+     "start": "p0_5",
+     "end": "p0_6"
+    },
+    {
+     "type": "line",
+     "id": "l0_6",
+     "start": "p0_6",
+     "end": "p0_0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     0,
+     6.2
+    ],
+    "p0_1": [
+     -0.5,
+     4.960000000000001
+    ],
+    "p0_2": [
+     -0.3,
+     0
+    ],
+    "p0_3": [
+     -0.4,
+     -1
+    ],
+    "p0_4": [
+     0.4,
+     -1
+    ],
+    "p0_5": [
+     0.3,
+     0
+    ],
+    "p0_6": [
+     0.5,
+     4.960000000000001
+    ],
+    "c1": [
+     0,
+     0
+    ],
+    "o1": [
+     0.2,
+     0
+    ]
+   }
+  },
+  {
+   "id": "hour-hand-boss-ring",
+   "name": "Hour hand boss ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.35
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "c1": [
+     0,
+     0
+    ],
+    "o0": [
+     0.45,
+     0
+    ],
+    "o1": [
+     0.2,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.096
+    },
+    "teeth": {
+     "literal": 40
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 10
+    },
+    "toothThickness": 0.5,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.19999999999999996
+    },
+    "bore": {
+     "literalMm": 0.4
+    },
+    "spokes": {
+     "count": {
+      "literal": 4
+     },
+     "rim": {
+      "literalMm": 0.35
+     },
+     "hub": {
+      "literalMm": 0.4
+     },
+     "width": {
+      "literalMm": 0.25
+     }
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "hour-wheel-spurgear",
+   "name": "Hour wheel"
+  },
+  {
+   "id": "hour-wheel-placement",
+   "name": "Hour wheel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "hour-wheel-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "hour-pipe-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.3500000000000001
+    },
+    "direction": 1
+   },
+   "id": "hour-pipe-extrude",
+   "name": "Hour pipe"
+  },
+  {
+   "id": "hour-pipe-placement",
+   "name": "Hour pipe placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "hour-pipe-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "hour-hand-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3",
+      "l0_4",
+      "l0_5",
+      "l0_6"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.06000000000000005
+    },
+    "direction": 1
+   },
+   "id": "hour-hand-extrude",
+   "name": "Hour hand"
+  },
+  {
+   "id": "hour-hand-placement",
+   "name": "Hour hand placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "hour-hand-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "hour-hand-boss-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.06000000000000005
+    },
+    "direction": 1
+   },
+   "id": "hour-hand-boss-extrude",
+   "name": "Hour hand boss"
+  },
+  {
+   "id": "hour-hand-boss-placement",
+   "name": "Hour hand boss placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "hour-hand-boss-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-064",
+   "name": "筒車",
+   "kind": "solid",
+   "resultFeatureId": "hour-wheel-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-065",
+   "name": "筒車のパイプ",
+   "kind": "solid",
+   "resultFeatureId": "hour-pipe-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-066",
+   "name": "時針",
+   "kind": "solid",
+   "resultFeatureId": "hour-hand-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-067",
+   "name": "時針のパイプ",
+   "kind": "solid",
+   "resultFeatureId": "hour-hand-boss-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

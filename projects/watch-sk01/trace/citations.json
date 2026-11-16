@@ -1,0 +1,2154 @@
+{
+ "note": "引用の表。from の項目が to の項目をもとにしている。",
+ "citations": [
+  {
+   "from": "RQ-01",
+   "to": "RG-01"
+  },
+  {
+   "from": "RQ-01",
+   "to": "BM-02"
+  },
+  {
+   "from": "RQ-02",
+   "to": "UC-03"
+  },
+  {
+   "from": "RQ-02",
+   "to": "BM-02"
+  },
+  {
+   "from": "RQ-03",
+   "to": "BM-02"
+  },
+  {
+   "from": "RQ-04",
+   "to": "UC-01"
+  },
+  {
+   "from": "RQ-04",
+   "to": "BM-01"
+  },
+  {
+   "from": "RQ-05",
+   "to": "UC-01"
+  },
+  {
+   "from": "RQ-05",
+   "to": "BM-01"
+  },
+  {
+   "from": "RQ-06",
+   "to": "UC-01"
+  },
+  {
+   "from": "RQ-06",
+   "to": "RG-02"
+  },
+  {
+   "from": "RQ-07",
+   "to": "UC-01"
+  },
+  {
+   "from": "RQ-07",
+   "to": "RG-03"
+  },
+  {
+   "from": "RQ-08",
+   "to": "UC-01"
+  },
+  {
+   "from": "RQ-08",
+   "to": "RG-04"
+  },
+  {
+   "from": "RQ-09",
+   "to": "UC-02"
+  },
+  {
+   "from": "RQ-10",
+   "to": "UC-01"
+  },
+  {
+   "from": "RQ-10",
+   "to": "BM-01"
+  },
+  {
+   "from": "RQ-11",
+   "to": "UC-01"
+  },
+  {
+   "from": "RQ-11",
+   "to": "BM-01"
+  },
+  {
+   "from": "RQ-12",
+   "to": "UC-02"
+  },
+  {
+   "from": "RQ-13",
+   "to": "BM-01"
+  },
+  {
+   "from": "RQ-14",
+   "to": "BM-02"
+  },
+  {
+   "from": "RQ-15",
+   "to": "RG-05"
+  },
+  {
+   "from": "CN-01",
+   "to": "RQ-02"
+  },
+  {
+   "from": "CN-01",
+   "to": "RQ-03"
+  },
+  {
+   "from": "CN-01",
+   "to": "RQ-05"
+  },
+  {
+   "from": "CN-01",
+   "to": "RQ-09"
+  },
+  {
+   "from": "CN-01",
+   "to": "RQ-14"
+  },
+  {
+   "from": "CN-02",
+   "to": "RQ-05"
+  },
+  {
+   "from": "CN-02",
+   "to": "RQ-09"
+  },
+  {
+   "from": "CN-03",
+   "to": "RQ-01"
+  },
+  {
+   "from": "CN-03",
+   "to": "RQ-09"
+  },
+  {
+   "from": "CN-03",
+   "to": "RQ-13"
+  },
+  {
+   "from": "DT-01",
+   "to": "RQ-09"
+  },
+  {
+   "from": "DT-02",
+   "to": "RQ-04"
+  },
+  {
+   "from": "DT-02",
+   "to": "RQ-09"
+  },
+  {
+   "from": "DT-03",
+   "to": "RQ-09"
+  },
+  {
+   "from": "HP-01",
+   "to": "RQ-04"
+  },
+  {
+   "from": "HP-01",
+   "to": "DT-02"
+  },
+  {
+   "from": "HP-02",
+   "to": "RQ-05"
+  },
+  {
+   "from": "HP-02",
+   "to": "CN-01"
+  },
+  {
+   "from": "HP-03",
+   "to": "CN-01"
+  },
+  {
+   "from": "HP-04",
+   "to": "RQ-10"
+  },
+  {
+   "from": "HP-05",
+   "to": "DT-02"
+  },
+  {
+   "from": "HP-05",
+   "to": "RQ-09"
+  },
+  {
+   "from": "HP-06",
+   "to": "CN-01"
+  },
+  {
+   "from": "HP-07",
+   "to": "DT-01"
+  },
+  {
+   "from": "HP-07",
+   "to": "RQ-09"
+  },
+  {
+   "from": "RK-01",
+   "to": "DT-01"
+  },
+  {
+   "from": "RK-02",
+   "to": "CN-01"
+  },
+  {
+   "from": "RK-03",
+   "to": "RQ-06"
+  },
+  {
+   "from": "RK-04",
+   "to": "RQ-07"
+  },
+  {
+   "from": "RK-05",
+   "to": "RQ-02"
+  },
+  {
+   "from": "SS-01",
+   "to": "CN-01"
+  },
+  {
+   "from": "SS-02",
+   "to": "CN-01"
+  },
+  {
+   "from": "SS-03",
+   "to": "CN-01"
+  },
+  {
+   "from": "SS-04",
+   "to": "CN-01"
+  },
+  {
+   "from": "SS-05",
+   "to": "CN-01"
+  },
+  {
+   "from": "SS-05",
+   "to": "DT-01"
+  },
+  {
+   "from": "SS-06",
+   "to": "CN-01"
+  },
+  {
+   "from": "SS-07",
+   "to": "DT-01"
+  },
+  {
+   "from": "SS-07",
+   "to": "DT-02"
+  },
+  {
+   "from": "SS-07",
+   "to": "DT-03"
+  },
+  {
+   "from": "SS-08",
+   "to": "CN-01"
+  },
+  {
+   "from": "SS-08",
+   "to": "DT-01"
+  },
+  {
+   "from": "SS-09",
+   "to": "DT-02"
+  },
+  {
+   "from": "IF-01",
+   "to": "SS-01"
+  },
+  {
+   "from": "IF-01",
+   "to": "SS-02"
+  },
+  {
+   "from": "IF-02",
+   "to": "SS-02"
+  },
+  {
+   "from": "IF-02",
+   "to": "SS-03"
+  },
+  {
+   "from": "IF-03",
+   "to": "SS-03"
+  },
+  {
+   "from": "IF-03",
+   "to": "SS-04"
+  },
+  {
+   "from": "IF-04",
+   "to": "SS-02"
+  },
+  {
+   "from": "IF-04",
+   "to": "SS-05"
+  },
+  {
+   "from": "IF-05",
+   "to": "SS-06"
+  },
+  {
+   "from": "IF-05",
+   "to": "SS-01"
+  },
+  {
+   "from": "IF-06",
+   "to": "SS-08"
+  },
+  {
+   "from": "IF-06",
+   "to": "SS-07"
+  },
+  {
+   "from": "IF-07",
+   "to": "SS-08"
+  },
+  {
+   "from": "IF-07",
+   "to": "SS-02"
+  },
+  {
+   "from": "IF-08",
+   "to": "SS-08"
+  },
+  {
+   "from": "IF-08",
+   "to": "SS-04"
+  },
+  {
+   "from": "IF-09",
+   "to": "SS-07"
+  },
+  {
+   "from": "IF-09",
+   "to": "SS-09"
+  },
+  {
+   "from": "PR-01",
+   "to": "HP-01"
+  },
+  {
+   "from": "PR-02",
+   "to": "HP-02"
+  },
+  {
+   "from": "PR-03",
+   "to": "HP-03"
+  },
+  {
+   "from": "PR-04",
+   "to": "HP-03"
+  },
+  {
+   "from": "PR-05",
+   "to": "HP-04"
+  },
+  {
+   "from": "PR-06",
+   "to": "HP-05"
+  },
+  {
+   "from": "PR-07",
+   "to": "HP-06"
+  },
+  {
+   "from": "EN-001",
+   "to": "PR-01"
+  },
+  {
+   "from": "EN-001",
+   "to": "PR-02"
+  },
+  {
+   "from": "EN-001",
+   "to": "SS-07"
+  },
+  {
+   "from": "EN-002",
+   "to": "PR-03"
+  },
+  {
+   "from": "EN-002",
+   "to": "PR-04"
+  },
+  {
+   "from": "EN-002",
+   "to": "SS-08"
+  },
+  {
+   "from": "EN-003",
+   "to": "SS-01"
+  },
+  {
+   "from": "EN-004",
+   "to": "SS-02"
+  },
+  {
+   "from": "EN-005",
+   "to": "SS-02"
+  },
+  {
+   "from": "EN-006",
+   "to": "SS-02"
+  },
+  {
+   "from": "EN-007",
+   "to": "SS-03"
+  },
+  {
+   "from": "EN-008",
+   "to": "SS-04"
+  },
+  {
+   "from": "EN-009",
+   "to": "SS-05"
+  },
+  {
+   "from": "EN-010",
+   "to": "PR-06"
+  },
+  {
+   "from": "EN-010",
+   "to": "SS-07"
+  },
+  {
+   "from": "EN-011",
+   "to": "PR-05"
+  },
+  {
+   "from": "EN-011",
+   "to": "SS-09"
+  },
+  {
+   "from": "EN-012",
+   "to": "PR-05"
+  },
+  {
+   "from": "EN-012",
+   "to": "SS-09"
+  },
+  {
+   "from": "EN-013",
+   "to": "PR-07"
+  },
+  {
+   "from": "EN-013",
+   "to": "SS-06"
+  },
+  {
+   "from": "BG-01",
+   "to": "RQ-11"
+  },
+  {
+   "from": "BG-01",
+   "to": "SS-07"
+  },
+  {
+   "from": "BG-01",
+   "to": "SS-08"
+  },
+  {
+   "from": "BG-02",
+   "to": "RQ-05"
+  },
+  {
+   "from": "BG-02",
+   "to": "SS-07"
+  },
+  {
+   "from": "BG-02",
+   "to": "SS-08"
+  },
+  {
+   "from": "BG-03",
+   "to": "RQ-13"
+  },
+  {
+   "from": "BG-03",
+   "to": "SS-07"
+  },
+  {
+   "from": "BG-03",
+   "to": "SS-08"
+  },
+  {
+   "from": "BG-03",
+   "to": "SS-04"
+  },
+  {
+   "from": "BG-04",
+   "to": "RQ-14"
+  },
+  {
+   "from": "BG-04",
+   "to": "SS-02"
+  },
+  {
+   "from": "BG-04",
+   "to": "SS-08"
+  },
+  {
+   "from": "PT-001",
+   "to": "SS-08"
+  },
+  {
+   "from": "PT-002",
+   "to": "SS-08"
+  },
+  {
+   "from": "PT-003",
+   "to": "SS-08"
+  },
+  {
+   "from": "PT-004",
+   "to": "SS-08"
+  },
+  {
+   "from": "PT-005",
+   "to": "SS-08"
+  },
+  {
+   "from": "PT-006",
+   "to": "SS-08"
+  },
+  {
+   "from": "PT-007",
+   "to": "SS-01"
+  },
+  {
+   "from": "PT-008",
+   "to": "SS-01"
+  },
+  {
+   "from": "PT-009",
+   "to": "SS-01"
+  },
+  {
+   "from": "PT-010",
+   "to": "SS-01"
+  },
+  {
+   "from": "PT-011",
+   "to": "SS-02"
+  },
+  {
+   "from": "PT-012",
+   "to": "SS-05"
+  },
+  {
+   "from": "PT-013",
+   "to": "SS-05"
+  },
+  {
+   "from": "PT-014",
+   "to": "SS-02"
+  },
+  {
+   "from": "PT-015",
+   "to": "SS-02"
+  },
+  {
+   "from": "PT-016",
+   "to": "SS-05"
+  },
+  {
+   "from": "PT-017",
+   "to": "SS-03"
+  },
+  {
+   "from": "PT-018",
+   "to": "SS-03"
+  },
+  {
+   "from": "PT-019",
+   "to": "SS-03"
+  },
+  {
+   "from": "PT-020",
+   "to": "SS-04"
+  },
+  {
+   "from": "PT-021",
+   "to": "SS-04"
+  },
+  {
+   "from": "PT-022",
+   "to": "SS-04"
+  },
+  {
+   "from": "PT-023",
+   "to": "SS-05"
+  },
+  {
+   "from": "PT-024",
+   "to": "SS-05"
+  },
+  {
+   "from": "PT-025",
+   "to": "SS-05"
+  },
+  {
+   "from": "PT-026",
+   "to": "SS-07"
+  },
+  {
+   "from": "PT-027",
+   "to": "SS-06"
+  },
+  {
+   "from": "PT-028",
+   "to": "SS-06"
+  },
+  {
+   "from": "PT-029",
+   "to": "SS-07"
+  },
+  {
+   "from": "PT-030",
+   "to": "SS-07"
+  },
+  {
+   "from": "PT-031",
+   "to": "SS-07"
+  },
+  {
+   "from": "PT-032",
+   "to": "SS-07"
+  },
+  {
+   "from": "PT-033",
+   "to": "SS-07"
+  },
+  {
+   "from": "PT-034",
+   "to": "SS-07"
+  },
+  {
+   "from": "PT-035",
+   "to": "SS-07"
+  },
+  {
+   "from": "PT-036",
+   "to": "SS-06"
+  },
+  {
+   "from": "PT-037",
+   "to": "SS-09"
+  },
+  {
+   "from": "PT-038",
+   "to": "SS-09"
+  },
+  {
+   "from": "FM-01",
+   "to": "PT-010"
+  },
+  {
+   "from": "FM-01",
+   "to": "RQ-02"
+  },
+  {
+   "from": "FM-02",
+   "to": "PT-011"
+  },
+  {
+   "from": "FM-02",
+   "to": "PT-014"
+  },
+  {
+   "from": "FM-02",
+   "to": "PT-015"
+  },
+  {
+   "from": "FM-02",
+   "to": "PT-017"
+  },
+  {
+   "from": "FM-02",
+   "to": "RQ-14"
+  },
+  {
+   "from": "FM-03",
+   "to": "PT-026"
+  },
+  {
+   "from": "FM-03",
+   "to": "PT-031"
+  },
+  {
+   "from": "FM-03",
+   "to": "PT-035"
+  },
+  {
+   "from": "FM-03",
+   "to": "RQ-06"
+  },
+  {
+   "from": "FM-04",
+   "to": "PT-022"
+  },
+  {
+   "from": "FM-04",
+   "to": "RQ-07"
+  },
+  {
+   "from": "FM-05",
+   "to": "PT-020"
+  },
+  {
+   "from": "FM-05",
+   "to": "PT-002"
+  },
+  {
+   "from": "FM-05",
+   "to": "RQ-08"
+  },
+  {
+   "from": "FM-06",
+   "to": "PT-034"
+  },
+  {
+   "from": "FM-07",
+   "to": "PT-013"
+  },
+  {
+   "from": "FM-07",
+   "to": "PT-016"
+  },
+  {
+   "from": "FM-07",
+   "to": "PT-025"
+  },
+  {
+   "from": "FM-07",
+   "to": "RQ-12"
+  },
+  {
+   "from": "SP-01",
+   "to": "PT-001"
+  },
+  {
+   "from": "SP-01",
+   "to": "PT-003"
+  },
+  {
+   "from": "SP-01",
+   "to": "PT-005"
+  },
+  {
+   "from": "SP-01",
+   "to": "PT-006"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-007"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-008"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-009"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-011"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-012"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-014"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-015"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-017"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-018"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-020"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-021"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-023"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-024"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-027"
+  },
+  {
+   "from": "SP-02",
+   "to": "PT-036"
+  },
+  {
+   "from": "SP-03",
+   "to": "PT-002"
+  },
+  {
+   "from": "SP-03",
+   "to": "PT-019"
+  },
+  {
+   "from": "SP-04",
+   "to": "PT-010"
+  },
+  {
+   "from": "SP-04",
+   "to": "PT-022"
+  },
+  {
+   "from": "SP-05",
+   "to": "PT-026"
+  },
+  {
+   "from": "SP-05",
+   "to": "PT-028"
+  },
+  {
+   "from": "SP-05",
+   "to": "PT-029"
+  },
+  {
+   "from": "SP-05",
+   "to": "PT-031"
+  },
+  {
+   "from": "SP-06",
+   "to": "PT-030"
+  },
+  {
+   "from": "SP-06",
+   "to": "PT-032"
+  },
+  {
+   "from": "SP-07",
+   "to": "PT-013"
+  },
+  {
+   "from": "SP-07",
+   "to": "PT-016"
+  },
+  {
+   "from": "SP-07",
+   "to": "PT-025"
+  },
+  {
+   "from": "SP-07",
+   "to": "PT-033"
+  },
+  {
+   "from": "SP-07",
+   "to": "PT-034"
+  },
+  {
+   "from": "SP-08",
+   "to": "PT-004"
+  },
+  {
+   "from": "SP-08",
+   "to": "PT-035"
+  },
+  {
+   "from": "SP-08",
+   "to": "PT-037"
+  },
+  {
+   "from": "SP-08",
+   "to": "PT-038"
+  },
+  {
+   "from": "BD-001",
+   "to": "PT-001"
+  },
+  {
+   "from": "BD-002",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-003",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-004",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-005",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-006",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-007",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-008",
+   "to": "PT-003"
+  },
+  {
+   "from": "BD-009",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-010",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-011",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-012",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-013",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-014",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-015",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-016",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-017",
+   "to": "PT-005"
+  },
+  {
+   "from": "BD-018",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-019",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-020",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-021",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-022",
+   "to": "PT-006"
+  },
+  {
+   "from": "BD-023",
+   "to": "PT-002"
+  },
+  {
+   "from": "BD-024",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-025",
+   "to": "PT-004"
+  },
+  {
+   "from": "BD-026",
+   "to": "PT-007"
+  },
+  {
+   "from": "BD-027",
+   "to": "PT-007"
+  },
+  {
+   "from": "BD-028",
+   "to": "PT-008"
+  },
+  {
+   "from": "BD-029",
+   "to": "PT-009"
+  },
+  {
+   "from": "BD-030",
+   "to": "PT-011"
+  },
+  {
+   "from": "BD-031",
+   "to": "PT-013"
+  },
+  {
+   "from": "BD-032",
+   "to": "PT-013"
+  },
+  {
+   "from": "BD-033",
+   "to": "PT-011"
+  },
+  {
+   "from": "BD-034",
+   "to": "PT-011"
+  },
+  {
+   "from": "BD-035",
+   "to": "PT-012"
+  },
+  {
+   "from": "BD-036",
+   "to": "PT-014"
+  },
+  {
+   "from": "BD-037",
+   "to": "PT-014"
+  },
+  {
+   "from": "BD-038",
+   "to": "PT-014"
+  },
+  {
+   "from": "BD-039",
+   "to": "PT-015"
+  },
+  {
+   "from": "BD-040",
+   "to": "PT-016"
+  },
+  {
+   "from": "BD-041",
+   "to": "PT-016"
+  },
+  {
+   "from": "BD-042",
+   "to": "PT-015"
+  },
+  {
+   "from": "BD-043",
+   "to": "PT-015"
+  },
+  {
+   "from": "BD-044",
+   "to": "PT-017"
+  },
+  {
+   "from": "BD-045",
+   "to": "PT-017"
+  },
+  {
+   "from": "BD-046",
+   "to": "PT-017"
+  },
+  {
+   "from": "BD-047",
+   "to": "PT-018"
+  },
+  {
+   "from": "BD-048",
+   "to": "PT-019"
+  },
+  {
+   "from": "BD-049",
+   "to": "PT-019"
+  },
+  {
+   "from": "BD-050",
+   "to": "PT-018"
+  },
+  {
+   "from": "BD-051",
+   "to": "PT-020"
+  },
+  {
+   "from": "BD-052",
+   "to": "PT-021"
+  },
+  {
+   "from": "BD-053",
+   "to": "PT-021"
+  },
+  {
+   "from": "BD-054",
+   "to": "PT-022"
+  },
+  {
+   "from": "BD-055",
+   "to": "PT-022"
+  },
+  {
+   "from": "BD-056",
+   "to": "PT-020"
+  },
+  {
+   "from": "BD-057",
+   "to": "PT-020"
+  },
+  {
+   "from": "BD-058",
+   "to": "PT-020"
+  },
+  {
+   "from": "BD-059",
+   "to": "PT-020"
+  },
+  {
+   "from": "BD-060",
+   "to": "PT-020"
+  },
+  {
+   "from": "BD-061",
+   "to": "PT-023"
+  },
+  {
+   "from": "BD-062",
+   "to": "PT-023"
+  },
+  {
+   "from": "BD-063",
+   "to": "PT-023"
+  },
+  {
+   "from": "BD-064",
+   "to": "PT-024"
+  },
+  {
+   "from": "BD-065",
+   "to": "PT-024"
+  },
+  {
+   "from": "BD-066",
+   "to": "PT-025"
+  },
+  {
+   "from": "BD-067",
+   "to": "PT-025"
+  },
+  {
+   "from": "BD-068",
+   "to": "PT-026"
+  },
+  {
+   "from": "BD-069",
+   "to": "PT-026"
+  },
+  {
+   "from": "BD-070",
+   "to": "PT-026"
+  },
+  {
+   "from": "BD-071",
+   "to": "PT-026"
+  },
+  {
+   "from": "BD-072",
+   "to": "PT-026"
+  },
+  {
+   "from": "BD-073",
+   "to": "PT-027"
+  },
+  {
+   "from": "BD-074",
+   "to": "PT-028"
+  },
+  {
+   "from": "BD-075",
+   "to": "PT-029"
+  },
+  {
+   "from": "BD-076",
+   "to": "PT-030"
+  },
+  {
+   "from": "BD-077",
+   "to": "PT-031"
+  },
+  {
+   "from": "BD-078",
+   "to": "PT-032"
+  },
+  {
+   "from": "BD-079",
+   "to": "PT-033"
+  },
+  {
+   "from": "BD-080",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-081",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-082",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-083",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-084",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-085",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-086",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-087",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-088",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-089",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-090",
+   "to": "PT-034"
+  },
+  {
+   "from": "BD-091",
+   "to": "PT-034"
+  },
+  {
+   "from": "DW-01",
+   "to": "PT-001"
+  },
+  {
+   "from": "DW-02",
+   "to": "PT-003"
+  },
+  {
+   "from": "DW-02",
+   "to": "PT-005"
+  },
+  {
+   "from": "DW-02",
+   "to": "PT-006"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-007"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-008"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-009"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-011"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-012"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-014"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-015"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-017"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-023"
+  },
+  {
+   "from": "DW-03",
+   "to": "PT-024"
+  },
+  {
+   "from": "DW-04",
+   "to": "PT-018"
+  },
+  {
+   "from": "DW-04",
+   "to": "PT-020"
+  },
+  {
+   "from": "DW-04",
+   "to": "PT-021"
+  },
+  {
+   "from": "DW-05",
+   "to": "PT-026"
+  },
+  {
+   "from": "DW-06",
+   "to": "PT-029"
+  },
+  {
+   "from": "DW-06",
+   "to": "PT-031"
+  },
+  {
+   "from": "DW-07",
+   "to": "PT-027"
+  },
+  {
+   "from": "DW-07",
+   "to": "PT-028"
+  },
+  {
+   "from": "DW-08",
+   "to": "PT-013"
+  },
+  {
+   "from": "DW-08",
+   "to": "PT-016"
+  },
+  {
+   "from": "DW-08",
+   "to": "PT-025"
+  },
+  {
+   "from": "DW-08",
+   "to": "PT-033"
+  },
+  {
+   "from": "DW-08",
+   "to": "PT-034"
+  },
+  {
+   "from": "KC-01",
+   "to": "PT-001"
+  },
+  {
+   "from": "KC-01",
+   "to": "RQ-14"
+  },
+  {
+   "from": "KC-01",
+   "to": "FM-02"
+  },
+  {
+   "from": "KC-02",
+   "to": "PT-018"
+  },
+  {
+   "from": "KC-02",
+   "to": "RQ-01"
+  },
+  {
+   "from": "KC-03",
+   "to": "PT-020"
+  },
+  {
+   "from": "KC-03",
+   "to": "RQ-01"
+  },
+  {
+   "from": "KC-04",
+   "to": "PT-026"
+  },
+  {
+   "from": "KC-04",
+   "to": "RQ-06"
+  },
+  {
+   "from": "KC-04",
+   "to": "FM-03"
+  },
+  {
+   "from": "KC-05",
+   "to": "PT-026"
+  },
+  {
+   "from": "KC-05",
+   "to": "RQ-10"
+  },
+  {
+   "from": "KC-06",
+   "to": "PT-011"
+  },
+  {
+   "from": "KC-06",
+   "to": "PT-014"
+  },
+  {
+   "from": "KC-06",
+   "to": "PT-015"
+  },
+  {
+   "from": "KC-06",
+   "to": "PT-017"
+  },
+  {
+   "from": "KC-06",
+   "to": "RQ-14"
+  },
+  {
+   "from": "AN-01",
+   "to": "RQ-03"
+  },
+  {
+   "from": "AN-01",
+   "to": "BD-046"
+  },
+  {
+   "from": "AN-01",
+   "to": "BD-043"
+  },
+  {
+   "from": "AN-01",
+   "to": "BD-038"
+  },
+  {
+   "from": "AN-01",
+   "to": "BD-034"
+  },
+  {
+   "from": "AN-01",
+   "to": "BD-027"
+  },
+  {
+   "from": "AN-02",
+   "to": "RQ-02"
+  },
+  {
+   "from": "AN-02",
+   "to": "BD-026"
+  },
+  {
+   "from": "AN-02",
+   "to": "EN-003"
+  },
+  {
+   "from": "AN-03",
+   "to": "RQ-12"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-031"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-040"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-066"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-034"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-038"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-043"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-046"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-050"
+  },
+  {
+   "from": "AN-03",
+   "to": "BD-056"
+  },
+  {
+   "from": "AN-04",
+   "to": "RQ-11"
+  },
+  {
+   "from": "AN-04",
+   "to": "BD-068"
+  },
+  {
+   "from": "AN-04",
+   "to": "BD-075"
+  },
+  {
+   "from": "AN-04",
+   "to": "BD-077"
+  },
+  {
+   "from": "AN-04",
+   "to": "BD-001"
+  },
+  {
+   "from": "AN-05",
+   "to": "RQ-14"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-027"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-033"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-034"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-037"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-038"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-042"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-043"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-045"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-035"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-062"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-063"
+  },
+  {
+   "from": "AN-05",
+   "to": "BD-064"
+  },
+  {
+   "from": "AN-06",
+   "to": "RQ-04"
+  },
+  {
+   "from": "AN-06",
+   "to": "RQ-05"
+  },
+  {
+   "from": "AN-06",
+   "to": "EN-001"
+  },
+  {
+   "from": "AN-06",
+   "to": "BD-068"
+  },
+  {
+   "from": "AN-07",
+   "to": "RQ-10"
+  },
+  {
+   "from": "AN-07",
+   "to": "BD-069"
+  },
+  {
+   "from": "AN-07",
+   "to": "BD-070"
+  },
+  {
+   "from": "AN-07",
+   "to": "BD-071"
+  },
+  {
+   "from": "AN-07",
+   "to": "BD-072"
+  },
+  {
+   "from": "AN-07",
+   "to": "EN-011"
+  },
+  {
+   "from": "AN-08",
+   "to": "RQ-09"
+  },
+  {
+   "from": "AN-08",
+   "to": "EN-008"
+  },
+  {
+   "from": "AN-08",
+   "to": "EN-010"
+  },
+  {
+   "from": "AP-01",
+   "to": "DT-01"
+  },
+  {
+   "from": "AP-01",
+   "to": "BD-001"
+  },
+  {
+   "from": "AP-01",
+   "to": "BD-066"
+  },
+  {
+   "from": "AP-01",
+   "to": "BD-079"
+  },
+  {
+   "from": "AP-02",
+   "to": "DT-02"
+  },
+  {
+   "from": "AP-02",
+   "to": "BD-075"
+  },
+  {
+   "from": "AP-02",
+   "to": "BD-076"
+  },
+  {
+   "from": "AP-02",
+   "to": "BD-074"
+  },
+  {
+   "from": "AP-03",
+   "to": "DT-03"
+  },
+  {
+   "from": "AP-03",
+   "to": "BD-008"
+  },
+  {
+   "from": "AP-03",
+   "to": "BD-017"
+  },
+  {
+   "from": "AP-03",
+   "to": "BD-001"
+  },
+  {
+   "from": "AP-04",
+   "to": "DT-01"
+  },
+  {
+   "from": "AP-04",
+   "to": "BD-068"
+  },
+  {
+   "from": "AP-04",
+   "to": "BD-001"
+  },
+  {
+   "from": "DM-01",
+   "to": "PT-026"
+  },
+  {
+   "from": "DM-02",
+   "to": "PT-034"
+  },
+  {
+   "from": "DM-03",
+   "to": "PT-001"
+  },
+  {
+   "from": "DM-04",
+   "to": "PT-004"
+  },
+  {
+   "from": "DM-05",
+   "to": "PT-026"
+  },
+  {
+   "from": "DM-05",
+   "to": "PT-031"
+  },
+  {
+   "from": "DM-05",
+   "to": "PT-035"
+  },
+  {
+   "from": "DM-06",
+   "to": "PT-036"
+  },
+  {
+   "from": "DM-06",
+   "to": "PT-027"
+  },
+  {
+   "from": "DM-06",
+   "to": "PT-009"
+  }
+ ],
+ "exemptions": [
+  {
+   "rule": "requirement-verified",
+   "item": "RQ-01",
+   "reason": "精度は試作の 5 姿勢・3 温度の試験で確かめる（設計検証）"
+  },
+  {
+   "rule": "requirement-verified",
+   "item": "RQ-06",
+   "reason": "防水は試作の 0.3 MPa の試験で確かめる（設計検証）"
+  },
+  {
+   "rule": "requirement-verified",
+   "item": "RQ-07",
+   "reason": "耐磁は試作の試験で確かめる（設計検証）"
+  },
+  {
+   "rule": "requirement-verified",
+   "item": "RQ-08",
+   "reason": "耐衝撃は試作の試験で確かめる（設計検証）"
+  },
+  {
+   "rule": "requirement-verified",
+   "item": "RQ-13",
+   "reason": "原価は調達の見積で確かめる"
+  },
+  {
+   "rule": "requirement-verified",
+   "item": "RQ-15",
+   "reason": "ニッケルの溶け出しは材料の証明と試験で確かめる（調達・設計検証）"
+  },
+  {
+   "rule": "requirement-traced",
+   "item": "RQ-06",
+   "reason": "構想・ハードポイント・割付けには直接は出てこない。詳細設計の解析と設計検証の試験で受ける"
+  },
+  {
+   "rule": "requirement-traced",
+   "item": "RQ-07",
+   "reason": "構想・ハードポイント・割付けには直接は出てこない。詳細設計の解析と設計検証の試験で受ける"
+  },
+  {
+   "rule": "requirement-traced",
+   "item": "RQ-08",
+   "reason": "構想・ハードポイント・割付けには直接は出てこない。詳細設計の解析と設計検証の試験で受ける"
+  },
+  {
+   "rule": "requirement-traced",
+   "item": "RQ-12",
+   "reason": "構想・ハードポイント・割付けには直接は出てこない。詳細設計の解析と設計検証の試験で受ける"
+  },
+  {
+   "rule": "requirement-traced",
+   "item": "RQ-15",
+   "reason": "構想・ハードポイント・割付けには直接は出てこない。詳細設計の解析と設計検証の試験で受ける"
+  },
+  {
+   "rule": "hard-point-modelled",
+   "item": "HP-07",
+   "reason": "てんぷの位置は寸法でなく、配置の形（EN-008 てんぷの回る空間）の位置で持つ"
+  },
+  {
+   "rule": "part-modelled",
+   "item": "PT-010",
+   "reason": "ぜんまいは購入品で、仕様（AN-02）で決める。形はモデルにしない"
+  },
+  {
+   "rule": "part-modelled",
+   "item": "PT-035",
+   "reason": "パッキンは購入の標準品。溝は図面に足したが（DM-05）、3D モデルは次の版"
+  },
+  {
+   "rule": "part-modelled",
+   "item": "PT-036",
+   "reason": "巻上げと針合わせの切替は次の版で設計する（DM-06）"
+  },
+  {
+   "rule": "part-modelled",
+   "item": "PT-037",
+   "reason": "ベルトは購入の標準品。ラグの内幅（16 mm）だけを決める"
+  },
+  {
+   "rule": "part-modelled",
+   "item": "PT-038",
+   "reason": "ばね棒は購入の標準品"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-002",
+   "reason": "購入の標準品（カタログの寸法）"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-004",
+   "reason": "購入の標準品（M0.8）"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-010",
+   "reason": "購入品。仕様を出す"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-019",
+   "reason": "購入の標準品"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-022",
+   "reason": "購入品。仕様を出す"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-030",
+   "reason": "購入品。仕様（径・厚み・反射防止）を出す"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-032",
+   "reason": "購入品。仕様を出す"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-035",
+   "reason": "購入の標準品"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-036",
+   "reason": "形が無い（DM-06）。次の版で図面を作る"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-037",
+   "reason": "購入の標準品"
+  },
+  {
+   "rule": "part-drawn",
+   "item": "PT-038",
+   "reason": "購入の標準品"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-001",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-002",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-003",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-004",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-005",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-006",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-007",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-008",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-009",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-010",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-011",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-012",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-013",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-014",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-015",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-016",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-017",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-018",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-019",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-020",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-021",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-022",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-023",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-024",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-025",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-026",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-027",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-028",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-029",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-030",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-031",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-032",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-033",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-034",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-035",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-036",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-037",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "part-approved",
+   "item": "PT-038",
+   "reason": "部品の承認は調達の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-controlled",
+   "item": "KC-01",
+   "reason": "管理の計画は生産準備の工程で作る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-controlled",
+   "item": "KC-02",
+   "reason": "管理の計画は生産準備の工程で作る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-controlled",
+   "item": "KC-03",
+   "reason": "管理の計画は生産準備の工程で作る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-controlled",
+   "item": "KC-04",
+   "reason": "管理の計画は生産準備の工程で作る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-controlled",
+   "item": "KC-05",
+   "reason": "管理の計画は生産準備の工程で作る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-controlled",
+   "item": "KC-06",
+   "reason": "管理の計画は生産準備の工程で作る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-capable",
+   "item": "KC-01",
+   "reason": "工程能力は量産検証の工程で測る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-capable",
+   "item": "KC-02",
+   "reason": "工程能力は量産検証の工程で測る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-capable",
+   "item": "KC-03",
+   "reason": "工程能力は量産検証の工程で測る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-capable",
+   "item": "KC-04",
+   "reason": "工程能力は量産検証の工程で測る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-capable",
+   "item": "KC-05",
+   "reason": "工程能力は量産検証の工程で測る。この版は詳細設計まで"
+  },
+  {
+   "rule": "key-characteristic-capable",
+   "item": "KC-06",
+   "reason": "工程能力は量産検証の工程で測る。この版は詳細設計まで"
+  },
+  {
+   "rule": "regulation-certified",
+   "item": "RG-01",
+   "reason": "認証と検定は量産検証の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "regulation-certified",
+   "item": "RG-02",
+   "reason": "認証と検定は量産検証の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "regulation-certified",
+   "item": "RG-03",
+   "reason": "認証と検定は量産検証の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "regulation-certified",
+   "item": "RG-04",
+   "reason": "認証と検定は量産検証の工程で行う。この版は詳細設計まで"
+  },
+  {
+   "rule": "regulation-certified",
+   "item": "RG-05",
+   "reason": "認証と検定は量産検証の工程で行う。この版は詳細設計まで"
+  }
+ ]
+}

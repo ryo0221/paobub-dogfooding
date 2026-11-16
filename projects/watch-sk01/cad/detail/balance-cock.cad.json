@@ -1,0 +1,606 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "balance-cock-outline",
+   "name": "Balance cock outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 3.6
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0_0"
+    },
+    {
+     "type": "point",
+     "id": "s0_0"
+    },
+    {
+     "type": "point",
+     "id": "e0_0"
+    },
+    {
+     "type": "point",
+     "id": "c0_1"
+    },
+    {
+     "type": "point",
+     "id": "s0_1"
+    },
+    {
+     "type": "point",
+     "id": "e0_1"
+    },
+    {
+     "type": "arc",
+     "id": "a0_0",
+     "center": "c0_0",
+     "start": "s0_0",
+     "end": "e0_0",
+     "clockwise": false
+    },
+    {
+     "type": "line",
+     "id": "b0_0",
+     "start": "e0_0",
+     "end": "s0_1"
+    },
+    {
+     "type": "arc",
+     "id": "a0_1",
+     "center": "c0_1",
+     "start": "s0_1",
+     "end": "e0_1",
+     "clockwise": false
+    },
+    {
+     "type": "line",
+     "id": "b0_1",
+     "start": "e0_1",
+     "end": "s0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0_0": [
+     2.725268397101521,
+     -8.264428879246807
+    ],
+    "s0_0": [
+     3.5046912605075153,
+     -7.814428879246807
+    ],
+    "e0_0": [
+     1.945845533695526,
+     -8.714428879246807
+    ],
+    "c0_1": [
+     5.225268397101521,
+     -12.594555898169
+    ],
+    "s0_1": [
+     4.445845533695526,
+     -13.044555898169
+    ],
+    "e0_1": [
+     6.004691260507516,
+     -12.144555898169001
+    ]
+   }
+  },
+  {
+   "id": "balance-cock-jewel-1-ring",
+   "name": "Balance cock jewel 1 ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 4.1
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     2.725268397101521,
+     -8.264428879246807
+    ],
+    "c1": [
+     2.725268397101521,
+     -8.264428879246807
+    ],
+    "o0": [
+     0.32,
+     0
+    ],
+    "o1": [
+     0.12,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "balance-cock-outline",
+    "region": {
+     "outer": [
+      "a0_0",
+      "b0_0",
+      "a0_1",
+      "b0_1"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.49999999999999956
+    },
+    "direction": 1
+   },
+   "id": "balance-cock-extrude",
+   "name": "Balance cock"
+  },
+  {
+   "id": "balance-cock-placement",
+   "name": "Balance cock placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "balance-cock-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "balance-cock-chamfer",
+   "name": "Anglage",
+   "type": "chamfer",
+   "inputFeatureIds": [
+    "balance-cock-placement"
+   ],
+   "args": {
+    "edges": [
+     {
+      "kind": "edge",
+      "featureId": "balance-cock-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:a0_0"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        2.2752683971015206,
+        -7.4850060158408125,
+        4.1
+       ],
+       "size": 2.827433388230814
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "balance-cock-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:b0_0"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        3.1958455336955263,
+        -10.879492388707902,
+        4.1
+       ],
+       "size": 5
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "balance-cock-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:a0_1"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        5.675268397101521,
+        -13.373978761574994,
+        4.1
+       ],
+       "size": 2.827433388230814
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "balance-cock-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:b0_1"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        4.754691260507515,
+        -9.979492388707904,
+        4.1
+       ],
+       "size": 5.000000000000001
+      }
+     }
+    ],
+    "distance": {
+     "literalMm": 0.06
+    }
+   }
+  },
+  {
+   "id": "balance-cock-chamfer-placement",
+   "name": "Balance cock placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "balance-cock-chamfer"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "balance-cock-jewel-1-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.1
+    },
+    "direction": 1
+   },
+   "id": "balance-cock-jewel-1-extrude",
+   "name": "Balance cock jewel 1"
+  },
+  {
+   "id": "balance-cock-jewel-1-placement",
+   "name": "Balance cock jewel 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "balance-cock-jewel-1-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.38
+    },
+    "height": {
+     "literalMm": 0.22
+    },
+    "origin": [
+     {
+      "literalMm": 5.225268397101521
+     },
+     {
+      "literalMm": -12.594555898169
+     },
+     {
+      "literalMm": 4.1
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "balance-cock-screw-1-cylinder",
+   "name": "Balance cock screw 1"
+  },
+  {
+   "id": "balance-cock-screw-1-placement",
+   "name": "Balance cock screw 1 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "balance-cock-screw-1-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 0.7
+     },
+     {
+      "literalMm": 0.08
+     },
+     {
+      "literalMm": 0.03
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": 4.875268397101522
+     },
+     {
+      "literalMm": -12.634555898169
+     },
+     {
+      "literalMm": 4.319999999999999
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "balance-cock-screw-1-slot-box",
+   "name": "Balance cock screw 1 slot"
+  },
+  {
+   "id": "balance-cock-screw-1-slot-placement",
+   "name": "Balance cock screw 1 slot placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "balance-cock-screw-1-slot-box"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-022",
+   "name": "てんぷ受け",
+   "kind": "solid",
+   "resultFeatureId": "balance-cock-chamfer-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#a9adb4",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.4
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-023",
+   "name": "てんぷ受けの石",
+   "kind": "solid",
+   "resultFeatureId": "balance-cock-jewel-1-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#b0123a",
+    "opacity": 1,
+    "metalness": 0,
+    "roughness": 0.05,
+    "transmission": 0.6,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  },
+  {
+   "id": "BD-024",
+   "name": "てんぷ受けのねじ",
+   "kind": "solid",
+   "resultFeatureId": "balance-cock-screw-1-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-025",
+   "name": "てんぷ受けのねじのすり割り",
+   "kind": "solid",
+   "resultFeatureId": "balance-cock-screw-1-slot-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#10142e",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.5
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

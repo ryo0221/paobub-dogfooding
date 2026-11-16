@@ -1,0 +1,595 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "seconds-hand-outline",
+   "name": "Seconds hand outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.2
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "p0_0"
+    },
+    {
+     "type": "point",
+     "id": "p0_1"
+    },
+    {
+     "type": "point",
+     "id": "p0_2"
+    },
+    {
+     "type": "point",
+     "id": "p0_3"
+    },
+    {
+     "type": "point",
+     "id": "p0_4"
+    },
+    {
+     "type": "point",
+     "id": "p0_5"
+    },
+    {
+     "type": "point",
+     "id": "p0_6"
+    },
+    {
+     "type": "line",
+     "id": "l0_0",
+     "start": "p0_0",
+     "end": "p0_1"
+    },
+    {
+     "type": "line",
+     "id": "l0_1",
+     "start": "p0_1",
+     "end": "p0_2"
+    },
+    {
+     "type": "line",
+     "id": "l0_2",
+     "start": "p0_2",
+     "end": "p0_3"
+    },
+    {
+     "type": "line",
+     "id": "l0_3",
+     "start": "p0_3",
+     "end": "p0_4"
+    },
+    {
+     "type": "line",
+     "id": "l0_4",
+     "start": "p0_4",
+     "end": "p0_5"
+    },
+    {
+     "type": "line",
+     "id": "l0_5",
+     "start": "p0_5",
+     "end": "p0_6"
+    },
+    {
+     "type": "line",
+     "id": "l0_6",
+     "start": "p0_6",
+     "end": "p0_0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "p0_0": [
+     0,
+     2.1
+    ],
+    "p0_1": [
+     -0.15,
+     1.6800000000000002
+    ],
+    "p0_2": [
+     -0.09,
+     0
+    ],
+    "p0_3": [
+     -0.12,
+     -0.6
+    ],
+    "p0_4": [
+     0.12,
+     -0.6
+    ],
+    "p0_5": [
+     0.09,
+     0
+    ],
+    "p0_6": [
+     0.15,
+     1.6800000000000002
+    ]
+   }
+  },
+  {
+   "id": "seconds-hand-boss-ring",
+   "name": "Seconds hand boss ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.2
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "o0": [
+     0.135,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.12
+    },
+    "height": {
+     "literalMm": 4.6
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.2
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "fourth-arbor-cylinder",
+   "name": "Fourth arbor"
+  },
+  {
+   "id": "fourth-arbor-placement",
+   "name": "Fourth arbor placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "fourth-arbor-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "seconds-hand-outline",
+    "region": {
+     "outer": [
+      "l0_0",
+      "l0_1",
+      "l0_2",
+      "l0_3",
+      "l0_4",
+      "l0_5",
+      "l0_6"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.06000000000000005
+    },
+    "direction": 1
+   },
+   "id": "seconds-hand-extrude",
+   "name": "Seconds hand"
+  },
+  {
+   "id": "seconds-hand-placement",
+   "name": "Seconds hand placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "seconds-hand-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "seconds-hand-boss-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": []
+    },
+    "distance": {
+     "literalMm": 0.06000000000000005
+    },
+    "direction": 1
+   },
+   "id": "seconds-hand-boss-extrude",
+   "name": "Seconds hand boss"
+  },
+  {
+   "id": "seconds-hand-boss-placement",
+   "name": "Seconds hand boss placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "seconds-hand-boss-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.09
+    },
+    "teeth": {
+     "literal": 8
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 75
+    },
+    "toothThickness": 0.4,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.3999999999999999
+    },
+    "bore": {
+     "literalMm": 0
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 2.1
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "fourth-pinion-spurgear",
+   "name": "Fourth pinion"
+  },
+  {
+   "id": "fourth-pinion-placement",
+   "name": "Fourth pinion placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "fourth-pinion-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.08
+    },
+    "teeth": {
+     "literal": 84
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 7
+    },
+    "toothThickness": 0.5,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.19999999999999973
+    },
+    "bore": {
+     "literalMm": 0
+    },
+    "spokes": {
+     "count": {
+      "literal": 5
+     },
+     "rim": {
+      "literalMm": 0.28
+     },
+     "hub": {
+      "literalMm": 0.35
+     },
+     "width": {
+      "literalMm": 0.2
+     }
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 2.7
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "fourth-wheel-spurgear",
+   "name": "Fourth wheel"
+  },
+  {
+   "id": "fourth-wheel-placement",
+   "name": "Fourth wheel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "fourth-wheel-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-039",
+   "name": "四番真",
+   "kind": "solid",
+   "resultFeatureId": "fourth-arbor-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-040",
+   "name": "秒針",
+   "kind": "solid",
+   "resultFeatureId": "seconds-hand-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-041",
+   "name": "秒針のパイプ",
+   "kind": "solid",
+   "resultFeatureId": "seconds-hand-boss-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-042",
+   "name": "四番かな",
+   "kind": "solid",
+   "resultFeatureId": "fourth-pinion-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-043",
+   "name": "四番車",
+   "kind": "solid",
+   "resultFeatureId": "fourth-wheel-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

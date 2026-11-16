@@ -1,0 +1,8831 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [
+  {
+   "id": "PR-01",
+   "name": "全長",
+   "type": "length",
+   "value": 4350
+  },
+  {
+   "id": "PR-02",
+   "name": "全幅",
+   "type": "length",
+   "value": 1950
+  },
+  {
+   "id": "PR-03",
+   "name": "全高",
+   "type": "length",
+   "value": 1130
+  },
+  {
+   "id": "PR-04",
+   "name": "ホイールベース",
+   "type": "length",
+   "value": 2650
+  },
+  {
+   "id": "PR-05",
+   "name": "トレッド（前）",
+   "type": "length",
+   "value": 1680
+  },
+  {
+   "id": "PR-06",
+   "name": "トレッド（後）",
+   "type": "length",
+   "value": 1640
+  },
+  {
+   "id": "PR-07",
+   "name": "前タイヤの外径",
+   "type": "length",
+   "value": 679.5
+  },
+  {
+   "id": "PR-08",
+   "name": "後タイヤの外径",
+   "type": "length",
+   "value": 716.4
+  },
+  {
+   "id": "PR-09",
+   "name": "Hポイントの前後位置",
+   "type": "length",
+   "value": 1250
+  },
+  {
+   "id": "PR-10",
+   "name": "Hポイントの横位置",
+   "type": "length",
+   "value": 370
+  },
+  {
+   "id": "PR-11",
+   "name": "Hポイントの高さ",
+   "type": "length",
+   "value": 300
+  },
+  {
+   "id": "PR-12",
+   "name": "ファイアウォールの位置",
+   "type": "length",
+   "value": 1700
+  },
+  {
+   "id": "PR-13",
+   "name": "最低地上高",
+   "type": "length",
+   "value": 100
+  }
+ ],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "package-side",
+   "name": "Package side",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "orientation": [
+     0.7071067811865476,
+     0,
+     0,
+     0.7071067811865476
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "envp0"
+    },
+    {
+     "type": "point",
+     "id": "envp1"
+    },
+    {
+     "type": "point",
+     "id": "envp2"
+    },
+    {
+     "type": "point",
+     "id": "envp3"
+    },
+    {
+     "type": "point",
+     "id": "envp4"
+    },
+    {
+     "type": "point",
+     "id": "envp5"
+    },
+    {
+     "type": "point",
+     "id": "envp6"
+    },
+    {
+     "type": "point",
+     "id": "envp7"
+    },
+    {
+     "type": "point",
+     "id": "envp8"
+    },
+    {
+     "type": "point",
+     "id": "envp9"
+    },
+    {
+     "type": "point",
+     "id": "envp10"
+    },
+    {
+     "type": "point",
+     "id": "envp11"
+    },
+    {
+     "type": "line",
+     "id": "envl0",
+     "start": "envp0",
+     "end": "envp1"
+    },
+    {
+     "type": "line",
+     "id": "envl1",
+     "start": "envp1",
+     "end": "envp2"
+    },
+    {
+     "type": "line",
+     "id": "envl2",
+     "start": "envp2",
+     "end": "envp3"
+    },
+    {
+     "type": "line",
+     "id": "envl3",
+     "start": "envp3",
+     "end": "envp4"
+    },
+    {
+     "type": "line",
+     "id": "envl4",
+     "start": "envp4",
+     "end": "envp5"
+    },
+    {
+     "type": "line",
+     "id": "envl5",
+     "start": "envp5",
+     "end": "envp6"
+    },
+    {
+     "type": "line",
+     "id": "envl6",
+     "start": "envp6",
+     "end": "envp7"
+    },
+    {
+     "type": "line",
+     "id": "envl7",
+     "start": "envp7",
+     "end": "envp8"
+    },
+    {
+     "type": "line",
+     "id": "envl8",
+     "start": "envp8",
+     "end": "envp9"
+    },
+    {
+     "type": "line",
+     "id": "envl9",
+     "start": "envp9",
+     "end": "envp10"
+    },
+    {
+     "type": "line",
+     "id": "envl10",
+     "start": "envp10",
+     "end": "envp11"
+    },
+    {
+     "type": "line",
+     "id": "envl11",
+     "start": "envp11",
+     "end": "envp0"
+    },
+    {
+     "type": "point",
+     "id": "scrp0"
+    },
+    {
+     "type": "point",
+     "id": "scrp1"
+    },
+    {
+     "type": "line",
+     "id": "scrl0",
+     "start": "scrp0",
+     "end": "scrp1"
+    },
+    {
+     "type": "point",
+     "id": "archFc"
+    },
+    {
+     "type": "circle",
+     "id": "archF",
+     "center": "archFc"
+    },
+    {
+     "type": "point",
+     "id": "archRc"
+    },
+    {
+     "type": "circle",
+     "id": "archR",
+     "center": "archRc"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "envp0": [
+     -950,
+     100
+    ],
+    "envp1": [
+     -950,
+     420
+    ],
+    "envp2": [
+     -500,
+     680
+    ],
+    "envp3": [
+     0,
+     790
+    ],
+    "envp4": [
+     400,
+     770
+    ],
+    "envp5": [
+     1150,
+     1130
+    ],
+    "envp6": [
+     1450,
+     1130
+    ],
+    "envp7": [
+     1900,
+     1060
+    ],
+    "envp8": [
+     2650,
+     990
+    ],
+    "envp9": [
+     3400,
+     930
+    ],
+    "envp10": [
+     3400,
+     380
+    ],
+    "envp11": [
+     2950,
+     100
+    ],
+    "scrp0": [
+     400,
+     700
+    ],
+    "scrp1": [
+     1150,
+     1110
+    ],
+    "archFc": [
+     0,
+     409.75
+    ],
+    "archF": [
+     359.75,
+     0
+    ],
+    "archRc": [
+     2650,
+     428.2
+    ],
+    "archR": [
+     378.2,
+     0
+    ]
+   }
+  },
+  {
+   "id": "package-plan",
+   "name": "Package plan",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "envp0"
+    },
+    {
+     "type": "point",
+     "id": "envp1"
+    },
+    {
+     "type": "point",
+     "id": "envp2"
+    },
+    {
+     "type": "point",
+     "id": "envp3"
+    },
+    {
+     "type": "point",
+     "id": "envp4"
+    },
+    {
+     "type": "point",
+     "id": "envp5"
+    },
+    {
+     "type": "point",
+     "id": "envp6"
+    },
+    {
+     "type": "point",
+     "id": "envp7"
+    },
+    {
+     "type": "point",
+     "id": "envp8"
+    },
+    {
+     "type": "point",
+     "id": "envp9"
+    },
+    {
+     "type": "line",
+     "id": "envl0",
+     "start": "envp0",
+     "end": "envp1"
+    },
+    {
+     "type": "line",
+     "id": "envl1",
+     "start": "envp1",
+     "end": "envp2"
+    },
+    {
+     "type": "line",
+     "id": "envl2",
+     "start": "envp2",
+     "end": "envp3"
+    },
+    {
+     "type": "line",
+     "id": "envl3",
+     "start": "envp3",
+     "end": "envp4"
+    },
+    {
+     "type": "line",
+     "id": "envl4",
+     "start": "envp4",
+     "end": "envp5"
+    },
+    {
+     "type": "line",
+     "id": "envl5",
+     "start": "envp5",
+     "end": "envp6"
+    },
+    {
+     "type": "line",
+     "id": "envl6",
+     "start": "envp6",
+     "end": "envp7"
+    },
+    {
+     "type": "line",
+     "id": "envl7",
+     "start": "envp7",
+     "end": "envp8"
+    },
+    {
+     "type": "line",
+     "id": "envl8",
+     "start": "envp8",
+     "end": "envp9"
+    },
+    {
+     "type": "line",
+     "id": "envl9",
+     "start": "envp9",
+     "end": "envp0"
+    },
+    {
+     "type": "point",
+     "id": "steerRp0"
+    },
+    {
+     "type": "point",
+     "id": "steerRp1"
+    },
+    {
+     "type": "point",
+     "id": "steerRp2"
+    },
+    {
+     "type": "point",
+     "id": "steerRp3"
+    },
+    {
+     "type": "point",
+     "id": "steerRp4"
+    },
+    {
+     "type": "point",
+     "id": "steerRp5"
+    },
+    {
+     "type": "point",
+     "id": "steerRp6"
+    },
+    {
+     "type": "point",
+     "id": "steerRp7"
+    },
+    {
+     "type": "point",
+     "id": "steerRp8"
+    },
+    {
+     "type": "point",
+     "id": "steerRp9"
+    },
+    {
+     "type": "point",
+     "id": "steerRp10"
+    },
+    {
+     "type": "point",
+     "id": "steerRp11"
+    },
+    {
+     "type": "point",
+     "id": "steerRp12"
+    },
+    {
+     "type": "point",
+     "id": "steerRp13"
+    },
+    {
+     "type": "point",
+     "id": "steerRp14"
+    },
+    {
+     "type": "point",
+     "id": "steerRp15"
+    },
+    {
+     "type": "point",
+     "id": "steerRp16"
+    },
+    {
+     "type": "point",
+     "id": "steerRp17"
+    },
+    {
+     "type": "point",
+     "id": "steerRp18"
+    },
+    {
+     "type": "point",
+     "id": "steerRp19"
+    },
+    {
+     "type": "point",
+     "id": "steerRp20"
+    },
+    {
+     "type": "point",
+     "id": "steerRp21"
+    },
+    {
+     "type": "point",
+     "id": "steerRp22"
+    },
+    {
+     "type": "point",
+     "id": "steerRp23"
+    },
+    {
+     "type": "point",
+     "id": "steerRp24"
+    },
+    {
+     "type": "point",
+     "id": "steerRp25"
+    },
+    {
+     "type": "point",
+     "id": "steerRp26"
+    },
+    {
+     "type": "point",
+     "id": "steerRp27"
+    },
+    {
+     "type": "point",
+     "id": "steerRp28"
+    },
+    {
+     "type": "point",
+     "id": "steerRp29"
+    },
+    {
+     "type": "point",
+     "id": "steerRp30"
+    },
+    {
+     "type": "point",
+     "id": "steerRp31"
+    },
+    {
+     "type": "point",
+     "id": "steerRp32"
+    },
+    {
+     "type": "point",
+     "id": "steerRp33"
+    },
+    {
+     "type": "point",
+     "id": "steerRp34"
+    },
+    {
+     "type": "point",
+     "id": "steerRp35"
+    },
+    {
+     "type": "point",
+     "id": "steerRp36"
+    },
+    {
+     "type": "point",
+     "id": "steerRp37"
+    },
+    {
+     "type": "point",
+     "id": "steerRp38"
+    },
+    {
+     "type": "point",
+     "id": "steerRp39"
+    },
+    {
+     "type": "point",
+     "id": "steerRp40"
+    },
+    {
+     "type": "point",
+     "id": "steerRp41"
+    },
+    {
+     "type": "point",
+     "id": "steerRp42"
+    },
+    {
+     "type": "point",
+     "id": "steerRp43"
+    },
+    {
+     "type": "point",
+     "id": "steerRp44"
+    },
+    {
+     "type": "point",
+     "id": "steerRp45"
+    },
+    {
+     "type": "point",
+     "id": "steerRp46"
+    },
+    {
+     "type": "point",
+     "id": "steerRp47"
+    },
+    {
+     "type": "point",
+     "id": "steerRp48"
+    },
+    {
+     "type": "point",
+     "id": "steerRp49"
+    },
+    {
+     "type": "point",
+     "id": "steerRp50"
+    },
+    {
+     "type": "point",
+     "id": "steerRp51"
+    },
+    {
+     "type": "point",
+     "id": "steerRp52"
+    },
+    {
+     "type": "point",
+     "id": "steerRp53"
+    },
+    {
+     "type": "point",
+     "id": "steerRp54"
+    },
+    {
+     "type": "point",
+     "id": "steerRp55"
+    },
+    {
+     "type": "point",
+     "id": "steerRp56"
+    },
+    {
+     "type": "point",
+     "id": "steerRp57"
+    },
+    {
+     "type": "point",
+     "id": "steerRp58"
+    },
+    {
+     "type": "point",
+     "id": "steerRp59"
+    },
+    {
+     "type": "point",
+     "id": "steerRp60"
+    },
+    {
+     "type": "point",
+     "id": "steerRp61"
+    },
+    {
+     "type": "point",
+     "id": "steerRp62"
+    },
+    {
+     "type": "point",
+     "id": "steerRp63"
+    },
+    {
+     "type": "point",
+     "id": "steerRp64"
+    },
+    {
+     "type": "point",
+     "id": "steerRp65"
+    },
+    {
+     "type": "point",
+     "id": "steerRp66"
+    },
+    {
+     "type": "point",
+     "id": "steerRp67"
+    },
+    {
+     "type": "point",
+     "id": "steerRp68"
+    },
+    {
+     "type": "point",
+     "id": "steerRp69"
+    },
+    {
+     "type": "point",
+     "id": "steerRp70"
+    },
+    {
+     "type": "point",
+     "id": "steerRp71"
+    },
+    {
+     "type": "point",
+     "id": "steerRp72"
+    },
+    {
+     "type": "point",
+     "id": "steerRp73"
+    },
+    {
+     "type": "point",
+     "id": "steerRp74"
+    },
+    {
+     "type": "point",
+     "id": "steerRp75"
+    },
+    {
+     "type": "point",
+     "id": "steerRp76"
+    },
+    {
+     "type": "point",
+     "id": "steerRp77"
+    },
+    {
+     "type": "point",
+     "id": "steerRp78"
+    },
+    {
+     "type": "point",
+     "id": "steerRp79"
+    },
+    {
+     "type": "point",
+     "id": "steerRp80"
+    },
+    {
+     "type": "point",
+     "id": "steerRp81"
+    },
+    {
+     "type": "point",
+     "id": "steerRp82"
+    },
+    {
+     "type": "point",
+     "id": "steerRp83"
+    },
+    {
+     "type": "point",
+     "id": "steerRp84"
+    },
+    {
+     "type": "point",
+     "id": "steerRp85"
+    },
+    {
+     "type": "point",
+     "id": "steerRp86"
+    },
+    {
+     "type": "point",
+     "id": "steerRp87"
+    },
+    {
+     "type": "point",
+     "id": "steerRp88"
+    },
+    {
+     "type": "point",
+     "id": "steerRp89"
+    },
+    {
+     "type": "point",
+     "id": "steerRp90"
+    },
+    {
+     "type": "point",
+     "id": "steerRp91"
+    },
+    {
+     "type": "point",
+     "id": "steerRp92"
+    },
+    {
+     "type": "point",
+     "id": "steerRp93"
+    },
+    {
+     "type": "point",
+     "id": "steerRp94"
+    },
+    {
+     "type": "point",
+     "id": "steerRp95"
+    },
+    {
+     "type": "point",
+     "id": "steerRp96"
+    },
+    {
+     "type": "point",
+     "id": "steerRp97"
+    },
+    {
+     "type": "point",
+     "id": "steerRp98"
+    },
+    {
+     "type": "point",
+     "id": "steerRp99"
+    },
+    {
+     "type": "point",
+     "id": "steerRp100"
+    },
+    {
+     "type": "point",
+     "id": "steerRp101"
+    },
+    {
+     "type": "point",
+     "id": "steerRp102"
+    },
+    {
+     "type": "point",
+     "id": "steerRp103"
+    },
+    {
+     "type": "point",
+     "id": "steerRp104"
+    },
+    {
+     "type": "point",
+     "id": "steerRp105"
+    },
+    {
+     "type": "point",
+     "id": "steerRp106"
+    },
+    {
+     "type": "point",
+     "id": "steerRp107"
+    },
+    {
+     "type": "point",
+     "id": "steerRp108"
+    },
+    {
+     "type": "point",
+     "id": "steerRp109"
+    },
+    {
+     "type": "point",
+     "id": "steerRp110"
+    },
+    {
+     "type": "point",
+     "id": "steerRp111"
+    },
+    {
+     "type": "point",
+     "id": "steerRp112"
+    },
+    {
+     "type": "point",
+     "id": "steerRp113"
+    },
+    {
+     "type": "point",
+     "id": "steerRp114"
+    },
+    {
+     "type": "point",
+     "id": "steerRp115"
+    },
+    {
+     "type": "point",
+     "id": "steerRp116"
+    },
+    {
+     "type": "point",
+     "id": "steerRp117"
+    },
+    {
+     "type": "point",
+     "id": "steerRp118"
+    },
+    {
+     "type": "point",
+     "id": "steerRp119"
+    },
+    {
+     "type": "point",
+     "id": "steerRp120"
+    },
+    {
+     "type": "point",
+     "id": "steerRp121"
+    },
+    {
+     "type": "point",
+     "id": "steerRp122"
+    },
+    {
+     "type": "point",
+     "id": "steerRp123"
+    },
+    {
+     "type": "point",
+     "id": "steerRp124"
+    },
+    {
+     "type": "point",
+     "id": "steerRp125"
+    },
+    {
+     "type": "point",
+     "id": "steerRp126"
+    },
+    {
+     "type": "point",
+     "id": "steerRp127"
+    },
+    {
+     "type": "point",
+     "id": "steerRp128"
+    },
+    {
+     "type": "point",
+     "id": "steerRp129"
+    },
+    {
+     "type": "point",
+     "id": "steerRp130"
+    },
+    {
+     "type": "point",
+     "id": "steerRp131"
+    },
+    {
+     "type": "point",
+     "id": "steerRp132"
+    },
+    {
+     "type": "point",
+     "id": "steerRp133"
+    },
+    {
+     "type": "point",
+     "id": "steerRp134"
+    },
+    {
+     "type": "point",
+     "id": "steerRp135"
+    },
+    {
+     "type": "point",
+     "id": "steerRp136"
+    },
+    {
+     "type": "point",
+     "id": "steerRp137"
+    },
+    {
+     "type": "point",
+     "id": "steerRp138"
+    },
+    {
+     "type": "point",
+     "id": "steerRp139"
+    },
+    {
+     "type": "point",
+     "id": "steerRp140"
+    },
+    {
+     "type": "point",
+     "id": "steerRp141"
+    },
+    {
+     "type": "point",
+     "id": "steerRp142"
+    },
+    {
+     "type": "point",
+     "id": "steerRp143"
+    },
+    {
+     "type": "point",
+     "id": "steerRp144"
+    },
+    {
+     "type": "point",
+     "id": "steerRp145"
+    },
+    {
+     "type": "point",
+     "id": "steerRp146"
+    },
+    {
+     "type": "point",
+     "id": "steerRp147"
+    },
+    {
+     "type": "point",
+     "id": "steerRp148"
+    },
+    {
+     "type": "point",
+     "id": "steerRp149"
+    },
+    {
+     "type": "point",
+     "id": "steerRp150"
+    },
+    {
+     "type": "point",
+     "id": "steerRp151"
+    },
+    {
+     "type": "point",
+     "id": "steerRp152"
+    },
+    {
+     "type": "point",
+     "id": "steerRp153"
+    },
+    {
+     "type": "point",
+     "id": "steerRp154"
+    },
+    {
+     "type": "point",
+     "id": "steerRp155"
+    },
+    {
+     "type": "point",
+     "id": "steerRp156"
+    },
+    {
+     "type": "point",
+     "id": "steerRp157"
+    },
+    {
+     "type": "point",
+     "id": "steerRp158"
+    },
+    {
+     "type": "point",
+     "id": "steerRp159"
+    },
+    {
+     "type": "point",
+     "id": "steerRp160"
+    },
+    {
+     "type": "point",
+     "id": "steerRp161"
+    },
+    {
+     "type": "point",
+     "id": "steerRp162"
+    },
+    {
+     "type": "point",
+     "id": "steerRp163"
+    },
+    {
+     "type": "point",
+     "id": "steerRp164"
+    },
+    {
+     "type": "point",
+     "id": "steerRp165"
+    },
+    {
+     "type": "point",
+     "id": "steerRp166"
+    },
+    {
+     "type": "point",
+     "id": "steerRp167"
+    },
+    {
+     "type": "point",
+     "id": "steerRp168"
+    },
+    {
+     "type": "point",
+     "id": "steerRp169"
+    },
+    {
+     "type": "point",
+     "id": "steerRp170"
+    },
+    {
+     "type": "point",
+     "id": "steerRp171"
+    },
+    {
+     "type": "point",
+     "id": "steerRp172"
+    },
+    {
+     "type": "point",
+     "id": "steerRp173"
+    },
+    {
+     "type": "point",
+     "id": "steerRp174"
+    },
+    {
+     "type": "point",
+     "id": "steerRp175"
+    },
+    {
+     "type": "point",
+     "id": "steerRp176"
+    },
+    {
+     "type": "point",
+     "id": "steerRp177"
+    },
+    {
+     "type": "point",
+     "id": "steerRp178"
+    },
+    {
+     "type": "point",
+     "id": "steerRp179"
+    },
+    {
+     "type": "point",
+     "id": "steerRp180"
+    },
+    {
+     "type": "point",
+     "id": "steerRp181"
+    },
+    {
+     "type": "point",
+     "id": "steerRp182"
+    },
+    {
+     "type": "point",
+     "id": "steerRp183"
+    },
+    {
+     "type": "point",
+     "id": "steerRp184"
+    },
+    {
+     "type": "point",
+     "id": "steerRp185"
+    },
+    {
+     "type": "point",
+     "id": "steerRp186"
+    },
+    {
+     "type": "point",
+     "id": "steerRp187"
+    },
+    {
+     "type": "point",
+     "id": "steerRp188"
+    },
+    {
+     "type": "point",
+     "id": "steerRp189"
+    },
+    {
+     "type": "point",
+     "id": "steerRp190"
+    },
+    {
+     "type": "point",
+     "id": "steerRp191"
+    },
+    {
+     "type": "point",
+     "id": "steerRp192"
+    },
+    {
+     "type": "point",
+     "id": "steerRp193"
+    },
+    {
+     "type": "point",
+     "id": "steerRp194"
+    },
+    {
+     "type": "point",
+     "id": "steerRp195"
+    },
+    {
+     "type": "point",
+     "id": "steerRp196"
+    },
+    {
+     "type": "point",
+     "id": "steerRp197"
+    },
+    {
+     "type": "point",
+     "id": "steerRp198"
+    },
+    {
+     "type": "point",
+     "id": "steerRp199"
+    },
+    {
+     "type": "point",
+     "id": "steerRp200"
+    },
+    {
+     "type": "point",
+     "id": "steerRp201"
+    },
+    {
+     "type": "point",
+     "id": "steerRp202"
+    },
+    {
+     "type": "point",
+     "id": "steerRp203"
+    },
+    {
+     "type": "point",
+     "id": "steerRp204"
+    },
+    {
+     "type": "point",
+     "id": "steerRp205"
+    },
+    {
+     "type": "point",
+     "id": "steerRp206"
+    },
+    {
+     "type": "point",
+     "id": "steerRp207"
+    },
+    {
+     "type": "point",
+     "id": "steerRp208"
+    },
+    {
+     "type": "point",
+     "id": "steerRp209"
+    },
+    {
+     "type": "point",
+     "id": "steerRp210"
+    },
+    {
+     "type": "point",
+     "id": "steerRp211"
+    },
+    {
+     "type": "point",
+     "id": "steerRp212"
+    },
+    {
+     "type": "point",
+     "id": "steerRp213"
+    },
+    {
+     "type": "point",
+     "id": "steerRp214"
+    },
+    {
+     "type": "point",
+     "id": "steerRp215"
+    },
+    {
+     "type": "point",
+     "id": "steerRp216"
+    },
+    {
+     "type": "point",
+     "id": "steerRp217"
+    },
+    {
+     "type": "point",
+     "id": "steerRp218"
+    },
+    {
+     "type": "point",
+     "id": "steerRp219"
+    },
+    {
+     "type": "point",
+     "id": "steerRp220"
+    },
+    {
+     "type": "point",
+     "id": "steerRp221"
+    },
+    {
+     "type": "point",
+     "id": "steerRp222"
+    },
+    {
+     "type": "point",
+     "id": "steerRp223"
+    },
+    {
+     "type": "point",
+     "id": "steerRp224"
+    },
+    {
+     "type": "point",
+     "id": "steerRp225"
+    },
+    {
+     "type": "point",
+     "id": "steerRp226"
+    },
+    {
+     "type": "point",
+     "id": "steerRp227"
+    },
+    {
+     "type": "point",
+     "id": "steerRp228"
+    },
+    {
+     "type": "point",
+     "id": "steerRp229"
+    },
+    {
+     "type": "point",
+     "id": "steerRp230"
+    },
+    {
+     "type": "point",
+     "id": "steerRp231"
+    },
+    {
+     "type": "point",
+     "id": "steerRp232"
+    },
+    {
+     "type": "point",
+     "id": "steerRp233"
+    },
+    {
+     "type": "point",
+     "id": "steerRp234"
+    },
+    {
+     "type": "point",
+     "id": "steerRp235"
+    },
+    {
+     "type": "point",
+     "id": "steerRp236"
+    },
+    {
+     "type": "point",
+     "id": "steerRp237"
+    },
+    {
+     "type": "point",
+     "id": "steerRp238"
+    },
+    {
+     "type": "point",
+     "id": "steerRp239"
+    },
+    {
+     "type": "point",
+     "id": "steerRp240"
+    },
+    {
+     "type": "point",
+     "id": "steerRp241"
+    },
+    {
+     "type": "point",
+     "id": "steerRp242"
+    },
+    {
+     "type": "point",
+     "id": "steerRp243"
+    },
+    {
+     "type": "line",
+     "id": "steerRl0",
+     "start": "steerRp0",
+     "end": "steerRp1"
+    },
+    {
+     "type": "line",
+     "id": "steerRl1",
+     "start": "steerRp1",
+     "end": "steerRp2"
+    },
+    {
+     "type": "line",
+     "id": "steerRl2",
+     "start": "steerRp2",
+     "end": "steerRp3"
+    },
+    {
+     "type": "line",
+     "id": "steerRl3",
+     "start": "steerRp3",
+     "end": "steerRp4"
+    },
+    {
+     "type": "line",
+     "id": "steerRl4",
+     "start": "steerRp4",
+     "end": "steerRp5"
+    },
+    {
+     "type": "line",
+     "id": "steerRl5",
+     "start": "steerRp5",
+     "end": "steerRp6"
+    },
+    {
+     "type": "line",
+     "id": "steerRl6",
+     "start": "steerRp6",
+     "end": "steerRp7"
+    },
+    {
+     "type": "line",
+     "id": "steerRl7",
+     "start": "steerRp7",
+     "end": "steerRp8"
+    },
+    {
+     "type": "line",
+     "id": "steerRl8",
+     "start": "steerRp8",
+     "end": "steerRp9"
+    },
+    {
+     "type": "line",
+     "id": "steerRl9",
+     "start": "steerRp9",
+     "end": "steerRp10"
+    },
+    {
+     "type": "line",
+     "id": "steerRl10",
+     "start": "steerRp10",
+     "end": "steerRp11"
+    },
+    {
+     "type": "line",
+     "id": "steerRl11",
+     "start": "steerRp11",
+     "end": "steerRp12"
+    },
+    {
+     "type": "line",
+     "id": "steerRl12",
+     "start": "steerRp12",
+     "end": "steerRp13"
+    },
+    {
+     "type": "line",
+     "id": "steerRl13",
+     "start": "steerRp13",
+     "end": "steerRp14"
+    },
+    {
+     "type": "line",
+     "id": "steerRl14",
+     "start": "steerRp14",
+     "end": "steerRp15"
+    },
+    {
+     "type": "line",
+     "id": "steerRl15",
+     "start": "steerRp15",
+     "end": "steerRp16"
+    },
+    {
+     "type": "line",
+     "id": "steerRl16",
+     "start": "steerRp16",
+     "end": "steerRp17"
+    },
+    {
+     "type": "line",
+     "id": "steerRl17",
+     "start": "steerRp17",
+     "end": "steerRp18"
+    },
+    {
+     "type": "line",
+     "id": "steerRl18",
+     "start": "steerRp18",
+     "end": "steerRp19"
+    },
+    {
+     "type": "line",
+     "id": "steerRl19",
+     "start": "steerRp19",
+     "end": "steerRp20"
+    },
+    {
+     "type": "line",
+     "id": "steerRl20",
+     "start": "steerRp20",
+     "end": "steerRp21"
+    },
+    {
+     "type": "line",
+     "id": "steerRl21",
+     "start": "steerRp21",
+     "end": "steerRp22"
+    },
+    {
+     "type": "line",
+     "id": "steerRl22",
+     "start": "steerRp22",
+     "end": "steerRp23"
+    },
+    {
+     "type": "line",
+     "id": "steerRl23",
+     "start": "steerRp23",
+     "end": "steerRp24"
+    },
+    {
+     "type": "line",
+     "id": "steerRl24",
+     "start": "steerRp24",
+     "end": "steerRp25"
+    },
+    {
+     "type": "line",
+     "id": "steerRl25",
+     "start": "steerRp25",
+     "end": "steerRp26"
+    },
+    {
+     "type": "line",
+     "id": "steerRl26",
+     "start": "steerRp26",
+     "end": "steerRp27"
+    },
+    {
+     "type": "line",
+     "id": "steerRl27",
+     "start": "steerRp27",
+     "end": "steerRp28"
+    },
+    {
+     "type": "line",
+     "id": "steerRl28",
+     "start": "steerRp28",
+     "end": "steerRp29"
+    },
+    {
+     "type": "line",
+     "id": "steerRl29",
+     "start": "steerRp29",
+     "end": "steerRp30"
+    },
+    {
+     "type": "line",
+     "id": "steerRl30",
+     "start": "steerRp30",
+     "end": "steerRp31"
+    },
+    {
+     "type": "line",
+     "id": "steerRl31",
+     "start": "steerRp31",
+     "end": "steerRp32"
+    },
+    {
+     "type": "line",
+     "id": "steerRl32",
+     "start": "steerRp32",
+     "end": "steerRp33"
+    },
+    {
+     "type": "line",
+     "id": "steerRl33",
+     "start": "steerRp33",
+     "end": "steerRp34"
+    },
+    {
+     "type": "line",
+     "id": "steerRl34",
+     "start": "steerRp34",
+     "end": "steerRp35"
+    },
+    {
+     "type": "line",
+     "id": "steerRl35",
+     "start": "steerRp35",
+     "end": "steerRp36"
+    },
+    {
+     "type": "line",
+     "id": "steerRl36",
+     "start": "steerRp36",
+     "end": "steerRp37"
+    },
+    {
+     "type": "line",
+     "id": "steerRl37",
+     "start": "steerRp37",
+     "end": "steerRp38"
+    },
+    {
+     "type": "line",
+     "id": "steerRl38",
+     "start": "steerRp38",
+     "end": "steerRp39"
+    },
+    {
+     "type": "line",
+     "id": "steerRl39",
+     "start": "steerRp39",
+     "end": "steerRp40"
+    },
+    {
+     "type": "line",
+     "id": "steerRl40",
+     "start": "steerRp40",
+     "end": "steerRp41"
+    },
+    {
+     "type": "line",
+     "id": "steerRl41",
+     "start": "steerRp41",
+     "end": "steerRp42"
+    },
+    {
+     "type": "line",
+     "id": "steerRl42",
+     "start": "steerRp42",
+     "end": "steerRp43"
+    },
+    {
+     "type": "line",
+     "id": "steerRl43",
+     "start": "steerRp43",
+     "end": "steerRp44"
+    },
+    {
+     "type": "line",
+     "id": "steerRl44",
+     "start": "steerRp44",
+     "end": "steerRp45"
+    },
+    {
+     "type": "line",
+     "id": "steerRl45",
+     "start": "steerRp45",
+     "end": "steerRp46"
+    },
+    {
+     "type": "line",
+     "id": "steerRl46",
+     "start": "steerRp46",
+     "end": "steerRp47"
+    },
+    {
+     "type": "line",
+     "id": "steerRl47",
+     "start": "steerRp47",
+     "end": "steerRp48"
+    },
+    {
+     "type": "line",
+     "id": "steerRl48",
+     "start": "steerRp48",
+     "end": "steerRp49"
+    },
+    {
+     "type": "line",
+     "id": "steerRl49",
+     "start": "steerRp49",
+     "end": "steerRp50"
+    },
+    {
+     "type": "line",
+     "id": "steerRl50",
+     "start": "steerRp50",
+     "end": "steerRp51"
+    },
+    {
+     "type": "line",
+     "id": "steerRl51",
+     "start": "steerRp51",
+     "end": "steerRp52"
+    },
+    {
+     "type": "line",
+     "id": "steerRl52",
+     "start": "steerRp52",
+     "end": "steerRp53"
+    },
+    {
+     "type": "line",
+     "id": "steerRl53",
+     "start": "steerRp53",
+     "end": "steerRp54"
+    },
+    {
+     "type": "line",
+     "id": "steerRl54",
+     "start": "steerRp54",
+     "end": "steerRp55"
+    },
+    {
+     "type": "line",
+     "id": "steerRl55",
+     "start": "steerRp55",
+     "end": "steerRp56"
+    },
+    {
+     "type": "line",
+     "id": "steerRl56",
+     "start": "steerRp56",
+     "end": "steerRp57"
+    },
+    {
+     "type": "line",
+     "id": "steerRl57",
+     "start": "steerRp57",
+     "end": "steerRp58"
+    },
+    {
+     "type": "line",
+     "id": "steerRl58",
+     "start": "steerRp58",
+     "end": "steerRp59"
+    },
+    {
+     "type": "line",
+     "id": "steerRl59",
+     "start": "steerRp59",
+     "end": "steerRp60"
+    },
+    {
+     "type": "line",
+     "id": "steerRl60",
+     "start": "steerRp60",
+     "end": "steerRp61"
+    },
+    {
+     "type": "line",
+     "id": "steerRl61",
+     "start": "steerRp61",
+     "end": "steerRp62"
+    },
+    {
+     "type": "line",
+     "id": "steerRl62",
+     "start": "steerRp62",
+     "end": "steerRp63"
+    },
+    {
+     "type": "line",
+     "id": "steerRl63",
+     "start": "steerRp63",
+     "end": "steerRp64"
+    },
+    {
+     "type": "line",
+     "id": "steerRl64",
+     "start": "steerRp64",
+     "end": "steerRp65"
+    },
+    {
+     "type": "line",
+     "id": "steerRl65",
+     "start": "steerRp65",
+     "end": "steerRp66"
+    },
+    {
+     "type": "line",
+     "id": "steerRl66",
+     "start": "steerRp66",
+     "end": "steerRp67"
+    },
+    {
+     "type": "line",
+     "id": "steerRl67",
+     "start": "steerRp67",
+     "end": "steerRp68"
+    },
+    {
+     "type": "line",
+     "id": "steerRl68",
+     "start": "steerRp68",
+     "end": "steerRp69"
+    },
+    {
+     "type": "line",
+     "id": "steerRl69",
+     "start": "steerRp69",
+     "end": "steerRp70"
+    },
+    {
+     "type": "line",
+     "id": "steerRl70",
+     "start": "steerRp70",
+     "end": "steerRp71"
+    },
+    {
+     "type": "line",
+     "id": "steerRl71",
+     "start": "steerRp71",
+     "end": "steerRp72"
+    },
+    {
+     "type": "line",
+     "id": "steerRl72",
+     "start": "steerRp72",
+     "end": "steerRp73"
+    },
+    {
+     "type": "line",
+     "id": "steerRl73",
+     "start": "steerRp73",
+     "end": "steerRp74"
+    },
+    {
+     "type": "line",
+     "id": "steerRl74",
+     "start": "steerRp74",
+     "end": "steerRp75"
+    },
+    {
+     "type": "line",
+     "id": "steerRl75",
+     "start": "steerRp75",
+     "end": "steerRp76"
+    },
+    {
+     "type": "line",
+     "id": "steerRl76",
+     "start": "steerRp76",
+     "end": "steerRp77"
+    },
+    {
+     "type": "line",
+     "id": "steerRl77",
+     "start": "steerRp77",
+     "end": "steerRp78"
+    },
+    {
+     "type": "line",
+     "id": "steerRl78",
+     "start": "steerRp78",
+     "end": "steerRp79"
+    },
+    {
+     "type": "line",
+     "id": "steerRl79",
+     "start": "steerRp79",
+     "end": "steerRp80"
+    },
+    {
+     "type": "line",
+     "id": "steerRl80",
+     "start": "steerRp80",
+     "end": "steerRp81"
+    },
+    {
+     "type": "line",
+     "id": "steerRl81",
+     "start": "steerRp81",
+     "end": "steerRp82"
+    },
+    {
+     "type": "line",
+     "id": "steerRl82",
+     "start": "steerRp82",
+     "end": "steerRp83"
+    },
+    {
+     "type": "line",
+     "id": "steerRl83",
+     "start": "steerRp83",
+     "end": "steerRp84"
+    },
+    {
+     "type": "line",
+     "id": "steerRl84",
+     "start": "steerRp84",
+     "end": "steerRp85"
+    },
+    {
+     "type": "line",
+     "id": "steerRl85",
+     "start": "steerRp85",
+     "end": "steerRp86"
+    },
+    {
+     "type": "line",
+     "id": "steerRl86",
+     "start": "steerRp86",
+     "end": "steerRp87"
+    },
+    {
+     "type": "line",
+     "id": "steerRl87",
+     "start": "steerRp87",
+     "end": "steerRp88"
+    },
+    {
+     "type": "line",
+     "id": "steerRl88",
+     "start": "steerRp88",
+     "end": "steerRp89"
+    },
+    {
+     "type": "line",
+     "id": "steerRl89",
+     "start": "steerRp89",
+     "end": "steerRp90"
+    },
+    {
+     "type": "line",
+     "id": "steerRl90",
+     "start": "steerRp90",
+     "end": "steerRp91"
+    },
+    {
+     "type": "line",
+     "id": "steerRl91",
+     "start": "steerRp91",
+     "end": "steerRp92"
+    },
+    {
+     "type": "line",
+     "id": "steerRl92",
+     "start": "steerRp92",
+     "end": "steerRp93"
+    },
+    {
+     "type": "line",
+     "id": "steerRl93",
+     "start": "steerRp93",
+     "end": "steerRp94"
+    },
+    {
+     "type": "line",
+     "id": "steerRl94",
+     "start": "steerRp94",
+     "end": "steerRp95"
+    },
+    {
+     "type": "line",
+     "id": "steerRl95",
+     "start": "steerRp95",
+     "end": "steerRp96"
+    },
+    {
+     "type": "line",
+     "id": "steerRl96",
+     "start": "steerRp96",
+     "end": "steerRp97"
+    },
+    {
+     "type": "line",
+     "id": "steerRl97",
+     "start": "steerRp97",
+     "end": "steerRp98"
+    },
+    {
+     "type": "line",
+     "id": "steerRl98",
+     "start": "steerRp98",
+     "end": "steerRp99"
+    },
+    {
+     "type": "line",
+     "id": "steerRl99",
+     "start": "steerRp99",
+     "end": "steerRp100"
+    },
+    {
+     "type": "line",
+     "id": "steerRl100",
+     "start": "steerRp100",
+     "end": "steerRp101"
+    },
+    {
+     "type": "line",
+     "id": "steerRl101",
+     "start": "steerRp101",
+     "end": "steerRp102"
+    },
+    {
+     "type": "line",
+     "id": "steerRl102",
+     "start": "steerRp102",
+     "end": "steerRp103"
+    },
+    {
+     "type": "line",
+     "id": "steerRl103",
+     "start": "steerRp103",
+     "end": "steerRp104"
+    },
+    {
+     "type": "line",
+     "id": "steerRl104",
+     "start": "steerRp104",
+     "end": "steerRp105"
+    },
+    {
+     "type": "line",
+     "id": "steerRl105",
+     "start": "steerRp105",
+     "end": "steerRp106"
+    },
+    {
+     "type": "line",
+     "id": "steerRl106",
+     "start": "steerRp106",
+     "end": "steerRp107"
+    },
+    {
+     "type": "line",
+     "id": "steerRl107",
+     "start": "steerRp107",
+     "end": "steerRp108"
+    },
+    {
+     "type": "line",
+     "id": "steerRl108",
+     "start": "steerRp108",
+     "end": "steerRp109"
+    },
+    {
+     "type": "line",
+     "id": "steerRl109",
+     "start": "steerRp109",
+     "end": "steerRp110"
+    },
+    {
+     "type": "line",
+     "id": "steerRl110",
+     "start": "steerRp110",
+     "end": "steerRp111"
+    },
+    {
+     "type": "line",
+     "id": "steerRl111",
+     "start": "steerRp111",
+     "end": "steerRp112"
+    },
+    {
+     "type": "line",
+     "id": "steerRl112",
+     "start": "steerRp112",
+     "end": "steerRp113"
+    },
+    {
+     "type": "line",
+     "id": "steerRl113",
+     "start": "steerRp113",
+     "end": "steerRp114"
+    },
+    {
+     "type": "line",
+     "id": "steerRl114",
+     "start": "steerRp114",
+     "end": "steerRp115"
+    },
+    {
+     "type": "line",
+     "id": "steerRl115",
+     "start": "steerRp115",
+     "end": "steerRp116"
+    },
+    {
+     "type": "line",
+     "id": "steerRl116",
+     "start": "steerRp116",
+     "end": "steerRp117"
+    },
+    {
+     "type": "line",
+     "id": "steerRl117",
+     "start": "steerRp117",
+     "end": "steerRp118"
+    },
+    {
+     "type": "line",
+     "id": "steerRl118",
+     "start": "steerRp118",
+     "end": "steerRp119"
+    },
+    {
+     "type": "line",
+     "id": "steerRl119",
+     "start": "steerRp119",
+     "end": "steerRp120"
+    },
+    {
+     "type": "line",
+     "id": "steerRl120",
+     "start": "steerRp120",
+     "end": "steerRp121"
+    },
+    {
+     "type": "line",
+     "id": "steerRl121",
+     "start": "steerRp121",
+     "end": "steerRp122"
+    },
+    {
+     "type": "line",
+     "id": "steerRl122",
+     "start": "steerRp122",
+     "end": "steerRp123"
+    },
+    {
+     "type": "line",
+     "id": "steerRl123",
+     "start": "steerRp123",
+     "end": "steerRp124"
+    },
+    {
+     "type": "line",
+     "id": "steerRl124",
+     "start": "steerRp124",
+     "end": "steerRp125"
+    },
+    {
+     "type": "line",
+     "id": "steerRl125",
+     "start": "steerRp125",
+     "end": "steerRp126"
+    },
+    {
+     "type": "line",
+     "id": "steerRl126",
+     "start": "steerRp126",
+     "end": "steerRp127"
+    },
+    {
+     "type": "line",
+     "id": "steerRl127",
+     "start": "steerRp127",
+     "end": "steerRp128"
+    },
+    {
+     "type": "line",
+     "id": "steerRl128",
+     "start": "steerRp128",
+     "end": "steerRp129"
+    },
+    {
+     "type": "line",
+     "id": "steerRl129",
+     "start": "steerRp129",
+     "end": "steerRp130"
+    },
+    {
+     "type": "line",
+     "id": "steerRl130",
+     "start": "steerRp130",
+     "end": "steerRp131"
+    },
+    {
+     "type": "line",
+     "id": "steerRl131",
+     "start": "steerRp131",
+     "end": "steerRp132"
+    },
+    {
+     "type": "line",
+     "id": "steerRl132",
+     "start": "steerRp132",
+     "end": "steerRp133"
+    },
+    {
+     "type": "line",
+     "id": "steerRl133",
+     "start": "steerRp133",
+     "end": "steerRp134"
+    },
+    {
+     "type": "line",
+     "id": "steerRl134",
+     "start": "steerRp134",
+     "end": "steerRp135"
+    },
+    {
+     "type": "line",
+     "id": "steerRl135",
+     "start": "steerRp135",
+     "end": "steerRp136"
+    },
+    {
+     "type": "line",
+     "id": "steerRl136",
+     "start": "steerRp136",
+     "end": "steerRp137"
+    },
+    {
+     "type": "line",
+     "id": "steerRl137",
+     "start": "steerRp137",
+     "end": "steerRp138"
+    },
+    {
+     "type": "line",
+     "id": "steerRl138",
+     "start": "steerRp138",
+     "end": "steerRp139"
+    },
+    {
+     "type": "line",
+     "id": "steerRl139",
+     "start": "steerRp139",
+     "end": "steerRp140"
+    },
+    {
+     "type": "line",
+     "id": "steerRl140",
+     "start": "steerRp140",
+     "end": "steerRp141"
+    },
+    {
+     "type": "line",
+     "id": "steerRl141",
+     "start": "steerRp141",
+     "end": "steerRp142"
+    },
+    {
+     "type": "line",
+     "id": "steerRl142",
+     "start": "steerRp142",
+     "end": "steerRp143"
+    },
+    {
+     "type": "line",
+     "id": "steerRl143",
+     "start": "steerRp143",
+     "end": "steerRp144"
+    },
+    {
+     "type": "line",
+     "id": "steerRl144",
+     "start": "steerRp144",
+     "end": "steerRp145"
+    },
+    {
+     "type": "line",
+     "id": "steerRl145",
+     "start": "steerRp145",
+     "end": "steerRp146"
+    },
+    {
+     "type": "line",
+     "id": "steerRl146",
+     "start": "steerRp146",
+     "end": "steerRp147"
+    },
+    {
+     "type": "line",
+     "id": "steerRl147",
+     "start": "steerRp147",
+     "end": "steerRp148"
+    },
+    {
+     "type": "line",
+     "id": "steerRl148",
+     "start": "steerRp148",
+     "end": "steerRp149"
+    },
+    {
+     "type": "line",
+     "id": "steerRl149",
+     "start": "steerRp149",
+     "end": "steerRp150"
+    },
+    {
+     "type": "line",
+     "id": "steerRl150",
+     "start": "steerRp150",
+     "end": "steerRp151"
+    },
+    {
+     "type": "line",
+     "id": "steerRl151",
+     "start": "steerRp151",
+     "end": "steerRp152"
+    },
+    {
+     "type": "line",
+     "id": "steerRl152",
+     "start": "steerRp152",
+     "end": "steerRp153"
+    },
+    {
+     "type": "line",
+     "id": "steerRl153",
+     "start": "steerRp153",
+     "end": "steerRp154"
+    },
+    {
+     "type": "line",
+     "id": "steerRl154",
+     "start": "steerRp154",
+     "end": "steerRp155"
+    },
+    {
+     "type": "line",
+     "id": "steerRl155",
+     "start": "steerRp155",
+     "end": "steerRp156"
+    },
+    {
+     "type": "line",
+     "id": "steerRl156",
+     "start": "steerRp156",
+     "end": "steerRp157"
+    },
+    {
+     "type": "line",
+     "id": "steerRl157",
+     "start": "steerRp157",
+     "end": "steerRp158"
+    },
+    {
+     "type": "line",
+     "id": "steerRl158",
+     "start": "steerRp158",
+     "end": "steerRp159"
+    },
+    {
+     "type": "line",
+     "id": "steerRl159",
+     "start": "steerRp159",
+     "end": "steerRp160"
+    },
+    {
+     "type": "line",
+     "id": "steerRl160",
+     "start": "steerRp160",
+     "end": "steerRp161"
+    },
+    {
+     "type": "line",
+     "id": "steerRl161",
+     "start": "steerRp161",
+     "end": "steerRp162"
+    },
+    {
+     "type": "line",
+     "id": "steerRl162",
+     "start": "steerRp162",
+     "end": "steerRp163"
+    },
+    {
+     "type": "line",
+     "id": "steerRl163",
+     "start": "steerRp163",
+     "end": "steerRp164"
+    },
+    {
+     "type": "line",
+     "id": "steerRl164",
+     "start": "steerRp164",
+     "end": "steerRp165"
+    },
+    {
+     "type": "line",
+     "id": "steerRl165",
+     "start": "steerRp165",
+     "end": "steerRp166"
+    },
+    {
+     "type": "line",
+     "id": "steerRl166",
+     "start": "steerRp166",
+     "end": "steerRp167"
+    },
+    {
+     "type": "line",
+     "id": "steerRl167",
+     "start": "steerRp167",
+     "end": "steerRp168"
+    },
+    {
+     "type": "line",
+     "id": "steerRl168",
+     "start": "steerRp168",
+     "end": "steerRp169"
+    },
+    {
+     "type": "line",
+     "id": "steerRl169",
+     "start": "steerRp169",
+     "end": "steerRp170"
+    },
+    {
+     "type": "line",
+     "id": "steerRl170",
+     "start": "steerRp170",
+     "end": "steerRp171"
+    },
+    {
+     "type": "line",
+     "id": "steerRl171",
+     "start": "steerRp171",
+     "end": "steerRp172"
+    },
+    {
+     "type": "line",
+     "id": "steerRl172",
+     "start": "steerRp172",
+     "end": "steerRp173"
+    },
+    {
+     "type": "line",
+     "id": "steerRl173",
+     "start": "steerRp173",
+     "end": "steerRp174"
+    },
+    {
+     "type": "line",
+     "id": "steerRl174",
+     "start": "steerRp174",
+     "end": "steerRp175"
+    },
+    {
+     "type": "line",
+     "id": "steerRl175",
+     "start": "steerRp175",
+     "end": "steerRp176"
+    },
+    {
+     "type": "line",
+     "id": "steerRl176",
+     "start": "steerRp176",
+     "end": "steerRp177"
+    },
+    {
+     "type": "line",
+     "id": "steerRl177",
+     "start": "steerRp177",
+     "end": "steerRp178"
+    },
+    {
+     "type": "line",
+     "id": "steerRl178",
+     "start": "steerRp178",
+     "end": "steerRp179"
+    },
+    {
+     "type": "line",
+     "id": "steerRl179",
+     "start": "steerRp179",
+     "end": "steerRp180"
+    },
+    {
+     "type": "line",
+     "id": "steerRl180",
+     "start": "steerRp180",
+     "end": "steerRp181"
+    },
+    {
+     "type": "line",
+     "id": "steerRl181",
+     "start": "steerRp181",
+     "end": "steerRp182"
+    },
+    {
+     "type": "line",
+     "id": "steerRl182",
+     "start": "steerRp182",
+     "end": "steerRp183"
+    },
+    {
+     "type": "line",
+     "id": "steerRl183",
+     "start": "steerRp183",
+     "end": "steerRp184"
+    },
+    {
+     "type": "line",
+     "id": "steerRl184",
+     "start": "steerRp184",
+     "end": "steerRp185"
+    },
+    {
+     "type": "line",
+     "id": "steerRl185",
+     "start": "steerRp185",
+     "end": "steerRp186"
+    },
+    {
+     "type": "line",
+     "id": "steerRl186",
+     "start": "steerRp186",
+     "end": "steerRp187"
+    },
+    {
+     "type": "line",
+     "id": "steerRl187",
+     "start": "steerRp187",
+     "end": "steerRp188"
+    },
+    {
+     "type": "line",
+     "id": "steerRl188",
+     "start": "steerRp188",
+     "end": "steerRp189"
+    },
+    {
+     "type": "line",
+     "id": "steerRl189",
+     "start": "steerRp189",
+     "end": "steerRp190"
+    },
+    {
+     "type": "line",
+     "id": "steerRl190",
+     "start": "steerRp190",
+     "end": "steerRp191"
+    },
+    {
+     "type": "line",
+     "id": "steerRl191",
+     "start": "steerRp191",
+     "end": "steerRp192"
+    },
+    {
+     "type": "line",
+     "id": "steerRl192",
+     "start": "steerRp192",
+     "end": "steerRp193"
+    },
+    {
+     "type": "line",
+     "id": "steerRl193",
+     "start": "steerRp193",
+     "end": "steerRp194"
+    },
+    {
+     "type": "line",
+     "id": "steerRl194",
+     "start": "steerRp194",
+     "end": "steerRp195"
+    },
+    {
+     "type": "line",
+     "id": "steerRl195",
+     "start": "steerRp195",
+     "end": "steerRp196"
+    },
+    {
+     "type": "line",
+     "id": "steerRl196",
+     "start": "steerRp196",
+     "end": "steerRp197"
+    },
+    {
+     "type": "line",
+     "id": "steerRl197",
+     "start": "steerRp197",
+     "end": "steerRp198"
+    },
+    {
+     "type": "line",
+     "id": "steerRl198",
+     "start": "steerRp198",
+     "end": "steerRp199"
+    },
+    {
+     "type": "line",
+     "id": "steerRl199",
+     "start": "steerRp199",
+     "end": "steerRp200"
+    },
+    {
+     "type": "line",
+     "id": "steerRl200",
+     "start": "steerRp200",
+     "end": "steerRp201"
+    },
+    {
+     "type": "line",
+     "id": "steerRl201",
+     "start": "steerRp201",
+     "end": "steerRp202"
+    },
+    {
+     "type": "line",
+     "id": "steerRl202",
+     "start": "steerRp202",
+     "end": "steerRp203"
+    },
+    {
+     "type": "line",
+     "id": "steerRl203",
+     "start": "steerRp203",
+     "end": "steerRp204"
+    },
+    {
+     "type": "line",
+     "id": "steerRl204",
+     "start": "steerRp204",
+     "end": "steerRp205"
+    },
+    {
+     "type": "line",
+     "id": "steerRl205",
+     "start": "steerRp205",
+     "end": "steerRp206"
+    },
+    {
+     "type": "line",
+     "id": "steerRl206",
+     "start": "steerRp206",
+     "end": "steerRp207"
+    },
+    {
+     "type": "line",
+     "id": "steerRl207",
+     "start": "steerRp207",
+     "end": "steerRp208"
+    },
+    {
+     "type": "line",
+     "id": "steerRl208",
+     "start": "steerRp208",
+     "end": "steerRp209"
+    },
+    {
+     "type": "line",
+     "id": "steerRl209",
+     "start": "steerRp209",
+     "end": "steerRp210"
+    },
+    {
+     "type": "line",
+     "id": "steerRl210",
+     "start": "steerRp210",
+     "end": "steerRp211"
+    },
+    {
+     "type": "line",
+     "id": "steerRl211",
+     "start": "steerRp211",
+     "end": "steerRp212"
+    },
+    {
+     "type": "line",
+     "id": "steerRl212",
+     "start": "steerRp212",
+     "end": "steerRp213"
+    },
+    {
+     "type": "line",
+     "id": "steerRl213",
+     "start": "steerRp213",
+     "end": "steerRp214"
+    },
+    {
+     "type": "line",
+     "id": "steerRl214",
+     "start": "steerRp214",
+     "end": "steerRp215"
+    },
+    {
+     "type": "line",
+     "id": "steerRl215",
+     "start": "steerRp215",
+     "end": "steerRp216"
+    },
+    {
+     "type": "line",
+     "id": "steerRl216",
+     "start": "steerRp216",
+     "end": "steerRp217"
+    },
+    {
+     "type": "line",
+     "id": "steerRl217",
+     "start": "steerRp217",
+     "end": "steerRp218"
+    },
+    {
+     "type": "line",
+     "id": "steerRl218",
+     "start": "steerRp218",
+     "end": "steerRp219"
+    },
+    {
+     "type": "line",
+     "id": "steerRl219",
+     "start": "steerRp219",
+     "end": "steerRp220"
+    },
+    {
+     "type": "line",
+     "id": "steerRl220",
+     "start": "steerRp220",
+     "end": "steerRp221"
+    },
+    {
+     "type": "line",
+     "id": "steerRl221",
+     "start": "steerRp221",
+     "end": "steerRp222"
+    },
+    {
+     "type": "line",
+     "id": "steerRl222",
+     "start": "steerRp222",
+     "end": "steerRp223"
+    },
+    {
+     "type": "line",
+     "id": "steerRl223",
+     "start": "steerRp223",
+     "end": "steerRp224"
+    },
+    {
+     "type": "line",
+     "id": "steerRl224",
+     "start": "steerRp224",
+     "end": "steerRp225"
+    },
+    {
+     "type": "line",
+     "id": "steerRl225",
+     "start": "steerRp225",
+     "end": "steerRp226"
+    },
+    {
+     "type": "line",
+     "id": "steerRl226",
+     "start": "steerRp226",
+     "end": "steerRp227"
+    },
+    {
+     "type": "line",
+     "id": "steerRl227",
+     "start": "steerRp227",
+     "end": "steerRp228"
+    },
+    {
+     "type": "line",
+     "id": "steerRl228",
+     "start": "steerRp228",
+     "end": "steerRp229"
+    },
+    {
+     "type": "line",
+     "id": "steerRl229",
+     "start": "steerRp229",
+     "end": "steerRp230"
+    },
+    {
+     "type": "line",
+     "id": "steerRl230",
+     "start": "steerRp230",
+     "end": "steerRp231"
+    },
+    {
+     "type": "line",
+     "id": "steerRl231",
+     "start": "steerRp231",
+     "end": "steerRp232"
+    },
+    {
+     "type": "line",
+     "id": "steerRl232",
+     "start": "steerRp232",
+     "end": "steerRp233"
+    },
+    {
+     "type": "line",
+     "id": "steerRl233",
+     "start": "steerRp233",
+     "end": "steerRp234"
+    },
+    {
+     "type": "line",
+     "id": "steerRl234",
+     "start": "steerRp234",
+     "end": "steerRp235"
+    },
+    {
+     "type": "line",
+     "id": "steerRl235",
+     "start": "steerRp235",
+     "end": "steerRp236"
+    },
+    {
+     "type": "line",
+     "id": "steerRl236",
+     "start": "steerRp236",
+     "end": "steerRp237"
+    },
+    {
+     "type": "line",
+     "id": "steerRl237",
+     "start": "steerRp237",
+     "end": "steerRp238"
+    },
+    {
+     "type": "line",
+     "id": "steerRl238",
+     "start": "steerRp238",
+     "end": "steerRp239"
+    },
+    {
+     "type": "line",
+     "id": "steerRl239",
+     "start": "steerRp239",
+     "end": "steerRp240"
+    },
+    {
+     "type": "line",
+     "id": "steerRl240",
+     "start": "steerRp240",
+     "end": "steerRp241"
+    },
+    {
+     "type": "line",
+     "id": "steerRl241",
+     "start": "steerRp241",
+     "end": "steerRp242"
+    },
+    {
+     "type": "line",
+     "id": "steerRl242",
+     "start": "steerRp242",
+     "end": "steerRp243"
+    },
+    {
+     "type": "line",
+     "id": "steerRl243",
+     "start": "steerRp243",
+     "end": "steerRp0"
+    },
+    {
+     "type": "point",
+     "id": "steerLp0"
+    },
+    {
+     "type": "point",
+     "id": "steerLp1"
+    },
+    {
+     "type": "point",
+     "id": "steerLp2"
+    },
+    {
+     "type": "point",
+     "id": "steerLp3"
+    },
+    {
+     "type": "point",
+     "id": "steerLp4"
+    },
+    {
+     "type": "point",
+     "id": "steerLp5"
+    },
+    {
+     "type": "point",
+     "id": "steerLp6"
+    },
+    {
+     "type": "point",
+     "id": "steerLp7"
+    },
+    {
+     "type": "point",
+     "id": "steerLp8"
+    },
+    {
+     "type": "point",
+     "id": "steerLp9"
+    },
+    {
+     "type": "point",
+     "id": "steerLp10"
+    },
+    {
+     "type": "point",
+     "id": "steerLp11"
+    },
+    {
+     "type": "point",
+     "id": "steerLp12"
+    },
+    {
+     "type": "point",
+     "id": "steerLp13"
+    },
+    {
+     "type": "point",
+     "id": "steerLp14"
+    },
+    {
+     "type": "point",
+     "id": "steerLp15"
+    },
+    {
+     "type": "point",
+     "id": "steerLp16"
+    },
+    {
+     "type": "point",
+     "id": "steerLp17"
+    },
+    {
+     "type": "point",
+     "id": "steerLp18"
+    },
+    {
+     "type": "point",
+     "id": "steerLp19"
+    },
+    {
+     "type": "point",
+     "id": "steerLp20"
+    },
+    {
+     "type": "point",
+     "id": "steerLp21"
+    },
+    {
+     "type": "point",
+     "id": "steerLp22"
+    },
+    {
+     "type": "point",
+     "id": "steerLp23"
+    },
+    {
+     "type": "point",
+     "id": "steerLp24"
+    },
+    {
+     "type": "point",
+     "id": "steerLp25"
+    },
+    {
+     "type": "point",
+     "id": "steerLp26"
+    },
+    {
+     "type": "point",
+     "id": "steerLp27"
+    },
+    {
+     "type": "point",
+     "id": "steerLp28"
+    },
+    {
+     "type": "point",
+     "id": "steerLp29"
+    },
+    {
+     "type": "point",
+     "id": "steerLp30"
+    },
+    {
+     "type": "point",
+     "id": "steerLp31"
+    },
+    {
+     "type": "point",
+     "id": "steerLp32"
+    },
+    {
+     "type": "point",
+     "id": "steerLp33"
+    },
+    {
+     "type": "point",
+     "id": "steerLp34"
+    },
+    {
+     "type": "point",
+     "id": "steerLp35"
+    },
+    {
+     "type": "point",
+     "id": "steerLp36"
+    },
+    {
+     "type": "point",
+     "id": "steerLp37"
+    },
+    {
+     "type": "point",
+     "id": "steerLp38"
+    },
+    {
+     "type": "point",
+     "id": "steerLp39"
+    },
+    {
+     "type": "point",
+     "id": "steerLp40"
+    },
+    {
+     "type": "point",
+     "id": "steerLp41"
+    },
+    {
+     "type": "point",
+     "id": "steerLp42"
+    },
+    {
+     "type": "point",
+     "id": "steerLp43"
+    },
+    {
+     "type": "point",
+     "id": "steerLp44"
+    },
+    {
+     "type": "point",
+     "id": "steerLp45"
+    },
+    {
+     "type": "point",
+     "id": "steerLp46"
+    },
+    {
+     "type": "point",
+     "id": "steerLp47"
+    },
+    {
+     "type": "point",
+     "id": "steerLp48"
+    },
+    {
+     "type": "point",
+     "id": "steerLp49"
+    },
+    {
+     "type": "point",
+     "id": "steerLp50"
+    },
+    {
+     "type": "point",
+     "id": "steerLp51"
+    },
+    {
+     "type": "point",
+     "id": "steerLp52"
+    },
+    {
+     "type": "point",
+     "id": "steerLp53"
+    },
+    {
+     "type": "point",
+     "id": "steerLp54"
+    },
+    {
+     "type": "point",
+     "id": "steerLp55"
+    },
+    {
+     "type": "point",
+     "id": "steerLp56"
+    },
+    {
+     "type": "point",
+     "id": "steerLp57"
+    },
+    {
+     "type": "point",
+     "id": "steerLp58"
+    },
+    {
+     "type": "point",
+     "id": "steerLp59"
+    },
+    {
+     "type": "point",
+     "id": "steerLp60"
+    },
+    {
+     "type": "point",
+     "id": "steerLp61"
+    },
+    {
+     "type": "point",
+     "id": "steerLp62"
+    },
+    {
+     "type": "point",
+     "id": "steerLp63"
+    },
+    {
+     "type": "point",
+     "id": "steerLp64"
+    },
+    {
+     "type": "point",
+     "id": "steerLp65"
+    },
+    {
+     "type": "point",
+     "id": "steerLp66"
+    },
+    {
+     "type": "point",
+     "id": "steerLp67"
+    },
+    {
+     "type": "point",
+     "id": "steerLp68"
+    },
+    {
+     "type": "point",
+     "id": "steerLp69"
+    },
+    {
+     "type": "point",
+     "id": "steerLp70"
+    },
+    {
+     "type": "point",
+     "id": "steerLp71"
+    },
+    {
+     "type": "point",
+     "id": "steerLp72"
+    },
+    {
+     "type": "point",
+     "id": "steerLp73"
+    },
+    {
+     "type": "point",
+     "id": "steerLp74"
+    },
+    {
+     "type": "point",
+     "id": "steerLp75"
+    },
+    {
+     "type": "point",
+     "id": "steerLp76"
+    },
+    {
+     "type": "point",
+     "id": "steerLp77"
+    },
+    {
+     "type": "point",
+     "id": "steerLp78"
+    },
+    {
+     "type": "point",
+     "id": "steerLp79"
+    },
+    {
+     "type": "point",
+     "id": "steerLp80"
+    },
+    {
+     "type": "point",
+     "id": "steerLp81"
+    },
+    {
+     "type": "point",
+     "id": "steerLp82"
+    },
+    {
+     "type": "point",
+     "id": "steerLp83"
+    },
+    {
+     "type": "point",
+     "id": "steerLp84"
+    },
+    {
+     "type": "point",
+     "id": "steerLp85"
+    },
+    {
+     "type": "point",
+     "id": "steerLp86"
+    },
+    {
+     "type": "point",
+     "id": "steerLp87"
+    },
+    {
+     "type": "point",
+     "id": "steerLp88"
+    },
+    {
+     "type": "point",
+     "id": "steerLp89"
+    },
+    {
+     "type": "point",
+     "id": "steerLp90"
+    },
+    {
+     "type": "point",
+     "id": "steerLp91"
+    },
+    {
+     "type": "point",
+     "id": "steerLp92"
+    },
+    {
+     "type": "point",
+     "id": "steerLp93"
+    },
+    {
+     "type": "point",
+     "id": "steerLp94"
+    },
+    {
+     "type": "point",
+     "id": "steerLp95"
+    },
+    {
+     "type": "point",
+     "id": "steerLp96"
+    },
+    {
+     "type": "point",
+     "id": "steerLp97"
+    },
+    {
+     "type": "point",
+     "id": "steerLp98"
+    },
+    {
+     "type": "point",
+     "id": "steerLp99"
+    },
+    {
+     "type": "point",
+     "id": "steerLp100"
+    },
+    {
+     "type": "point",
+     "id": "steerLp101"
+    },
+    {
+     "type": "point",
+     "id": "steerLp102"
+    },
+    {
+     "type": "point",
+     "id": "steerLp103"
+    },
+    {
+     "type": "point",
+     "id": "steerLp104"
+    },
+    {
+     "type": "point",
+     "id": "steerLp105"
+    },
+    {
+     "type": "point",
+     "id": "steerLp106"
+    },
+    {
+     "type": "point",
+     "id": "steerLp107"
+    },
+    {
+     "type": "point",
+     "id": "steerLp108"
+    },
+    {
+     "type": "point",
+     "id": "steerLp109"
+    },
+    {
+     "type": "point",
+     "id": "steerLp110"
+    },
+    {
+     "type": "point",
+     "id": "steerLp111"
+    },
+    {
+     "type": "point",
+     "id": "steerLp112"
+    },
+    {
+     "type": "point",
+     "id": "steerLp113"
+    },
+    {
+     "type": "point",
+     "id": "steerLp114"
+    },
+    {
+     "type": "point",
+     "id": "steerLp115"
+    },
+    {
+     "type": "point",
+     "id": "steerLp116"
+    },
+    {
+     "type": "point",
+     "id": "steerLp117"
+    },
+    {
+     "type": "point",
+     "id": "steerLp118"
+    },
+    {
+     "type": "point",
+     "id": "steerLp119"
+    },
+    {
+     "type": "point",
+     "id": "steerLp120"
+    },
+    {
+     "type": "point",
+     "id": "steerLp121"
+    },
+    {
+     "type": "point",
+     "id": "steerLp122"
+    },
+    {
+     "type": "point",
+     "id": "steerLp123"
+    },
+    {
+     "type": "point",
+     "id": "steerLp124"
+    },
+    {
+     "type": "point",
+     "id": "steerLp125"
+    },
+    {
+     "type": "point",
+     "id": "steerLp126"
+    },
+    {
+     "type": "point",
+     "id": "steerLp127"
+    },
+    {
+     "type": "point",
+     "id": "steerLp128"
+    },
+    {
+     "type": "point",
+     "id": "steerLp129"
+    },
+    {
+     "type": "point",
+     "id": "steerLp130"
+    },
+    {
+     "type": "point",
+     "id": "steerLp131"
+    },
+    {
+     "type": "point",
+     "id": "steerLp132"
+    },
+    {
+     "type": "point",
+     "id": "steerLp133"
+    },
+    {
+     "type": "point",
+     "id": "steerLp134"
+    },
+    {
+     "type": "point",
+     "id": "steerLp135"
+    },
+    {
+     "type": "point",
+     "id": "steerLp136"
+    },
+    {
+     "type": "point",
+     "id": "steerLp137"
+    },
+    {
+     "type": "point",
+     "id": "steerLp138"
+    },
+    {
+     "type": "point",
+     "id": "steerLp139"
+    },
+    {
+     "type": "point",
+     "id": "steerLp140"
+    },
+    {
+     "type": "point",
+     "id": "steerLp141"
+    },
+    {
+     "type": "point",
+     "id": "steerLp142"
+    },
+    {
+     "type": "point",
+     "id": "steerLp143"
+    },
+    {
+     "type": "point",
+     "id": "steerLp144"
+    },
+    {
+     "type": "point",
+     "id": "steerLp145"
+    },
+    {
+     "type": "point",
+     "id": "steerLp146"
+    },
+    {
+     "type": "point",
+     "id": "steerLp147"
+    },
+    {
+     "type": "point",
+     "id": "steerLp148"
+    },
+    {
+     "type": "point",
+     "id": "steerLp149"
+    },
+    {
+     "type": "point",
+     "id": "steerLp150"
+    },
+    {
+     "type": "point",
+     "id": "steerLp151"
+    },
+    {
+     "type": "point",
+     "id": "steerLp152"
+    },
+    {
+     "type": "point",
+     "id": "steerLp153"
+    },
+    {
+     "type": "point",
+     "id": "steerLp154"
+    },
+    {
+     "type": "point",
+     "id": "steerLp155"
+    },
+    {
+     "type": "point",
+     "id": "steerLp156"
+    },
+    {
+     "type": "point",
+     "id": "steerLp157"
+    },
+    {
+     "type": "point",
+     "id": "steerLp158"
+    },
+    {
+     "type": "point",
+     "id": "steerLp159"
+    },
+    {
+     "type": "point",
+     "id": "steerLp160"
+    },
+    {
+     "type": "point",
+     "id": "steerLp161"
+    },
+    {
+     "type": "point",
+     "id": "steerLp162"
+    },
+    {
+     "type": "point",
+     "id": "steerLp163"
+    },
+    {
+     "type": "point",
+     "id": "steerLp164"
+    },
+    {
+     "type": "point",
+     "id": "steerLp165"
+    },
+    {
+     "type": "point",
+     "id": "steerLp166"
+    },
+    {
+     "type": "point",
+     "id": "steerLp167"
+    },
+    {
+     "type": "point",
+     "id": "steerLp168"
+    },
+    {
+     "type": "point",
+     "id": "steerLp169"
+    },
+    {
+     "type": "point",
+     "id": "steerLp170"
+    },
+    {
+     "type": "point",
+     "id": "steerLp171"
+    },
+    {
+     "type": "point",
+     "id": "steerLp172"
+    },
+    {
+     "type": "point",
+     "id": "steerLp173"
+    },
+    {
+     "type": "point",
+     "id": "steerLp174"
+    },
+    {
+     "type": "point",
+     "id": "steerLp175"
+    },
+    {
+     "type": "point",
+     "id": "steerLp176"
+    },
+    {
+     "type": "point",
+     "id": "steerLp177"
+    },
+    {
+     "type": "point",
+     "id": "steerLp178"
+    },
+    {
+     "type": "point",
+     "id": "steerLp179"
+    },
+    {
+     "type": "point",
+     "id": "steerLp180"
+    },
+    {
+     "type": "point",
+     "id": "steerLp181"
+    },
+    {
+     "type": "point",
+     "id": "steerLp182"
+    },
+    {
+     "type": "point",
+     "id": "steerLp183"
+    },
+    {
+     "type": "point",
+     "id": "steerLp184"
+    },
+    {
+     "type": "point",
+     "id": "steerLp185"
+    },
+    {
+     "type": "point",
+     "id": "steerLp186"
+    },
+    {
+     "type": "point",
+     "id": "steerLp187"
+    },
+    {
+     "type": "point",
+     "id": "steerLp188"
+    },
+    {
+     "type": "point",
+     "id": "steerLp189"
+    },
+    {
+     "type": "point",
+     "id": "steerLp190"
+    },
+    {
+     "type": "point",
+     "id": "steerLp191"
+    },
+    {
+     "type": "point",
+     "id": "steerLp192"
+    },
+    {
+     "type": "point",
+     "id": "steerLp193"
+    },
+    {
+     "type": "point",
+     "id": "steerLp194"
+    },
+    {
+     "type": "point",
+     "id": "steerLp195"
+    },
+    {
+     "type": "point",
+     "id": "steerLp196"
+    },
+    {
+     "type": "point",
+     "id": "steerLp197"
+    },
+    {
+     "type": "point",
+     "id": "steerLp198"
+    },
+    {
+     "type": "point",
+     "id": "steerLp199"
+    },
+    {
+     "type": "point",
+     "id": "steerLp200"
+    },
+    {
+     "type": "point",
+     "id": "steerLp201"
+    },
+    {
+     "type": "point",
+     "id": "steerLp202"
+    },
+    {
+     "type": "point",
+     "id": "steerLp203"
+    },
+    {
+     "type": "point",
+     "id": "steerLp204"
+    },
+    {
+     "type": "point",
+     "id": "steerLp205"
+    },
+    {
+     "type": "point",
+     "id": "steerLp206"
+    },
+    {
+     "type": "point",
+     "id": "steerLp207"
+    },
+    {
+     "type": "point",
+     "id": "steerLp208"
+    },
+    {
+     "type": "point",
+     "id": "steerLp209"
+    },
+    {
+     "type": "point",
+     "id": "steerLp210"
+    },
+    {
+     "type": "point",
+     "id": "steerLp211"
+    },
+    {
+     "type": "point",
+     "id": "steerLp212"
+    },
+    {
+     "type": "point",
+     "id": "steerLp213"
+    },
+    {
+     "type": "point",
+     "id": "steerLp214"
+    },
+    {
+     "type": "point",
+     "id": "steerLp215"
+    },
+    {
+     "type": "point",
+     "id": "steerLp216"
+    },
+    {
+     "type": "point",
+     "id": "steerLp217"
+    },
+    {
+     "type": "point",
+     "id": "steerLp218"
+    },
+    {
+     "type": "point",
+     "id": "steerLp219"
+    },
+    {
+     "type": "point",
+     "id": "steerLp220"
+    },
+    {
+     "type": "point",
+     "id": "steerLp221"
+    },
+    {
+     "type": "point",
+     "id": "steerLp222"
+    },
+    {
+     "type": "point",
+     "id": "steerLp223"
+    },
+    {
+     "type": "point",
+     "id": "steerLp224"
+    },
+    {
+     "type": "point",
+     "id": "steerLp225"
+    },
+    {
+     "type": "point",
+     "id": "steerLp226"
+    },
+    {
+     "type": "point",
+     "id": "steerLp227"
+    },
+    {
+     "type": "point",
+     "id": "steerLp228"
+    },
+    {
+     "type": "point",
+     "id": "steerLp229"
+    },
+    {
+     "type": "point",
+     "id": "steerLp230"
+    },
+    {
+     "type": "point",
+     "id": "steerLp231"
+    },
+    {
+     "type": "point",
+     "id": "steerLp232"
+    },
+    {
+     "type": "point",
+     "id": "steerLp233"
+    },
+    {
+     "type": "point",
+     "id": "steerLp234"
+    },
+    {
+     "type": "point",
+     "id": "steerLp235"
+    },
+    {
+     "type": "point",
+     "id": "steerLp236"
+    },
+    {
+     "type": "point",
+     "id": "steerLp237"
+    },
+    {
+     "type": "point",
+     "id": "steerLp238"
+    },
+    {
+     "type": "point",
+     "id": "steerLp239"
+    },
+    {
+     "type": "point",
+     "id": "steerLp240"
+    },
+    {
+     "type": "point",
+     "id": "steerLp241"
+    },
+    {
+     "type": "point",
+     "id": "steerLp242"
+    },
+    {
+     "type": "point",
+     "id": "steerLp243"
+    },
+    {
+     "type": "line",
+     "id": "steerLl0",
+     "start": "steerLp0",
+     "end": "steerLp1"
+    },
+    {
+     "type": "line",
+     "id": "steerLl1",
+     "start": "steerLp1",
+     "end": "steerLp2"
+    },
+    {
+     "type": "line",
+     "id": "steerLl2",
+     "start": "steerLp2",
+     "end": "steerLp3"
+    },
+    {
+     "type": "line",
+     "id": "steerLl3",
+     "start": "steerLp3",
+     "end": "steerLp4"
+    },
+    {
+     "type": "line",
+     "id": "steerLl4",
+     "start": "steerLp4",
+     "end": "steerLp5"
+    },
+    {
+     "type": "line",
+     "id": "steerLl5",
+     "start": "steerLp5",
+     "end": "steerLp6"
+    },
+    {
+     "type": "line",
+     "id": "steerLl6",
+     "start": "steerLp6",
+     "end": "steerLp7"
+    },
+    {
+     "type": "line",
+     "id": "steerLl7",
+     "start": "steerLp7",
+     "end": "steerLp8"
+    },
+    {
+     "type": "line",
+     "id": "steerLl8",
+     "start": "steerLp8",
+     "end": "steerLp9"
+    },
+    {
+     "type": "line",
+     "id": "steerLl9",
+     "start": "steerLp9",
+     "end": "steerLp10"
+    },
+    {
+     "type": "line",
+     "id": "steerLl10",
+     "start": "steerLp10",
+     "end": "steerLp11"
+    },
+    {
+     "type": "line",
+     "id": "steerLl11",
+     "start": "steerLp11",
+     "end": "steerLp12"
+    },
+    {
+     "type": "line",
+     "id": "steerLl12",
+     "start": "steerLp12",
+     "end": "steerLp13"
+    },
+    {
+     "type": "line",
+     "id": "steerLl13",
+     "start": "steerLp13",
+     "end": "steerLp14"
+    },
+    {
+     "type": "line",
+     "id": "steerLl14",
+     "start": "steerLp14",
+     "end": "steerLp15"
+    },
+    {
+     "type": "line",
+     "id": "steerLl15",
+     "start": "steerLp15",
+     "end": "steerLp16"
+    },
+    {
+     "type": "line",
+     "id": "steerLl16",
+     "start": "steerLp16",
+     "end": "steerLp17"
+    },
+    {
+     "type": "line",
+     "id": "steerLl17",
+     "start": "steerLp17",
+     "end": "steerLp18"
+    },
+    {
+     "type": "line",
+     "id": "steerLl18",
+     "start": "steerLp18",
+     "end": "steerLp19"
+    },
+    {
+     "type": "line",
+     "id": "steerLl19",
+     "start": "steerLp19",
+     "end": "steerLp20"
+    },
+    {
+     "type": "line",
+     "id": "steerLl20",
+     "start": "steerLp20",
+     "end": "steerLp21"
+    },
+    {
+     "type": "line",
+     "id": "steerLl21",
+     "start": "steerLp21",
+     "end": "steerLp22"
+    },
+    {
+     "type": "line",
+     "id": "steerLl22",
+     "start": "steerLp22",
+     "end": "steerLp23"
+    },
+    {
+     "type": "line",
+     "id": "steerLl23",
+     "start": "steerLp23",
+     "end": "steerLp24"
+    },
+    {
+     "type": "line",
+     "id": "steerLl24",
+     "start": "steerLp24",
+     "end": "steerLp25"
+    },
+    {
+     "type": "line",
+     "id": "steerLl25",
+     "start": "steerLp25",
+     "end": "steerLp26"
+    },
+    {
+     "type": "line",
+     "id": "steerLl26",
+     "start": "steerLp26",
+     "end": "steerLp27"
+    },
+    {
+     "type": "line",
+     "id": "steerLl27",
+     "start": "steerLp27",
+     "end": "steerLp28"
+    },
+    {
+     "type": "line",
+     "id": "steerLl28",
+     "start": "steerLp28",
+     "end": "steerLp29"
+    },
+    {
+     "type": "line",
+     "id": "steerLl29",
+     "start": "steerLp29",
+     "end": "steerLp30"
+    },
+    {
+     "type": "line",
+     "id": "steerLl30",
+     "start": "steerLp30",
+     "end": "steerLp31"
+    },
+    {
+     "type": "line",
+     "id": "steerLl31",
+     "start": "steerLp31",
+     "end": "steerLp32"
+    },
+    {
+     "type": "line",
+     "id": "steerLl32",
+     "start": "steerLp32",
+     "end": "steerLp33"
+    },
+    {
+     "type": "line",
+     "id": "steerLl33",
+     "start": "steerLp33",
+     "end": "steerLp34"
+    },
+    {
+     "type": "line",
+     "id": "steerLl34",
+     "start": "steerLp34",
+     "end": "steerLp35"
+    },
+    {
+     "type": "line",
+     "id": "steerLl35",
+     "start": "steerLp35",
+     "end": "steerLp36"
+    },
+    {
+     "type": "line",
+     "id": "steerLl36",
+     "start": "steerLp36",
+     "end": "steerLp37"
+    },
+    {
+     "type": "line",
+     "id": "steerLl37",
+     "start": "steerLp37",
+     "end": "steerLp38"
+    },
+    {
+     "type": "line",
+     "id": "steerLl38",
+     "start": "steerLp38",
+     "end": "steerLp39"
+    },
+    {
+     "type": "line",
+     "id": "steerLl39",
+     "start": "steerLp39",
+     "end": "steerLp40"
+    },
+    {
+     "type": "line",
+     "id": "steerLl40",
+     "start": "steerLp40",
+     "end": "steerLp41"
+    },
+    {
+     "type": "line",
+     "id": "steerLl41",
+     "start": "steerLp41",
+     "end": "steerLp42"
+    },
+    {
+     "type": "line",
+     "id": "steerLl42",
+     "start": "steerLp42",
+     "end": "steerLp43"
+    },
+    {
+     "type": "line",
+     "id": "steerLl43",
+     "start": "steerLp43",
+     "end": "steerLp44"
+    },
+    {
+     "type": "line",
+     "id": "steerLl44",
+     "start": "steerLp44",
+     "end": "steerLp45"
+    },
+    {
+     "type": "line",
+     "id": "steerLl45",
+     "start": "steerLp45",
+     "end": "steerLp46"
+    },
+    {
+     "type": "line",
+     "id": "steerLl46",
+     "start": "steerLp46",
+     "end": "steerLp47"
+    },
+    {
+     "type": "line",
+     "id": "steerLl47",
+     "start": "steerLp47",
+     "end": "steerLp48"
+    },
+    {
+     "type": "line",
+     "id": "steerLl48",
+     "start": "steerLp48",
+     "end": "steerLp49"
+    },
+    {
+     "type": "line",
+     "id": "steerLl49",
+     "start": "steerLp49",
+     "end": "steerLp50"
+    },
+    {
+     "type": "line",
+     "id": "steerLl50",
+     "start": "steerLp50",
+     "end": "steerLp51"
+    },
+    {
+     "type": "line",
+     "id": "steerLl51",
+     "start": "steerLp51",
+     "end": "steerLp52"
+    },
+    {
+     "type": "line",
+     "id": "steerLl52",
+     "start": "steerLp52",
+     "end": "steerLp53"
+    },
+    {
+     "type": "line",
+     "id": "steerLl53",
+     "start": "steerLp53",
+     "end": "steerLp54"
+    },
+    {
+     "type": "line",
+     "id": "steerLl54",
+     "start": "steerLp54",
+     "end": "steerLp55"
+    },
+    {
+     "type": "line",
+     "id": "steerLl55",
+     "start": "steerLp55",
+     "end": "steerLp56"
+    },
+    {
+     "type": "line",
+     "id": "steerLl56",
+     "start": "steerLp56",
+     "end": "steerLp57"
+    },
+    {
+     "type": "line",
+     "id": "steerLl57",
+     "start": "steerLp57",
+     "end": "steerLp58"
+    },
+    {
+     "type": "line",
+     "id": "steerLl58",
+     "start": "steerLp58",
+     "end": "steerLp59"
+    },
+    {
+     "type": "line",
+     "id": "steerLl59",
+     "start": "steerLp59",
+     "end": "steerLp60"
+    },
+    {
+     "type": "line",
+     "id": "steerLl60",
+     "start": "steerLp60",
+     "end": "steerLp61"
+    },
+    {
+     "type": "line",
+     "id": "steerLl61",
+     "start": "steerLp61",
+     "end": "steerLp62"
+    },
+    {
+     "type": "line",
+     "id": "steerLl62",
+     "start": "steerLp62",
+     "end": "steerLp63"
+    },
+    {
+     "type": "line",
+     "id": "steerLl63",
+     "start": "steerLp63",
+     "end": "steerLp64"
+    },
+    {
+     "type": "line",
+     "id": "steerLl64",
+     "start": "steerLp64",
+     "end": "steerLp65"
+    },
+    {
+     "type": "line",
+     "id": "steerLl65",
+     "start": "steerLp65",
+     "end": "steerLp66"
+    },
+    {
+     "type": "line",
+     "id": "steerLl66",
+     "start": "steerLp66",
+     "end": "steerLp67"
+    },
+    {
+     "type": "line",
+     "id": "steerLl67",
+     "start": "steerLp67",
+     "end": "steerLp68"
+    },
+    {
+     "type": "line",
+     "id": "steerLl68",
+     "start": "steerLp68",
+     "end": "steerLp69"
+    },
+    {
+     "type": "line",
+     "id": "steerLl69",
+     "start": "steerLp69",
+     "end": "steerLp70"
+    },
+    {
+     "type": "line",
+     "id": "steerLl70",
+     "start": "steerLp70",
+     "end": "steerLp71"
+    },
+    {
+     "type": "line",
+     "id": "steerLl71",
+     "start": "steerLp71",
+     "end": "steerLp72"
+    },
+    {
+     "type": "line",
+     "id": "steerLl72",
+     "start": "steerLp72",
+     "end": "steerLp73"
+    },
+    {
+     "type": "line",
+     "id": "steerLl73",
+     "start": "steerLp73",
+     "end": "steerLp74"
+    },
+    {
+     "type": "line",
+     "id": "steerLl74",
+     "start": "steerLp74",
+     "end": "steerLp75"
+    },
+    {
+     "type": "line",
+     "id": "steerLl75",
+     "start": "steerLp75",
+     "end": "steerLp76"
+    },
+    {
+     "type": "line",
+     "id": "steerLl76",
+     "start": "steerLp76",
+     "end": "steerLp77"
+    },
+    {
+     "type": "line",
+     "id": "steerLl77",
+     "start": "steerLp77",
+     "end": "steerLp78"
+    },
+    {
+     "type": "line",
+     "id": "steerLl78",
+     "start": "steerLp78",
+     "end": "steerLp79"
+    },
+    {
+     "type": "line",
+     "id": "steerLl79",
+     "start": "steerLp79",
+     "end": "steerLp80"
+    },
+    {
+     "type": "line",
+     "id": "steerLl80",
+     "start": "steerLp80",
+     "end": "steerLp81"
+    },
+    {
+     "type": "line",
+     "id": "steerLl81",
+     "start": "steerLp81",
+     "end": "steerLp82"
+    },
+    {
+     "type": "line",
+     "id": "steerLl82",
+     "start": "steerLp82",
+     "end": "steerLp83"
+    },
+    {
+     "type": "line",
+     "id": "steerLl83",
+     "start": "steerLp83",
+     "end": "steerLp84"
+    },
+    {
+     "type": "line",
+     "id": "steerLl84",
+     "start": "steerLp84",
+     "end": "steerLp85"
+    },
+    {
+     "type": "line",
+     "id": "steerLl85",
+     "start": "steerLp85",
+     "end": "steerLp86"
+    },
+    {
+     "type": "line",
+     "id": "steerLl86",
+     "start": "steerLp86",
+     "end": "steerLp87"
+    },
+    {
+     "type": "line",
+     "id": "steerLl87",
+     "start": "steerLp87",
+     "end": "steerLp88"
+    },
+    {
+     "type": "line",
+     "id": "steerLl88",
+     "start": "steerLp88",
+     "end": "steerLp89"
+    },
+    {
+     "type": "line",
+     "id": "steerLl89",
+     "start": "steerLp89",
+     "end": "steerLp90"
+    },
+    {
+     "type": "line",
+     "id": "steerLl90",
+     "start": "steerLp90",
+     "end": "steerLp91"
+    },
+    {
+     "type": "line",
+     "id": "steerLl91",
+     "start": "steerLp91",
+     "end": "steerLp92"
+    },
+    {
+     "type": "line",
+     "id": "steerLl92",
+     "start": "steerLp92",
+     "end": "steerLp93"
+    },
+    {
+     "type": "line",
+     "id": "steerLl93",
+     "start": "steerLp93",
+     "end": "steerLp94"
+    },
+    {
+     "type": "line",
+     "id": "steerLl94",
+     "start": "steerLp94",
+     "end": "steerLp95"
+    },
+    {
+     "type": "line",
+     "id": "steerLl95",
+     "start": "steerLp95",
+     "end": "steerLp96"
+    },
+    {
+     "type": "line",
+     "id": "steerLl96",
+     "start": "steerLp96",
+     "end": "steerLp97"
+    },
+    {
+     "type": "line",
+     "id": "steerLl97",
+     "start": "steerLp97",
+     "end": "steerLp98"
+    },
+    {
+     "type": "line",
+     "id": "steerLl98",
+     "start": "steerLp98",
+     "end": "steerLp99"
+    },
+    {
+     "type": "line",
+     "id": "steerLl99",
+     "start": "steerLp99",
+     "end": "steerLp100"
+    },
+    {
+     "type": "line",
+     "id": "steerLl100",
+     "start": "steerLp100",
+     "end": "steerLp101"
+    },
+    {
+     "type": "line",
+     "id": "steerLl101",
+     "start": "steerLp101",
+     "end": "steerLp102"
+    },
+    {
+     "type": "line",
+     "id": "steerLl102",
+     "start": "steerLp102",
+     "end": "steerLp103"
+    },
+    {
+     "type": "line",
+     "id": "steerLl103",
+     "start": "steerLp103",
+     "end": "steerLp104"
+    },
+    {
+     "type": "line",
+     "id": "steerLl104",
+     "start": "steerLp104",
+     "end": "steerLp105"
+    },
+    {
+     "type": "line",
+     "id": "steerLl105",
+     "start": "steerLp105",
+     "end": "steerLp106"
+    },
+    {
+     "type": "line",
+     "id": "steerLl106",
+     "start": "steerLp106",
+     "end": "steerLp107"
+    },
+    {
+     "type": "line",
+     "id": "steerLl107",
+     "start": "steerLp107",
+     "end": "steerLp108"
+    },
+    {
+     "type": "line",
+     "id": "steerLl108",
+     "start": "steerLp108",
+     "end": "steerLp109"
+    },
+    {
+     "type": "line",
+     "id": "steerLl109",
+     "start": "steerLp109",
+     "end": "steerLp110"
+    },
+    {
+     "type": "line",
+     "id": "steerLl110",
+     "start": "steerLp110",
+     "end": "steerLp111"
+    },
+    {
+     "type": "line",
+     "id": "steerLl111",
+     "start": "steerLp111",
+     "end": "steerLp112"
+    },
+    {
+     "type": "line",
+     "id": "steerLl112",
+     "start": "steerLp112",
+     "end": "steerLp113"
+    },
+    {
+     "type": "line",
+     "id": "steerLl113",
+     "start": "steerLp113",
+     "end": "steerLp114"
+    },
+    {
+     "type": "line",
+     "id": "steerLl114",
+     "start": "steerLp114",
+     "end": "steerLp115"
+    },
+    {
+     "type": "line",
+     "id": "steerLl115",
+     "start": "steerLp115",
+     "end": "steerLp116"
+    },
+    {
+     "type": "line",
+     "id": "steerLl116",
+     "start": "steerLp116",
+     "end": "steerLp117"
+    },
+    {
+     "type": "line",
+     "id": "steerLl117",
+     "start": "steerLp117",
+     "end": "steerLp118"
+    },
+    {
+     "type": "line",
+     "id": "steerLl118",
+     "start": "steerLp118",
+     "end": "steerLp119"
+    },
+    {
+     "type": "line",
+     "id": "steerLl119",
+     "start": "steerLp119",
+     "end": "steerLp120"
+    },
+    {
+     "type": "line",
+     "id": "steerLl120",
+     "start": "steerLp120",
+     "end": "steerLp121"
+    },
+    {
+     "type": "line",
+     "id": "steerLl121",
+     "start": "steerLp121",
+     "end": "steerLp122"
+    },
+    {
+     "type": "line",
+     "id": "steerLl122",
+     "start": "steerLp122",
+     "end": "steerLp123"
+    },
+    {
+     "type": "line",
+     "id": "steerLl123",
+     "start": "steerLp123",
+     "end": "steerLp124"
+    },
+    {
+     "type": "line",
+     "id": "steerLl124",
+     "start": "steerLp124",
+     "end": "steerLp125"
+    },
+    {
+     "type": "line",
+     "id": "steerLl125",
+     "start": "steerLp125",
+     "end": "steerLp126"
+    },
+    {
+     "type": "line",
+     "id": "steerLl126",
+     "start": "steerLp126",
+     "end": "steerLp127"
+    },
+    {
+     "type": "line",
+     "id": "steerLl127",
+     "start": "steerLp127",
+     "end": "steerLp128"
+    },
+    {
+     "type": "line",
+     "id": "steerLl128",
+     "start": "steerLp128",
+     "end": "steerLp129"
+    },
+    {
+     "type": "line",
+     "id": "steerLl129",
+     "start": "steerLp129",
+     "end": "steerLp130"
+    },
+    {
+     "type": "line",
+     "id": "steerLl130",
+     "start": "steerLp130",
+     "end": "steerLp131"
+    },
+    {
+     "type": "line",
+     "id": "steerLl131",
+     "start": "steerLp131",
+     "end": "steerLp132"
+    },
+    {
+     "type": "line",
+     "id": "steerLl132",
+     "start": "steerLp132",
+     "end": "steerLp133"
+    },
+    {
+     "type": "line",
+     "id": "steerLl133",
+     "start": "steerLp133",
+     "end": "steerLp134"
+    },
+    {
+     "type": "line",
+     "id": "steerLl134",
+     "start": "steerLp134",
+     "end": "steerLp135"
+    },
+    {
+     "type": "line",
+     "id": "steerLl135",
+     "start": "steerLp135",
+     "end": "steerLp136"
+    },
+    {
+     "type": "line",
+     "id": "steerLl136",
+     "start": "steerLp136",
+     "end": "steerLp137"
+    },
+    {
+     "type": "line",
+     "id": "steerLl137",
+     "start": "steerLp137",
+     "end": "steerLp138"
+    },
+    {
+     "type": "line",
+     "id": "steerLl138",
+     "start": "steerLp138",
+     "end": "steerLp139"
+    },
+    {
+     "type": "line",
+     "id": "steerLl139",
+     "start": "steerLp139",
+     "end": "steerLp140"
+    },
+    {
+     "type": "line",
+     "id": "steerLl140",
+     "start": "steerLp140",
+     "end": "steerLp141"
+    },
+    {
+     "type": "line",
+     "id": "steerLl141",
+     "start": "steerLp141",
+     "end": "steerLp142"
+    },
+    {
+     "type": "line",
+     "id": "steerLl142",
+     "start": "steerLp142",
+     "end": "steerLp143"
+    },
+    {
+     "type": "line",
+     "id": "steerLl143",
+     "start": "steerLp143",
+     "end": "steerLp144"
+    },
+    {
+     "type": "line",
+     "id": "steerLl144",
+     "start": "steerLp144",
+     "end": "steerLp145"
+    },
+    {
+     "type": "line",
+     "id": "steerLl145",
+     "start": "steerLp145",
+     "end": "steerLp146"
+    },
+    {
+     "type": "line",
+     "id": "steerLl146",
+     "start": "steerLp146",
+     "end": "steerLp147"
+    },
+    {
+     "type": "line",
+     "id": "steerLl147",
+     "start": "steerLp147",
+     "end": "steerLp148"
+    },
+    {
+     "type": "line",
+     "id": "steerLl148",
+     "start": "steerLp148",
+     "end": "steerLp149"
+    },
+    {
+     "type": "line",
+     "id": "steerLl149",
+     "start": "steerLp149",
+     "end": "steerLp150"
+    },
+    {
+     "type": "line",
+     "id": "steerLl150",
+     "start": "steerLp150",
+     "end": "steerLp151"
+    },
+    {
+     "type": "line",
+     "id": "steerLl151",
+     "start": "steerLp151",
+     "end": "steerLp152"
+    },
+    {
+     "type": "line",
+     "id": "steerLl152",
+     "start": "steerLp152",
+     "end": "steerLp153"
+    },
+    {
+     "type": "line",
+     "id": "steerLl153",
+     "start": "steerLp153",
+     "end": "steerLp154"
+    },
+    {
+     "type": "line",
+     "id": "steerLl154",
+     "start": "steerLp154",
+     "end": "steerLp155"
+    },
+    {
+     "type": "line",
+     "id": "steerLl155",
+     "start": "steerLp155",
+     "end": "steerLp156"
+    },
+    {
+     "type": "line",
+     "id": "steerLl156",
+     "start": "steerLp156",
+     "end": "steerLp157"
+    },
+    {
+     "type": "line",
+     "id": "steerLl157",
+     "start": "steerLp157",
+     "end": "steerLp158"
+    },
+    {
+     "type": "line",
+     "id": "steerLl158",
+     "start": "steerLp158",
+     "end": "steerLp159"
+    },
+    {
+     "type": "line",
+     "id": "steerLl159",
+     "start": "steerLp159",
+     "end": "steerLp160"
+    },
+    {
+     "type": "line",
+     "id": "steerLl160",
+     "start": "steerLp160",
+     "end": "steerLp161"
+    },
+    {
+     "type": "line",
+     "id": "steerLl161",
+     "start": "steerLp161",
+     "end": "steerLp162"
+    },
+    {
+     "type": "line",
+     "id": "steerLl162",
+     "start": "steerLp162",
+     "end": "steerLp163"
+    },
+    {
+     "type": "line",
+     "id": "steerLl163",
+     "start": "steerLp163",
+     "end": "steerLp164"
+    },
+    {
+     "type": "line",
+     "id": "steerLl164",
+     "start": "steerLp164",
+     "end": "steerLp165"
+    },
+    {
+     "type": "line",
+     "id": "steerLl165",
+     "start": "steerLp165",
+     "end": "steerLp166"
+    },
+    {
+     "type": "line",
+     "id": "steerLl166",
+     "start": "steerLp166",
+     "end": "steerLp167"
+    },
+    {
+     "type": "line",
+     "id": "steerLl167",
+     "start": "steerLp167",
+     "end": "steerLp168"
+    },
+    {
+     "type": "line",
+     "id": "steerLl168",
+     "start": "steerLp168",
+     "end": "steerLp169"
+    },
+    {
+     "type": "line",
+     "id": "steerLl169",
+     "start": "steerLp169",
+     "end": "steerLp170"
+    },
+    {
+     "type": "line",
+     "id": "steerLl170",
+     "start": "steerLp170",
+     "end": "steerLp171"
+    },
+    {
+     "type": "line",
+     "id": "steerLl171",
+     "start": "steerLp171",
+     "end": "steerLp172"
+    },
+    {
+     "type": "line",
+     "id": "steerLl172",
+     "start": "steerLp172",
+     "end": "steerLp173"
+    },
+    {
+     "type": "line",
+     "id": "steerLl173",
+     "start": "steerLp173",
+     "end": "steerLp174"
+    },
+    {
+     "type": "line",
+     "id": "steerLl174",
+     "start": "steerLp174",
+     "end": "steerLp175"
+    },
+    {
+     "type": "line",
+     "id": "steerLl175",
+     "start": "steerLp175",
+     "end": "steerLp176"
+    },
+    {
+     "type": "line",
+     "id": "steerLl176",
+     "start": "steerLp176",
+     "end": "steerLp177"
+    },
+    {
+     "type": "line",
+     "id": "steerLl177",
+     "start": "steerLp177",
+     "end": "steerLp178"
+    },
+    {
+     "type": "line",
+     "id": "steerLl178",
+     "start": "steerLp178",
+     "end": "steerLp179"
+    },
+    {
+     "type": "line",
+     "id": "steerLl179",
+     "start": "steerLp179",
+     "end": "steerLp180"
+    },
+    {
+     "type": "line",
+     "id": "steerLl180",
+     "start": "steerLp180",
+     "end": "steerLp181"
+    },
+    {
+     "type": "line",
+     "id": "steerLl181",
+     "start": "steerLp181",
+     "end": "steerLp182"
+    },
+    {
+     "type": "line",
+     "id": "steerLl182",
+     "start": "steerLp182",
+     "end": "steerLp183"
+    },
+    {
+     "type": "line",
+     "id": "steerLl183",
+     "start": "steerLp183",
+     "end": "steerLp184"
+    },
+    {
+     "type": "line",
+     "id": "steerLl184",
+     "start": "steerLp184",
+     "end": "steerLp185"
+    },
+    {
+     "type": "line",
+     "id": "steerLl185",
+     "start": "steerLp185",
+     "end": "steerLp186"
+    },
+    {
+     "type": "line",
+     "id": "steerLl186",
+     "start": "steerLp186",
+     "end": "steerLp187"
+    },
+    {
+     "type": "line",
+     "id": "steerLl187",
+     "start": "steerLp187",
+     "end": "steerLp188"
+    },
+    {
+     "type": "line",
+     "id": "steerLl188",
+     "start": "steerLp188",
+     "end": "steerLp189"
+    },
+    {
+     "type": "line",
+     "id": "steerLl189",
+     "start": "steerLp189",
+     "end": "steerLp190"
+    },
+    {
+     "type": "line",
+     "id": "steerLl190",
+     "start": "steerLp190",
+     "end": "steerLp191"
+    },
+    {
+     "type": "line",
+     "id": "steerLl191",
+     "start": "steerLp191",
+     "end": "steerLp192"
+    },
+    {
+     "type": "line",
+     "id": "steerLl192",
+     "start": "steerLp192",
+     "end": "steerLp193"
+    },
+    {
+     "type": "line",
+     "id": "steerLl193",
+     "start": "steerLp193",
+     "end": "steerLp194"
+    },
+    {
+     "type": "line",
+     "id": "steerLl194",
+     "start": "steerLp194",
+     "end": "steerLp195"
+    },
+    {
+     "type": "line",
+     "id": "steerLl195",
+     "start": "steerLp195",
+     "end": "steerLp196"
+    },
+    {
+     "type": "line",
+     "id": "steerLl196",
+     "start": "steerLp196",
+     "end": "steerLp197"
+    },
+    {
+     "type": "line",
+     "id": "steerLl197",
+     "start": "steerLp197",
+     "end": "steerLp198"
+    },
+    {
+     "type": "line",
+     "id": "steerLl198",
+     "start": "steerLp198",
+     "end": "steerLp199"
+    },
+    {
+     "type": "line",
+     "id": "steerLl199",
+     "start": "steerLp199",
+     "end": "steerLp200"
+    },
+    {
+     "type": "line",
+     "id": "steerLl200",
+     "start": "steerLp200",
+     "end": "steerLp201"
+    },
+    {
+     "type": "line",
+     "id": "steerLl201",
+     "start": "steerLp201",
+     "end": "steerLp202"
+    },
+    {
+     "type": "line",
+     "id": "steerLl202",
+     "start": "steerLp202",
+     "end": "steerLp203"
+    },
+    {
+     "type": "line",
+     "id": "steerLl203",
+     "start": "steerLp203",
+     "end": "steerLp204"
+    },
+    {
+     "type": "line",
+     "id": "steerLl204",
+     "start": "steerLp204",
+     "end": "steerLp205"
+    },
+    {
+     "type": "line",
+     "id": "steerLl205",
+     "start": "steerLp205",
+     "end": "steerLp206"
+    },
+    {
+     "type": "line",
+     "id": "steerLl206",
+     "start": "steerLp206",
+     "end": "steerLp207"
+    },
+    {
+     "type": "line",
+     "id": "steerLl207",
+     "start": "steerLp207",
+     "end": "steerLp208"
+    },
+    {
+     "type": "line",
+     "id": "steerLl208",
+     "start": "steerLp208",
+     "end": "steerLp209"
+    },
+    {
+     "type": "line",
+     "id": "steerLl209",
+     "start": "steerLp209",
+     "end": "steerLp210"
+    },
+    {
+     "type": "line",
+     "id": "steerLl210",
+     "start": "steerLp210",
+     "end": "steerLp211"
+    },
+    {
+     "type": "line",
+     "id": "steerLl211",
+     "start": "steerLp211",
+     "end": "steerLp212"
+    },
+    {
+     "type": "line",
+     "id": "steerLl212",
+     "start": "steerLp212",
+     "end": "steerLp213"
+    },
+    {
+     "type": "line",
+     "id": "steerLl213",
+     "start": "steerLp213",
+     "end": "steerLp214"
+    },
+    {
+     "type": "line",
+     "id": "steerLl214",
+     "start": "steerLp214",
+     "end": "steerLp215"
+    },
+    {
+     "type": "line",
+     "id": "steerLl215",
+     "start": "steerLp215",
+     "end": "steerLp216"
+    },
+    {
+     "type": "line",
+     "id": "steerLl216",
+     "start": "steerLp216",
+     "end": "steerLp217"
+    },
+    {
+     "type": "line",
+     "id": "steerLl217",
+     "start": "steerLp217",
+     "end": "steerLp218"
+    },
+    {
+     "type": "line",
+     "id": "steerLl218",
+     "start": "steerLp218",
+     "end": "steerLp219"
+    },
+    {
+     "type": "line",
+     "id": "steerLl219",
+     "start": "steerLp219",
+     "end": "steerLp220"
+    },
+    {
+     "type": "line",
+     "id": "steerLl220",
+     "start": "steerLp220",
+     "end": "steerLp221"
+    },
+    {
+     "type": "line",
+     "id": "steerLl221",
+     "start": "steerLp221",
+     "end": "steerLp222"
+    },
+    {
+     "type": "line",
+     "id": "steerLl222",
+     "start": "steerLp222",
+     "end": "steerLp223"
+    },
+    {
+     "type": "line",
+     "id": "steerLl223",
+     "start": "steerLp223",
+     "end": "steerLp224"
+    },
+    {
+     "type": "line",
+     "id": "steerLl224",
+     "start": "steerLp224",
+     "end": "steerLp225"
+    },
+    {
+     "type": "line",
+     "id": "steerLl225",
+     "start": "steerLp225",
+     "end": "steerLp226"
+    },
+    {
+     "type": "line",
+     "id": "steerLl226",
+     "start": "steerLp226",
+     "end": "steerLp227"
+    },
+    {
+     "type": "line",
+     "id": "steerLl227",
+     "start": "steerLp227",
+     "end": "steerLp228"
+    },
+    {
+     "type": "line",
+     "id": "steerLl228",
+     "start": "steerLp228",
+     "end": "steerLp229"
+    },
+    {
+     "type": "line",
+     "id": "steerLl229",
+     "start": "steerLp229",
+     "end": "steerLp230"
+    },
+    {
+     "type": "line",
+     "id": "steerLl230",
+     "start": "steerLp230",
+     "end": "steerLp231"
+    },
+    {
+     "type": "line",
+     "id": "steerLl231",
+     "start": "steerLp231",
+     "end": "steerLp232"
+    },
+    {
+     "type": "line",
+     "id": "steerLl232",
+     "start": "steerLp232",
+     "end": "steerLp233"
+    },
+    {
+     "type": "line",
+     "id": "steerLl233",
+     "start": "steerLp233",
+     "end": "steerLp234"
+    },
+    {
+     "type": "line",
+     "id": "steerLl234",
+     "start": "steerLp234",
+     "end": "steerLp235"
+    },
+    {
+     "type": "line",
+     "id": "steerLl235",
+     "start": "steerLp235",
+     "end": "steerLp236"
+    },
+    {
+     "type": "line",
+     "id": "steerLl236",
+     "start": "steerLp236",
+     "end": "steerLp237"
+    },
+    {
+     "type": "line",
+     "id": "steerLl237",
+     "start": "steerLp237",
+     "end": "steerLp238"
+    },
+    {
+     "type": "line",
+     "id": "steerLl238",
+     "start": "steerLp238",
+     "end": "steerLp239"
+    },
+    {
+     "type": "line",
+     "id": "steerLl239",
+     "start": "steerLp239",
+     "end": "steerLp240"
+    },
+    {
+     "type": "line",
+     "id": "steerLl240",
+     "start": "steerLp240",
+     "end": "steerLp241"
+    },
+    {
+     "type": "line",
+     "id": "steerLl241",
+     "start": "steerLp241",
+     "end": "steerLp242"
+    },
+    {
+     "type": "line",
+     "id": "steerLl242",
+     "start": "steerLp242",
+     "end": "steerLp243"
+    },
+    {
+     "type": "line",
+     "id": "steerLl243",
+     "start": "steerLp243",
+     "end": "steerLp0"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "envp0": [
+     -950,
+     650
+    ],
+    "envp1": [
+     -600,
+     900
+    ],
+    "envp2": [
+     0,
+     975
+    ],
+    "envp3": [
+     2650,
+     975
+    ],
+    "envp4": [
+     3400,
+     850
+    ],
+    "envp5": [
+     3400,
+     -850
+    ],
+    "envp6": [
+     2650,
+     -975
+    ],
+    "envp7": [
+     0,
+     -975
+    ],
+    "envp8": [
+     -600,
+     -900
+    ],
+    "envp9": [
+     -950,
+     -650
+    ],
+    "steerRp0": [
+     -361.1580354694068,
+     838.9110023513779
+    ],
+    "steerRp1": [
+     -361.12203498086956,
+     834.7857549659026
+    ],
+    "steerRp2": [
+     -361.08402372172355,
+     832.6080913878915
+    ],
+    "steerRp3": [
+     -360.9760332222095,
+     828.484100592732
+    ],
+    "steerRp4": [
+     -360.90002228251524,
+     826.3074320713753
+    ],
+    "steerRp5": [
+     -360.72007466697653,
+     822.1859540740779
+    ],
+    "steerRp6": [
+     -360.60608720040267,
+     820.0109436436932
+    ],
+    "steerRp7": [
+     -360.3542372826263,
+     815.8932338863814
+    ],
+    "steerRp8": [
+     -360.20230801085916,
+     813.7205440762154
+    ],
+    "steerRp9": [
+     -359.87863250676975,
+     809.6078568531706
+    ],
+    "steerRp10": [
+     -359.6888077089375,
+     807.438149485587
+    ],
+    "steerRp11": [
+     -359.2934052132291,
+     803.3317375611775
+    ],
+    "steerRp12": [
+     -359.065742711804,
+     801.1656735500588
+    ],
+    "steerRp13": [
+     -358.59873366790714,
+     797.0667877771368
+    ],
+    "steerRp14": [
+     -358.3333028110925,
+     794.905026926564
+    ],
+    "steerRp15": [
+     -357.794829474486,
+     790.8149158654426
+    ],
+    "steerRp16": [
+     -357.491711115092,
+     788.6581166687121
+    ],
+    "steerRp17": [
+     -356.88193750997056,
+     784.5780262068423
+    ],
+    "steerRp18": [
+     -356.54122398078596,
+     782.426845645883
+    ],
+    "steerRp19": [
+     -355.86033585009665,
+     778.3580186183441
+    ],
+    "steerRp20": [
+     -355.48213093576305,
+     776.2131119635937
+    ],
+    "steerRp21": [
+     -354.73033568462637,
+     772.156787774514
+    ],
+    "steerRp22": [
+     -353.4922812225565,
+     765.9762226303399
+    ],
+    "steerRp23": [
+     -352.1465495872697,
+     759.8182058458369
+    ],
+    "steerRp24": [
+     -350.6935507016584,
+     753.6846132125718
+    ],
+    "steerRp25": [
+     -349.1337271632587,
+     747.5773130822781
+    ],
+    "steerRp26": [
+     -347.4675541094306,
+     741.4981657977381
+    ],
+    "steerRp27": [
+     -345.69553907262707,
+     735.4490231261049
+    ],
+    "steerRp28": [
+     -343.8182218257942,
+     729.4317276948354
+    ],
+    "steerRp29": [
+     -341.83617421795117,
+     723.4481124304091
+    ],
+    "steerRp30": [
+     -339.75,
+     717.5
+    ],
+    "steerRp31": [
+     -337.56033464081673,
+     711.589202256275
+    ],
+    "steerRp32": [
+     -335.2678451336814,
+     705.717519685486
+    ],
+    "steerRp33": [
+     -332.8732297931058,
+     699.8867408590246
+    ],
+    "steerRp34": [
+     -330.3772180421199,
+     694.0986418886049
+    ],
+    "steerRp35": [
+     -327.7805701900824,
+     688.3549858852443
+    ],
+    "steerRp36": [
+     -325.08407720108335,
+     682.6575224222013
+    ],
+    "steerRp37": [
+     -322.28856045300853,
+     677.0079870020393
+    ],
+    "steerRp38": [
+     -319.3948714873405,
+     671.4081005279754
+    ],
+    "steerRp39": [
+     -316.4038917497698,
+     665.8595687796771
+    ],
+    "steerRp40": [
+     -313.31653232169873,
+     660.364081893665
+    ],
+    "steerRp41": [
+     -310.1337336427171,
+     654.92331384848
+    ],
+    "steerRp42": [
+     -306.856465224135,
+     649.5389219547751
+    ],
+    "steerRp43": [
+     -303.4857253536602,
+     644.2125463504806
+    ],
+    "steerRp44": [
+     -300.02254079131046,
+     638.9458095012033
+    ],
+    "steerRp45": [
+     -296.46796645665216,
+     633.7403157060077
+    ],
+    "steerRp46": [
+     -292.82308510746145,
+     628.5976506087305
+    ],
+    "steerRp47": [
+     -289.089007009906,
+     623.5193807149783
+    ],
+    "steerRp48": [
+     -285.2668696003474,
+     618.5070529149554
+    ],
+    "steerRp49": [
+     -281.3578371388662,
+     613.5621940122647
+    ],
+    "steerRp50": [
+     -277.363100354618,
+     608.6863102588302
+    ],
+    "steerRp51": [
+     -273.283876083125,
+     603.880886896077
+    ],
+    "steerRp52": [
+     -269.1214068956168,
+     599.1473877025124
+    ],
+    "steerRp53": [
+     -264.8769607205306,
+     594.4872545478453
+    ],
+    "steerRp54": [
+     -260.55183045728813,
+     589.9019069537783
+    ],
+    "steerRp55": [
+     -256.1473335824661,
+     585.3927416616077
+    ],
+    "steerRp56": [
+     -251.66481174848002,
+     580.961132206763
+    ],
+    "steerRp57": [
+     -247.1056303749035,
+     576.608428500414
+    ],
+    "steerRp58": [
+     -242.4711782325488,
+     572.335956418275
+    ],
+    "steerRp59": [
+     -237.7628670204334,
+     568.1450173967311
+    ],
+    "steerRp60": [
+     -232.98213093576305,
+     564.0368880364063
+    ],
+    "steerRp61": [
+     232.98213093576305,
+     564.0368880364063
+    ],
+    "steerRp62": [
+     237.7628670204334,
+     568.1450173967311
+    ],
+    "steerRp63": [
+     242.4711782325488,
+     572.335956418275
+    ],
+    "steerRp64": [
+     247.1056303749035,
+     576.608428500414
+    ],
+    "steerRp65": [
+     251.66481174848002,
+     580.961132206763
+    ],
+    "steerRp66": [
+     256.1473335824661,
+     585.3927416616077
+    ],
+    "steerRp67": [
+     260.55183045728813,
+     589.9019069537783
+    ],
+    "steerRp68": [
+     264.8769607205306,
+     594.4872545478453
+    ],
+    "steerRp69": [
+     269.1214068956168,
+     599.1473877025124
+    ],
+    "steerRp70": [
+     273.283876083125,
+     603.880886896077
+    ],
+    "steerRp71": [
+     277.363100354618,
+     608.6863102588302
+    ],
+    "steerRp72": [
+     281.3578371388662,
+     613.5621940122647
+    ],
+    "steerRp73": [
+     285.2668696003474,
+     618.5070529149554
+    ],
+    "steerRp74": [
+     289.089007009906,
+     623.5193807149783
+    ],
+    "steerRp75": [
+     292.82308510746145,
+     628.5976506087305
+    ],
+    "steerRp76": [
+     296.46796645665216,
+     633.7403157060077
+    ],
+    "steerRp77": [
+     300.02254079131046,
+     638.9458095012033
+    ],
+    "steerRp78": [
+     303.4857253536602,
+     644.2125463504806
+    ],
+    "steerRp79": [
+     306.856465224135,
+     649.5389219547751
+    ],
+    "steerRp80": [
+     310.1337336427171,
+     654.92331384848
+    ],
+    "steerRp81": [
+     313.31653232169873,
+     660.364081893665
+    ],
+    "steerRp82": [
+     316.4038917497698,
+     665.8595687796771
+    ],
+    "steerRp83": [
+     319.3948714873405,
+     671.4081005279754
+    ],
+    "steerRp84": [
+     322.28856045300853,
+     677.0079870020393
+    ],
+    "steerRp85": [
+     325.08407720108335,
+     682.6575224222013
+    ],
+    "steerRp86": [
+     327.7805701900824,
+     688.3549858852443
+    ],
+    "steerRp87": [
+     330.3772180421199,
+     694.0986418886049
+    ],
+    "steerRp88": [
+     332.8732297931058,
+     699.8867408590246
+    ],
+    "steerRp89": [
+     335.2678451336814,
+     705.717519685486
+    ],
+    "steerRp90": [
+     337.56033464081673,
+     711.589202256275
+    ],
+    "steerRp91": [
+     339.75,
+     717.5
+    ],
+    "steerRp92": [
+     341.83617421795117,
+     723.4481124304091
+    ],
+    "steerRp93": [
+     343.8182218257942,
+     729.4317276948354
+    ],
+    "steerRp94": [
+     345.69553907262707,
+     735.4490231261049
+    ],
+    "steerRp95": [
+     347.4675541094306,
+     741.4981657977381
+    ],
+    "steerRp96": [
+     349.1337271632587,
+     747.5773130822781
+    ],
+    "steerRp97": [
+     350.6935507016584,
+     753.6846132125718
+    ],
+    "steerRp98": [
+     352.1465495872697,
+     759.8182058458369
+    ],
+    "steerRp99": [
+     353.4922812225565,
+     765.9762226303399
+    ],
+    "steerRp100": [
+     354.73033568462637,
+     772.156787774514
+    ],
+    "steerRp101": [
+     355.48213093576305,
+     776.2131119635937
+    ],
+    "steerRp102": [
+     355.86033585009665,
+     778.3580186183441
+    ],
+    "steerRp103": [
+     356.54122398078596,
+     782.426845645883
+    ],
+    "steerRp104": [
+     356.88193750997056,
+     784.5780262068423
+    ],
+    "steerRp105": [
+     357.491711115092,
+     788.6581166687121
+    ],
+    "steerRp106": [
+     357.794829474486,
+     790.8149158654426
+    ],
+    "steerRp107": [
+     358.3333028110925,
+     794.905026926564
+    ],
+    "steerRp108": [
+     358.59873366790714,
+     797.0667877771368
+    ],
+    "steerRp109": [
+     359.065742711804,
+     801.1656735500588
+    ],
+    "steerRp110": [
+     359.2934052132291,
+     803.3317375611775
+    ],
+    "steerRp111": [
+     359.6888077089375,
+     807.438149485587
+    ],
+    "steerRp112": [
+     359.87863250676975,
+     809.6078568531706
+    ],
+    "steerRp113": [
+     360.20230801085916,
+     813.7205440762154
+    ],
+    "steerRp114": [
+     360.3542372826263,
+     815.8932338863814
+    ],
+    "steerRp115": [
+     360.60608720040267,
+     820.0109436436932
+    ],
+    "steerRp116": [
+     360.72007466697653,
+     822.1859540740779
+    ],
+    "steerRp117": [
+     360.90002228251524,
+     826.3074320713753
+    ],
+    "steerRp118": [
+     360.9760332222095,
+     828.484100592732
+    ],
+    "steerRp119": [
+     361.08402372172355,
+     832.6080913878915
+    ],
+    "steerRp120": [
+     361.12203498086956,
+     834.7857549659026
+    ],
+    "steerRp121": [
+     361.1580354694068,
+     838.9110023513779
+    ],
+    "steerRp122": [
+     361.1580354694068,
+     841.0889976486221
+    ],
+    "steerRp123": [
+     361.12203498086956,
+     845.2142450340974
+    ],
+    "steerRp124": [
+     361.08402372172355,
+     847.3919086121085
+    ],
+    "steerRp125": [
+     360.9760332222095,
+     851.515899407268
+    ],
+    "steerRp126": [
+     360.90002228251524,
+     853.6925679286247
+    ],
+    "steerRp127": [
+     360.72007466697653,
+     857.8140459259221
+    ],
+    "steerRp128": [
+     360.60608720040267,
+     859.9890563563068
+    ],
+    "steerRp129": [
+     360.3542372826263,
+     864.1067661136186
+    ],
+    "steerRp130": [
+     360.20230801085916,
+     866.2794559237846
+    ],
+    "steerRp131": [
+     359.87863250676975,
+     870.3921431468294
+    ],
+    "steerRp132": [
+     359.6888077089375,
+     872.561850514413
+    ],
+    "steerRp133": [
+     359.2934052132291,
+     876.6682624388225
+    ],
+    "steerRp134": [
+     359.065742711804,
+     878.8343264499412
+    ],
+    "steerRp135": [
+     358.59873366790714,
+     882.9332122228632
+    ],
+    "steerRp136": [
+     358.3333028110925,
+     885.094973073436
+    ],
+    "steerRp137": [
+     357.794829474486,
+     889.1850841345574
+    ],
+    "steerRp138": [
+     357.491711115092,
+     891.3418833312879
+    ],
+    "steerRp139": [
+     356.88193750997056,
+     895.4219737931577
+    ],
+    "steerRp140": [
+     356.54122398078596,
+     897.573154354117
+    ],
+    "steerRp141": [
+     355.86033585009665,
+     901.6419813816559
+    ],
+    "steerRp142": [
+     355.48213093576305,
+     903.7868880364063
+    ],
+    "steerRp143": [
+     354.73033568462637,
+     907.843212225486
+    ],
+    "steerRp144": [
+     353.4922812225565,
+     914.0237773696601
+    ],
+    "steerRp145": [
+     352.1465495872697,
+     920.1817941541631
+    ],
+    "steerRp146": [
+     350.6935507016584,
+     926.3153867874282
+    ],
+    "steerRp147": [
+     349.1337271632587,
+     932.4226869177219
+    ],
+    "steerRp148": [
+     347.4675541094306,
+     938.5018342022619
+    ],
+    "steerRp149": [
+     345.69553907262707,
+     944.5509768738951
+    ],
+    "steerRp150": [
+     343.8182218257942,
+     950.5682723051646
+    ],
+    "steerRp151": [
+     341.83617421795117,
+     956.5518875695909
+    ],
+    "steerRp152": [
+     339.75,
+     962.5
+    ],
+    "steerRp153": [
+     337.56033464081673,
+     968.410797743725
+    ],
+    "steerRp154": [
+     335.2678451336814,
+     974.282480314514
+    ],
+    "steerRp155": [
+     332.8732297931058,
+     980.1132591409754
+    ],
+    "steerRp156": [
+     330.3772180421199,
+     985.9013581113951
+    ],
+    "steerRp157": [
+     327.7805701900824,
+     991.6450141147557
+    ],
+    "steerRp158": [
+     325.08407720108335,
+     997.3424775777987
+    ],
+    "steerRp159": [
+     322.28856045300853,
+     1002.9920129979607
+    ],
+    "steerRp160": [
+     319.3948714873405,
+     1008.5918994720246
+    ],
+    "steerRp161": [
+     316.4038917497698,
+     1014.1404312203229
+    ],
+    "steerRp162": [
+     313.31653232169873,
+     1019.635918106335
+    ],
+    "steerRp163": [
+     310.1337336427171,
+     1025.0766861515199
+    ],
+    "steerRp164": [
+     306.856465224135,
+     1030.461078045225
+    ],
+    "steerRp165": [
+     303.4857253536602,
+     1035.7874536495194
+    ],
+    "steerRp166": [
+     300.02254079131046,
+     1041.0541904987967
+    ],
+    "steerRp167": [
+     296.46796645665216,
+     1046.2596842939922
+    ],
+    "steerRp168": [
+     292.82308510746145,
+     1051.4023493912696
+    ],
+    "steerRp169": [
+     289.089007009906,
+     1056.4806192850217
+    ],
+    "steerRp170": [
+     285.2668696003474,
+     1061.4929470850448
+    ],
+    "steerRp171": [
+     281.3578371388662,
+     1066.4378059877351
+    ],
+    "steerRp172": [
+     277.363100354618,
+     1071.3136897411698
+    ],
+    "steerRp173": [
+     273.283876083125,
+     1076.119113103923
+    ],
+    "steerRp174": [
+     269.1214068956168,
+     1080.8526122974877
+    ],
+    "steerRp175": [
+     264.8769607205306,
+     1085.5127454521548
+    ],
+    "steerRp176": [
+     260.55183045728813,
+     1090.0980930462217
+    ],
+    "steerRp177": [
+     256.1473335824661,
+     1094.6072583383923
+    ],
+    "steerRp178": [
+     251.66481174848002,
+     1099.0388677932372
+    ],
+    "steerRp179": [
+     247.1056303749035,
+     1103.391571499586
+    ],
+    "steerRp180": [
+     242.4711782325488,
+     1107.664043581725
+    ],
+    "steerRp181": [
+     237.7628670204334,
+     1111.854982603269
+    ],
+    "steerRp182": [
+     232.98213093576305,
+     1115.9631119635937
+    ],
+    "steerRp183": [
+     -232.98213093576305,
+     1115.9631119635937
+    ],
+    "steerRp184": [
+     -237.7628670204334,
+     1111.854982603269
+    ],
+    "steerRp185": [
+     -242.4711782325488,
+     1107.664043581725
+    ],
+    "steerRp186": [
+     -247.1056303749035,
+     1103.391571499586
+    ],
+    "steerRp187": [
+     -251.66481174848002,
+     1099.0388677932372
+    ],
+    "steerRp188": [
+     -256.1473335824661,
+     1094.6072583383923
+    ],
+    "steerRp189": [
+     -260.55183045728813,
+     1090.0980930462217
+    ],
+    "steerRp190": [
+     -264.8769607205306,
+     1085.5127454521548
+    ],
+    "steerRp191": [
+     -269.1214068956168,
+     1080.8526122974877
+    ],
+    "steerRp192": [
+     -273.283876083125,
+     1076.119113103923
+    ],
+    "steerRp193": [
+     -277.363100354618,
+     1071.3136897411698
+    ],
+    "steerRp194": [
+     -281.3578371388662,
+     1066.4378059877351
+    ],
+    "steerRp195": [
+     -285.2668696003474,
+     1061.4929470850448
+    ],
+    "steerRp196": [
+     -289.089007009906,
+     1056.4806192850217
+    ],
+    "steerRp197": [
+     -292.82308510746145,
+     1051.4023493912696
+    ],
+    "steerRp198": [
+     -296.46796645665216,
+     1046.2596842939922
+    ],
+    "steerRp199": [
+     -300.02254079131046,
+     1041.0541904987967
+    ],
+    "steerRp200": [
+     -303.4857253536602,
+     1035.7874536495194
+    ],
+    "steerRp201": [
+     -306.856465224135,
+     1030.461078045225
+    ],
+    "steerRp202": [
+     -310.1337336427171,
+     1025.0766861515199
+    ],
+    "steerRp203": [
+     -313.31653232169873,
+     1019.635918106335
+    ],
+    "steerRp204": [
+     -316.4038917497698,
+     1014.1404312203229
+    ],
+    "steerRp205": [
+     -319.3948714873405,
+     1008.5918994720246
+    ],
+    "steerRp206": [
+     -322.28856045300853,
+     1002.9920129979607
+    ],
+    "steerRp207": [
+     -325.08407720108335,
+     997.3424775777987
+    ],
+    "steerRp208": [
+     -327.7805701900824,
+     991.6450141147557
+    ],
+    "steerRp209": [
+     -330.3772180421199,
+     985.9013581113951
+    ],
+    "steerRp210": [
+     -332.8732297931058,
+     980.1132591409754
+    ],
+    "steerRp211": [
+     -335.2678451336814,
+     974.282480314514
+    ],
+    "steerRp212": [
+     -337.56033464081673,
+     968.410797743725
+    ],
+    "steerRp213": [
+     -339.75,
+     962.5
+    ],
+    "steerRp214": [
+     -341.83617421795117,
+     956.5518875695909
+    ],
+    "steerRp215": [
+     -343.8182218257942,
+     950.5682723051646
+    ],
+    "steerRp216": [
+     -345.69553907262707,
+     944.5509768738951
+    ],
+    "steerRp217": [
+     -347.4675541094306,
+     938.5018342022619
+    ],
+    "steerRp218": [
+     -349.1337271632587,
+     932.4226869177219
+    ],
+    "steerRp219": [
+     -350.6935507016584,
+     926.3153867874282
+    ],
+    "steerRp220": [
+     -352.1465495872697,
+     920.1817941541631
+    ],
+    "steerRp221": [
+     -353.4922812225565,
+     914.0237773696601
+    ],
+    "steerRp222": [
+     -354.73033568462637,
+     907.843212225486
+    ],
+    "steerRp223": [
+     -355.48213093576305,
+     903.7868880364063
+    ],
+    "steerRp224": [
+     -355.86033585009665,
+     901.6419813816559
+    ],
+    "steerRp225": [
+     -356.54122398078596,
+     897.573154354117
+    ],
+    "steerRp226": [
+     -356.88193750997056,
+     895.4219737931577
+    ],
+    "steerRp227": [
+     -357.491711115092,
+     891.3418833312879
+    ],
+    "steerRp228": [
+     -357.794829474486,
+     889.1850841345574
+    ],
+    "steerRp229": [
+     -358.3333028110925,
+     885.094973073436
+    ],
+    "steerRp230": [
+     -358.59873366790714,
+     882.9332122228632
+    ],
+    "steerRp231": [
+     -359.065742711804,
+     878.8343264499412
+    ],
+    "steerRp232": [
+     -359.2934052132291,
+     876.6682624388225
+    ],
+    "steerRp233": [
+     -359.6888077089375,
+     872.561850514413
+    ],
+    "steerRp234": [
+     -359.87863250676975,
+     870.3921431468294
+    ],
+    "steerRp235": [
+     -360.20230801085916,
+     866.2794559237846
+    ],
+    "steerRp236": [
+     -360.3542372826263,
+     864.1067661136186
+    ],
+    "steerRp237": [
+     -360.60608720040267,
+     859.9890563563068
+    ],
+    "steerRp238": [
+     -360.72007466697653,
+     857.8140459259221
+    ],
+    "steerRp239": [
+     -360.90002228251524,
+     853.6925679286247
+    ],
+    "steerRp240": [
+     -360.9760332222095,
+     851.515899407268
+    ],
+    "steerRp241": [
+     -361.08402372172355,
+     847.3919086121085
+    ],
+    "steerRp242": [
+     -361.12203498086956,
+     845.2142450340974
+    ],
+    "steerRp243": [
+     -361.1580354694068,
+     841.0889976486221
+    ],
+    "steerLp0": [
+     -361.1580354694068,
+     -841.0889976486221
+    ],
+    "steerLp1": [
+     -361.12203498086956,
+     -845.2142450340974
+    ],
+    "steerLp2": [
+     -361.08402372172355,
+     -847.3919086121085
+    ],
+    "steerLp3": [
+     -360.9760332222095,
+     -851.515899407268
+    ],
+    "steerLp4": [
+     -360.90002228251524,
+     -853.6925679286247
+    ],
+    "steerLp5": [
+     -360.72007466697653,
+     -857.8140459259221
+    ],
+    "steerLp6": [
+     -360.60608720040267,
+     -859.9890563563068
+    ],
+    "steerLp7": [
+     -360.3542372826263,
+     -864.1067661136186
+    ],
+    "steerLp8": [
+     -360.20230801085916,
+     -866.2794559237846
+    ],
+    "steerLp9": [
+     -359.87863250676975,
+     -870.3921431468294
+    ],
+    "steerLp10": [
+     -359.6888077089375,
+     -872.561850514413
+    ],
+    "steerLp11": [
+     -359.2934052132291,
+     -876.6682624388225
+    ],
+    "steerLp12": [
+     -359.065742711804,
+     -878.8343264499412
+    ],
+    "steerLp13": [
+     -358.59873366790714,
+     -882.9332122228632
+    ],
+    "steerLp14": [
+     -358.3333028110925,
+     -885.094973073436
+    ],
+    "steerLp15": [
+     -357.794829474486,
+     -889.1850841345574
+    ],
+    "steerLp16": [
+     -357.491711115092,
+     -891.3418833312879
+    ],
+    "steerLp17": [
+     -356.88193750997056,
+     -895.4219737931577
+    ],
+    "steerLp18": [
+     -356.54122398078596,
+     -897.573154354117
+    ],
+    "steerLp19": [
+     -355.86033585009665,
+     -901.6419813816559
+    ],
+    "steerLp20": [
+     -355.48213093576305,
+     -903.7868880364063
+    ],
+    "steerLp21": [
+     -354.73033568462637,
+     -907.843212225486
+    ],
+    "steerLp22": [
+     -353.4922812225565,
+     -914.0237773696601
+    ],
+    "steerLp23": [
+     -352.1465495872697,
+     -920.1817941541631
+    ],
+    "steerLp24": [
+     -350.6935507016584,
+     -926.3153867874282
+    ],
+    "steerLp25": [
+     -349.1337271632587,
+     -932.4226869177219
+    ],
+    "steerLp26": [
+     -347.4675541094306,
+     -938.5018342022619
+    ],
+    "steerLp27": [
+     -345.69553907262707,
+     -944.5509768738951
+    ],
+    "steerLp28": [
+     -343.8182218257942,
+     -950.5682723051646
+    ],
+    "steerLp29": [
+     -341.83617421795117,
+     -956.5518875695909
+    ],
+    "steerLp30": [
+     -339.75,
+     -962.5
+    ],
+    "steerLp31": [
+     -337.56033464081673,
+     -968.410797743725
+    ],
+    "steerLp32": [
+     -335.2678451336814,
+     -974.282480314514
+    ],
+    "steerLp33": [
+     -332.8732297931058,
+     -980.1132591409754
+    ],
+    "steerLp34": [
+     -330.3772180421199,
+     -985.9013581113951
+    ],
+    "steerLp35": [
+     -327.7805701900824,
+     -991.6450141147557
+    ],
+    "steerLp36": [
+     -325.08407720108335,
+     -997.3424775777987
+    ],
+    "steerLp37": [
+     -322.28856045300853,
+     -1002.9920129979607
+    ],
+    "steerLp38": [
+     -319.3948714873405,
+     -1008.5918994720246
+    ],
+    "steerLp39": [
+     -316.4038917497698,
+     -1014.1404312203229
+    ],
+    "steerLp40": [
+     -313.31653232169873,
+     -1019.635918106335
+    ],
+    "steerLp41": [
+     -310.1337336427171,
+     -1025.0766861515199
+    ],
+    "steerLp42": [
+     -306.856465224135,
+     -1030.461078045225
+    ],
+    "steerLp43": [
+     -303.4857253536602,
+     -1035.7874536495194
+    ],
+    "steerLp44": [
+     -300.02254079131046,
+     -1041.0541904987967
+    ],
+    "steerLp45": [
+     -296.46796645665216,
+     -1046.2596842939922
+    ],
+    "steerLp46": [
+     -292.82308510746145,
+     -1051.4023493912696
+    ],
+    "steerLp47": [
+     -289.089007009906,
+     -1056.4806192850217
+    ],
+    "steerLp48": [
+     -285.2668696003474,
+     -1061.4929470850448
+    ],
+    "steerLp49": [
+     -281.3578371388662,
+     -1066.4378059877351
+    ],
+    "steerLp50": [
+     -277.363100354618,
+     -1071.3136897411698
+    ],
+    "steerLp51": [
+     -273.283876083125,
+     -1076.119113103923
+    ],
+    "steerLp52": [
+     -269.1214068956168,
+     -1080.8526122974877
+    ],
+    "steerLp53": [
+     -264.8769607205306,
+     -1085.5127454521548
+    ],
+    "steerLp54": [
+     -260.55183045728813,
+     -1090.0980930462217
+    ],
+    "steerLp55": [
+     -256.1473335824661,
+     -1094.6072583383923
+    ],
+    "steerLp56": [
+     -251.66481174848002,
+     -1099.0388677932372
+    ],
+    "steerLp57": [
+     -247.1056303749035,
+     -1103.391571499586
+    ],
+    "steerLp58": [
+     -242.4711782325488,
+     -1107.664043581725
+    ],
+    "steerLp59": [
+     -237.7628670204334,
+     -1111.854982603269
+    ],
+    "steerLp60": [
+     -232.98213093576305,
+     -1115.9631119635937
+    ],
+    "steerLp61": [
+     232.98213093576305,
+     -1115.9631119635937
+    ],
+    "steerLp62": [
+     237.7628670204334,
+     -1111.854982603269
+    ],
+    "steerLp63": [
+     242.4711782325488,
+     -1107.664043581725
+    ],
+    "steerLp64": [
+     247.1056303749035,
+     -1103.391571499586
+    ],
+    "steerLp65": [
+     251.66481174848002,
+     -1099.0388677932372
+    ],
+    "steerLp66": [
+     256.1473335824661,
+     -1094.6072583383923
+    ],
+    "steerLp67": [
+     260.55183045728813,
+     -1090.0980930462217
+    ],
+    "steerLp68": [
+     264.8769607205306,
+     -1085.5127454521548
+    ],
+    "steerLp69": [
+     269.1214068956168,
+     -1080.8526122974877
+    ],
+    "steerLp70": [
+     273.283876083125,
+     -1076.119113103923
+    ],
+    "steerLp71": [
+     277.363100354618,
+     -1071.3136897411698
+    ],
+    "steerLp72": [
+     281.3578371388662,
+     -1066.4378059877351
+    ],
+    "steerLp73": [
+     285.2668696003474,
+     -1061.4929470850448
+    ],
+    "steerLp74": [
+     289.089007009906,
+     -1056.4806192850217
+    ],
+    "steerLp75": [
+     292.82308510746145,
+     -1051.4023493912696
+    ],
+    "steerLp76": [
+     296.46796645665216,
+     -1046.2596842939922
+    ],
+    "steerLp77": [
+     300.02254079131046,
+     -1041.0541904987967
+    ],
+    "steerLp78": [
+     303.4857253536602,
+     -1035.7874536495194
+    ],
+    "steerLp79": [
+     306.856465224135,
+     -1030.461078045225
+    ],
+    "steerLp80": [
+     310.1337336427171,
+     -1025.0766861515199
+    ],
+    "steerLp81": [
+     313.31653232169873,
+     -1019.635918106335
+    ],
+    "steerLp82": [
+     316.4038917497698,
+     -1014.1404312203229
+    ],
+    "steerLp83": [
+     319.3948714873405,
+     -1008.5918994720246
+    ],
+    "steerLp84": [
+     322.28856045300853,
+     -1002.9920129979607
+    ],
+    "steerLp85": [
+     325.08407720108335,
+     -997.3424775777987
+    ],
+    "steerLp86": [
+     327.7805701900824,
+     -991.6450141147557
+    ],
+    "steerLp87": [
+     330.3772180421199,
+     -985.9013581113951
+    ],
+    "steerLp88": [
+     332.8732297931058,
+     -980.1132591409754
+    ],
+    "steerLp89": [
+     335.2678451336814,
+     -974.282480314514
+    ],
+    "steerLp90": [
+     337.56033464081673,
+     -968.410797743725
+    ],
+    "steerLp91": [
+     339.75,
+     -962.5
+    ],
+    "steerLp92": [
+     341.83617421795117,
+     -956.5518875695909
+    ],
+    "steerLp93": [
+     343.8182218257942,
+     -950.5682723051646
+    ],
+    "steerLp94": [
+     345.69553907262707,
+     -944.5509768738951
+    ],
+    "steerLp95": [
+     347.4675541094306,
+     -938.5018342022619
+    ],
+    "steerLp96": [
+     349.1337271632587,
+     -932.4226869177219
+    ],
+    "steerLp97": [
+     350.6935507016584,
+     -926.3153867874282
+    ],
+    "steerLp98": [
+     352.1465495872697,
+     -920.1817941541631
+    ],
+    "steerLp99": [
+     353.4922812225565,
+     -914.0237773696601
+    ],
+    "steerLp100": [
+     354.73033568462637,
+     -907.843212225486
+    ],
+    "steerLp101": [
+     355.48213093576305,
+     -903.7868880364063
+    ],
+    "steerLp102": [
+     355.86033585009665,
+     -901.6419813816559
+    ],
+    "steerLp103": [
+     356.54122398078596,
+     -897.573154354117
+    ],
+    "steerLp104": [
+     356.88193750997056,
+     -895.4219737931577
+    ],
+    "steerLp105": [
+     357.491711115092,
+     -891.3418833312879
+    ],
+    "steerLp106": [
+     357.794829474486,
+     -889.1850841345574
+    ],
+    "steerLp107": [
+     358.3333028110925,
+     -885.094973073436
+    ],
+    "steerLp108": [
+     358.59873366790714,
+     -882.9332122228632
+    ],
+    "steerLp109": [
+     359.065742711804,
+     -878.8343264499412
+    ],
+    "steerLp110": [
+     359.2934052132291,
+     -876.6682624388225
+    ],
+    "steerLp111": [
+     359.6888077089375,
+     -872.561850514413
+    ],
+    "steerLp112": [
+     359.87863250676975,
+     -870.3921431468294
+    ],
+    "steerLp113": [
+     360.20230801085916,
+     -866.2794559237846
+    ],
+    "steerLp114": [
+     360.3542372826263,
+     -864.1067661136186
+    ],
+    "steerLp115": [
+     360.60608720040267,
+     -859.9890563563068
+    ],
+    "steerLp116": [
+     360.72007466697653,
+     -857.8140459259221
+    ],
+    "steerLp117": [
+     360.90002228251524,
+     -853.6925679286247
+    ],
+    "steerLp118": [
+     360.9760332222095,
+     -851.515899407268
+    ],
+    "steerLp119": [
+     361.08402372172355,
+     -847.3919086121085
+    ],
+    "steerLp120": [
+     361.12203498086956,
+     -845.2142450340974
+    ],
+    "steerLp121": [
+     361.1580354694068,
+     -841.0889976486221
+    ],
+    "steerLp122": [
+     361.1580354694068,
+     -838.9110023513779
+    ],
+    "steerLp123": [
+     361.12203498086956,
+     -834.7857549659026
+    ],
+    "steerLp124": [
+     361.08402372172355,
+     -832.6080913878915
+    ],
+    "steerLp125": [
+     360.9760332222095,
+     -828.484100592732
+    ],
+    "steerLp126": [
+     360.90002228251524,
+     -826.3074320713753
+    ],
+    "steerLp127": [
+     360.72007466697653,
+     -822.1859540740779
+    ],
+    "steerLp128": [
+     360.60608720040267,
+     -820.0109436436932
+    ],
+    "steerLp129": [
+     360.3542372826263,
+     -815.8932338863814
+    ],
+    "steerLp130": [
+     360.20230801085916,
+     -813.7205440762154
+    ],
+    "steerLp131": [
+     359.87863250676975,
+     -809.6078568531706
+    ],
+    "steerLp132": [
+     359.6888077089375,
+     -807.438149485587
+    ],
+    "steerLp133": [
+     359.2934052132291,
+     -803.3317375611775
+    ],
+    "steerLp134": [
+     359.065742711804,
+     -801.1656735500588
+    ],
+    "steerLp135": [
+     358.59873366790714,
+     -797.0667877771368
+    ],
+    "steerLp136": [
+     358.3333028110925,
+     -794.905026926564
+    ],
+    "steerLp137": [
+     357.794829474486,
+     -790.8149158654426
+    ],
+    "steerLp138": [
+     357.491711115092,
+     -788.6581166687121
+    ],
+    "steerLp139": [
+     356.88193750997056,
+     -784.5780262068423
+    ],
+    "steerLp140": [
+     356.54122398078596,
+     -782.426845645883
+    ],
+    "steerLp141": [
+     355.86033585009665,
+     -778.3580186183441
+    ],
+    "steerLp142": [
+     355.48213093576305,
+     -776.2131119635937
+    ],
+    "steerLp143": [
+     354.73033568462637,
+     -772.156787774514
+    ],
+    "steerLp144": [
+     353.4922812225565,
+     -765.9762226303399
+    ],
+    "steerLp145": [
+     352.1465495872697,
+     -759.8182058458369
+    ],
+    "steerLp146": [
+     350.6935507016584,
+     -753.6846132125718
+    ],
+    "steerLp147": [
+     349.1337271632587,
+     -747.5773130822781
+    ],
+    "steerLp148": [
+     347.4675541094306,
+     -741.4981657977381
+    ],
+    "steerLp149": [
+     345.69553907262707,
+     -735.4490231261049
+    ],
+    "steerLp150": [
+     343.8182218257942,
+     -729.4317276948354
+    ],
+    "steerLp151": [
+     341.83617421795117,
+     -723.4481124304091
+    ],
+    "steerLp152": [
+     339.75,
+     -717.5
+    ],
+    "steerLp153": [
+     337.56033464081673,
+     -711.589202256275
+    ],
+    "steerLp154": [
+     335.2678451336814,
+     -705.717519685486
+    ],
+    "steerLp155": [
+     332.8732297931058,
+     -699.8867408590246
+    ],
+    "steerLp156": [
+     330.3772180421199,
+     -694.0986418886049
+    ],
+    "steerLp157": [
+     327.7805701900824,
+     -688.3549858852443
+    ],
+    "steerLp158": [
+     325.08407720108335,
+     -682.6575224222013
+    ],
+    "steerLp159": [
+     322.28856045300853,
+     -677.0079870020393
+    ],
+    "steerLp160": [
+     319.3948714873405,
+     -671.4081005279754
+    ],
+    "steerLp161": [
+     316.4038917497698,
+     -665.8595687796771
+    ],
+    "steerLp162": [
+     313.31653232169873,
+     -660.364081893665
+    ],
+    "steerLp163": [
+     310.1337336427171,
+     -654.92331384848
+    ],
+    "steerLp164": [
+     306.856465224135,
+     -649.5389219547751
+    ],
+    "steerLp165": [
+     303.4857253536602,
+     -644.2125463504806
+    ],
+    "steerLp166": [
+     300.02254079131046,
+     -638.9458095012033
+    ],
+    "steerLp167": [
+     296.46796645665216,
+     -633.7403157060077
+    ],
+    "steerLp168": [
+     292.82308510746145,
+     -628.5976506087305
+    ],
+    "steerLp169": [
+     289.089007009906,
+     -623.5193807149783
+    ],
+    "steerLp170": [
+     285.2668696003474,
+     -618.5070529149554
+    ],
+    "steerLp171": [
+     281.3578371388662,
+     -613.5621940122647
+    ],
+    "steerLp172": [
+     277.363100354618,
+     -608.6863102588302
+    ],
+    "steerLp173": [
+     273.283876083125,
+     -603.880886896077
+    ],
+    "steerLp174": [
+     269.1214068956168,
+     -599.1473877025124
+    ],
+    "steerLp175": [
+     264.8769607205306,
+     -594.4872545478453
+    ],
+    "steerLp176": [
+     260.55183045728813,
+     -589.9019069537783
+    ],
+    "steerLp177": [
+     256.1473335824661,
+     -585.3927416616077
+    ],
+    "steerLp178": [
+     251.66481174848002,
+     -580.961132206763
+    ],
+    "steerLp179": [
+     247.1056303749035,
+     -576.608428500414
+    ],
+    "steerLp180": [
+     242.4711782325488,
+     -572.335956418275
+    ],
+    "steerLp181": [
+     237.7628670204334,
+     -568.1450173967311
+    ],
+    "steerLp182": [
+     232.98213093576305,
+     -564.0368880364063
+    ],
+    "steerLp183": [
+     -232.98213093576305,
+     -564.0368880364063
+    ],
+    "steerLp184": [
+     -237.7628670204334,
+     -568.1450173967311
+    ],
+    "steerLp185": [
+     -242.4711782325488,
+     -572.335956418275
+    ],
+    "steerLp186": [
+     -247.1056303749035,
+     -576.608428500414
+    ],
+    "steerLp187": [
+     -251.66481174848002,
+     -580.961132206763
+    ],
+    "steerLp188": [
+     -256.1473335824661,
+     -585.3927416616077
+    ],
+    "steerLp189": [
+     -260.55183045728813,
+     -589.9019069537783
+    ],
+    "steerLp190": [
+     -264.8769607205306,
+     -594.4872545478453
+    ],
+    "steerLp191": [
+     -269.1214068956168,
+     -599.1473877025124
+    ],
+    "steerLp192": [
+     -273.283876083125,
+     -603.880886896077
+    ],
+    "steerLp193": [
+     -277.363100354618,
+     -608.6863102588302
+    ],
+    "steerLp194": [
+     -281.3578371388662,
+     -613.5621940122647
+    ],
+    "steerLp195": [
+     -285.2668696003474,
+     -618.5070529149554
+    ],
+    "steerLp196": [
+     -289.089007009906,
+     -623.5193807149783
+    ],
+    "steerLp197": [
+     -292.82308510746145,
+     -628.5976506087305
+    ],
+    "steerLp198": [
+     -296.46796645665216,
+     -633.7403157060077
+    ],
+    "steerLp199": [
+     -300.02254079131046,
+     -638.9458095012033
+    ],
+    "steerLp200": [
+     -303.4857253536602,
+     -644.2125463504806
+    ],
+    "steerLp201": [
+     -306.856465224135,
+     -649.5389219547751
+    ],
+    "steerLp202": [
+     -310.1337336427171,
+     -654.92331384848
+    ],
+    "steerLp203": [
+     -313.31653232169873,
+     -660.364081893665
+    ],
+    "steerLp204": [
+     -316.4038917497698,
+     -665.8595687796771
+    ],
+    "steerLp205": [
+     -319.3948714873405,
+     -671.4081005279754
+    ],
+    "steerLp206": [
+     -322.28856045300853,
+     -677.0079870020393
+    ],
+    "steerLp207": [
+     -325.08407720108335,
+     -682.6575224222013
+    ],
+    "steerLp208": [
+     -327.7805701900824,
+     -688.3549858852443
+    ],
+    "steerLp209": [
+     -330.3772180421199,
+     -694.0986418886049
+    ],
+    "steerLp210": [
+     -332.8732297931058,
+     -699.8867408590246
+    ],
+    "steerLp211": [
+     -335.2678451336814,
+     -705.717519685486
+    ],
+    "steerLp212": [
+     -337.56033464081673,
+     -711.589202256275
+    ],
+    "steerLp213": [
+     -339.75,
+     -717.5
+    ],
+    "steerLp214": [
+     -341.83617421795117,
+     -723.4481124304091
+    ],
+    "steerLp215": [
+     -343.8182218257942,
+     -729.4317276948354
+    ],
+    "steerLp216": [
+     -345.69553907262707,
+     -735.4490231261049
+    ],
+    "steerLp217": [
+     -347.4675541094306,
+     -741.4981657977381
+    ],
+    "steerLp218": [
+     -349.1337271632587,
+     -747.5773130822781
+    ],
+    "steerLp219": [
+     -350.6935507016584,
+     -753.6846132125718
+    ],
+    "steerLp220": [
+     -352.1465495872697,
+     -759.8182058458369
+    ],
+    "steerLp221": [
+     -353.4922812225565,
+     -765.9762226303399
+    ],
+    "steerLp222": [
+     -354.73033568462637,
+     -772.156787774514
+    ],
+    "steerLp223": [
+     -355.48213093576305,
+     -776.2131119635937
+    ],
+    "steerLp224": [
+     -355.86033585009665,
+     -778.3580186183441
+    ],
+    "steerLp225": [
+     -356.54122398078596,
+     -782.426845645883
+    ],
+    "steerLp226": [
+     -356.88193750997056,
+     -784.5780262068423
+    ],
+    "steerLp227": [
+     -357.491711115092,
+     -788.6581166687121
+    ],
+    "steerLp228": [
+     -357.794829474486,
+     -790.8149158654426
+    ],
+    "steerLp229": [
+     -358.3333028110925,
+     -794.905026926564
+    ],
+    "steerLp230": [
+     -358.59873366790714,
+     -797.0667877771368
+    ],
+    "steerLp231": [
+     -359.065742711804,
+     -801.1656735500588
+    ],
+    "steerLp232": [
+     -359.2934052132291,
+     -803.3317375611775
+    ],
+    "steerLp233": [
+     -359.6888077089375,
+     -807.438149485587
+    ],
+    "steerLp234": [
+     -359.87863250676975,
+     -809.6078568531706
+    ],
+    "steerLp235": [
+     -360.20230801085916,
+     -813.7205440762154
+    ],
+    "steerLp236": [
+     -360.3542372826263,
+     -815.8932338863814
+    ],
+    "steerLp237": [
+     -360.60608720040267,
+     -820.0109436436932
+    ],
+    "steerLp238": [
+     -360.72007466697653,
+     -822.1859540740779
+    ],
+    "steerLp239": [
+     -360.90002228251524,
+     -826.3074320713753
+    ],
+    "steerLp240": [
+     -360.9760332222095,
+     -828.484100592732
+    ],
+    "steerLp241": [
+     -361.08402372172355,
+     -832.6080913878915
+    ],
+    "steerLp242": [
+     -361.12203498086956,
+     -834.7857549659026
+    ],
+    "steerLp243": [
+     -361.1580354694068,
+     -838.9110023513779
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "id": "front-right",
+   "name": "Front right wheel",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "affine": {
+      "parameterId": "PR-07",
+      "scale": 0.5,
+      "offsetMm": 0
+     }
+    },
+    "height": {
+     "literalMm": 245
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "affine": {
+       "parameterId": "PR-05",
+       "scale": 0.5,
+       "offsetMm": -122.5
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-07",
+       "scale": 0.5,
+       "offsetMm": 0
+      }
+     }
+    ],
+    "orientation": [
+     -0.7071067811865476,
+     0,
+     0,
+     0.7071067811865476
+    ]
+   }
+  },
+  {
+   "id": "front-left",
+   "name": "Front left wheel",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "affine": {
+      "parameterId": "PR-07",
+      "scale": 0.5,
+      "offsetMm": 0
+     }
+    },
+    "height": {
+     "literalMm": 245
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "affine": {
+       "parameterId": "PR-05",
+       "scale": -0.5,
+       "offsetMm": 122.5
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-07",
+       "scale": 0.5,
+       "offsetMm": 0
+      }
+     }
+    ],
+    "orientation": [
+     0.7071067811865476,
+     0,
+     0,
+     0.7071067811865476
+    ]
+   }
+  },
+  {
+   "id": "rear-right",
+   "name": "Rear right wheel",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "affine": {
+      "parameterId": "PR-08",
+      "scale": 0.5,
+      "offsetMm": 0
+     }
+    },
+    "height": {
+     "literalMm": 305
+    },
+    "origin": [
+     {
+      "parameterId": "PR-04"
+     },
+     {
+      "affine": {
+       "parameterId": "PR-06",
+       "scale": 0.5,
+       "offsetMm": -152.5
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-08",
+       "scale": 0.5,
+       "offsetMm": 0
+      }
+     }
+    ],
+    "orientation": [
+     -0.7071067811865476,
+     0,
+     0,
+     0.7071067811865476
+    ]
+   }
+  },
+  {
+   "id": "rear-left",
+   "name": "Rear left wheel",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "affine": {
+      "parameterId": "PR-08",
+      "scale": 0.5,
+      "offsetMm": 0
+     }
+    },
+    "height": {
+     "literalMm": 305
+    },
+    "origin": [
+     {
+      "parameterId": "PR-04"
+     },
+     {
+      "affine": {
+       "parameterId": "PR-06",
+       "scale": -0.5,
+       "offsetMm": 152.5
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-08",
+       "scale": 0.5,
+       "offsetMm": 0
+      }
+     }
+    ],
+    "orientation": [
+     0.7071067811865476,
+     0,
+     0,
+     0.7071067811865476
+    ]
+   }
+  },
+  {
+   "id": "driver-torso",
+   "name": "Driver torso",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 230
+     },
+     {
+      "literalMm": 490
+     },
+     {
+      "literalMm": 520
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-09",
+       "scale": 1,
+       "offsetMm": -90
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-10",
+       "scale": 1,
+       "offsetMm": -245
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-11",
+       "scale": 1,
+       "offsetMm": 20
+      }
+     }
+    ],
+    "orientation": [
+     0,
+     0.21643961393810288,
+     0,
+     0.9762960071199334
+    ]
+   }
+  },
+  {
+   "id": "driver-head",
+   "name": "Driver head",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 220
+     },
+     {
+      "literalMm": 200
+     },
+     {
+      "literalMm": 236
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-09",
+       "scale": 1,
+       "offsetMm": 110
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-10",
+       "scale": 1,
+       "offsetMm": -100
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-11",
+       "scale": 1,
+       "offsetMm": 500
+      }
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "driver-thighs",
+   "name": "Driver thighs",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 528
+     },
+     {
+      "literalMm": 360
+     },
+     {
+      "literalMm": 170
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-09",
+       "scale": 1,
+       "offsetMm": -468
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-10",
+       "scale": 1,
+       "offsetMm": -180
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-11",
+       "scale": 1,
+       "offsetMm": -110
+      }
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "driver-shins",
+   "name": "Driver shins",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 460
+     },
+     {
+      "literalMm": 310
+     },
+     {
+      "literalMm": 155
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-09",
+       "scale": 1,
+       "offsetMm": -858
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-10",
+       "scale": 1,
+       "offsetMm": -155
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-11",
+       "scale": 1,
+       "offsetMm": -175
+      }
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "passenger-torso",
+   "name": "Passenger torso",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 230
+     },
+     {
+      "literalMm": 490
+     },
+     {
+      "literalMm": 520
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-09",
+       "scale": 1,
+       "offsetMm": -90
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-10",
+       "scale": -1,
+       "offsetMm": -245
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-11",
+       "scale": 1,
+       "offsetMm": 20
+      }
+     }
+    ],
+    "orientation": [
+     0,
+     0.21643961393810288,
+     0,
+     0.9762960071199334
+    ]
+   }
+  },
+  {
+   "id": "passenger-head",
+   "name": "Passenger head",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 220
+     },
+     {
+      "literalMm": 200
+     },
+     {
+      "literalMm": 236
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-09",
+       "scale": 1,
+       "offsetMm": 110
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-10",
+       "scale": -1,
+       "offsetMm": -100
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-11",
+       "scale": 1,
+       "offsetMm": 500
+      }
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "passenger-thighs",
+   "name": "Passenger thighs",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 528
+     },
+     {
+      "literalMm": 360
+     },
+     {
+      "literalMm": 170
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-09",
+       "scale": 1,
+       "offsetMm": -468
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-10",
+       "scale": -1,
+       "offsetMm": -180
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-11",
+       "scale": 1,
+       "offsetMm": -110
+      }
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "passenger-shins",
+   "name": "Passenger shins",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 460
+     },
+     {
+      "literalMm": 310
+     },
+     {
+      "literalMm": 155
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-09",
+       "scale": 1,
+       "offsetMm": -858
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-10",
+       "scale": -1,
+       "offsetMm": -155
+      }
+     },
+     {
+      "affine": {
+       "parameterId": "PR-11",
+       "scale": 1,
+       "offsetMm": -175
+      }
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "engine",
+   "name": "Engine",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 750
+     },
+     {
+      "literalMm": 620
+     },
+     {
+      "literalMm": 550
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-12",
+       "scale": 1,
+       "offsetMm": 20
+      }
+     },
+     {
+      "literalMm": -310
+     },
+     {
+      "literalMm": 230
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gearbox",
+   "name": "Gearbox",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 450
+     },
+     {
+      "literalMm": 400
+     },
+     {
+      "literalMm": 350
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": 2470
+     },
+     {
+      "literalMm": -200
+     },
+     {
+      "literalMm": 240
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "fuel",
+   "name": "Fuel tank",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 900
+     },
+     {
+      "literalMm": 220
+     },
+     {
+      "literalMm": 250
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": 550
+     },
+     {
+      "literalMm": -110
+     },
+     {
+      "literalMm": 120
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "radiator-right",
+   "name": "Right radiator",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 350
+     },
+     {
+      "literalMm": 100
+     },
+     {
+      "literalMm": 400
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-12",
+       "scale": 1,
+       "offsetMm": 150
+      }
+     },
+     {
+      "literalMm": 780
+     },
+     {
+      "literalMm": 230
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "radiator-left",
+   "name": "Left radiator",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 350
+     },
+     {
+      "literalMm": 100
+     },
+     {
+      "literalMm": 400
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-12",
+       "scale": 1,
+       "offsetMm": 150
+      }
+     },
+     {
+      "literalMm": -880
+     },
+     {
+      "literalMm": 230
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "luggage",
+   "name": "Front luggage",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "literalMm": 460
+     },
+     {
+      "literalMm": 800
+     },
+     {
+      "literalMm": 300
+     }
+    ],
+    "origin": [
+     {
+      "literalMm": -680
+     },
+     {
+      "literalMm": -400
+     },
+     {
+      "literalMm": 170
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "front-right-placement",
+   "name": "Front right wheel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "front-right"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "front-left-placement",
+   "name": "Front left wheel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "front-left"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "rear-right-placement",
+   "name": "Rear right wheel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "rear-right"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "rear-left-placement",
+   "name": "Rear left wheel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "rear-left"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "driver-torso-placement",
+   "name": "Driver torso placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "driver-torso"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "driver-head-placement",
+   "name": "Driver head placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "driver-head"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "driver-thighs-placement",
+   "name": "Driver thighs placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "driver-thighs"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "driver-shins-placement",
+   "name": "Driver shins placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "driver-shins"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "passenger-torso-placement",
+   "name": "Passenger torso placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "passenger-torso"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "passenger-head-placement",
+   "name": "Passenger head placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "passenger-head"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "passenger-thighs-placement",
+   "name": "Passenger thighs placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "passenger-thighs"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "passenger-shins-placement",
+   "name": "Passenger shins placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "passenger-shins"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "engine-placement",
+   "name": "Engine placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "engine"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gearbox-placement",
+   "name": "Gearbox placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "gearbox"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "fuel-placement",
+   "name": "Fuel tank placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "fuel"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "radiator-right-placement",
+   "name": "Right radiator placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "radiator-right"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "radiator-left-placement",
+   "name": "Left radiator placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "radiator-left"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "luggage-placement",
+   "name": "Front luggage placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "luggage"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "EN-001",
+   "name": "右前輪（タイヤとホイール）",
+   "kind": "solid",
+   "resultFeatureId": "front-right-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#1d1f22",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-002",
+   "name": "左前輪（タイヤとホイール）",
+   "kind": "solid",
+   "resultFeatureId": "front-left-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#1d1f22",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-003",
+   "name": "右後輪（タイヤとホイール）",
+   "kind": "solid",
+   "resultFeatureId": "rear-right-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#1d1f22",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-004",
+   "name": "左後輪（タイヤとホイール）",
+   "kind": "solid",
+   "resultFeatureId": "rear-left-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#1d1f22",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-005",
+   "name": "運転者の胴",
+   "kind": "solid",
+   "resultFeatureId": "driver-torso-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d9a066",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-006",
+   "name": "運転者の頭",
+   "kind": "solid",
+   "resultFeatureId": "driver-head-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d9a066",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-007",
+   "name": "運転者の腿",
+   "kind": "solid",
+   "resultFeatureId": "driver-thighs-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d9a066",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-008",
+   "name": "運転者の脛",
+   "kind": "solid",
+   "resultFeatureId": "driver-shins-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d9a066",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-009",
+   "name": "同乗者の胴",
+   "kind": "solid",
+   "resultFeatureId": "passenger-torso-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d9a066",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-010",
+   "name": "同乗者の頭",
+   "kind": "solid",
+   "resultFeatureId": "passenger-head-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d9a066",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-011",
+   "name": "同乗者の腿",
+   "kind": "solid",
+   "resultFeatureId": "passenger-thighs-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d9a066",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-012",
+   "name": "同乗者の脛",
+   "kind": "solid",
+   "resultFeatureId": "passenger-shins-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d9a066",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-013",
+   "name": "エンジン",
+   "kind": "solid",
+   "resultFeatureId": "engine-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#7a828c",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-014",
+   "name": "変速機",
+   "kind": "solid",
+   "resultFeatureId": "gearbox-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#7a828c",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-015",
+   "name": "燃料タンク",
+   "kind": "solid",
+   "resultFeatureId": "fuel-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c0504d",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-016",
+   "name": "右ラジエーター",
+   "kind": "solid",
+   "resultFeatureId": "radiator-right-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#4f81bd",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-017",
+   "name": "左ラジエーター",
+   "kind": "solid",
+   "resultFeatureId": "radiator-left-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#4f81bd",
+    "opacity": 1
+   }
+  },
+  {
+   "id": "EN-018",
+   "name": "前の荷室",
+   "kind": "solid",
+   "resultFeatureId": "luggage-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#9bbb59",
+    "opacity": 1
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

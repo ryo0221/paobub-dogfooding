@@ -1,0 +1,807 @@
+{
+ "kernel": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+ "layout": {
+  "contentHash": "0d10a91386235fa1c099090b659e6a75c8b96ebd4551722be28bae1418464548",
+  "bodies": {
+   "EN-001": {
+    "volumeMm3": 7298.548052819793
+   },
+   "EN-002": {
+    "volumeMm3": 2898.119222936577
+   },
+   "EN-003": {
+    "volumeMm3": 67.85840131753937
+   },
+   "EN-004": {
+    "volumeMm3": 6.433981754551882
+   },
+   "EN-005": {
+    "volumeMm3": 7.156940763959222
+   },
+   "EN-006": {
+    "volumeMm3": 7.093464884393439
+   },
+   "EN-007": {
+    "volumeMm3": 2.3891812130550316
+   },
+   "EN-008": {
+    "volumeMm3": 15.45899205015193
+   },
+   "EN-009": {
+    "volumeMm3": 155.8544115445893
+   },
+   "EN-010": {
+    "volumeMm3": 290.33342667415354
+   },
+   "EN-011": {
+    "volumeMm3": 566.7839999999999
+   },
+   "EN-012": {
+    "volumeMm3": 566.7839999999999
+   },
+   "EN-013": {
+    "volumeMm3": 17.671458676442544
+   }
+  }
+ },
+ "mass": [
+  {
+   "part": "plate",
+   "body": "BD-001",
+   "name": "地板",
+   "g": 2.329767288383271
+  },
+  {
+   "part": "plate",
+   "body": "BD-002",
+   "name": "三番受け石（地板）",
+   "g": 0.00010002831009029881
+  },
+  {
+   "part": "plate",
+   "body": "BD-003",
+   "name": "四番受け石（地板）",
+   "g": 0.00010002831009029879
+  },
+  {
+   "part": "plate",
+   "body": "BD-004",
+   "name": "がんぎ受け石（地板）",
+   "g": 0.0001000283100902987
+  },
+  {
+   "part": "plate",
+   "body": "BD-005",
+   "name": "アンクル受け石（地板）",
+   "g": 0.0001000283100902988
+  },
+  {
+   "part": "plate",
+   "body": "BD-006",
+   "name": "てんぷ受け石（地板）",
+   "g": 0.00010002831009029881
+  },
+  {
+   "part": "plate",
+   "body": "BD-007",
+   "name": "香箱受け石（地板）",
+   "g": 0.00010002831009029876
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-008",
+   "name": "輪列受け",
+   "g": 0.14494324721127302
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-009",
+   "name": "輪列受けの石 1",
+   "g": 0.00011003114109932853
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-010",
+   "name": "輪列受けの石 2",
+   "g": 0.00011003114109932851
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-011",
+   "name": "輪列受けの石 3",
+   "g": 0.00011003114109932851
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-012",
+   "name": "輪列受けの石 4",
+   "g": 0.00011003114109932854
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-013",
+   "name": "輪列受けのねじ 1",
+   "g": 0.0007884367118119981
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-014",
+   "name": "輪列受けのねじ 1 のすり割り",
+   "g": 0.000013272000000000033
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-015",
+   "name": "輪列受けのねじ 2",
+   "g": 0.0007884367118119981
+  },
+  {
+   "part": "train-bridge",
+   "body": "BD-016",
+   "name": "輪列受けのねじ 2 のすり割り",
+   "g": 0.000013272000000000037
+  },
+  {
+   "part": "barrel-bridge",
+   "body": "BD-017",
+   "name": "香箱受け",
+   "g": 0.3873997885979214
+  },
+  {
+   "part": "barrel-bridge",
+   "body": "BD-018",
+   "name": "香箱受けのねじ 1",
+   "g": 0.0007884367118119981
+  },
+  {
+   "part": "barrel-bridge",
+   "body": "BD-019",
+   "name": "香箱受けのねじ 1 のすり割り",
+   "g": 0.000013272000000000033
+  },
+  {
+   "part": "barrel-bridge",
+   "body": "BD-020",
+   "name": "香箱受けのねじ 2",
+   "g": 0.0007884367118119981
+  },
+  {
+   "part": "barrel-bridge",
+   "body": "BD-021",
+   "name": "香箱受けのねじ 2 のすり割り",
+   "g": 0.000013272000000000037
+  },
+  {
+   "part": "balance-cock",
+   "body": "BD-022",
+   "name": "てんぷ受け",
+   "g": 0.04882733590300687
+  },
+  {
+   "part": "balance-cock",
+   "body": "BD-023",
+   "name": "てんぷ受けの石",
+   "g": 0.00011003114109932853
+  },
+  {
+   "part": "balance-cock",
+   "body": "BD-024",
+   "name": "てんぷ受けのねじ",
+   "g": 0.0007884367118119983
+  },
+  {
+   "part": "balance-cock",
+   "body": "BD-025",
+   "name": "てんぷ受けのねじのすり割り",
+   "g": 0.000013272000000000033
+  },
+  {
+   "part": "barrel",
+   "body": "BD-026",
+   "name": "香箱のドラム",
+   "g": 0.5024537626445358
+  },
+  {
+   "part": "barrel",
+   "body": "BD-027",
+   "name": "香箱の歯車",
+   "g": 0.2841464153180566
+  },
+  {
+   "part": "barrel",
+   "body": "BD-028",
+   "name": "香箱真",
+   "g": 0.00424397751573444
+  },
+  {
+   "part": "barrel",
+   "body": "BD-029",
+   "name": "角穴車",
+   "g": 0.02516604211084636
+  },
+  {
+   "part": "centre",
+   "body": "BD-030",
+   "name": "二番真",
+   "g": 0.0017690685223482514
+  },
+  {
+   "part": "centre",
+   "body": "BD-031",
+   "name": "分針",
+   "g": 0.003511392000000003
+  },
+  {
+   "part": "centre",
+   "body": "BD-032",
+   "name": "分針のパイプ",
+   "g": 0.00019298929334708216
+  },
+  {
+   "part": "centre",
+   "body": "BD-033",
+   "name": "二番かな",
+   "g": 0.0068759354329769465
+  },
+  {
+   "part": "centre",
+   "body": "BD-034",
+   "name": "二番車",
+   "g": 0.020777282129562848
+  },
+  {
+   "part": "centre",
+   "body": "BD-035",
+   "name": "筒かな",
+   "g": 0.0030160446837084118
+  },
+  {
+   "part": "third",
+   "body": "BD-036",
+   "name": "三番真",
+   "g": 0.0009292077087081722
+  },
+  {
+   "part": "third",
+   "body": "BD-037",
+   "name": "三番かな",
+   "g": 0.0020364644038860244
+  },
+  {
+   "part": "third",
+   "body": "BD-038",
+   "name": "三番車",
+   "g": 0.019992126761984096
+  },
+  {
+   "part": "fourth",
+   "body": "BD-039",
+   "name": "四番真",
+   "g": 0.00164398286925292
+  },
+  {
+   "part": "fourth",
+   "body": "BD-040",
+   "name": "秒針",
+   "g": 0.0002807028000000002
+  },
+  {
+   "part": "fourth",
+   "body": "BD-041",
+   "name": "秒針のパイプ",
+   "g": 0.000027139119376933427
+  },
+  {
+   "part": "fourth",
+   "body": "BD-042",
+   "name": "四番かな",
+   "g": 0.0010131150331829611
+  },
+  {
+   "part": "fourth",
+   "body": "BD-043",
+   "name": "四番車",
+   "g": 0.017891550282462153
+  },
+  {
+   "part": "escape",
+   "body": "BD-044",
+   "name": "がんぎ真",
+   "g": 0.0009292077087081722
+  },
+  {
+   "part": "escape",
+   "body": "BD-045",
+   "name": "がんぎかな",
+   "g": 0.0005976953710167976
+  },
+  {
+   "part": "escape",
+   "body": "BD-046",
+   "name": "がんぎ車",
+   "g": 0.00797929330099152
+  },
+  {
+   "part": "pallet",
+   "body": "BD-047",
+   "name": "アンクル真",
+   "g": 0.00019854865570687448
+  },
+  {
+   "part": "pallet",
+   "body": "BD-048",
+   "name": "入り爪石",
+   "g": 0.00007522199999999992
+  },
+  {
+   "part": "pallet",
+   "body": "BD-049",
+   "name": "出爪石",
+   "g": 0.0000752219999999999
+  },
+  {
+   "part": "pallet",
+   "body": "BD-050",
+   "name": "アンクル",
+   "g": 0.0010512753138617501
+  },
+  {
+   "part": "balance",
+   "body": "BD-051",
+   "name": "てん真",
+   "g": 0.0010006852247626472
+  },
+  {
+   "part": "balance",
+   "body": "BD-052",
+   "name": "振り座",
+   "g": 0.0005956459671206231
+  },
+  {
+   "part": "balance",
+   "body": "BD-053",
+   "name": "振り石",
+   "g": 0.000013503821862190334
+  },
+  {
+   "part": "balance",
+   "body": "BD-054",
+   "name": "ひげ玉",
+   "g": 0.0009306968236259734
+  },
+  {
+   "part": "balance",
+   "body": "BD-055",
+   "name": "ひげぜんまい",
+   "g": 0.0018797873352573828
+  },
+  {
+   "part": "balance",
+   "body": "BD-056",
+   "name": "てん輪",
+   "g": 0.02467406870129415
+  },
+  {
+   "part": "balance",
+   "body": "BD-057",
+   "name": "てん輪のアーム 1",
+   "g": 0.0018496000000000003
+  },
+  {
+   "part": "balance",
+   "body": "BD-058",
+   "name": "てん輪のアーム 2",
+   "g": 0.0018496000000000003
+  },
+  {
+   "part": "balance",
+   "body": "BD-059",
+   "name": "てん輪のアーム 3",
+   "g": 0.0018495999999999999
+  },
+  {
+   "part": "balance",
+   "body": "BD-060",
+   "name": "てん輪のハブ",
+   "g": 0.0008545132017764221
+  },
+  {
+   "part": "minute",
+   "body": "BD-061",
+   "name": "日の裏車の真",
+   "g": 0.00041099571731322996
+  },
+  {
+   "part": "minute",
+   "body": "BD-062",
+   "name": "日の裏車",
+   "g": 0.010276316835769059
+  },
+  {
+   "part": "minute",
+   "body": "BD-063",
+   "name": "日の裏かな",
+   "g": 0.002342311727723805
+  },
+  {
+   "part": "hour",
+   "body": "BD-064",
+   "name": "筒車",
+   "g": 0.011516162532492547
+  },
+  {
+   "part": "hour",
+   "body": "BD-065",
+   "name": "筒車のパイプ",
+   "g": 0.000583205260212408
+  },
+  {
+   "part": "hour",
+   "body": "BD-066",
+   "name": "時針",
+   "g": 0.002446947403287939
+  },
+  {
+   "part": "hour",
+   "body": "BD-067",
+   "name": "時針のパイプ",
+   "g": 0.00024198117414275344
+  },
+  {
+   "part": "case",
+   "body": "BD-068",
+   "name": "胴",
+   "g": 10.0889609132207
+  },
+  {
+   "part": "case",
+   "body": "BD-069",
+   "name": "ラグ 1",
+   "g": 0.587776
+  },
+  {
+   "part": "case",
+   "body": "BD-070",
+   "name": "ラグ 2",
+   "g": 0.587776
+  },
+  {
+   "part": "case",
+   "body": "BD-071",
+   "name": "ラグ 3",
+   "g": 0.5877759999999999
+  },
+  {
+   "part": "case",
+   "body": "BD-072",
+   "name": "ラグ 4",
+   "g": 0.5877759999999999
+  },
+  {
+   "part": "case",
+   "body": "BD-073",
+   "name": "巻真",
+   "g": 0.004523186562822231
+  },
+  {
+   "part": "case",
+   "body": "BD-074",
+   "name": "リューズ",
+   "g": 0.10178760197630905
+  },
+  {
+   "part": "bezel",
+   "body": "BD-075",
+   "name": "ベゼル",
+   "g": 3.065491969786291
+  },
+  {
+   "part": "bezel",
+   "body": "BD-076",
+   "name": "風防",
+   "g": 1.155527038163131
+  },
+  {
+   "part": "case-back",
+   "body": "BD-077",
+   "name": "裏ぶた",
+   "g": 1.3193256578827068
+  },
+  {
+   "part": "case-back",
+   "body": "BD-078",
+   "name": "裏ぶたのガラス",
+   "g": 1.011086158392739
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-079",
+   "name": "見返しリング",
+   "g": 0.3776948351851784
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-080",
+   "name": "インデックス 12",
+   "g": 0.0007504999999999991
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-081",
+   "name": "インデックス 1",
+   "g": 0.0003752499999999992
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-082",
+   "name": "インデックス 2",
+   "g": 0.0003752499999999991
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-083",
+   "name": "インデックス 3",
+   "g": 0.00037524999999999955
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-084",
+   "name": "インデックス 4",
+   "g": 0.00037524999999999923
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-085",
+   "name": "インデックス 5",
+   "g": 0.000375249999999999
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-086",
+   "name": "インデックス 6",
+   "g": 0.0003752499999999996
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-087",
+   "name": "インデックス 7",
+   "g": 0.00037524999999999907
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-088",
+   "name": "インデックス 8",
+   "g": 0.0003752499999999991
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-089",
+   "name": "インデックス 9",
+   "g": 0.00037524999999999955
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-090",
+   "name": "インデックス 10",
+   "g": 0.00037524999999999923
+  },
+  {
+   "part": "chapter-ring",
+   "body": "BD-091",
+   "name": "インデックス 11",
+   "g": 0.0003752499999999991
+  }
+ ],
+ "bodyMap": {
+  "main-plate": "BD-001",
+  "jewel-third": "BD-002",
+  "jewel-fourth": "BD-003",
+  "jewel-escape": "BD-004",
+  "jewel-pallet": "BD-005",
+  "jewel-balance": "BD-006",
+  "jewel-barrel": "BD-007",
+  "train-bridge": "BD-008",
+  "train-bridge-jewel-1": "BD-009",
+  "train-bridge-jewel-2": "BD-010",
+  "train-bridge-jewel-3": "BD-011",
+  "train-bridge-jewel-4": "BD-012",
+  "train-bridge-screw-1": "BD-013",
+  "train-bridge-screw-1-slot": "BD-014",
+  "train-bridge-screw-2": "BD-015",
+  "train-bridge-screw-2-slot": "BD-016",
+  "barrel-bridge": "BD-017",
+  "barrel-bridge-screw-1": "BD-018",
+  "barrel-bridge-screw-1-slot": "BD-019",
+  "barrel-bridge-screw-2": "BD-020",
+  "barrel-bridge-screw-2-slot": "BD-021",
+  "balance-cock": "BD-022",
+  "balance-cock-jewel-1": "BD-023",
+  "balance-cock-screw-1": "BD-024",
+  "balance-cock-screw-1-slot": "BD-025",
+  "barrel-drum": "BD-026",
+  "barrel-gear": "BD-027",
+  "barrel-arbor": "BD-028",
+  "barrel-ratchet": "BD-029",
+  "centre-arbor": "BD-030",
+  "minute-hand": "BD-031",
+  "minute-hand-boss": "BD-032",
+  "centre-pinion": "BD-033",
+  "centre-wheel": "BD-034",
+  "cannon-pinion": "BD-035",
+  "third-arbor": "BD-036",
+  "third-pinion": "BD-037",
+  "third-wheel": "BD-038",
+  "fourth-arbor": "BD-039",
+  "seconds-hand": "BD-040",
+  "seconds-hand-boss": "BD-041",
+  "fourth-pinion": "BD-042",
+  "fourth-wheel": "BD-043",
+  "escape-arbor": "BD-044",
+  "escape-pinion": "BD-045",
+  "escape-wheel": "BD-046",
+  "pallet-arbor": "BD-047",
+  "entry-stone": "BD-048",
+  "exit-stone": "BD-049",
+  "fork": "BD-050",
+  "balance-staff": "BD-051",
+  "roller": "BD-052",
+  "impulse-pin": "BD-053",
+  "collet": "BD-054",
+  "hairspring": "BD-055",
+  "balance-rim": "BD-056",
+  "balance-arm-1": "BD-057",
+  "balance-arm-2": "BD-058",
+  "balance-arm-3": "BD-059",
+  "balance-hub": "BD-060",
+  "minute-arbor": "BD-061",
+  "minute-wheel": "BD-062",
+  "minute-pinion": "BD-063",
+  "hour-wheel": "BD-064",
+  "hour-pipe": "BD-065",
+  "hour-hand": "BD-066",
+  "hour-hand-boss": "BD-067",
+  "case-middle": "BD-068",
+  "lug-1": "BD-069",
+  "lug-2": "BD-070",
+  "lug-3": "BD-071",
+  "lug-4": "BD-072",
+  "crown-stem": "BD-073",
+  "crown": "BD-074",
+  "bezel": "BD-075",
+  "front-crystal": "BD-076",
+  "case-back": "BD-077",
+  "back-crystal": "BD-078",
+  "chapter-ring": "BD-079",
+  "index-12": "BD-080",
+  "index-1": "BD-081",
+  "index-2": "BD-082",
+  "index-3": "BD-083",
+  "index-4": "BD-084",
+  "index-5": "BD-085",
+  "index-6": "BD-086",
+  "index-7": "BD-087",
+  "index-8": "BD-088",
+  "index-9": "BD-089",
+  "index-10": "BD-090",
+  "index-11": "BD-091"
+ },
+ "interference": {
+  "assembled": {
+   "findings": [],
+   "unchecked": []
+  },
+  "exploded": {
+   "findings": [],
+   "unchecked": []
+  },
+  "handsOver12h": {
+   "samples": 97,
+   "hits": [],
+   "unchecked": []
+  }
+ },
+ "gearMeshes": [
+  {
+   "id": "mesh-escape-fourth",
+   "name": "Escape → fourth",
+   "check": {
+    "status": "ok",
+    "coupling": {
+     "of": "angle",
+     "from": {
+      "joint": "j-escape",
+      "of": "angle"
+     },
+     "ratio": -0.08333333333333333,
+     "offset": -0.004155545838081309
+    },
+    "pitch": 0.07479982508547127
+   }
+  },
+  {
+   "id": "mesh-fourth-third",
+   "name": "Fourth → third",
+   "check": {
+    "status": "ok",
+    "coupling": {
+     "of": "angle",
+     "from": {
+      "joint": "j-fourth",
+      "of": "angle"
+     },
+     "ratio": -0.10666666666666667,
+     "offset": 0.004654211338652345
+    },
+    "pitch": 0.08377580409572781
+   }
+  },
+  {
+   "id": "mesh-third-centre",
+   "name": "Third → centre",
+   "check": {
+    "status": "ok",
+    "coupling": {
+     "of": "angle",
+     "from": {
+      "joint": "j-third",
+      "of": "angle"
+     },
+     "ratio": -0.15625,
+     "offset": 0.0436332312998583
+    },
+    "pitch": 0.09817477042468103
+   }
+  },
+  {
+   "id": "mesh-centre-barrel",
+   "name": "Centre → barrel",
+   "check": {
+    "status": "ok",
+    "coupling": {
+     "of": "angle",
+     "from": {
+      "joint": "j-centre",
+      "of": "angle"
+     },
+     "ratio": -0.125,
+     "offset": 0.01963495408493693
+    },
+    "pitch": 0.07853981633974483
+   }
+  },
+  {
+   "id": "mesh-cannon-minute",
+   "name": "Cannon → minute",
+   "check": {
+    "status": "ok",
+    "coupling": {
+     "of": "angle",
+     "from": {
+      "joint": "j-centre",
+      "of": "angle"
+     },
+     "ratio": -0.3333333333333333,
+     "offset": 0.08726646259971593
+    },
+    "pitch": 0.17453292519943295
+   }
+  },
+  {
+   "id": "mesh-minute-hour",
+   "name": "Minute → hour",
+   "check": {
+    "status": "ok",
+    "coupling": {
+     "of": "angle",
+     "from": {
+      "joint": "j-minute",
+      "of": "angle"
+     },
+     "ratio": -0.25,
+     "offset": -0.026179938779915313
+    },
+    "pitch": 0.15707963267948966
+   }
+  }
+ ]
+}

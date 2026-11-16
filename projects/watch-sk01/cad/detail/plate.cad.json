@@ -1,0 +1,2102 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "plate-outline",
+   "name": "Plate outline",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "point",
+     "id": "c2"
+    },
+    {
+     "type": "point",
+     "id": "c3"
+    },
+    {
+     "type": "point",
+     "id": "c4"
+    },
+    {
+     "type": "point",
+     "id": "c5"
+    },
+    {
+     "type": "point",
+     "id": "c6"
+    },
+    {
+     "type": "point",
+     "id": "c7"
+    },
+    {
+     "type": "point",
+     "id": "c8"
+    },
+    {
+     "type": "point",
+     "id": "c9"
+    },
+    {
+     "type": "point",
+     "id": "c10"
+    },
+    {
+     "type": "point",
+     "id": "c11"
+    },
+    {
+     "type": "point",
+     "id": "c12"
+    },
+    {
+     "type": "point",
+     "id": "c13"
+    },
+    {
+     "type": "point",
+     "id": "c14"
+    },
+    {
+     "type": "point",
+     "id": "c15"
+    },
+    {
+     "type": "point",
+     "id": "c16"
+    },
+    {
+     "type": "point",
+     "id": "c17"
+    },
+    {
+     "type": "point",
+     "id": "c18"
+    },
+    {
+     "type": "point",
+     "id": "c19"
+    },
+    {
+     "type": "point",
+     "id": "c20"
+    },
+    {
+     "type": "point",
+     "id": "c21"
+    },
+    {
+     "type": "point",
+     "id": "c22"
+    },
+    {
+     "type": "point",
+     "id": "c23"
+    },
+    {
+     "type": "point",
+     "id": "c24"
+    },
+    {
+     "type": "point",
+     "id": "c25"
+    },
+    {
+     "type": "point",
+     "id": "c26"
+    },
+    {
+     "type": "point",
+     "id": "c27"
+    },
+    {
+     "type": "point",
+     "id": "c28"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o2",
+     "center": "c2"
+    },
+    {
+     "type": "circle",
+     "id": "o3",
+     "center": "c3"
+    },
+    {
+     "type": "circle",
+     "id": "o4",
+     "center": "c4"
+    },
+    {
+     "type": "circle",
+     "id": "o5",
+     "center": "c5"
+    },
+    {
+     "type": "circle",
+     "id": "o6",
+     "center": "c6"
+    },
+    {
+     "type": "circle",
+     "id": "o7",
+     "center": "c7"
+    },
+    {
+     "type": "circle",
+     "id": "o8",
+     "center": "c8"
+    },
+    {
+     "type": "circle",
+     "id": "o9",
+     "center": "c9"
+    },
+    {
+     "type": "circle",
+     "id": "o10",
+     "center": "c10"
+    },
+    {
+     "type": "circle",
+     "id": "o11",
+     "center": "c11"
+    },
+    {
+     "type": "circle",
+     "id": "o12",
+     "center": "c12"
+    },
+    {
+     "type": "circle",
+     "id": "o13",
+     "center": "c13"
+    },
+    {
+     "type": "circle",
+     "id": "o14",
+     "center": "c14"
+    },
+    {
+     "type": "circle",
+     "id": "o15",
+     "center": "c15"
+    },
+    {
+     "type": "circle",
+     "id": "o16",
+     "center": "c16"
+    },
+    {
+     "type": "circle",
+     "id": "o17",
+     "center": "c17"
+    },
+    {
+     "type": "circle",
+     "id": "o18",
+     "center": "c18"
+    },
+    {
+     "type": "circle",
+     "id": "o19",
+     "center": "c19"
+    },
+    {
+     "type": "circle",
+     "id": "o20",
+     "center": "c20"
+    },
+    {
+     "type": "circle",
+     "id": "o21",
+     "center": "c21"
+    },
+    {
+     "type": "circle",
+     "id": "o22",
+     "center": "c22"
+    },
+    {
+     "type": "circle",
+     "id": "o23",
+     "center": "c23"
+    },
+    {
+     "type": "circle",
+     "id": "o24",
+     "center": "c24"
+    },
+    {
+     "type": "circle",
+     "id": "o25",
+     "center": "c25"
+    },
+    {
+     "type": "circle",
+     "id": "o26",
+     "center": "c26"
+    },
+    {
+     "type": "circle",
+     "id": "o27",
+     "center": "c27"
+    },
+    {
+     "type": "circle",
+     "id": "o28",
+     "center": "c28"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "c1": [
+     0,
+     0
+    ],
+    "c2": [
+     -2.995212742559186,
+     -3.035758700132955
+    ],
+    "c3": [
+     -11.75,
+     -1.5
+    ],
+    "c4": [
+     -11,
+     4.25
+    ],
+    "c5": [
+     -9.5,
+     -7
+    ],
+    "c6": [
+     -4.75,
+     -10.75
+    ],
+    "c7": [
+     -3.5,
+     11.25
+    ],
+    "c8": [
+     4.25,
+     -0.75
+    ],
+    "c9": [
+     5.5,
+     5
+    ],
+    "c10": [
+     6.25,
+     -6.25
+    ],
+    "c11": [
+     9.75,
+     1
+    ],
+    "c12": [
+     2.25,
+     11.75
+    ],
+    "c13": [
+     0.75,
+     -11.75
+    ],
+    "c14": [
+     -5.5,
+     4
+    ],
+    "c15": [
+     11.25,
+     -4.25
+    ],
+    "c16": [
+     -8.25,
+     8.75
+    ],
+    "c17": [
+     7.25,
+     10
+    ],
+    "c18": [
+     10.5,
+     6.5
+    ],
+    "c19": [
+     -6.75,
+     -2.75
+    ],
+    "c20": [
+     -2.25,
+     -6.25
+    ],
+    "c21": [
+     5.75,
+     -11.25
+    ],
+    "c22": [
+     -1.25,
+     3.75
+    ],
+    "c23": [
+     10.25,
+     -8.25
+    ],
+    "c24": [
+     -8,
+     0.75
+    ],
+    "c25": [
+     13,
+     3.5
+    ],
+    "c26": [
+     13.5,
+     -0.75
+    ],
+    "c27": [
+     1.25,
+     5.25
+    ],
+    "c28": [
+     -5.5,
+     -6.5
+    ],
+    "o0": [
+     15,
+     0
+    ],
+    "o1": [
+     0.2,
+     0
+    ],
+    "o2": [
+     0.2,
+     0
+    ],
+    "o3": [
+     2.6,
+     0
+    ],
+    "o4": [
+     2.6,
+     0
+    ],
+    "o5": [
+     2.6,
+     0
+    ],
+    "o6": [
+     2.6,
+     0
+    ],
+    "o7": [
+     2.6,
+     0
+    ],
+    "o8": [
+     2.6,
+     0
+    ],
+    "o9": [
+     2.6,
+     0
+    ],
+    "o10": [
+     2.6,
+     0
+    ],
+    "o11": [
+     2.6,
+     0
+    ],
+    "o12": [
+     2.487,
+     0
+    ],
+    "o13": [
+     2.44,
+     0
+    ],
+    "o14": [
+     2.305,
+     0
+    ],
+    "o15": [
+     2.235,
+     0
+    ],
+    "o16": [
+     2.124,
+     0
+    ],
+    "o17": [
+     2.098,
+     0
+    ],
+    "o18": [
+     2.07,
+     0
+    ],
+    "o19": [
+     1.912,
+     0
+    ],
+    "o20": [
+     1.849,
+     0
+    ],
+    "o21": [
+     1.816,
+     0
+    ],
+    "o22": [
+     1.402,
+     0
+    ],
+    "o23": [
+     1.292,
+     0
+    ],
+    "o24": [
+     1.223,
+     0
+    ],
+    "o25": [
+     0.95,
+     0
+    ],
+    "o26": [
+     0.929,
+     0
+    ],
+    "o27": [
+     0.906,
+     0
+    ],
+    "o28": [
+     0.861,
+     0
+    ]
+   }
+  },
+  {
+   "id": "jewel-third-ring",
+   "name": "Jewel third ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     -3.64378868614517,
+     0.6424982573676421
+    ],
+    "c1": [
+     -3.64378868614517,
+     0.6424982573676421
+    ],
+    "o0": [
+     0.35,
+     0
+    ],
+    "o1": [
+     0.15,
+     0
+    ]
+   }
+  },
+  {
+   "id": "jewel-fourth-ring",
+   "name": "Jewel fourth ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     -2.995212742559186,
+     -3.035758700132955
+    ],
+    "c1": [
+     -2.995212742559186,
+     -3.035758700132955
+    ],
+    "o0": [
+     0.35,
+     0
+    ],
+    "o1": [
+     0.15,
+     0
+    ]
+   }
+  },
+  {
+   "id": "jewel-escape-ring",
+   "name": "Jewel escape ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0.42526839710152053,
+     -4.280712021838389
+    ],
+    "c1": [
+     0.42526839710152053,
+     -4.280712021838389
+    ],
+    "o0": [
+     0.35,
+     0
+    ],
+    "o1": [
+     0.15,
+     0
+    ]
+   }
+  },
+  {
+   "id": "jewel-pallet-ring",
+   "name": "Jewel pallet ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     1.7252683971015208,
+     -6.532378071677929
+    ],
+    "c1": [
+     1.7252683971015208,
+     -6.532378071677929
+    ],
+    "o0": [
+     0.35,
+     0
+    ],
+    "o1": [
+     0.15,
+     0
+    ]
+   }
+  },
+  {
+   "id": "jewel-balance-ring",
+   "name": "Jewel balance ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     2.725268397101521,
+     -8.264428879246807
+    ],
+    "c1": [
+     2.725268397101521,
+     -8.264428879246807
+    ],
+    "o0": [
+     0.35,
+     0
+    ],
+    "o1": [
+     0.15,
+     0
+    ]
+   }
+  },
+  {
+   "id": "jewel-barrel-ring",
+   "name": "Jewel barrel ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.8
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     -0.5883012635466931,
+     6.724314212119283
+    ],
+    "c1": [
+     -0.5883012635466931,
+     6.724314212119283
+    ],
+    "o0": [
+     0.35,
+     0
+    ],
+    "o1": [
+     0.15,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "plate-outline",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ],
+      [
+       "o2"
+      ],
+      [
+       "o3"
+      ],
+      [
+       "o4"
+      ],
+      [
+       "o5"
+      ],
+      [
+       "o6"
+      ],
+      [
+       "o7"
+      ],
+      [
+       "o8"
+      ],
+      [
+       "o9"
+      ],
+      [
+       "o10"
+      ],
+      [
+       "o11"
+      ],
+      [
+       "o12"
+      ],
+      [
+       "o13"
+      ],
+      [
+       "o14"
+      ],
+      [
+       "o15"
+      ],
+      [
+       "o16"
+      ],
+      [
+       "o17"
+      ],
+      [
+       "o18"
+      ],
+      [
+       "o19"
+      ],
+      [
+       "o20"
+      ],
+      [
+       "o21"
+      ],
+      [
+       "o22"
+      ],
+      [
+       "o23"
+      ],
+      [
+       "o24"
+      ],
+      [
+       "o25"
+      ],
+      [
+       "o26"
+      ],
+      [
+       "o27"
+      ],
+      [
+       "o28"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.8
+    },
+    "direction": 1
+   },
+   "id": "main-plate-extrude",
+   "name": "Main plate"
+  },
+  {
+   "id": "main-plate-placement",
+   "name": "Main plate placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "main-plate-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "main-plate-chamfer",
+   "name": "Anglage",
+   "type": "chamfer",
+   "inputFeatureIds": [
+    "main-plate-placement"
+   ],
+   "args": {
+    "edges": [
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o0"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        0,
+        0,
+        0.8
+       ],
+       "size": 94.24777960769379
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o1"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        0,
+        0,
+        0.8
+       ],
+       "size": 1.2566370614359172
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o2"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -2.995212742559186,
+        -3.035758700132955,
+        0.8
+       ],
+       "size": 1.2566370614359172
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o3"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -11.75,
+        -1.5,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o4"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -11,
+        4.25,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o5"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -9.5,
+        -7,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o6"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -4.75,
+        -10.75,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o7"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -3.5,
+        11.25,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o8"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        4.25,
+        -0.75,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o9"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        5.5,
+        5,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o10"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        6.25,
+        -6.25,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o11"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        9.75,
+        1,
+        0.8
+       ],
+       "size": 16.336281798666924
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o12"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        2.25,
+        11.75,
+        0.8
+       ],
+       "size": 15.62628185895563
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o13"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        0.75,
+        -11.75,
+        0.8
+       ],
+       "size": 15.33097214951819
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o14"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -5.5,
+        4,
+        0.8
+       ],
+       "size": 14.482742133048948
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o15"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        11.25,
+        -4.25,
+        0.8
+       ],
+       "size": 14.042919161546374
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o16"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -8.25,
+        8.75,
+        0.8
+       ],
+       "size": 13.345485592449442
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o17"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        7.25,
+        10,
+        0.8
+       ],
+       "size": 13.182122774462771
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o18"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        10.5,
+        6.5,
+        0.8
+       ],
+       "size": 13.006193585861743
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o19"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -6.75,
+        -2.75,
+        0.8
+       ],
+       "size": 12.013450307327368
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o20"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -2.25,
+        -6.25,
+        0.8
+       ],
+       "size": 11.617609632975055
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o21"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        5.75,
+        -11.25,
+        0.8
+       ],
+       "size": 11.41026451783813
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o22"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -1.25,
+        3.75,
+        0.8
+       ],
+       "size": 8.80902580066578
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o23"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        10.25,
+        -8.25,
+        0.8
+       ],
+       "size": 8.117875416876025
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o24"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -8,
+        0.75,
+        0.8
+       ],
+       "size": 7.684335630680635
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o25"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        13,
+        3.5,
+        0.8
+       ],
+       "size": 5.969026041820607
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o26"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        13.5,
+        -0.75,
+        0.8
+       ],
+       "size": 5.837079150369836
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o27"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        1.25,
+        5.25,
+        0.8
+       ],
+       "size": 5.6925658883047054
+      }
+     },
+     {
+      "kind": "edge",
+      "featureId": "main-plate-placement",
+      "name": [
+       [
+        "end"
+       ],
+       [
+        "side:e:o28"
+       ]
+      ],
+      "hint": {
+       "centroid": [
+        -5.5,
+        -6.5,
+        0.8
+       ],
+       "size": 5.409822549481624
+      }
+     }
+    ],
+    "distance": {
+     "literalMm": 0.08
+    }
+   }
+  },
+  {
+   "id": "main-plate-chamfer-placement",
+   "name": "Main plate placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "main-plate-chamfer"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "jewel-third-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.08
+    },
+    "direction": 1
+   },
+   "id": "jewel-third-extrude",
+   "name": "Jewel third"
+  },
+  {
+   "id": "jewel-third-placement",
+   "name": "Jewel third placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "jewel-third-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "jewel-fourth-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.08
+    },
+    "direction": 1
+   },
+   "id": "jewel-fourth-extrude",
+   "name": "Jewel fourth"
+  },
+  {
+   "id": "jewel-fourth-placement",
+   "name": "Jewel fourth placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "jewel-fourth-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "jewel-escape-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.08
+    },
+    "direction": 1
+   },
+   "id": "jewel-escape-extrude",
+   "name": "Jewel escape"
+  },
+  {
+   "id": "jewel-escape-placement",
+   "name": "Jewel escape placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "jewel-escape-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "jewel-pallet-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.08
+    },
+    "direction": 1
+   },
+   "id": "jewel-pallet-extrude",
+   "name": "Jewel pallet"
+  },
+  {
+   "id": "jewel-pallet-placement",
+   "name": "Jewel pallet placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "jewel-pallet-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "jewel-balance-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.08
+    },
+    "direction": 1
+   },
+   "id": "jewel-balance-extrude",
+   "name": "Jewel balance"
+  },
+  {
+   "id": "jewel-balance-placement",
+   "name": "Jewel balance placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "jewel-balance-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "jewel-barrel-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.08
+    },
+    "direction": 1
+   },
+   "id": "jewel-barrel-extrude",
+   "name": "Jewel barrel"
+  },
+  {
+   "id": "jewel-barrel-placement",
+   "name": "Jewel barrel placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "jewel-barrel-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-001",
+   "name": "地板",
+   "kind": "solid",
+   "resultFeatureId": "main-plate-chamfer-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#a9adb4",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.4
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-002",
+   "name": "三番受け石（地板）",
+   "kind": "solid",
+   "resultFeatureId": "jewel-third-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#b0123a",
+    "opacity": 1,
+    "metalness": 0,
+    "roughness": 0.05,
+    "transmission": 0.6,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  },
+  {
+   "id": "BD-003",
+   "name": "四番受け石（地板）",
+   "kind": "solid",
+   "resultFeatureId": "jewel-fourth-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#b0123a",
+    "opacity": 1,
+    "metalness": 0,
+    "roughness": 0.05,
+    "transmission": 0.6,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  },
+  {
+   "id": "BD-004",
+   "name": "がんぎ受け石（地板）",
+   "kind": "solid",
+   "resultFeatureId": "jewel-escape-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#b0123a",
+    "opacity": 1,
+    "metalness": 0,
+    "roughness": 0.05,
+    "transmission": 0.6,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  },
+  {
+   "id": "BD-005",
+   "name": "アンクル受け石（地板）",
+   "kind": "solid",
+   "resultFeatureId": "jewel-pallet-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#b0123a",
+    "opacity": 1,
+    "metalness": 0,
+    "roughness": 0.05,
+    "transmission": 0.6,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  },
+  {
+   "id": "BD-006",
+   "name": "てんぷ受け石（地板）",
+   "kind": "solid",
+   "resultFeatureId": "jewel-balance-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#b0123a",
+    "opacity": 1,
+    "metalness": 0,
+    "roughness": 0.05,
+    "transmission": 0.6,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  },
+  {
+   "id": "BD-007",
+   "name": "香箱受け石（地板）",
+   "kind": "solid",
+   "resultFeatureId": "jewel-barrel-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#b0123a",
+    "opacity": 1,
+    "metalness": 0,
+    "roughness": 0.05,
+    "transmission": 0.6,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

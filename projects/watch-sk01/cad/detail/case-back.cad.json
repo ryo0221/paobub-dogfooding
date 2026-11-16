@@ -1,0 +1,236 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [
+  {
+   "id": "case-back-ring",
+   "name": "Case back ring",
+   "plane": {
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 4.32
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "entities": [
+    {
+     "type": "point",
+     "id": "c0"
+    },
+    {
+     "type": "point",
+     "id": "c1"
+    },
+    {
+     "type": "circle",
+     "id": "o0",
+     "center": "c0"
+    },
+    {
+     "type": "circle",
+     "id": "o1",
+     "center": "c1"
+    }
+   ],
+   "constraints": [],
+   "solved": {
+    "c0": [
+     0,
+     0
+    ],
+    "c1": [
+     0,
+     0
+    ],
+    "o0": [
+     17.6,
+     0
+    ],
+    "o1": [
+     15.25,
+     0
+    ]
+   }
+  }
+ ],
+ "features": [
+  {
+   "type": "extrude",
+   "inputFeatureIds": [],
+   "args": {
+    "sketchId": "case-back-ring",
+    "region": {
+     "outer": [
+      "o0"
+     ],
+     "holes": [
+      [
+       "o1"
+      ]
+     ]
+    },
+    "distance": {
+     "literalMm": 0.6799999999999997
+    },
+    "direction": 1
+   },
+   "id": "case-back-extrude",
+   "name": "Case back"
+  },
+  {
+   "id": "case-back-placement",
+   "name": "Case back placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "case-back-extrude"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 15.2
+    },
+    "height": {
+     "literalMm": 0.34999999999999964
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 4.45
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "back-crystal-cylinder",
+   "name": "Back crystal"
+  },
+  {
+   "id": "back-crystal-placement",
+   "name": "Back crystal placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "back-crystal-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-077",
+   "name": "裏ぶた",
+   "kind": "solid",
+   "resultFeatureId": "case-back-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d7d9dd",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.18
+   },
+   "mass": {
+    "densityKgM3": 8000
+   }
+  },
+  {
+   "id": "BD-078",
+   "name": "裏ぶたのガラス",
+   "kind": "solid",
+   "resultFeatureId": "back-crystal-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#f4f8ff",
+    "opacity": 0.18,
+    "metalness": 0,
+    "roughness": 0.02,
+    "transmission": 1,
+    "ior": 1.77
+   },
+   "mass": {
+    "densityKgM3": 3980
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

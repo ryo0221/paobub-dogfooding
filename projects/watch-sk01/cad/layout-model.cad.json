@@ -1,0 +1,1009 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [
+  {
+   "id": "PR-01",
+   "name": "ケースの外径",
+   "type": "length",
+   "value": 35.2
+  },
+  {
+   "id": "PR-02",
+   "name": "ケースの厚み",
+   "type": "length",
+   "value": 7.5
+  },
+  {
+   "id": "PR-03",
+   "name": "ムーブメントの径",
+   "type": "length",
+   "value": 30
+  },
+  {
+   "id": "PR-04",
+   "name": "ムーブメントの高さ",
+   "type": "length",
+   "value": 4.1
+  },
+  {
+   "id": "PR-05",
+   "name": "ラグの内幅",
+   "type": "length",
+   "value": 16
+  },
+  {
+   "id": "PR-06",
+   "name": "風防の径",
+   "type": "length",
+   "value": 30.4
+  },
+  {
+   "id": "PR-07",
+   "name": "リューズの高さ",
+   "type": "length",
+   "value": 1.7
+  }
+ ],
+ "profiles": [],
+ "sketches": [],
+ "features": [
+  {
+   "id": "EN-001-f",
+   "name": "外装の空間（胴・ベゼル・裏ぶた）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "affine": {
+      "parameterId": "PR-01",
+      "scale": 0.5,
+      "offsetMm": 0
+     }
+    },
+    "height": {
+     "parameterId": "PR-02"
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -2.5
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-002-f",
+   "name": "ムーブメントの空間",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "affine": {
+      "parameterId": "PR-03",
+      "scale": 0.5,
+      "offsetMm": 0
+     }
+    },
+    "height": {
+     "parameterId": "PR-04"
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-003-f",
+   "name": "香箱（動力）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 6
+    },
+    "height": {
+     "literalMm": 0.6
+    },
+    "origin": [
+     {
+      "literalMm": -0.5883012635466931
+     },
+     {
+      "literalMm": 6.724314212119283
+     },
+     {
+      "literalMm": 0.9
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-004-f",
+   "name": "二番車（輪列）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 3.2
+    },
+    "height": {
+     "literalMm": 0.19999999999999996
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 1.7
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-005-f",
+   "name": "三番車（輪列）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 3.375
+    },
+    "height": {
+     "literalMm": 0.19999999999999973
+    },
+    "origin": [
+     {
+      "literalMm": -3.64378868614517
+     },
+     {
+      "literalMm": 0.6424982573676421
+     },
+     {
+      "literalMm": 2.2
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-006-f",
+   "name": "四番車（輪列）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 3.36
+    },
+    "height": {
+     "literalMm": 0.19999999999999973
+    },
+    "origin": [
+     {
+      "literalMm": -2.995212742559186
+     },
+     {
+      "literalMm": -3.035758700132955
+     },
+     {
+      "literalMm": 2.7
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-007-f",
+   "name": "がんぎ車（脱進機）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 1.95
+    },
+    "height": {
+     "literalMm": 0.19999999999999996
+    },
+    "origin": [
+     {
+      "literalMm": 0.42526839710152053
+     },
+     {
+      "literalMm": -4.280712021838389
+     },
+     {
+      "literalMm": 1
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-008-f",
+   "name": "てんぷの回る空間（調速機）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 4.05
+    },
+    "height": {
+     "literalMm": 0.2999999999999998
+    },
+    "origin": [
+     {
+      "literalMm": 2.725268397101521
+     },
+     {
+      "literalMm": -8.264428879246807
+     },
+     {
+      "literalMm": 3
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-009-f",
+   "name": "針の回る空間（表示）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 11
+    },
+    "height": {
+     "literalMm": 0.41000000000000014
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -1.55
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-010-f",
+   "name": "風防の見える範囲",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "affine": {
+      "parameterId": "PR-06",
+      "scale": 0.5,
+      "offsetMm": 0
+     }
+    },
+    "height": {
+     "literalMm": 0.3999999999999999
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": -2.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-011-f",
+   "name": "ラグとベルト（12時側）",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "affine": {
+       "parameterId": "PR-05",
+       "scale": 1,
+       "offsetMm": 5.6
+      }
+     },
+     {
+      "literalMm": 8.2
+     },
+     {
+      "literalMm": 3.2
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-05",
+       "scale": -0.5,
+       "offsetMm": -2.8
+      }
+     },
+     {
+      "literalMm": 13.4
+     },
+     {
+      "literalMm": -0.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-012-f",
+   "name": "ラグとベルト（6時側）",
+   "type": "box",
+   "inputFeatureIds": [],
+   "args": {
+    "size": [
+     {
+      "affine": {
+       "parameterId": "PR-05",
+       "scale": 1,
+       "offsetMm": 5.6
+      }
+     },
+     {
+      "literalMm": 8.2
+     },
+     {
+      "literalMm": 3.2
+     }
+    ],
+    "origin": [
+     {
+      "affine": {
+       "parameterId": "PR-05",
+       "scale": -0.5,
+       "offsetMm": -2.8
+      }
+     },
+     {
+      "literalMm": -21.6
+     },
+     {
+      "literalMm": -0.4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-013-f",
+   "name": "リューズと巻上げ（巻上げ機構）",
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 1.5
+    },
+    "height": {
+     "literalMm": 2.5
+    },
+    "origin": [
+     {
+      "literalMm": 17
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "parameterId": "PR-07"
+     }
+    ],
+    "orientation": [
+     0,
+     0.7071067811865476,
+     0,
+     0.7071067811865476
+    ]
+   }
+  },
+  {
+   "id": "EN-001-p",
+   "name": "外装の空間（胴・ベゼル・裏ぶた） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-001-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-002-p",
+   "name": "ムーブメントの空間 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-002-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-003-p",
+   "name": "香箱（動力） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-003-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-004-p",
+   "name": "二番車（輪列） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-004-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-005-p",
+   "name": "三番車（輪列） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-005-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-006-p",
+   "name": "四番車（輪列） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-006-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-007-p",
+   "name": "がんぎ車（脱進機） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-007-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-008-p",
+   "name": "てんぷの回る空間（調速機） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-008-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-009-p",
+   "name": "針の回る空間（表示） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-009-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-010-p",
+   "name": "風防の見える範囲 placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-010-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-011-p",
+   "name": "ラグとベルト（12時側） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-011-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-012-p",
+   "name": "ラグとベルト（6時側） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-012-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "EN-013-p",
+   "name": "リューズと巻上げ（巻上げ機構） placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "EN-013-f"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "EN-001",
+   "name": "外装の空間（胴・ベゼル・裏ぶた）",
+   "kind": "solid",
+   "resultFeatureId": "EN-001-p",
+   "state": "active",
+   "appearance": {
+    "color": "#8a8f98",
+    "opacity": 0.15
+   }
+  },
+  {
+   "id": "EN-002",
+   "name": "ムーブメントの空間",
+   "kind": "solid",
+   "resultFeatureId": "EN-002-p",
+   "state": "active",
+   "appearance": {
+    "color": "#c9a85c",
+    "opacity": 0.2
+   }
+  },
+  {
+   "id": "EN-003",
+   "name": "香箱（動力）",
+   "kind": "solid",
+   "resultFeatureId": "EN-003-p",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 0.35
+   }
+  },
+  {
+   "id": "EN-004",
+   "name": "二番車（輪列）",
+   "kind": "solid",
+   "resultFeatureId": "EN-004-p",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 0.35
+   }
+  },
+  {
+   "id": "EN-005",
+   "name": "三番車（輪列）",
+   "kind": "solid",
+   "resultFeatureId": "EN-005-p",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 0.35
+   }
+  },
+  {
+   "id": "EN-006",
+   "name": "四番車（輪列）",
+   "kind": "solid",
+   "resultFeatureId": "EN-006-p",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 0.35
+   }
+  },
+  {
+   "id": "EN-007",
+   "name": "がんぎ車（脱進機）",
+   "kind": "solid",
+   "resultFeatureId": "EN-007-p",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 0.35
+   }
+  },
+  {
+   "id": "EN-008",
+   "name": "てんぷの回る空間（調速機）",
+   "kind": "solid",
+   "resultFeatureId": "EN-008-p",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 0.35
+   }
+  },
+  {
+   "id": "EN-009",
+   "name": "針の回る空間（表示）",
+   "kind": "solid",
+   "resultFeatureId": "EN-009-p",
+   "state": "active",
+   "appearance": {
+    "color": "#24306e",
+    "opacity": 0.35
+   }
+  },
+  {
+   "id": "EN-010",
+   "name": "風防の見える範囲",
+   "kind": "solid",
+   "resultFeatureId": "EN-010-p",
+   "state": "active",
+   "appearance": {
+    "color": "#9fc3e0",
+    "opacity": 0.35
+   }
+  },
+  {
+   "id": "EN-011",
+   "name": "ラグとベルト（12時側）",
+   "kind": "solid",
+   "resultFeatureId": "EN-011-p",
+   "state": "active",
+   "appearance": {
+    "color": "#8a8f98",
+    "opacity": 0.5
+   }
+  },
+  {
+   "id": "EN-012",
+   "name": "ラグとベルト（6時側）",
+   "kind": "solid",
+   "resultFeatureId": "EN-012-p",
+   "state": "active",
+   "appearance": {
+    "color": "#8a8f98",
+    "opacity": 0.5
+   }
+  },
+  {
+   "id": "EN-013",
+   "name": "リューズと巻上げ（巻上げ機構）",
+   "kind": "solid",
+   "resultFeatureId": "EN-013-p",
+   "state": "active",
+   "appearance": {
+    "color": "#8a8f98",
+    "opacity": 0.35
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

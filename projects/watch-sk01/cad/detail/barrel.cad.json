@@ -1,0 +1,340 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [],
+ "features": [
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 5.6
+    },
+    "height": {
+     "literalMm": 0.6
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0.9
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-drum-cylinder",
+   "name": "Barrel drum"
+  },
+  {
+   "id": "barrel-drum-placement",
+   "name": "Barrel drum placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-drum-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "spurGear",
+   "inputFeatureIds": [],
+   "args": {
+    "module": {
+     "literalMm": 0.15
+    },
+    "teeth": {
+     "literal": 80
+    },
+    "profile": "cycloidal",
+    "matingTeeth": {
+     "literal": 10
+    },
+    "toothThickness": 0.5,
+    "addendum": 1.3,
+    "dedendum": 1.6,
+    "faceWidth": {
+     "literalMm": 0.30000000000000004
+    },
+    "bore": {
+     "literalMm": 0
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 1
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-gear-spurgear",
+   "name": "Barrel gear"
+  },
+  {
+   "id": "barrel-gear-placement",
+   "name": "Barrel gear placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-gear-spurgear"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 0.3
+    },
+    "height": {
+     "literalMm": 1.9
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 1.5
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-arbor-cylinder",
+   "name": "Barrel arbor"
+  },
+  {
+   "id": "barrel-arbor-placement",
+   "name": "Barrel arbor placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-arbor-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "cylinder",
+   "inputFeatureIds": [],
+   "args": {
+    "radius": {
+     "literalMm": 2.6
+    },
+    "height": {
+     "literalMm": 0.15
+    },
+    "origin": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 4
+     }
+    ],
+    "orientation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "id": "barrel-ratchet-cylinder",
+   "name": "Barrel ratchet"
+  },
+  {
+   "id": "barrel-ratchet-placement",
+   "name": "Barrel ratchet placement",
+   "type": "transform",
+   "inputFeatureIds": [
+    "barrel-ratchet-cylinder"
+   ],
+   "args": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   }
+  }
+ ],
+ "bodies": [
+  {
+   "id": "BD-026",
+   "name": "香箱のドラム",
+   "kind": "solid",
+   "resultFeatureId": "barrel-drum-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-027",
+   "name": "香箱の歯車",
+   "kind": "solid",
+   "resultFeatureId": "barrel-gear-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#d8b46a",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.3
+   },
+   "mass": {
+    "densityKgM3": 8500
+   }
+  },
+  {
+   "id": "BD-028",
+   "name": "香箱真",
+   "kind": "solid",
+   "resultFeatureId": "barrel-arbor-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  },
+  {
+   "id": "BD-029",
+   "name": "角穴車",
+   "kind": "solid",
+   "resultFeatureId": "barrel-ratchet-placement",
+   "state": "active",
+   "appearance": {
+    "color": "#c9ccd2",
+    "opacity": 1,
+    "metalness": 1,
+    "roughness": 0.25
+   },
+   "mass": {
+    "densityKgM3": 7900
+   }
+  }
+ ],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [],
+ "components": [],
+ "componentPatterns": [],
+ "joints": [],
+ "solvedPoses": {}
+}

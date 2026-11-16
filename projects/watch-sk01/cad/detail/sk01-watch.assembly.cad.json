@@ -1,0 +1,2013 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 0.000001,
+  "angularToleranceRad": 1e-9,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [],
+ "features": [],
+ "bodies": [],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [
+  {
+   "id": "part-plate",
+   "name": "Main plate",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/plate.cad.json",
+    "versionId": "p4",
+    "contentHash": "b83100185068aa2a3f4cedfb7afd0bf81be204be8bb815857ff978dc8c5d8973"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-train-bridge",
+   "name": "Train bridge",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/train-bridge.cad.json",
+    "versionId": "p4",
+    "contentHash": "42d3caa953c100fa446f7b62993ac1a5c246ac3574b2f9c6b9fd353355341000"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-barrel-bridge",
+   "name": "Barrel bridge",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/barrel-bridge.cad.json",
+    "versionId": "p4",
+    "contentHash": "20cc85e8a83edc93a93cb170aa93a7acd88884093e8491d019385bdee32a190d"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-balance-cock",
+   "name": "Balance cock",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/balance-cock.cad.json",
+    "versionId": "p4",
+    "contentHash": "b40c3222df9fcdb6bb366430c092731aa2fa3d01413e84f8a6d2bb7ff3c5c495"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-barrel",
+   "name": "Barrel",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/barrel.cad.json",
+    "versionId": "p4",
+    "contentHash": "88dd13db891029e0ec29c46a83adf8bf65401c0aadba8e956a873ecb2e83b43e"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-centre",
+   "name": "Centre wheel",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/centre.cad.json",
+    "versionId": "p4",
+    "contentHash": "4712a0bbfbdb27c83ca671875bbca8365dccbf52be66226ccd6555aa27958163"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-third",
+   "name": "Third wheel",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/third.cad.json",
+    "versionId": "p4",
+    "contentHash": "782c82310888368041443da9bdcdb6e2f05b387b2aa1791fe0b7503b8a3718b7"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-fourth",
+   "name": "Fourth wheel",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/fourth.cad.json",
+    "versionId": "p4",
+    "contentHash": "e339f09f6d227e6f3603d2aca85e823a05e3171c624ac901cfff43c727a6cfc6"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-escape",
+   "name": "Escape wheel",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/escape.cad.json",
+    "versionId": "p4",
+    "contentHash": "179887561dc27412648919144d568c54620028f88762370e3d527388b8afe8c4"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-pallet",
+   "name": "Pallet fork",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/pallet.cad.json",
+    "versionId": "p4",
+    "contentHash": "1d31948a25b1fe6c71fa1bdb5a89a7fba0cfa73760c6623c6ab32592875cc356"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-balance",
+   "name": "Balance",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/balance.cad.json",
+    "versionId": "p4",
+    "contentHash": "9893b0d1769d960b111b8ce2da791f7e8aaac4ed280cfd4bc9b004b9204d462e"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-minute",
+   "name": "Minute wheel",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/minute.cad.json",
+    "versionId": "p4",
+    "contentHash": "bc642af2596639fb0298dcb4480081ecc11dd2cb6044c5632e6cedc6daad3627"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-hour",
+   "name": "Hour wheel",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/hour.cad.json",
+    "versionId": "p4",
+    "contentHash": "fa789b97f0676cc5a989a160058ad1ac6e15d5c4d8705820c6573b17c04b0012"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -16,
+      -16,
+      -1.7
+     ],
+     [
+      16,
+      16,
+      4.3
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-case",
+   "name": "Case middle",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/case.cad.json",
+    "versionId": "p4",
+    "contentHash": "2d4788663f781f3c4004852f0dc1c6b7f1de2af18a9155de26814d71c72fb13e"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -20,
+      -22,
+      -2.6
+     ],
+     [
+      20,
+      22,
+      5.1
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-bezel",
+   "name": "Bezel",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/bezel.cad.json",
+    "versionId": "p4",
+    "contentHash": "36b2fa0d7629dfdbacd53b9171dc7fe20718e0ca03c513fa145f679b773ce3f4"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -20,
+      -22,
+      -2.6
+     ],
+     [
+      20,
+      22,
+      5.1
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-case-back",
+   "name": "Case back",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/case-back.cad.json",
+    "versionId": "p4",
+    "contentHash": "bb01b398d985cf2d28212cec1797c2440ea8cd2e7ee91dc98b16086603c3f469"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -20,
+      -22,
+      -2.6
+     ],
+     [
+      20,
+      22,
+      5.1
+     ]
+    ]
+   }
+  },
+  {
+   "id": "part-chapter-ring",
+   "name": "Chapter ring",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/detail/chapter-ring.cad.json",
+    "versionId": "p4",
+    "contentHash": "81fbb4e9fd13a984779af29ad22ee639171862a3b9a0f3d3b2cff29fbbe0b3e9"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -20,
+      -22,
+      -2.6
+     ],
+     [
+      20,
+      22,
+      5.1
+     ]
+    ]
+   }
+  }
+ ],
+ "components": [
+  {
+   "id": "c-plate",
+   "name": "Main plate",
+   "partId": "part-plate",
+   "placement": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "bom": "include"
+  },
+  {
+   "id": "c-train-bridge",
+   "name": "Train bridge",
+   "partId": "part-train-bridge",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-barrel-bridge",
+   "name": "Barrel bridge",
+   "partId": "part-barrel-bridge",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-balance-cock",
+   "name": "Balance cock",
+   "partId": "part-balance-cock",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-barrel",
+   "name": "Barrel",
+   "partId": "part-barrel",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-centre",
+   "name": "Centre wheel",
+   "partId": "part-centre",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-third",
+   "name": "Third wheel",
+   "partId": "part-third",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-fourth",
+   "name": "Fourth wheel",
+   "partId": "part-fourth",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-escape",
+   "name": "Escape wheel",
+   "partId": "part-escape",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-pallet",
+   "name": "Pallet fork",
+   "partId": "part-pallet",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-balance",
+   "name": "Balance",
+   "partId": "part-balance",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-minute",
+   "name": "Minute wheel",
+   "partId": "part-minute",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-hour",
+   "name": "Hour wheel",
+   "partId": "part-hour",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-case",
+   "name": "Case middle",
+   "partId": "part-case",
+   "placement": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "bom": "include"
+  },
+  {
+   "id": "c-bezel",
+   "name": "Bezel",
+   "partId": "part-bezel",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-case-back",
+   "name": "Case back",
+   "partId": "part-case-back",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-chapter-ring",
+   "name": "Chapter ring",
+   "partId": "part-chapter-ring",
+   "placement": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "bom": "include"
+  }
+ ],
+ "componentPatterns": [],
+ "joints": [
+  {
+   "id": "j-barrel",
+   "name": "Barrel",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": -0.5883012635466931
+      },
+      {
+       "literalMm": 6.724314212119283
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-barrel",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {},
+   "limits": [],
+   "continuous": true,
+   "couplings": [
+    {
+     "of": "angle",
+     "from": {
+      "joint": "j-centre",
+      "of": "angle"
+     },
+     "ratio": -0.125,
+     "offset": 0.01963495408493693
+    }
+   ]
+  },
+  {
+   "id": "j-centre",
+   "name": "Centre wheel",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-centre",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {},
+   "limits": [],
+   "continuous": true,
+   "couplings": [
+    {
+     "of": "angle",
+     "from": {
+      "joint": "j-third",
+      "of": "angle"
+     },
+     "ratio": -0.15625,
+     "offset": 0.0436332312998583
+    }
+   ]
+  },
+  {
+   "id": "j-third",
+   "name": "Third wheel",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": -3.64378868614517
+      },
+      {
+       "literalMm": 0.6424982573676421
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-third",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {},
+   "limits": [],
+   "continuous": true,
+   "couplings": [
+    {
+     "of": "angle",
+     "from": {
+      "joint": "j-fourth",
+      "of": "angle"
+     },
+     "ratio": -0.10666666666666667,
+     "offset": 0.004654211338652345
+    }
+   ]
+  },
+  {
+   "id": "j-fourth",
+   "name": "Fourth wheel",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": -2.995212742559186
+      },
+      {
+       "literalMm": -3.035758700132955
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-fourth",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {},
+   "limits": [],
+   "continuous": true,
+   "couplings": [
+    {
+     "of": "angle",
+     "from": {
+      "joint": "j-escape",
+      "of": "angle"
+     },
+     "ratio": -0.08333333333333333,
+     "offset": -0.004155545838081309
+    }
+   ]
+  },
+  {
+   "id": "j-escape",
+   "name": "Escape wheel",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0.42526839710152053
+      },
+      {
+       "literalMm": -4.280712021838389
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-escape",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [],
+   "continuous": true
+  },
+  {
+   "id": "j-pallet",
+   "name": "Pallet fork",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1.7252683971015208
+      },
+      {
+       "literalMm": -6.532378071677929
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-pallet",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.3490658503988659,
+     "max": 0.3490658503988659
+    }
+   ]
+  },
+  {
+   "id": "j-balance",
+   "name": "Balance",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 2.725268397101521
+      },
+      {
+       "literalMm": -8.264428879246807
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-balance",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [],
+   "continuous": true
+  },
+  {
+   "id": "j-minute",
+   "name": "Minute wheel",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1.2000000000000004
+      },
+      {
+       "literalMm": 2.078460969082653
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-minute",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {},
+   "limits": [],
+   "continuous": true,
+   "couplings": [
+    {
+     "of": "angle",
+     "from": {
+      "joint": "j-centre",
+      "of": "angle"
+     },
+     "ratio": -0.3333333333333333,
+     "offset": 0.08726646259971593
+    }
+   ]
+  },
+  {
+   "id": "j-hour",
+   "name": "Hour wheel",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-hour",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {},
+   "limits": [],
+   "continuous": true,
+   "couplings": [
+    {
+     "of": "angle",
+     "from": {
+      "joint": "j-minute",
+      "of": "angle"
+     },
+     "ratio": -0.25,
+     "offset": -0.026179938779915313
+    }
+   ]
+  },
+  {
+   "id": "j-lift-case-back",
+   "name": "Lift case back",
+   "type": "slider",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-case-back",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "distance": {
+     "literalMm": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "distance",
+     "min": 0,
+     "max": 14
+    }
+   ]
+  },
+  {
+   "id": "j-lift-balance-cock",
+   "name": "Lift balance cock",
+   "type": "slider",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-balance-cock",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "distance": {
+     "literalMm": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "distance",
+     "min": 0,
+     "max": 8
+    }
+   ]
+  },
+  {
+   "id": "j-lift-train-bridge",
+   "name": "Lift train bridge",
+   "type": "slider",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-train-bridge",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "distance": {
+     "literalMm": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "distance",
+     "min": 0,
+     "max": 6
+    }
+   ]
+  },
+  {
+   "id": "j-lift-barrel-bridge",
+   "name": "Lift barrel bridge",
+   "type": "slider",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-barrel-bridge",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "distance": {
+     "literalMm": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "distance",
+     "min": 0,
+     "max": 6
+    }
+   ]
+  },
+  {
+   "id": "j-lift-bezel",
+   "name": "Lift bezel",
+   "type": "slider",
+   "parent": {
+    "componentPath": [],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-bezel",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "distance": {
+     "literalMm": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "distance",
+     "min": -8,
+     "max": 0
+    }
+   ]
+  }
+ ],
+ "solvedPoses": {
+  "c-plate": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-case": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-chapter-ring": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-barrel": {
+   "translationMm": [
+    -0.5883012635466931,
+    6.724314212119283,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0.007140119392253466,
+    0.9999745090226372
+   ]
+  },
+  "c-centre": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0.02141673827602735,
+    0.9997706353567383
+   ]
+  },
+  "c-third": {
+   "translationMm": [
+    -3.64378868614517,
+    0.6424982573676421,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0.002548732021240409,
+    0.9999967519772671
+   ]
+  },
+  "c-fourth": {
+   "translationMm": [
+    -2.995212742559186,
+    -3.035758700132955,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    -0.0020777714240347756,
+    0.999997841430625
+   ]
+  },
+  "c-escape": {
+   "translationMm": [
+    0.42526839710152053,
+    -4.280712021838389,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-pallet": {
+   "translationMm": [
+    1.7252683971015208,
+    -6.532378071677929,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-balance": {
+   "translationMm": [
+    2.725268397101521,
+    -8.264428879246807,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-minute": {
+   "translationMm": [
+    1.2000000000000004,
+    2.078460969082653,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0.03648567285238907,
+    0.9993341761775731
+   ]
+  },
+  "c-hour": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    -0.022211585791501214,
+    0.9997532922959679
+   ]
+  },
+  "c-case-back": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-balance-cock": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-train-bridge": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-barrel-bridge": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-bezel": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  }
+ },
+ "gearMeshes": [
+  {
+   "id": "mesh-escape-fourth",
+   "name": "Escape → fourth",
+   "driver": {
+    "joint": "j-escape",
+    "feature": "escape-pinion-spurgear"
+   },
+   "driven": {
+    "joint": "j-fourth",
+    "feature": "fourth-wheel-spurgear"
+   }
+  },
+  {
+   "id": "mesh-fourth-third",
+   "name": "Fourth → third",
+   "driver": {
+    "joint": "j-fourth",
+    "feature": "fourth-pinion-spurgear"
+   },
+   "driven": {
+    "joint": "j-third",
+    "feature": "third-wheel-spurgear"
+   }
+  },
+  {
+   "id": "mesh-third-centre",
+   "name": "Third → centre",
+   "driver": {
+    "joint": "j-third",
+    "feature": "third-pinion-spurgear"
+   },
+   "driven": {
+    "joint": "j-centre",
+    "feature": "centre-wheel-spurgear"
+   }
+  },
+  {
+   "id": "mesh-centre-barrel",
+   "name": "Centre → barrel",
+   "driver": {
+    "joint": "j-centre",
+    "feature": "centre-pinion-spurgear"
+   },
+   "driven": {
+    "joint": "j-barrel",
+    "feature": "barrel-gear-spurgear"
+   }
+  },
+  {
+   "id": "mesh-cannon-minute",
+   "name": "Cannon → minute",
+   "driver": {
+    "joint": "j-centre",
+    "feature": "cannon-pinion-spurgear"
+   },
+   "driven": {
+    "joint": "j-minute",
+    "feature": "minute-wheel-spurgear"
+   }
+  },
+  {
+   "id": "mesh-minute-hour",
+   "name": "Minute → hour",
+   "driver": {
+    "joint": "j-minute",
+    "feature": "minute-pinion-spurgear"
+   },
+   "driven": {
+    "joint": "j-hour",
+    "feature": "hour-wheel-spurgear"
+   }
+  }
+ ],
+ "configurations": [
+  {
+   "id": "form-assembled",
+   "name": "組立",
+   "values": {
+    "j-escape": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-pallet": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-balance": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-lift-case-back": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-lift-balance-cock": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-lift-train-bridge": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-lift-barrel-bridge": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-lift-bezel": {
+     "distance": {
+      "literalMm": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "form-exploded",
+   "name": "分解",
+   "values": {
+    "j-escape": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-pallet": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-balance": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-lift-case-back": {
+     "distance": {
+      "literalMm": 14
+     }
+    },
+    "j-lift-balance-cock": {
+     "distance": {
+      "literalMm": 8
+     }
+    },
+    "j-lift-train-bridge": {
+     "distance": {
+      "literalMm": 6
+     }
+    },
+    "j-lift-barrel-bridge": {
+     "distance": {
+      "literalMm": 6
+     }
+    },
+    "j-lift-bezel": {
+     "distance": {
+      "literalMm": -8
+     }
+    }
+   }
+  }
+ ]
+}
