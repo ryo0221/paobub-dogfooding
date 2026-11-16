@@ -1,0 +1,13 @@
+{
+  "time": "2026-11-16T19:34:48.103809+00:00",
+  "commits": {
+    "paobub": "24799d0c4f926cb99b74456b23e58d82d09f5246",
+    "paobub-dogfooding": "622d988821f4ad2776a05b6bee08ceb3f0e471dc",
+    "open-editor-community": "c255f1b2ee039974d7a559636dfa7cee4bad5ac3",
+    "open-workflow-definitions": "0fd42e660ae062f6b31833f22b3035a353a521f7",
+    "editor-platform": "1f0ccf40d7c95b54e544d0df4b8209ab68a94872",
+    "open-editor-platform": "0ee0c711027b73e0112a544783793a3563808dd7"
+  },
+  "workflow": "software-product@1.7.0",
+  "status": "initial investigation; no approvals or publication"
+}
