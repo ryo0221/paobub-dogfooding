@@ -29,9 +29,10 @@ def still(out,name,crop=None,cap=None,full=False):
     im=Image.open(source(name)).convert('RGB')
     if crop: im=im.crop(crop)
     if full: c=canvas(); f=fit(im,W,H); c.paste(f,((W-f.width)//2,(H-f.height)//2)); save(c,out); return
-    c=canvas((230,233,237)); ch=70 if cap else 0; f=fit(im,W-120,H-120-ch); x=(W-f.width)//2; y=60+(H-120-ch-f.height)//2
+    # keep the bottom 220 px free for the subtitles
+    c=canvas((230,233,237)); ch=60 if cap else 0; f=fit(im,W-120,H-280-ch); x=(W-f.width)//2; y=60+(H-280-ch-f.height)//2
     shadow_paste(c,f,x,y)
-    if cap: label(c,W//2,y+f.height+50,cap,32,w=5)
+    if cap: label(c,W//2,y+f.height+42,cap,32,w=5)
     save(c,out)
 
 # Title
@@ -39,7 +40,7 @@ c=canvas((250,250,248))
 label(c,W//2,330,'工場を、流して確かめる',88,w=9)
 label(c,W//2,450,'架空の e-Axle の工場のデジタルツイン',50,w=5)
 label(c,W//2,540,'生産システム計画（production-system-planning 1.0.0）・物の流れの模擬',34,fill=SUB,w=4)
-label(c,W//2,880,NOTE,28,fill=SUB,w=4)
+label(c,W//2,700,NOTE,28,fill=SUB,w=4)
 save(c,'title')
 
 # Phases
@@ -81,19 +82,19 @@ s=pl['states']['assembly-2']
 bars(c,280,'最終組立の時間',[('働く',s['working'],(22,163,74)),('部品を待つ',s['waiting'],(148,163,184)),('人を待つ',s.get('unstaffed',0),(245,158,11)),('シフトの外',s['paused'],(168,85,247))])
 f=pl['fleet']['shares']
 bars(c,560,'AGV の時間',[('空で走る',f['empty'],(14,116,144)),('積んで走る',f['loaded'],(8,145,178)),('積み降ろし',f['handling'],(34,211,238)),('降ろせず待つ',f['blocked'],(220,38,38))])
-label(c,W//2,880,'降ろせず待つ：最終組立に同じ部品が先に届いていて、置けない',32,fill=SUB,w=5)
+label(c,W//2,800,'降ろせず待つ：最終組立に同じ部品が先に届いていて、置けない',32,fill=SUB,w=5)
 save(c,'planned-states')
 
 c=canvas(); label(c,W//2,130,'手計算：AGV 2 台の上限',56,w=9)
 for i,t in enumerate(['環の長さ 155.6 m ÷ 1 m/s ＋ 積み降ろし 30 秒 ＝ 1 回 186 秒','1 台に部品 2 つ（電動機とインバーター）','2 台 × 3,600 秒 ÷ 186 秒 ÷ 2 ＝ 19.4 台/時',f"降ろせず待つ {f['blocked']}% を引くと 19.4 × {1-f['blocked']/100:.3f} ＝ 13.8 台/時"]):
     label(c,W//2,330+i*120,t,44,w=7 if i==3 else 5,fill=ACC if i==3 else INK)
-label(c,W//2,880,'模型の 13.8 台/時と合う（妥当性の確認 VC-02）',36,fill=SUB,w=5)
+label(c,W//2,800,'模型の 13.8 台/時と合う（妥当性の確認 VC-02）',36,fill=SUB,w=5)
 save(c,'agv-calc')
 
 # Experiment chart: per hour vs AGVs, for 3 and 4 assemblers
 rows=list(csv.DictReader(open(f'{DATA}/experiment-table.csv')))
 c=canvas(); d=ImageDraw.Draw(c); label(c,W//2,110,'実験：AGV の台数と、1 時間の生産数（5 回の平均）',50,w=9)
-X0,X1,Y0,Y1=300,1700,880,220; ymax=40
+X0,X1,Y0,Y1=300,1700,780,280; ymax=40
 def px(a): return X0+(a-2)/6*(X1-X0)
 def py(v): return Y0-(v/ymax)*(Y0-Y1)
 for v in range(0,41,10):
@@ -105,7 +106,7 @@ for w,col in ((3,(245,158,11)),(4,ACC)):
     d.line(pts,fill=col,width=8)
     for x,y in pts: d.ellipse([x-12,y-12,x+12,y+12],fill=col)
     label(c,pts[-1][0]+30,pts[-1][1]-30,f'作業者 {w} 人',32,anchor='lm',fill=col,w=7)
-label(c,W//2,1000,'AGV 6 台・作業者 4 人で 34.2 台/時。それより AGV を増やしても変わらない',32,fill=SUB,w=5)
+label(c,W//2,185,'AGV 6 台・作業者 4 人で 34.2 台/時。それより AGV を増やしても変わらない',32,fill=SUB,w=5)
 save(c,'experiment-chart')
 
 ctl=R['control']
@@ -113,13 +114,13 @@ c=canvas(); label(c,W//2,130,'制御の確認：検査のコンベヤに PLC の
 for i,(t,a,col) in enumerate([('制御なし',f"2 日で {ctl['none']['produced']:,} 台",SUB),('正しいはしご',f"2 日で {ctl['ok']['produced']:,} 台（流れは同じ）",(22,163,74)),('わざと誤ったはしご','1 日目 6:09 にコンベヤが止まり、それを知らせる',(220,38,38))]):
     y=330+i*170; d=ImageDraw.Draw(c); d.rounded_rectangle([200,y-60,1720,y+60],18,fill=(255,255,255),outline=col,width=4)
     label(c,260,y,t,40,anchor='lm',fill=col,w=9); label(c,760,y,a,38,anchor='lm',w=5)
-label(c,W//2,880,'走査 100 ミリ秒・2 日。シフトの終わりを止まりと知らせる誤報は、道具の課題として記録',32,fill=SUB,w=5)
+label(c,W//2,800,'走査 100 ミリ秒・2 日。シフトの終わりを止まりと知らせる誤報は、道具の課題として記録',32,fill=SUB,w=5)
 save(c,'control')
 
 c=canvas((250,250,248))
 label(c,W//2,340,'要件から承認までの記録は PaoBub の Project に',56,w=9)
 label(c,W//2,450,'工程の定義 production-system-planning は open-workflow-definitions に',40,w=5)
 label(c,W//2,530,'模型と模擬：Editor Platform（工場・建物）',40,w=5)
-label(c,W//2,860,NOTE,28,fill=SUB,w=4)
+label(c,W//2,680,NOTE,28,fill=SUB,w=4)
 save(c,'end')
 print(sorted(os.listdir('img')))

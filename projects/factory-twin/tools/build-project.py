@@ -149,7 +149,8 @@ OK = {
     'VC-04': abs(R['agv20']['perHour'] - ad['perHour']) < 0.1,
     'VC-05': R['assemblers1']['produced'] == 0,
     'VC-06': ad['perHour'] < R['noFailures']['perHour'] <= 3600 / 64 * 17 / 24,
-    'VC-07': (max(lens) - min(lens)) / max(lens) < 0.01,
+    # a model that produces nothing fails the run-length check instead of dividing by zero
+    'VC-07': max(lens) > 0 and (max(lens) - min(lens)) / max(lens) < 0.01,
     'VC-08': len(R['hallIssues']) == 0,
     'VC-09': browser == ad['produced'],
 }
