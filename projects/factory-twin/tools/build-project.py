@@ -181,18 +181,24 @@ for i, row in enumerate(EXP):
 add('experiment-record', 'SC-09', '採用案で加工機を 2 台に', [RS['machining'], 'DS-01'], change='採用案の加工セルを 3 台から 2 台に', result=f"{R['machines2']['perHour']} 台/時")
 add('experiment-record', 'SC-10', '採用案で洗浄後の棚を 2 個に', [RS['buffer-wash']], change='採用案の洗浄後の棚を 6 個から 2 個に', result=f"{R['buffer2']['perHour']} 台/時")
 S = lambda a, w: SC[(a, w)]
+# Requirements RQ-01 (30/h), RQ-02 (takt 85 s over 17 working hours) and RQ-03 (mean lead time 45 min), checked on a run.
+def unmet(r):
+    takt = 17 * 3600 / (r['perHour'] * 24) if r['perHour'] else float('inf')
+    return [k for k, ok in (('RQ-01', r['perHour'] >= 30), ('RQ-02', takt <= 85), ('RQ-03', r['leadMeanMin'] <= 45)) if not ok]
+miss_pl, miss_ad = unmet(pl), unmet(ad)
+def gap(r, miss): return '、'.join(miss) + ' に届かない' if miss else 'RQ-01〜RQ-03 を満たす'
 FD = [
-    ('FD-001', '計画案は量が足りない', [S(2, 3), 'RQ-01', 'RQ-02'], '生産数', f"計画案は {pl['perHour']} 台/時（8 日で {comma(pl['produced'])} 台）。RQ-01 の 30 台/時に届かない。", f"{pl['perHour']} 台/時"),
+    ('FD-001', '計画案は量が足りない' if {'RQ-01', 'RQ-02'} & set(miss_pl) else '計画案は量を満たす', [S(2, 3), 'RQ-01', 'RQ-02'], '生産数', f"計画案は {pl['perHour']} 台/時（8 日で {comma(pl['produced'])} 台）。{gap(pl, [m for m in miss_pl if m != 'RQ-03'])}。", f"{pl['perHour']} 台/時"),
     ('FD-002', '計画案の律速は AGV', [S(2, 3), RS['agv'], RS['assembly-2']], 'ボトルネック',
      f"最終組立は {pl['states']['assembly-2']['waiting']}% が部品待ち。AGV は 2 台とも止まらずに走り、{blocked}% は最終組立に同じ部品が先に届いていて降ろせずに待つ。部品の呼び出しから着くまで平均 {pl['fleet']['callWaitS']} 秒。", f'AGV の塞がれ {blocked}%'),
     ('FD-003', 'ボトルネックの順位が搬送車を数えない（道具）', [S(2, 3), RS['agv'], RS['test']], '道具',
      f"計画案で Editor Platform のボトルネックの順位は 1 位が最終の検査台（{pl['bottlenecks'][0]['share']}%）。順位は設備だけを比べ、AGV と作業者を数えないので、律速の AGV が出てこない。", '検査台 1 位'),
-    ('FD-004', '計画案は仕掛りが多くリードタイムが長い', [S(2, 3), 'RQ-03'], 'リードタイム', f"平均 {pl['leadMeanMin']:.0f} 分（95% 点 {pl['leadP95Min']:.0f} 分）、仕掛り平均 {pl['wipMean']:.0f}。RQ-03 の 45 分に届かない。", f"{pl['leadMeanMin']:.0f} 分"),
+    ('FD-004', '計画案は仕掛りが多くリードタイムが長い', [S(2, 3), 'RQ-03'], 'リードタイム', f"平均 {pl['leadMeanMin']:.0f} 分（95% 点 {pl['leadP95Min']:.0f} 分）、仕掛り平均 {pl['wipMean']:.0f}。RQ-03 の 45 分に{'届かない' if 'RQ-03' in miss_pl else '収まる'}。", f"{pl['leadMeanMin']:.0f} 分"),
     ('FD-005', 'AGV は 6 台で飽和', [S(2, 4), S(4, 4), S(6, 4), S(8, 4), RS['agv']], '比べ', 'AGV 2 台・4 台・6 台・8 台（作業者 4 人）で 13.8・27.4・34.2・34.2 台/時（各 5 回の平均）。6 台より増やしても変わらない。', '6 台'),
     ('FD-006', '組立の作業者 3 人では 23 台/時で頭打ち', [S(4, 3), S(6, 3), S(8, 3), RS['assemblers'], 'RQ-05'], '比べ',
      f"3 人では AGV を増やしても 23.2〜23.3 台/時。作業者は {R['agv6a3']['workers'][0]['busy']}% が手いっぱいで、減速機の組付けは {R['agv6a3']['states']['assembly-1']['unstaffed']}% が人待ち。", '23.3 台/時'),
-    ('FD-007', '採用案は要件を満たす', [S(6, 4), 'RQ-01', 'RQ-02', 'RQ-03', 'RQ-05'], '生産数',
-     f"{ad['perHour']} 台/時（1 日 {ad['perHour']*24:.0f} 台、タクト {17*3600/(ad['perHour']*24):.0f} 秒）、リードタイム平均 {ad['leadMeanMin']:.0f} 分、仕掛り {ad['wipMean']:.0f}。作業者 4 人の働く割合 {ad['workers'][0]['busy']}%。", f"{ad['perHour']} 台/時"),
+    ('FD-007', '採用案は要件を満たす' if not miss_ad else '採用案も要件に届かない', [S(6, 4), 'RQ-01', 'RQ-02', 'RQ-03', 'RQ-05'], '生産数',
+     f"{ad['perHour']} 台/時（1 日 {ad['perHour']*24:.0f} 台、タクト {17*3600/(ad['perHour']*24):.0f} 秒）、リードタイム平均 {ad['leadMeanMin']:.0f} 分、仕掛り {ad['wipMean']:.0f}。作業者 4 人の働く割合 {ad['workers'][0]['busy']}%。{gap(ad, miss_ad)}。", f"{ad['perHour']} 台/時"),
     ('FD-008', '採用案の次の律速は検査台と最終組立', [S(6, 4), RS['test'], RS['assembly-2']], 'ボトルネック',
      f"検査台 {ad['bottlenecks'][0]['share']}%・最終組立 {ad['bottlenecks'][1]['share']}%。検査員の働く割合 {ad['workers'][1]['busy']}%。90 日流しても {R['adopted90']['perHour']} 台/時で変わらない。", '検査台'),
     ('FD-009', '加工機は減らせない', ['SC-09', RS['machining'], 'RQ-01'], '比べ', f"加工機 2 台では {R['machines2']['perHour']} 台/時で、加工セルが律速（{R['machines2']['bottlenecks'][0]['share']}%）。", f"{R['machines2']['perHour']} 台/時"),
@@ -232,8 +238,9 @@ for id, name, kind, cond, exp, act, res, on in CC:
 
 # Decisions (Markdown) and scenes
 DC = [
-    ('DC-01', f'AGV 6 台・組立の作業者 4 人の案（{S(6, 4)}）を採る', [S(6, 4), 'FD-001', 'FD-002', 'FD-004', 'FD-005', 'FD-006', 'FD-007'],
-     '採る', 'RQ-01〜RQ-03 を満たす一番小さな組み合わせ。AGV は 6 台で飽和し（FD-005）、3 人では頭打ち（FD-006）。', '検査員の働く割合が 93% で、検査の時間が延びると量が落ちる（FD-008）。'),
+    ('DC-01', f'AGV 6 台・組立の作業者 4 人の案（{S(6, 4)}）を採る' if not miss_ad else f'AGV 6 台・組立の作業者 4 人の案（{S(6, 4)}）は採らず、案を探し直す', [S(6, 4), 'FD-001', 'FD-002', 'FD-004', 'FD-005', 'FD-006', 'FD-007'],
+     '採る' if not miss_ad else '持ち越した',
+     'RQ-01〜RQ-03 を満たす一番小さな組み合わせ。AGV は 6 台で飽和し（FD-005）、3 人では頭打ち（FD-006）。' if not miss_ad else '、'.join(miss_ad) + ' に届かない（FD-007）。', '検査員の働く割合が 93% で、検査の時間が延びると量が落ちる（FD-008）。'),
     ('DC-02', '加工機は 3 台のまま', ['SC-09', 'FD-009'], '受け入れた', '2 台では 30 台/時に届かない。', 'なし'),
     ('DC-03', '洗浄後の棚は 6 個のまま', ['SC-10', 'FD-010'], '受け入れた', '量とリードタイムは 2 個でも変わらないが、加工セルの故障（平均 3 時間ごと）の間の余裕として残す。', '置き場の広さ（3 × 1.6 m）'),
     ('DC-04', '検査台の 2 台目は次の版で比べる', ['FD-008'], '持ち越した', '採用案は要件を満たす。次に量を増やすときの律速は検査台と最終組立。', '検査の時間が延びると 30 台/時を下回る'),
