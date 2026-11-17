@@ -1,0 +1,487 @@
+{
+ "schemaVersion": 1,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "project": {
+  "name": "Minato e-Drive Plant No. 2",
+  "trueNorthRad": 0,
+  "siteElevationMm": 0
+ },
+ "levels": [
+  {
+   "id": "l-1f",
+   "name": "1F",
+   "elevationMm": 0
+  },
+  {
+   "id": "l-rf",
+   "name": "RF",
+   "elevationMm": 8000
+  }
+ ],
+ "grids": [],
+ "materials": [
+  {
+   "id": "m-concrete",
+   "name": "Concrete",
+   "category": "concrete"
+  },
+  {
+   "id": "m-finish",
+   "name": "Plaster",
+   "category": "finish"
+  },
+  {
+   "id": "m-steel",
+   "name": "Steel",
+   "category": "metal"
+  }
+ ],
+ "types": [
+  {
+   "id": "t-wall-200",
+   "kind": "wall",
+   "name": "RC 180 + plaster 20",
+   "layers": [
+    {
+     "materialId": "m-concrete",
+     "thicknessMm": 180
+    },
+    {
+     "materialId": "m-finish",
+     "thicknessMm": 20
+    }
+   ],
+   "common": {
+    "isExternal": true,
+    "loadBearing": true
+   }
+  },
+  {
+   "id": "t-slab-200",
+   "kind": "slab",
+   "name": "RC slab 200",
+   "layers": [
+    {
+     "materialId": "m-concrete",
+     "thicknessMm": 200
+    }
+   ]
+  },
+  {
+   "id": "t-roof-200",
+   "kind": "roof",
+   "name": "RC roof 200",
+   "layers": [
+    {
+     "materialId": "m-concrete",
+     "thicknessMm": 200
+    }
+   ]
+  },
+  {
+   "id": "t-column-600",
+   "kind": "column",
+   "name": "RC column 600",
+   "profile": {
+    "shape": "rect",
+    "widthMm": 600,
+    "depthMm": 600
+   },
+   "materialId": "m-concrete"
+  },
+  {
+   "id": "t-beam-400x700",
+   "kind": "beam",
+   "name": "RC beam 400×700",
+   "profile": {
+    "shape": "rect",
+    "widthMm": 400,
+    "depthMm": 700
+   },
+   "materialId": "m-concrete"
+  },
+  {
+   "id": "t-door-900",
+   "kind": "door",
+   "name": "Door 900",
+   "widthMm": 900,
+   "heightMm": 2100
+  },
+  {
+   "id": "t-window-1800",
+   "kind": "window",
+   "name": "Window 1800",
+   "widthMm": 1800,
+   "heightMm": 1500
+  },
+  {
+   "id": "t-dock-4000",
+   "kind": "door",
+   "name": "Dock door 4000",
+   "widthMm": 4000,
+   "heightMm": 4500
+  },
+  {
+   "id": "t-door-1000",
+   "kind": "door",
+   "name": "Door 1000",
+   "widthMm": 1000,
+   "heightMm": 2100
+  }
+ ],
+ "elements": [
+  {
+   "id": "w-south",
+   "kind": "wall",
+   "typeId": "t-wall-200",
+   "start": {
+    "xy": [
+     0,
+     0
+    ]
+   },
+   "end": {
+    "xy": [
+     72000,
+     0
+    ]
+   },
+   "location": "center",
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "w-east",
+   "kind": "wall",
+   "typeId": "t-wall-200",
+   "start": {
+    "xy": [
+     72000,
+     0
+    ]
+   },
+   "end": {
+    "xy": [
+     72000,
+     36000
+    ]
+   },
+   "location": "center",
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "w-north",
+   "kind": "wall",
+   "typeId": "t-wall-200",
+   "start": {
+    "xy": [
+     72000,
+     36000
+    ]
+   },
+   "end": {
+    "xy": [
+     0,
+     36000
+    ]
+   },
+   "location": "center",
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "w-west",
+   "kind": "wall",
+   "typeId": "t-wall-200",
+   "start": {
+    "xy": [
+     0,
+     36000
+    ]
+   },
+   "end": {
+    "xy": [
+     0,
+     0
+    ]
+   },
+   "location": "center",
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-12-12",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     12000,
+     12000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-12-24",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     12000,
+     24000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-24-12",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     24000,
+     12000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-24-24",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     24000,
+     24000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-36-12",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     36000,
+     12000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-36-24",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     36000,
+     24000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-48-12",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     48000,
+     12000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-48-24",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     48000,
+     24000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-60-12",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     60000,
+     12000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "c-60-24",
+   "kind": "column",
+   "typeId": "t-column-600",
+   "at": {
+    "xy": [
+     60000,
+     24000
+    ]
+   },
+   "rotationRad": 0,
+   "base": {
+    "level": "l-1f",
+    "offsetMm": 0
+   },
+   "top": {
+    "level": "l-rf",
+    "offsetMm": 0
+   }
+  },
+  {
+   "id": "d-receiving",
+   "kind": "door",
+   "typeId": "t-dock-4000",
+   "hostId": "w-south",
+   "alongMm": 4000,
+   "flipFacing": false,
+   "flipHand": false
+  },
+  {
+   "id": "d-shipping",
+   "kind": "door",
+   "typeId": "t-dock-4000",
+   "hostId": "w-north",
+   "alongMm": 6000,
+   "flipFacing": false,
+   "flipHand": false
+  },
+  {
+   "id": "d-kitting",
+   "kind": "door",
+   "typeId": "t-dock-4000",
+   "hostId": "w-north",
+   "alongMm": 56000,
+   "flipFacing": false,
+   "flipHand": false
+  },
+  {
+   "id": "d-staff-s",
+   "kind": "door",
+   "typeId": "t-door-1000",
+   "hostId": "w-south",
+   "alongMm": 40000,
+   "flipFacing": false,
+   "flipHand": false
+  },
+  {
+   "id": "d-staff-e",
+   "kind": "door",
+   "typeId": "t-door-1000",
+   "hostId": "w-east",
+   "alongMm": 18000,
+   "flipFacing": false,
+   "flipHand": false
+  }
+ ],
+ "joins": [],
+ "views": [],
+ "propertySets": []
+}

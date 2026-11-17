@@ -1,0 +1,261 @@
+{
+ "note": "実験の条件：計画案のモデルに、AGV 2・4・6・8 台 × 組立の作業者 3・4 人の 8 通り、5 回ずつ（種 1〜5）、慣らし 1 日・8 日。Playground の Worker で 40 回が 13.5 秒。 SC-09・SC-10 は採用案の 8 日を 1 回（種 1）。映像：紹介の動画（tools/video/）と 3 日目 10:00〜10:30 の再生（60 倍）。",
+ "scenario": [
+  {
+   "id": "SC-01",
+   "name": "AGV 2 台・組立の作業者 3 人（計画案）",
+   "change": "AGV 2 台、組立の作業者 3 人（ほかは計画案のまま）",
+   "result": "13.8 台/時（95% 区間 13.8〜13.8）、リードタイム 172 分、仕掛り 78"
+  },
+  {
+   "id": "SC-02",
+   "name": "AGV 2 台・組立の作業者 4 人",
+   "change": "AGV 2 台、組立の作業者 4 人（ほかは計画案のまま）",
+   "result": "13.8 台/時（95% 区間 13.8〜13.8）、リードタイム 172 分、仕掛り 78"
+  },
+  {
+   "id": "SC-03",
+   "name": "AGV 4 台・組立の作業者 3 人",
+   "change": "AGV 4 台、組立の作業者 3 人（ほかは計画案のまま）",
+   "result": "23.2 台/時（95% 区間 23.2〜23.3）、リードタイム 107 分、仕掛り 83"
+  },
+  {
+   "id": "SC-04",
+   "name": "AGV 4 台・組立の作業者 4 人",
+   "change": "AGV 4 台、組立の作業者 4 人（ほかは計画案のまま）",
+   "result": "27.4 台/時（95% 区間 27.4〜27.5）、リードタイム 87 分、仕掛り 81"
+  },
+  {
+   "id": "SC-05",
+   "name": "AGV 6 台・組立の作業者 3 人",
+   "change": "AGV 6 台、組立の作業者 3 人（ほかは計画案のまま）",
+   "result": "23.3 台/時（95% 区間 23.2〜23.3）、リードタイム 108 分、仕掛り 86"
+  },
+  {
+   "id": "SC-06",
+   "name": "AGV 6 台・組立の作業者 4 人（採用案）",
+   "change": "AGV 6 台、組立の作業者 4 人（ほかは計画案のまま）",
+   "result": "34.2 台/時（95% 区間 33.7〜34.6）、リードタイム 23 分、仕掛り 56"
+  },
+  {
+   "id": "SC-07",
+   "name": "AGV 8 台・組立の作業者 3 人",
+   "change": "AGV 8 台、組立の作業者 3 人（ほかは計画案のまま）",
+   "result": "23.3 台/時（95% 区間 23.2〜23.3）、リードタイム 108 分、仕掛り 88"
+  },
+  {
+   "id": "SC-08",
+   "name": "AGV 8 台・組立の作業者 4 人",
+   "change": "AGV 8 台、組立の作業者 4 人（ほかは計画案のまま）",
+   "result": "34.2 台/時（95% 区間 33.7〜34.6）、リードタイム 23 分、仕掛り 58"
+  },
+  {
+   "id": "SC-09",
+   "name": "採用案で加工機を 2 台に",
+   "change": "採用案の加工セルを 3 台から 2 台に",
+   "result": "23.9 台/時"
+  },
+  {
+   "id": "SC-10",
+   "name": "採用案で洗浄後の棚を 2 個に",
+   "change": "採用案の洗浄後の棚を 6 個から 2 個に",
+   "result": "34.38 台/時"
+  }
+ ],
+ "finding": [
+  {
+   "id": "FD-001",
+   "name": "計画案は量が足りない",
+   "scenario": "SC-01",
+   "kind": "生産数",
+   "text": "計画案は 13.75 台/時（8 日で 2,640 台）。RQ-01 の 30 台/時に届かない。",
+   "value": "13.75 台/時"
+  },
+  {
+   "id": "FD-002",
+   "name": "計画案の律速は AGV",
+   "scenario": "SC-01",
+   "kind": "ボトルネック",
+   "text": "最終組立は 41.2% が部品待ち。AGV は 2 台とも止まらずに走り、29.1% は最終組立に同じ部品が先に届いていて降ろせずに待つ。部品の呼び出しから着くまで平均 3141 秒。",
+   "value": "AGV の塞がれ 29.1%"
+  },
+  {
+   "id": "FD-003",
+   "name": "ボトルネックの順位が搬送車を数えない（道具）",
+   "scenario": "SC-01",
+   "kind": "道具",
+   "text": "計画案で Editor Platform のボトルネックの順位は 1 位が最終の検査台（25.4%）。順位は設備だけを比べ、AGV と作業者を数えないので、律速の AGV が出てこない。",
+   "value": "検査台 1 位"
+  },
+  {
+   "id": "FD-004",
+   "name": "計画案は仕掛りが多くリードタイムが長い",
+   "scenario": "SC-01",
+   "kind": "リードタイム",
+   "text": "平均 172 分（95% 点 541 分）、仕掛り平均 78。RQ-03 の 45 分に届かない。",
+   "value": "172 分"
+  },
+  {
+   "id": "FD-005",
+   "name": "AGV は 6 台で飽和",
+   "scenario": "SC-02, SC-04, SC-06, SC-08",
+   "kind": "比べ",
+   "text": "AGV 2 台・4 台・6 台・8 台（作業者 4 人）で 13.8・27.4・34.2・34.2 台/時（各 5 回の平均）。6 台より増やしても変わらない。",
+   "value": "6 台"
+  },
+  {
+   "id": "FD-006",
+   "name": "組立の作業者 3 人では 23 台/時で頭打ち",
+   "scenario": "SC-03, SC-05, SC-07",
+   "kind": "比べ",
+   "text": "3 人では AGV を増やしても 23.2〜23.3 台/時。作業者は 90.8% が手いっぱいで、減速機の組付けは 30% が人待ち。",
+   "value": "23.3 台/時"
+  },
+  {
+   "id": "FD-007",
+   "name": "採用案は要件を満たす",
+   "scenario": "SC-06",
+   "kind": "生産数",
+   "text": "34.38 台/時（1 日 825 台、タクト 74 秒）、リードタイム平均 30 分、仕掛り 60。作業者 4 人の働く割合 82.2%。",
+   "value": "34.38 台/時"
+  },
+  {
+   "id": "FD-008",
+   "name": "採用案の次の律速は検査台と最終組立",
+   "scenario": "SC-06",
+   "kind": "ボトルネック",
+   "text": "検査台 34%・最終組立 33.9%。検査員の働く割合 92.9%。90 日流しても 34.4 台/時で変わらない。",
+   "value": "検査台"
+  },
+  {
+   "id": "FD-009",
+   "name": "加工機は減らせない",
+   "scenario": "SC-09",
+   "kind": "比べ",
+   "text": "加工機 2 台では 23.9 台/時で、加工セルが律速（68.6%）。",
+   "value": "23.9 台/時"
+  },
+  {
+   "id": "FD-010",
+   "name": "洗浄後の棚は小さくできる",
+   "scenario": "SC-10",
+   "kind": "比べ",
+   "text": "棚 2 個でも 34.38 台/時、リードタイム 28 分。6 個は加工セルの故障の間の余裕。",
+   "value": "差なし"
+  },
+  {
+   "id": "FD-011",
+   "name": "1 年を一度に流せない（道具）",
+   "scenario": "SC-06",
+   "kind": "道具",
+   "text": "採用案は 1 日に約 76 千の事象。1 年（365 日）は事象の上限 1,000 万を超えて止まる。90 日（6.2 百万の事象）は node で 5.4 秒、Playground で 6.9 秒。",
+   "value": "90 日まで"
+  },
+  {
+   "id": "FD-012",
+   "name": "作業者が足りない設備を知らせない（道具）",
+   "scenario": "SC-06",
+   "kind": "道具",
+   "text": "組立の作業者を 1 人にすると、2 人要る最終組立は始まらず、生産 0 台のまま流れ終わる。モデルの検査は何も言わない。",
+   "value": "0 台"
+  },
+  {
+   "id": "FD-013",
+   "name": "3D が建屋の全体を枠に入れ、設備が小さい（道具）",
+   "scenario": "SC-06",
+   "kind": "道具",
+   "text": "3D の再生は建屋の全体を枠に入れる。72 m の建屋では人と AGV が小さく、映像はホイールで寄って撮った。",
+   "value": "寄って撮る"
+  },
+  {
+   "id": "FD-014",
+   "name": "PLC の走査の上限が 8 日に届かない（道具）",
+   "scenario": "SC-06",
+   "kind": "道具",
+   "text": "走査 100 ミリ秒では 2 日で 1,728,001 回。8 日（慣らし込み 9 日）は上限 500 万を超えるので、制御の確認は 2 日で流した。",
+   "value": "2 日まで"
+  }
+ ],
+ "表": [
+  {
+   "fleet-count:agv": "2",
+   "pool-count:assemblers": "3",
+   "throughputPerHour_mean": "13.75",
+   "throughputPerHour_ci95_low": "13.75",
+   "throughputPerHour_ci95_high": "13.75",
+   "leadTimeMeanMs_mean": "10311670.88197",
+   "wipMean_mean": "78.343861",
+   "bottleneck": "test"
+  },
+  {
+   "fleet-count:agv": "2",
+   "pool-count:assemblers": "4",
+   "throughputPerHour_mean": "13.75",
+   "throughputPerHour_ci95_low": "13.75",
+   "throughputPerHour_ci95_high": "13.75",
+   "leadTimeMeanMs_mean": "10336412.031136",
+   "wipMean_mean": "78.263938",
+   "bottleneck": "test"
+  },
+  {
+   "fleet-count:agv": "4",
+   "pool-count:assemblers": "3",
+   "throughputPerHour_mean": "23.238542",
+   "throughputPerHour_ci95_low": "23.200453",
+   "throughputPerHour_ci95_high": "23.276631",
+   "leadTimeMeanMs_mean": "6428773.25157",
+   "wipMean_mean": "83.458131",
+   "bottleneck": "assembly-1"
+  },
+  {
+   "fleet-count:agv": "4",
+   "pool-count:assemblers": "4",
+   "throughputPerHour_mean": "27.427083",
+   "throughputPerHour_ci95_low": "27.381134",
+   "throughputPerHour_ci95_high": "27.473033",
+   "leadTimeMeanMs_mean": "5225364.606784",
+   "wipMean_mean": "80.684769",
+   "bottleneck": "assembly-2"
+  },
+  {
+   "fleet-count:agv": "6",
+   "pool-count:assemblers": "3",
+   "throughputPerHour_mean": "23.29375",
+   "throughputPerHour_ci95_low": "23.244805",
+   "throughputPerHour_ci95_high": "23.342695",
+   "leadTimeMeanMs_mean": "6497539.087131",
+   "wipMean_mean": "85.973142",
+   "bottleneck": "assembly-1"
+  },
+  {
+   "fleet-count:agv": "6",
+   "pool-count:assemblers": "4",
+   "throughputPerHour_mean": "34.166667",
+   "throughputPerHour_ci95_low": "33.746081",
+   "throughputPerHour_ci95_high": "34.587253",
+   "leadTimeMeanMs_mean": "1364305.020061",
+   "wipMean_mean": "55.90355",
+   "bottleneck": "test"
+  },
+  {
+   "fleet-count:agv": "8",
+   "pool-count:assemblers": "3",
+   "throughputPerHour_mean": "23.29375",
+   "throughputPerHour_ci95_low": "23.244805",
+   "throughputPerHour_ci95_high": "23.342695",
+   "leadTimeMeanMs_mean": "6497538.359546",
+   "wipMean_mean": "87.973151",
+   "bottleneck": "assembly-1"
+  },
+  {
+   "fleet-count:agv": "8",
+   "pool-count:assemblers": "4",
+   "throughputPerHour_mean": "34.166667",
+   "throughputPerHour_ci95_low": "33.746081",
+   "throughputPerHour_ci95_high": "34.587253",
+   "leadTimeMeanMs_mean": "1350493.012958",
+   "wipMean_mean": "57.764658",
+   "bottleneck": "test"
+  }
+ ]
+}

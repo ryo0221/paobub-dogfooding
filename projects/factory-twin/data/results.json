@@ -1,0 +1,1311 @@
+{
+ "hallIssues": [],
+ "planned": {
+  "ms": 398,
+  "events": 243851,
+  "produced": 2640,
+  "perHour": 13.75,
+  "leadMeanMin": 171.6,
+  "leadP95Min": 541,
+  "wipMean": 78.3,
+  "bottlenecks": [
+   {
+    "id": "test",
+    "share": 25.4
+   },
+   {
+    "id": "assembly-2",
+    "share": 25.3
+   },
+   {
+    "id": "assembly-1",
+    "share": 22.8
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 24.2,
+    "waiting": 0,
+    "blocked": 44.3,
+    "failed": 2.4,
+    "paused": 29.1
+   },
+   "wash": {
+    "working": 18.3,
+    "waiting": 0.1,
+    "blocked": 52.4,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 23.7,
+    "blocked": 43.6,
+    "paused": 29.2,
+    "unstaffed": 3.5
+   },
+   "assembly-2": {
+    "working": 26.1,
+    "waiting": 41.2,
+    "paused": 29.2,
+    "unstaffed": 3.5
+   },
+   "test": {
+    "working": 24.6,
+    "waiting": 45.1,
+    "failed": 1.1,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 15.3,
+    "waiting": 55.5,
+    "paused": 29.2,
+    "unstaffed": 0
+   }
+  },
+  "fleet": {
+   "trips": 5280,
+   "shares": {
+    "idle": 0,
+    "empty": 26.6,
+    "loaded": 32.8,
+    "handling": 11.5,
+    "traffic": 0,
+    "blocked": 29.1,
+    "charging": 0
+   },
+   "callWaitS": 3141
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 3,
+    "busy": 44.7,
+    "walk": 2.4,
+    "waitS": 6.2
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 48.1,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "repeatSame": true,
+ "adopted": {
+  "ms": 528,
+  "events": 610271,
+  "produced": 6601,
+  "perHour": 34.38,
+  "leadMeanMin": 29.6,
+  "leadP95Min": 50.5,
+  "wipMean": 59.9,
+  "bottlenecks": [
+   {
+    "id": "test",
+    "share": 34
+   },
+   {
+    "id": "assembly-2",
+    "share": 33.9
+   },
+   {
+    "id": "machining",
+    "share": 15.7
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 60.5,
+    "waiting": 2.8,
+    "blocked": 0.4,
+    "failed": 7.2,
+    "paused": 29.2
+   },
+   "wash": {
+    "working": 45.8,
+    "waiting": 24.5,
+    "blocked": 0.5,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 59.2,
+    "waiting": 4.2,
+    "blocked": 7.4,
+    "paused": 29.2
+   },
+   "assembly-2": {
+    "working": 65.1,
+    "waiting": 4.9,
+    "blocked": 0.8,
+    "paused": 29.2
+   },
+   "test": {
+    "working": 61.2,
+    "waiting": 7,
+    "blocked": 0,
+    "failed": 2.6,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 38.3,
+    "waiting": 32.5,
+    "paused": 29.2
+   }
+  },
+  "fleet": {
+   "trips": 13204,
+   "shares": {
+    "idle": 0,
+    "empty": 22.2,
+    "loaded": 27.4,
+    "handling": 9.6,
+    "traffic": 0.9,
+    "blocked": 40,
+    "charging": 0
+   },
+   "callWaitS": 1255
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 4,
+    "busy": 82.2,
+    "walk": 0,
+    "waitS": 0
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 92.9,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "agv4": {
+  "ms": 409,
+  "events": 411303,
+  "produced": 4459,
+  "perHour": 23.22,
+  "leadMeanMin": 108.5,
+  "leadP95Min": 492.1,
+  "wipMean": 83.8,
+  "bottlenecks": [
+   {
+    "id": "assembly-1",
+    "share": 33.7
+   },
+   {
+    "id": "assembly-2",
+    "share": 33.3
+   },
+   {
+    "id": "test",
+    "share": 32.3
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 40.8,
+    "waiting": 0,
+    "blocked": 25.2,
+    "failed": 4.9,
+    "paused": 29.1
+   },
+   "wash": {
+    "working": 30.9,
+    "waiting": 2,
+    "blocked": 37.9,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 39.9,
+    "blocked": 1,
+    "paused": 29.2,
+    "unstaffed": 29.9
+   },
+   "assembly-2": {
+    "working": 44,
+    "waiting": 20.8,
+    "blocked": 0.4,
+    "paused": 29.2,
+    "unstaffed": 5.7
+   },
+   "test": {
+    "working": 41.4,
+    "waiting": 19.3,
+    "blocked": 8.3,
+    "failed": 1.9,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 25.9,
+    "waiting": 17.6,
+    "paused": 29.2,
+    "unstaffed": 27.3
+   }
+  },
+  "fleet": {
+   "trips": 8906,
+   "shares": {
+    "idle": 0,
+    "empty": 22.4,
+    "loaded": 27.7,
+    "handling": 9.7,
+    "traffic": 0.9,
+    "blocked": 39.3,
+    "charging": 0
+   },
+   "callWaitS": 1863
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 3,
+    "busy": 89.5,
+    "walk": 9.7,
+    "waitS": 42
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 65.2,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "agv6a3": {
+  "ms": 383,
+  "events": 411989,
+  "produced": 4471,
+  "perHour": 23.29,
+  "leadMeanMin": 108.2,
+  "leadP95Min": 492,
+  "wipMean": 85.8,
+  "bottlenecks": [
+   {
+    "id": "assembly-1",
+    "share": 33.5
+   },
+   {
+    "id": "assembly-2",
+    "share": 33.3
+   },
+   {
+    "id": "test",
+    "share": 32
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 40.9,
+    "waiting": 0.1,
+    "blocked": 25.1,
+    "failed": 4.9,
+    "paused": 29.1
+   },
+   "wash": {
+    "working": 31,
+    "waiting": 2.2,
+    "blocked": 37.7,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 40,
+    "blocked": 0.8,
+    "paused": 29.2,
+    "unstaffed": 30
+   },
+   "assembly-2": {
+    "working": 44,
+    "waiting": 20.6,
+    "blocked": 0.6,
+    "paused": 29.2,
+    "unstaffed": 5.6
+   },
+   "test": {
+    "working": 41.5,
+    "waiting": 17.9,
+    "blocked": 9.6,
+    "failed": 1.9,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 26,
+    "waiting": 16.5,
+    "paused": 29.2,
+    "unstaffed": 28.3
+   }
+  },
+  "fleet": {
+   "trips": 8918,
+   "shares": {
+    "idle": 0,
+    "empty": 15,
+    "loaded": 18.5,
+    "handling": 6.5,
+    "traffic": 0.6,
+    "blocked": 59.5,
+    "charging": 0
+   },
+   "callWaitS": 1861
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 3,
+    "busy": 90.8,
+    "walk": 9.7,
+    "waitS": 42.4
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 58,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "agv20": {
+  "ms": 567,
+  "events": 610764,
+  "produced": 6601,
+  "perHour": 34.38,
+  "leadMeanMin": 29,
+  "leadP95Min": 50.4,
+  "wipMean": 73.5,
+  "bottlenecks": [
+   {
+    "id": "test",
+    "share": 34.7
+   },
+   {
+    "id": "assembly-2",
+    "share": 34.7
+   },
+   {
+    "id": "machining",
+    "share": 15.3
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 60.5,
+    "waiting": 2.8,
+    "blocked": 0.4,
+    "failed": 7.2,
+    "paused": 29.2
+   },
+   "wash": {
+    "working": 45.8,
+    "waiting": 24.5,
+    "blocked": 0.5,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 59.2,
+    "waiting": 4.3,
+    "blocked": 7.3,
+    "paused": 29.2
+   },
+   "assembly-2": {
+    "working": 65.1,
+    "waiting": 5,
+    "blocked": 0.7,
+    "paused": 29.2
+   },
+   "test": {
+    "working": 61.2,
+    "waiting": 7.1,
+    "blocked": 0,
+    "failed": 2.6,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 38.3,
+    "waiting": 32.5,
+    "paused": 29.2
+   }
+  },
+  "fleet": {
+   "trips": 13198,
+   "shares": {
+    "idle": 0,
+    "empty": 6.6,
+    "loaded": 8.2,
+    "handling": 2.9,
+    "traffic": 0.3,
+    "blocked": 82,
+    "charging": 0
+   },
+   "callWaitS": 1255
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 4,
+    "busy": 79.1,
+    "walk": 0,
+    "waitS": 0
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 92.4,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "assemblers1": {
+  "ms": 3,
+  "events": 521,
+  "produced": 0,
+  "perHour": 0,
+  "leadMeanMin": 0,
+  "leadP95Min": 0,
+  "wipMean": 84,
+  "bottlenecks": [
+   {
+    "id": "machining",
+    "share": 0
+   },
+   {
+    "id": "wash",
+    "share": 0
+   },
+   {
+    "id": "assembly-1",
+    "share": 0
+   }
+  ],
+  "states": {
+   "machining": {
+    "blocked": 70.8,
+    "paused": 29.2
+   },
+   "wash": {
+    "blocked": 70.8,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "blocked": 70.8,
+    "paused": 29.2
+   },
+   "assembly-2": {
+    "paused": 29.2,
+    "unstaffed": 70.8
+   },
+   "test": {
+    "waiting": 70.8,
+    "paused": 29.2
+   },
+   "pack": {
+    "waiting": 70.8,
+    "paused": 29.2
+   }
+  },
+  "fleet": {
+   "trips": 0,
+   "shares": {
+    "idle": 0,
+    "empty": 0,
+    "loaded": 0,
+    "handling": 0,
+    "traffic": 0,
+    "blocked": 100,
+    "charging": 0
+   },
+   "callWaitS": 0
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 1,
+    "busy": 0,
+    "walk": 0,
+    "waitS": 0
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 0,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "machines2": {
+  "ms": 357,
+  "events": 423538,
+  "produced": 4589,
+  "perHour": 23.9,
+  "leadMeanMin": 16.8,
+  "leadP95Min": 24.4,
+  "wipMean": 50.5,
+  "bottlenecks": [
+   {
+    "id": "machining",
+    "share": 68.6
+   },
+   {
+    "id": "assembly-2",
+    "share": 7.8
+   },
+   {
+    "id": "test",
+    "share": 4.7
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 63,
+    "waiting": 0.4,
+    "blocked": 0.1,
+    "failed": 7.4,
+    "paused": 29.1
+   },
+   "wash": {
+    "working": 31.8,
+    "waiting": 39,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 41.1,
+    "waiting": 28.7,
+    "blocked": 1,
+    "paused": 29.2
+   },
+   "assembly-2": {
+    "working": 45.3,
+    "waiting": 25.4,
+    "blocked": 0.2,
+    "paused": 29.2
+   },
+   "test": {
+    "working": 42.6,
+    "waiting": 26.3,
+    "blocked": 0,
+    "failed": 1.9,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 26.7,
+    "waiting": 44.2,
+    "paused": 29.2
+   }
+  },
+  "fleet": {
+   "trips": 9170,
+   "shares": {
+    "idle": 0,
+    "empty": 15.4,
+    "loaded": 19,
+    "handling": 6.6,
+    "traffic": 0.6,
+    "blocked": 58.3,
+    "charging": 0
+   },
+   "callWaitS": 1809
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 4,
+    "busy": 57.9,
+    "walk": 0,
+    "waitS": 0
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 66.4,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "buffer2": {
+  "ms": 511,
+  "events": 610108,
+  "produced": 6600,
+  "perHour": 34.38,
+  "leadMeanMin": 28.2,
+  "leadP95Min": 46,
+  "wipMean": 59.1,
+  "bottlenecks": [
+   {
+    "id": "assembly-2",
+    "share": 34.6
+   },
+   {
+    "id": "test",
+    "share": 34.5
+   },
+   {
+    "id": "machining",
+    "share": 15.3
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 60.5,
+    "waiting": 2.8,
+    "blocked": 0.5,
+    "failed": 7.2,
+    "paused": 29.1
+   },
+   "wash": {
+    "working": 45.8,
+    "waiting": 24.2,
+    "blocked": 0.8,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 59.2,
+    "waiting": 4.3,
+    "blocked": 7.4,
+    "paused": 29.2
+   },
+   "assembly-2": {
+    "working": 65.1,
+    "waiting": 5,
+    "blocked": 0.7,
+    "paused": 29.2
+   },
+   "test": {
+    "working": 61.2,
+    "waiting": 7.1,
+    "blocked": 0,
+    "failed": 2.6,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 38.3,
+    "waiting": 32.5,
+    "paused": 29.2
+   }
+  },
+  "fleet": {
+   "trips": 13200,
+   "shares": {
+    "idle": 0,
+    "empty": 22.2,
+    "loaded": 27.4,
+    "handling": 9.5,
+    "traffic": 0.9,
+    "blocked": 40,
+    "charging": 0
+   },
+   "callWaitS": 1255
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 4,
+    "busy": 79.6,
+    "walk": 0,
+    "waitS": 0
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 92.9,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "noFailures": {
+  "ms": 637,
+  "events": 649114,
+  "produced": 7036,
+  "perHour": 36.65,
+  "leadMeanMin": 65.5,
+  "leadP95Min": 48.2,
+  "wipMean": 82.7,
+  "bottlenecks": [
+   {
+    "id": "assembly-2",
+    "share": 56.9
+   },
+   {
+    "id": "test",
+    "share": 29.4
+   },
+   {
+    "id": "assembly-1",
+    "share": 13.6
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 64.4,
+    "waiting": 0.7,
+    "blocked": 5.7,
+    "paused": 29.2
+   },
+   "wash": {
+    "working": 48.9,
+    "waiting": 1.1,
+    "blocked": 20.9,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 63.1,
+    "blocked": 7.7,
+    "paused": 29.2
+   },
+   "assembly-2": {
+    "working": 69.4,
+    "waiting": 1.4,
+    "paused": 29.2
+   },
+   "test": {
+    "working": 65.3,
+    "waiting": 5.6,
+    "blocked": 0,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 40.9,
+    "waiting": 30,
+    "paused": 29.2
+   }
+  },
+  "fleet": {
+   "trips": 14072,
+   "shares": {
+    "idle": 0,
+    "empty": 23.6,
+    "loaded": 29.2,
+    "handling": 10.2,
+    "traffic": 0.9,
+    "blocked": 36.1,
+    "charging": 0
+   },
+   "callWaitS": 1179
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 4,
+    "busy": 85.4,
+    "walk": 0,
+    "waitS": 0
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 90.8,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "adopted30": {
+  "ms": 1930,
+  "events": 2102808,
+  "produced": 24793,
+  "perHour": 34.43,
+  "leadMeanMin": 26.7,
+  "leadP95Min": 44,
+  "wipMean": 58.2,
+  "bottlenecks": [
+   {
+    "id": "test",
+    "share": 35.1
+   },
+   {
+    "id": "assembly-2",
+    "share": 34.3
+   },
+   {
+    "id": "machining",
+    "share": 14.9
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 60.6,
+    "waiting": 2.8,
+    "blocked": 0.4,
+    "failed": 7.1,
+    "paused": 29.1
+   },
+   "wash": {
+    "working": 45.9,
+    "waiting": 24.7,
+    "blocked": 0.3,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 59.4,
+    "waiting": 4.1,
+    "blocked": 7.3,
+    "paused": 29.2
+   },
+   "assembly-2": {
+    "working": 65.1,
+    "waiting": 4.9,
+    "blocked": 0.8,
+    "paused": 29.2
+   },
+   "test": {
+    "working": 61.2,
+    "waiting": 6.9,
+    "blocked": 0,
+    "failed": 2.7,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 38.3,
+    "waiting": 32.5,
+    "paused": 29.2
+   }
+  },
+  "fleet": {
+   "trips": 49584,
+   "shares": {
+    "idle": 0,
+    "empty": 22.2,
+    "loaded": 27.4,
+    "handling": 9.6,
+    "traffic": 0.9,
+    "blocked": 39.9,
+    "charging": 0
+   },
+   "callWaitS": 1254
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 4,
+    "busy": 79.6,
+    "walk": 0,
+    "waitS": 0
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 91.9,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "adopted90": {
+  "ms": 5424,
+  "events": 6166191,
+  "produced": 74314,
+  "perHour": 34.4,
+  "leadMeanMin": 24.6,
+  "leadP95Min": 41.6,
+  "wipMean": 57,
+  "bottlenecks": [
+   {
+    "id": "test",
+    "share": 34.9
+   },
+   {
+    "id": "assembly-2",
+    "share": 34.3
+   },
+   {
+    "id": "machining",
+    "share": 15.2
+   }
+  ],
+  "states": {
+   "machining": {
+    "working": 60.5,
+    "waiting": 2.8,
+    "blocked": 0.4,
+    "failed": 7.2,
+    "paused": 29.1
+   },
+   "wash": {
+    "working": 45.9,
+    "waiting": 24.8,
+    "blocked": 0.2,
+    "paused": 29.2
+   },
+   "assembly-1": {
+    "working": 59.3,
+    "waiting": 4.4,
+    "blocked": 7.2,
+    "paused": 29.2
+   },
+   "assembly-2": {
+    "working": 65.1,
+    "waiting": 5,
+    "blocked": 0.7,
+    "paused": 29.2
+   },
+   "test": {
+    "working": 61.2,
+    "waiting": 7.1,
+    "blocked": 0,
+    "failed": 2.6,
+    "paused": 29.2
+   },
+   "pack": {
+    "working": 38.3,
+    "waiting": 32.5,
+    "paused": 29.2
+   }
+  },
+  "fleet": {
+   "trips": 148628,
+   "shares": {
+    "idle": 0,
+    "empty": 22.2,
+    "loaded": 27.4,
+    "handling": 9.6,
+    "traffic": 0.9,
+    "blocked": 40,
+    "charging": 0
+   },
+   "callWaitS": 1256
+  },
+  "workers": [
+   {
+    "id": "assemblers",
+    "count": 4,
+    "busy": 80.4,
+    "walk": 0,
+    "waitS": 0
+   },
+   {
+    "id": "testers",
+    "count": 1,
+    "busy": 89.3,
+    "walk": 0,
+    "waitS": 0
+   }
+  ],
+  "deadlock": false
+ },
+ "control": {
+  "none": {
+   "ms": 115,
+   "events": 133432,
+   "produced": 1607,
+   "perHour": 33.48,
+   "leadMeanMin": 19.8,
+   "leadP95Min": 32.2,
+   "wipMean": 53.9,
+   "bottlenecks": [
+    {
+     "id": "test",
+     "share": 37.7
+    },
+    {
+     "id": "assembly-2",
+     "share": 32.1
+    },
+    {
+     "id": "machining",
+     "share": 14.4
+    }
+   ],
+   "states": {
+    "machining": {
+     "working": 60.6,
+     "waiting": 2.8,
+     "blocked": 0.2,
+     "failed": 7.1,
+     "paused": 29.2
+    },
+    "wash": {
+     "working": 45.9,
+     "waiting": 24.9,
+     "paused": 29.2
+    },
+    "assembly-1": {
+     "working": 58.3,
+     "waiting": 4,
+     "blocked": 8.6,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "assembly-2": {
+     "working": 64.2,
+     "waiting": 4.8,
+     "blocked": 1.9,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "test": {
+     "working": 60.2,
+     "waiting": 6.8,
+     "blocked": 0,
+     "failed": 3.8,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "pack": {
+     "working": 37.4,
+     "waiting": 33.4,
+     "paused": 29.2,
+     "unstaffed": 0
+    }
+   },
+   "fleet": {
+    "trips": 3250,
+    "shares": {
+     "idle": 0,
+     "empty": 21.9,
+     "loaded": 27,
+     "handling": 9.4,
+     "traffic": 0.9,
+     "blocked": 40.9,
+     "charging": 0
+    },
+    "callWaitS": 1243
+   },
+   "workers": [
+    {
+     "id": "assemblers",
+     "count": 4,
+     "busy": 69,
+     "walk": 0,
+     "waitS": 0
+    },
+    {
+     "id": "testers",
+     "count": 1,
+     "busy": 80.7,
+     "walk": 0,
+     "waitS": 0
+    }
+   ],
+   "deadlock": false
+  },
+  "ok": {
+   "ms": 8002,
+   "events": 1860032,
+   "produced": 1600,
+   "perHour": 33.33,
+   "leadMeanMin": 26.2,
+   "leadP95Min": 37.6,
+   "wipMean": 57.2,
+   "bottlenecks": [
+    {
+     "id": "assembly-2",
+     "share": 51.5
+    },
+    {
+     "id": "machining",
+     "share": 19.5
+    },
+    {
+     "id": "assembly-1",
+     "share": 18.3
+    }
+   ],
+   "states": {
+    "machining": {
+     "working": 60.1,
+     "waiting": 2.8,
+     "blocked": 0.8,
+     "failed": 7.1,
+     "paused": 29.2
+    },
+    "wash": {
+     "working": 45.5,
+     "waiting": 24.5,
+     "blocked": 0.8,
+     "paused": 29.2
+    },
+    "assembly-1": {
+     "working": 57.6,
+     "waiting": 3,
+     "blocked": 10.2,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "assembly-2": {
+     "working": 63.5,
+     "waiting": 3.9,
+     "blocked": 3.5,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "test": {
+     "working": 60,
+     "waiting": 7.1,
+     "blocked": 0,
+     "failed": 3.8,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "pack": {
+     "working": 37.2,
+     "waiting": 33.6,
+     "paused": 29.2,
+     "unstaffed": 0
+    }
+   },
+   "fleet": {
+    "trips": 3214,
+    "shares": {
+     "idle": 0,
+     "empty": 21.6,
+     "loaded": 26.7,
+     "handling": 9.3,
+     "traffic": 0.9,
+     "blocked": 41.5,
+     "charging": 0
+    },
+    "callWaitS": 1250
+   },
+   "workers": [
+    {
+     "id": "assemblers",
+     "count": 4,
+     "busy": 72.1,
+     "walk": 0,
+     "waitS": 0
+    },
+    {
+     "id": "testers",
+     "count": 1,
+     "busy": 80.4,
+     "walk": 0,
+     "waitS": 0
+    }
+   ],
+   "deadlock": false,
+   "control": {
+    "scans": 1728001,
+    "lastMoveMs": 169229252,
+    "stalls": [
+     {
+      "objectId": "conveyor-2",
+      "signal": "run",
+      "sinceMs": 169208502
+     }
+    ]
+   }
+  },
+  "bug": {
+   "ms": 7094,
+   "events": 1728746,
+   "produced": 1,
+   "perHour": 0.02,
+   "leadMeanMin": 9.9,
+   "leadP95Min": 9.9,
+   "wipMean": 77.1,
+   "bottlenecks": [
+    {
+     "id": "machining",
+     "share": 1.2
+    },
+    {
+     "id": "wash",
+     "share": 0.8
+    },
+    {
+     "id": "assembly-2",
+     "share": 0.2
+    }
+   ],
+   "states": {
+    "machining": {
+     "working": 1.5,
+     "waiting": 0.1,
+     "blocked": 69.2,
+     "paused": 29.2
+    },
+    "wash": {
+     "working": 1.1,
+     "waiting": 0.5,
+     "blocked": 69.3,
+     "paused": 29.2
+    },
+    "assembly-1": {
+     "working": 0.2,
+     "waiting": 0.2,
+     "blocked": 70.5,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "assembly-2": {
+     "working": 0.2,
+     "waiting": 0.2,
+     "blocked": 70.4,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "test": {
+     "working": 0,
+     "waiting": 70.8,
+     "paused": 29.2,
+     "unstaffed": 0
+    },
+    "pack": {
+     "working": 0,
+     "waiting": 70.8,
+     "paused": 29.2,
+     "unstaffed": 0
+    }
+   },
+   "fleet": {
+    "trips": 14,
+    "shares": {
+     "idle": 0,
+     "empty": 0.1,
+     "loaded": 0.1,
+     "handling": 0,
+     "traffic": 0,
+     "blocked": 99.7,
+     "charging": 0
+    },
+    "callWaitS": 12560
+   },
+   "workers": [
+    {
+     "id": "assemblers",
+     "count": 4,
+     "busy": 0.1,
+     "walk": 0,
+     "waitS": 2.8
+    },
+    {
+     "id": "testers",
+     "count": 1,
+     "busy": 0,
+     "walk": 0,
+     "waitS": 3
+    }
+   ],
+   "deadlock": false,
+   "control": {
+    "scans": 1728001,
+    "lastMoveMs": 24277191,
+    "stalls": [
+     {
+      "objectId": "conveyor-2",
+      "signal": "run",
+      "sinceMs": 22137124
+     }
+    ]
+   }
+  }
+ },
+ "node": "v22.23.4"
+}
