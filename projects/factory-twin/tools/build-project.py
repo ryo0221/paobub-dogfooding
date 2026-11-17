@@ -209,13 +209,23 @@ for id, name, cites, kind, text, value in FD:
 # Control
 ctl = R['control']
 def hm(ms): h = ms / 3600000; return f'{int(h)//24 + 1} 日目 {int(h)%24}:{int(round(h%1*60)):02d}'
+stalls = lambda k: (ctl[k].get('control') or {}).get('stalls') or []
+base, okp, bugp = ctl['none']['produced'], ctl['ok']['produced'], ctl['bug']['produced']
+CC_OK = {
+    'CC-01': base > 0 and abs(okp - base) / base < 0.01,
+    'CC-02': bool(stalls('bug')) and bugp < 0.1 * base,
+    'CC-03': not stalls('ok'),
+}
 CC = [
     ('CC-01', '正しい制御で流れる', '正しい制御', '検査のコンベヤの終わりに部品があり、検査台が空いたら門を開ける。モーターは門の前が詰まったら止める（F174 のはしご）',
-     f"制御なしと同じ流れ（2 日で {comma(ctl['none']['produced'])} 台）", f"{comma(ctl['ok']['produced'])} 台（{ctl['ok']['perHour']} 台/時）", '合', [RS['conveyor-2'], RS['test']]),
-    ('CC-02', '誤った制御を見つける', 'わざと誤った制御', '止めた状態を戻す段が無いはしご（F175 のはしご）', '検査のコンベヤが止まり、止まりとして知らせる',
-     f"{ctl['bug']['produced']} 台で止まる。{hm(ctl['bug']['control']['stalls'][0]['sinceMs'])} から「検査のコンベヤのモーターが止まっている」", '合', [RS['conveyor-2']]),
+     f"制御なし（2 日で {comma(base)} 台）との差が 1% 未満", f"{comma(okp)} 台（{ctl['ok']['perHour']} 台/時、差 {abs(okp - base) / base * 100:.1f}%）",
+     '合' if CC_OK['CC-01'] else '否', [RS['conveyor-2'], RS['test']]),
+    ('CC-02', '誤った制御を見つける', 'わざと誤った制御', '止めた状態を戻す段が無いはしご（F175 のはしご）', '検査のコンベヤが止まり（制御なしの 1 割未満）、止まりとして知らせる',
+     f"{bugp} 台。" + (f"{hm(stalls('bug')[0]['sinceMs'])} から「検査のコンベヤのモーターが止まっている」" if stalls('bug') else '止まりの知らせなし'),
+     '合' if CC_OK['CC-02'] else '否', [RS['conveyor-2']]),
     ('CC-03', 'シフトの終わりは止まりでない', '正しい制御', 'CC-01 の終わり（2 日目 23:00 にシフトが終わる）', '止まりを知らせない',
-     f"{hm(ctl['ok']['control']['stalls'][0]['sinceMs'])} から止まりとして知らせる（シフトの外でラインが休んでいるだけ）", '否（道具の誤報）', [RS['conveyor-2']]),
+     f"{hm(stalls('ok')[0]['sinceMs'])} から止まりとして知らせる（シフトの外でラインが休んでいるだけ）" if stalls('ok') else '知らせない',
+     '合' if CC_OK['CC-03'] else '否（道具の誤報）', [RS['conveyor-2']]),
 ]
 for id, name, kind, cond, exp, act, res, on in CC:
     add('control-record', id, name, on, kind=kind, condition=cond, expected=exp, actual=act, result=res)
@@ -228,7 +238,10 @@ DC = [
     ('DC-03', '洗浄後の棚は 6 個のまま', ['SC-10', 'FD-010'], '受け入れた', '量とリードタイムは 2 個でも変わらないが、加工セルの故障（平均 3 時間ごと）の間の余裕として残す。', '置き場の広さ（3 × 1.6 m）'),
     ('DC-04', '検査台の 2 台目は次の版で比べる', ['FD-008'], '持ち越した', '採用案は要件を満たす。次に量を増やすときの律速は検査台と最終組立。', '検査の時間が延びると 30 台/時を下回る'),
     ('DC-05', '配置の事項の処置', ['LI-01', 'LI-02', 'LI-03', 'LI-04'], '受け入れた・持ち越した', '干渉は 0 件。人と AGV の動線の交わり（LI-03）は、人の通路を区画にして次の版で模擬する。', 'LI-03'),
-    ('DC-06', '検査のコンベヤの制御は正しいはしごを採る', ['CC-01', 'CC-02', 'CC-03'], '受け入れた', '正しいはしごで流れは変わらず、誤ったはしごは止まりとして見つかる。シフトの終わりの誤報（CC-03）は道具の課題。', 'CC-03 の誤報'),
+    ('DC-06', '検査のコンベヤの制御は正しいはしごを採る' if CC_OK['CC-01'] and CC_OK['CC-02'] else '検査のコンベヤの制御を直す', ['CC-01', 'CC-02', 'CC-03'],
+     '受け入れた' if CC_OK['CC-01'] and CC_OK['CC-02'] else '直す',
+     ('正しいはしごで流れは変わらず（差 1% 未満）、誤ったはしごは止まりとして見つかる。' if CC_OK['CC-01'] and CC_OK['CC-02'] else '合わない確認がある：' + '、'.join(k for k in ('CC-01', 'CC-02') if not CC_OK[k]) + '。')
+     + ('' if CC_OK['CC-03'] else 'シフトの終わりの誤報（CC-03）は道具の課題。'), 'なし' if CC_OK['CC-03'] else 'CC-03 の誤報'),
     ('DC-07', 'モデルを実験に使ってよいとする' if all(OK.values()) else 'モデルを実験に使う前に直す', sorted(OK), '受け入れた' if all(OK.values()) else '直す',
      '手計算と極端な条件の確認がすべて合う。実績との比べは、架空の工場なので無い。' if all(OK.values()) else '合わない確認がある：' + '、'.join(k for k, v in sorted(OK.items()) if not v),
      '入力のデータは推定と仮定（DS-01〜DS-14）'),
