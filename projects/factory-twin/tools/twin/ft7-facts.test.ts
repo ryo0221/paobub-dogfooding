@@ -2,7 +2,8 @@
  * FT7: the numbers the PaoBub Project quotes (validation, scenarios, control, timing), written to
  * $OUT/results.json. Demo source: not part of the repository.
  */
-import { writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
 import { performance } from 'node:perf_hooks';
 import { expect, it } from 'vitest';
 import { checkFactoryBuilding, runFactory, validateFactory, type FactoryDocument } from '@editor-platform/factory-core';
@@ -62,6 +63,7 @@ it('FT7 facts', { timeout: 1_800_000 }, () => {
     control: Object.fromEntries((['none', 'ok', 'bug'] as const).map((p) => [p, run({ agvs: 6, assemblers: 4, plc: p === 'none' ? undefined : p }, (d) => (d.run = { warmupMs: 0, durationMs: 2 * 86_400_000, seed: 1 }))])),
     node: process.version,
   };
+  mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, JSON.stringify(facts, null, 1));
   console.log(JSON.stringify(facts).slice(0, 3000));
 });

@@ -4,7 +4,7 @@
 #   OWD      (optional) an open-workflow-definitions checkout: the items and citations are copied
 #            into a fixture and checked with its scripts/fixture.mjs.
 # Usage: FT7_OUT=/path/to/ft7 [OWD=/path/to/open-workflow-definitions] python tools/build-project.py
-import csv, json, os, subprocess, sys
+import csv, json, os, shutil, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 P = os.path.normpath(os.path.join(HERE, '..'))
@@ -137,18 +137,35 @@ agv_bound = 2 * 3600 / trip_s / 2  # units per hour (two trips per unit)
 blocked = pl['fleet']['shares']['blocked']
 test_bound = 3600 / 64 * (360 / (360 + 15)) * (17 / 24)
 test_work = ad['perHour'] * 64 / 3600 * 100
+import re as _re
+_log = open(f'{SRC}/ft7-log.txt').read() if os.path.exists(f'{SRC}/ft7-log.txt') else ''
+_m = _re.search(r'adopted run \(8 days\)[^\n]*Result: (\d+) produced', _log)
+browser = int(_m.group(1)) if _m else None
+lens = [ad['perHour'], R['adopted30']['perHour'], R['adopted90']['perHour']]
+OK = {
+    'VC-01': R['repeatSame'],
+    'VC-02': abs(agv_bound * (1 - blocked / 100) - pl['perHour']) < 0.1,
+    'VC-03': ad['perHour'] <= test_bound and abs(test_work - ad['states']['test']['working']) < 1,
+    'VC-04': abs(R['agv20']['perHour'] - ad['perHour']) < 0.1,
+    'VC-05': R['assemblers1']['produced'] == 0,
+    'VC-06': ad['perHour'] < R['noFailures']['perHour'] <= 3600 / 64 * 17 / 24,
+    'VC-07': (max(lens) - min(lens)) / max(lens) < 0.01,
+    'VC-08': len(R['hallIssues']) == 0,
+    'VC-09': browser == ad['produced'],
+}
+def verdict(id, note=''): return ('合' + note) if OK[id] else '否'
 VC = [
-    ('VC-01', '同じ種で同じ結果', '動きの確かめ', '計画案を種 1 で 2 回流す', '同じ結果', '同じ（生産数・状態の内訳・AGV の内訳まで一致）' if R['repeatSame'] else '違う', '合' if R['repeatSame'] else '否', ['RS-002', 'DS-01']),
+    ('VC-01', '同じ種で同じ結果', '動きの確かめ', '計画案を種 1 で 2 回流す', '同じ結果', '同じ（生産数・状態の内訳・AGV の内訳まで一致）' if R['repeatSame'] else '違う', verdict('VC-01'), ['RS-002', 'DS-01']),
     ('VC-02', 'AGV 2 台の上限（手計算）', '手計算との比べ', f'環の長さ {loop:.1f} m、1 回の運び {trip_s:.0f} 秒（走り＋積み降ろし 30 秒）。1 台に部品 2 つ',
-     f'上限 {agv_bound:.1f} 台/時。塞がれた割合 {blocked}% を引くと {agv_bound*(1-blocked/100):.1f} 台/時', f"{pl['perHour']} 台/時", '合（差 0.1 未満）', [RS['agv'], 'DS-11']),
+     f'上限 {agv_bound:.1f} 台/時。塞がれた割合 {blocked}% を引くと {agv_bound*(1-blocked/100):.1f} 台/時', f"{pl['perHour']} 台/時", verdict('VC-02', '（差 0.1 未満）'), [RS['agv'], 'DS-11']),
     ('VC-03', '検査台の上限（手計算）', '手計算との比べ', '採用案。検査 64 秒、故障で使える割合 96%（6 時間 ÷ 6 時間 15 分）、稼働 17/24',
-     f'上限 {test_bound:.1f} 台/時、検査台の働く割合 {test_work:.1f}%', f"{ad['perHour']} 台/時、働く割合 {ad['states']['test']['working']}%", '合', [RS['test'], 'DS-06', 'DS-07']),
-    ('VC-04', 'AGV を 20 台に', '極端な条件', '採用案の AGV だけ 20 台', '検査台が上限なので 6 台と同じ', f"{R['agv20']['perHour']} 台/時（6 台と同じ）、AGV の塞がれ {R['agv20']['fleet']['shares']['blocked']}%", '合', [RS['agv'], RS['test']]),
-    ('VC-05', '組立の作業者を 1 人に', '極端な条件', '採用案の組立の作業者だけ 1 人', '最終組立（2 人要る）が始まらず 0 台', f"{R['assemblers1']['produced']} 台", '合（ただし道具は前もって知らせない：FD-012）', [RS['assemblers'], RS['assembly-2']]),
-    ('VC-06', '故障を無くす', '極端な条件', '採用案から加工セルと検査台の故障を除く', f'検査台の上限 {3600/64*17/24:.1f} 台/時を超えず、採用案より多い', f"{R['noFailures']['perHour']} 台/時", '合', ['DS-02', 'DS-07']),
-    ('VC-07', '流す長さ', '動きの確かめ', '採用案を 8 日・30 日・90 日（慣らし 1 日）', '差が 1% 未満', f"{ad['perHour']}・{R['adopted30']['perHour']}・{R['adopted90']['perHour']} 台/時", '合（8 日で足りる）', ['RQ-01', RS['test']]),
-    ('VC-08', '建屋との干渉', '動きの確かめ', '建屋のモデル v1 と配置', '0 件', f"{len(R['hallIssues'])} 件", '合', ['RQ-04', RS['machining'], RS['assembly-2']]),
-    ('VC-09', 'ブラウザーと node の結果', '動きの確かめ', '採用案 8 日を Playground（Worker）と node で', '同じ', '6,601 台・34.4 台/時（どちらも）', '合', [RS['test']]),
+     f'上限 {test_bound:.1f} 台/時、検査台の働く割合 {test_work:.1f}%', f"{ad['perHour']} 台/時、働く割合 {ad['states']['test']['working']}%", verdict('VC-03'), [RS['test'], 'DS-06', 'DS-07']),
+    ('VC-04', 'AGV を 20 台に', '極端な条件', '採用案の AGV だけ 20 台', '検査台が上限なので 6 台と同じ', f"{R['agv20']['perHour']} 台/時（6 台と同じ）、AGV の塞がれ {R['agv20']['fleet']['shares']['blocked']}%", verdict('VC-04'), [RS['agv'], RS['test']]),
+    ('VC-05', '組立の作業者を 1 人に', '極端な条件', '採用案の組立の作業者だけ 1 人', '最終組立（2 人要る）が始まらず 0 台', f"{R['assemblers1']['produced']} 台", verdict('VC-05', '（ただし道具は前もって知らせない：FD-012）'), [RS['assemblers'], RS['assembly-2']]),
+    ('VC-06', '故障を無くす', '極端な条件', '採用案から加工セルと検査台の故障を除く', f'検査台の上限 {3600/64*17/24:.1f} 台/時を超えず、採用案より多い', f"{R['noFailures']['perHour']} 台/時", verdict('VC-06'), ['DS-02', 'DS-07']),
+    ('VC-07', '流す長さ', '動きの確かめ', '採用案を 8 日・30 日・90 日（慣らし 1 日）', '差が 1% 未満', f"{ad['perHour']}・{R['adopted30']['perHour']}・{R['adopted90']['perHour']} 台/時", verdict('VC-07', '（8 日で足りる）'), ['RQ-01', RS['test']]),
+    ('VC-08', '建屋との干渉', '動きの確かめ', '建屋のモデル v1 と配置', '0 件', f"{len(R['hallIssues'])} 件", verdict('VC-08'), ['RQ-04', RS['machining'], RS['assembly-2']]),
+    ('VC-09', 'ブラウザーと node の結果', '動きの確かめ', '採用案 8 日を Playground（Worker）と node で', '同じ', f"node {comma(ad['produced'])} 台、Playground {comma(browser) if browser is not None else '記録なし'} 台", verdict('VC-09'), [RS['test']]),
 ]
 for id, name, kind, cond, exp, act, res, on in VC:
     add('validation-record', id, name, on, kind=kind, condition=cond, expected=exp, actual=act, result=res)
@@ -212,7 +229,9 @@ DC = [
     ('DC-04', '検査台の 2 台目は次の版で比べる', ['FD-008'], '持ち越した', '採用案は要件を満たす。次に量を増やすときの律速は検査台と最終組立。', '検査の時間が延びると 30 台/時を下回る'),
     ('DC-05', '配置の事項の処置', ['LI-01', 'LI-02', 'LI-03', 'LI-04'], '受け入れた・持ち越した', '干渉は 0 件。人と AGV の動線の交わり（LI-03）は、人の通路を区画にして次の版で模擬する。', 'LI-03'),
     ('DC-06', '検査のコンベヤの制御は正しいはしごを採る', ['CC-01', 'CC-02', 'CC-03'], '受け入れた', '正しいはしごで流れは変わらず、誤ったはしごは止まりとして見つかる。シフトの終わりの誤報（CC-03）は道具の課題。', 'CC-03 の誤報'),
-    ('DC-07', 'モデルを実験に使ってよいとする', ['VC-01', 'VC-02', 'VC-03', 'VC-04', 'VC-05', 'VC-06', 'VC-07', 'VC-08', 'VC-09'], '受け入れた', '手計算と極端な条件の確認がすべて合う。実績との比べは、架空の工場なので無い。', '入力のデータは推定と仮定（DS-01〜DS-14）'),
+    ('DC-07', 'モデルを実験に使ってよいとする' if all(OK.values()) else 'モデルを実験に使う前に直す', sorted(OK), '受け入れた' if all(OK.values()) else '直す',
+     '手計算と極端な条件の確認がすべて合う。実績との比べは、架空の工場なので無い。' if all(OK.values()) else '合わない確認がある：' + '、'.join(k for k, v in sorted(OK.items()) if not v),
+     '入力のデータは推定と仮定（DS-01〜DS-14）'),
     ('DC-08', '道具の課題は Editor Platform に送る', ['FD-003', 'FD-011', 'FD-012', 'FD-013', 'FD-014', 'CC-03'], '持ち越した', '計画の結論は変わらないが、使う人が誤りやすい。', 'ボトルネックの順位を鵜呑みにすると、計画案の律速（AGV）を見落とす'),
 ]
 for id, name, cites, action, why, risk in DC:
@@ -249,6 +268,8 @@ def strip(items, keep_cites=False):
     return [{k: v for k, v in it.items() if (keep_cites or k != 'cites') and v is not None} for it in items]
 def bykind(deliv, prefix): return [it for it in ITEMS[deliv] if it['id'].startswith(prefix)]
 
+os.makedirs(f'{P}/data', exist_ok=True)
+for name in ('results.json', 'experiment-table.csv'): shutil.copyfile(f'{SRC}/{name}', f'{P}/data/{name}')
 dump('factory/plant-planned.factory.json', PLANNED)
 dump('factory/plant-adopted.factory.json', ADOPTED)
 dump('bim/plant-hall.bim.json', HALL)

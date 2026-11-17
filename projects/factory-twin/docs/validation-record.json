@@ -79,7 +79,7 @@
    "kind": "動きの確かめ",
    "condition": "採用案 8 日を Playground（Worker）と node で",
    "expected": "同じ",
-   "actual": "6,601 台・34.4 台/時（どちらも）",
+   "actual": "node 6,601 台、Playground 6,601 台",
    "result": "合"
   }
  ]
