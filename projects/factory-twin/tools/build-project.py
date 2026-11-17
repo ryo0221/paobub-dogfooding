@@ -9,7 +9,9 @@ import csv, json, os, shutil, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 P = os.path.normpath(os.path.join(HERE, '..'))
 SRC = os.environ.get('FT7_OUT') or sys.exit('FT7_OUT（FT7 の出力の置き場）を設定してください')
-R = json.load(open(f'{SRC}/results.json'))
+sys.path.insert(0, HERE)
+import zero_states
+R = zero_states.load(f'{SRC}/results.json')
 def content(name):
     d = json.load(open(f'{SRC}/{name}'))
     return d.get('draft', {}).get('content', d)

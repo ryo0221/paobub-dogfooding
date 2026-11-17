@@ -68,7 +68,8 @@ still('experiment','04b-experiment-surface',crop=(212,425,1160,1045),cap='実験
 
 # Cards with numbers from the run
 DATA=SRC or os.path.join(PROJ,'data')
-R=json.load(open(f'{DATA}/results.json'))
+sys.path.insert(0,os.path.join(HERE,'..')); import zero_states
+R=zero_states.load(f'{DATA}/results.json')
 def bars(c,y0,title,rows,total=100):
     d=ImageDraw.Draw(c); label(c,200,y0,title,40,anchor='lm',w=7)
     x0,x1=200,1720; x=x0
