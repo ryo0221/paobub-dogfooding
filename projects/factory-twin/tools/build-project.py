@@ -182,8 +182,9 @@ add('experiment-record', 'SC-09', '採用案で加工機を 2 台に', [RS['mach
 add('experiment-record', 'SC-10', '採用案で洗浄後の棚を 2 個に', [RS['buffer-wash']], change='採用案の洗浄後の棚を 6 個から 2 個に', result=f"{R['buffer2']['perHour']} 台/時")
 S = lambda a, w: SC[(a, w)]
 # Requirements RQ-01 (30/h), RQ-02 (takt 85 s over 17 working hours) and RQ-03 (mean lead time 45 min), checked on a run.
+def takt_s(r): return 17 * 3600 / (r['perHour'] * 24) if r['perHour'] else float('inf')
 def unmet(r):
-    takt = 17 * 3600 / (r['perHour'] * 24) if r['perHour'] else float('inf')
+    takt = takt_s(r)
     return [k for k, ok in (('RQ-01', r['perHour'] >= 30), ('RQ-02', takt <= 85), ('RQ-03', r['leadMeanMin'] <= 45)) if not ok]
 miss_pl, miss_ad = unmet(pl), unmet(ad)
 def gap(r, miss): return '、'.join(miss) + ' に届かない' if miss else 'RQ-01〜RQ-03 を満たす'
@@ -198,7 +199,7 @@ FD = [
     ('FD-006', '組立の作業者 3 人では 23 台/時で頭打ち', [S(4, 3), S(6, 3), S(8, 3), RS['assemblers'], 'RQ-05'], '比べ',
      f"3 人では AGV を増やしても 23.2〜23.3 台/時。作業者は {R['agv6a3']['workers'][0]['busy']}% が手いっぱいで、減速機の組付けは {R['agv6a3']['states']['assembly-1']['unstaffed']}% が人待ち。", '23.3 台/時'),
     ('FD-007', '採用案は要件を満たす' if not miss_ad else '採用案も要件に届かない', [S(6, 4), 'RQ-01', 'RQ-02', 'RQ-03', 'RQ-05'], '生産数',
-     f"{ad['perHour']} 台/時（1 日 {ad['perHour']*24:.0f} 台、タクト {17*3600/(ad['perHour']*24):.0f} 秒）、リードタイム平均 {ad['leadMeanMin']:.0f} 分、仕掛り {ad['wipMean']:.0f}。作業者 4 人の働く割合 {ad['workers'][0]['busy']}%。{gap(ad, miss_ad)}。", f"{ad['perHour']} 台/時"),
+     f"{ad['perHour']} 台/時（1 日 {ad['perHour']*24:.0f} 台、タクト {f'{takt_s(ad):.0f} 秒' if ad['perHour'] else 'なし（生産 0）'}）、リードタイム平均 {ad['leadMeanMin']:.0f} 分、仕掛り {ad['wipMean']:.0f}。作業者 4 人の働く割合 {ad['workers'][0]['busy']}%。{gap(ad, miss_ad)}。", f"{ad['perHour']} 台/時"),
     ('FD-008', '採用案の次の律速は検査台と最終組立', [S(6, 4), RS['test'], RS['assembly-2']], 'ボトルネック',
      f"検査台 {ad['bottlenecks'][0]['share']}%・最終組立 {ad['bottlenecks'][1]['share']}%。検査員の働く割合 {ad['workers'][1]['busy']}%。90 日流しても {R['adopted90']['perHour']} 台/時で変わらない。", '検査台'),
     ('FD-009', '加工機は減らせない', ['SC-09', RS['machining'], 'RQ-01'], '比べ', f"加工機 2 台では {R['machines2']['perHour']} 台/時で、加工セルが律速（{R['machines2']['bottlenecks'][0]['share']}%）。", f"{R['machines2']['perHour']} 台/時"),
@@ -224,7 +225,7 @@ CC_OK = {
 }
 CC = [
     ('CC-01', '正しい制御で流れる', '正しい制御', '検査のコンベヤの終わりに部品があり、検査台が空いたら門を開ける。モーターは門の前が詰まったら止める（F174 のはしご）',
-     f"制御なし（2 日で {comma(base)} 台）との差が 1% 未満", f"{comma(okp)} 台（{ctl['ok']['perHour']} 台/時、差 {abs(okp - base) / base * 100:.1f}%）",
+     f"制御なし（2 日で {comma(base)} 台）との差が 1% 未満", f"{comma(okp)} 台（{ctl['ok']['perHour']} 台/時、差 {f'{abs(okp - base) / base * 100:.1f}%' if base else '比べられない（制御なしが 0 台）'}）",
      '合' if CC_OK['CC-01'] else '否', [RS['conveyor-2'], RS['test']]),
     ('CC-02', '誤った制御を見つける', 'わざと誤った制御', '止めた状態を戻す段が無いはしご（F175 のはしご）', '検査のコンベヤが止まり（制御なしの 1 割未満）、止まりとして知らせる',
      f"{bugp} 台。" + (f"{hm(stalls('bug')[0]['sinceMs'])} から「検査のコンベヤのモーターが止まっている」" if stalls('bug') else '止まりの知らせなし'),
