@@ -1,0 +1,19 @@
+{
+  "status": 200,
+  "id": "rprj_f946c0ffa0814793",
+  "name": "TOKIWA Community 初版開発",
+  "subprojects": [
+    {
+      "id": "rprj_4c748ce63c1a4b5f",
+      "name": "Community掲載コンテンツ",
+      "path": "/home/agent/paobub-projects/Community掲載コンテンツ",
+      "subdir": ""
+    },
+    {
+      "id": "rprj_745a07ded65d4ab2",
+      "name": "Community制作メーキング",
+      "path": "/home/agent/paobub-projects/Community制作メーキング",
+      "subdir": ""
+    }
+  ]
+}

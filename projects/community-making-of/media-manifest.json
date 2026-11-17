@@ -1,0 +1,89 @@
+{
+  "status": "本編未完成、永続保存未完了",
+  "clips": [
+    {
+      "file": "s02-permissions.mp4",
+      "bytes": 312292,
+      "sha256": "299dabbe2c6c7d66e7e9d37370ba9d873eb32fbcacbec032e3e7beb662ed8c13",
+      "storage": "Cloud workspace only; durable destination pending",
+      "scene": "S02",
+      "captureType": "実操作・未編集",
+      "role": "葵（架空の検証メンバー/Codex）",
+      "project": "rprj_f946c0ffa0814793",
+      "ai": "AI実行の映像収録ではない",
+      "releasePermission": "未レビュー",
+      "selectedRange": null,
+      "subtitle": null
+    },
+    {
+      "file": "s02-setup.mp4",
+      "bytes": 271784,
+      "sha256": "9fc9e0cba8c7d5bded6920223fb949bfc4bdc7619c9580673935234f25b653a5",
+      "storage": "Cloud workspace only; durable destination pending",
+      "scene": "S02",
+      "captureType": "実操作・未編集",
+      "role": "葵（架空の検証メンバー/Codex）",
+      "project": "rprj_f946c0ffa0814793",
+      "ai": "AI実行の映像収録ではない",
+      "releasePermission": "未レビュー",
+      "selectedRange": null,
+      "subtitle": null
+    },
+    {
+      "file": "s03-save.mp4",
+      "bytes": 500508,
+      "sha256": "c33eeb287580f5fd26fe4d9d93bf4e11c9a1954e838d789eb6bbd9ff5a170e50",
+      "storage": "Cloud workspace only; durable destination pending",
+      "scene": "S03",
+      "captureType": "実操作・未編集",
+      "role": "葵（架空の検証メンバー/Codex）",
+      "project": "rprj_f946c0ffa0814793",
+      "ai": "AI実行の映像収録ではない",
+      "releasePermission": "未レビュー",
+      "selectedRange": null,
+      "subtitle": null
+    },
+    {
+      "file": "s02-children.mp4",
+      "bytes": 526290,
+      "sha256": "eee3c007f0457be51037fbc51ec24e054ee74e348785e41d261c8af4315eb06f",
+      "storage": "Cloud workspace only; durable destination pending",
+      "scene": "S02",
+      "captureType": "実操作・未編集",
+      "role": "葵（架空の検証メンバー/Codex）",
+      "project": "rprj_f946c0ffa0814793",
+      "ai": "AI実行の映像収録ではない",
+      "releasePermission": "未レビュー",
+      "selectedRange": null,
+      "subtitle": null
+    },
+    {
+      "file": "smoke-subtitled.mp4",
+      "bytes": 91250,
+      "sha256": "08b23d5eb89d640240a47f386450a253e894f78a90e8920f0c8ef25990daac62",
+      "storage": "Cloud workspace only; durable destination pending",
+      "scene": "S03",
+      "captureType": "字幕焼込み試験",
+      "role": "葵（架空の検証メンバー/Codex）",
+      "project": "rprj_f946c0ffa0814793",
+      "ai": "AI実行の映像収録ではない",
+      "releasePermission": "未レビュー",
+      "selectedRange": null,
+      "subtitle": "smoke.srt"
+    },
+    {
+      "file": "smoke.srt",
+      "bytes": 270,
+      "sha256": "c52cf3a83023329614424a78b1cada5f20311f1c657454bb61c899c8620de9a5",
+      "storage": "Cloud workspace only; durable destination pending",
+      "scene": "S03",
+      "captureType": "字幕焼込み試験",
+      "role": "葵（架空の検証メンバー/Codex）",
+      "project": "rprj_f946c0ffa0814793",
+      "ai": "AI実行の映像収録ではない",
+      "releasePermission": "未レビュー",
+      "selectedRange": null,
+      "subtitle": "smoke.srt"
+    }
+  ]
+}

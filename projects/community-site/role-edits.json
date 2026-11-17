@@ -1,0 +1,34 @@
+[
+  {
+    "role": "misaki",
+    "operation": "UI edit/save/reload",
+    "text": "美咲の提案：初期対象は小さなDesign作品を再編集したい利用者。固定版・利用条件・対応Editorを先に示し、「この作品をもとに作る」へ案内する。",
+    "result": "pass"
+  },
+  {
+    "role": "rin",
+    "operation": "UI edit/save/reload",
+    "text": "凛のレビュー：local PC/mobile画面は見出しと検索を確認済み。静的プレビューと編集可能形式の区別を詳細でも維持する。",
+    "result": "pass"
+  },
+  {
+    "role": "takuya",
+    "operation": "UI edit/save/reload",
+    "text": "拓也の引継ぎ：Community 44924875df086aa244c53b04e68745cc63db2bcdを初期実装の参照版とする。投稿認証とNative一周は未実装、公開Bは不可。",
+    "result": "pass"
+  },
+  {
+    "role": "naoto",
+    "read": "pass",
+    "saveButtons": 0,
+    "writeStatus": 403,
+    "writeBody": "{\"error\":\"権限がありません（直すの付与が要ります）\"}"
+  },
+  {
+    "role": "chihiro",
+    "read": "pass",
+    "saveButtons": 0,
+    "writeStatus": 403,
+    "writeBody": "{\"error\":\"権限がありません（直すの付与が要ります）\"}"
+  }
+]

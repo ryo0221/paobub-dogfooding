@@ -1,0 +1,62 @@
+[
+  {
+    "step": "project participation bootstrap via API",
+    "role": "misaki",
+    "invite": 201,
+    "accept": 200
+  },
+  {
+    "step": "project participation bootstrap via API",
+    "role": "rin",
+    "invite": 201,
+    "accept": 200
+  },
+  {
+    "step": "project participation bootstrap via API",
+    "role": "takuya",
+    "invite": 201,
+    "accept": 200
+  },
+  {
+    "step": "project participation bootstrap via API",
+    "role": "naoto",
+    "invite": 201,
+    "accept": 200
+  },
+  {
+    "step": "project participation bootstrap via API",
+    "role": "chihiro",
+    "invite": 201,
+    "accept": 200
+  },
+  {
+    "step": "organization grant via UI",
+    "role": "misaki",
+    "preset": "edit",
+    "approve": false
+  },
+  {
+    "step": "organization grant via UI",
+    "role": "rin",
+    "preset": "edit",
+    "approve": false
+  },
+  {
+    "step": "organization grant via UI",
+    "role": "takuya",
+    "preset": "edit",
+    "approve": false
+  },
+  {
+    "step": "organization grant via UI",
+    "role": "naoto",
+    "preset": "view",
+    "approve": false
+  },
+  {
+    "step": "organization grant via UI",
+    "role": "chihiro",
+    "preset": "view",
+    "approve": false
+  }
+]

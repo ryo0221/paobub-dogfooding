@@ -1,0 +1,44 @@
+[
+  {
+    "role": "aoi",
+    "name": "葵 / PM",
+    "personId": "P-cfcb6fd3e413fc41",
+    "context": "independent",
+    "projectPermission": "manage + approve (creation default; human acceptance not exercised)"
+  },
+  {
+    "role": "misaki",
+    "name": "美咲 / マーケター",
+    "personId": "P-3a135ef48f101779",
+    "context": "independent",
+    "projectPermission": "edit"
+  },
+  {
+    "role": "rin",
+    "name": "凛 / UX/UI",
+    "personId": "P-eef3f6b16fe268b5",
+    "context": "independent",
+    "projectPermission": "edit"
+  },
+  {
+    "role": "takuya",
+    "name": "拓也 / エンジニア",
+    "personId": "P-8b0a58c540231040",
+    "context": "independent",
+    "projectPermission": "edit"
+  },
+  {
+    "role": "naoto",
+    "name": "直人 / QA",
+    "personId": "P-a16aad0cd813cd77",
+    "context": "independent",
+    "projectPermission": "view"
+  },
+  {
+    "role": "chihiro",
+    "name": "千尋 / 運営",
+    "personId": "P-0aab45d6f126e0ba",
+    "context": "independent",
+    "projectPermission": "view"
+  }
+]
