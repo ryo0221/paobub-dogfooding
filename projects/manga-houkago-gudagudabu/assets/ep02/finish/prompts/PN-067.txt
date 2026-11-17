@@ -1,0 +1,15 @@
+Use your image generation tool. Make ONE image: the FINISHED black-and-white manga panel (仕上げ) from the attached ink line art, for a Japanese school gag-comedy manga printed in monochrome.
+Keep EVERY line of the FIRST attached image exactly where it is (same drawing, same size, same composition); only add: solid black fills (ベタ) on black hair, and ONE kind of light dot screentone (網点) on the dark school blazers and on shadows where it helps the mood. Per character (model sheets, AR-04/AR-08): Nemu, Suzu, Reika and Tanahashi have solid black hair; the tall boy Takeshi (long fringe hiding his eyes) has NO black at all, only a lighter dot tone on his hair and uniform. Keep faces, skin, shirts and most of the background white. No colour, no grey gradients, no new objects, no text. Grey margins are padding: leave them empty.
+
+
+Panel PN-067（PN-067 れいか「……失礼します」と、こたつを一度だけ振り返る）. Place: LO-01 部室. Scene SC-009.
+What the panel shows: PN-067 れいか「……失礼します」と、こたつを一度だけ振り返る. Pacing: アップ。ほんの一瞬の振り返り（本人は気づいていない）.
+Camera: exactly as in the 3D camera view (アップ・れいかの横顔と目); こたつを振り返るれいかの横顔。戸口の内側の東から.
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): れいか「……失礼します」
+People:
+- FG-106 西園寺れいか: head at 50% from the left and 52% from the top of the panel. 向き：東南（こたつへ）。姿勢：背筋を伸ばして直立し、片腕にバインダーを抱える。表情：目は丸く、口は小さく開く（本人は気づいていない顔）。描写する範囲：顔のアップ。
+Continuity for this scene（続く状態）: れいか at the doorway writing in her open binder with a pen; then she leaves into the corridor. たけし still wears the paper name tag. The teacup on the kotatsu is still tipped over. In PN-068 たけし leans half out of the doorway into the corridor, looking east where れいか went (draw him faint, AR-08).
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Square 1024x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

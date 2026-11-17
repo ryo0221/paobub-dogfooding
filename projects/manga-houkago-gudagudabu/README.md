@@ -3,6 +3,7 @@
 PaoBub の「漫画の制作」（fiction-manga 1.5.0）の工程で作った、学園ギャグ漫画の Project です。
 
 - 第1話「活動内容：特になし」：8 ページ・36 コマ、白黒。
+- 第2話「部員は3人います」：8 ページ・36 コマ、白黒。原稿は第1話と同じファイルの 2 段目（PG-009〜016）にあります。
 - 13 工程はすべて受け入れ済みです。
 - 工程の状態と成果物のファイルの割り当ては `workflow.json`、工程の定義は `definition.json` にあります。
 
@@ -14,7 +15,7 @@ PaoBub の「漫画の制作」（fiction-manga 1.5.0）の工程で作った、
 | 見たいもの | ファイル |
 | --- | --- |
 | 仕上げた原稿（Design・レイヤーつき） | `docs/finished-pages.json` |
-| 仕上げたページの画像 | `assets/ep01/finish/pages/page-01.png`〜`page-08.png` |
+| 仕上げたページの画像 | `assets/ep01/finish/pages/page-01.png`〜`page-08.png`（第2話は `assets/ep02/…`） |
 | 線画・ラフのページ | `assets/ep01/ink/pages/`、`assets/ep01/rough/pages/` |
 | ネーム（3D のカメラの絵を敷いたページ） | `assets/ep01/name/pages/` |
 | 人物の設定画（三面図と背の比べ） | `assets/character/*.png`（下絵の 3D は `assets/character/underlay/`） |
@@ -46,6 +47,8 @@ PaoBub の「漫画の制作」（fiction-manga 1.5.0）の工程で作った、
 道具は `tools/` にあります。Python 3（Pillow・numpy）と、ログイン済みの Codex CLI が要ります。
 作業用のフォルダー（下の例の `WORK`）は、リポジトリの外に置きます。
 
+話を選ぶには、道具に `EP=ep02` のように話を渡します（既定は `ep01`）。Design の原稿は `EPS=ep01,ep02` で、話を 1 段ずつ並べて 1 つにします。
+
 ### 3D の舞台（コマごとのカメラの絵）
 
 [editor-platform](https://github.com/ryo0221/editor-platform) の Playground で組みます。
@@ -54,9 +57,10 @@ PaoBub の「漫画の制作」（fiction-manga 1.5.0）の工程で作った、
 cd /path/to/editor-platform && npm ci --ignore-scripts
 cp <この Project>/tools/stage/gudaguda-ep01-stage.demo.ts tests/demo/
 cp <この Project>/tools/stage/gudaguda-stage.config.ts .
-STAGE_OUT=/tmp/gstage STAGE_SETS=council,club,sheet npx playwright test -c gudaguda-stage.config.ts --trace off
+STAGE_OUT=/tmp/gstage STAGE_SETS=council,club,sheet npx playwright test -c gudaguda-stage.config.ts --trace off   # 第2話は STAGE_SETS=club2
 cd <この Project>
 python3 tools/stage/stage-assets.py /tmp/gstage docs/storyboard-pages.json assets/ep01/stage
+# 第2話：EP=ep02 STAGE_SETS=club2 python3 tools/stage/stage-assets.py /tmp/gstage docs/storyboard-pages.json assets/ep02/stage
 ```
 
 - 部屋（生徒会室・部室と廊下）と、4 頭身の人物の箱の体を組みます。
@@ -82,21 +86,19 @@ python3 tools/art/panel-assets.py rough WORK/rough    # コマの枠に切り戻
 python3 tools/pages/compose.py finish assets/ep01/finish/pages   # ページを組み、吹き出しを置く（name・rough・ink も）
 python3 tools/pages/lettering.py assets/ep01/finish/pages/balloons.json   # 写植の記録を合わせる
 python3 tools/pages/records.py finish                            # 記録のページの中身
-python3 tools/pages/build-design.py finish assets/ep01/finish/pages/balloons.json docs/finished-pages.json
+EPS=ep01,ep02 python3 tools/pages/build-design.py finish 'assets/{EP}/finish/pages/balloons.json' docs/finished-pages.json
 ```
 
 - 吹き出しは、3D で写る頭と、線画の人物の線を避けて置きます。読む順（右上から左下）も守ります。
-- 自動で置けなかった吹き出しは、`assets/ep01/lettering-notes.json` に `{"DL-040": {"at": [x, y], "why": "..."}}` で位置を決めます。x と y は、コマの幅・高さに対する割合です。
+- 自動で置けなかった吹き出しは、`assets/ep01/lettering-notes.json` に `{"DL-040": {"at": [x, y], "why": "..."}}` で位置を決めます。x と y は、コマの幅・高さに対する割合です。しっぽが絵の物に掛かるときは `"tail_len"`（px）でしっぽを短くします。
+- 看板や名札など、絵の中の字は `assets/{EP}/sign-text.json` に `{"PN-059": [{"text": "←3人目", "at": [x, y], "size": [w, h], "fontSize": 44}]}` で書きます。絵（Codex）には字を描かせないので、写植で入れます。吹き出しはこの字を避けます。
 - できた Design は、Editor Platform の `isDesignWithPaths` で確かめてから PaoBub で開きます。
-
-## メイキング動画を作る
-
-この Project の制作の流れを、約10分の紹介動画（ナレーション・字幕つき）にする道具と手順は、[`tools/video/README.md`](tools/video/README.md) にあります。
-PaoBub の画面を録画し、`assets/` の絵から作った図と合わせて、合成音声のナレーションで書き出します。
 
 ## 経緯
 
 - 2026-11-14：PaoBub の通し試験として、全 13 工程を通しました。
 - 2026-11-15：工程の定義を fiction-manga 1.5.0 に上げました。gulliver-manga の手本に合わせて、設定画・3D の舞台・ラフ・線画・仕上げを作り直しています。
 - 見つけた PaoBub の不具合は [ryo0221/paobub#286](https://github.com/ryo0221/paobub/pull/286)、定義の変更は [ryo0221/open-workflow-definitions#6](https://github.com/ryo0221/open-workflow-definitions/pull/6) で直しています。
+- 2026-11-17：第2話を、第1話と同じ手順で作りました。脚本とネームは前の通しのものを使い、3D の舞台から仕上げ・写植までを作っています。
 - 地図（`docs/stage-map.json`）は、まだ gulliver-manga の水準に作り直していません。
+- 出力の記録（`docs/output-record.json`）は、第1話・第2話の16ページを扱います。描き直した版の通読と固定版はまだなので、出力物は書き出していません。

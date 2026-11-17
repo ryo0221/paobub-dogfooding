@@ -1,0 +1,26 @@
+Use your image generation tool. Make ONE image: the clean INK LINE ART (線画) of one panel of a Japanese school gag-comedy manga.
+Style: professional manga line art on pure white, drawn with THREE pure pen colours so the layers can be separated afterwards (手本：gulliver-manga の三色の線画):
+- PURE BLACK (#000000) for the characters and everything they wear or hold (outlines thicker and slightly rounded, inner lines thinner); solid black only on hair that the model sheet shows as black;
+- PURE BLUE (#0000FF) for the whole background: room, walls, windows, furniture, floor, props not held by a character (thin, clean lines, simpler than the figures, AR-03);
+- PURE RED (#FF0000) only for manga effect marks (speed lines, impact or emotion marks, sweat drops, steam); omit red if the panel needs no effect.
+Never mix the colours on one object; no grey, no screentone, no shading, no other colours (tone comes later). Characters are cute super-deformed, exactly 4 heads tall.
+The FIRST attached image is the approved pencil ROUGH of this panel: trace it — keep exactly its composition, poses, faces and expressions, and where everything sits. The SECOND attached image is the 3D camera view of the same panel: use it for perspective and proportions of the room and furniture. Draw the background (room, windows, furniture) in every panel unless told otherwise. Grey margins are padding: leave them empty.
+
+The SECOND attached image is the 3D camera view of this panel (perspective and proportions only): keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 朝比奈ねむ: keep that character design exactly (hair, face, uniform, silhouette).
+The FOURTH attached image is the model sheet (front, side, back) of 小鳥遊すず: keep that character design exactly (hair, face, uniform, silhouette).
+The FIFTH attached image is the model sheet (front, side, back) of 権田原たけし: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-071（PN-071 ねむ「3人いる」すず「……はい、3人です」と照れ隠し）. Place: LO-01 部室. Scene SC-010.
+What the panel shows: PN-071 ねむ「3人いる」すず「……はい、3人です」と照れ隠し. Pacing: ねむの満足げな顔とすずの照れ。静かな間.
+Camera: exactly as in the 3D camera view (広角：こたつの四辺と奥のスチール棚、南の窓が入る).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): ねむ「3人いる」；すず「……はい、3人です」
+People:
+- FG-111 朝比奈ねむ: head at 35% from the left and 48% from the top of the panel. 向き：やや下（湯のみへ）。姿勢：両手で湯のみを持ち、湯気に顔を寄せてすする。表情：目を閉じ、口は湯のみの縁。描写する範囲：こたつ座り。
+- FG-112 小鳥遊すず: head at 64% from the left and 27% from the top of the panel. 向き：北東。姿勢：両手で湯のみを包み、肩の力が抜けて座る。表情：目は細く、口元がゆるむ。描写する範囲：こたつ座り。
+- FG-113 権田原たけし: head at 41% from the left and 20% from the top of the panel. 向き：西。姿勢：猫背で膝を抱えるように座り、肩をすぼめる。表情：目は前髪で隠れる、口はごく小さい波線。描写する範囲：こたつ座り。
+Continuity for this scene（続く状態）: Evening sun through the south windows. Same seats: ねむ NORTH, すず SOUTH (seiza), たけし EAST in front of the steel shelf, still with the paper name tag. From PN-069 on, THREE upright teacups on the kotatsu (one each for ねむ, すず and たけし); すず places たけし's cup in PN-069; steam rises from たけし's cup.
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Landscape 1536x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Codex の生の出力（WORK/<PN>/raw.png）を、余白を除いてコマの枠に切り戻し、assets/ep01/<kind>/panels/<PN>.png にする。
-記録（道具と版・渡した参照・生の出力の sha256・プロンプト）を assets/ep01/<kind>/<kind>.json に書く（手本：rough-assets.py）。
+"""Codex の生の出力（WORK/<PN>/raw.png）を、余白を除いてコマの枠に切り戻し、assets/{EP}/<kind>/panels/<PN>.png にする。
+記録（道具と版・渡した参照・生の出力の sha256・プロンプト）を assets/{EP}/<kind>/<kind>.json に書く（手本：rough-assets.py）。
 usage: panel-assets.py {rough|ink|finish} WORK
 """
 import hashlib, json, os, subprocess, sys
 from PIL import Image
+EP = os.environ.get('EP', 'ep01'); EPN = int(EP[2:])  # 話（ep01・ep02…）。ページは 1 話 8 ページずつ
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 kind, work = sys.argv[1], sys.argv[2]
-OUT = f'{ROOT}/assets/ep01/{kind}'
+OUT = f'{ROOT}/assets/{EP}/{kind}'
 os.makedirs(f'{OUT}/panels', exist_ok=True); os.makedirs(f'{OUT}/prompts', exist_ok=True)
 rec_path = f'{OUT}/{kind}.json'
 rec = json.load(open(rec_path)) if os.path.exists(rec_path) else {'tool': None, 'panels': {}}
@@ -24,12 +25,12 @@ def save_layer(pn, key, mask, size):
     os.makedirs(f'{OUT}/layers/{pn}', exist_ok=True)
     out = mask.point(lambda v: 255 - v)
     out.save(f'{OUT}/layers/{pn}/{key}.png', optimize=True)
-    return f'assets/ep01/{kind}/layers/{pn}/{key}.png'
+    return f'assets/{EP}/{kind}/layers/{pn}/{key}.png'
 
 
 def split(kind, pn, rgb):
     """ink：三色のペン（黒＝人物 LY-05、青＝背景 LY-02、赤＝効果 LY-06）で分ける。
-    finish：線画（assets/ep01/ink/panels）との差で、増えた暗い所を ベタ（ほぼ黒）と トーン（中間）に分ける。"""
+    finish：線画（assets/{EP}/ink/panels）との差で、増えた暗い所を ベタ（ほぼ黒）と トーン（中間）に分ける。"""
     w, h = rgb.size
     px = rgb.load()
     if kind == 'ink':
@@ -47,7 +48,7 @@ def split(kind, pn, rgb):
     if kind == 'finish':
         import numpy as np
         from PIL import ImageFilter
-        ink = Image.open(f'{ROOT}/assets/ep01/ink/panels/{pn}.png').convert('L').resize((w, h))
+        ink = Image.open(f'{ROOT}/assets/{EP}/ink/panels/{pn}.png').convert('L').resize((w, h))
         near_line = np.array(ink.filter(ImageFilter.MinFilter(5))) < 150  # 線画の線の近く（少しのずれを許す）
         g = rgb.convert('L')
         dark = np.array(g) < 140
@@ -56,7 +57,7 @@ def split(kind, pn, rgb):
         tone = (np.array(g) < 210) & ~near_line & ~beta  # 仕上げで増えた、塗りつぶしでない濃い所＝網点のトーン
         to_img = lambda m: Image.fromarray((m * 255).astype('uint8'))
         # LY-05 線画：線画の人物の線から、ベタに移した面を抜く（輪郭は残す）
-        fig_p = f'{ROOT}/assets/ep01/ink/layers/{pn}/fig.png'
+        fig_p = f'{ROOT}/assets/{EP}/ink/layers/{pn}/fig.png'
         fig = None
         if os.path.exists(fig_p):
             f = np.array(Image.open(fig_p).convert('L').resize((w, h))) < 128
@@ -80,9 +81,9 @@ for pn in sorted(os.listdir(work)):
     refs = [l.split('\t') for l in open(f'{D}/refs.txt').read().splitlines() if l.strip()] if os.path.exists(f'{D}/refs.txt') else []
     old = rec['panels'].get(pn)
     rec['panels'][pn] = {
-        'image': f'assets/ep01/{kind}/panels/{pn}.png', 'sha256': sha(f'{OUT}/panels/{pn}.png'), 'raw_sha256': raw_sha,
-        'prompt': f'assets/ep01/{kind}/prompts/{pn}.txt',
-        'inputs': [{'what': '構図（1枚目）', 'path': {'rough': f'assets/ep01/stage/underlay/{pn}.jpg', 'ink': f'assets/ep01/rough/panels/{pn}.png', 'finish': f'assets/ep01/ink/panels/{pn}.png'}[kind]}] + [{'what': w, 'path': os.path.relpath(p, ROOT) if p.startswith(ROOT) else f'（3D のカメラの絵）assets/ep01/stage/underlay/{pn}.jpg'} for p, w in refs],
+        'image': f'assets/{EP}/{kind}/panels/{pn}.png', 'sha256': sha(f'{OUT}/panels/{pn}.png'), 'raw_sha256': raw_sha,
+        'prompt': f'assets/{EP}/{kind}/prompts/{pn}.txt',
+        'inputs': [{'what': '構図（1枚目）', 'path': {'rough': f'assets/{EP}/stage/underlay/{pn}.jpg', 'ink': f'assets/{EP}/rough/panels/{pn}.png', 'finish': f'assets/{EP}/ink/panels/{pn}.png'}[kind]}] + [{'what': w, 'path': os.path.relpath(p, ROOT) if p.startswith(ROOT) else f'（3D のカメラの絵）assets/{EP}/stage/underlay/{pn}.jpg'} for p, w in refs],
         'license': '自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）',
         'layers': layers,
         'retakes': (old.get('retakes', []) + [{'raw_sha256': old['raw_sha256']}]) if old else [],

@@ -1,0 +1,19 @@
+Use your image generation tool. Make ONE image: a manga ROUGH (ラフ) for one panel of a Japanese school gag-comedy manga, drawn the way a manga artist roughs a panel before inking.
+Style: loose but clear grey pencil lines on white paper, monochrome only, no colour, no finished rendering. Characters are cute super-deformed, exactly 4 heads tall (4頭身), big heads, small simple hands and feet. Faces must show the direction of the face and the expression; bodies must show the pose with readable joints; hands and contacts must be clear.
+The FIRST attached image fixes the composition: it is a 3D stand-in made of blocks seen through the panel's camera. Keep its camera angle, horizon, perspective, and where each figure and object sits and how big it is in the frame. Redraw the blocky stand-ins as the real characters and a real Japanese high-school room (walls, windows, furniture, floor) — draw the background too, not only the people. Grey margins around the image are padding: leave them empty.
+
+The SECOND attached image is the model sheet (front, side, back) of 朝比奈ねむ: keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 西園寺れいか: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-057（PN-057 ねむがたけしの隣でベルを振る）. Place: LO-01 部室. Scene SC-008.
+What the panel shows: 「呼び鈴ですか？ 用件は」「……ないです」. Pacing: ベルを振る→れいかがねむの方を向く→沈黙、の間.
+Camera: exactly as in the 3D camera view (標準); ベルを振るねむと、ねむを見るれいか。こたつの南から.
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): ねむ「次。ベルを鳴らして、気づいてもらう」；れいか「呼び鈴ですか？ 用件は」；ねむ「……ないです」
+People:
+- FG-089 朝比奈ねむ: head at 84% from the left and 65% from the top of the panel. 向き：正面。姿勢：片手でベルを高く掲げて振る。表情：半目、口は平ら。描写する範囲：膝上。
+- FG-090 西園寺れいか: head at 31% from the left and 28% from the top of the panel. 向き：東（ねむへ）。姿勢：背筋を伸ばして直立し、片腕にバインダーを抱える。表情：切れ長の目、眉は水平、口は一文字。描写する範囲：膝上。
+Continuity for this scene（続く状態）: Clubroom. れいか stands between the doorway and the kotatsu (north-west of the kotatsu) with her binder. From PN-055 on, たけし wears a paper name tag on his chest (draw the tag blank; the name is lettered later). ねむ's teacup tips over in PN-056 and from then lies on its side with a small spill. A small hand bell appears in ねむ's hand in PN-057 (only there). In PN-059 すず holds up a hand-made cardboard arrow sign (draw it blank; text later); from PN-060 the sign is gone (れいか took it into her binder).
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Square 1024x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

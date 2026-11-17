@@ -1,0 +1,699 @@
+{
+ "tool": "codex-cli 0.164.0（Codex CLI の画像生成。画像のモデル名は出力に出ない）",
+ "panels": {
+  "PN-037": {
+   "image": "assets/ep02/finish/panels/PN-037.png",
+   "sha256": "c8de359f2b9735ec66aa41eca2375531df8d7eeb8131d43764ba828883a5c5a6",
+   "raw_sha256": "b75c423d30e31ad35968cbb2017277aebe9bf72bb4a80ed343530247a7e0e93f",
+   "prompt": "assets/ep02/finish/prompts/PN-037.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-037.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-037/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-037/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-037/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-038": {
+   "image": "assets/ep02/finish/panels/PN-038.png",
+   "sha256": "a7d832d87c751e2d3c154388abdb32bd237714df6f99e90fa36a3be53ec73266",
+   "raw_sha256": "1f3dc2c05ef4b4d24f2b92d64690a142ae587c0e3d0a46d7fa409b2243dedf0c",
+   "prompt": "assets/ep02/finish/prompts/PN-038.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-038.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-038/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-038/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-038/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-039": {
+   "image": "assets/ep02/finish/panels/PN-039.png",
+   "sha256": "bafad28b34b360c007a8e61941922afbe51475cb32784d928c3a1871a3958099",
+   "raw_sha256": "6db8157080a0a802357bca9b6392272ebc8290212695fd80901f140cf8e22111",
+   "prompt": "assets/ep02/finish/prompts/PN-039.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-039.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-039/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-039/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-039/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-040": {
+   "image": "assets/ep02/finish/panels/PN-040.png",
+   "sha256": "e52b8a819c5b9737579c556c35a34f8d92f3c8b9e3fde0f8cddcc86837fa30be",
+   "raw_sha256": "f4c0489dd3201b5992d2a85908c9fd3c8cb3015fade42e05fa183cfbe271e12a",
+   "prompt": "assets/ep02/finish/prompts/PN-040.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-040.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-040/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-040/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-040/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-041": {
+   "image": "assets/ep02/finish/panels/PN-041.png",
+   "sha256": "7df501b68115009267e51a50aa2bfa239e7c6d14e825a72c964482adde3524f0",
+   "raw_sha256": "b387b7de73914e75304f6ded17d8cb3484cc9444b9dc8b44c199052517ce7e8f",
+   "prompt": "assets/ep02/finish/prompts/PN-041.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-041.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-041/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-041/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-041/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-042": {
+   "image": "assets/ep02/finish/panels/PN-042.png",
+   "sha256": "c406907520ecd4b254578d13a9e04004a890f73e00127806c47d17892dd4aedc",
+   "raw_sha256": "dfb2234cc8e18ad5afa8543c7dd7bc4459117ebb7751f59da13d2440d86a5089",
+   "prompt": "assets/ep02/finish/prompts/PN-042.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-042.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-042/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-042/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-042/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-043": {
+   "image": "assets/ep02/finish/panels/PN-043.png",
+   "sha256": "8388e1cdaf59c1b5ad87a5baf1d64a15175c5c2918cfb6b9f54ed04cc8a1641b",
+   "raw_sha256": "2c302079253e85b50e22cba0297ad03d3960d749a3ed3f7fa5210f73c6099fef",
+   "prompt": "assets/ep02/finish/prompts/PN-043.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-043.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-043/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-043/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-043/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-044": {
+   "image": "assets/ep02/finish/panels/PN-044.png",
+   "sha256": "a889f9f17c3e69d414226a25259345301de479961234f6ba55fe31fea427badb",
+   "raw_sha256": "2cfc1cb439fb6f22029df013c1e5e100596093c2802b73aa8706aa18b20a1987",
+   "prompt": "assets/ep02/finish/prompts/PN-044.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-044.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-044/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-044/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-044/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-045": {
+   "image": "assets/ep02/finish/panels/PN-045.png",
+   "sha256": "085a3f3e18b6476f4d6e9ee79781dfbac05c1d5b230d00e08b772d05079c63bd",
+   "raw_sha256": "d80894d45d61b7f0ce3449551aa5485780a68a64d4366317fe7ddd1d8cac5e51",
+   "prompt": "assets/ep02/finish/prompts/PN-045.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-045.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-045/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-045/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-045/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-046": {
+   "image": "assets/ep02/finish/panels/PN-046.png",
+   "sha256": "c1eb2878a24570dde37b3e6687c5bdaef85c6700012061207aec10c9392df2c7",
+   "raw_sha256": "85d8ac2bee58bfed61335dd2dd49cb8b1d327ffb63b5b352b2634f0e02629dc9",
+   "prompt": "assets/ep02/finish/prompts/PN-046.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-046.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-046/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-046/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-046/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-047": {
+   "image": "assets/ep02/finish/panels/PN-047.png",
+   "sha256": "5d62be979893a007f11bd37c485063b99a6c345b5a979ab3b5b525d458272573",
+   "raw_sha256": "c2ed41d563e5806661ef2337c5feaf60b19c144e7b936609d677a8d4eece46d6",
+   "prompt": "assets/ep02/finish/prompts/PN-047.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-047.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-047/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-047/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-047/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-048": {
+   "image": "assets/ep02/finish/panels/PN-048.png",
+   "sha256": "33e0529ace022182bd3c90956bc40dd217fd110ecc00c42620fe09d510cab95a",
+   "raw_sha256": "c33fb3a7ea9fd03b6fc89422c45abfbeb89587512704c99c1c222d74205caf19",
+   "prompt": "assets/ep02/finish/prompts/PN-048.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-048.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-048/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-048/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-048/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-049": {
+   "image": "assets/ep02/finish/panels/PN-049.png",
+   "sha256": "79bbf8a55b078d5dbd90c3be583932ad2944b77789a5e3305338b411ca064db8",
+   "raw_sha256": "03565f8755ce4ee23dc524287426e4c08bf9fb350ddcffb1ab1e5d589d9083d9",
+   "prompt": "assets/ep02/finish/prompts/PN-049.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-049.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-049/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-049/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-049/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-050": {
+   "image": "assets/ep02/finish/panels/PN-050.png",
+   "sha256": "08982d73cebf4b93fcb0e097587817e1fcb4ee3c93870f62c9263132d7a8551f",
+   "raw_sha256": "15226181900fe2937c4695e9cae15669ef0f7628c42dd5636437139e1e66bba5",
+   "prompt": "assets/ep02/finish/prompts/PN-050.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-050.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-050/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-050/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-050/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-051": {
+   "image": "assets/ep02/finish/panels/PN-051.png",
+   "sha256": "14aa1f3bee1fbcc5faee693f2aacf8efd8329cd367a663142c65f6191421616d",
+   "raw_sha256": "bac9f4f6cbbb9fcf3ffc86c37ea678201657cbc9604e7ea668cc1653a239cdd6",
+   "prompt": "assets/ep02/finish/prompts/PN-051.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-051.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-051/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-051/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-051/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-052": {
+   "image": "assets/ep02/finish/panels/PN-052.png",
+   "sha256": "c8d52e12cd8f9f2bfbd6b27311d120f06c31756aef814730fd58ee998bdbd9f8",
+   "raw_sha256": "11513a3e152d18ac060171a2426229ec8d9411e8c63df7d6a3f805b6b041a603",
+   "prompt": "assets/ep02/finish/prompts/PN-052.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-052.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-052/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-052/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-052/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-053": {
+   "image": "assets/ep02/finish/panels/PN-053.png",
+   "sha256": "8e1c02ae20a231e251df6591f21a0570bb334a5ce37f85591254b489f70f7334",
+   "raw_sha256": "e536f69311d8b97639efa53c2910a48076982022d199f9a427eaf76dac6fa97b",
+   "prompt": "assets/ep02/finish/prompts/PN-053.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-053.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-053/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-053/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-053/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-054": {
+   "image": "assets/ep02/finish/panels/PN-054.png",
+   "sha256": "a7eb11c0a550fe7f00280f34045bbbfd42f85543bd62e6cc84d3aab9b6ca2751",
+   "raw_sha256": "1a153a0a2e46693228d91a513230707fd265ef287e3e0bf0f2392f5432314ecd",
+   "prompt": "assets/ep02/finish/prompts/PN-054.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-054.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-054/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-054/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-054/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-055": {
+   "image": "assets/ep02/finish/panels/PN-055.png",
+   "sha256": "3d0c2fb050eb74cd6a2304d597e06e444049894c1b018114518fe7fe5ec80a53",
+   "raw_sha256": "19f013605e3d1d222ef021a40bde45c07f1d04c6d6a6385629827ce38ef64e3f",
+   "prompt": "assets/ep02/finish/prompts/PN-055.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-055.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-055/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-055/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-055/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-056": {
+   "image": "assets/ep02/finish/panels/PN-056.png",
+   "sha256": "ec60e83f976b284c106e521e99dadd0db0476abb901814a42dcdb90d2094fd8e",
+   "raw_sha256": "acde86989f148953edafb2f927449eb104efae5722846d12c71eee89371e40f2",
+   "prompt": "assets/ep02/finish/prompts/PN-056.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-056.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-056/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-056/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-056/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-057": {
+   "image": "assets/ep02/finish/panels/PN-057.png",
+   "sha256": "4490fe8b268a1d354f8bd79f8e82c8d7168dfd8c36497b6c80692bedeaad2122",
+   "raw_sha256": "b475d38a82c54e1a82be34b11c36361933bc690f37eb123f8555c146d4e95ffe",
+   "prompt": "assets/ep02/finish/prompts/PN-057.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-057.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-057/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-057/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-057/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-058": {
+   "image": "assets/ep02/finish/panels/PN-058.png",
+   "sha256": "ca919c38684f0f90776fc0d46dd68d236ea611757bb438b61e12e4892e30b9fb",
+   "raw_sha256": "daec60df0c86556b1088d3d7291d4d8db7c51555bd8200b75351b727c68aa791",
+   "prompt": "assets/ep02/finish/prompts/PN-058.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-058.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-058/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-058/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-058/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-059": {
+   "image": "assets/ep02/finish/panels/PN-059.png",
+   "sha256": "4d0d6380e6d55bdf1194b30116ad5c21b39b4bd2b1314fd612b81f3c10907da1",
+   "raw_sha256": "9f3c8418003edd2c6141797861d7ffe5b2afb8ff9d64622d42dcc8957f7f4aeb",
+   "prompt": "assets/ep02/finish/prompts/PN-059.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-059.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-059/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-059/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-059/fig.png"
+   },
+   "retakes": [
+    {
+     "raw_sha256": "c217f06c10aeb8750e2db345fadc533cbe68cb8614f91a6312173cd418794db7"
+    },
+    {
+     "raw_sha256": "ffc0e7d9a3a24e9448dee990a0a0fa6a859619163bf92dfdf9e6f803aee989c0"
+    },
+    {
+     "raw_sha256": "6140f616b528e2b306bd9958f6a2646e2f53e4b4ab2a9364d42eb75a64e3c47f"
+    }
+   ]
+  },
+  "PN-060": {
+   "image": "assets/ep02/finish/panels/PN-060.png",
+   "sha256": "bc858af6015c172b77a2ba21c711ab7c6145b506d3c8f38ca7cd4b2f299cc14d",
+   "raw_sha256": "42763ff6e230240ed9d3eb5680c249e2a8f4cb1d59ae4b6112534a73bba19285",
+   "prompt": "assets/ep02/finish/prompts/PN-060.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-060.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-060/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-060/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-060/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-061": {
+   "image": "assets/ep02/finish/panels/PN-061.png",
+   "sha256": "0af214369b6504491eaf6e41410a41cfb43b9a848c78bc47e153c4c121014eb0",
+   "raw_sha256": "4555674e973eb7f0d6de4c76fa2650df4f5207a8881f57162198783356ea4f64",
+   "prompt": "assets/ep02/finish/prompts/PN-061.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-061.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-061/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-061/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-061/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-062": {
+   "image": "assets/ep02/finish/panels/PN-062.png",
+   "sha256": "14151a6ec5c235ac217582304a8a328460859cffd8ba262aac5fccae1879acfb",
+   "raw_sha256": "840ab96ad80fddb7fd52c95f5ef3f60f14538c157bf7874b59512ea0199773da",
+   "prompt": "assets/ep02/finish/prompts/PN-062.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-062.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-062/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-062/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-062/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-063": {
+   "image": "assets/ep02/finish/panels/PN-063.png",
+   "sha256": "0c2ea3e1a0a1a7f0506ba99f128fe3aa3050117f243dbece792ed9c9790fd6a8",
+   "raw_sha256": "11fcd21c6ec218412ea79167c72c7ca3422f23375e51410c7ad271993e3eb880",
+   "prompt": "assets/ep02/finish/prompts/PN-063.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-063.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-063/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-063/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-063/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-064": {
+   "image": "assets/ep02/finish/panels/PN-064.png",
+   "sha256": "e1e71c8966cfb6632679bf24454e2ea193cba63c3dd3118c4609d0b5f6fc0305",
+   "raw_sha256": "aed56f2948f7b190aca76b27ad3e70f0763351b431fe0616eab55aa27b328f20",
+   "prompt": "assets/ep02/finish/prompts/PN-064.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-064.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-064/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-064/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-064/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-065": {
+   "image": "assets/ep02/finish/panels/PN-065.png",
+   "sha256": "35cab96714f1ecd97a319b24f2175c992ddd016ecb6db1ab6e0ba30b8c43a281",
+   "raw_sha256": "cd11cd99dd7e2c5354d33c492eba8665662daa0038399af4481643790a78cf14",
+   "prompt": "assets/ep02/finish/prompts/PN-065.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-065.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-065/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-065/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-065/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-066": {
+   "image": "assets/ep02/finish/panels/PN-066.png",
+   "sha256": "2564cd9abcf56c1c229481098a335911b723d1b8e7d64ec0b47e64e293dbffe4",
+   "raw_sha256": "048c1f6d4fa2c84c68a65be614291335629bbe07653d7c3e14a32c82f1bf8580",
+   "prompt": "assets/ep02/finish/prompts/PN-066.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-066.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-066/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-066/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-066/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-067": {
+   "image": "assets/ep02/finish/panels/PN-067.png",
+   "sha256": "11aaa1b2884881f2c2e5110d77b7f926904a94471b9fc81fedd6a32f95d034dc",
+   "raw_sha256": "b71a8fe45f77e36edaab5a36c5f9dc35f1f8d7c0ef4ffe5c091967a6687c75b0",
+   "prompt": "assets/ep02/finish/prompts/PN-067.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-067.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-067/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-067/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-067/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-068": {
+   "image": "assets/ep02/finish/panels/PN-068.png",
+   "sha256": "69bf35f02f82fa80c9fab2085933f3e6971e27ec59e9319823812af2f4784576",
+   "raw_sha256": "6538b7781f7ff1e31f65a0155c06fd113678794669d9237f66f5b5192d79a467",
+   "prompt": "assets/ep02/finish/prompts/PN-068.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-068.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-068/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-068/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-068/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-069": {
+   "image": "assets/ep02/finish/panels/PN-069.png",
+   "sha256": "568e93b3337851ad3a152680907539057a7a41a581afc0aaeaf6364af6b2fcbc",
+   "raw_sha256": "86e8d79b5d426e93e0ba43eec3b555bde81421c370615e94754eb3a3265641e5",
+   "prompt": "assets/ep02/finish/prompts/PN-069.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-069.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-069/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-069/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-069/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-070": {
+   "image": "assets/ep02/finish/panels/PN-070.png",
+   "sha256": "2428e97bca1ab39906edcfa192ef355999eef678dfec6579f9807e67d0c67f76",
+   "raw_sha256": "0ba9f7694a175e9dafe3517b75ed0a2788c4f7b084609fe2289be8c0c0bb3d83",
+   "prompt": "assets/ep02/finish/prompts/PN-070.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-070.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-070/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-070/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-070/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-071": {
+   "image": "assets/ep02/finish/panels/PN-071.png",
+   "sha256": "b455f3a739939ce77d4bd4943560d5ab6ec17b4bd77a10757ae43023423aa8d8",
+   "raw_sha256": "aec9ead0578bda31e4157d5e5e7504c94b568ba6c976b342b70d6f7a20c754ae",
+   "prompt": "assets/ep02/finish/prompts/PN-071.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-071.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-071/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-071/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-071/fig.png"
+   },
+   "retakes": []
+  },
+  "PN-072": {
+   "image": "assets/ep02/finish/panels/PN-072.png",
+   "sha256": "79e5669e6c83f246b3d724b4b2b061a5ed51573db3b279a825ae45ecf2bfdd3b",
+   "raw_sha256": "aeed5873986281500bc09d60c371b1838a0d7cf0e1cc0370365fe8a44b529fb0",
+   "prompt": "assets/ep02/finish/prompts/PN-072.txt",
+   "inputs": [
+    {
+     "what": "構図（1枚目）",
+     "path": "assets/ep02/ink/panels/PN-072.png"
+    }
+   ],
+   "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
+   "layers": {
+    "beta": "assets/ep02/finish/layers/PN-072/beta.png",
+    "tone": "assets/ep02/finish/layers/PN-072/tone.png",
+    "fig": "assets/ep02/finish/layers/PN-072/fig.png"
+   },
+   "retakes": []
+  }
+ }
+}

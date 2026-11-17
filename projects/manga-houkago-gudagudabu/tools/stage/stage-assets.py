@@ -2,11 +2,12 @@
 """3D の舞台の書き出し（STAGE_OUT）から、ネームの材料を作る（手本：gulliver-manga part1/name/src/stage-assets.py）。
 - コマの枠の形に切り抜いたカメラの絵：OUT/underlay/<PN>.jpg
 - 真上からの配置図：OUT/plans/<PN>.svg
-- コマごとの記録（カメラ・人物・主役が枠に入るか）：OUT/ep01-stage.json
+- コマごとの記録（カメラ・人物・主役が枠に入るか）：OUT/{EP}-stage.json
 usage: stage-assets.py STAGE_OUT STORYBOARD_JSON OUT
 """
 import json, math, os, sys
 from PIL import Image
+EP = os.environ.get('EP', 'ep01'); EPN = int(EP[2:])  # 話（ep01・ep02…）。ページは 1 話 8 ページずつ
 stage_dir, sb_path, out = sys.argv[1:4]
 VFOV = 35.0
 sb = json.load(open(sb_path))
@@ -41,7 +42,8 @@ def head(place, h):
     return [place['at'][0], place['at'][1], base + 0.475 * h]
 
 records = []
-for set_id in ['council', 'club']:
+SETS = os.environ.get('STAGE_SETS', 'council,club').split(',')
+for set_id in SETS:
     st = json.load(open(f'{stage_dir}/{set_id}/stage.json'))
     cw, ch = st['canvas']['width'], st['canvas']['height']
     heights = {a['id']: a['heightMm'] for a in st['actors']}
@@ -92,6 +94,6 @@ for set_id in ['council', 'club']:
             el.append(f'<text x="{x+9:.1f}" y="{y-9:.1f}" font-size="11" font-family="sans-serif">{rec["who"]}</text>')
         el.append(f'<text x="6" y="16" font-size="12" font-family="sans-serif">{s["panel"]}（北が上・青がカメラと水平の視野）</text>')
         open(f"{out}/plans/{s['panel']}.svg", 'w').write(f'<svg xmlns="http://www.w3.org/2000/svg" width="{S}" height="{S}">{"".join(el)}</svg>')
-json.dump({'sets': ['council', 'club'], 'panels': records}, open(f'{out}/ep01-stage.json', 'w'), ensure_ascii=False, indent=1)
+json.dump({'sets': SETS, 'panels': records}, open(f'{out}/{EP}-stage.json', 'w'), ensure_ascii=False, indent=1)
 bad = [r['panel'] for r in records if not r['subjects_framed']]
 print(len(records), 'panels; subjects not framed:', bad, '; FG not staged:', [(r['panel'], r['fg_not_staged']) for r in records if r['fg_not_staged']])

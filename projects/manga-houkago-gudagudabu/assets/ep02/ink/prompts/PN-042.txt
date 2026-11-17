@@ -1,0 +1,22 @@
+Use your image generation tool. Make ONE image: the clean INK LINE ART (線画) of one panel of a Japanese school gag-comedy manga.
+Style: professional manga line art on pure white, drawn with THREE pure pen colours so the layers can be separated afterwards (手本：gulliver-manga の三色の線画):
+- PURE BLACK (#000000) for the characters and everything they wear or hold (outlines thicker and slightly rounded, inner lines thinner); solid black only on hair that the model sheet shows as black;
+- PURE BLUE (#0000FF) for the whole background: room, walls, windows, furniture, floor, props not held by a character (thin, clean lines, simpler than the figures, AR-03);
+- PURE RED (#FF0000) only for manga effect marks (speed lines, impact or emotion marks, sweat drops, steam); omit red if the panel needs no effect.
+Never mix the colours on one object; no grey, no screentone, no shading, no other colours (tone comes later). Characters are cute super-deformed, exactly 4 heads tall.
+The FIRST attached image is the approved pencil ROUGH of this panel: trace it — keep exactly its composition, poses, faces and expressions, and where everything sits. The SECOND attached image is the 3D camera view of the same panel: use it for perspective and proportions of the room and furniture. Draw the background (room, windows, furniture) in every panel unless told otherwise. Grey margins are padding: leave them empty.
+
+The SECOND attached image is the 3D camera view of this panel (perspective and proportions only): keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 朝比奈ねむ: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-042（PN-042 ねむ「部員は3人います」）. Place: LO-01 部室. Scene SC-006.
+What the panel shows: さらっと自信ありげに. Pacing: さらっと。声の自信と半目の落差.
+Camera: exactly as in the 3D camera view (標準); ねむの寄り。こたつの南から（北の掲示の下からでは後頭部になるため）.
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): ねむ「部員は3人います」
+People:
+- FG-064 朝比奈ねむ: head at 50% from the left and 35% from the top of the panel. 向き：南西。姿勢：座布団に座り、こたつに両腕と顎を乗せてだらける。表情：半目のまま口の端だけが上がる。描写する範囲：胸上。
+Continuity for this scene（続く状態）: Old-building 3rd-floor corridor, then the clubroom doorway. れいか comes ALONE: 生徒会長 armband on her LEFT arm, a binder held to her chest (she carries nothing else). The clubroom sliding door is open. Inside: kotatsu in the middle with tray, teapot and ONE teacup in front of ねむ. ねむ sits at the NORTH side (chin on the kotatsu), すず kneels (seiza) at the SOUTH side, たけし sits hugging his knees at the EAST side in front of the steel shelf. れいか's eyes never land on たけし.
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Landscape 1536x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

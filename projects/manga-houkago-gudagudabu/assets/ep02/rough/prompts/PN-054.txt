@@ -1,0 +1,19 @@
+Use your image generation tool. Make ONE image: a manga ROUGH (ラフ) for one panel of a Japanese school gag-comedy manga, drawn the way a manga artist roughs a panel before inking.
+Style: loose but clear grey pencil lines on white paper, monochrome only, no colour, no finished rendering. Characters are cute super-deformed, exactly 4 heads tall (4頭身), big heads, small simple hands and feet. Faces must show the direction of the face and the expression; bodies must show the pose with readable joints; hands and contacts must be clear.
+The FIRST attached image fixes the composition: it is a 3D stand-in made of blocks seen through the panel's camera. Keep its camera angle, horizon, perspective, and where each figure and object sits and how big it is in the frame. Redraw the blocky stand-ins as the real characters and a real Japanese high-school room (walls, windows, furniture, floor) — draw the background too, not only the people. Grey margins around the image are padding: leave them empty.
+
+The SECOND attached image is the model sheet (front, side, back) of 西園寺れいか: keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 権田原たけし: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-054（PN-054 れいか「何もない場所を指して、何を」。東の辺のたけしは小声「……ここに、いる、けど」）. Place: LO-01 部室. Scene SC-007.
+What the panel shows: PN-054 れいか「何もない場所を指して、何を」。東の辺のたけしは小声「……ここに、いる、けど」. Pacing: れいかの視線は東の辺をすり抜け、座布団しか見えない。たけしの台詞は最後に小さく置く.
+Camera: exactly as in the 3D camera view (広角の一部：戸の枠ごしに部屋の中央が入る); 戸口の外から。れいかの肩ごしに、東の辺のたけし.
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): れいか「朝比奈さん、何もない場所を指して、何を」；たけし「……ここに、いる、けど」
+People:
+- FG-083 西園寺れいか: head at 94% from the left and 35% from the top of the panel. 向き：東（座布団の方）。姿勢：背筋を伸ばして直立し、片腕にバインダーを抱える。表情：眉をひそめ、口は一文字。描写する範囲：膝上。
+- FG-084 権田原たけし: head at 6% from the left and 37% from the top of the panel. 向き：西。姿勢：猫背で膝を抱えるように座り、肩をすぼめる。表情：目は前髪で隠れる、口はごく小さい波線。描写する範囲：こたつ座り。
+Continuity for this scene（続く状態）: Same seats as SC-006 inside the clubroom; れいか stands just inside the doorway (north-west of the room) with her binder. One teacup in front of ねむ. たけし is drawn with thinner, fainter lines than the others (AR-08); his long fringe hides his eyes.
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Portrait 1024x1536.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

@@ -1,0 +1,26 @@
+Use your image generation tool. Make ONE image: the clean INK LINE ART (線画) of one panel of a Japanese school gag-comedy manga.
+Style: professional manga line art on pure white, drawn with THREE pure pen colours so the layers can be separated afterwards (手本：gulliver-manga の三色の線画):
+- PURE BLACK (#000000) for the characters and everything they wear or hold (outlines thicker and slightly rounded, inner lines thinner); solid black only on hair that the model sheet shows as black;
+- PURE BLUE (#0000FF) for the whole background: room, walls, windows, furniture, floor, props not held by a character (thin, clean lines, simpler than the figures, AR-03);
+- PURE RED (#FF0000) only for manga effect marks (speed lines, impact or emotion marks, sweat drops, steam); omit red if the panel needs no effect.
+Never mix the colours on one object; no grey, no screentone, no shading, no other colours (tone comes later). Characters are cute super-deformed, exactly 4 heads tall.
+The FIRST attached image is the approved pencil ROUGH of this panel: trace it — keep exactly its composition, poses, faces and expressions, and where everything sits. The SECOND attached image is the 3D camera view of the same panel: use it for perspective and proportions of the room and furniture. Draw the background (room, windows, furniture) in every panel unless told otherwise. Grey margins are padding: leave them empty.
+
+The SECOND attached image is the 3D camera view of this panel (perspective and proportions only): keep that character design exactly (hair, face, uniform, silhouette).
+The THIRD attached image is the model sheet (front, side, back) of 小鳥遊すず: keep that character design exactly (hair, face, uniform, silhouette).
+The FOURTH attached image is the model sheet (front, side, back) of 朝比奈ねむ: keep that character design exactly (hair, face, uniform, silhouette).
+The FIFTH attached image is the model sheet (front, side, back) of 権田原たけし: keep that character design exactly (hair, face, uniform, silhouette).
+
+Panel PN-050（PN-050 すず「先輩！？」ねむ「すずちゃんが来る前から、いた」）. Place: LO-01 部室. Scene SC-007.
+What the panel shows: PN-050 すず「先輩！？」ねむ「すずちゃんが来る前から、いた」. Pacing: 通常の顔に戻ったすずと、あっさりしたねむの落差.
+Camera: exactly as in the 3D camera view (広角：部屋全体が入る。左に北壁の貼り紙、右に南の窓、奥にスチール棚、手前に西の座布団).
+Dialogue in this panel (do NOT write it; leave some calm space for balloons, away from faces): すず「先輩！？ あの、先輩だったんですか！？」；ねむ「すずちゃんが来る前から、いた」
+People:
+- FG-076 小鳥遊すず: head at 74% from the left and 39% from the top of the panel. 向き：東。姿勢：正座で背筋を伸ばし、両手をこたつの上に置く。表情：目は丸く、口は小さく開く。描写する範囲：こたつ座り。
+- FG-077 朝比奈ねむ: head at 27% from the left and 42% from the top of the panel. 向き：南。姿勢：座布団に座り、こたつに両腕と顎を乗せてだらける。表情：半目、口は小さい「へ」の字。描写する範囲：こたつ座り。
+- FG-078 権田原たけし: head at 50% from the left and 30% from the top of the panel. 向き：西。姿勢：猫背で膝を抱えるように座り、肩をすぼめる。表情：目は前髪で隠れる、口はごく小さい波線。描写する範囲：こたつ座り。
+Continuity for this scene（続く状態）: Same seats as SC-006 inside the clubroom; れいか stands just inside the doorway (north-west of the room) with her binder. One teacup in front of ねむ. たけし is drawn with thinner, fainter lines than the others (AR-08); his long fringe hides his eyes.
+Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
+Landscape 1536x1024.
+After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

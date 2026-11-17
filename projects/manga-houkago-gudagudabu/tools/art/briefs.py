@@ -3,24 +3,25 @@
 usage: briefs.py {rough|ink|finish} WORK_DIR
 WORK_DIR/<PN>/ に head.txt・brief.txt・layout.png（生成の大きさに灰色の余白で合わせた絵）・refs.txt・frame.json を書く。
 - rough ：layout は 3D のカメラの絵。人物の設定画を渡す。
-- ink   ：layout は採ったラフ（assets/ep01/rough/panels）。2枚目に 3D のカメラの絵、続けて設定画。
-- finish：layout は線画（assets/ep01/ink/panels）。トーンとベタだけを足す。
+- ink   ：layout は採ったラフ（assets/{EP}/rough/panels）。2枚目に 3D のカメラの絵、続けて設定画。
+- finish：layout は線画（assets/{EP}/ink/panels）。トーンとベタだけを足す。
 """
 import json, os, re, sys
 from PIL import Image
+EP = os.environ.get('EP', 'ep01'); EPN = int(EP[2:])  # 話（ep01・ep02…）。ページは 1 話 8 ページずつ
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 kind, work = sys.argv[1], sys.argv[2]
 sb = json.load(open(f'{ROOT}/docs/storyboard-pages.json'))
-st = {r['panel']: r for r in json.load(open(f'{ROOT}/assets/ep01/stage/ep01-stage.json'))['panels']}
+st = {r['panel']: r for r in json.load(open(f'{ROOT}/assets/{EP}/stage/{EP}-stage.json'))['panels']}
 cs = {r['id']: r for r in json.load(open(f'{ROOT}/docs/character-sheet.json'))['rows']}
 SHEET = {'CH-01': 'nemu', 'CH-02': 'suzu', 'CH-03': 'takeshi', 'CH-04': 'reika', 'CH-05': 'tanahashi'}
 SHEETS = f'{ROOT}/assets/character'
 figs = {}
 for f in sb['figure']: figs.setdefault(f['in'], []).append(f)
-CONT = json.load(open(f'{ROOT}/assets/ep01/continuity.json'))
+CONT = json.load(open(f'{ROOT}/assets/{EP}/continuity.json'))
 ONLY = os.environ.get('ONLY', '').split(',') if os.environ.get('ONLY') else None
-NOTES = json.load(open(f'{ROOT}/assets/ep01/{kind}-notes.json')) if os.path.exists(f'{ROOT}/assets/ep01/{kind}-notes.json') else {}
+NOTES = json.load(open(f'{ROOT}/assets/{EP}/{kind}-notes.json')) if os.path.exists(f'{ROOT}/assets/{EP}/{kind}-notes.json') else {}
 
 HEAD = {
  'rough': """Use your image generation tool. Make ONE image: a manga ROUGH (ラフ) for one panel of a Japanese school gag-comedy manga, drawn the way a manga artist roughs a panel before inking.
@@ -47,14 +48,14 @@ ROOM = {
 }
 os.makedirs(work, exist_ok=True)
 for pn in sb['panel']:
-    if pn['in'] not in [p['id'] for p in sb['page'][:8]]: continue
+    if pn['in'] not in [p['id'] for p in sb['page'][(EPN - 1) * 8:EPN * 8]]: continue
     if ONLY and pn['id'] not in ONLY: continue
     D = f"{work}/{pn['id']}"; os.makedirs(D, exist_ok=True)
     rec = st[pn['id']]
     fw, fh = pn['frame'][2], pn['frame'][3]
     a = fw / fh
     cw, chh = (1536, 1024) if a > 1.25 else ((1024, 1536) if a < 0.8 else (1024, 1024))
-    src = {'rough': f"{ROOT}/assets/ep01/stage/underlay/{pn['id']}.jpg", 'ink': f"{ROOT}/assets/ep01/rough/panels/{pn['id']}.png", 'finish': f"{ROOT}/assets/ep01/ink/panels/{pn['id']}.png"}[kind]
+    src = {'rough': f"{ROOT}/assets/{EP}/stage/underlay/{pn['id']}.jpg", 'ink': f"{ROOT}/assets/{EP}/rough/panels/{pn['id']}.png", 'finish': f"{ROOT}/assets/{EP}/ink/panels/{pn['id']}.png"}[kind]
     im = Image.open(src).convert('RGB')
     s = min(cw / fw, chh / fh); w, h = round(fw * s), round(fh * s)
     canvas = Image.new('RGB', (cw, chh), (128, 128, 128)); ox, oy = (cw - w) // 2, (chh - h) // 2
@@ -62,7 +63,7 @@ for pn in sb['panel']:
     json.dump({'canvas': [cw, chh], 'box': [ox, oy, ox + w, oy + h], 'frame': [fw, fh]}, open(f'{D}/frame.json', 'w'))
     refs = []
     if kind == 'ink':
-        u = Image.open(f"{ROOT}/assets/ep01/stage/underlay/{pn['id']}.jpg").convert('RGB'); c2 = Image.new('RGB', (cw, chh), (128, 128, 128)); c2.paste(u.resize((w, h)), (ox, oy)); c2.save(f'{D}/camera.png')
+        u = Image.open(f"{ROOT}/assets/{EP}/stage/underlay/{pn['id']}.jpg").convert('RGB'); c2 = Image.new('RGB', (cw, chh), (128, 128, 128)); c2.paste(u.resize((w, h)), (ox, oy)); c2.save(f'{D}/camera.png')
         refs.append((f'{D}/camera.png', 'the 3D camera view of this panel (perspective and proportions only)'))
     whos = []
     for p in rec['people']:
@@ -92,7 +93,7 @@ Dialogue in this panel (do NOT write it; leave some calm space for balloons, awa
 People:
 """ + '\n'.join(lines) + f"""
 Continuity for this scene（続く状態）: {cont.get('state','')}
-Art rules: AR-02 4頭身; AR-05 {ROOM.get(rec['set'] if pn.get('描く場所','').find('LO-02') < 0 else 'corridor')}; AR-06 gag faces only where the 表情 says 崩し顔.
+Art rules: AR-02 4頭身; AR-05 {ROOM.get(rec['set'].rstrip('0123456789') if pn.get('描く場所','').find('LO-02') < 0 else 'corridor')}; AR-06 gag faces only where the 表情 says 崩し顔.
 """ + (NOTES.get(pn['id'], '') and f"Correction from the author's check: {NOTES[pn['id']]}\n") + TAIL + f"\n{'Landscape' if cw > chh else ('Portrait' if cw < chh else 'Square')} {cw}x{chh}."
     open(f'{D}/head.txt', 'w').write(HEAD[kind]); open(f'{D}/brief.txt', 'w').write(brief)
     open(f'{D}/refs.txt', 'w').write(''.join(f'{p}\t{w}\n' for p, w in refs))

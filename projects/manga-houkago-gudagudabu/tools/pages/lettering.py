@@ -10,15 +10,19 @@ bl = json.load(open(sys.argv[1]))
 p = f'{ROOT}/docs/lettering-record.json'
 doc = json.load(open(p))
 by_dl = {r['台詞']: r for r in doc['rows']}
+mine = {r['page'] for r in bl}
+keep = [r for r in doc['rows'] if r['ページ'] not in mine]  # ほかの話の行はそのまま残す
+TEMPLATE = {k: doc['rows'][0][k] for k in ('書体', '組み方', '組み方の理由', '台詞の版')} if doc['rows'] else {}
+NAMES = {'CH-01': 'ねむ', 'CH-02': 'すず', 'CH-03': 'たけし', 'CH-04': 'れいか', 'CH-05': '棚橋先生'}
 FACE_NOTE = {  # 3D の頭の丸に掛かると出たが、線画で見て顔は隠していない所（作者が確かめる）
 }
-rows, n = [], 0
+rows, n = [], max([int(r['id'][3:]) for r in keep if r['ページ'] < min(mine)] or [0])
 for r in bl:
     for b in r['balloons']:
         n += 1
         old = by_dl.get(b['dl'], {})
         gid = f"{r['panel']}-LY07-{b['dl']}"
-        row = dict(old)
+        row = dict(old) if old else {**TEMPLATE, '話す人物': NAMES.get(b['who'], b['who']), '台詞の全文': ''.join(b['lines'])}
         row.update({
             'id': f'BL-{n:03d}', 'ページ': r['page'], 'コマ': r['panel'], '台詞': b['dl'],
             '文字の大きさ': '34（全ページ同じ）', '文字の組み': '／'.join(b['lines']),
@@ -29,7 +33,7 @@ for r in bl:
         })
         row['name'] = f"BL-{n:03d} {row.get('話す人物', b['who'])}の吹き出し（{b['dl']}）"
         rows.append(row)
-missing = [d for d in by_dl if d not in {r['台詞'] for r in rows}]
-doc['rows'] = rows
+missing = [d for d in by_dl if d not in {r['台詞'] for r in rows} and by_dl[d]['ページ'] in mine]
+doc['rows'] = sorted(keep + rows, key=lambda r: (r['ページ'], int(r['id'][3:])))
 json.dump(doc, open(p, 'w'), ensure_ascii=False, indent=1)
 print('balloons', len(rows), 'dialogue lines without a balloon:', missing)

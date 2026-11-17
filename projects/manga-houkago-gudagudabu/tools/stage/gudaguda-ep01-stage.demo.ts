@@ -263,7 +263,7 @@ function clubRoom(): Box[] {
 // ---------------------------------------------------------------- コマ（人物の位置・向き・姿勢とカメラ）
 type Place = { fig: string; at: V3; facing: number; pose: Pose };
 type Shot = { panel: string; cam: V3; look: V3; places: Place[]; cups?: number; note?: string };
-type SetDef = { id: string; name: string; scenes: string[]; place: string; boxes: () => Box[]; shots: Shot[] };
+type SetDef = { id: string; name: string; scenes: string[]; place: string; boxes: () => Box[]; shots: Shot[]; ep?: string };
 const nemu = (x: number, y: number, facing: number, pose: Pose): Place => ({ fig: 'nemu', at: R(x, y), facing, pose });
 const suzu = (x: number, y: number, facing: number, pose: Pose): Place => ({ fig: 'suzu', at: R(x, y), facing, pose });
 const takeshi = (x: number, y: number, facing: number, pose: Pose): Place => ({ fig: 'takeshi', at: R(x, y), facing, pose });
@@ -319,6 +319,48 @@ const SETS: SetDef[] = [
     ],
   },
   {
+    // 第2話「部員は3人います」（SC-006〜SC-010）。カメラはネームの指定に寄せ、話す顔が背中になるコマだけ置き直した（note）
+    id: 'club2', ep: '第2話', name: '部室と旧校舎3階の廊下', scenes: ['SC-006', 'SC-007', 'SC-008', 'SC-009', 'SC-010'], place: 'LO-01・LO-02', boxes: clubRoom,
+    shots: [
+      { panel: 'PN-037', cam: R(-4.0, -2.2, 1.5), look: R(20.0, -1.3, 1.0), places: [reika(12.0, -1.3, W, 'walk')], note: '廊下の西から東へ。遠くから、ひとりで歩いてくるれいか' },
+      { panel: 'PN-038', cam: R(1.7, 0.7, 0.85), look: R(1.2, -0.8, 1.35), places: [reika(1.2, -0.8, face([1.2, -0.8], [1.7, 0.7]), 'hold-front')], note: 'あおり。廊下の北からではれいかの背中になるので、戸口の内側の低い所から' },
+      { panel: 'PN-039', cam: R(1.2, -0.8, 1.5), look: R(4.0, 2.4, 0.6), places: [nemu(KN[0], KN[1], N, 'kotatsu-chin')], note: '戸口の外から、細く開けた戸ごしにこたつのねむ' },
+      { panel: 'PN-040', cam: R(2.7, -1.7, 1.4), look: R(1.2, -0.8, 1.3), places: [reika(1.2, -0.8, face([1.2, -0.8], [2.6, 0.4]), 'hold-front')], note: '目をそらすれいか。廊下の東から（北からでは背中になるため）' },
+      { panel: 'PN-041', cam: R(1.9, 0.9, 1.45), look: R(1.2, 0.0, 1.42), places: [reika(1.2, 0.0, face([1.2, 0.0], [4.0, 3.0]), 'hold-front')], note: 'れいかの目のアップ。戸口の内側の前から' },
+      { panel: 'PN-042', cam: R(4.0, 3.45, 0.9), look: R(4.0, 2.0, 0.78), places: [nemu(KN[0], KN[1], S, 'kotatsu-chin')], note: 'ねむの寄り。こたつの南から（北の掲示の下からでは後頭部になるため）' },
+      { panel: 'PN-043', cam: R(7.7, 5.7, 1.8), look: R(4.64, 3.13, 0.8), places: [reika(1.2, 0.8, E, 'hand-up'), nemu(KN[0], KN[1], S, 'kotatsu-chin'), suzu(KS[0], KS[1], N, 'seiza'), takeshi(KE[0], KE[1], W, 'kotatsu-hug')], note: '部室の引き。西の流し台の脇からでは戸口の内側のれいかが枠の外になるので、南東の角の上から' },
+      { panel: 'PN-044', cam: R(1.0, 3.0, 1.0), look: R(4.0, 4.0, 0.7), places: [suzu(KS[0], KS[1], N, 'seiza-lean'), nemu(KN[0], KN[1], S, 'kotatsu-chin')] },
+      { panel: 'PN-045', cam: R(4.0, 3.3, 0.85), look: R(4.0, 2.0, 0.72), places: [nemu(KN[0], KN[1], S, 'kotatsu-chin')], note: 'ねむの顔の寄り。こたつの南から' },
+      { panel: 'PN-046', cam: R(1.0, 3.0, 1.0), look: R(4.2, 2.4, 0.6), places: [nemu(KN[0], KN[1], face(KN, KE), 'kotatsu-point'), takeshi(KE[0], KE[1], W, 'kotatsu-hug')] },
+      { panel: 'PN-047', cam: R(0.4, 3.0, 1.4), look: R(4.8, 3.3, 0.6), places: [suzu(KS[0], KS[1], face(KS, KE), 'seiza-lean'), takeshi(KE[0], KE[1], W, 'kotatsu-hug'), nemu(KN[0], KN[1], S, 'kotatsu-chin')] },
+      { panel: 'PN-048', cam: R(5.7, 4.4, 1.0), look: R(4.0, 4.05, 0.85), places: [suzu(KS[0], KS[1], face(KS, KE), 'seiza-reach')], note: 'すずの崩し顔。棚の脇からではたけしの体が重なるので、こたつの南東から' },
+      { panel: 'PN-049', cam: R(3.5, 3.4, 0.95), look: R(5.25, 3.0, 0.8), places: [takeshi(KE[0], KE[1], W, 'kotatsu-hug')], note: 'たけしの顔の寄り。こたつの西から' },
+      { panel: 'PN-050', cam: R(0.4, 3.0, 1.4), look: R(4.6, 3.0, 0.6), places: [suzu(KS[0], KS[1], E, 'seiza'), nemu(KN[0], KN[1], S, 'kotatsu-chin'), takeshi(KE[0], KE[1], W, 'kotatsu-hug')] },
+      { panel: 'PN-051', cam: R(4.0, 2.75, 0.95), look: R(4.0, 4.05, 0.8), places: [suzu(KS[0], KS[1], N, 'seiza-point')], note: 'すずの崩し顔の寄り。ねむの頭の上から' },
+      { panel: 'PN-052', cam: R(4.6, 5.6, 1.5), look: R(4.0, 2.2, 0.7), places: [nemu(KN[0], KN[1], S, 'kotatsu-point'), suzu(KS[0], KS[1], N, 'seiza')], note: '胸を張るねむと、すずの背中。南の窓の前から（北の掲示の下からではねむの背中になるため）' },
+      { panel: 'PN-053', cam: R(4.0, 2.75, 0.95), look: R(4.0, 4.05, 0.8), places: [suzu(KS[0], KS[1], N, 'seiza-point')] },
+      { panel: 'PN-054', cam: R(0.2, -1.5, 1.6), look: R(2.55, 1.74, 0.9), places: [reika(1.2, 0.8, face([1.2, 0.8], [5.25, 3.0]), 'hold-front'), takeshi(KE[0], KE[1], W, 'kotatsu-hug')], note: '戸口の外から。れいかの肩ごしに、東の辺のたけし' },
+      { panel: 'PN-055', cam: R(6.8, 5.6, 1.3), look: R(4.6, 3.5, 0.6), places: [suzu(KS[0], KS[1], face(KS, KE), 'seiza-reach'), takeshi(KE[0], KE[1], W, 'kotatsu-hug')], note: '名札を付けるすず。こたつの南東から' },
+      { panel: 'PN-056', cam: R(1.2, -0.8, 1.5), look: R(3.4, 2.0, 0.7), places: [reika(2.6, 1.2, face([2.6, 1.2], [3.8, 2.4]), 'hold-front'), nemu(KN[0], KN[1], S, 'kotatsu-chin')] },
+      { panel: 'PN-057', cam: R(4.6, 3.6, 1.1), look: R(3.3, 1.6, 1.0), places: [nemu(KN[0], KN[1], S, 'kotatsu-raise'), reika(2.6, 1.2, face([2.6, 1.2], KN), 'hold-front')], note: 'ベルを振るねむと、ねむを見るれいか。こたつの南から' },
+      { panel: 'PN-058', cam: R(4.0, 2.75, 0.95), look: R(4.0, 4.05, 0.8), places: [suzu(KS[0], KS[1], face(KS, [2.6, 1.2]), 'seiza-point')] },
+      { panel: 'PN-059', cam: R(0.6, 5.6, 1.5), look: R(3.43, 2.77, 0.8), places: [suzu(KS[0], KS[1], E, 'seiza-reach'), reika(2.6, 1.2, face([2.6, 1.2], KE), 'reach'), takeshi(KE[0], KE[1], W, 'kotatsu-hug')] },
+      { panel: 'PN-060', cam: R(3.5, 3.4, 1.0), look: R(5.25, 3.0, 0.9), places: [takeshi(KE[0], KE[1], W, 'kotatsu-hug')], note: 'たけしの寄り。こたつの西から（頭の上を空ける）' },
+      { panel: 'PN-061', cam: R(0.6, 5.6, 1.5), look: R(3.43, 2.77, 0.8), places: [suzu(KS[0], KS[1], face(KS, [2.6, 1.2]), 'seiza-point'), reika(2.6, 1.2, face([2.6, 1.2], [4.0, 4.0]), 'hold-front'), takeshi(KE[0], KE[1], W, 'kotatsu-raise')], note: '6ページの大ゴマ。南西の窓の前から（西の流し台の脇からではれいかが枠の外になるため）' },
+      { panel: 'PN-062', cam: R(2.8, 2.0, 1.2), look: R(1.2, 0.8, 1.3), places: [reika(1.2, 0.8, face([1.2, 0.8], [2.8, 2.0]), 'hold-front')], note: '言い切るれいか。廊下からでは背中になるので、部屋の中から' },
+      { panel: 'PN-063', cam: R(3.8, 2.6, 0.95), look: R(5.25, 3.0, 0.8), places: [takeshi(KE[0], KE[1], W, 'kotatsu-hug')] },
+      { panel: 'PN-064', cam: R(2.4, 2.0, 1.3), look: R(1.2, 0.8, 1.2), places: [reika(1.2, 0.8, face([1.2, 0.8], [0.6, 1.6]), 'hold-front')], note: 'バインダーに書き込むれいか。部屋の中から' },
+      { panel: 'PN-065', cam: R(3.6, 5.95, 1.5), look: R(2.97, 2.05, 0.9), places: [nemu(KN[0], KN[1], face(KN, [1.2, 0.8]), 'kotatsu-chin'), reika(1.2, 0.8, S, 'hold-front')] },
+      { panel: 'PN-066', cam: R(3.4, 0.5, 1.2), look: R(1.5, 1.0, 1.1), places: [suzu(1.8, 1.2, face([1.8, 1.2], [1.2, 0.8]), 'reach'), reika(1.2, 0.8, face([1.2, 0.8], [1.8, 1.4]), 'hold-front')], note: '掲示の下（北東）から、戸口の近くの2人' },
+      { panel: 'PN-067', cam: R(2.3, 0.35, 1.45), look: R(1.2, 0.1, 1.42), places: [reika(1.2, 0.1, face([1.2, 0.1], [4.0, 3.0]), 'look-back')], note: 'こたつを振り返るれいかの横顔。戸口の内側の東から' },
+      { panel: 'PN-068', cam: R(0.0, -2.3, 1.4), look: R(1.4, -0.1, 0.9), places: [takeshi(1.3, -0.1, E, 'stand')], note: '戸口から半分だけ出たたけし。廊下の北西から' },
+      { panel: 'PN-069', cam: R(4.0, 0.4, 1.2), look: R(4.6, 3.4, 0.5), places: [suzu(KS[0], KS[1], face(KS, KE), 'seiza-offer'), takeshi(KE[0], KE[1], W, 'kotatsu-hug'), nemu(KN[0], KN[1], S, 'kotatsu-chin')], cups: 3 },
+      { panel: 'PN-070', cam: R(4.0, 2.75, 0.95), look: R(4.0, 4.05, 0.8), places: [suzu(KS[0], KS[1], N, 'seiza')], cups: 3, note: 'すずの寄り。ねむの頭の上から（棚の脇からではたけしが重なるため）' },
+      { panel: 'PN-071', cam: R(0.3, 0.3, 2.2), look: R(4.4, 3.2, 0.5), places: [nemu(KN[0], KN[1], S, 'kotatsu-drink'), suzu(KS[0], KS[1], N, 'seiza-drink'), takeshi(KE[0], KE[1], W, 'kotatsu-hug')], cups: 3 },
+      { panel: 'PN-072', cam: R(0.3, 0.3, 2.2), look: R(4.4, 3.2, 0.5), places: [nemu(KN[0], KN[1], S, 'kotatsu-drink'), suzu(KS[0], KS[1], N, 'seiza-drink'), takeshi(KE[0], KE[1], W, 'kotatsu-drink')], cups: 3, note: '最後のコマ。北西の角の上から、こたつを囲む3人' },
+    ],
+  },
+  {
     id: 'sheet', name: '設定画の下絵', scenes: [], place: '（舞台なし：設定画）', boxes: () => [B('床', '#f4f4f4', -6, 6, -3, 6, -0.05, 0)],
     shots: [
       ...(['nemu', 'suzu', 'takeshi', 'reika', 'tanahashi'] as const).flatMap((id): Shot[] => [
@@ -358,7 +400,7 @@ function cupBoxes(): Box[] {
   return [[3.75, 2.85], [4.2, 3.2], [4.25, 2.8]].map(([x, y]) => B('湯のみ', '#efe9dc', x! - 0.04, x! + 0.04, y! - 0.04, y! + 0.04, 0.4, 0.49));
 }
 function buildSet(set: SetDef) {
-  const doc = emptyCharacter(`第1話 舞台：${set.name}`);
+  const doc = emptyCharacter(`${set.ep ?? '第1話'} 舞台：${set.name}`);
   const assets = new Map<string, Uint8Array>();
   bake(doc, assets, `room-${set.id}`, `舞台 ${set.name}`, set.boxes());
   const cups = set.shots.some((s) => s.cups) ? bake(doc, assets, `cups-${set.id}`, '湯のみ3つ', cupBoxes()) : null;
