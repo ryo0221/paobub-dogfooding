@@ -1,0 +1,180 @@
+{
+ "format": 1,
+ "name": "架空の e-Axle の工場 生産システム計画",
+ "definition": {
+  "id": "production-system-planning",
+  "version": "1.0.0"
+ },
+ "citations": "trace/citations.json",
+ "deliverables": {
+  "process-map": [
+   {
+    "path": "docs/process-map.json",
+    "as": "plain"
+   }
+  ],
+  "production-requirements": [
+   {
+    "path": "docs/production-requirements.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "requirement",
+      "match": "^### (RQ-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "process-plan": [
+   {
+    "path": "docs/process-plan.json",
+    "as": "json",
+    "kind": "product",
+    "at": "product"
+   },
+   {
+    "path": "docs/process-plan.json",
+    "as": "json",
+    "kind": "operation",
+    "at": "operation"
+   }
+  ],
+  "line-model": [
+   {
+    "path": "docs/line-model.json",
+    "as": "json",
+    "kind": "resource",
+    "at": "resource"
+   },
+   {
+    "path": "docs/line-model.json",
+    "as": "json",
+    "kind": "connection",
+    "at": "connection"
+   },
+   {
+    "path": "factory/plant-planned.factory.json",
+    "as": "plain"
+   },
+   {
+    "path": "factory/plant-adopted.factory.json",
+    "as": "plain"
+   }
+  ],
+  "input-data": [
+   {
+    "path": "docs/input-data.json",
+    "as": "json",
+    "kind": "data-set",
+    "at": "data-set"
+   }
+  ],
+  "layout-plan": [
+   {
+    "path": "docs/layout-plan.json",
+    "as": "json",
+    "kind": "zone",
+    "at": "zone"
+   },
+   {
+    "path": "docs/layout-plan.json",
+    "as": "json",
+    "kind": "layout-issue",
+    "at": "layout-issue"
+   },
+   {
+    "path": "bim/plant-hall.bim.json",
+    "as": "plain"
+   }
+  ],
+  "validation-record": [
+   {
+    "path": "docs/validation-record.json",
+    "as": "json",
+    "kind": "validation-check",
+    "at": "validation-check"
+   }
+  ],
+  "experiment-record": [
+   {
+    "path": "docs/experiment-record.json",
+    "as": "json",
+    "kind": "scenario",
+    "at": "scenario"
+   },
+   {
+    "path": "docs/experiment-record.json",
+    "as": "json",
+    "kind": "finding",
+    "at": "finding"
+   }
+  ],
+  "control-record": [
+   {
+    "path": "docs/control-record.json",
+    "as": "json",
+    "kind": "control-case",
+    "at": "control-case"
+   }
+  ],
+  "plan-approval": [
+   {
+    "path": "docs/plan-approval.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "decision",
+      "match": "^### (DC-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "presentation-record": [
+   {
+    "path": "docs/presentation-record.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "presentation-scene",
+      "match": "^### (PS-\\d+)\\b"
+     }
+    ]
+   }
+  ]
+ },
+ "phases": {
+  "process": {
+   "state": "受け入れ待ち"
+  },
+  "requirements": {
+   "state": "受け入れ待ち"
+  },
+  "process-design": {
+   "state": "受け入れ待ち"
+  },
+  "line-design": {
+   "state": "受け入れ待ち"
+  },
+  "data": {
+   "state": "受け入れ待ち"
+  },
+  "layout": {
+   "state": "受け入れ待ち"
+  },
+  "validation": {
+   "state": "受け入れ待ち"
+  },
+  "experiment": {
+   "state": "受け入れ待ち"
+  },
+  "control": {
+   "state": "受け入れ待ち"
+  },
+  "approval": {
+   "state": "進行中"
+  },
+  "presentation": {
+   "state": "進行中"
+  }
+ }
+}

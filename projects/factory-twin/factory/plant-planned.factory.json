@@ -1,0 +1,861 @@
+{
+ "schemaVersion": 1,
+ "name": "Minato e-Drive Plant No. 2",
+ "products": [
+  {
+   "id": "housing",
+   "name": "Housing"
+  },
+  {
+   "id": "gearset",
+   "name": "Gear set"
+  },
+  {
+   "id": "gear-unit",
+   "name": "Gear unit"
+  },
+  {
+   "id": "motor",
+   "name": "Motor"
+  },
+  {
+   "id": "inverter",
+   "name": "Inverter"
+  },
+  {
+   "id": "eaxle",
+   "name": "e-Axle"
+  }
+ ],
+ "objects": [
+  {
+   "id": "in-housing",
+   "name": "Housing receiving",
+   "kind": "source",
+   "interval": {
+    "type": "const",
+    "value": 66000
+   },
+   "mix": [
+    {
+     "productId": "housing",
+     "weight": 1
+    }
+   ],
+   "calendarId": "two-shift",
+   "at": {
+    "x": 4000,
+    "y": 4000
+   },
+   "size": {
+    "widthMm": 3000,
+    "depthMm": 2400,
+    "heightMm": 1500
+   }
+  },
+  {
+   "id": "machining",
+   "name": "Housing machining cell",
+   "kind": "parallel",
+   "count": 3,
+   "processTime": {
+    "type": "triangular",
+    "min": 170000,
+    "mode": 185000,
+    "max": 215000
+   },
+   "failures": {
+    "uptime": {
+     "type": "exponential",
+     "mean": 10800000
+    },
+    "repair": {
+     "type": "triangular",
+     "min": 480000,
+     "mode": 900000,
+     "max": 2400000
+    }
+   },
+   "calendarId": "two-shift",
+   "at": {
+    "x": 14000,
+    "y": 5000
+   },
+   "size": {
+    "widthMm": 10000,
+    "depthMm": 5000,
+    "heightMm": 2800
+   }
+  },
+  {
+   "id": "wash",
+   "name": "Washer",
+   "kind": "station",
+   "processTime": {
+    "type": "const",
+    "value": 48000
+   },
+   "calendarId": "two-shift",
+   "at": {
+    "x": 24500,
+    "y": 5000
+   },
+   "size": {
+    "widthMm": 4500,
+    "depthMm": 2500,
+    "heightMm": 2500
+   }
+  },
+  {
+   "id": "buffer-wash",
+   "name": "Washed housing rack",
+   "kind": "buffer",
+   "capacity": 6,
+   "at": {
+    "x": 30000,
+    "y": 5000
+   },
+   "size": {
+    "widthMm": 3000,
+    "depthMm": 1600,
+    "heightMm": 1800
+   }
+  },
+  {
+   "id": "conveyor-1",
+   "name": "Transfer conveyor",
+   "kind": "conveyor",
+   "lengthMm": 16000,
+   "speedMmS": 250,
+   "partLengthMm": 600,
+   "accumulating": true,
+   "at": {
+    "x": 41000,
+    "y": 5000
+   }
+  },
+  {
+   "id": "in-gearset",
+   "name": "Gear set supply",
+   "kind": "source",
+   "interval": {
+    "type": "const",
+    "value": 60000
+   },
+   "mix": [
+    {
+     "productId": "gearset",
+     "weight": 1
+    }
+   ],
+   "startMs": 30000,
+   "calendarId": "two-shift",
+   "at": {
+    "x": 52000,
+    "y": 9500
+   }
+  },
+  {
+   "id": "buffer-gear",
+   "name": "Gear set rack",
+   "kind": "buffer",
+   "capacity": 10,
+   "at": {
+    "x": 54500,
+    "y": 9500
+   }
+  },
+  {
+   "id": "assembly-1",
+   "name": "Gear unit assembly",
+   "kind": "assembly",
+   "mainProductId": "housing",
+   "components": [
+    {
+     "productId": "gearset",
+     "count": 1
+    }
+   ],
+   "processTime": {
+    "type": "normal",
+    "mean": 62000,
+    "sd": 6000,
+    "min": 45000
+   },
+   "outputProductId": "gear-unit",
+   "workers": {
+    "count": 1,
+    "skill": "assembly"
+   },
+   "calendarId": "two-shift",
+   "at": {
+    "x": 55000,
+    "y": 5000
+   }
+  },
+  {
+   "id": "in-motor",
+   "name": "Motor kitting",
+   "kind": "source",
+   "interval": {
+    "type": "const",
+    "value": 40000
+   },
+   "mix": [
+    {
+     "productId": "motor",
+     "weight": 1
+    }
+   ],
+   "at": {
+    "x": 8000,
+    "y": 33000
+   }
+  },
+  {
+   "id": "store-motor",
+   "name": "Motor kit rack",
+   "kind": "buffer",
+   "capacity": 12,
+   "pathNodeId": "k-motor",
+   "at": {
+    "x": 8000,
+    "y": 30200
+   }
+  },
+  {
+   "id": "in-inverter",
+   "name": "Inverter kitting",
+   "kind": "source",
+   "interval": {
+    "type": "const",
+    "value": 40000
+   },
+   "mix": [
+    {
+     "productId": "inverter",
+     "weight": 1
+    }
+   ],
+   "at": {
+    "x": 20000,
+    "y": 33000
+   }
+  },
+  {
+   "id": "store-inverter",
+   "name": "Inverter kit rack",
+   "kind": "buffer",
+   "capacity": 12,
+   "pathNodeId": "k-inverter",
+   "at": {
+    "x": 20000,
+    "y": 30200
+   }
+  },
+  {
+   "id": "assembly-2",
+   "name": "Final assembly",
+   "kind": "assembly",
+   "mainProductId": "gear-unit",
+   "components": [
+    {
+     "productId": "motor",
+     "count": 1
+    },
+    {
+     "productId": "inverter",
+     "count": 1
+    }
+   ],
+   "processTime": {
+    "type": "normal",
+    "mean": 68000,
+    "sd": 7000,
+    "min": 50000
+   },
+   "outputProductId": "eaxle",
+   "workers": {
+    "count": 2,
+    "skill": "assembly"
+   },
+   "calendarId": "two-shift",
+   "pathNodeId": "drop",
+   "at": {
+    "x": 66000,
+    "y": 6000
+   },
+   "size": {
+    "widthMm": 5000,
+    "depthMm": 3000,
+    "heightMm": 2200
+   }
+  },
+  {
+   "id": "conveyor-2",
+   "name": "Test conveyor",
+   "kind": "conveyor",
+   "lengthMm": 8000,
+   "speedMmS": 250,
+   "partLengthMm": 600,
+   "accumulating": true,
+   "at": {
+    "x": 66000,
+    "y": 12500,
+    "angle": 90
+   }
+  },
+  {
+   "id": "test",
+   "name": "End-of-line test bench",
+   "kind": "station",
+   "processTime": {
+    "type": "lognormal",
+    "mean": 64000,
+    "sd": 9000
+   },
+   "failures": {
+    "uptime": {
+     "type": "exponential",
+     "mean": 21600000
+    },
+    "repair": {
+     "type": "triangular",
+     "min": 300000,
+     "mode": 600000,
+     "max": 1800000
+    }
+   },
+   "workers": {
+    "count": 1,
+    "skill": "test"
+   },
+   "calendarId": "two-shift",
+   "at": {
+    "x": 66000,
+    "y": 20000
+   },
+   "size": {
+    "widthMm": 4000,
+    "depthMm": 3000,
+    "heightMm": 2400
+   }
+  },
+  {
+   "id": "pack",
+   "name": "Packing",
+   "kind": "station",
+   "processTime": {
+    "type": "normal",
+    "mean": 40000,
+    "sd": 4000,
+    "min": 30000
+   },
+   "workers": {
+    "count": 1,
+    "skill": "pack"
+   },
+   "calendarId": "two-shift",
+   "at": {
+    "x": 66000,
+    "y": 26500
+   },
+   "size": {
+    "widthMm": 3000,
+    "depthMm": 2400,
+    "heightMm": 2000
+   }
+  },
+  {
+   "id": "ship",
+   "name": "Shipping dock",
+   "kind": "drain",
+   "at": {
+    "x": 66000,
+    "y": 33000
+   }
+  }
+ ],
+ "links": [
+  {
+   "id": "in-housing>machining",
+   "from": "in-housing",
+   "to": "machining"
+  },
+  {
+   "id": "machining>wash",
+   "from": "machining",
+   "to": "wash"
+  },
+  {
+   "id": "wash>buffer-wash",
+   "from": "wash",
+   "to": "buffer-wash"
+  },
+  {
+   "id": "buffer-wash>conveyor-1",
+   "from": "buffer-wash",
+   "to": "conveyor-1"
+  },
+  {
+   "id": "conveyor-1>assembly-1",
+   "from": "conveyor-1",
+   "to": "assembly-1"
+  },
+  {
+   "id": "in-gearset>buffer-gear",
+   "from": "in-gearset",
+   "to": "buffer-gear"
+  },
+  {
+   "id": "buffer-gear>assembly-1",
+   "from": "buffer-gear",
+   "to": "assembly-1"
+  },
+  {
+   "id": "assembly-1>assembly-2",
+   "from": "assembly-1",
+   "to": "assembly-2"
+  },
+  {
+   "id": "in-motor>store-motor",
+   "from": "in-motor",
+   "to": "store-motor"
+  },
+  {
+   "id": "store-motor>assembly-2",
+   "from": "store-motor",
+   "to": "assembly-2",
+   "transport": {
+    "fleetId": "agv"
+   }
+  },
+  {
+   "id": "in-inverter>store-inverter",
+   "from": "in-inverter",
+   "to": "store-inverter"
+  },
+  {
+   "id": "store-inverter>assembly-2",
+   "from": "store-inverter",
+   "to": "assembly-2",
+   "transport": {
+    "fleetId": "agv"
+   }
+  },
+  {
+   "id": "assembly-2>conveyor-2",
+   "from": "assembly-2",
+   "to": "conveyor-2"
+  },
+  {
+   "id": "conveyor-2>test",
+   "from": "conveyor-2",
+   "to": "test"
+  },
+  {
+   "id": "test>pack",
+   "from": "test",
+   "to": "pack"
+  },
+  {
+   "id": "pack>ship",
+   "from": "pack",
+   "to": "ship"
+  }
+ ],
+ "run": {
+  "warmupMs": 86400000,
+  "durationMs": 691200000,
+  "seed": 1
+ },
+ "calendars": [
+  {
+   "id": "two-shift",
+   "name": "Two shifts",
+   "cycleMs": 86400000,
+   "shifts": [
+    {
+     "name": "Early",
+     "startMs": 21600000,
+     "endMs": 52200000
+    },
+    {
+     "name": "Late",
+     "startMs": 52200000,
+     "endMs": 82800000
+    }
+   ]
+  }
+ ],
+ "workerPools": [
+  {
+   "id": "assemblers",
+   "name": "Assemblers",
+   "count": 3,
+   "skills": [
+    "assembly",
+    "pack"
+   ],
+   "walkSpeedMmS": 1200,
+   "home": {
+    "x": 63000,
+    "y": 14000
+   }
+  },
+  {
+   "id": "testers",
+   "name": "Test operators",
+   "count": 1,
+   "skills": [
+    "test"
+   ],
+   "walkSpeedMmS": 1200,
+   "home": {
+    "x": 63000,
+    "y": 22000
+   }
+  }
+ ],
+ "paths": {
+  "nodes": [
+   {
+    "id": "a",
+    "x": 4000,
+    "y": 17000
+   },
+   {
+    "id": "b",
+    "x": 61000,
+    "y": 17000
+   },
+   {
+    "id": "drop",
+    "x": 61000,
+    "y": 9000
+   },
+   {
+    "id": "d",
+    "x": 62800,
+    "y": 9000
+   },
+   {
+    "id": "e",
+    "x": 62800,
+    "y": 28000
+   },
+   {
+    "id": "k-inverter",
+    "x": 20000,
+    "y": 28000
+   },
+   {
+    "id": "k-motor",
+    "x": 8000,
+    "y": 28000
+   },
+   {
+    "id": "f",
+    "x": 4000,
+    "y": 28000
+   },
+   {
+    "id": "east-1",
+    "x": 9700,
+    "y": 17000
+   },
+   {
+    "id": "east-2",
+    "x": 15400,
+    "y": 17000
+   },
+   {
+    "id": "east-3",
+    "x": 21100,
+    "y": 17000
+   },
+   {
+    "id": "east-4",
+    "x": 26800,
+    "y": 17000
+   },
+   {
+    "id": "east-5",
+    "x": 32500,
+    "y": 17000
+   },
+   {
+    "id": "east-6",
+    "x": 38200,
+    "y": 17000
+   },
+   {
+    "id": "east-7",
+    "x": 43900,
+    "y": 17000
+   },
+   {
+    "id": "east-8",
+    "x": 49600,
+    "y": 17000
+   },
+   {
+    "id": "east-9",
+    "x": 55300,
+    "y": 17000
+   },
+   {
+    "id": "down-1",
+    "x": 61000,
+    "y": 13000
+   },
+   {
+    "id": "up-1",
+    "x": 62800,
+    "y": 13750
+   },
+   {
+    "id": "up-2",
+    "x": 62800,
+    "y": 18500
+   },
+   {
+    "id": "up-3",
+    "x": 62800,
+    "y": 23250
+   },
+   {
+    "id": "north-1-1",
+    "x": 57450,
+    "y": 28000
+   },
+   {
+    "id": "north-1-2",
+    "x": 52100,
+    "y": 28000
+   },
+   {
+    "id": "north-1-3",
+    "x": 46750,
+    "y": 28000
+   },
+   {
+    "id": "north-1-4",
+    "x": 41400,
+    "y": 28000
+   },
+   {
+    "id": "north-1-5",
+    "x": 36050,
+    "y": 28000
+   },
+   {
+    "id": "north-1-6",
+    "x": 30700,
+    "y": 28000
+   },
+   {
+    "id": "north-1-7",
+    "x": 25350,
+    "y": 28000
+   },
+   {
+    "id": "north-2-1",
+    "x": 14000,
+    "y": 28000
+   },
+   {
+    "id": "west-1",
+    "x": 4000,
+    "y": 22500
+   }
+  ],
+  "segments": [
+   {
+    "id": "east-s1",
+    "from": "a",
+    "to": "east-1"
+   },
+   {
+    "id": "east-s2",
+    "from": "east-1",
+    "to": "east-2"
+   },
+   {
+    "id": "east-s3",
+    "from": "east-2",
+    "to": "east-3"
+   },
+   {
+    "id": "east-s4",
+    "from": "east-3",
+    "to": "east-4"
+   },
+   {
+    "id": "east-s5",
+    "from": "east-4",
+    "to": "east-5"
+   },
+   {
+    "id": "east-s6",
+    "from": "east-5",
+    "to": "east-6"
+   },
+   {
+    "id": "east-s7",
+    "from": "east-6",
+    "to": "east-7"
+   },
+   {
+    "id": "east-s8",
+    "from": "east-7",
+    "to": "east-8"
+   },
+   {
+    "id": "east-s9",
+    "from": "east-8",
+    "to": "east-9"
+   },
+   {
+    "id": "east-s10",
+    "from": "east-9",
+    "to": "b"
+   },
+   {
+    "id": "down-s1",
+    "from": "b",
+    "to": "down-1"
+   },
+   {
+    "id": "down-s2",
+    "from": "down-1",
+    "to": "drop"
+   },
+   {
+    "id": "out-s1",
+    "from": "drop",
+    "to": "d"
+   },
+   {
+    "id": "up-s1",
+    "from": "d",
+    "to": "up-1"
+   },
+   {
+    "id": "up-s2",
+    "from": "up-1",
+    "to": "up-2"
+   },
+   {
+    "id": "up-s3",
+    "from": "up-2",
+    "to": "up-3"
+   },
+   {
+    "id": "up-s4",
+    "from": "up-3",
+    "to": "e"
+   },
+   {
+    "id": "north-1-s1",
+    "from": "e",
+    "to": "north-1-1"
+   },
+   {
+    "id": "north-1-s2",
+    "from": "north-1-1",
+    "to": "north-1-2"
+   },
+   {
+    "id": "north-1-s3",
+    "from": "north-1-2",
+    "to": "north-1-3"
+   },
+   {
+    "id": "north-1-s4",
+    "from": "north-1-3",
+    "to": "north-1-4"
+   },
+   {
+    "id": "north-1-s5",
+    "from": "north-1-4",
+    "to": "north-1-5"
+   },
+   {
+    "id": "north-1-s6",
+    "from": "north-1-5",
+    "to": "north-1-6"
+   },
+   {
+    "id": "north-1-s7",
+    "from": "north-1-6",
+    "to": "north-1-7"
+   },
+   {
+    "id": "north-1-s8",
+    "from": "north-1-7",
+    "to": "k-inverter"
+   },
+   {
+    "id": "north-2-s1",
+    "from": "k-inverter",
+    "to": "north-2-1"
+   },
+   {
+    "id": "north-2-s2",
+    "from": "north-2-1",
+    "to": "k-motor"
+   },
+   {
+    "id": "north-3-s1",
+    "from": "k-motor",
+    "to": "f"
+   },
+   {
+    "id": "west-s1",
+    "from": "f",
+    "to": "west-1"
+   },
+   {
+    "id": "west-s2",
+    "from": "west-1",
+    "to": "a"
+   }
+  ]
+ },
+ "fleets": [
+  {
+   "id": "agv",
+   "name": "Kitting AGVs",
+   "count": 2,
+   "speedMmS": 1000,
+   "loadMs": 15000,
+   "unloadMs": 15000,
+   "homeNodeId": "a",
+   "widthMm": 1000
+  }
+ ],
+ "experiment": {
+  "replications": 5,
+  "factors": [
+   {
+    "kind": "fleet-count",
+    "targetId": "agv",
+    "values": [
+     2,
+     4,
+     6,
+     8
+    ]
+   },
+   {
+    "kind": "pool-count",
+    "targetId": "assemblers",
+    "values": [
+     3,
+     4
+    ]
+   }
+  ]
+ }
+}

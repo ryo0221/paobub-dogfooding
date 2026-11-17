@@ -12,6 +12,7 @@
 | [projects/watch-sk01](projects/watch-sk01/) | メカニカル製品の開発（product-design-engineering 1.0.0） | スケルトンの手巻き腕時計 SK-01。進め方〜詳細設計（P0〜P4）。配置と部品ごとの詳細の 3D モデル、干渉と噛み合いの解析 |
 | [projects/car-sho](projects/car-sho/) | メカニカル製品の開発（product-design-engineering 1.0.0） | ミッドシップの 2 人乗り「翔」。進め方〜詳細設計（P0〜P4）。配置の 3D モデルと外形（外板・窓・床）の詳細の 3D モデル |
 | [projects/skytree-twin](projects/skytree-twin/) | 施工計画（construction-planning 1.0.0） | 東京スカイツリーを題材にした近似のデジタルツイン（公開の情報からの近似、所有者・施工者とは関係なし）。634 m の塔の建設を、昇るタワークレーン・ゲイン塔の引き上げ・トレーラーの搬入と一緒に日付で模擬。吊りの検査 3,573 件 → 9 件 |
+| [projects/factory-twin](projects/factory-twin/) | 生産システム計画（production-system-planning 1.0.0） | 架空の e-Axle の工場のデジタルツイン（実在の会社・工場・製品とは関係なし）。1 本の組立ラインを建屋に置き、物の流れ・作業者・AGV・PLC を模擬。計画案 13.8 台/時（律速は AGV）→ 実験 40 回 → 採用案 34.4 台/時 |
 
 ## Project を PaoBub で開く
 
