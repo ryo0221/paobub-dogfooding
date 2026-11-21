@@ -88,7 +88,7 @@ Ryo さんの決定（カード「両方とも PaoBub の中で作る」）に�
 
 | Project | 定義 | 作るもの | 外へ出すもの |
 | --- | --- | --- | --- |
-| A 道具づくり（東雲物産 事業企画部＋DX 推進の開発担当） | software-product（既存）。工程は進め方〜手元で作る（build-local）まで。dev・staging・release は省き、理由を書く | open-editor-template から作ったマインドマップのリポジトリで、E1 を作る。ビルドした package（`dist/paobub/`）が出すもの | package を PaoBub に登録（E2）。PaoBub 側に足りない所は paobub の Issue と PR。後の段の道具（E3〜E7）は、Open Editor Platform の拡張か新しい外部 Editor かを段ごとに決める |
+| A 道具づくり（東雲物産 事業企画部＋DX 推進の開発担当） | editor-development 1.0.0（新設、OWD #15）。工程は進め方・目的と範囲・データ形式・操作と履歴・画面と入力・実装・検証・配布と取り込み・学びの 9 つ | open-editor-template から作ったマインドマップのリポジトリで、E1 を作る。ビルドした package（`dist/paobub/`）が出すもの | package を PaoBub に登録（E2）。PaoBub 側に足りない所は paobub の Issue と PR。後の段の道具（E3〜E7）は、Open Editor Platform の拡張か新しい外部 Editor かを段ごとに決める |
 | B 新規事業の企画 | 最初は手元だけの小さな定義（進め方の 1 工程）で始め、工程 0 で作った new-business-planning 1.0.0 に定義を上げる | 新規事業計画（工程 1〜12） | 承認した定義の PR（open-workflow-definitions）、最後の記録（このフォルダー） |
 
 - Project A でチームが決めること（範囲・利用者の話・画面・状態・前提・設計）は、作業役が下書きし、人がスレッドで議論して承認します。先に出した設計の下書き（Open Editor Platform #42）と定義の下書き（open-workflow-definitions #14）は、作業役への参考資料として渡すだけにし、PR は下書きに戻しました。
