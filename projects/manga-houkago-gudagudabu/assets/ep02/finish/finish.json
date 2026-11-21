@@ -678,8 +678,8 @@
   },
   "PN-072": {
    "image": "assets/ep02/finish/panels/PN-072.png",
-   "sha256": "79e5669e6c83f246b3d724b4b2b061a5ed51573db3b279a825ae45ecf2bfdd3b",
-   "raw_sha256": "aeed5873986281500bc09d60c371b1838a0d7cf0e1cc0370365fe8a44b529fb0",
+   "sha256": "3fb2540ee41e7f26fa0480081092adc9a038c9caa1365d55757e99c10c2f484a",
+   "raw_sha256": "ad208f18fcc7c5c1b8eb743d03dae93fc7c323a2e9bb70323efddd436d55f0a4",
    "prompt": "assets/ep02/finish/prompts/PN-072.txt",
    "inputs": [
     {
@@ -693,7 +693,11 @@
     "tone": "assets/ep02/finish/layers/PN-072/tone.png",
     "fig": "assets/ep02/finish/layers/PN-072/fig.png"
    },
-   "retakes": []
+   "retakes": [
+    {
+     "raw_sha256": "aeed5873986281500bc09d60c371b1838a0d7cf0e1cc0370365fe8a44b529fb0"
+    }
+   ]
   }
  }
 }

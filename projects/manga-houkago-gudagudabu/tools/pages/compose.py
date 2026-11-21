@@ -10,6 +10,7 @@ usage: compose.py STAGE {name|rough|ink|finish} OUT_DIR
 OUT_DIR/page-NN.png と OUT_DIR/balloons.json（吹き出しの位置と台詞、写植の記録に使う）を書く。
 """
 import json, math, os, re, sys
+import balloon_shape
 from PIL import Image, ImageDraw, ImageFont
 EP = os.environ.get('EP', 'ep01'); EPN = int(EP[2:])  # 話（ep01・ep02…）。ページは 1 話 8 ページずつ
 
@@ -20,11 +21,13 @@ sb = json.load(open(f'{ROOT}/docs/storyboard-pages.json'))
 st = {r['panel']: r for r in json.load(open(f'{ROOT}/assets/{EP}/stage/{EP}-stage.json'))['panels']}
 script = open(f'{ROOT}/docs/script-doc.md').read()
 LINES = {}
+THOUGHT = set()  # 心の声（脚本の「言い方」に（心の声））：雲形の吹き出しにする
 for m in re.finditer(r'#### (DL-\d+) (\S+)\n(.*?)(?=\n####|\n### |\Z)', script, re.S):
     body = m.group(3)
     who = re.search(r'話す人物：(CH-\d+)', body)
     text = re.search(r'台詞：「(.*)」', body)
     if text: LINES[m.group(1)] = (who.group(1) if who else None, text.group(1))
+    if '心の声' in (re.search(r'言い方：(.*)', body) or [None, ''])[1]: THOUGHT.add(m.group(1))
 FONT = '/usr/share/fonts/truetype/ipafont-gothic/ipag.ttf' if os.path.exists('/usr/share/fonts/truetype/ipafont-gothic/ipag.ttf') else '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf'
 FS = 34
 font = ImageFont.truetype(FONT, FS)
@@ -48,7 +51,7 @@ def segs(text):
             a, b = kind(cur[-1]), kind(ch)
             run = len(cur) - len(cur.rstrip(''.join(c for c in set(cur) if kind(c) == 'h')))
             ok_h = run >= 2 or cur[-1] in PARTICLE
-            if b == 'x': pass
+            if b == 'x' or text.startswith('先輩', i): pass  # 名前と呼び名（たけし先輩）は切らない
             elif (a == 'p' and b != 'p') or (a == 'h' and (b in 'Kk' or ch in '「『（') and ok_h) or (a == 'h' and b == 'o' and cur[-1] in PARTICLE):
                 out.append(cur); cur = ''
         cur += ch
@@ -62,7 +65,8 @@ def chunk(S, lim):
         if len(x) <= lim: out.append(x); continue
         best = None
         for i in range(3, len(x) - 2):
-            if x[i] in '、。！？…」』）ーぁぃぅぇぉっゃゅょすしらいたるれんよねかさませ' or x[i - 1] in 'っ': continue
+            if x[i] in '、。！？…」』）ーぁぃぅぇぉっゃゅょ' or x[i] in PARTICLE or x[i - 1] in 'っ': continue
+            if x[i] in 'すしらいたるれんよねかさませて' and x[i - 1] not in 'がはにを': continue  # 語の途中。助詞（が・は・に・を）のあとなら切ってよい
             c = abs(i - len(x) / 2) - (3 if x[i - 1] in 'てでがはにをもとゃ' else 0)
             if best is None or c < best[0]: best = (c, i)
         if best: out += chunk([x[:best[1]], x[best[1]:]], lim)
@@ -111,16 +115,27 @@ def _fix(out):
     for l in out:
         while fixed and l and l[0] in '、。！？…」』）ー':
             fixed[-1] += l[0]; l = l[1:]
+        l = l.strip(' 　')  # 行末の空き（「いい？ 」）は縦組みで空きの字になるので取る
         if l: fixed.append(l)
     return fixed
 
 
-def balloon_size(text):
+VERTICAL = os.environ.get('WRITING', 'vertical') == 'vertical'  # 写植は縦書き（画作りガイドの文字の決まり）。WRITING=horizontal で横書き
+
+
+def text_box(lines):
+    """台詞の文字の占める大きさ（幅, 高さ）。縦書きは行が右から左へ並ぶ列、横書きは上から下へ並ぶ行。"""
+    if VERTICAL: return len(lines) * FS * 1.25, max(len(l) for l in lines) * FS
+    return max(font.getlength(l) for l in lines), len(lines) * FS * 1.25
+
+
+def balloon_size(text, lines=None):
     n = 7 if len(text) > 14 else 6
-    lines = wrap(text, n)
-    w = max(font.getlength(l) for l in lines) + 2 * 34
-    h = len(lines) * FS * 1.25 + 2 * 26
-    return lines, w, h
+    lines = lines or wrap(text, n)
+    tw, th = text_box(lines)
+    if VERTICAL:  # 楕円の内側に文字の四隅が入るよう、縦横とも余白を取る
+        return lines, tw + 2 * FS * 1.2, th + 2 * FS * 1.25
+    return lines, tw + 2 * 34, th + 2 * 26
 
 
 def ink_density(pid, w, h):
@@ -140,11 +155,11 @@ def place(panel_w, panel_h, heads, items, dens=None, beam=40):
     読む順・顔・人物の線・話す人への近さの合計が小さい並びを、ビーム探索で選ぶ（先の吹き出しが後の場所を塞がないように）。"""
     def cands(i, placed):
         dl, who, text = items[i]
-        lines, bw, bh = balloon_size(text)
+        lines, bw, bh = balloon_size(text, PLACE.get(dl, {}).get('lines'))  # 行分けを決めた台詞（狭い所に置くため）
         bw, bh = min(bw, panel_w - 24), min(bh, panel_h - 24)
         sp = [h for h in heads if h[3] == who]
         if dl in PLACE:  # 作者の確認で決めた位置（assets/{EP}/lettering-notes.json、コマの幅・高さに対する割合）
-            grid = [(PLACE[dl]['at'][0] * panel_w, PLACE[dl]['at'][1] * panel_h)]
+            grid = [(min(PLACE[dl]['at'][0] * panel_w, panel_w - bw - 12), min(PLACE[dl]['at'][1] * panel_h, panel_h - bh - 12))]  # 枠からはみ出さない
         else:
             grid = [(12 + (panel_w - bw - 24) * gx / 20, 12 + (panel_h - bh - 24) * gy / 20) for gy in range(21) for gx in range(21)]
         out = []
@@ -176,12 +191,14 @@ def place(panel_w, panel_h, heads, items, dens=None, beam=40):
             tail = None
             if sp:
                 hx, hy, hr, _ = sp[0]
+                if dl in PLACE and 'tail_to' in PLACE[dl]: hx, hy, hr = PLACE[dl]['tail_to'][0] * panel_w, PLACE[dl]['tail_to'][1] * panel_h, 0  # しっぽの向きを決めた台詞（話す人の持つ物へ向けるなど）
                 d_ = math.hypot(hx - cx, hy - cy) or 1
-                stop = max(d_ - hr * 1.2, min(bw, bh) / 2 + 30)  # 頭の手前で止め、短くても枠の外へ出す
-                stop = min(stop, max(bw, bh) / 2 + 90)
-                if dl in PLACE and 'tail_len' in PLACE[dl]: stop = PLACE[dl]['tail_len']  # 絵の物（看板など）を跨がないよう、しっぽを短くする
+                ang = math.atan2(hy - cy, hx - cx)  # 楕円の縁から短く出す（縦長の吹き出しでも、しっぽが顔や別の人物まで伸びない）
+                edge = (bw / 2) * (bh / 2) / math.hypot(bh / 2 * math.cos(ang), bw / 2 * math.sin(ang))
+                stop = min(edge + 70, max(edge + 30, d_ - hr * 1.3))
+                if dl in PLACE and 'tail_len' in PLACE[dl]: stop = edge + PLACE[dl]['tail_len']  # 絵の物（看板など）を跨がないよう、しっぽを短くする
                 tail = (cx + (hx - cx) / d_ * stop, cy + (hy - cy) / d_ * stop)
-            out.append((score, {'dl': dl, 'who': who, 'text': text, 'lines': lines, 'x': x, 'y': y, 'w': bw, 'h': bh, 'tail': tail, 'overlap': face >= 300}))
+            out.append((score, {'dl': dl, 'who': who, 'text': text, 'lines': lines, 'x': x, 'y': y, 'w': bw, 'h': bh, 'tail': None if (dl in PLACE and PLACE[dl].get('tail') is False) else tail, 'overlap': face >= 300, **({'thought': True} if dl in THOUGHT else {})}))
         out.sort(key=lambda t: t[0])
         return out[:beam * 6]
     states = [(0.0, [])]
@@ -200,16 +217,35 @@ def panel_items(pn):
 
 def draw_balloon(d, ox, oy, b, narration=False):
     x, y, w, h = ox + b['x'], oy + b['y'], b['w'], b['h']
-    if b['tail']:
+    if b.get('thought'):
+        if b['tail']:
+            for qx, qy, r in balloon_shape.dots(x, y, w, h, ox + b['tail'][0], oy + b['tail'][1]):
+                d.ellipse([qx - r, qy - r, qx + r, qy + r], fill='white', outline='black', width=3)
+        d.polygon(balloon_shape.sample(balloon_shape.cloud(x, y, w, h)), fill='white', outline='black', width=3)
+    elif b['tail']:
         tx, ty = ox + b['tail'][0], oy + b['tail'][1]
         cx, cy = x + w / 2, y + h / 2
         ang = math.atan2(ty - cy, tx - cx); L = math.hypot(tx - cx, ty - cy)
         ex, ey = cx + math.cos(ang) * L, cy + math.sin(ang) * L
         px, py = -math.sin(ang) * 18, math.cos(ang) * 18
         d.polygon([(cx + px, cy + py), (cx - px, cy - py), (ex, ey)], fill='white', outline='black', width=3)
-    d.ellipse([x, y, x + w, y + h], fill='white', outline='black', width=3)
-    if b['tail']:
+    if not b.get('thought'): d.ellipse([x, y, x + w, y + h], fill='white', outline='black', width=3)
+    if b['tail'] and not b.get('thought'):
         d.polygon([(x + w / 2 + px * 0.8, y + h / 2 + py * 0.8), (x + w / 2 - px * 0.8, y + h / 2 - py * 0.8), (ex - math.cos(ang) * 6, ey - math.sin(ang) * 6)], fill='white')
+    if VERTICAL:  # 下書きの絵（ページの画像の正本は Design から書き出す）：列を右から左へ、字を上から下へ
+        tw, th = text_box(b['lines'])
+        for i, l in enumerate(b['lines']):
+            cx = x + w / 2 + tw / 2 - FS * 1.25 * (i + 0.5); y0 = y + (h - th) / 2
+            for j, ch in enumerate(l):
+                gy = y0 + j * FS
+                if ch in 'ー…〜（）「」『』':
+                    g = Image.new('L', (FS, FS), 0); ImageDraw.Draw(g).text((0, 0), ch, font=font, fill=255)
+                    g = g.rotate(-90); d.bitmap((cx - FS / 2, gy), g, fill='black')
+                elif ch in '、。':
+                    d.text((cx - FS / 2 + FS * 0.55, gy - FS * 0.55), ch, font=font, fill='black')
+                else:
+                    d.text((cx - font.getlength(ch) / 2, gy), ch, font=font, fill='black')
+        return
     ty0 = y + (h - len(b['lines']) * FS * 1.25) / 2
     for i, l in enumerate(b['lines']):
         d.text((x + (w - font.getlength(l)) / 2, ty0 + i * FS * 1.25), l, font=font, fill='black')
@@ -219,8 +255,9 @@ def draw_sign(d, ox, oy, w, h, sg):
     """絵の中の字（看板・名札）：枠の中に中央ぞろえで書く。吹き出しは付けない。"""
     f = ImageFont.truetype(FONT, sg.get('fontSize', FS))
     sx, sy, sw, sh = ox + sg['at'][0] * w, oy + sg['at'][1] * h, sg['size'][0] * w, sg['size'][1] * h
-    tw = f.getlength(sg['text']); fs = sg.get('fontSize', FS)
-    d.text((sx + (sw - tw) / 2, sy + (sh - fs) / 2), sg['text'], font=f, fill='black')
+    fs = sg.get('fontSize', FS); rows = sg['text'].split('\n'); lh = fs * 1.2
+    for i, row in enumerate(rows):
+        d.text((sx + (sw - f.getlength(row)) / 2, sy + (sh - lh * len(rows)) / 2 + i * lh), row, font=f, fill='black')
 
 
 pages = sb['page'][(EPN - 1) * 8:EPN * 8]

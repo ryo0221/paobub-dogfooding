@@ -11,6 +11,7 @@ People:
 - FG-009 西園寺れいか: head at 51% from the left and 43% from the top of the panel. 向き：東。姿勢：正座で背筋は伸ばしたまま、手は膝の上。表情：口は一文字。描写する範囲：膝上。
 Continuity for this scene（続く状態）: After school, daylight from the west windows behind the president's seat (she is a little backlit). れいか wears the 生徒会長 armband on her LEFT arm and holds a binder or the club application sheet. ねむ carries nothing; her blazer sleeves cover her hands.
 Art rules: AR-02 4頭身; AR-05 this is the STUDENT COUNCIL ROOM (生徒会室), NOT the clubroom: conference desks in a U shape (コの字) opening to the east, the president's seat at the west end with the west windows behind her, chairs along the desks, steel shelves of club files along the north wall, a whiteboard on the east wall. There is NO kotatsu, NO cushions and NO sink in this room; AR-06 gag faces only where the 表情 says 崩し顔.
+Correction from the author's check: Draw ねむ ONLY ONCE in this panel: one single ねむ in the foreground, walking away toward the door with her back half turned, looking back over her shoulder at the viewer's side (only her head turned). There must be no second ねむ, no duplicate, no afterimage. れいか sits small in the far background at the conference desk.
 No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
 Landscape 1536x1024.
 After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

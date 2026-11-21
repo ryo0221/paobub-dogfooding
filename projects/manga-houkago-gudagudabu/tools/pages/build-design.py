@@ -5,6 +5,7 @@
 usage: EPS=ep01,ep02 build-design.py {rough|ink|finish} BALLOONS_JSON OUT_JSON（BALLOONS_JSON の {EP} は話ごとに置き換える）
 """
 import base64, io, json, math, os, sys
+import balloon_shape
 from PIL import Image
 EP = os.environ.get('EP', 'ep01'); EPN = int(EP[2:])  # 話（ep01・ep02…）。ページは 1 話 8 ページずつ
 
@@ -12,6 +13,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 kind, balloons_path, out_path = sys.argv[1:4]
 sb = json.load(open(f'{ROOT}/docs/storyboard-pages.json'))
 EPS = os.environ.get('EPS', EP).split(',')
+VERTICAL = os.environ.get('WRITING', 'vertical') == 'vertical'  # 写植は縦書き（compose.py と同じ）
 
 
 def uri(path, size=None, fmt='PNG', mode=None, alpha_from_dark=False, quality=80):
@@ -56,23 +58,47 @@ def balloon(pid, b, ox, oy, n):
         a1 = (cx + math.cos(ang) * (w / 2 - 4) + px, cy + math.sin(ang) * (h / 2 - 4) + py); a2 = (cx + math.cos(ang) * (w / 2 - 4) - px, cy + math.sin(ang) * (h / 2 - 4) - py)
         tail = [a1, (ex, ey), a2]
         for q in tail: minx, miny, maxx, maxy = min(minx, q[0]), min(miny, q[1]), max(maxx, q[0]), max(maxy, q[1])
-    fx, fy, fw, fh = minx, miny, maxx - minx, maxy - miny
-    k = 0.5523
-    rx, ry, cx, cy = w / 2, h / 2, x + w / 2 - fx, y + h / 2 - fy
-    A = [(cx + rx, cy), (cx, cy + ry), (cx - rx, cy), (cx, cy - ry)]
-    C = [((cx + rx, cy + k * ry), (cx + k * rx, cy + ry)), ((cx - k * rx, cy + ry), (cx - rx, cy + k * ry)), ((cx - rx, cy - k * ry), (cx - k * rx, cy - ry)), ((cx + k * rx, cy - ry), (cx + rx, cy - k * ry))]
     sid = f'b{n}'
-    subs = [{'id': f'{sid}e', 'closed': True, 'anchors': [{'id': f'{sid}e{i}', 'x': round(p[0], 1), 'y': round(p[1], 1), 'mode': 'smooth'} for i, p in enumerate(A)],
-             'segments': [{'id': f'{sid}g{i}', 'from': f'{sid}e{i}', 'to': f'{sid}e{(i + 1) % 4}', 'type': 'cubic', 'c1': {'x': round(C[i][0][0], 1), 'y': round(C[i][0][1], 1)}, 'c2': {'x': round(C[i][1][0], 1), 'y': round(C[i][1][1], 1)}} for i in range(4)]}]
-    if tail:
-        subs.append({'id': f'{sid}t', 'closed': True, 'anchors': [{'id': f'{sid}t{i}', 'x': round(q[0] - fx, 1), 'y': round(q[1] - fy, 1), 'mode': 'corner'} for i, q in enumerate(tail)],
-                     'segments': [{'id': f'{sid}u{i}', 'from': f'{sid}t{i}', 'to': f'{sid}t{(i + 1) % 3}', 'type': 'line'} for i in range(3)]})
+    if b.get('thought'):  # 心の声：雲形と、話す人物へ向けた小さな丸 2 つ（balloon_shape.py。ページの画像と同じ形）
+        segs = balloon_shape.cloud(x, y, w, h)
+        circles = balloon_shape.dots(x, y, w, h, ox + b['tail'][0], oy + b['tail'][1]) if b.get('tail') else []
+        xs = [q[0] for sg in segs for q in sg] + [c[0] - c[2] for c in circles] + [c[0] + c[2] for c in circles]
+        ys = [q[1] for sg in segs for q in sg] + [c[1] - c[2] for c in circles] + [c[1] + c[2] for c in circles]
+        fx, fy = min(xs), min(ys); fw, fh = max(xs) - fx, max(ys) - fy
+        P = lambda q: {'x': round(q[0] - fx, 1), 'y': round(q[1] - fy, 1)}
+        m = len(segs)
+        subs = [{'id': f'{sid}c', 'closed': True, 'anchors': [{'id': f'{sid}c{i}', **P(sg[0]), 'mode': 'corner'} for i, sg in enumerate(segs)],
+                 'segments': [{'id': f'{sid}h{i}', 'from': f'{sid}c{i}', 'to': f'{sid}c{(i + 1) % m}', 'type': 'cubic', 'c1': P(sg[1]), 'c2': P(sg[2])} for i, sg in enumerate(segs)]}]
+        k = 0.5523
+        for j, (qx, qy, r) in enumerate(circles):
+            A = [(qx + r, qy), (qx, qy + r), (qx - r, qy), (qx, qy - r)]
+            C = [((qx + r, qy + k * r), (qx + k * r, qy + r)), ((qx - k * r, qy + r), (qx - r, qy + k * r)), ((qx - r, qy - k * r), (qx - k * r, qy - r)), ((qx + k * r, qy - r), (qx + r, qy - k * r))]
+            subs.append({'id': f'{sid}d{j}', 'closed': True, 'anchors': [{'id': f'{sid}d{j}a{i}', **P(a), 'mode': 'smooth'} for i, a in enumerate(A)],
+                         'segments': [{'id': f'{sid}d{j}s{i}', 'from': f'{sid}d{j}a{i}', 'to': f'{sid}d{j}a{(i + 1) % 4}', 'type': 'cubic', 'c1': P(C[i][0]), 'c2': P(C[i][1])} for i in range(4)]})
+    else:
+        fx, fy, fw, fh = minx, miny, maxx - minx, maxy - miny
+        k = 0.5523
+        rx, ry, cx, cy = w / 2, h / 2, x + w / 2 - fx, y + h / 2 - fy
+        A = [(cx + rx, cy), (cx, cy + ry), (cx - rx, cy), (cx, cy - ry)]
+        C = [((cx + rx, cy + k * ry), (cx + k * rx, cy + ry)), ((cx - k * rx, cy + ry), (cx - rx, cy + k * ry)), ((cx - rx, cy - k * ry), (cx - k * rx, cy - ry)), ((cx + k * rx, cy - ry), (cx + rx, cy - k * ry))]
+        subs = [{'id': f'{sid}e', 'closed': True, 'anchors': [{'id': f'{sid}e{i}', 'x': round(p[0], 1), 'y': round(p[1], 1), 'mode': 'smooth'} for i, p in enumerate(A)],
+                 'segments': [{'id': f'{sid}g{i}', 'from': f'{sid}e{i}', 'to': f'{sid}e{(i + 1) % 4}', 'type': 'cubic', 'c1': {'x': round(C[i][0][0], 1), 'y': round(C[i][0][1], 1)}, 'c2': {'x': round(C[i][1][0], 1), 'y': round(C[i][1][1], 1)}} for i in range(4)]}]
+        if tail:
+            subs.append({'id': f'{sid}t', 'closed': True, 'anchors': [{'id': f'{sid}t{i}', 'x': round(q[0] - fx, 1), 'y': round(q[1] - fy, 1), 'mode': 'corner'} for i, q in enumerate(tail)],
+                         'segments': [{'id': f'{sid}u{i}', 'from': f'{sid}t{i}', 'to': f'{sid}t{(i + 1) % 3}', 'type': 'line'} for i in range(3)]})
     bounds = {'x': round(fx, 1), 'y': round(fy, 1), 'width': round(fw, 1), 'height': round(fh, 1)}
     group(gid, f"LY-07 吹き出し {b['dl']}", pid, bounds, f"{b['dl']}（{b['who']}）の吹き出しと台詞。枠と文字を一緒に動かせる", locked=False)
     add({'id': f'{gid}-shape', 'type': 'shape', 'name': f"LY-07 吹き出しの枠 {b['dl']}", 'parentId': gid, 'bounds': bounds, 'fill': '#ffffff', 'stroke': '#000000', 'strokeWidth': 3,
          'path': {'frame': {'x': 0, 'y': 0, 'width': bounds['width'], 'height': bounds['height']}, 'fillRule': 'nonzero', 'subpaths': subs}})
-    add({'id': f'{gid}-text', 'type': 'text', 'name': f"LY-08 文字 {b['dl']}", 'parentId': gid, 'bounds': {'x': round(x + 20, 1), 'y': round(y + 14, 1), 'width': round(w - 40, 1), 'height': round(h - 28, 1)},
-         'text': '\n'.join(b['lines']), 'fill': '#000000', 'typography': {'fontSize': 34, 'lineHeight': 1.25, 'padding': 2, 'overflow': 'clip', 'align': 'center', 'verticalAlign': 'middle'}})
+    if VERTICAL:  # 縦書き：列（行）を右から左へ。文字の箱を楕円の中央に置き、はみ出すときは Editor が字を縮める（overflow: fit）
+        tw, th = len(b['lines']) * 34 * 1.25 + 8, max(len(l) for l in b['lines']) * 34 + 8
+        tb = {'x': round(x + (w - tw) / 2, 1), 'y': round(y + (h - th) / 2, 1), 'width': round(tw, 1), 'height': round(th, 1)}
+        ty = {'fontSize': 34, 'lineHeight': 1.25, 'padding': 2, 'overflow': 'fit', 'align': 'center', 'verticalAlign': 'middle', 'writingMode': 'vertical-rl'}
+    else:
+        tb = {'x': round(x + 20, 1), 'y': round(y + 14, 1), 'width': round(w - 40, 1), 'height': round(h - 28, 1)}
+        ty = {'fontSize': 34, 'lineHeight': 1.25, 'padding': 2, 'overflow': 'clip', 'align': 'center', 'verticalAlign': 'middle'}
+    add({'id': f'{gid}-text', 'type': 'text', 'name': f"LY-08 文字 {b['dl']}", 'parentId': gid, 'bounds': tb,
+         'text': '\n'.join(b['lines']), 'fill': '#000000', 'typography': ty})
 
 
 pag = {'schemaVersion': 1, 'direction': 'rtl', 'pages': [], 'images': []}

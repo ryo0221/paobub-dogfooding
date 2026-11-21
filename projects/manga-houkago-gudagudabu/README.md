@@ -90,9 +90,18 @@ EPS=ep01,ep02 python3 tools/pages/build-design.py finish 'assets/{EP}/finish/pag
 ```
 
 - 吹き出しは、3D で写る頭と、線画の人物の線を避けて置きます。読む順（右上から左下）も守ります。
-- 自動で置けなかった吹き出しは、`assets/ep01/lettering-notes.json` に `{"DL-040": {"at": [x, y], "why": "..."}}` で位置を決めます。x と y は、コマの幅・高さに対する割合です。しっぽが絵の物に掛かるときは `"tail_len"`（px）でしっぽを短くします。
+- 自動で置けなかった吹き出しは、`assets/ep01/lettering-notes.json` に `{"DL-040": {"at": [x, y], "why": "..."}}` で位置を決めます。x と y は、コマの幅・高さに対する割合です。しっぽは吹き出しの縁から短く出します。長さを決めるときは `"tail_len"`（縁から先の px）、話す人の持つ物などへ向けるときは `"tail_to": [x, y]`（コマに対する割合）、行分けを決めるときは `"lines": ["…", "…"]` を書きます。
 - 看板や名札など、絵の中の字は `assets/{EP}/sign-text.json` に `{"PN-059": [{"text": "←3人目", "at": [x, y], "size": [w, h], "fontSize": 44}]}` で書きます。絵（Codex）には字を描かせないので、写植で入れます。吹き出しはこの字を避けます。
-- できた Design は、Editor Platform の `isDesignWithPaths` で確かめてから PaoBub で開きます。
+- 写植は縦書きです（Design の文字の `writingMode: vertical-rl`。台詞は右の行から左へ）。横書きで組むときは `WRITING=horizontal` を付けます。compose.py の画像は下書きで、ページの画像の正本は Design から書き出します。
+- できた Design は、Editor Platform の `isDesignWithPaths` で確かめてから PaoBub で開きます（書き出しのときにも確かめます）。
+
+### ページの画像の書き出し
+
+```sh
+EP_DIR=<open-editor-platform のチェックアウト> bash tools/pages/export-pages.sh docs/finished-pages.json OUT_DIR [幅]
+```
+
+- ページの枠ごとに、Editor Platform の `exportDesignFrameAreaSvg` で SVG にし、Chromium（Playwright）で PNG にします。幅を省くと原稿と同じ 2000×2828 です。
 
 ## 経緯
 

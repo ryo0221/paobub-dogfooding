@@ -21,6 +21,7 @@ People:
 - FG-116 権田原たけし: head at 37% from the left and 32% from the top of the panel. 向き：やや下（湯のみへ）。姿勢：両手で湯のみを持ち、背を丸めてすする。表情：前髪で目は隠れ、口元だけ上がる。描写する範囲：こたつ座り。
 Continuity for this scene（続く状態）: Evening sun through the south windows. Same seats: ねむ NORTH, すず SOUTH (seiza), たけし EAST in front of the steel shelf, still with the paper name tag. From PN-069 on, THREE upright teacups on the kotatsu (one each for ねむ, すず and たけし); すず places たけし's cup in PN-069; steam rises from たけし's cup.
 Art rules: AR-02 4頭身; AR-05 this is the CLUBROOM (部室, a former science prep room): a kotatsu in the middle with floor cushions on its four sides, a sink on the west wall, a steel shelf on the east wall, two notices on the north wall, the sliding door at the west end of the north wall, two windows on the south wall; AR-06 gag faces only where the 表情 says 崩し顔.
+Correction from the author's check: Exactly THREE teacups in the whole panel, no more: ねむ holds one cup in her hands, すず holds one cup in her hands, たけし holds one cup in his hands (his cup has rising steam). The kotatsu top has only the teapot on its tray and NO other cups.
 No text, no letters, no speech balloons, no sound effects, no panel border, no signature, no watermark. No likeness to any existing anime, manga, game or illustration character.
 Landscape 1536x1024.
 After generating, copy the generated PNG to ./raw.png in the current directory. Do not generate more than one image.

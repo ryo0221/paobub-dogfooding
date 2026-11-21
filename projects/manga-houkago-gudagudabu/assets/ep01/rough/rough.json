@@ -759,8 +759,8 @@
   },
   "PN-006": {
    "image": "assets/ep01/rough/panels/PN-006.png",
-   "sha256": "402a232a4a2bbcd37ef1875bca01f8cca5c18866e8ae085c9c32ece1b3d3b1fc",
-   "raw_sha256": "80d3fc27ec767a2d49b6281bbf401ac9ea06073f631a856088695d73c9a332dc",
+   "sha256": "7a8b23e07053e205a1aead99f5bd43c18574e8035edde0cf01a9bff4f7eabb1e",
+   "raw_sha256": "6a3674d81bdd917b1238886cc8f1f5392b41cf0774da2c2eb6b7a15b5751ef36",
    "prompt": "assets/ep01/rough/prompts/PN-006.txt",
    "inputs": [
     {
@@ -778,7 +778,11 @@
    ],
    "license": "自作（このプロジェクトの 3D の舞台・設定画・ラフから生成。外部の作品・写真は渡していない）",
    "layers": {},
-   "retakes": []
+   "retakes": [
+    {
+     "raw_sha256": "80d3fc27ec767a2d49b6281bbf401ac9ea06073f631a856088695d73c9a332dc"
+    }
+   ]
   },
   "PN-007": {
    "image": "assets/ep01/rough/panels/PN-007.png",

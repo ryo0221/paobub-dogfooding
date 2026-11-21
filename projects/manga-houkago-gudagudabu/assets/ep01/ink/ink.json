@@ -150,8 +150,8 @@
   },
   "PN-006": {
    "image": "assets/ep01/ink/panels/PN-006.png",
-   "sha256": "e27342a79f50384c71cb17310800a187e460855b8594850aa93c2cc7c3ddae4a",
-   "raw_sha256": "ee1e165e9d0e089badd7786b5394e762d1fa8e5b1ad6514bb84fb37806c22233",
+   "sha256": "4886bec16b0d1873d9604b3675b1d254a1f043dc1ba8badfadd6c8f739693e40",
+   "raw_sha256": "4d5f184572864bc9307c1b7726852c33bb06a3c6ed6648fdc152b4064fa6bb77",
    "prompt": "assets/ep01/ink/prompts/PN-006.txt",
    "inputs": [
     {
@@ -177,7 +177,11 @@
     "bg": "assets/ep01/ink/layers/PN-006/bg.png",
     "fx": null
    },
-   "retakes": []
+   "retakes": [
+    {
+     "raw_sha256": "ee1e165e9d0e089badd7786b5394e762d1fa8e5b1ad6514bb84fb37806c22233"
+    }
+   ]
   },
   "PN-007": {
    "image": "assets/ep01/ink/panels/PN-007.png",

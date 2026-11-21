@@ -5,6 +5,7 @@ usage: lettering.py BALLOONS_JSON
 """
 import json, os, sys
 
+VERTICAL = os.environ.get('WRITING', 'vertical') == 'vertical'  # compose.py と同じ
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 bl = json.load(open(sys.argv[1]))
 p = f'{ROOT}/docs/lettering-record.json'
@@ -25,8 +26,11 @@ for r in bl:
         row = dict(old) if old else {**TEMPLATE, '話す人物': NAMES.get(b['who'], b['who']), '台詞の全文': ''.join(b['lines'])}
         row.update({
             'id': f'BL-{n:03d}', 'ページ': r['page'], 'コマ': r['panel'], '台詞': b['dl'],
+            '組み方': '縦書き（行は右から左へ）' if VERTICAL else '横書き',
+            '組み方の理由': ('画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま'
+                        if VERTICAL else row.get('組み方の理由', '')),
             '文字の大きさ': '34（全ページ同じ）', '文字の組み': '／'.join(b['lines']),
-            '吹き出しの形': 'なめらかな楕円形、話す人物へ向けたしっぽ（頭の手前で止める）' if b.get('tail') else 'なめらかな楕円形、しっぽ無し（話す人物がコマに写らない）',
+            '吹き出しの形': ('雲形（心の声）、話す人物へ向けた小さな丸2つ' if b.get('thought') else 'なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）') if b.get('tail') else ('雲形（心の声）、しっぽ無し' if b.get('thought') else 'なめらかな楕円形、しっぽ無し（話す人物がコマに写らないか、同じ人物の前の吹き出しに続く）'),
             '図形': [f'{gid}-shape', f'{gid}-text'],
             '置き方': ('人物の頭（3D の舞台で写る位置）と線画の人物の線を避けて置いた（tools/pages/compose.py）。'
                     + ('3D の頭の丸には掛かるが、寄りのコマで顔ではなく胸元に置いた。作者が確かめる' if b.get('overlap') else '')),
