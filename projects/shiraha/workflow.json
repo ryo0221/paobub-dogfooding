@@ -1,0 +1,266 @@
+{
+ "format": 1,
+ "name": "可変機 白羽（シラハ）（仮）",
+ "definition": {
+  "id": "mecha-design",
+  "version": "1.2.0"
+ },
+ "citations": "trace/citations.json",
+ "deliverables": {
+  "process-map": [
+   {
+    "path": "docs/process-map.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ],
+  "requirements": [
+   {
+    "path": "docs/requirements.json",
+    "as": "json",
+    "kind": "feature",
+    "at": "feature"
+   },
+   {
+    "path": "docs/requirements.json",
+    "as": "json",
+    "kind": "novelty",
+    "at": "novelty"
+   },
+   {
+    "path": "docs/requirements.json",
+    "as": "json",
+    "kind": "reference",
+    "at": "reference"
+   },
+   {
+    "path": "docs/requirements.json",
+    "as": "json",
+    "kind": "requirement",
+    "at": "requirement"
+   }
+  ],
+  "combine-concept": [
+   {
+    "path": "docs/combine-concept.json",
+    "as": "json",
+    "kind": "unit",
+    "at": "unit",
+    "layout": [
+     "at",
+     "frame"
+    ]
+   },
+   {
+    "path": "docs/combine-concept.json",
+    "as": "json",
+    "kind": "form",
+    "at": "form",
+    "layout": [
+     "at",
+     "frame"
+    ]
+   }
+  ],
+  "silhouettes": [
+   {
+    "path": "docs/silhouettes.json",
+    "as": "json",
+    "kind": "silhouette",
+    "at": "silhouette"
+   },
+   {
+    "path": "docs/silhouettes.json",
+    "as": "json",
+    "kind": "proportion",
+    "at": "proportion"
+   }
+  ],
+  "line-drawings": [
+   {
+    "path": "docs/line-drawings.json",
+    "as": "json",
+    "kind": "drawing",
+    "at": "drawing"
+   }
+  ],
+  "mechanism-plan": [
+   {
+    "path": "docs/mechanism-plan.json",
+    "as": "json",
+    "kind": "part",
+    "at": "part"
+   },
+   {
+    "path": "docs/mechanism-plan.json",
+    "as": "json",
+    "kind": "joint",
+    "at": "joint"
+   },
+   {
+    "path": "docs/mechanism-plan.json",
+    "as": "json",
+    "kind": "step",
+    "at": "step"
+   },
+   {
+    "path": "docs/mechanism-plan.json",
+    "as": "json",
+    "kind": "check",
+    "at": "check"
+   }
+  ],
+  "model-3d": [
+   {
+    "path": "docs/model-3d.json",
+    "as": "json",
+    "kind": "motion",
+    "at": "motion"
+   },
+   {
+    "path": "cad/",
+    "as": "plain"
+   }
+  ],
+  "design-sheets": [
+   {
+    "path": "docs/design-sheets.json",
+    "as": "json",
+    "kind": "sheet",
+    "at": "sheet"
+   }
+  ],
+  "toy-review": [
+   {
+    "path": "docs/toy-review.json",
+    "as": "json",
+    "kind": "toy-check",
+    "at": "toy-check"
+   }
+  ],
+  "color-design": [
+   {
+    "path": "docs/color-design.json",
+    "as": "json",
+    "kind": "color",
+    "at": "rows"
+   }
+  ],
+  "showcase-shots": [
+   {
+    "path": "docs/showcase-shots.json",
+    "as": "json",
+    "kind": "shot",
+    "at": "shot"
+   }
+  ],
+  "review-log": [
+   {
+    "path": "docs/review-log.json",
+    "as": "json",
+    "kind": "issue",
+    "at": "issue"
+   },
+   {
+    "path": "docs/review-log.json",
+    "as": "json",
+    "kind": "decision",
+    "at": "decision"
+   }
+  ],
+  "model-review": [
+   {
+    "path": "review/model/",
+    "as": "plain"
+   }
+  ]
+ },
+ "phases": {
+  "process": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:03:18.752Z",
+   "acceptedBy": "星野 美咲（P-94b18a25e231b103）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "brief": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:11:44.288Z",
+   "acceptedBy": "星野 美咲（P-94b18a25e231b103）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "concept": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:12:46.279Z",
+   "acceptedBy": "木下 剛（P-19e29c555cf5db0b）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "silhouette": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:14:46.040Z",
+   "acceptedBy": "木下 剛（P-19e29c555cf5db0b）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "lines": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:36:55.689Z",
+   "acceptedBy": "星野 美咲（P-94b18a25e231b103）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "mechanism": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:39:43.833Z",
+   "acceptedBy": "木下 剛（P-19e29c555cf5db0b）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "model": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T14:10:10.947Z",
+   "acceptedBy": "木下 剛（P-19e29c555cf5db0b）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "sheets": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:52:53.046Z",
+   "acceptedBy": "木下 剛（P-19e29c555cf5db0b）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "toy": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:51:19.704Z",
+   "acceptedBy": "高村 迅（P-2824ad6e963ca651）",
+   "acceptedOrg": "org_4ed2863838d54145"
+  },
+  "color": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-18T13:54:27.401Z",
+   "acceptedBy": "星野 美咲（P-94b18a25e231b103）",
+   "acceptedOrg": "org_333b9fbd29b14d87"
+  },
+  "showcase": {
+   "state": "未着手"
+  },
+  "release": {
+   "state": "未着手"
+  }
+ },
+ "editorBindings": {
+  "combine-concept": {
+   "editor": "whiteboard"
+  },
+  "silhouettes": {
+   "editor": "whiteboard"
+  },
+  "line-drawings": {
+   "editor": "whiteboard"
+  },
+  "mechanism-plan": {
+   "editor": "whiteboard"
+  },
+  "design-sheets": {
+   "editor": "whiteboard"
+  },
+  "model-review": {
+   "editor": "review"
+  }
+ }
+}

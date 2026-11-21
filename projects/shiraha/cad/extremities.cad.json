@@ -1,0 +1,1115 @@
+{
+ "schemaVersion": 2,
+ "units": "mm",
+ "axes": "right-handed-z-up",
+ "kernelProfile": {
+  "id": "occt",
+  "buildHash": "sha256:443e3d7b6a1c68c44735833fd96c10380d5a63072f0bb36e30d366bc8c7c29c9",
+  "semanticsVersion": 2,
+  "linearToleranceMm": 1e-06,
+  "angularToleranceRad": 1e-09,
+  "maxResultLinearToleranceMm": 0.0001
+ },
+ "parameters": [],
+ "profiles": [],
+ "sketches": [],
+ "features": [],
+ "bodies": [],
+ "namedViews": [],
+ "assets": [],
+ "partProperties": {
+  "partNumber": "",
+  "description": ""
+ },
+ "parts": [
+  {
+   "id": "p-foot",
+   "name": "foot",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/extremities/foot.cad.json",
+    "versionId": "v1",
+    "contentHash": "d8461d4256768ee83c97c9eff3aa49917ecdbb44a3ec7c739177e429865a4a22"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      807.6527731828305,
+      -902.4832587014043,
+      290
+     ],
+     [
+      1700.5338153866035,
+      298.11658309037904,
+      2000
+     ]
+    ]
+   }
+  },
+  {
+   "id": "p-toe-0",
+   "name": "toe-0",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/extremities/toe-0.cad.json",
+    "versionId": "v1",
+    "contentHash": "ebadb7e6018e3407965860b1ddee0829f0407e5df76cb614ab534fe5251ae97d"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      387.00000000000006,
+      -2029.9999999999998,
+      50
+     ],
+     [
+      1155,
+      -570,
+      693.0000000000001
+     ]
+    ]
+   }
+  },
+  {
+   "id": "p-toe-1",
+   "name": "toe-1",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/extremities/toe-1.cad.json",
+    "versionId": "v1",
+    "contentHash": "f2668d322b955da00cbdb16d56a5a1e3b6bc9d9984e230e5c143412c956f46de"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      1125,
+      -2350,
+      33
+     ],
+     [
+      1355,
+      -600,
+      693.0000000000001
+     ]
+    ]
+   }
+  },
+  {
+   "id": "p-toe-2",
+   "name": "toe-2",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/extremities/toe-2.cad.json",
+    "versionId": "v1",
+    "contentHash": "b27155c34da35b415ac0d3493da1b4fc0b745f60c5d459d040fb8bced271d4f6"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      1325,
+      -2029.9999999999998,
+      50
+     ],
+     [
+      2093,
+      -570,
+      693.0000000000001
+     ]
+    ]
+   }
+  },
+  {
+   "id": "p-rear-toe",
+   "name": "rear-toe",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/extremities/rear-toe.cad.json",
+    "versionId": "v1",
+    "contentHash": "7453cb852b9d628f6928ab32f257f6863d3c01c70450dd6b3fa99b23d9e2d9b8"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      1109.9999999999998,
+      120,
+      42
+     ],
+     [
+      1370,
+      850,
+      634
+     ]
+    ]
+   }
+  },
+  {
+   "id": "p-foot-mount",
+   "name": "foot-mount",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/extremities/foot-mount.cad.json",
+    "versionId": "v1",
+    "contentHash": "9608ed08d89b4f7a4917e6be6ac0e3140961a8019b6f28eb13fcdcfdbdc9d527"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      1200,
+      -340,
+      1960
+     ],
+     [
+      1280,
+      -260,
+      2040
+     ]
+    ]
+   }
+  },
+  {
+   "id": "p-hand",
+   "name": "hand",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/extremities/hand.cad.json",
+    "versionId": "v1",
+    "contentHash": "957e8173ed4828e2637005f10d688697226f882ba5ed953e4b23f65da5811cee"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      2166,
+      -890,
+      14860
+     ],
+     [
+      2712.40717054846,
+      -17.000000000000014,
+      17220
+     ]
+    ]
+   }
+  },
+  {
+   "id": "p-tail",
+   "name": "tail",
+   "source": {
+    "kind": "version",
+    "artifactId": "cad/extremities/tail.cad.json",
+    "versionId": "v1",
+    "contentHash": "8a57181ee13656db6bbb6975137760193cd24b19f49512bd25b0fa64b105b840"
+   },
+   "hint": {
+    "boundsMm": [
+     [
+      -409.2669129704865,
+      614.199100016,
+      7300
+     ],
+     [
+      409.2669129704865,
+      1065.9585119999997,
+      14600
+     ]
+    ]
+   }
+  }
+ ],
+ "components": [
+  {
+   "id": "c-foot",
+   "name": "foot",
+   "partId": "p-foot",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-toe-0",
+   "name": "toe-0",
+   "partId": "p-toe-0",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-toe-1",
+   "name": "toe-1",
+   "partId": "p-toe-1",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-toe-2",
+   "name": "toe-2",
+   "partId": "p-toe-2",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-rear-toe",
+   "name": "rear-toe",
+   "partId": "p-rear-toe",
+   "placement": null,
+   "bom": "include"
+  },
+  {
+   "id": "c-foot-mount",
+   "name": "foot-mount",
+   "partId": "p-foot-mount",
+   "placement": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "bom": "include"
+  },
+  {
+   "id": "c-hand",
+   "name": "hand",
+   "partId": "p-hand",
+   "placement": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "bom": "include"
+  },
+  {
+   "id": "c-tail",
+   "name": "tail",
+   "partId": "p-tail",
+   "placement": {
+    "translation": [
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     },
+     {
+      "literalMm": 0
+     }
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "bom": "include"
+  }
+ ],
+ "componentPatterns": [],
+ "joints": [
+  {
+   "id": "bend-0",
+   "name": "toe-0",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-foot"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1100
+      },
+      {
+       "literalMm": -700
+      },
+      {
+       "literalMm": 390
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-toe-0",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 1100
+       },
+       {
+        "literalMm": -700
+       },
+       {
+        "literalMm": 390
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.008726646259971648,
+     "max": 0.619591884457987
+    }
+   ]
+  },
+  {
+   "id": "bend-1",
+   "name": "toe-1",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-foot"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1240
+      },
+      {
+       "literalMm": -700
+      },
+      {
+       "literalMm": 390
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-toe-1",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 1240
+       },
+       {
+        "literalMm": -700
+       },
+       {
+        "literalMm": 390
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.008726646259971648,
+     "max": 0.619591884457987
+    }
+   ]
+  },
+  {
+   "id": "bend-2",
+   "name": "toe-2",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-foot"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1380
+      },
+      {
+       "literalMm": -700
+      },
+      {
+       "literalMm": 390
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-toe-2",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 1380
+       },
+       {
+        "literalMm": -700
+       },
+       {
+        "literalMm": 390
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.008726646259971648,
+     "max": 0.619591884457987
+    }
+   ]
+  },
+  {
+   "id": "bend-rear",
+   "name": "rear",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-foot"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1240
+      },
+      {
+       "literalMm": 150
+      },
+      {
+       "literalMm": 340
+      }
+     ],
+     "rotation": [
+      0,
+      -0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-rear-toe",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 1240
+       },
+       {
+        "literalMm": 150
+       },
+       {
+        "literalMm": 340
+       }
+      ],
+      "rotation": [
+       0,
+       -0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.008726646259971648,
+     "max": 0.619591884457987
+    }
+   ]
+  },
+  {
+   "id": "foot-lift",
+   "name": "foot-lift",
+   "type": "slider",
+   "parent": {
+    "componentPath": [
+     "c-foot-mount"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1240
+      },
+      {
+       "literalMm": -300
+      },
+      {
+       "literalMm": 2000
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-foot",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 1240
+       },
+       {
+        "literalMm": -300
+       },
+       {
+        "literalMm": 2000
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "distance": {
+     "literalMm": 0
+    }
+   },
+   "limits": []
+  }
+ ],
+ "solvedPoses": {
+  "c-foot-mount": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-hand": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-tail": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-foot": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-toe-0": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-toe-1": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-toe-2": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "c-rear-toe": {
+   "translationMm": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0,
+    1
+   ]
+  }
+ },
+ "interferenceAllowances": [
+  {
+   "id": "allow-foot-toe-0",
+   "a": [
+    "c-foot"
+   ],
+   "b": [
+    "c-toe-0"
+   ],
+   "region": {
+    "kind": "pair"
+   }
+  },
+  {
+   "id": "allow-foot-toe-1",
+   "a": [
+    "c-foot"
+   ],
+   "b": [
+    "c-toe-1"
+   ],
+   "region": {
+    "kind": "pair"
+   }
+  },
+  {
+   "id": "allow-foot-toe-2",
+   "a": [
+    "c-foot"
+   ],
+   "b": [
+    "c-toe-2"
+   ],
+   "region": {
+    "kind": "pair"
+   }
+  },
+  {
+   "id": "allow-foot-rear-toe",
+   "a": [
+    "c-foot"
+   ],
+   "b": [
+    "c-rear-toe"
+   ],
+   "region": {
+    "kind": "pair"
+   }
+  },
+  {
+   "id": "allow-foot-mount-foot",
+   "a": [
+    "c-foot-mount"
+   ],
+   "b": [
+    "c-foot"
+   ],
+   "region": {
+    "kind": "pair"
+   }
+  }
+ ],
+ "configurations": [
+  {
+   "id": "f-0",
+   "name": "立つ",
+   "values": {
+    "bend-0": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "bend-1": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "bend-2": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "bend-rear": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "foot-lift": {
+     "distance": {
+      "literalMm": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-1",
+   "name": "途中 5度",
+   "values": {
+    "bend-0": {
+     "angle": {
+      "literalRad": 0.08726646259971647
+     }
+    },
+    "bend-1": {
+     "angle": {
+      "literalRad": 0.08726646259971647
+     }
+    },
+    "bend-2": {
+     "angle": {
+      "literalRad": 0.08726646259971647
+     }
+    },
+    "bend-rear": {
+     "angle": {
+      "literalRad": 0.08726646259971647
+     }
+    },
+    "foot-lift": {
+     "distance": {
+      "literalMm": 140
+     }
+    }
+   }
+  },
+  {
+   "id": "f-2",
+   "name": "途中 10度",
+   "values": {
+    "bend-0": {
+     "angle": {
+      "literalRad": 0.17453292519943295
+     }
+    },
+    "bend-1": {
+     "angle": {
+      "literalRad": 0.17453292519943295
+     }
+    },
+    "bend-2": {
+     "angle": {
+      "literalRad": 0.17453292519943295
+     }
+    },
+    "bend-rear": {
+     "angle": {
+      "literalRad": 0.17453292519943295
+     }
+    },
+    "foot-lift": {
+     "distance": {
+      "literalMm": 280
+     }
+    }
+   }
+  },
+  {
+   "id": "f-3",
+   "name": "途中 15度",
+   "values": {
+    "bend-0": {
+     "angle": {
+      "literalRad": 0.2617993877991494
+     }
+    },
+    "bend-1": {
+     "angle": {
+      "literalRad": 0.2617993877991494
+     }
+    },
+    "bend-2": {
+     "angle": {
+      "literalRad": 0.2617993877991494
+     }
+    },
+    "bend-rear": {
+     "angle": {
+      "literalRad": 0.2617993877991494
+     }
+    },
+    "foot-lift": {
+     "distance": {
+      "literalMm": 420.00000000000006
+     }
+    }
+   }
+  },
+  {
+   "id": "f-4",
+   "name": "途中 20度",
+   "values": {
+    "bend-0": {
+     "angle": {
+      "literalRad": 0.3490658503988659
+     }
+    },
+    "bend-1": {
+     "angle": {
+      "literalRad": 0.3490658503988659
+     }
+    },
+    "bend-2": {
+     "angle": {
+      "literalRad": 0.3490658503988659
+     }
+    },
+    "bend-rear": {
+     "angle": {
+      "literalRad": 0.3490658503988659
+     }
+    },
+    "foot-lift": {
+     "distance": {
+      "literalMm": 560
+     }
+    }
+   }
+  },
+  {
+   "id": "f-5",
+   "name": "途中 25度",
+   "values": {
+    "bend-0": {
+     "angle": {
+      "literalRad": 0.4363323129985824
+     }
+    },
+    "bend-1": {
+     "angle": {
+      "literalRad": 0.4363323129985824
+     }
+    },
+    "bend-2": {
+     "angle": {
+      "literalRad": 0.4363323129985824
+     }
+    },
+    "bend-rear": {
+     "angle": {
+      "literalRad": 0.4363323129985824
+     }
+    },
+    "foot-lift": {
+     "distance": {
+      "literalMm": 700.0000000000001
+     }
+    }
+   }
+  },
+  {
+   "id": "f-6",
+   "name": "途中 30度",
+   "values": {
+    "bend-0": {
+     "angle": {
+      "literalRad": 0.5235987755982988
+     }
+    },
+    "bend-1": {
+     "angle": {
+      "literalRad": 0.5235987755982988
+     }
+    },
+    "bend-2": {
+     "angle": {
+      "literalRad": 0.5235987755982988
+     }
+    },
+    "bend-rear": {
+     "angle": {
+      "literalRad": 0.5235987755982988
+     }
+    },
+    "foot-lift": {
+     "distance": {
+      "literalMm": 840.0000000000001
+     }
+    }
+   }
+  },
+  {
+   "id": "f-7",
+   "name": "つかむ",
+   "values": {
+    "bend-0": {
+     "angle": {
+      "literalRad": 0.6108652381980153
+     }
+    },
+    "bend-1": {
+     "angle": {
+      "literalRad": 0.6108652381980153
+     }
+    },
+    "bend-2": {
+     "angle": {
+      "literalRad": 0.6108652381980153
+     }
+    },
+    "bend-rear": {
+     "angle": {
+      "literalRad": 0.6108652381980153
+     }
+    },
+    "foot-lift": {
+     "distance": {
+      "literalMm": 980.0000000000001
+     }
+    }
+   }
+  }
+ ]
+}

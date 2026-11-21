@@ -1,0 +1,3903 @@
+{
+ "joints": [
+  {
+   "id": "j-body",
+   "name": "体の向きと高さ（飛ぶ ⇄ 立つ）",
+   "type": "planar",
+   "parent": {
+    "componentPath": [
+     "c-ground"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 18500
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-torso",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 18500
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "u": {
+     "literalMm": 0
+    },
+    "v": {
+     "literalMm": 0
+    },
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "u",
+     "min": -60001,
+     "max": 1
+    },
+    {
+     "of": "v",
+     "min": -20001,
+     "max": 20001
+    },
+    {
+     "of": "angle",
+     "min": -0.026179938779914945,
+     "max": 1.5969762655748114
+    }
+   ]
+  },
+  {
+   "id": "j-neck1",
+   "name": "JT-01 首の外の筒が伸びる",
+   "type": "slider",
+   "parent": {
+    "componentPath": [
+     "c-torso"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 200
+      },
+      {
+       "literalMm": 24450
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-neck1",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 200
+       },
+       {
+        "literalMm": 24450
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "distance": {
+     "literalMm": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "distance",
+     "min": -1,
+     "max": 3301
+    }
+   ]
+  },
+  {
+   "id": "j-neck2",
+   "name": "JT-02 首の内の筒が伸びる",
+   "type": "slider",
+   "parent": {
+    "componentPath": [
+     "c-neck1"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 200
+      },
+      {
+       "literalMm": 24450
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-neck2",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 200
+       },
+       {
+        "literalMm": 24450
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "distance": {
+     "literalMm": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "distance",
+     "min": -1,
+     "max": 3001
+    }
+   ]
+  },
+  {
+   "id": "j-neck3",
+   "name": "JT-03 首の先（頭の向き）",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-neck2"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 200
+      },
+      {
+       "literalMm": 24500
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-neck3",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 200
+       },
+       {
+        "literalMm": 24500
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -1.7540558982543013,
+     "max": 1.7540558982543013
+    }
+   ]
+  },
+  {
+   "id": "j-helmet-arm",
+   "name": "耳の金軸・兜の持上げアーム",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-neck3"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 300
+      },
+      {
+       "literalMm": 26000
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-helmet-arm",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 300
+       },
+       {
+        "literalMm": 26000
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -2.0420352248333655,
+     "max": 0.0
+    }
+   ]
+  },
+  {
+   "id": "j-helmet",
+   "name": "兜の付け根・嘴の向き",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-helmet-arm"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": -940
+      },
+      {
+       "literalMm": 26960
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-helmet",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": -940
+       },
+       {
+        "literalMm": 26960
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -4.2062434973063345,
+     "max": 0.0
+    }
+   ]
+  },
+  {
+   "id": "j-tail",
+   "name": "JT-05 尾羽",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-torso"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 0
+      },
+      {
+       "literalMm": 600
+      },
+      {
+       "literalMm": 14000.000000000002
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-tail",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 0
+       },
+       {
+        "literalMm": 600
+       },
+       {
+        "literalMm": 14000.000000000002
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -1.0559241974565694,
+     "max": 1.0559241974565694
+    }
+   ]
+  },
+  {
+   "id": "j-wing-l",
+   "name": "JT-06 左の翼の付け根（外套 ⇄ 翼）",
+   "type": "spherical",
+   "parent": {
+    "componentPath": [
+     "c-torso"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 2000
+      },
+      {
+       "literalMm": 900
+      },
+      {
+       "literalMm": 24200
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-wing-l",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 2000
+       },
+       {
+        "literalMm": 900
+       },
+       {
+        "literalMm": 24200
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    },
+    "angle2": {
+     "literalRad": 0
+    },
+    "angle3": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -3.167772592369708,
+     "max": 3.167772592369708
+    },
+    {
+     "of": "angle2",
+     "min": -3.167772592369708,
+     "max": 3.167772592369708
+    },
+    {
+     "of": "angle3",
+     "min": -3.167772592369708,
+     "max": 3.167772592369708
+    }
+   ]
+  },
+  {
+   "id": "j-arm-l",
+   "name": "左の肩",
+   "type": "spherical",
+   "parent": {
+    "componentPath": [
+     "c-torso"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 2350
+      },
+      {
+       "literalMm": -200
+      },
+      {
+       "literalMm": 23700
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-upper-l",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 2350
+       },
+       {
+        "literalMm": -200
+       },
+       {
+        "literalMm": 23700
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    },
+    "angle2": {
+     "literalRad": 0
+    },
+    "angle3": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -1.5795229730548683,
+     "max": 1.5795229730548683
+    },
+    {
+     "of": "angle2",
+     "min": -1.7540558982543013,
+     "max": 1.7540558982543013
+    },
+    {
+     "of": "angle3",
+     "min": -3.1503192998497647,
+     "max": 1.0559241974565694
+    }
+   ]
+  },
+  {
+   "id": "j-elbow-l",
+   "name": "左の肘",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-upper-l"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 2350
+      },
+      {
+       "literalMm": -200
+      },
+      {
+       "literalMm": 19400
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-fore-l",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 2350
+       },
+       {
+        "literalMm": -200
+       },
+       {
+        "literalMm": 19400
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.008726646259971648,
+     "max": 2.452187599052033
+    }
+   ]
+  },
+  {
+   "id": "j-hip-l",
+   "name": "左の股",
+   "type": "spherical",
+   "parent": {
+    "componentPath": [
+     "c-torso"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1050
+      },
+      {
+       "literalMm": -300
+      },
+      {
+       "literalMm": 13200.000000000002
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-thigh-l",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 1050
+       },
+       {
+        "literalMm": -300
+       },
+       {
+        "literalMm": 13200.000000000002
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    },
+    "angle2": {
+     "literalRad": 0
+    },
+    "angle3": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.5323254218582705,
+     "max": 0.5323254218582705
+    },
+    {
+     "of": "angle2",
+     "min": -0.7941248096574199,
+     "max": 0.7941248096574199
+    },
+    {
+     "of": "angle3",
+     "min": -1.7540558982543013,
+     "max": 1.0559241974565694
+    }
+   ]
+  },
+  {
+   "id": "j-knee-l",
+   "name": "左のひざ",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-thigh-l"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": 1150
+      },
+      {
+       "literalMm": -200
+      },
+      {
+       "literalMm": 9400
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-shin-l",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": 1150
+       },
+       {
+        "literalMm": -200
+       },
+       {
+        "literalMm": 9400
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -2.452187599052033,
+     "max": 0.008726646259971648
+    }
+   ]
+  },
+  {
+   "id": "j-wing-r",
+   "name": "JT-06 右の翼の付け根（外套 ⇄ 翼）",
+   "type": "spherical",
+   "parent": {
+    "componentPath": [
+     "c-torso"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": -2000
+      },
+      {
+       "literalMm": 900
+      },
+      {
+       "literalMm": 24200
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-wing-r",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": -2000
+       },
+       {
+        "literalMm": 900
+       },
+       {
+        "literalMm": 24200
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    },
+    "angle2": {
+     "literalRad": 0
+    },
+    "angle3": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -3.167772592369708,
+     "max": 3.167772592369708
+    },
+    {
+     "of": "angle2",
+     "min": -3.167772592369708,
+     "max": 3.167772592369708
+    },
+    {
+     "of": "angle3",
+     "min": -3.167772592369708,
+     "max": 3.167772592369708
+    }
+   ]
+  },
+  {
+   "id": "j-arm-r",
+   "name": "右の肩",
+   "type": "spherical",
+   "parent": {
+    "componentPath": [
+     "c-torso"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": -2350
+      },
+      {
+       "literalMm": -200
+      },
+      {
+       "literalMm": 23700
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-upper-r",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": -2350
+       },
+       {
+        "literalMm": -200
+       },
+       {
+        "literalMm": 23700
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    },
+    "angle2": {
+     "literalRad": 0
+    },
+    "angle3": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -1.5795229730548683,
+     "max": 1.5795229730548683
+    },
+    {
+     "of": "angle2",
+     "min": -1.7540558982543013,
+     "max": 1.7540558982543013
+    },
+    {
+     "of": "angle3",
+     "min": -3.1503192998497647,
+     "max": 1.0559241974565694
+    }
+   ]
+  },
+  {
+   "id": "j-elbow-r",
+   "name": "右の肘",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-upper-r"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": -2350
+      },
+      {
+       "literalMm": -200
+      },
+      {
+       "literalMm": 19400
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-fore-r",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": -2350
+       },
+       {
+        "literalMm": -200
+       },
+       {
+        "literalMm": 19400
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.008726646259971648,
+     "max": 2.452187599052033
+    }
+   ]
+  },
+  {
+   "id": "j-hip-r",
+   "name": "右の股",
+   "type": "spherical",
+   "parent": {
+    "componentPath": [
+     "c-torso"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": -1050
+      },
+      {
+       "literalMm": -300
+      },
+      {
+       "literalMm": 13200.000000000002
+      }
+     ],
+     "rotation": [
+      0,
+      0,
+      0,
+      1
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-thigh-r",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": -1050
+       },
+       {
+        "literalMm": -300
+       },
+       {
+        "literalMm": 13200.000000000002
+       }
+      ],
+      "rotation": [
+       0,
+       0,
+       0,
+       1
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    },
+    "angle2": {
+     "literalRad": 0
+    },
+    "angle3": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -0.5323254218582705,
+     "max": 0.5323254218582705
+    },
+    {
+     "of": "angle2",
+     "min": -0.7941248096574199,
+     "max": 0.7941248096574199
+    },
+    {
+     "of": "angle3",
+     "min": -1.7540558982543013,
+     "max": 1.0559241974565694
+    }
+   ]
+  },
+  {
+   "id": "j-knee-r",
+   "name": "右のひざ",
+   "type": "revolute",
+   "parent": {
+    "componentPath": [
+     "c-thigh-r"
+    ],
+    "ref": {
+     "origin": true
+    },
+    "flip": false,
+    "offset": {
+     "translation": [
+      {
+       "literalMm": -1150
+      },
+      {
+       "literalMm": -200
+      },
+      {
+       "literalMm": 9400
+      }
+     ],
+     "rotation": [
+      0,
+      0.7071067811865475,
+      0,
+      0.7071067811865476
+     ]
+    }
+   },
+   "child": {
+    "componentId": "c-shin-r",
+    "connector": {
+     "componentPath": [],
+     "ref": {
+      "origin": true
+     },
+     "flip": false,
+     "offset": {
+      "translation": [
+       {
+        "literalMm": -1150
+       },
+       {
+        "literalMm": -200
+       },
+       {
+        "literalMm": 9400
+       }
+      ],
+      "rotation": [
+       0,
+       0.7071067811865475,
+       0,
+       0.7071067811865476
+      ]
+     }
+    }
+   },
+   "values": {
+    "angle": {
+     "literalRad": 0
+    }
+   },
+   "limits": [
+    {
+     "of": "angle",
+     "min": -2.452187599052033,
+     "max": 0.008726646259971648
+    }
+   ]
+  }
+ ],
+ "configurations": [
+  {
+   "id": "f-0",
+   "name": "FM-01 飛ぶ形",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": -14000
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 1.5707963267948966
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 3300
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 3000
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": -1.3962634015954636
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-1",
+   "name": "SP-01 降りながら体を起こす 30°",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": -9333.333333333334
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 1.0471975511965976
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 3300
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 3000
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": -1.3962634015954636
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-2",
+   "name": "SP-01 降りながら体を起こす 60°",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": -4666.666666666668
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0.5235987755982988
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 3300
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 3000
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": -1.3962634015954636
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-3",
+   "name": "SP-01 降りながら体を起こす 90°",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 3300
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 3000
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": -1.3962634015954636
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-4",
+   "name": "SP-02 頭を起こす 50%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 3300
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 3000
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": -0.6981317007977318
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-5",
+   "name": "SP-02 頭を起こす 100%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 3300
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 3000
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-6",
+   "name": "SP-02 首を胸に縮める 50%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 1650
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 1500
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-7",
+   "name": "SP-02 首を胸に縮める 100%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.5707963267948966
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-8",
+   "name": "SP-03 翼を外套に 25%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": -0.37024024484653045
+     },
+     "angle3": {
+      "literalRad": -0.7853981633974483
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0.37024024484653045
+     },
+     "angle3": {
+      "literalRad": -0.7853981633974483
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-9",
+   "name": "SP-03 翼を外套に 50%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": -0.5235987755982988
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -1.5707963267948966
+     },
+     "angle2": {
+      "literalRad": 0.5235987755982988
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-10",
+   "name": "SP-03 翼を外套に 75%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0.7853981633974483
+     },
+     "angle2": {
+      "literalRad": -0.3702402448465305
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": -0.7853981633974483
+     },
+     "angle2": {
+      "literalRad": 0.3702402448465305
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-11",
+   "name": "SP-03 翼を外套に 100%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": -6.4122356457393e-17
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 6.4122356457393e-17
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-12",
+   "name": "FM-02 人の形",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    }
+   }
+  },
+  {
+   "id": "f-19",
+   "name": "SP-04 兜を外す 25%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": -0.29670597283903605
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": -0.22689280275926285
+     }
+    }
+   }
+  },
+  {
+   "id": "f-13",
+   "name": "SP-04 兜を外す 50%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": -1.0122909661567112
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": -0.4188790204786391
+     }
+    }
+   }
+  },
+  {
+   "id": "f-20",
+   "name": "SP-04 兜を外す 75%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": -1.7976891295541595
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": -2.0420352248333655
+     }
+    }
+   }
+  },
+  {
+   "id": "f-14",
+   "name": "SP-04 兜を外す 100%",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": -4.2062434973063345
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": -1.4660765716752369
+     }
+    }
+   }
+  },
+  {
+   "id": "f-15",
+   "name": "FM-04 人の形（素顔）",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": -4.2062434973063345
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": -1.4660765716752369
+     }
+    }
+   }
+  },
+  {
+   "id": "f-16",
+   "name": "決めのポーズ",
+   "values": {
+    "j-body": {
+     "u": {
+      "literalMm": 0
+     },
+     "v": {
+      "literalMm": 0
+     },
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-neck1": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck2": {
+     "distance": {
+      "literalMm": 0
+     }
+    },
+    "j-neck3": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet": {
+     "angle": {
+      "literalRad": 0.0
+     }
+    },
+    "j-tail": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": -1.0471975511965976
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": -0.20943951023931956
+     },
+     "angle3": {
+      "literalRad": -0.17453292519943295
+     }
+    },
+    "j-elbow-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-hip-l": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": -0.06981317007977318
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-l": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-wing-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-arm-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0
+     },
+     "angle3": {
+      "literalRad": -1.7453292519943295
+     }
+    },
+    "j-elbow-r": {
+     "angle": {
+      "literalRad": 0.5235987755982988
+     }
+    },
+    "j-hip-r": {
+     "angle": {
+      "literalRad": 0
+     },
+     "angle2": {
+      "literalRad": 0.06981317007977318
+     },
+     "angle3": {
+      "literalRad": 0
+     }
+    },
+    "j-knee-r": {
+     "angle": {
+      "literalRad": 0
+     }
+    },
+    "j-helmet-arm": {
+     "angle": {
+      "literalRad": -1.7453292519943295
+     }
+    }
+   }
+  }
+ ]
+}
