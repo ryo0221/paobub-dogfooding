@@ -14,6 +14,7 @@
 | [projects/skytree-twin](projects/skytree-twin/) | 施工計画（construction-planning 1.0.0） | 東京スカイツリーを題材にした近似のデジタルツイン（公開の情報からの近似、所有者・施工者とは関係なし）。634 m の塔の建設を、昇るタワークレーン・ゲイン塔の引き上げ・トレーラーの搬入と一緒に日付で模擬。吊りの検査 3,573 件 → 9 件 |
 | [projects/factory-twin](projects/factory-twin/) | 生産システム計画（production-system-planning 1.0.0） | 架空の e-Axle の工場のデジタルツイン（実在の会社・工場・製品とは関係なし）。1 本の組立ラインを建屋に置き、物の流れ・作業者・AGV・PLC を模擬。計画案 13.8 台/時（律速は AGV）→ 実験 40 回 → 採用案 34.4 台/時 |
 | [projects/shiraha](projects/shiraha/) | アニメのメカデザインと玩具化（mecha-design 1.2.0） | オリジナルの可変機「白羽」。白鳥のような飛ぶ形から人の形へ変わり、兜を外すと素顔。進め方〜配色の 10 工程。作業役（Codex）が CAD で組んだ 152 部品・21 姿勢の 3D モデル（干渉 0 件）、東京駅のデジタルツインでの絵 |
+| [projects/shinonome-ev-circular](projects/shinonome-ev-circular/) | 新規事業の企画（new-business-planning 1.0.0、作成中） | 架空の総合商社「東雲物産」が、EV の e-Axle と電池の循環事業をタイと日本で始める新規事業計画（実在の会社とは関係なし）。マインドマップと収支の道具を作りながら計画をまとめ、アニメーション付きのスライドで経営会議に諮る。今は計画（`PLAN.md`）だけ |
 
 ## Project を PaoBub で開く
 
