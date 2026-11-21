@@ -25,6 +25,7 @@ for r in bl:
         gid = f"{r['panel']}-LY07-{b['dl']}"
         row = dict(old) if old else {**TEMPLATE, '話す人物': NAMES.get(b['who'], b['who']), '台詞の全文': ''.join(b['lines'])}
         row.update({
+            '台詞の全文': b['text'],  # 脚本の台詞（compose.py が script-doc.md から読む）
             'id': f'BL-{n:03d}', 'ページ': r['page'], 'コマ': r['panel'], '台詞': b['dl'],
             '組み方': '縦書き（行は右から左へ）' if VERTICAL else '横書き',
             '組み方の理由': ('画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま'
