@@ -70,8 +70,8 @@
 
 | 道具 | 新規か拡張か | できること | 使う工程 |
 | --- | --- | --- | --- |
-| E1 マインドマップ | 新規（mindmap-core と mindmap） | 放射・左右・ツリーの自動配置。Tab で子、Enter で兄弟、折りたたみ、枝の色と印。枝を項目（OP-01 など）に結ぶ。作業役の提案を枝ごとの差分で取捨。ホワイトボード・文書・スライドへの書き出し | 0, 1, 2 |
-| E2 定義の見せ方 mindmap | 拡張（open-workflow-definitions と PaoBub） | 成果物の view に `as: "mindmap"`（親の欄を指定）を足し、PaoBub がマインドマップのエディタで開く | 0, 1 |
+| E1 マインドマップ | 新規。open-editor-template から作る外部 Editor（PaoBub の package として取り込む） | 放射・左右・ツリーの自動配置。Tab で子、Enter で兄弟、折りたたみ、枝の色と印。枝を項目（OP-01 など）に結ぶ。作業役の提案を枝ごとの差分で取捨。ホワイトボード・文書・スライドへの書き出し | 0, 1, 2 |
+| E2 PaoBub への取り込み | PaoBub の既存の外部 Editor の経路（package の置き場・信頼の登録・`editorBindings`） | E1 の package を PaoBub に登録し、マインドマップの成果物をそのエディタで開く。足りない所は PaoBub の Issue にする。項目を木で見せる view（`as: "mindmap"`）は、要るとわかったときに定義への直しとして出す | 0, 1 |
 | E3 収支の道具 | 新規（business-case-core と business-case）。calculation-core の小数演算と丸め、Analysis の条件の保存・結果の比較・新版の試算と採用を再利用・共通化する | 初版は U2 の範囲：前提表 AS → 10 年・年次の収支、基本・楽観・悲観の 3 シナリオと感応度、NPV・IRR・回収年、結果から前提に戻れる根拠と受け入れた版 | 6, 8 |
 | E4 スライドのアニメーション | 拡張（slide） | 物ごとの登場・強調・退場、クリックの順、画面の切り替え、グラフの系列ごと・マインドマップの枝ごとの登場、発表者ビュー。MP4・PDF・PPTX への書き出し | 10 |
 | E5 生きた引用 | 拡張（artifact-references） | スライドや計画書の数字・図を収支やマインドマップの版に結ぶ。元が変わると「古い」と出て、更新できる | 9, 10 |
@@ -84,13 +84,16 @@
 
 Ryo さんの決定（カード「両方とも PaoBub の中で作る」）により、マインドマップのエディタ（E1・E2）と工程定義を、私が各リポジトリに直接作るのではなく、PaoBub の Project の中でチームと作業役が作ります。ほかの道具（E3〜E7）も同じ扱いです。
 
+今回は、**open-editor-template から作った Editor を PaoBub に取り込むデモ**も兼ねます（Ryo さん、2026-11-21）。マインドマップのエディタは Open Editor Platform の中の package ではなく、テンプレートから作った別のリポジトリの外部 Editor にし、ビルドした package を PaoBub の外部 Editor の経路で登録して使います。
+
 | Project | 定義 | 作るもの | 外へ出すもの |
 | --- | --- | --- | --- |
-| A 道具づくり（東雲物産 事業企画部＋DX 推進の開発担当） | software-product（既存）。工程は進め方〜手元で作る（build-local）まで。dev・staging・release は省き、理由を書く | マインドマップのエディタ（E1）と PaoBub の対応（E2）。後の段で E3〜E7 も同じ Project で足す | 承認した段ごとに Open Editor Platform・PaoBub・open-workflow-definitions への PR（統合ブランチ宛て） |
+| A 道具づくり（東雲物産 事業企画部＋DX 推進の開発担当） | software-product（既存）。工程は進め方〜手元で作る（build-local）まで。dev・staging・release は省き、理由を書く | open-editor-template から作ったマインドマップのリポジトリで、E1 を作る。ビルドした package（`dist/paobub/`）が出すもの | package を PaoBub に登録（E2）。PaoBub 側に足りない所は paobub の Issue と PR。後の段の道具（E3〜E7）は、Open Editor Platform の拡張か新しい外部 Editor かを段ごとに決める |
 | B 新規事業の企画 | 最初は手元だけの小さな定義（進め方の 1 工程）で始め、工程 0 で作った new-business-planning 1.0.0 に定義を上げる | 新規事業計画（工程 1〜12） | 承認した定義の PR（open-workflow-definitions）、最後の記録（このフォルダー） |
 
 - Project A でチームが決めること（範囲・利用者の話・画面・状態・前提・設計）は、作業役が下書きし、人がスレッドで議論して承認します。先に出した設計の下書き（Open Editor Platform #42）と定義の下書き（open-workflow-definitions #14）は、作業役への参考資料として渡すだけにし、PR は下書きに戻しました。
-- 道具のコードは、Project A の作業ブランチで作業役が書き、ゲート（lint・型・単体・ビルド）を通します。外のリポジトリへは、承認した段の差分だけを PR にします。Open Editor Platform は公開リポジトリなので、PaoBub の Project のファイル（`workflow.json` など）は入れません。
+- 道具のコードは、Project A の作業ブランチで作業役が書き、ゲート（テンプレートの `npm run check`・`npm test`・`npm run build`・`npm run verify:package`）を通します。Project A のリポジトリはテンプレートから作った専用のものなので、`workflow.json` などの Project のファイルもそこに置けます。
+- 取り込み：運用者（人）が `host-pin.json` を確かめて信頼に登録し、package を置き場へ置き、Project B の `editorBindings` に書きます。生成物の pin をそのまま信頼しないことも、デモで見せます。
 - Project B は、定義の更新（小さな定義 → 1.0.0 → 1.1）を最初から通るので、「定義の更新を既存の Project に反映」の確かめにもなります。
 
 ## PaoBub で確かめること
@@ -135,7 +138,7 @@ PaoBub は独立したリポジトリを機密の範囲として扱い、同じ�
 
 受け入れは 3 回です。
 
-- K1（B1）：Project A で作ったマインドマップのエディタを、Project B の成果物から開き、編集・保存・再読込ができる。Project B の工程 0 で作った定義が検査を通り、承認されて Project に当たっている。
+- K1（B1）：Project A でテンプレートから作ったマインドマップのエディタを、package として PaoBub に登録し、Project B の成果物から開いて、編集・保存・再読込ができる。Project B の工程 0 で作った定義が検査を通り、承認されて Project に当たっている。
 - K2（B2–B3）：PaoBub の上で、収支の前提を変える → 再計算 → 差分を見る → 採用する → 保存・再読込する、を通す。これに加え、PaoBub の成果物から工場のエディタを開き、編集・保存・再読込ができる。スライドのアニメーションが書き出せる。
 - K3（B4–B5）：引用（E5）を含む最終のスライドを MP4・PDF・PPTX に書き出し、形式ごとに保たれるもの（数字・図・引用の元・アニメーション）と失われるものを一覧にして確かめる。今の artifact-references は参照つきの PPTX の出力を拒否し、参照の明示的な解除を求めるので、その扱いを E5 で決める。道具は統合ブランチへの段階 PR で作り、main への受け入れ PR は Ryo さんの「マージして」でだけマージします。PaoBub 側に要る直しは paobub に Issue を立てて進めます。
 
