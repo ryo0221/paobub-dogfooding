@@ -31,7 +31,10 @@ const width = Number(widthArg || 0);
 // 原稿の書体名（Editor の既定 Noto Sans CJK JP）を、この環境にある日本語の書体に結び付ける。
 // 結び付けないと、Chromium が中国語の字形の書体で代わりに組むことがある。FONT で書体を変えられる（既定は IPAゴシック）
 const font = process.env.FONT || 'IPAGothic';
-const fontFace = `@font-face{font-family:"Noto Sans CJK JP";src:local("${font}")}`;
+// 写植の書体（源暎アンチック v6）は、プロジェクトの assets/fonts から読み込む（入れていない環境でも同じ字形で書き出せるように）
+const letterFont = process.env.LETTER_FONT_FILE;
+const fontFace = `@font-face{font-family:"Noto Sans CJK JP";src:local("${font}")}`
+  + (letterFont ? `@font-face{font-family:"GenEi Antique v6";src:url(data:font/ttf;base64,${readFileSync(letterFont).toString('base64')})}` : '');
 console.log(`font: Noto Sans CJK JP -> ${font}`);
 for (const p of pages) {
   const scale = width ? width / p.width : 1;

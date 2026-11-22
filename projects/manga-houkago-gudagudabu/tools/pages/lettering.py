@@ -30,6 +30,7 @@ for r in bl:
             '組み方': '縦書き（行は右から左へ）' if VERTICAL else '横書き',
             '組み方の理由': ('画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま'
                         if VERTICAL else row.get('組み方の理由', '')),
+            '書体': '源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）',
             '文字の大きさ': '34（全ページ同じ）', '文字の組み': '／'.join(b['lines']),
             '吹き出しの形': ('雲形（心の声）、話す人物へ向けた小さな丸2つ' if b.get('thought') else 'なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）') if b.get('tail') else ('雲形（心の声）、しっぽ無し' if b.get('thought') else 'なめらかな楕円形、しっぽ無し（話す人物がコマに写らないか、同じ人物の前の吹き出しに続く）'),
             '図形': [f'{gid}-shape', f'{gid}-text'],

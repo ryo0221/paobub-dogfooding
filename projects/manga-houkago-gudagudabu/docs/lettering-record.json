@@ -10,7 +10,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "れいか",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -31,7 +31,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "れいか",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -52,7 +52,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -73,7 +73,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "れいか",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -94,7 +94,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "れいか",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -115,7 +115,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -136,7 +136,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -157,7 +157,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "れいか",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -178,7 +178,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -199,7 +199,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -220,7 +220,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "れいか",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -241,7 +241,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -262,7 +262,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -283,7 +283,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "たけし",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -304,7 +304,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -325,7 +325,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "雲形（心の声）、話す人物へ向けた小さな丸2つ",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -346,7 +346,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "棚橋先生",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -367,7 +367,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -388,7 +388,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "棚橋先生",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -409,7 +409,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -430,7 +430,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "棚橋先生",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -451,7 +451,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "雲形（心の声）、話す人物へ向けた小さな丸2つ",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -472,7 +472,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "たけし",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -493,7 +493,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -514,7 +514,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -535,7 +535,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -556,7 +556,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -577,7 +577,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -598,7 +598,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -619,7 +619,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -640,7 +640,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -661,7 +661,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -682,7 +682,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -703,7 +703,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -724,7 +724,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -745,7 +745,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -766,7 +766,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "たけし",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -787,7 +787,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "雲形（心の声）、話す人物へ向けた小さな丸2つ",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -808,7 +808,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -829,7 +829,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -850,7 +850,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -871,7 +871,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -892,7 +892,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "雲形（心の声）、話す人物へ向けた小さな丸2つ",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -913,7 +913,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "ねむ",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -934,7 +934,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "すず",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -955,7 +955,7 @@
    "台詞の版": "pin/script/2",
    "話す人物": "たけし",
    "吹き出しの形": "なめらかな楕円形、話す人物へ向けたしっぽ（吹き出しの縁から短く出し、頭の手前で止める）",
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "文字の大きさ": "34（全ページ同じ）",
@@ -967,7 +967,7 @@
    "置き方": "人物の頭（3D の舞台で写る位置）と線画の人物の線を避けて置いた（tools/pages/compose.py）。"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -988,7 +988,7 @@
    "name": "BL-047 れいかの吹き出し（DL-047）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1009,7 +1009,7 @@
    "name": "BL-048 ねむの吹き出し（DL-048）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1030,7 +1030,7 @@
    "name": "BL-049 れいかの吹き出し（DL-049）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1051,7 +1051,7 @@
    "name": "BL-050 ねむの吹き出し（DL-050）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1072,7 +1072,7 @@
    "name": "BL-051 れいかの吹き出し（DL-051）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1093,7 +1093,7 @@
    "name": "BL-052 ねむの吹き出し（DL-052）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1114,7 +1114,7 @@
    "name": "BL-053 れいかの吹き出し（DL-053）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1135,7 +1135,7 @@
    "name": "BL-054 れいかの吹き出し（DL-054）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1156,7 +1156,7 @@
    "name": "BL-055 すずの吹き出し（DL-055）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1177,7 +1177,7 @@
    "name": "BL-056 ねむの吹き出し（DL-056）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1198,7 +1198,7 @@
    "name": "BL-057 ねむの吹き出し（DL-057）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1219,7 +1219,7 @@
    "name": "BL-058 すずの吹き出し（DL-058）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1240,7 +1240,7 @@
    "name": "BL-059 たけしの吹き出し（DL-059）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1261,7 +1261,7 @@
    "name": "BL-060 すずの吹き出し（DL-060）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1282,7 +1282,7 @@
    "name": "BL-061 ねむの吹き出し（DL-061）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1303,7 +1303,7 @@
    "name": "BL-062 すずの吹き出し（DL-062）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1324,7 +1324,7 @@
    "name": "BL-063 ねむの吹き出し（DL-063）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1345,7 +1345,7 @@
    "name": "BL-064 すずの吹き出し（DL-064）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1366,7 +1366,7 @@
    "name": "BL-065 れいかの吹き出し（DL-065）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1387,7 +1387,7 @@
    "name": "BL-066 たけしの吹き出し（DL-066）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1408,7 +1408,7 @@
    "name": "BL-067 すずの吹き出し（DL-067）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1429,7 +1429,7 @@
    "name": "BL-068 れいかの吹き出し（DL-068）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1450,7 +1450,7 @@
    "name": "BL-069 ねむの吹き出し（DL-069）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1471,7 +1471,7 @@
    "name": "BL-070 ねむの吹き出し（DL-070）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1492,7 +1492,7 @@
    "name": "BL-071 れいかの吹き出し（DL-071）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1513,7 +1513,7 @@
    "name": "BL-072 ねむの吹き出し（DL-072）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1534,7 +1534,7 @@
    "name": "BL-073 すずの吹き出し（DL-073）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1555,7 +1555,7 @@
    "name": "BL-074 すずの吹き出し（DL-074）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1576,7 +1576,7 @@
    "name": "BL-075 れいかの吹き出し（DL-075）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1597,7 +1597,7 @@
    "name": "BL-076 すずの吹き出し（DL-076）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1618,7 +1618,7 @@
    "name": "BL-077 れいかの吹き出し（DL-077）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1639,7 +1639,7 @@
    "name": "BL-078 たけしの吹き出し（DL-078）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1660,7 +1660,7 @@
    "name": "BL-079 れいかの吹き出し（DL-079）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1681,7 +1681,7 @@
    "name": "BL-080 ねむの吹き出し（DL-080）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1702,7 +1702,7 @@
    "name": "BL-081 れいかの吹き出し（DL-081）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1723,7 +1723,7 @@
    "name": "BL-082 すずの吹き出し（DL-082）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1744,7 +1744,7 @@
    "name": "BL-083 れいかの吹き出し（DL-083）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1765,7 +1765,7 @@
    "name": "BL-084 れいかの吹き出し（DL-084）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1786,7 +1786,7 @@
    "name": "BL-085 たけしの吹き出し（DL-085）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1807,7 +1807,7 @@
    "name": "BL-086 すずの吹き出し（DL-086）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1828,7 +1828,7 @@
    "name": "BL-087 たけしの吹き出し（DL-087）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1849,7 +1849,7 @@
    "name": "BL-088 すずの吹き出し（DL-088）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1870,7 +1870,7 @@
    "name": "BL-089 ねむの吹き出し（DL-089）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",
@@ -1891,7 +1891,7 @@
    "name": "BL-090 すずの吹き出し（DL-090）"
   },
   {
-   "書体": "未定（ゴシック系。作者が写植の前に決める。Editor の既定の書体で仮置き）",
+   "書体": "源暎アンチック v6（GenEi Antique v6、通常版 GenEiAntiqueNv6-M.ttf、Ver 6.0a。配布元 okoneya.jp、SIL Open Font License 1.1。assets/fonts/）。作者が決めた（2026-11-22）",
    "組み方": "縦書き（行は右から左へ）",
    "組み方の理由": "画作りガイドと作者の依頼のとおり。Design の文字の writingMode: vertical-rl で組む（2026-11-22、作者が「Design に縦書きを足す」を選び、Editor Platform に縦書きが既にあった）。看板・名札など絵の中の字は横書きのまま",
    "台詞の版": "pin/script/2",

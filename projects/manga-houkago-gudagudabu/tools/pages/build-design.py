@@ -14,6 +14,7 @@ kind, balloons_path, out_path = sys.argv[1:4]
 sb = json.load(open(f'{ROOT}/docs/storyboard-pages.json'))
 EPS = os.environ.get('EPS', EP).split(',')
 VERTICAL = os.environ.get('WRITING', 'vertical') == 'vertical'  # 写植は縦書き（compose.py と同じ）
+LETTER_FONT = 'GenEi Antique v6'  # 写植の書体：源暎アンチック v6（通常版。SIL OFL 1.1。assets/fonts/）。作者が決めた（2026-11-22）
 
 
 def uri(path, size=None, fmt='PNG', mode=None, alpha_from_dark=False, quality=80):
@@ -93,10 +94,10 @@ def balloon(pid, b, ox, oy, n):
     if VERTICAL:  # 縦書き：列（行）を右から左へ。文字の箱を楕円の中央に置き、はみ出すときは Editor が字を縮める（overflow: fit）
         tw, th = len(b['lines']) * 34 * 1.25 + 8, max(len(l) for l in b['lines']) * 34 + 8
         tb = {'x': round(x + (w - tw) / 2, 1), 'y': round(y + (h - th) / 2, 1), 'width': round(tw, 1), 'height': round(th, 1)}
-        ty = {'fontSize': 34, 'lineHeight': 1.25, 'padding': 2, 'overflow': 'fit', 'align': 'center', 'verticalAlign': 'middle', 'writingMode': 'vertical-rl'}
+        ty = {'fontFamily': LETTER_FONT, 'fontSize': 34, 'lineHeight': 1.25, 'padding': 2, 'overflow': 'fit', 'align': 'center', 'verticalAlign': 'middle', 'writingMode': 'vertical-rl'}
     else:
         tb = {'x': round(x + 20, 1), 'y': round(y + 14, 1), 'width': round(w - 40, 1), 'height': round(h - 28, 1)}
-        ty = {'fontSize': 34, 'lineHeight': 1.25, 'padding': 2, 'overflow': 'clip', 'align': 'center', 'verticalAlign': 'middle'}
+        ty = {'fontFamily': LETTER_FONT, 'fontSize': 34, 'lineHeight': 1.25, 'padding': 2, 'overflow': 'clip', 'align': 'center', 'verticalAlign': 'middle'}
     add({'id': f'{gid}-text', 'type': 'text', 'name': f"LY-08 文字 {b['dl']}", 'parentId': gid, 'bounds': tb,
          'text': '\n'.join(b['lines']), 'fill': '#000000', 'typography': ty})
 
@@ -149,7 +150,7 @@ for EP in EPS:
                   fs = sg.get('fontSize', 34)
                   add({'id': f'{P}-LY07-SIGN{j}-text', 'type': 'text', 'name': f"LY-08 絵の中の字 {sg['text']}", 'parentId': P,
                        'bounds': {'x': round(X + sg['at'][0] * w, 1), 'y': round(Y + sg['at'][1] * h, 1), 'width': round(sg['size'][0] * w, 1), 'height': round(sg['size'][1] * h, 1)},
-                       'text': sg['text'], 'fill': '#000000', 'typography': {'fontSize': fs, 'lineHeight': 1.1, 'padding': 2, 'overflow': 'clip', 'align': 'center', 'verticalAlign': 'middle'}})
+                       'text': sg['text'], 'fill': '#000000', 'typography': {'fontFamily': LETTER_FONT, 'fontSize': fs, 'lineHeight': 1.1, 'padding': 2, 'overflow': 'clip', 'align': 'center', 'verticalAlign': 'middle'}})
       pag['pages'].append({'frameId': pg['id'], 'panelIds': ids})
   # 記録のページ（ページ割りの外）：成果物の見出しごとの記録
   NOTES = json.load(open(f'{ROOT}/assets/{EP}/{kind}-record.json'))

@@ -28,7 +28,7 @@ for m in re.finditer(r'#### (DL-\d+) (\S+)\n(.*?)(?=\n####|\n### |\Z)', script, 
     text = re.search(r'台詞：「(.*)」', body)
     if text: LINES[m.group(1)] = (who.group(1) if who else None, text.group(1))
     if '心の声' in (re.search(r'言い方：(.*)', body) or [None, ''])[1]: THOUGHT.add(m.group(1))
-FONT = '/usr/share/fonts/truetype/ipafont-gothic/ipag.ttf' if os.path.exists('/usr/share/fonts/truetype/ipafont-gothic/ipag.ttf') else '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf'
+FONT = f'{ROOT}/assets/fonts/GenEiAntiqueNv6-M.ttf' if os.path.exists(f'{ROOT}/assets/fonts/GenEiAntiqueNv6-M.ttf') else '/usr/share/fonts/truetype/ipafont-gothic/ipag.ttf' if os.path.exists('/usr/share/fonts/truetype/ipafont-gothic/ipag.ttf') else '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf'
 FS = 34
 font = ImageFont.truetype(FONT, FS)
 small = ImageFont.truetype(FONT, 22)
