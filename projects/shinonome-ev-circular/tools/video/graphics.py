@@ -257,3 +257,11 @@ if os.path.exists(os.path.join(SL,'s9.png')):
         shadow_paste(c,im,x,y)
     save(c,'c-slides')
 print('ok3')
+
+# 3D of the plant model (Editor Platform factory editor; reman.demo.ts writes R3D)
+R3D=os.environ.get('REMAN_3D', os.path.join(WORK,'reman3d'))
+if os.path.exists(os.path.join(R3D,'still.png')):
+    old=SHOTS; SHOTS=R3D
+    still('twin-3d','still',cap='拠点の模型を 3D で：2035 年の構成（診断機 5 台・分解台と再組立台 2 台ずつ）、3 日目の朝')
+    still('twin-3d-ui','ui',cap='工場の模型の Editor：流した結果（工程ごとの稼働・待ち・止まり）と 3D の再生')
+    SHOTS=old
