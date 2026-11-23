@@ -1,0 +1,320 @@
+{
+ "format": 1,
+ "name": "新規事業の企画",
+ "definition": {
+  "id": "org-4978d001006d",
+  "version": "3.6.1"
+ },
+ "citations": "trace/citations.json",
+ "deliverables": {
+  "business-map": [
+   {
+    "path": "docs/business-map.json",
+    "as": "plain"
+   }
+  ],
+  "definition-draft": [
+   {
+    "path": "definition/new-business-planning.json",
+    "as": "plain"
+   }
+  ],
+  "opportunity-map": [
+   {
+    "path": "docs/opportunity-map.json",
+    "as": "plain"
+   }
+  ],
+  "business-hypothesis": [
+   {
+    "path": "docs/business-hypothesis.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "hypothesis",
+      "match": "^### (HY-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "market-research": [
+   {
+    "path": "docs/market-research.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "market-size",
+      "match": "^### (MS-\\d+)\\b"
+     },
+     {
+      "kind": "customer-segment",
+      "match": "^### (CS-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "business-model-map": [
+   {
+    "path": "docs/business-model-map.json",
+    "as": "plain"
+   }
+  ],
+  "execution-plan": [
+   {
+    "path": "docs/execution-plan.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "organization",
+      "match": "^### (OR-\\d+)\\b"
+     },
+     {
+      "kind": "milestone",
+      "match": "^### (ML-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "plant-model": [
+   {
+    "path": "docs/plant-model.json",
+    "as": "json",
+    "kind": "twin-result",
+    "at": "twin-result"
+   }
+  ],
+  "financial-model": [
+   {
+    "path": "docs/financial-model.json",
+    "as": "json",
+    "kind": "financial-assumption",
+    "at": "assumptions"
+   },
+   {
+    "path": "docs/financial-model.json",
+    "as": "json",
+    "kind": "scenario",
+    "at": "scenarios"
+   }
+  ],
+  "risk-table": [
+   {
+    "path": "docs/risk-table.json",
+    "as": "json",
+    "kind": "risk",
+    "at": "risk"
+   },
+   {
+    "path": "docs/risk-table.json",
+    "as": "json",
+    "kind": "mitigation",
+    "at": "mitigation"
+   }
+  ],
+  "investment-record": [
+   {
+    "path": "docs/investment-record.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "investment-criterion",
+      "match": "^### (IC-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "business-plan-document": [
+   {
+    "path": "docs/business-plan-document.json",
+    "as": "document",
+    "rules": [
+     {
+      "kind": "plan-chapter",
+      "match": "^### (PC-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "presentation-slides": [
+   {
+    "path": "docs/presentation-slides.json",
+    "as": "json",
+    "kind": "slide",
+    "at": "slides"
+   }
+  ],
+  "management-record": [
+   {
+    "path": "docs/management-record.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "management-decision",
+      "match": "^### (MD-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "learning-record": [
+   {
+    "path": "docs/learning-record.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "learning",
+      "match": "^### (LE-\\d+)\\b"
+     }
+    ]
+   }
+  ]
+ },
+ "editorBindings": {
+  "business-map": {
+   "editor": "ext:shinonome.mindmap-editor",
+   "package": {
+    "id": "shinonome.mindmap-editor",
+    "version": "0.1.4",
+    "hash": "sha256:0156ecad8ec3e3a5e59d90bc9e0cc38f1c0f9f82c080aca383b2e51fde7743e3"
+   }
+  },
+  "opportunity-map": {
+   "editor": "ext:shinonome.mindmap-editor",
+   "package": {
+    "id": "shinonome.mindmap-editor",
+    "version": "0.1.4",
+    "hash": "sha256:0156ecad8ec3e3a5e59d90bc9e0cc38f1c0f9f82c080aca383b2e51fde7743e3"
+   }
+  },
+  "business-model-map": {
+   "editor": "ext:shinonome.mindmap-editor",
+   "package": {
+    "id": "shinonome.mindmap-editor",
+    "version": "0.1.4",
+    "hash": "sha256:0156ecad8ec3e3a5e59d90bc9e0cc38f1c0f9f82c080aca383b2e51fde7743e3"
+   }
+  },
+  "financial-model": {
+   "editor": "ext:shinonome.business-case-editor",
+   "package": {
+    "id": "shinonome.business-case-editor",
+    "version": "0.2.0",
+    "hash": "sha256:498cc4f570861c95d13db1216ee12ea78463d27f65474719ee08987431ead9c5"
+   }
+  },
+  "business-plan-document": {
+   "editor": "document"
+  },
+  "presentation-slides": {
+   "editor": "slide"
+  }
+ },
+ "phases": {
+  "process": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-21T15:29:05.069Z",
+   "acceptedBy": "早川 葵（P-f76d97e41ec6a817）",
+   "acceptedOrg": "org_43ebefe4ad314d25",
+   "recheck": {
+    "version": "3.0.0",
+    "conditions": [
+     "process.approved"
+    ]
+   }
+  },
+  "opportunity": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-21T23:23:32.977Z",
+   "acceptedBy": "早川 葵（P-f76d97e41ec6a817）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "hypothesis": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-22T00:07:10.464Z",
+   "acceptedBy": "早川 葵（P-f76d97e41ec6a817）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "market": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-22T00:11:13.252Z",
+   "acceptedBy": "石田 遥（P-965319d682683c6c）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "business-model": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-22T00:57:10.211Z",
+   "acceptedBy": "早川 葵（P-f76d97e41ec6a817）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "execution": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-22T01:48:27.875Z",
+   "acceptedBy": "中川 透（P-1090de3eae8c3c21）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "plant-twin": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-23T06:59:05.610Z",
+   "acceptedBy": "中川 透（P-1090de3eae8c3c21）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "financial-plan": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-23T07:11:27.664Z",
+   "acceptedBy": "佐藤 健（経理）（P-58469851eb329b4b）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "risk": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-23T07:14:33.089Z",
+   "acceptedBy": "木村 誠（法務）（P-b9fb420ff975f82b）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "investment": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-23T07:17:20.109Z",
+   "acceptedBy": "木村 誠（法務）（P-b9fb420ff975f82b）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "business-plan": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-23T07:22:17.574Z",
+   "acceptedBy": "早川 葵（P-f76d97e41ec6a817）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "presentation": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-23T07:28:51.744Z",
+   "acceptedBy": "早川 葵（P-f76d97e41ec6a817）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "management-decision": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-23T07:31:09.168Z",
+   "acceptedBy": "大森 修（常務）（P-d2648095ded911bb）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  },
+  "learning": {
+   "state": "受け入れ済み",
+   "acceptedAt": "2026-11-23T07:33:59.084Z",
+   "acceptedBy": "早川 葵（P-f76d97e41ec6a817）",
+   "acceptedOrg": "org_43ebefe4ad314d25"
+  }
+ },
+ "nativeAiPolicy": {
+  "schemaVersion": 1,
+  "defaultLevel": 3,
+  "overrides": {}
+ },
+ "gates": [
+  {
+   "name": "工程定義の検査",
+   "run": "node ../open-workflow-definitions/scripts/check.mjs definition/new-business-planning.json",
+   "limitSeconds": 120
+  },
+  {
+   "name": "模型の検算",
+   "run": "node tools/twin/run.mjs docs/plant-model.json --check",
+   "limitSeconds": 300
+  }
+ ]
+}

@@ -1,0 +1,331 @@
+{
+  "artifactKind": "shinonome.business-case",
+  "schemaVersion": 1,
+  "lastIssued": {
+    "FA": 6,
+    "SC": 3,
+    "AR": 1
+  },
+  "assumptions": [
+    {
+      "id": "FA-01",
+      "name": "年間売上",
+      "value": [
+        "200000000",
+        "220000000",
+        "240000000",
+        "260000000",
+        "280000000",
+        "300000000",
+        "320000000",
+        "340000000",
+        "360000000",
+        "380000000"
+      ],
+      "unit": "THB",
+      "kind": "assumption",
+      "source": {
+        "text": "試算用の仮定",
+        "projectId": "MS-01"
+      },
+      "description": "東雲物産の仮の事業前提",
+      "dependsOn": []
+    },
+    {
+      "id": "FA-02",
+      "name": "年間費用",
+      "value": [
+        "500000000",
+        "500000000",
+        "600000000",
+        "600000000",
+        "700000000",
+        "700000000",
+        "800000000",
+        "800000000",
+        "900000000",
+        "900000000"
+      ],
+      "unit": "JPY",
+      "kind": "assumption",
+      "source": {
+        "text": "試算用の仮定",
+        "projectId": "MS-01"
+      },
+      "description": "東雲物産の仮の事業前提",
+      "dependsOn": []
+    },
+    {
+      "id": "FA-03",
+      "name": "初期設備投資",
+      "value": "1500000000",
+      "unit": "JPY",
+      "kind": "assumption",
+      "source": {
+        "text": "試算用の仮定",
+        "projectId": "MS-01"
+      },
+      "description": "東雲物産の仮の事業前提",
+      "dependsOn": []
+    },
+    {
+      "id": "FA-04",
+      "name": "為替",
+      "value": "4",
+      "unit": "JPY_per_THB",
+      "kind": "assumption",
+      "source": {
+        "text": "試算用の仮定",
+        "projectId": "MS-01"
+      },
+      "description": "東雲物産の仮の事業前提",
+      "dependsOn": []
+    },
+    {
+      "id": "FA-05",
+      "name": "法人税率",
+      "value": "20",
+      "unit": "percent",
+      "kind": "assumption",
+      "source": {
+        "text": "試算用の仮定",
+        "projectId": "MS-01"
+      },
+      "description": "東雲物産の仮の事業前提",
+      "dependsOn": []
+    },
+    {
+      "id": "FA-06",
+      "name": "割引率",
+      "value": "10",
+      "unit": "percent",
+      "kind": "assumption",
+      "source": {
+        "text": "試算用の仮定",
+        "projectId": "MS-01"
+      },
+      "description": "東雲物産の仮の事業前提",
+      "dependsOn": []
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "SC-01",
+      "type": "base",
+      "assumptionIds": [
+        "FA-01",
+        "FA-02",
+        "FA-03",
+        "FA-04",
+        "FA-05",
+        "FA-06"
+      ],
+      "overrides": []
+    },
+    {
+      "id": "SC-02",
+      "type": "optimistic",
+      "assumptionIds": [
+        "FA-01",
+        "FA-02",
+        "FA-03",
+        "FA-04",
+        "FA-05",
+        "FA-06"
+      ],
+      "overrides": [
+        {
+          "assumptionId": "FA-01",
+          "value": [
+            "240000000",
+            "264000000",
+            "288000000",
+            "312000000",
+            "336000000",
+            "360000000",
+            "384000000",
+            "408000000",
+            "432000000",
+            "456000000"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC-03",
+      "type": "pessimistic",
+      "assumptionIds": [
+        "FA-01",
+        "FA-02",
+        "FA-03",
+        "FA-04",
+        "FA-05",
+        "FA-06"
+      ],
+      "overrides": [
+        {
+          "assumptionId": "FA-01",
+          "value": [
+            "160000000",
+            "176000000",
+            "192000000",
+            "208000000",
+            "224000000",
+            "240000000",
+            "256000000",
+            "272000000",
+            "288000000",
+            "304000000"
+          ]
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "version": "2.0.0",
+    "years": 10,
+    "currency": "JPY",
+    "revenueTHB": "FA-01",
+    "costJPY": "FA-02",
+    "initialInvestmentJPY": "FA-03",
+    "exchangeRate": "FA-04",
+    "taxRate": "FA-05",
+    "discountRate": "FA-06"
+  },
+  "acceptedResults": [
+    {
+      "id": "AR-01",
+      "scenario": {
+        "id": "SC-01",
+        "type": "base",
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "overrides": []
+      },
+      "assumptions": [
+        {
+          "id": "FA-01",
+          "name": "年間売上",
+          "value": [
+            "200000000",
+            "220000000",
+            "240000000",
+            "260000000",
+            "280000000",
+            "300000000",
+            "320000000",
+            "340000000",
+            "360000000",
+            "380000000"
+          ],
+          "unit": "THB",
+          "kind": "assumption",
+          "source": {
+            "text": "試算用の仮定",
+            "projectId": "MS-01"
+          },
+          "description": "東雲物産の仮の事業前提",
+          "dependsOn": []
+        },
+        {
+          "id": "FA-02",
+          "name": "年間費用",
+          "value": [
+            "500000000",
+            "500000000",
+            "600000000",
+            "600000000",
+            "700000000",
+            "700000000",
+            "800000000",
+            "800000000",
+            "900000000",
+            "900000000"
+          ],
+          "unit": "JPY",
+          "kind": "assumption",
+          "source": {
+            "text": "試算用の仮定",
+            "projectId": "MS-01"
+          },
+          "description": "東雲物産の仮の事業前提",
+          "dependsOn": []
+        },
+        {
+          "id": "FA-03",
+          "name": "初期設備投資",
+          "value": "1500000000",
+          "unit": "JPY",
+          "kind": "assumption",
+          "source": {
+            "text": "試算用の仮定",
+            "projectId": "MS-01"
+          },
+          "description": "東雲物産の仮の事業前提",
+          "dependsOn": []
+        },
+        {
+          "id": "FA-04",
+          "name": "為替",
+          "value": "4",
+          "unit": "JPY_per_THB",
+          "kind": "assumption",
+          "source": {
+            "text": "試算用の仮定",
+            "projectId": "MS-01"
+          },
+          "description": "東雲物産の仮の事業前提",
+          "dependsOn": []
+        },
+        {
+          "id": "FA-05",
+          "name": "法人税率",
+          "value": "20",
+          "unit": "percent",
+          "kind": "assumption",
+          "source": {
+            "text": "試算用の仮定",
+            "projectId": "MS-01"
+          },
+          "description": "東雲物産の仮の事業前提",
+          "dependsOn": []
+        },
+        {
+          "id": "FA-06",
+          "name": "割引率",
+          "value": "10",
+          "unit": "percent",
+          "kind": "assumption",
+          "source": {
+            "text": "試算用の仮定",
+            "projectId": "MS-01"
+          },
+          "description": "東雲物産の仮の事業前提",
+          "dependsOn": []
+        }
+      ],
+      "calculation": {
+        "version": "2.0.0",
+        "years": 10,
+        "currency": "JPY",
+        "revenueTHB": "FA-01",
+        "costJPY": "FA-02",
+        "initialInvestmentJPY": "FA-03",
+        "exchangeRate": "FA-04",
+        "taxRate": "FA-05",
+        "discountRate": "FA-06"
+      },
+      "metrics": {
+        "npvJPY": "641127690",
+        "irrPercent": "18.0912",
+        "paybackYear": 5
+      }
+    }
+  ]
+}

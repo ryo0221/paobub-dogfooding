@@ -1,0 +1,421 @@
+{
+  "artifactKind": "mindmap",
+  "schemaVersion": 1,
+  "id": "d-8815ba84f8825d2189463474a89ac596",
+  "rootId": "n-7831eaaa963037e7cfe2bc2da2fbeea2",
+  "layout": "radial",
+  "nodes": {
+    "n-7831eaaa963037e7cfe2bc2da2fbeea2": {
+      "id": "n-7831eaaa963037e7cfe2bc2da2fbeea2",
+      "text": "東雲物産 EV e-Axle・電池 循環事業",
+      "children": [
+        "n-e384c4e13159186d043be7be009777a9",
+        "n-73d01c3e0fe93e8841c37948eec5d021"
+      ]
+    },
+    "n-7a1ec780382e4dd66c336abee70e9cb0": {
+      "id": "n-7a1ec780382e4dd66c336abee70e9cb0",
+      "text": "回収と診断",
+      "children": [],
+      "note": "仮説：タイの EV 電池の回収量は 2030 年に年 X 万個\n出所：（仮定）\n担当：石田"
+    },
+    "n-a50fd6c8eab15212acec8ca366225897": {
+      "id": "n-a50fd6c8eab15212acec8ca366225897",
+      "text": "再生・再製造",
+      "children": []
+    },
+    "n-18f693d9d7453b399e2b3438b9ae95e2": {
+      "id": "n-18f693d9d7453b399e2b3438b9ae95e2",
+      "text": "販売とリース",
+      "children": []
+    },
+    "n-75d4bdf281723ebfe6a15160b8b2ac29": {
+      "id": "n-75d4bdf281723ebfe6a15160b8b2ac29",
+      "text": "資金と提携",
+      "children": []
+    },
+    "n-e384c4e13159186d043be7be009777a9": {
+      "id": "n-e384c4e13159186d043be7be009777a9",
+      "text": "事業の柱",
+      "children": [
+        "n-75d4bdf281723ebfe6a15160b8b2ac29",
+        "n-18f693d9d7453b399e2b3438b9ae95e2",
+        "n-a50fd6c8eab15212acec8ca366225897",
+        "n-7a1ec780382e4dd66c336abee70e9cb0"
+      ]
+    },
+    "n-73d01c3e0fe93e8841c37948eec5d021": {
+      "id": "n-73d01c3e0fe93e8841c37948eec5d021",
+      "text": "進め方（工程）",
+      "children": [
+        "n-16308079ecf2585b3af59d1a478597af",
+        "n-e4603d941c0306c12bb12127d0272c8e",
+        "n-acc6e2a3048e69f675eea5a1b42aba7f",
+        "n-e2ce0964b557cf2ca2b3138a77a0b341",
+        "n-84ecafc16c47d5ddefdc2927f9f9282a"
+      ]
+    },
+    "n-e4603d941c0306c12bb12127d0272c8e": {
+      "id": "n-e4603d941c0306c12bb12127d0272c8e",
+      "text": "見立てる",
+      "children": [
+        "n-12840ab7fb72a850fa29530ea098c328",
+        "n-2359f0f1f14180b959c0cf281a00ecdc",
+        "n-fd0dfde48cce4a2453e5576a58940874"
+      ]
+    },
+    "n-12840ab7fb72a850fa29530ea098c328": {
+      "id": "n-12840ab7fb72a850fa29530ea098c328",
+      "text": "機会の探索",
+      "children": [
+        "n-66d5d3e9f2442dc7392f4c6937d00df3"
+      ],
+      "note": "確かめる人：早川（承認）"
+    },
+    "n-66d5d3e9f2442dc7392f4c6937d00df3": {
+      "id": "n-66d5d3e9f2442dc7392f4c6937d00df3",
+      "text": "成果物：機会の地図",
+      "children": [
+        "n-e2b65112ad3cbaa650e447432e8201cb",
+        "n-60adab57b20a876eb79395c6b1b03e2a"
+      ]
+    },
+    "n-2359f0f1f14180b959c0cf281a00ecdc": {
+      "id": "n-2359f0f1f14180b959c0cf281a00ecdc",
+      "text": "事業の仮説",
+      "children": [
+        "n-1666ef4879f184d3722dd70151383312"
+      ],
+      "note": "確かめる人：早川（承認）・石田（数字の出所）"
+    },
+    "n-1666ef4879f184d3722dd70151383312": {
+      "id": "n-1666ef4879f184d3722dd70151383312",
+      "text": "成果物：事業の仮説",
+      "children": [
+        "n-197a0cea3950ad7610717af628d9a329"
+      ]
+    },
+    "n-fd0dfde48cce4a2453e5576a58940874": {
+      "id": "n-fd0dfde48cce4a2453e5576a58940874",
+      "text": "市場と顧客",
+      "children": [
+        "n-9df323ace47548ac042a7c1107635223"
+      ],
+      "note": "確かめる人：石田（承認）\nG1 企画会議：ここまでで続けるか決める"
+    },
+    "n-9df323ace47548ac042a7c1107635223": {
+      "id": "n-9df323ace47548ac042a7c1107635223",
+      "text": "成果物：市場と顧客の調べ",
+      "children": [
+        "n-a43f57a57f36ae2c5a527df2efc4d2aa",
+        "n-73c1dd2bf331970806a43bfea6db4afe"
+      ]
+    },
+    "n-acc6e2a3048e69f675eea5a1b42aba7f": {
+      "id": "n-acc6e2a3048e69f675eea5a1b42aba7f",
+      "text": "組み立てる",
+      "children": [
+        "n-2d9eb54e5f9758dc7f03302c6a4bd610",
+        "n-24dbb82656190f0937661a775ceab769",
+        "n-f50f56679c071c34042c7e0824f00943",
+        "n-91bb5a15e0d9199c738dc4b96234cc24"
+      ]
+    },
+    "n-2d9eb54e5f9758dc7f03302c6a4bd610": {
+      "id": "n-2d9eb54e5f9758dc7f03302c6a4bd610",
+      "text": "事業モデル",
+      "children": [
+        "n-8083889c76d15438d52ad58b295fc8eb"
+      ],
+      "note": "確かめる人：早川（承認）"
+    },
+    "n-8083889c76d15438d52ad58b295fc8eb": {
+      "id": "n-8083889c76d15438d52ad58b295fc8eb",
+      "text": "成果物：事業モデルの地図",
+      "children": [
+        "n-fd5fe023813493b06ccd3f0f984aa18d",
+        "n-10aca6f5fa06b520c7386ad437cf9b06"
+      ]
+    },
+    "n-24dbb82656190f0937661a775ceab769": {
+      "id": "n-24dbb82656190f0937661a775ceab769",
+      "text": "実行の計画",
+      "children": [
+        "n-8a804677fe75c8352dd932d33ba100ab"
+      ],
+      "note": "確かめる人：中川（体制・システム）"
+    },
+    "n-8a804677fe75c8352dd932d33ba100ab": {
+      "id": "n-8a804677fe75c8352dd932d33ba100ab",
+      "text": "成果物：実行の計画",
+      "children": [
+        "n-18286406fed9ffda51d6636b7bff0d76",
+        "n-c6cb0ded464e02d3cb04b339922b0138"
+      ]
+    },
+    "n-f50f56679c071c34042c7e0824f00943": {
+      "id": "n-f50f56679c071c34042c7e0824f00943",
+      "text": "収支計画",
+      "children": [
+        "n-62cfc3f105f5e7bb2340f62b36892e70"
+      ],
+      "note": "確かめる人：佐藤（経理、承認）"
+    },
+    "n-62cfc3f105f5e7bb2340f62b36892e70": {
+      "id": "n-62cfc3f105f5e7bb2340f62b36892e70",
+      "text": "成果物：収支のモデル（NPV・IRR、3つのシナリオ、10年・年次）",
+      "children": [
+        "n-b0780457449f2884fd4ebf3a61d81b8d",
+        "n-afac2a428f917366131b639b4430b5a8"
+      ]
+    },
+    "n-91bb5a15e0d9199c738dc4b96234cc24": {
+      "id": "n-91bb5a15e0d9199c738dc4b96234cc24",
+      "text": "リスクと対策",
+      "children": [
+        "n-9af5dcbf3207525b88869f0967037e72"
+      ],
+      "note": "確かめる人：法務（承認）"
+    },
+    "n-9af5dcbf3207525b88869f0967037e72": {
+      "id": "n-9af5dcbf3207525b88869f0967037e72",
+      "text": "成果物：リスクの表",
+      "children": [
+        "n-57c34856782d07df5133e6dee2f2e3ef",
+        "n-b68567ac8de3d78a895cc8d14cd9a9dd"
+      ]
+    },
+    "n-e2ce0964b557cf2ca2b3138a77a0b341": {
+      "id": "n-e2ce0964b557cf2ca2b3138a77a0b341",
+      "text": "決める",
+      "children": [
+        "n-9fb07de27f8e8a90770a5c4e88e411a6",
+        "n-9ab688f1a59414239f08ff314271d13c",
+        "n-83c8bf871d71978090730538fb115a0f",
+        "n-4231362cfa6e4a8e4ebc357ac9393b47"
+      ]
+    },
+    "n-9fb07de27f8e8a90770a5c4e88e411a6": {
+      "id": "n-9fb07de27f8e8a90770a5c4e88e411a6",
+      "text": "投資の判断",
+      "children": [
+        "n-1eeacfb5fee1044f7da0f651e80b3854"
+      ],
+      "note": "G2 投資委員会：財務（佐藤）と法務の両方の承認\n確かめる人：佐藤（財務・承認）、法務（承認）"
+    },
+    "n-1eeacfb5fee1044f7da0f651e80b3854": {
+      "id": "n-1eeacfb5fee1044f7da0f651e80b3854",
+      "text": "成果物：投資の判断の記録",
+      "children": [
+        "n-cce21c62f1d0096527db161fa11f643f"
+      ]
+    },
+    "n-9ab688f1a59414239f08ff314271d13c": {
+      "id": "n-9ab688f1a59414239f08ff314271d13c",
+      "text": "事業計画書",
+      "children": [
+        "n-d64bad997417e4713a20e16f818e5b7b"
+      ],
+      "note": "確かめる人：早川（承認）"
+    },
+    "n-d64bad997417e4713a20e16f818e5b7b": {
+      "id": "n-d64bad997417e4713a20e16f818e5b7b",
+      "text": "成果物：事業計画書",
+      "children": [
+        "n-7192d5927802f193194ab91c8dd4000e"
+      ]
+    },
+    "n-83c8bf871d71978090730538fb115a0f": {
+      "id": "n-83c8bf871d71978090730538fb115a0f",
+      "text": "説明の資料",
+      "children": [
+        "n-d3dd1368ff9f155acde0a875258d464f"
+      ],
+      "note": "確かめる人：早川（承認）"
+    },
+    "n-d3dd1368ff9f155acde0a875258d464f": {
+      "id": "n-d3dd1368ff9f155acde0a875258d464f",
+      "text": "成果物：アニメーション付きのスライド",
+      "children": [
+        "n-150412290f92518a48042840e586c0ed"
+      ]
+    },
+    "n-4231362cfa6e4a8e4ebc357ac9393b47": {
+      "id": "n-4231362cfa6e4a8e4ebc357ac9393b47",
+      "text": "経営の判断",
+      "children": [
+        "n-244673aff7a31e55fe7fc89b3d2932fa"
+      ],
+      "note": "G3 経営会議\n確かめる人：経営会議（承認）、早川（説明）"
+    },
+    "n-244673aff7a31e55fe7fc89b3d2932fa": {
+      "id": "n-244673aff7a31e55fe7fc89b3d2932fa",
+      "text": "成果物：経営の判断の記録",
+      "children": [
+        "n-a8c3fa28a3a7fe57366bd386e3774432"
+      ]
+    },
+    "n-84ecafc16c47d5ddefdc2927f9f9282a": {
+      "id": "n-84ecafc16c47d5ddefdc2927f9f9282a",
+      "text": "振り返る",
+      "children": [
+        "n-2b732fc6e3ab1a62c5aa702e8846f546"
+      ]
+    },
+    "n-2b732fc6e3ab1a62c5aa702e8846f546": {
+      "id": "n-2b732fc6e3ab1a62c5aa702e8846f546",
+      "text": "学び",
+      "children": [
+        "n-1f978c3bb019531cce855fd13bd36df0"
+      ],
+      "note": "確かめる人：早川（承認）"
+    },
+    "n-1f978c3bb019531cce855fd13bd36df0": {
+      "id": "n-1f978c3bb019531cce855fd13bd36df0",
+      "text": "成果物：学びの記録",
+      "children": [
+        "n-255b48771e7b2a73747ff5eade7307e1"
+      ]
+    },
+    "n-16308079ecf2585b3af59d1a478597af": {
+      "id": "n-16308079ecf2585b3af59d1a478597af",
+      "text": "はじめる",
+      "children": [
+        "n-cd7edb282596516934e85994c2e0dffc"
+      ]
+    },
+    "n-cd7edb282596516934e85994c2e0dffc": {
+      "id": "n-cd7edb282596516934e85994c2e0dffc",
+      "text": "進め方",
+      "children": [
+        "n-3cf9ae2afb44ccc2d807a612be5a9713",
+        "n-c6752e4f874dd7611eb1413b08f4e769"
+      ],
+      "note": "確かめる人：早川（承認）"
+    },
+    "n-3cf9ae2afb44ccc2d807a612be5a9713": {
+      "id": "n-3cf9ae2afb44ccc2d807a612be5a9713",
+      "text": "成果物：事業の地図",
+      "children": [
+        "n-5b922c47f5b8d5da72440f469fd3e002"
+      ]
+    },
+    "n-c6752e4f874dd7611eb1413b08f4e769": {
+      "id": "n-c6752e4f874dd7611eb1413b08f4e769",
+      "text": "成果物：工程定義の下書き",
+      "children": [
+        "n-df5f75aa0e629e2003e3e95432821364",
+        "n-beaf187576a97b9f8f2c1af445e2446a"
+      ]
+    },
+    "n-5b922c47f5b8d5da72440f469fd3e002": {
+      "id": "n-5b922c47f5b8d5da72440f469fd3e002",
+      "text": "項目：枝",
+      "children": []
+    },
+    "n-df5f75aa0e629e2003e3e95432821364": {
+      "id": "n-df5f75aa0e629e2003e3e95432821364",
+      "text": "項目：工程",
+      "children": []
+    },
+    "n-beaf187576a97b9f8f2c1af445e2446a": {
+      "id": "n-beaf187576a97b9f8f2c1af445e2446a",
+      "text": "項目：受け入れの条件",
+      "children": []
+    },
+    "n-e2b65112ad3cbaa650e447432e8201cb": {
+      "id": "n-e2b65112ad3cbaa650e447432e8201cb",
+      "text": "項目：機会",
+      "children": []
+    },
+    "n-60adab57b20a876eb79395c6b1b03e2a": {
+      "id": "n-60adab57b20a876eb79395c6b1b03e2a",
+      "text": "項目：顧客の困りごと",
+      "children": []
+    },
+    "n-197a0cea3950ad7610717af628d9a329": {
+      "id": "n-197a0cea3950ad7610717af628d9a329",
+      "text": "項目：仮説",
+      "children": [],
+      "note": "仮説ごとに確かめ方と数字の出所を付ける"
+    },
+    "n-a43f57a57f36ae2c5a527df2efc4d2aa": {
+      "id": "n-a43f57a57f36ae2c5a527df2efc4d2aa",
+      "text": "項目：市場の大きさ",
+      "children": [],
+      "note": "出所：公開統計（タイ工業省・IEA など）、無いときは（仮定）と書く"
+    },
+    "n-73c1dd2bf331970806a43bfea6db4afe": {
+      "id": "n-73c1dd2bf331970806a43bfea6db4afe",
+      "text": "項目：顧客の区分",
+      "children": []
+    },
+    "n-fd5fe023813493b06ccd3f0f984aa18d": {
+      "id": "n-fd5fe023813493b06ccd3f0f984aa18d",
+      "text": "項目：価値の流れ",
+      "children": [],
+      "note": "見本：回収と診断・再生・再製造・販売とリース・資金と提携"
+    },
+    "n-10aca6f5fa06b520c7386ad437cf9b06": {
+      "id": "n-10aca6f5fa06b520c7386ad437cf9b06",
+      "text": "項目：収益の柱",
+      "children": []
+    },
+    "n-18286406fed9ffda51d6636b7bff0d76": {
+      "id": "n-18286406fed9ffda51d6636b7bff0d76",
+      "text": "項目：体制",
+      "children": []
+    },
+    "n-c6cb0ded464e02d3cb04b339922b0138": {
+      "id": "n-c6cb0ded464e02d3cb04b339922b0138",
+      "text": "項目：日程の節目",
+      "children": []
+    },
+    "n-b0780457449f2884fd4ebf3a61d81b8d": {
+      "id": "n-b0780457449f2884fd4ebf3a61d81b8d",
+      "text": "項目：前提",
+      "children": [],
+      "note": "実績・予測・仮定・計算の4種を付ける。為替（THB）は前提"
+    },
+    "n-afac2a428f917366131b639b4430b5a8": {
+      "id": "n-afac2a428f917366131b639b4430b5a8",
+      "text": "項目：シナリオ",
+      "children": []
+    },
+    "n-57c34856782d07df5133e6dee2f2e3ef": {
+      "id": "n-57c34856782d07df5133e6dee2f2e3ef",
+      "text": "項目：リスク",
+      "children": []
+    },
+    "n-b68567ac8de3d78a895cc8d14cd9a9dd": {
+      "id": "n-b68567ac8de3d78a895cc8d14cd9a9dd",
+      "text": "項目：対策",
+      "children": []
+    },
+    "n-cce21c62f1d0096527db161fa11f643f": {
+      "id": "n-cce21c62f1d0096527db161fa11f643f",
+      "text": "項目：判断の条件",
+      "children": []
+    },
+    "n-7192d5927802f193194ab91c8dd4000e": {
+      "id": "n-7192d5927802f193194ab91c8dd4000e",
+      "text": "項目：章",
+      "children": []
+    },
+    "n-150412290f92518a48042840e586c0ed": {
+      "id": "n-150412290f92518a48042840e586c0ed",
+      "text": "項目：スライド",
+      "children": []
+    },
+    "n-a8c3fa28a3a7fe57366bd386e3774432": {
+      "id": "n-a8c3fa28a3a7fe57366bd386e3774432",
+      "text": "項目：判断",
+      "children": []
+    },
+    "n-255b48771e7b2a73747ff5eade7307e1": {
+      "id": "n-255b48771e7b2a73747ff5eade7307e1",
+      "text": "項目：学び",
+      "children": []
+    }
+  }
+}
