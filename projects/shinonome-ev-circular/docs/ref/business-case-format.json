@@ -1,0 +1,661 @@
+{
+  "title": "データ形式の仕様",
+  "identity": {
+    "artifactKind": "shinonome.business-case",
+    "schemaVersion": 1,
+    "description": "1つのJSON文書に前提、3シナリオ、計算条件と受け入れ結果を格納する。"
+  },
+  "field": [
+    {
+      "id": "F-01",
+      "path": "$",
+      "rule": "必須: artifactKind, schemaVersion, lastIssued, assumptions, scenarios, calculation, acceptedResults。定義外のキーは全階層で拒否。"
+    },
+    {
+      "id": "F-02",
+      "path": "$.artifactKind",
+      "rule": "固定文字列 shinonome.business-case。EP Artifact外側の形式ではなくnative本体の識別子。"
+    },
+    {
+      "id": "F-03",
+      "path": "$.schemaVersion",
+      "rule": "整数 1。"
+    },
+    {
+      "id": "F-04",
+      "path": "$.lastIssued",
+      "rule": "必須キー FA, SC, AR を持つ整数オブジェクト。それぞれ発行済み連番の最大値。未発行は0。"
+    },
+    {
+      "id": "F-05",
+      "path": "$.assumptions[]",
+      "rule": "必須: id, name, value, unit, kind, source, description, dependsOn。idはFA-に2桁以上の10進連番、nameとdescriptionは空白のみ不可。"
+    },
+    {
+      "id": "F-06",
+      "path": "$.assumptions[].value",
+      "rule": "値は十進数文字列1個、または年1から年10の順に並べた十進数文字列ちょうど10個の配列。各文字列は指数表記、先頭のプラス、不要な整数部の先頭ゼロ、負のゼロを禁止する。正規形は 0 または -?[1-9][0-9]* または -?(0|[1-9][0-9]*)\\.[0-9]*[1-9]。数値0は文字列 \"0\"。"
+    },
+    {
+      "id": "F-07",
+      "path": "$.assumptions[].unit",
+      "rule": "JPY, THB, unit, percent, year, JPY_per_THB のいずれか。percentの10は10%を意味する。"
+    },
+    {
+      "id": "F-08",
+      "path": "$.assumptions[].kind",
+      "rule": "actual, forecast, assumption, calculated のいずれか。"
+    },
+    {
+      "id": "F-09",
+      "path": "$.assumptions[].source",
+      "rule": "必須 text と、ちょうど一方の url または projectId。textは空白のみ不可。urlはhttp://またはhttps://で始まる絶対URL、projectIdは MS- に2桁以上の10進連番。"
+    },
+    {
+      "id": "F-10",
+      "path": "$.assumptions[].dependsOn",
+      "rule": "前提IDの重複のない配列。calculatedは1件以上、その他は空。"
+    },
+    {
+      "id": "F-11",
+      "path": "$.scenarios[]",
+      "rule": "必須 id, type, assumptionIds, overrides。idはSC-に2桁以上の10進連番。typeはbase, optimistic, pessimistic。assumptionIdsは重複のない前提ID配列。overridesは {assumptionId, value} の配列。valueは対象前提と同じ単位・形（単一値または10個の年次列）で、列は全体を置き換える。各十進数はF-06に従う。"
+    },
+    {
+      "id": "F-12",
+      "path": "$.calculation",
+      "rule": "必須 version, years, currency, revenueTHB, costJPY, initialInvestmentJPY, exchangeRate, taxRate, discountRate。versionは計算式と丸めを識別する文字列、yearsは整数10、currencyはJPY。各残りの値は前提ID。"
+    },
+    {
+      "id": "F-13",
+      "path": "$.acceptedResults[]",
+      "rule": "必須 id, scenario, assumptions, calculation, metrics。idはAR-に2桁以上の10進連番。scenario, assumptions, calculationは受け入れ時点の各オブジェクトの完全な写し。metricsは npvJPY, irrPercent, paybackYear の3キー。"
+    },
+    {
+      "id": "F-14",
+      "path": "$.acceptedResults[].metrics",
+      "rule": "npvJPY, irrPercentは十進数文字列。paybackYearは1〜10の整数またはnull（期間内に回収しない）。IRRが一意に求まらない場合は受け入れ結果を作らず理由を表示する。"
+    }
+  ],
+  "limit": [
+    {
+      "id": "L-01",
+      "path": "$",
+      "rule": "JSON文字列のUTF-8符号化後は最大1,048,576バイト。検証はUnicodeスカラー値からUTF-8長を算出し、不正なサロゲートは拒否。TextEncoderとIntlは使わない。"
+    },
+    {
+      "id": "L-02",
+      "path": "$.assumptions, $.scenarios, $.acceptedResults",
+      "rule": "前提1〜200件、シナリオちょうど3件、受け入れ結果0〜20件。"
+    },
+    {
+      "id": "L-03",
+      "path": "$.assumptions[].name, $.assumptions[].description, $.assumptions[].source",
+      "rule": "nameは1〜100、descriptionとsource.textは1〜500、urlは1〜2048、projectIdは1〜32 Unicodeコードポイント。空白だけは不可。"
+    },
+    {
+      "id": "L-04",
+      "path": "$.assumptions[].value, $.scenarios[].overrides[].value, $.acceptedResults[].metrics",
+      "rule": "前提値と上書き値は単一の十進数文字列か、ちょうど10個の十進数文字列の配列。各十進数文字列は符号を除く整数部最大18桁、小数部最大8桁。受け入れ指標の十進数文字列も同じ桁数上限。"
+    },
+    {
+      "id": "L-05",
+      "path": "$.assumptions[].dependsOn, $.scenarios[].assumptionIds, $.scenarios[].overrides",
+      "rule": "各配列は最大200件。引用は1件以上、依存と上書きは0件以上。"
+    },
+    {
+      "id": "L-06",
+      "path": "$.lastIssued",
+      "rule": "各連番は0〜999999の整数。IDは対応接頭辞と2〜6桁の10進数で、1〜9は01〜09、それ以上は先頭ゼロなし。"
+    },
+    {
+      "id": "L-07",
+      "path": "$.calculation.version",
+      "rule": "1〜100文字のASCII英数字、ピリオド、ハイフン、下線。"
+    },
+    {
+      "id": "L-08",
+      "path": "$.acceptedResults[].assumptions, $.acceptedResults[].scenario, $.acceptedResults[].calculation",
+      "rule": "写しにも元と同じ各文字数・値・配列の上限を適用し、写しの前提は1〜200件。"
+    }
+  ],
+  "invariant": [
+    {
+      "id": "I-01",
+      "path": "$.lastIssued, $.assumptions[].id, $.scenarios[].id, $.acceptedResults[].id",
+      "rule": "各種IDは同種内で一意かつ連番がlastIssued以下。発行時は対応するlastIssuedを1増やしてIDを作る。削除してもlastIssuedは戻さずIDを再利用しない。単一文書の検証だけでは過去の再利用を証明できないため、更新時は変更前とも照合し、取り込みやUndoで採番上限を下げない。"
+    },
+    {
+      "id": "I-02",
+      "path": "$.scenarios",
+      "rule": "typeはbase, optimistic, pessimisticが各1件。引用先はすべて現存し、上書き先は引用済みで重複しない。"
+    },
+    {
+      "id": "I-03",
+      "path": "$.assumptions[].dependsOn",
+      "rule": "依存先は現存し、自分自身を含まず循環しない。参照中の前提は削除できない。"
+    },
+    {
+      "id": "I-04",
+      "path": "$.calculation, $.scenarios[].assumptionIds",
+      "rule": "計算で指定する6前提はすべて存在し、各シナリオはそれらと推移的な依存先を引用する。各役割の単位は revenueTHB=THB、costJPYとinitialInvestmentJPY=JPY、exchangeRate=JPY_per_THB、taxRateとdiscountRate=percent。 revenueTHBとcostJPYは単一値または年次列、他の4役割は単一値に限る。単一の売上・費用は各年に共通で使う。"
+    },
+    {
+      "id": "I-05",
+      "path": "$.calculation, $.scenarios[].overrides",
+      "rule": "上書き適用後、売上・費用は各年の値が0以上、初期投資は0以上、為替は0より大きい。税率と割引率は0〜100%（端点を含む）。計算対象が範囲外なら拒否。"
+    },
+    {
+      "id": "I-06",
+      "path": "$.acceptedResults",
+      "rule": "写しは現行の前提・シナリオと独立し、写し内部でI-02の引用、I-03〜I-05を満たす。写しのscenarioは単一なのでtypeの3種要件は適用しない。写しの前提はscenarioが引用する全前提と依存先を含み、写しのIDは当時のIDを保持する。現行の削除や変更で写しを変更しない。"
+    },
+    {
+      "id": "I-07",
+      "path": "$.acceptedResults[].metrics",
+      "rule": "写しと指定版から再計算した結果が保存値と一致する場合のみ受け入れる。計算不能・桁あふれ・未知の計算版は受け入れない。再計算の検証には該当する計算版の実装が必要。"
+    },
+    {
+      "id": "I-08",
+      "path": "$.calculation.version",
+      "rule": "1.0.0は旧計算規則、2.0.0は年次列に対応した下記の計算規則を意味する。式・丸めの変更には別版を付け、旧版の受け入れ結果は旧版で検証する。"
+    }
+  ],
+  "calculationRules": {
+    "version": "2.0.0",
+    "rules": [
+      "各シナリオの引用前提に上書きを適用する。calculatedの値は保存済み値を使い、依存関係は根拠として保持する。",
+      "年0の現金流は初期設備投資の負数。年1〜10の各年について、その年の売上=売上THBの対応する年の値×為替、費用=費用JPYの対応する年の値、設備投資=0、税=max(売上−費用, 0)×税率÷100、税引後現金流=売上−費用−税。単一値の売上・費用は全10年に同じ値を使う。繰越欠損・減価償却・運転資本は扱わない。",
+      "NPVは年0から10までの現金流を年数ごとに(1+割引率÷100)で割り引いた和。IRRは同じ現金流のNPVを0にする年率を百分率で表す。回収年は割引前の累積現金流が初めて0以上になる年。初期投資が0なら回収年は1。",
+      "十進演算を使い、途中値を丸めずに計算する。NPVは円の整数、IRRは百分率の小数第4位へ四捨五入（ちょうど半分は絶対値が大きくなる方向）。保存時は末尾の小数ゼロと不要な小数点を除く。IRRは0以上10000%以下で一意の根を求め、存在しない・複数・計算精度不足は結果を作らない。"
+    ],
+    "previousVersions": [
+      {
+        "version": "1.0.0",
+        "rules": [
+          "この版の計算役割と上書き値はすべて単一値に限る。",
+          "各シナリオの引用前提に上書きを適用する。calculatedの値は保存済み値を使い、依存関係は根拠として保持する。",
+          "年0の現金流は初期設備投資の負数。年1〜10は各年同じ売上=年間売上THB×為替、費用=年間費用JPY、設備投資=0、税= max(売上−費用, 0)×税率÷100、税引後現金流=売上−費用−税。繰越欠損・減価償却・運転資本は扱わない。",
+          "NPVは年0から10までの現金流を年数ごとに(1+割引率÷100)で割り引いた和。IRRは同じ現金流のNPVを0にする年率を百分率で表す。回収年は割引前の累積現金流が初めて0以上になる年。初期投資が0なら回収年は1。",
+          "十進演算を使い、途中値を丸めずに計算する。NPVは円の整数、IRRは百分率の小数第4位へ四捨五入（ちょうど半分は絶対値が大きくなる方向）。保存時は末尾の小数ゼロと不要な小数点を除く。IRRは0以上10000%以下で一意の根を求め、存在しない・複数・計算精度不足は結果を作らない。"
+        ]
+      }
+    ]
+  },
+  "notSaved": [
+    "年次行と未受け入れの計算結果は保存しない。前提・条件から再計算することで古い行との食い違いを避ける。",
+    "画面の選択、未確定入力、Undo履歴はnative本体に含めない。"
+  ],
+  "fixtures": {
+    "valid": {
+      "description": "東雲物産の事業を想定した10年間の仮の収支。金額・率と年次の伸びはいずれも仮定。",
+      "document": {
+        "artifactKind": "shinonome.business-case",
+        "schemaVersion": 1,
+        "lastIssued": {
+          "FA": 6,
+          "SC": 3,
+          "AR": 1
+        },
+        "assumptions": [
+          {
+            "id": "FA-01",
+            "name": "年間売上",
+            "value": [
+              "200000000",
+              "220000000",
+              "240000000",
+              "260000000",
+              "280000000",
+              "300000000",
+              "320000000",
+              "340000000",
+              "360000000",
+              "380000000"
+            ],
+            "unit": "THB",
+            "kind": "assumption",
+            "source": {
+              "text": "試算用の仮定",
+              "projectId": "MS-01"
+            },
+            "description": "東雲物産の仮の事業前提",
+            "dependsOn": []
+          },
+          {
+            "id": "FA-02",
+            "name": "年間費用",
+            "value": [
+              "500000000",
+              "500000000",
+              "600000000",
+              "600000000",
+              "700000000",
+              "700000000",
+              "800000000",
+              "800000000",
+              "900000000",
+              "900000000"
+            ],
+            "unit": "JPY",
+            "kind": "assumption",
+            "source": {
+              "text": "試算用の仮定",
+              "projectId": "MS-01"
+            },
+            "description": "東雲物産の仮の事業前提",
+            "dependsOn": []
+          },
+          {
+            "id": "FA-03",
+            "name": "初期設備投資",
+            "value": "1500000000",
+            "unit": "JPY",
+            "kind": "assumption",
+            "source": {
+              "text": "試算用の仮定",
+              "projectId": "MS-01"
+            },
+            "description": "東雲物産の仮の事業前提",
+            "dependsOn": []
+          },
+          {
+            "id": "FA-04",
+            "name": "為替",
+            "value": "4",
+            "unit": "JPY_per_THB",
+            "kind": "assumption",
+            "source": {
+              "text": "試算用の仮定",
+              "projectId": "MS-01"
+            },
+            "description": "東雲物産の仮の事業前提",
+            "dependsOn": []
+          },
+          {
+            "id": "FA-05",
+            "name": "法人税率",
+            "value": "20",
+            "unit": "percent",
+            "kind": "assumption",
+            "source": {
+              "text": "試算用の仮定",
+              "projectId": "MS-01"
+            },
+            "description": "東雲物産の仮の事業前提",
+            "dependsOn": []
+          },
+          {
+            "id": "FA-06",
+            "name": "割引率",
+            "value": "10",
+            "unit": "percent",
+            "kind": "assumption",
+            "source": {
+              "text": "試算用の仮定",
+              "projectId": "MS-01"
+            },
+            "description": "東雲物産の仮の事業前提",
+            "dependsOn": []
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "SC-01",
+            "type": "base",
+            "assumptionIds": [
+              "FA-01",
+              "FA-02",
+              "FA-03",
+              "FA-04",
+              "FA-05",
+              "FA-06"
+            ],
+            "overrides": []
+          },
+          {
+            "id": "SC-02",
+            "type": "optimistic",
+            "assumptionIds": [
+              "FA-01",
+              "FA-02",
+              "FA-03",
+              "FA-04",
+              "FA-05",
+              "FA-06"
+            ],
+            "overrides": [
+              {
+                "assumptionId": "FA-01",
+                "value": [
+                  "240000000",
+                  "264000000",
+                  "288000000",
+                  "312000000",
+                  "336000000",
+                  "360000000",
+                  "384000000",
+                  "408000000",
+                  "432000000",
+                  "456000000"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "SC-03",
+            "type": "pessimistic",
+            "assumptionIds": [
+              "FA-01",
+              "FA-02",
+              "FA-03",
+              "FA-04",
+              "FA-05",
+              "FA-06"
+            ],
+            "overrides": [
+              {
+                "assumptionId": "FA-01",
+                "value": [
+                  "160000000",
+                  "176000000",
+                  "192000000",
+                  "208000000",
+                  "224000000",
+                  "240000000",
+                  "256000000",
+                  "272000000",
+                  "288000000",
+                  "304000000"
+                ]
+              }
+            ]
+          }
+        ],
+        "calculation": {
+          "version": "2.0.0",
+          "years": 10,
+          "currency": "JPY",
+          "revenueTHB": "FA-01",
+          "costJPY": "FA-02",
+          "initialInvestmentJPY": "FA-03",
+          "exchangeRate": "FA-04",
+          "taxRate": "FA-05",
+          "discountRate": "FA-06"
+        },
+        "acceptedResults": [
+          {
+            "id": "AR-01",
+            "scenario": {
+              "id": "SC-01",
+              "type": "base",
+              "assumptionIds": [
+                "FA-01",
+                "FA-02",
+                "FA-03",
+                "FA-04",
+                "FA-05",
+                "FA-06"
+              ],
+              "overrides": []
+            },
+            "assumptions": [
+              {
+                "id": "FA-01",
+                "name": "年間売上",
+                "value": [
+                  "200000000",
+                  "220000000",
+                  "240000000",
+                  "260000000",
+                  "280000000",
+                  "300000000",
+                  "320000000",
+                  "340000000",
+                  "360000000",
+                  "380000000"
+                ],
+                "unit": "THB",
+                "kind": "assumption",
+                "source": {
+                  "text": "試算用の仮定",
+                  "projectId": "MS-01"
+                },
+                "description": "東雲物産の仮の事業前提",
+                "dependsOn": []
+              },
+              {
+                "id": "FA-02",
+                "name": "年間費用",
+                "value": [
+                  "500000000",
+                  "500000000",
+                  "600000000",
+                  "600000000",
+                  "700000000",
+                  "700000000",
+                  "800000000",
+                  "800000000",
+                  "900000000",
+                  "900000000"
+                ],
+                "unit": "JPY",
+                "kind": "assumption",
+                "source": {
+                  "text": "試算用の仮定",
+                  "projectId": "MS-01"
+                },
+                "description": "東雲物産の仮の事業前提",
+                "dependsOn": []
+              },
+              {
+                "id": "FA-03",
+                "name": "初期設備投資",
+                "value": "1500000000",
+                "unit": "JPY",
+                "kind": "assumption",
+                "source": {
+                  "text": "試算用の仮定",
+                  "projectId": "MS-01"
+                },
+                "description": "東雲物産の仮の事業前提",
+                "dependsOn": []
+              },
+              {
+                "id": "FA-04",
+                "name": "為替",
+                "value": "4",
+                "unit": "JPY_per_THB",
+                "kind": "assumption",
+                "source": {
+                  "text": "試算用の仮定",
+                  "projectId": "MS-01"
+                },
+                "description": "東雲物産の仮の事業前提",
+                "dependsOn": []
+              },
+              {
+                "id": "FA-05",
+                "name": "法人税率",
+                "value": "20",
+                "unit": "percent",
+                "kind": "assumption",
+                "source": {
+                  "text": "試算用の仮定",
+                  "projectId": "MS-01"
+                },
+                "description": "東雲物産の仮の事業前提",
+                "dependsOn": []
+              },
+              {
+                "id": "FA-06",
+                "name": "割引率",
+                "value": "10",
+                "unit": "percent",
+                "kind": "assumption",
+                "source": {
+                  "text": "試算用の仮定",
+                  "projectId": "MS-01"
+                },
+                "description": "東雲物産の仮の事業前提",
+                "dependsOn": []
+              }
+            ],
+            "calculation": {
+              "version": "2.0.0",
+              "years": 10,
+              "currency": "JPY",
+              "revenueTHB": "FA-01",
+              "costJPY": "FA-02",
+              "initialInvestmentJPY": "FA-03",
+              "exchangeRate": "FA-04",
+              "taxRate": "FA-05",
+              "discountRate": "FA-06"
+            },
+            "metrics": {
+              "npvJPY": "641127690",
+              "irrPercent": "18.0912",
+              "paybackYear": 5
+            }
+          }
+        ]
+      },
+      "scenarioComparison": {
+        "description": "見本の各シナリオを版2.0.0で再計算した参考値。受け入れ済み結果は文書内の基本シナリオのみ。",
+        "metricsByScenario": {
+          "SC-01": {
+            "npvJPY": "641127690",
+            "irrPercent": "18.0912",
+            "paybackYear": 5
+          },
+          "SC-02": {
+            "npvJPY": "1720641458",
+            "irrPercent": "29.606",
+            "paybackYear": 4
+          },
+          "SC-03": {
+            "npvJPY": "-438386079",
+            "irrPercent": "3.353",
+            "paybackYear": 9
+          }
+        }
+      }
+    },
+    "invalid": [
+      {
+        "description": "形式情報が欠ける",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "remove",
+            "path": "/artifactKind"
+          }
+        ],
+        "reason": "F-01、F-02に違反する。"
+      },
+      {
+        "description": "参照先が存在しない",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "add",
+            "path": "/scenarios/0/assumptionIds/-",
+            "value": "FA-99"
+          }
+        ],
+        "reason": "I-02に違反する。"
+      },
+      {
+        "description": "割引率が範囲外",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "replace",
+            "path": "/assumptions/5/value",
+            "value": "101"
+          }
+        ],
+        "reason": "I-05に違反する。"
+      },
+      {
+        "description": "小数を数値で渡す",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "replace",
+            "path": "/assumptions/3/value",
+            "value": 10
+          }
+        ],
+        "reason": "F-06に違反する。"
+      },
+      {
+        "description": "受け入れた指標が再計算と異なる",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "replace",
+            "path": "/acceptedResults/0/metrics/npvJPY",
+            "value": "1"
+          }
+        ],
+        "reason": "I-07に違反する。"
+      },
+      {
+        "description": "年次列が10個ではない",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "remove",
+            "path": "/assumptions/0/value/9"
+          }
+        ],
+        "reason": "F-06、L-04に違反する。"
+      },
+      {
+        "description": "年次列の要素が数値",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "replace",
+            "path": "/assumptions/0/value/0",
+            "value": 200000000
+          }
+        ],
+        "reason": "F-06に違反する。"
+      },
+      {
+        "description": "列の前提を単一値で上書き",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "replace",
+            "path": "/scenarios/1/overrides/0/value",
+            "value": "240000000"
+          }
+        ],
+        "reason": "F-11に違反する。"
+      },
+      {
+        "description": "年次費用に負の値",
+        "base": "valid.document",
+        "changes": [
+          {
+            "op": "replace",
+            "path": "/assumptions/1/value/0",
+            "value": "-1"
+          }
+        ],
+        "reason": "I-05に違反する。"
+      }
+    ],
+    "application": "各拒否例はvalid.documentの独立したコピーにRFC 6902形式のchangesを順番に適用して検証する。"
+  },
+  "validation": "型・必須キー・閉じたオブジェクト・上限を先に確認し、次に参照・循環・採番・計算条件・受け入れ結果の再計算を検査する。検査失敗時は対象パスと違反した規則IDを返す。JSONに重複キーがあればパース時に拒否する。IntlとTextEncoderに依存しない。",
+  "残すこと": [
+    "実装工程で、この形式の保存・読込・取込経路に上記の検証を組み込み、検証失敗時は対象パスと規則IDを返す。受け入れ結果は写しと計算版から再計算して照合する。",
+    "実装工程で、発行済み連番を変更前と照合し、削除・取込・Undo後も採番上限を維持してIDの再利用を防ぐ。単一文書だけの検証では過去の再利用を判定できない。",
+    "実装工程で、見本の文書が検証を通り、各拒否例が独立したコピーへの変更として適用された上で対応する規則IDと理由を返す試験を行う。採番の削除・取込・Undo後の維持と受け入れ結果の再計算も試験する。",
+    "実装工程で、単一値と10年の列、列全体の上書き、各年の範囲外値、旧版と新版それぞれの計算および3シナリオの結果を試験する。"
+  ]
+}

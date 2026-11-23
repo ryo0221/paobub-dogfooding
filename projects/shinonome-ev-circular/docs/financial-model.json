@@ -1,0 +1,1499 @@
+{
+  "acceptedResults": [
+    {
+      "id": "AR-01",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-01",
+        "overrides": [],
+        "type": "base"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "1年目は聞き取り、2年目は小さな実証、3年目から試作と販売を想定した年間売上。MS-04 はタイ全体の量であり、到達可能な量と売上への換算は要確認。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "projectId": "ML-01",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-01 の立ち上げの順と MS-04 の市場規模に基づく。"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "5000000",
+            "20000000",
+            "60000000",
+            "120000000",
+            "180000000",
+            "230000000",
+            "270000000",
+            "300000000",
+            "320000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証の内容と財務の役割を踏まえた年間費用の仮定。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "projectId": "ML-02",
+            "text": "（仮定）石田・佐藤 2026-11-22。根拠：ML-02、OR-05"
+          },
+          "unit": "JPY",
+          "value": [
+            "80000000",
+            "150000000",
+            "300000000",
+            "500000000",
+            "650000000",
+            "750000000",
+            "820000000",
+            "870000000",
+            "900000000",
+            "920000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "e-Axle再製造に向けた初期設備投資の仮定。ML-03の試作を根拠とするが、実施規模は未定。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "projectId": "ML-03",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-03：e-Axle再製造の試作"
+          },
+          "unit": "JPY",
+          "value": "1200000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "-1281385168",
+        "irrPercent": "-8.1484",
+        "paybackYear": null
+      }
+    },
+    {
+      "id": "AR-02",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-02",
+        "overrides": [
+          {
+            "assumptionId": "FA-01",
+            "value": [
+              "0",
+              "6000000",
+              "24000000",
+              "72000000",
+              "144000000",
+              "216000000",
+              "276000000",
+              "324000000",
+              "360000000",
+              "384000000"
+            ]
+          }
+        ],
+        "type": "optimistic"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "1年目は聞き取り、2年目は小さな実証、3年目から試作と販売を想定した年間売上。MS-04 はタイ全体の量であり、到達可能な量と売上への換算は要確認。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "projectId": "ML-01",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-01 の立ち上げの順と MS-04 の市場規模に基づく。"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "5000000",
+            "20000000",
+            "60000000",
+            "120000000",
+            "180000000",
+            "230000000",
+            "270000000",
+            "300000000",
+            "320000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証の内容と財務の役割を踏まえた年間費用の仮定。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "projectId": "ML-02",
+            "text": "（仮定）石田・佐藤 2026-11-22。根拠：ML-02、OR-05"
+          },
+          "unit": "JPY",
+          "value": [
+            "80000000",
+            "150000000",
+            "300000000",
+            "500000000",
+            "650000000",
+            "750000000",
+            "820000000",
+            "870000000",
+            "900000000",
+            "920000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "e-Axle再製造に向けた初期設備投資の仮定。ML-03の試作を根拠とするが、実施規模は未定。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "projectId": "ML-03",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-03：e-Axle再製造の試作"
+          },
+          "unit": "JPY",
+          "value": "1200000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "-679920830",
+        "irrPercent": "0.9576",
+        "paybackYear": 10
+      }
+    },
+    {
+      "id": "AR-03",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-03",
+        "overrides": [
+          {
+            "assumptionId": "FA-01",
+            "value": [
+              "0",
+              "4000000",
+              "16000000",
+              "48000000",
+              "96000000",
+              "144000000",
+              "184000000",
+              "216000000",
+              "240000000",
+              "256000000"
+            ]
+          }
+        ],
+        "type": "pessimistic"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "1年目は聞き取り、2年目は小さな実証、3年目から試作と販売を想定した年間売上。MS-04 はタイ全体の量であり、到達可能な量と売上への換算は要確認。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "projectId": "ML-01",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-01 の立ち上げの順と MS-04 の市場規模に基づく。"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "5000000",
+            "20000000",
+            "60000000",
+            "120000000",
+            "180000000",
+            "230000000",
+            "270000000",
+            "300000000",
+            "320000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証の内容と財務の役割を踏まえた年間費用の仮定。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "projectId": "ML-02",
+            "text": "（仮定）石田・佐藤 2026-11-22。根拠：ML-02、OR-05"
+          },
+          "unit": "JPY",
+          "value": [
+            "80000000",
+            "150000000",
+            "300000000",
+            "500000000",
+            "650000000",
+            "750000000",
+            "820000000",
+            "870000000",
+            "900000000",
+            "920000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "e-Axle再製造に向けた初期設備投資の仮定。ML-03の試作を根拠とするが、実施規模は未定。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "projectId": "ML-03",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-03：e-Axle再製造の試作"
+          },
+          "unit": "JPY",
+          "value": "1200000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "-1902695648",
+        "irrPercent": "-26.3722",
+        "paybackYear": null
+      }
+    },
+    {
+      "id": "AR-04",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-01",
+        "overrides": [],
+        "type": "base"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "1年目は聞き取り、2年目は小さな実証、3年目から試作と販売を想定した年間売上。MS-04 はタイ全体の量であり、到達可能な量と売上への換算は要確認。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "projectId": "ML-01",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-01 の立ち上げの順と MS-04 の市場規模に基づく。"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "5000000",
+            "20000000",
+            "60000000",
+            "120000000",
+            "180000000",
+            "230000000",
+            "270000000",
+            "300000000",
+            "320000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証の内容と財務の役割を踏まえた年間費用の仮定。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "projectId": "ML-02",
+            "text": "（仮定）石田・佐藤 2026-11-22。根拠：ML-02、OR-05"
+          },
+          "unit": "JPY",
+          "value": [
+            "80000000",
+            "150000000",
+            "300000000",
+            "500000000",
+            "650000000",
+            "750000000",
+            "820000000",
+            "870000000",
+            "900000000",
+            "920000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "e-Axle再製造に向けた初期設備投資の仮定。ML-03の試作を根拠とするが、実施規模は未定。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "projectId": "ML-03",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-03：e-Axle再製造の試作"
+          },
+          "unit": "JPY",
+          "value": "1200000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "-1281385168",
+        "irrPercent": "-8.1484",
+        "paybackYear": null
+      }
+    },
+    {
+      "id": "AR-05",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-02",
+        "overrides": [
+          {
+            "assumptionId": "FA-01",
+            "value": [
+              "0",
+              "6000000",
+              "24000000",
+              "72000000",
+              "144000000",
+              "216000000",
+              "276000000",
+              "324000000",
+              "360000000",
+              "384000000"
+            ]
+          }
+        ],
+        "type": "optimistic"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "1年目は聞き取り、2年目は小さな実証、3年目から試作と販売を想定した年間売上。MS-04 はタイ全体の量であり、到達可能な量と売上への換算は要確認。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "projectId": "ML-01",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-01 の立ち上げの順と MS-04 の市場規模に基づく。"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "5000000",
+            "20000000",
+            "60000000",
+            "120000000",
+            "180000000",
+            "230000000",
+            "270000000",
+            "300000000",
+            "320000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証の内容と財務の役割を踏まえた年間費用の仮定。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "projectId": "ML-02",
+            "text": "（仮定）石田・佐藤 2026-11-22。根拠：ML-02、OR-05"
+          },
+          "unit": "JPY",
+          "value": [
+            "80000000",
+            "150000000",
+            "300000000",
+            "500000000",
+            "650000000",
+            "750000000",
+            "820000000",
+            "870000000",
+            "900000000",
+            "920000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "e-Axle再製造に向けた初期設備投資の仮定。ML-03の試作を根拠とするが、実施規模は未定。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "projectId": "ML-03",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-03：e-Axle再製造の試作"
+          },
+          "unit": "JPY",
+          "value": "1200000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "-679920830",
+        "irrPercent": "0.9576",
+        "paybackYear": 10
+      }
+    },
+    {
+      "id": "AR-06",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-03",
+        "overrides": [
+          {
+            "assumptionId": "FA-01",
+            "value": [
+              "0",
+              "4000000",
+              "16000000",
+              "48000000",
+              "96000000",
+              "144000000",
+              "184000000",
+              "216000000",
+              "240000000",
+              "256000000"
+            ]
+          }
+        ],
+        "type": "pessimistic"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "1年目は聞き取り、2年目は小さな実証、3年目から試作と販売を想定した年間売上。MS-04 はタイ全体の量であり、到達可能な量と売上への換算は要確認。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "projectId": "ML-01",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-01 の立ち上げの順と MS-04 の市場規模に基づく。"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "5000000",
+            "20000000",
+            "60000000",
+            "120000000",
+            "180000000",
+            "230000000",
+            "270000000",
+            "300000000",
+            "320000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証の内容と財務の役割を踏まえた年間費用の仮定。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "projectId": "ML-02",
+            "text": "（仮定）石田・佐藤 2026-11-22。根拠：ML-02、OR-05"
+          },
+          "unit": "JPY",
+          "value": [
+            "80000000",
+            "150000000",
+            "300000000",
+            "500000000",
+            "650000000",
+            "750000000",
+            "820000000",
+            "870000000",
+            "900000000",
+            "920000000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "e-Axle再製造に向けた初期設備投資の仮定。ML-03の試作を根拠とするが、実施規模は未定。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "projectId": "ML-03",
+            "text": "（仮定）石田・佐藤 2026-11-22。ML-03：e-Axle再製造の試作"
+          },
+          "unit": "JPY",
+          "value": "1200000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "-1902695648",
+        "irrPercent": "-26.3722",
+        "paybackYear": null
+      }
+    },
+    {
+      "id": "AR-07",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-01",
+        "overrides": [],
+        "type": "base"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "拠点の模型の処理量と収益の柱の単価から積み上げた年間売上。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。2030年からは MS-03・MS-06 と TR-01・TR-02 の処理量に、回収手数料 2,500 THB/t（RS-01）、材料販売 3,500 THB/t×70％（RS-02）、再製造品 25,000 THB/台×販売率 90％（RS-03）を掛けた。2029年度までは 0。",
+            "projectId": "TR-02"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "60076880",
+            "78033880",
+            "95986920",
+            "113916940",
+            "131895980",
+            "149850000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証・準備の費用と、拠点の模型の運営費・増設費に拠点の外の費用を足した年間費用。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。2029年度までは ML-01〜ML-04 と MD-01 の実証・準備費。2030年からは TR-03 の拠点の運営費と TR-04 の増設費に、本社・営業、e-Axle のコアの買い取り、保険・許認可（OR-01・OR-04・OR-05、MS-06、CS-05）を足した。",
+            "projectId": "TR-03"
+          },
+          "unit": "JPY",
+          "value": [
+            "30000000",
+            "65000000",
+            "95000000",
+            "130000000",
+            "172363862",
+            "213598511",
+            "254868761",
+            "290686909",
+            "348423159",
+            "356905038"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "拠点の模型の立ち上げ設備・改装に、実証と試作の設備を足した初期設備投資。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。TR-04 の2030年の立ち上げ設備・改装 1.36 億円に、電池実証の計測・安全器材 0.10 億円と e-Axle 試作の治具・計測器 0.25 億円（ML-02・ML-03）を足した。",
+            "projectId": "TR-04"
+          },
+          "unit": "JPY",
+          "value": "171000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "36635569",
+        "irrPercent": "9.4571",
+        "paybackYear": 9
+      }
+    },
+    {
+      "id": "AR-08",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-02",
+        "overrides": [
+          {
+            "assumptionId": "FA-01",
+            "value": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "72092256",
+              "93640656",
+              "115184304",
+              "136700328",
+              "158275176",
+              "179820000"
+            ]
+          }
+        ],
+        "type": "optimistic"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "拠点の模型の処理量と収益の柱の単価から積み上げた年間売上。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。2030年からは MS-03・MS-06 と TR-01・TR-02 の処理量に、回収手数料 2,500 THB/t（RS-01）、材料販売 3,500 THB/t×70％（RS-02）、再製造品 25,000 THB/台×販売率 90％（RS-03）を掛けた。2029年度までは 0。",
+            "projectId": "TR-02"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "60076880",
+            "78033880",
+            "95986920",
+            "113916940",
+            "131895980",
+            "149850000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証・準備の費用と、拠点の模型の運営費・増設費に拠点の外の費用を足した年間費用。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。2029年度までは ML-01〜ML-04 と MD-01 の実証・準備費。2030年からは TR-03 の拠点の運営費と TR-04 の増設費に、本社・営業、e-Axle のコアの買い取り、保険・許認可（OR-01・OR-04・OR-05、MS-06、CS-05）を足した。",
+            "projectId": "TR-03"
+          },
+          "unit": "JPY",
+          "value": [
+            "30000000",
+            "65000000",
+            "95000000",
+            "130000000",
+            "172363862",
+            "213598511",
+            "254868761",
+            "290686909",
+            "348423159",
+            "356905038"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "拠点の模型の立ち上げ設備・改装に、実証と試作の設備を足した初期設備投資。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。TR-04 の2030年の立ち上げ設備・改装 1.36 億円に、電池実証の計測・安全器材 0.10 億円と e-Axle 試作の治具・計測器 0.25 億円（ML-02・ML-03）を足した。",
+            "projectId": "TR-04"
+          },
+          "unit": "JPY",
+          "value": "171000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "272623348",
+        "irrPercent": "17.1083",
+        "paybackYear": 8
+      }
+    },
+    {
+      "id": "AR-09",
+      "scenario": {
+        "assumptionIds": [
+          "FA-01",
+          "FA-02",
+          "FA-03",
+          "FA-04",
+          "FA-05",
+          "FA-06"
+        ],
+        "id": "SC-03",
+        "overrides": [
+          {
+            "assumptionId": "FA-01",
+            "value": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "48061504",
+              "62427104",
+              "76789536",
+              "91133552",
+              "105516784",
+              "119880000"
+            ]
+          }
+        ],
+        "type": "pessimistic"
+      },
+      "assumptions": [
+        {
+          "dependsOn": [],
+          "description": "拠点の模型の処理量と収益の柱の単価から積み上げた年間売上。",
+          "id": "FA-01",
+          "kind": "assumption",
+          "name": "年間売上",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。2030年からは MS-03・MS-06 と TR-01・TR-02 の処理量に、回収手数料 2,500 THB/t（RS-01）、材料販売 3,500 THB/t×70％（RS-02）、再製造品 25,000 THB/台×販売率 90％（RS-03）を掛けた。2029年度までは 0。",
+            "projectId": "TR-02"
+          },
+          "unit": "THB",
+          "value": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "60076880",
+            "78033880",
+            "95986920",
+            "113916940",
+            "131895980",
+            "149850000"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "実証・準備の費用と、拠点の模型の運営費・増設費に拠点の外の費用を足した年間費用。",
+          "id": "FA-02",
+          "kind": "assumption",
+          "name": "年間費用",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。2029年度までは ML-01〜ML-04 と MD-01 の実証・準備費。2030年からは TR-03 の拠点の運営費と TR-04 の増設費に、本社・営業、e-Axle のコアの買い取り、保険・許認可（OR-01・OR-04・OR-05、MS-06、CS-05）を足した。",
+            "projectId": "TR-03"
+          },
+          "unit": "JPY",
+          "value": [
+            "30000000",
+            "65000000",
+            "95000000",
+            "130000000",
+            "172363862",
+            "213598511",
+            "254868761",
+            "290686909",
+            "348423159",
+            "356905038"
+          ]
+        },
+        {
+          "dependsOn": [],
+          "description": "拠点の模型の立ち上げ設備・改装に、実証と試作の設備を足した初期設備投資。",
+          "id": "FA-03",
+          "kind": "assumption",
+          "name": "初期設備投資",
+          "source": {
+            "text": "（仮定）石田 2026-11-23。TR-04 の2030年の立ち上げ設備・改装 1.36 億円に、電池実証の計測・安全器材 0.10 億円と e-Axle 試作の治具・計測器 0.25 億円（ML-02・ML-03）を足した。",
+            "projectId": "TR-04"
+          },
+          "unit": "JPY",
+          "value": "171000000"
+        },
+        {
+          "dependsOn": [],
+          "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+          "id": "FA-04",
+          "kind": "assumption",
+          "name": "為替",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "JPY_per_THB",
+          "value": "4.3"
+        },
+        {
+          "dependsOn": [],
+          "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+          "id": "FA-05",
+          "kind": "assumption",
+          "name": "法人税率",
+          "source": {
+            "projectId": "OR-04",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+          },
+          "unit": "percent",
+          "value": "20"
+        },
+        {
+          "dependsOn": [],
+          "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+          "id": "FA-06",
+          "kind": "assumption",
+          "name": "割引率",
+          "source": {
+            "projectId": "OR-05",
+            "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+          },
+          "unit": "percent",
+          "value": "8"
+        }
+      ],
+      "calculation": {
+        "costJPY": "FA-02",
+        "currency": "JPY",
+        "discountRate": "FA-06",
+        "exchangeRate": "FA-04",
+        "initialInvestmentJPY": "FA-03",
+        "revenueTHB": "FA-01",
+        "taxRate": "FA-05",
+        "version": "2.0.0",
+        "years": 10
+      },
+      "metrics": {
+        "npvJPY": "-199352209",
+        "irrPercent": "-2.3207",
+        "paybackYear": null
+      }
+    }
+  ],
+  "artifactKind": "shinonome.business-case",
+  "assumptions": [
+    {
+      "dependsOn": [],
+      "description": "拠点の模型の処理量と収益の柱の単価から積み上げた年間売上。",
+      "id": "FA-01",
+      "kind": "assumption",
+      "name": "年間売上",
+      "source": {
+        "text": "（仮定）石田 2026-11-23。2030年からは MS-03・MS-06 と TR-01・TR-02 の処理量に、回収手数料 2,500 THB/t（RS-01）、材料販売 3,500 THB/t×70％（RS-02）、再製造品 25,000 THB/台×販売率 90％（RS-03）を掛けた。2029年度までは 0。",
+        "projectId": "TR-02"
+      },
+      "unit": "THB",
+      "value": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "60076880",
+        "78033880",
+        "95986920",
+        "113916940",
+        "131895980",
+        "149850000"
+      ]
+    },
+    {
+      "dependsOn": [],
+      "description": "実証・準備の費用と、拠点の模型の運営費・増設費に拠点の外の費用を足した年間費用。",
+      "id": "FA-02",
+      "kind": "assumption",
+      "name": "年間費用",
+      "source": {
+        "text": "（仮定）石田 2026-11-23。2029年度までは ML-01〜ML-04 と MD-01 の実証・準備費。2030年からは TR-03 の拠点の運営費と TR-04 の増設費に、本社・営業、e-Axle のコアの買い取り、保険・許認可（OR-01・OR-04・OR-05、MS-06、CS-05）を足した。",
+        "projectId": "TR-03"
+      },
+      "unit": "JPY",
+      "value": [
+        "30000000",
+        "65000000",
+        "95000000",
+        "130000000",
+        "172363862",
+        "213598511",
+        "254868761",
+        "290686909",
+        "348423159",
+        "356905038"
+      ]
+    },
+    {
+      "dependsOn": [],
+      "description": "拠点の模型の立ち上げ設備・改装に、実証と試作の設備を足した初期設備投資。",
+      "id": "FA-03",
+      "kind": "assumption",
+      "name": "初期設備投資",
+      "source": {
+        "text": "（仮定）石田 2026-11-23。TR-04 の2030年の立ち上げ設備・改装 1.36 億円に、電池実証の計測・安全器材 0.10 億円と e-Axle 試作の治具・計測器 0.25 億円（ML-02・ML-03）を足した。",
+        "projectId": "TR-04"
+      },
+      "unit": "JPY",
+      "value": "171000000"
+    },
+    {
+      "dependsOn": [],
+      "description": "財務の担当項目を根拠に、石田・佐藤が決めた為替の仮定。",
+      "id": "FA-04",
+      "kind": "assumption",
+      "name": "為替",
+      "source": {
+        "projectId": "OR-05",
+        "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+      },
+      "unit": "JPY_per_THB",
+      "value": "4.3"
+    },
+    {
+      "dependsOn": [],
+      "description": "タイの法人税率を20%とする仮定。OR-04の法令・コンプライアンス確認に関連する。",
+      "id": "FA-05",
+      "kind": "assumption",
+      "name": "法人税率",
+      "source": {
+        "projectId": "OR-04",
+        "text": "（仮定）石田・佐藤 2026-11-22、OR-04（法務・コンプライアンス）"
+      },
+      "unit": "percent",
+      "value": "20"
+    },
+    {
+      "dependsOn": [],
+      "description": "社内の投資審査の目安として、石田・佐藤が決めた割引率の仮定。",
+      "id": "FA-06",
+      "kind": "assumption",
+      "name": "割引率",
+      "source": {
+        "projectId": "OR-05",
+        "text": "（仮定）石田・佐藤 2026-11-22、OR-05"
+      },
+      "unit": "percent",
+      "value": "8"
+    }
+  ],
+  "calculation": {
+    "costJPY": "FA-02",
+    "currency": "JPY",
+    "discountRate": "FA-06",
+    "exchangeRate": "FA-04",
+    "initialInvestmentJPY": "FA-03",
+    "revenueTHB": "FA-01",
+    "taxRate": "FA-05",
+    "version": "2.0.0",
+    "years": 10
+  },
+  "lastIssued": {
+    "AR": 9,
+    "FA": 6,
+    "SC": 3
+  },
+  "scenarios": [
+    {
+      "assumptionIds": [
+        "FA-01",
+        "FA-02",
+        "FA-03",
+        "FA-04",
+        "FA-05",
+        "FA-06"
+      ],
+      "id": "SC-01",
+      "overrides": [],
+      "type": "base"
+    },
+    {
+      "assumptionIds": [
+        "FA-01",
+        "FA-02",
+        "FA-03",
+        "FA-04",
+        "FA-05",
+        "FA-06"
+      ],
+      "id": "SC-02",
+      "overrides": [
+        {
+          "assumptionId": "FA-01",
+          "value": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "72092256",
+            "93640656",
+            "115184304",
+            "136700328",
+            "158275176",
+            "179820000"
+          ]
+        }
+      ],
+      "type": "optimistic"
+    },
+    {
+      "assumptionIds": [
+        "FA-01",
+        "FA-02",
+        "FA-03",
+        "FA-04",
+        "FA-05",
+        "FA-06"
+      ],
+      "id": "SC-03",
+      "overrides": [
+        {
+          "assumptionId": "FA-01",
+          "value": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "48061504",
+            "62427104",
+            "76789536",
+            "91133552",
+            "105516784",
+            "119880000"
+          ]
+        }
+      ],
+      "type": "pessimistic"
+    }
+  ],
+  "schemaVersion": 1
+}

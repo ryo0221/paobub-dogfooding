@@ -1,0 +1,135 @@
+{
+  "artifactKind": "mindmap",
+  "id": "d-fac92e3f7bca4e3a31363334616578d2",
+  "layout": "radial",
+  "nodes": {
+    "n-7732d2aacf5fda36cabbe87cf5bb5c45": {
+      "children": [
+        "n-b733b5fe00f07e6e8235228d2a69b3f8",
+        "n-02a73969bd324cfaeef3712e0c4c8a90"
+      ],
+      "id": "n-7732d2aacf5fda36cabbe87cf5bb5c45",
+      "text": "タイの EV 電池・e-Axle 循環事業"
+    },
+    "n-b733b5fe00f07e6e8235228d2a69b3f8": {
+      "id": "n-b733b5fe00f07e6e8235228d2a69b3f8",
+      "text": "価値の流れ",
+      "children": [
+        "n-c77a652c8e6144f7bccd651f75dc7aa8",
+        "n-233379e6bcbd7dd51d20656c3935591f",
+        "n-0079821cb7da753067085770c3c0f1f9",
+        "n-f200a4f5d3e4ec49dcf07d5788c74538",
+        "n-1416189a884a2c4e9d36441468f3f423",
+        "n-ba20043a2ddfaaba8f5869c4a27b563f"
+      ]
+    },
+    "n-02a73969bd324cfaeef3712e0c4c8a90": {
+      "id": "n-02a73969bd324cfaeef3712e0c4c8a90",
+      "text": "収益の柱",
+      "children": [
+        "n-c705243664b8ed09c2cfcecea2063cc0",
+        "n-ec630685d7296725c38fa68080e76cbf",
+        "n-ff5464e05a041b0824f1e89f1dc23219",
+        "n-9e23794ea263cb4096787adf7598f94a"
+      ]
+    },
+    "n-c77a652c8e6144f7bccd651f75dc7aa8": {
+      "id": "n-c77a652c8e6144f7bccd651f75dc7aa8",
+      "text": "VF-01 回収",
+      "children": [],
+      "note": "根拠：HY-01、HY-05。市場：MS-03、MS-06。排出元が回収に支払う可能性は仮説。金額は仮定。",
+      "marks": [
+        "question",
+        "idea"
+      ]
+    },
+    "n-233379e6bcbd7dd51d20656c3935591f": {
+      "id": "n-233379e6bcbd7dd51d20656c3935591f",
+      "text": "VF-02 診断と選別",
+      "children": [],
+      "note": "根拠：HY-02。市場：MS-03。状態の診断と選別への支払い相手・対価は未確認。金額は仮定。",
+      "marks": [
+        "question"
+      ]
+    },
+    "n-0079821cb7da753067085770c3c0f1f9": {
+      "id": "n-0079821cb7da753067085770c3c0f1f9",
+      "text": "VF-03 再生・二次利用",
+      "children": [],
+      "note": "関連：HY-02、HY-04。市場：MS-03。二次利用の実現性、受け入れ先と支払いは未確認。金額は仮定。",
+      "marks": [
+        "question",
+        "risk"
+      ]
+    },
+    "n-f200a4f5d3e4ec49dcf07d5788c74538": {
+      "id": "n-f200a4f5d3e4ec49dcf07d5788c74538",
+      "text": "VF-04 e-Axle の再製造",
+      "children": [],
+      "note": "根拠：HY-05。市場：MS-06。買い手が品質を確認した再製造品に支払う想定。条件は未確認、金額は仮定。",
+      "marks": [
+        "question",
+        "idea"
+      ]
+    },
+    "n-1416189a884a2c4e9d36441468f3f423": {
+      "id": "n-1416189a884a2c4e9d36441468f3f423",
+      "text": "VF-05 販売とリース",
+      "children": [],
+      "note": "根拠：HY-04、HY-05。市場：MS-03、MS-06。材料の買い手や整備事業者・リース会社が材料または再製造品に支払う可能性を検討する。リースの提供と対価は未確認、金額は仮定。",
+      "marks": [
+        "question"
+      ]
+    },
+    "n-ba20043a2ddfaaba8f5869c4a27b563f": {
+      "id": "n-ba20043a2ddfaaba8f5869c4a27b563f",
+      "text": "VF-06 資金と提携",
+      "children": [],
+      "note": "関連：HY-02、HY-03、HY-04、HY-05。市場：MS-03、MS-06。処理・物流・再製造の提携先、資金の出し手と対価は未確認。金額は仮定。",
+      "marks": [
+        "question",
+        "risk"
+      ]
+    },
+    "n-c705243664b8ed09c2cfcecea2063cc0": {
+      "id": "n-c705243664b8ed09c2cfcecea2063cc0",
+      "text": "RS-01 回収の手数料",
+      "children": [],
+      "note": "根拠：HY-01、HY-03。市場：MS-03。電池の排出元が引き取りや輸送の手配に支払う想定。支払い意向は未確認、金額は仮定。",
+      "marks": [
+        "question"
+      ]
+    },
+    "n-ec630685d7296725c38fa68080e76cbf": {
+      "id": "n-ec630685d7296725c38fa68080e76cbf",
+      "text": "RS-02 材料の販売",
+      "children": [],
+      "note": "関連：HY-04。市場：MS-03。材料の買い手が回収材料に支払う可能性を検討する。販売主体と需要は未確認、金額は仮定。",
+      "marks": [
+        "question",
+        "idea"
+      ]
+    },
+    "n-ff5464e05a041b0824f1e89f1dc23219": {
+      "id": "n-ff5464e05a041b0824f1e89f1dc23219",
+      "text": "RS-03 再製造品の販売・リース",
+      "children": [],
+      "note": "根拠：HY-05。市場：MS-06。整備事業者やリース会社が再製造品に支払う想定。自社によるリース提供は未確認、金額は仮定。",
+      "marks": [
+        "question",
+        "idea"
+      ]
+    },
+    "n-9e23794ea263cb4096787adf7598f94a": {
+      "id": "n-9e23794ea263cb4096787adf7598f94a",
+      "text": "RS-04 見える化のサービス",
+      "children": [],
+      "note": "関連：HY-05。市場：MS-06。再製造事業者などが工程・品質の記録サービスに支払う可能性は新たな仮説。顧客と需要は未確認、金額は仮定。",
+      "marks": [
+        "question"
+      ]
+    }
+  },
+  "rootId": "n-7732d2aacf5fda36cabbe87cf5bb5c45",
+  "schemaVersion": 1
+}

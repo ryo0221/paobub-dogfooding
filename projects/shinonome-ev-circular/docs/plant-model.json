@@ -1,0 +1,4667 @@
+{
+ "title": "拠点の模型（デジタルツイン）",
+ "modelVersion": "1.0.0",
+ "modelHeading": "拠点の模型",
+ "model": {
+  "schemaVersion": 1,
+  "name": "タイの回収・再製造拠点",
+  "products": [
+   {
+    "id": "battery-reuse",
+    "name": "電池パック・再利用向け"
+   },
+   {
+    "id": "battery-material",
+    "name": "電池パック・材料回収向け"
+   },
+   {
+    "id": "e-axle",
+    "name": "e-Axle"
+   }
+  ],
+  "objects": [
+   {
+    "id": "in-battery",
+    "name": "電池の到着依頼",
+    "kind": "source",
+    "interval": {
+     "type": "const",
+     "value": 86400000
+    },
+    "startMs": 1,
+    "mix": [
+     {
+      "productId": "battery-reuse",
+      "weight": 3
+     },
+     {
+      "productId": "battery-material",
+      "weight": 7
+     }
+    ],
+    "at": {
+     "x": 0,
+     "y": 4000
+    }
+   },
+   {
+    "id": "b-orders",
+    "name": "電池の荷受待ち（到着依頼）",
+    "kind": "buffer",
+    "capacity": 2000,
+    "at": {
+     "x": 1000,
+     "y": 4000
+    }
+   },
+   {
+    "id": "b-receive",
+    "name": "電池受け入れ",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 600000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 4000,
+     "y": 4000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "handling"
+    },
+    "pathNodeId": "agv-b-in"
+   },
+   {
+    "id": "b-unload",
+    "name": "電池搬入後の仮置き",
+    "kind": "buffer",
+    "capacity": 20,
+    "at": {
+     "x": 34000,
+     "y": 8000
+    },
+    "pathNodeId": "agv-b-out"
+   },
+   {
+    "id": "b-safety",
+    "name": "外観・安全検査",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 720000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 30000,
+     "y": 8000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "battery-tech"
+    }
+   },
+   {
+    "id": "b-prep",
+    "name": "診断準備・接続",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 600000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 26000,
+     "y": 8000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "battery-tech"
+    }
+   },
+   {
+    "id": "b-diag-queue",
+    "name": "診断待ちラック",
+    "kind": "buffer",
+    "capacity": 20,
+    "at": {
+     "x": 23000,
+     "y": 8000
+    }
+   },
+   {
+    "id": "b-diagnose",
+    "name": "自動診断機",
+    "kind": "parallel",
+    "count": 2,
+    "processTime": {
+     "type": "const",
+     "value": 4200000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 19000,
+     "y": 8000
+    },
+    "size": {
+     "widthMm": 7000,
+     "depthMm": 4200,
+     "heightMm": 2400
+    }
+   },
+   {
+    "id": "b-sort-queue",
+    "name": "選別待ちラック",
+    "kind": "buffer",
+    "capacity": 20,
+    "at": {
+     "x": 14000,
+     "y": 8000
+    }
+   },
+   {
+    "id": "b-sort",
+    "name": "電池選別",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 480000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 11000,
+     "y": 8000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "battery-tech"
+    }
+   },
+   {
+    "id": "b-reuse-queue",
+    "name": "再利用向け出荷待ち",
+    "kind": "buffer",
+    "capacity": 20,
+    "at": {
+     "x": 9000,
+     "y": 3000
+    }
+   },
+   {
+    "id": "b-material-queue",
+    "name": "材料回収向け出荷待ち",
+    "kind": "buffer",
+    "capacity": 30,
+    "at": {
+     "x": 9000,
+     "y": 12000
+    }
+   },
+   {
+    "id": "b-reuse-ship",
+    "name": "再利用向け出荷",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 600000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 6000,
+     "y": 3000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "handling"
+    }
+   },
+   {
+    "id": "b-material-ship",
+    "name": "材料回収向け出荷",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 600000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 6000,
+     "y": 12000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "handling"
+    }
+   },
+   {
+    "id": "out-reuse",
+    "name": "再利用先への引渡し",
+    "kind": "drain",
+    "at": {
+     "x": 2000,
+     "y": 2000
+    }
+   },
+   {
+    "id": "out-material",
+    "name": "材料回収先への引渡し",
+    "kind": "drain",
+    "at": {
+     "x": 2000,
+     "y": 12000
+    }
+   },
+   {
+    "id": "in-axle",
+    "name": "e-Axle の到着依頼",
+    "kind": "source",
+    "interval": {
+     "type": "const",
+     "value": 86400000
+    },
+    "startMs": 420000,
+    "mix": [
+     {
+      "productId": "e-axle",
+      "weight": 1
+     }
+    ],
+    "at": {
+     "x": 0,
+     "y": 28000
+    }
+   },
+   {
+    "id": "a-orders",
+    "name": "e-Axle の荷受待ち（到着依頼）",
+    "kind": "buffer",
+    "capacity": 2000,
+    "at": {
+     "x": 1000,
+     "y": 28000
+    }
+   },
+   {
+    "id": "a-receive",
+    "name": "e-Axle 受け入れ",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 480000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 4000,
+     "y": 28000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "handling"
+    },
+    "pathNodeId": "agv-a-in"
+   },
+   {
+    "id": "a-unload",
+    "name": "e-Axle 搬入後の仮置き",
+    "kind": "buffer",
+    "capacity": 20,
+    "at": {
+     "x": 34000,
+     "y": 28000
+    },
+    "pathNodeId": "agv-a-out"
+   },
+   {
+    "id": "a-strip",
+    "name": "分解台",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 1680000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 31000,
+     "y": 30000
+    },
+    "size": {
+     "widthMm": 4400,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "axle-tech"
+    }
+   },
+   {
+    "id": "a-wash-queue",
+    "name": "洗浄待ちラック",
+    "kind": "buffer",
+    "capacity": 16,
+    "at": {
+     "x": 28000,
+     "y": 30000
+    }
+   },
+   {
+    "id": "a-wash",
+    "name": "自動洗浄機",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 1380000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 25000,
+     "y": 30000
+    },
+    "size": {
+     "widthMm": 4200,
+     "depthMm": 2500,
+     "heightMm": 2400
+    }
+   },
+   {
+    "id": "a-parts-queue",
+    "name": "部品検査待ちラック",
+    "kind": "buffer",
+    "capacity": 16,
+    "at": {
+     "x": 22000,
+     "y": 30000
+    }
+   },
+   {
+    "id": "a-parts",
+    "name": "部品検査台",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 1080000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 19000,
+     "y": 30000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "axle-qa"
+    }
+   },
+   {
+    "id": "a-rebuild-queue",
+    "name": "再組立待ちラック",
+    "kind": "buffer",
+    "capacity": 16,
+    "at": {
+     "x": 16000,
+     "y": 30000
+    }
+   },
+   {
+    "id": "a-rebuild",
+    "name": "再組立台",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 2220000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 13000,
+     "y": 30000
+    },
+    "size": {
+     "widthMm": 4400,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "axle-tech"
+    }
+   },
+   {
+    "id": "a-test-queue",
+    "name": "最終検査待ちラック",
+    "kind": "buffer",
+    "capacity": 16,
+    "at": {
+     "x": 10000,
+     "y": 30000
+    }
+   },
+   {
+    "id": "a-test",
+    "name": "最終検査ベンチ",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 1440000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 8000,
+     "y": 30000
+    },
+    "size": {
+     "widthMm": 3600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "axle-qa"
+    }
+   },
+   {
+    "id": "a-ship-queue",
+    "name": "e-Axle 出荷待ち",
+    "kind": "buffer",
+    "capacity": 16,
+    "at": {
+     "x": 6000,
+     "y": 33000
+    }
+   },
+   {
+    "id": "a-ship",
+    "name": "e-Axle 出荷",
+    "kind": "parallel",
+    "count": 1,
+    "processTime": {
+     "type": "const",
+     "value": 480000
+    },
+    "calendarId": "day-shift",
+    "at": {
+     "x": 4000,
+     "y": 33000
+    },
+    "size": {
+     "widthMm": 2600,
+     "depthMm": 2500,
+     "heightMm": 2400
+    },
+    "workers": {
+     "count": 1,
+     "skill": "handling"
+    }
+   },
+   {
+    "id": "out-axle",
+    "name": "e-Axle 出荷引渡し",
+    "kind": "drain",
+    "at": {
+     "x": 1000,
+     "y": 33000
+    }
+   }
+  ],
+  "links": [
+   {
+    "id": "in-battery>b-orders",
+    "from": "in-battery",
+    "to": "b-orders"
+   },
+   {
+    "id": "b-orders>b-receive",
+    "from": "b-orders",
+    "to": "b-receive"
+   },
+   {
+    "id": "b-receive>b-unload",
+    "from": "b-receive",
+    "to": "b-unload",
+    "transport": {
+     "fleetId": "agv"
+    }
+   },
+   {
+    "id": "b-unload>b-safety",
+    "from": "b-unload",
+    "to": "b-safety"
+   },
+   {
+    "id": "b-safety>b-prep",
+    "from": "b-safety",
+    "to": "b-prep"
+   },
+   {
+    "id": "b-prep>b-diag-queue",
+    "from": "b-prep",
+    "to": "b-diag-queue"
+   },
+   {
+    "id": "b-diag-queue>b-diagnose",
+    "from": "b-diag-queue",
+    "to": "b-diagnose"
+   },
+   {
+    "id": "b-diagnose>b-sort-queue",
+    "from": "b-diagnose",
+    "to": "b-sort-queue"
+   },
+   {
+    "id": "b-sort-queue>b-sort",
+    "from": "b-sort-queue",
+    "to": "b-sort"
+   },
+   {
+    "id": "b-sort>b-reuse-queue",
+    "from": "b-sort",
+    "to": "b-reuse-queue",
+    "productIds": [
+     "battery-reuse"
+    ]
+   },
+   {
+    "id": "b-sort>b-material-queue",
+    "from": "b-sort",
+    "to": "b-material-queue",
+    "productIds": [
+     "battery-material"
+    ]
+   },
+   {
+    "id": "b-reuse-queue>b-reuse-ship",
+    "from": "b-reuse-queue",
+    "to": "b-reuse-ship"
+   },
+   {
+    "id": "b-reuse-ship>out-reuse",
+    "from": "b-reuse-ship",
+    "to": "out-reuse"
+   },
+   {
+    "id": "b-material-queue>b-material-ship",
+    "from": "b-material-queue",
+    "to": "b-material-ship"
+   },
+   {
+    "id": "b-material-ship>out-material",
+    "from": "b-material-ship",
+    "to": "out-material"
+   },
+   {
+    "id": "in-axle>a-orders",
+    "from": "in-axle",
+    "to": "a-orders"
+   },
+   {
+    "id": "a-orders>a-receive",
+    "from": "a-orders",
+    "to": "a-receive"
+   },
+   {
+    "id": "a-receive>a-unload",
+    "from": "a-receive",
+    "to": "a-unload",
+    "transport": {
+     "fleetId": "agv"
+    }
+   },
+   {
+    "id": "a-unload>a-strip",
+    "from": "a-unload",
+    "to": "a-strip"
+   },
+   {
+    "id": "a-strip>a-wash-queue",
+    "from": "a-strip",
+    "to": "a-wash-queue"
+   },
+   {
+    "id": "a-wash-queue>a-wash",
+    "from": "a-wash-queue",
+    "to": "a-wash"
+   },
+   {
+    "id": "a-wash>a-parts-queue",
+    "from": "a-wash",
+    "to": "a-parts-queue"
+   },
+   {
+    "id": "a-parts-queue>a-parts",
+    "from": "a-parts-queue",
+    "to": "a-parts"
+   },
+   {
+    "id": "a-parts>a-rebuild-queue",
+    "from": "a-parts",
+    "to": "a-rebuild-queue"
+   },
+   {
+    "id": "a-rebuild-queue>a-rebuild",
+    "from": "a-rebuild-queue",
+    "to": "a-rebuild"
+   },
+   {
+    "id": "a-rebuild>a-test-queue",
+    "from": "a-rebuild",
+    "to": "a-test-queue"
+   },
+   {
+    "id": "a-test-queue>a-test",
+    "from": "a-test-queue",
+    "to": "a-test"
+   },
+   {
+    "id": "a-test>a-ship-queue",
+    "from": "a-test",
+    "to": "a-ship-queue"
+   },
+   {
+    "id": "a-ship-queue>a-ship",
+    "from": "a-ship-queue",
+    "to": "a-ship"
+   },
+   {
+    "id": "a-ship>out-axle",
+    "from": "a-ship",
+    "to": "out-axle"
+   }
+  ],
+  "calendars": [
+   {
+    "id": "day-shift",
+    "name": "日勤（仮定）",
+    "cycleMs": 86400000,
+    "shifts": [
+     {
+      "name": "日勤",
+      "startMs": 28800000,
+      "endMs": 57600000
+     }
+    ]
+   }
+  ],
+  "workerPools": [
+   {
+    "id": "handling",
+    "name": "荷受・出荷員（共用）",
+    "count": 1,
+    "skills": [
+     "handling"
+    ],
+    "walkSpeedMmS": 1200,
+    "home": {
+     "x": 2000,
+     "y": 16000
+    }
+   },
+   {
+    "id": "battery-tech",
+    "name": "電池技術員",
+    "count": 1,
+    "skills": [
+     "battery-tech"
+    ],
+    "walkSpeedMmS": 1200,
+    "home": {
+     "x": 12000,
+     "y": 6000
+    }
+   },
+   {
+    "id": "axle-tech",
+    "name": "再製造技術員",
+    "count": 2,
+    "skills": [
+     "axle-tech"
+    ],
+    "walkSpeedMmS": 1200,
+    "home": {
+     "x": 14000,
+     "y": 26000
+    }
+   },
+   {
+    "id": "axle-qa",
+    "name": "e-Axle 検査員",
+    "count": 1,
+    "skills": [
+     "axle-qa"
+    ],
+    "walkSpeedMmS": 1200,
+    "home": {
+     "x": 28000,
+     "y": 26000
+    }
+   }
+  ],
+  "paths": {
+   "nodes": [
+    {
+     "id": "agv-home",
+     "x": 4000,
+     "y": 16000
+    },
+    {
+     "id": "agv-b-in",
+     "x": 4000,
+     "y": 6000
+    },
+    {
+     "id": "agv-a-in",
+     "x": 4000,
+     "y": 26000
+    },
+    {
+     "id": "agv-east",
+     "x": 34000,
+     "y": 16000
+    },
+    {
+     "id": "agv-b-out",
+     "x": 34000,
+     "y": 6000
+    },
+    {
+     "id": "agv-a-out",
+     "x": 34000,
+     "y": 26000
+    }
+   ],
+   "segments": [
+    {
+     "id": "agv-home>agv-b-in",
+     "from": "agv-home",
+     "to": "agv-b-in",
+     "twoWay": true
+    },
+    {
+     "id": "agv-home>agv-a-in",
+     "from": "agv-home",
+     "to": "agv-a-in",
+     "twoWay": true
+    },
+    {
+     "id": "agv-home>agv-east",
+     "from": "agv-home",
+     "to": "agv-east",
+     "twoWay": true
+    },
+    {
+     "id": "agv-east>agv-b-out",
+     "from": "agv-east",
+     "to": "agv-b-out",
+     "twoWay": true
+    },
+    {
+     "id": "agv-east>agv-a-out",
+     "from": "agv-east",
+     "to": "agv-a-out",
+     "twoWay": true
+    }
+   ]
+  },
+  "fleets": [
+   {
+    "id": "agv",
+    "name": "共用パレット AGV",
+    "count": 1,
+    "speedMmS": 900,
+    "loadMs": 45000,
+    "unloadMs": 45000,
+    "homeNodeId": "agv-home",
+    "widthMm": 1100
+   }
+  ],
+  "run": {
+   "warmupMs": 1209600000,
+   "durationMs": 21600000000,
+   "seed": 27
+  }
+ },
+ "cases": [
+  {
+   "id": "market-2030",
+   "year": 2030,
+   "label": "市場量・2030年",
+   "input": {
+    "batteryT": 1203.01,
+    "battery": 3007.525,
+    "axle": 2406.02
+   },
+   "set": {
+    "objects.in-battery.interval.value": 7181985,
+    "objects.in-axle.interval.value": 8977481,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 1,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 1,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 2,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 1,
+    "workerPools.axle-tech.count": 2,
+    "objects.a-wash.count": 1,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 1,
+    "objects.a-rebuild.count": 1,
+    "objects.a-test.count": 1,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "capacity-2030",
+   "year": 2030,
+   "label": "能力試験・2030年",
+   "loadFactor": 1.135,
+   "set": {
+    "objects.in-battery.interval.value": 6327740,
+    "objects.in-axle.interval.value": 7909675,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 1,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 1,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 2,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 1,
+    "workerPools.axle-tech.count": 2,
+    "objects.a-wash.count": 1,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 1,
+    "objects.a-rebuild.count": 1,
+    "objects.a-test.count": 1,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "market-2031",
+   "year": 2031,
+   "label": "市場量・2031年",
+   "input": {
+    "batteryT": 1562.408,
+    "battery": 3906.02,
+    "axle": 3124.816
+   },
+   "set": {
+    "objects.in-battery.interval.value": 5529926,
+    "objects.in-axle.interval.value": 6912407,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 2,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 1,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 3,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 1,
+    "workerPools.axle-tech.count": 2,
+    "objects.a-wash.count": 1,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 2,
+    "objects.a-rebuild.count": 1,
+    "objects.a-test.count": 1,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "capacity-2031",
+   "year": 2031,
+   "label": "能力試験・2031年",
+   "loadFactor": 1.005,
+   "set": {
+    "objects.in-battery.interval.value": 5502414,
+    "objects.in-axle.interval.value": 6878017,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 2,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 1,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 3,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 1,
+    "workerPools.axle-tech.count": 2,
+    "objects.a-wash.count": 1,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 2,
+    "objects.a-rebuild.count": 1,
+    "objects.a-test.count": 1,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "market-2032",
+   "year": 2032,
+   "label": "市場量・2032年",
+   "input": {
+    "batteryT": 1921.806,
+    "battery": 4804.515,
+    "axle": 3843.612
+   },
+   "set": {
+    "objects.in-battery.interval.value": 4495771,
+    "objects.in-axle.interval.value": 5619714,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 2,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 2,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 3,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 1,
+    "workerPools.axle-tech.count": 3,
+    "objects.a-wash.count": 1,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 2,
+    "objects.a-rebuild.count": 2,
+    "objects.a-test.count": 1,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "capacity-2032",
+   "year": 2032,
+   "label": "能力試験・2032年",
+   "loadFactor": 1.07,
+   "set": {
+    "objects.in-battery.interval.value": 4201655,
+    "objects.in-axle.interval.value": 5252069,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 2,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 2,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 3,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 1,
+    "workerPools.axle-tech.count": 3,
+    "objects.a-wash.count": 1,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 2,
+    "objects.a-rebuild.count": 2,
+    "objects.a-test.count": 1,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "market-2033",
+   "year": 2033,
+   "label": "市場量・2033年",
+   "input": {
+    "batteryT": 2281.204,
+    "battery": 5703.01,
+    "axle": 4562.408
+   },
+   "set": {
+    "objects.in-battery.interval.value": 3787474,
+    "objects.in-axle.interval.value": 4734342,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 2,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 2,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 4,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 2,
+    "workerPools.axle-tech.count": 3,
+    "objects.a-wash.count": 1,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 2,
+    "objects.a-rebuild.count": 2,
+    "objects.a-test.count": 1,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "capacity-2033",
+   "year": 2033,
+   "label": "能力試験・2033年",
+   "loadFactor": 1.095,
+   "set": {
+    "objects.in-battery.interval.value": 3458880,
+    "objects.in-axle.interval.value": 4323600,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 2,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 2,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 4,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 2,
+    "workerPools.axle-tech.count": 3,
+    "objects.a-wash.count": 1,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 2,
+    "objects.a-rebuild.count": 2,
+    "objects.a-test.count": 1,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "market-2034",
+   "year": 2034,
+   "label": "市場量・2034年",
+   "input": {
+    "batteryT": 2640.602,
+    "battery": 6601.505,
+    "axle": 5281.204
+   },
+   "set": {
+    "objects.in-battery.interval.value": 3271981,
+    "objects.in-axle.interval.value": 4089976,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 2,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 2,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 4,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 2,
+    "workerPools.axle-tech.count": 3,
+    "objects.a-wash.count": 2,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 2,
+    "objects.a-rebuild.count": 2,
+    "objects.a-test.count": 2,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "capacity-2034",
+   "year": 2034,
+   "label": "能力試験・2034年",
+   "loadFactor": 1.03,
+   "set": {
+    "objects.in-battery.interval.value": 3176681,
+    "objects.in-axle.interval.value": 3970851,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 2,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 2,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 4,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 2,
+    "workerPools.axle-tech.count": 3,
+    "objects.a-wash.count": 2,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 2,
+    "objects.a-rebuild.count": 2,
+    "objects.a-test.count": 2,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "market-2035",
+   "year": 2035,
+   "label": "市場量・2035年",
+   "input": {
+    "batteryT": 3000,
+    "battery": 7500,
+    "axle": 6000
+   },
+   "set": {
+    "objects.in-battery.interval.value": 2880000,
+    "objects.in-axle.interval.value": 3600000,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 3,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 2,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 5,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 2,
+    "workerPools.axle-tech.count": 4,
+    "objects.a-wash.count": 2,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 3,
+    "objects.a-rebuild.count": 2,
+    "objects.a-test.count": 2,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  },
+  {
+   "id": "capacity-2035",
+   "year": 2035,
+   "label": "能力試験・2035年",
+   "loadFactor": 1.04,
+   "set": {
+    "objects.in-battery.interval.value": 2769231,
+    "objects.in-axle.interval.value": 3461538,
+    "objects.b-receive.count": 1,
+    "workerPools.handling.count": 3,
+    "objects.b-safety.count": 1,
+    "workerPools.battery-tech.count": 2,
+    "objects.b-prep.count": 1,
+    "objects.b-diagnose.count": 5,
+    "objects.b-sort.count": 1,
+    "objects.b-reuse-ship.count": 1,
+    "objects.b-material-ship.count": 1,
+    "objects.a-receive.count": 1,
+    "objects.a-strip.count": 2,
+    "workerPools.axle-tech.count": 4,
+    "objects.a-wash.count": 2,
+    "objects.a-parts.count": 1,
+    "workerPools.axle-qa.count": 3,
+    "objects.a-rebuild.count": 2,
+    "objects.a-test.count": 2,
+    "objects.a-ship.count": 1,
+    "fleets.agv.count": 1
+   }
+  }
+ ],
+ "resultHeading": "結果",
+ "twin-result": [
+  {
+   "id": "TR-01",
+   "title": "2030年の立ち上げの構成と同時処理能力",
+   "description": "電池1,203.01トン、e-Axle 2,406.02台分の年間投入に対し、電池診断機2台、現場5人、支援込み7人で立ち上げる構成。試験で得た同時処理能力は電池1,365.2トン/年、e-Axle 2,730台/年。市場量で最も稼働率が高い設備は電池が自動診断機（87.73％）、e-Axle が再組立台（74.19％）。",
+   "modelVersion": "1.0.0",
+   "investmentReview": "MD-01で本投資は見送り。実証終了時に使用済み電池の契約可能な回収量と買い手の購入数量・価格・支払意向を確認し、実績・見積もりを反映して収支を更新する。財務が資金計画と基本シナリオのNPVを再確認する。回収量と購入条件の裏付けがあり、更新後の基本シナリオのNPVが正であることが本投資に進む条件。条件を満たせない場合は判断を保留する。",
+   "calculationBasis": {
+    "market": {
+     "revision": "pin/market/1",
+     "battery": "MS-03の年間SOM。1,203.01＋(3,000−1,203.01)×(年−2030)/5トン。",
+     "axle": "MS-06の年間SOM。2,406.02＋(6,000−2,406.02)×(年−2030)/5台分。",
+     "interpolation": "2031〜2034年は両端のSOMを直線補間する。",
+     "packWeightTonnes": 0.4,
+     "batteryConversion": "MS-01の仮定に基づき、トン÷0.4で投入パック数に換算する。小数は計画値で、模型の個体と出荷は整数。"
+    },
+    "calendar": {
+     "kind": "仮定",
+     "workingDaysPerYear": 250,
+     "shiftsPerDay": 1,
+     "netHoursPerShift": 8,
+     "workingHoursPerYear": 2000,
+     "warmupDays": 14,
+     "observationDays": 250,
+     "formula": "250稼働日×1シフト×正味8時間＝2,000時間/年。日勤08:00〜16:00。稼働日の24時間周期を連続して繰り返す。休日は250日/年への換算に織り込む。"
+    },
+    "arrivalConversion": "稼働時間換算間隔＝2,000時間÷年の投入個数。模型の投入間隔＝250日×24時間÷年の投入個数（ミリ秒に四捨五入）。夜間に到着依頼がたまり、現物の受け入れは日勤で処理する。荷受待ちの外部依頼数は構内保管能力に含めない。",
+    "processTimes": {
+     "kind": "仮定",
+     "minutesByStation": {
+      "b-receive": 10,
+      "b-safety": 12,
+      "b-prep": 10,
+      "b-diagnose": 70,
+      "b-sort": 8,
+      "b-reuse-ship": 10,
+      "b-material-ship": 10,
+      "a-receive": 8,
+      "a-strip": 28,
+      "a-wash": 23,
+      "a-parts": 18,
+      "a-rebuild": 37,
+      "a-test": 24,
+      "a-ship": 8
+     },
+     "basis": "工数は初期の標準作業を想定した定数。電池診断は準備・接続10分と自動機70分に分け、準備終了後は技術員を他工程に回す。自動洗浄は設備時間を計上し、前後工程に荷扱い工数を含める。AGVは両系列の構内搬入を共用する。"
+    },
+    "yields": {
+     "kind": "仮定",
+     "batteryReuseShare": 0.3,
+     "batteryMaterialRecoveryShare": 0.7,
+     "axleModeledProcessPassShare": 1,
+     "basis": "電池は投入時に30対70の確率で潜在区分を付け、診断後の選別で区分別に出荷する。安全受入条件を満たす電池を対象とする。e-Axle は標準の部品交換で処理できる台分を全量流し、出荷可否の再検査・不合格の戻り工程は実測待ち。模型の処理量をそのまま売上に使うには歩留まりと契約可能量が必要。"
+    },
+    "minimumSizing": "工程ごとの必要設備数は年間負荷分÷120,000分/台の切り上げ、技能別の直接人数は担当工程の年間負荷分合計÷120,000分/人の切り上げ（いずれも最低1）とした。手作業は各設備に1人必要。負荷分＝計画個数×工程分数で、出荷先別設備は30％・70％を配分する。1台又は1人を減らすと各負荷の下限を割るか、その工程・役割・共用搬送がなくなる。両系列を同時に流してこの下限構成で需給を検算した。監督・拠点支援の2人は運営上の仮定。",
+    "capacityMethod": "同じ人員・設備で両系列の投入を同率に増やす。設備・技能別の理論上限まで市場の0.5％刻みで大きい方から試し、双方の到着が計画値と1個以内、到着と処理完了の差が2個以内となる設定を記載する。年能力＝市場の計画年量×試験倍率と、観測された処理完了数の年換算量の小さい方。電池は完了パック数×0.4でトンにそろえる。例えば2032年の電池は、投入設定量1,921.806×1.07＝2,056.33242トンと完了量5,141×0.4＝2,056.4トンのうち小さい方を採り、2,056.332トンと表示する。ペアで確認した同時処理量であり、系列単独の最大値は別途測定する。",
+    "reconciliation": "年の処理量＝各系列の処理完了数÷観測中の2,000稼働時間×年2,000稼働時間。電池は再利用向け＋材料回収向けの完了パックを合算し、重量表示は×0.4。市場量も2,000で割って時間率を求め、再度2,000を掛けて検算（表示は丸め前の率で計算）。期首・期末の仕掛差により観測の到着と完了に整数個の差が出る。日勤外を含む6,000時間は到着間隔と暦基準の指標に用いる。",
+    "measurement": "設備稼働率は開場時間内の処理状態の割合。現場要員のシフト内作業比は担当設備の処理時間合計÷（人数×2,000時間）で、移動・シフト外の拘束は含めない。暦時間の拘束比は元の計算値も併記。搬送率も暦時間基準。ボトルネックの順位は模型の連続稼働区間から算出し、年間負荷による能力上限と区別する。"
+   },
+   "annualSummary": [
+    {
+     "year": 2030,
+     "operatingStaff": 5,
+     "totalStaff": 7,
+     "diagnosticStations": 2,
+     "disassemblyBenches": 1,
+     "washers": 1,
+     "rebuildBenches": 1,
+     "finalTestBenches": 1,
+     "otherProcessStations": 9,
+     "agvs": 1,
+     "batteryCapacityTonnes": 1365.2,
+     "axleCapacityUnits": 2730
+    }
+   ],
+   "annual": [
+    {
+     "year": 2030,
+     "marketCase": "market-2030",
+     "capacityCase": "capacity-2030",
+     "input": {
+      "batteryTonnes": 1203.01,
+      "batteryPacks": 3007.525,
+      "axleUnits": 2406.02,
+      "nominalIntervalMsInOperatingTime": {
+       "battery": 2393995,
+       "axle": 2992494
+      },
+      "requestIntervalMsInElapsedTime": {
+       "battery": 7181985,
+       "axle": 8977481
+      }
+     },
+     "equipment": {
+      "b-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.2506
+      },
+      "b-safety": {
+       "count": 1,
+       "workingShareOfShift": 0.3007
+      },
+      "b-prep": {
+       "count": 1,
+       "workingShareOfShift": 0.2506
+      },
+      "b-diagnose": {
+       "count": 2,
+       "workingShareOfShift": 0.8773
+      },
+      "b-sort": {
+       "count": 1,
+       "workingShareOfShift": 0.2005
+      },
+      "b-reuse-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.0782
+      },
+      "b-material-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.1724
+      },
+      "a-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.1604
+      },
+      "a-strip": {
+       "count": 1,
+       "workingShareOfShift": 0.5614
+      },
+      "a-wash": {
+       "count": 1,
+       "workingShareOfShift": 0.4612
+      },
+      "a-parts": {
+       "count": 1,
+       "workingShareOfShift": 0.3609
+      },
+      "a-rebuild": {
+       "count": 1,
+       "workingShareOfShift": 0.7419
+      },
+      "a-test": {
+       "count": 1,
+       "workingShareOfShift": 0.4812
+      },
+      "a-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.1604
+      }
+     },
+     "staff": {
+      "directByPool": {
+       "handling": {
+        "count": 1,
+        "estimatedWorkingShareOfShift": 0.822,
+        "calendarBusyShareIncludingReservations": 0.7552,
+        "calendarWalkShare": 0.0079
+       },
+       "battery-tech": {
+        "count": 1,
+        "estimatedWorkingShareOfShift": 0.7518,
+        "calendarBusyShareIncludingReservations": 0.4701,
+        "calendarWalkShare": 0.0035
+       },
+       "axle-tech": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.6516,
+        "calendarBusyShareIncludingReservations": 0.3625,
+        "calendarWalkShare": 0
+       },
+       "axle-qa": {
+        "count": 1,
+        "estimatedWorkingShareOfShift": 0.8421,
+        "calendarBusyShareIncludingReservations": 0.8105,
+        "calendarWalkShare": 0.0018
+       }
+      },
+      "supportingStaff": [
+       {
+        "id": "floor-lead",
+        "name": "現場監督・安全管理",
+        "count": 1
+       },
+       {
+        "id": "site-support",
+        "name": "保守・拠点運営兼務",
+        "count": 1
+       }
+      ],
+      "directTotal": 5,
+      "total": 7
+     },
+     "transport": {
+      "id": "agv",
+      "count": 1,
+      "trips": 5413,
+      "haulingTravelAndHandlingShareOfElapsedTime": 0.0504,
+      "meanDispatchWaitSec": 55.54
+     },
+     "throughput": {
+      "operatingHours": 2000,
+      "simulatedElapsedHours": 6000,
+      "batteryTonnes": {
+       "countUnit": "パック",
+       "reportedCapacityUnit": "トン",
+       "plannedAnnual": 1203.01,
+       "plannedPerWorkingHour": 0.601505,
+       "observedArrivals": 3007,
+       "observedCompletions": 3006,
+       "changeInPendingWork": 1,
+       "observedCompletionsPerWorkingHour": 0.6012,
+       "observedAnnualUnits": 1202.4,
+       "capacityTestArrivals": 3413,
+       "capacityTestCompletions": 3413,
+       "capacityTestChangeInPendingWork": 0,
+       "testedCapacityPerWorkingHour": 0.6826,
+       "testedAnnualCapacity": 1365.2,
+       "capacityVsPlan": 1.13482,
+       "surplusInAnnualUnits": 162.19
+      },
+      "batteryPacks": {
+       "planned": 3007.525,
+       "testedCapacity": 3413,
+       "completedReuse": 938,
+       "completedMaterialRecovery": 2068
+      },
+      "axleUnits": {
+       "countUnit": "台",
+       "reportedCapacityUnit": "台",
+       "plannedAnnual": 2406.02,
+       "plannedPerWorkingHour": 1.20301,
+       "observedArrivals": 2406,
+       "observedCompletions": 2406,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 1.203,
+       "observedAnnualUnits": 2406,
+       "capacityTestArrivals": 2731,
+       "capacityTestCompletions": 2730,
+       "capacityTestChangeInPendingWork": 1,
+       "testedCapacityPerWorkingHour": 1.365,
+       "testedAnnualCapacity": 2730,
+       "capacityVsPlan": 1.13465,
+       "surplusInAnnualUnits": 323.98
+      },
+      "observedPeakExternalOrders": {
+       "battery": 9,
+       "axle": 7
+      },
+      "capacityTestPeakExternalOrders": {
+       "battery": 10,
+       "axle": 8
+      }
+     },
+     "bottlenecks": {
+      "marketSimulationTop": [
+       {
+        "id": "b-diagnose",
+        "shareOfElapsedTime": 0.2631
+       },
+       {
+        "id": "a-strip",
+        "shareOfElapsedTime": 0.1444
+       },
+       {
+        "id": "a-rebuild",
+        "shareOfElapsedTime": 0.0418
+       }
+      ],
+      "busiestStationByLine": {
+       "battery": {
+        "id": "b-diagnose",
+        "workingShareOfShift": 0.8773
+       },
+       "axle": {
+        "id": "a-rebuild",
+        "workingShareOfShift": 0.7419
+       }
+      },
+      "capacityLaborOrStationUpperBound": {
+       "id": "b-diagnose",
+       "marketMultiple": 1.14
+      },
+      "testedMarketMultiple": 1.135
+     },
+     "minimumSizing": {
+      "loadMinutesForScalableResources": {
+       "b-receive": 30075.25,
+       "handling": 98646.82,
+       "b-safety": 36090.3,
+       "battery-tech": 90225.75,
+       "b-prep": 30075.25,
+       "b-diagnose": 210526.75,
+       "b-sort": 24060.2,
+       "b-reuse-ship": 9022.575,
+       "b-material-ship": 21052.675,
+       "a-receive": 19248.16,
+       "a-strip": 67368.56,
+       "axle-tech": 156391.3,
+       "a-wash": 55338.46,
+       "a-parts": 43308.36,
+       "axle-qa": 101052.84,
+       "a-rebuild": 89022.74,
+       "a-test": 57744.48,
+       "a-ship": 19248.16
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "TR-02",
+   "title": "2031〜2035年の設備・人員の推移と同時処理能力",
+   "description": "2035年は電池診断機5台、e-Axle の分解台・洗浄機・再組立台・最終検査ベンチ各2台、共用AGV 1台、現場12人、支援込み14人。電池3,000トン、e-Axle 6,000台分の年投入に対し、同時処理能力は電池3,120トン/年、e-Axle 6,240台/年。",
+   "modelVersion": "1.0.0",
+   "calculationBasis": "市場量の補間、年2,000稼働時間の仮定、設備・人員の算定と年能力の検算はTR-01と共通。",
+   "constraint2031": "同時処理能力の余裕が全期間で最小。市場量に対する余力は電池7.592トン、e-Axle 15.184台で、いずれも約0.5％。電池技術員1人の年間負荷は117,180.6分（120,000分の約97.7％）で、負荷から求めた同時能力の理論上限を決める。e-Axle は再組立台1台が市場量で96.34％稼働し、模型のボトルネック順位でも首位。",
+   "annualSummary": [
+    {
+     "year": 2031,
+     "operatingStaff": 7,
+     "totalStaff": 9,
+     "diagnosticStations": 3,
+     "disassemblyBenches": 1,
+     "washers": 1,
+     "rebuildBenches": 1,
+     "finalTestBenches": 1,
+     "otherProcessStations": 9,
+     "agvs": 1,
+     "batteryCapacityTonnes": 1570,
+     "axleCapacityUnits": 3140
+    },
+    {
+     "year": 2032,
+     "operatingStaff": 9,
+     "totalStaff": 11,
+     "diagnosticStations": 3,
+     "disassemblyBenches": 1,
+     "washers": 1,
+     "rebuildBenches": 2,
+     "finalTestBenches": 1,
+     "otherProcessStations": 9,
+     "agvs": 1,
+     "batteryCapacityTonnes": 2056.332,
+     "axleCapacityUnits": 4112
+    },
+    {
+     "year": 2033,
+     "operatingStaff": 9,
+     "totalStaff": 11,
+     "diagnosticStations": 4,
+     "disassemblyBenches": 2,
+     "washers": 1,
+     "rebuildBenches": 2,
+     "finalTestBenches": 1,
+     "otherProcessStations": 9,
+     "agvs": 1,
+     "batteryCapacityTonnes": 2497.6,
+     "axleCapacityUnits": 4995
+    },
+    {
+     "year": 2034,
+     "operatingStaff": 9,
+     "totalStaff": 11,
+     "diagnosticStations": 4,
+     "disassemblyBenches": 2,
+     "washers": 2,
+     "rebuildBenches": 2,
+     "finalTestBenches": 2,
+     "otherProcessStations": 9,
+     "agvs": 1,
+     "batteryCapacityTonnes": 2719.6,
+     "axleCapacityUnits": 5439
+    },
+    {
+     "year": 2035,
+     "operatingStaff": 12,
+     "totalStaff": 14,
+     "diagnosticStations": 5,
+     "disassemblyBenches": 2,
+     "washers": 2,
+     "rebuildBenches": 2,
+     "finalTestBenches": 2,
+     "otherProcessStations": 9,
+     "agvs": 1,
+     "batteryCapacityTonnes": 3120,
+     "axleCapacityUnits": 6240
+    }
+   ],
+   "annual": [
+    {
+     "year": 2031,
+     "marketCase": "market-2031",
+     "capacityCase": "capacity-2031",
+     "input": {
+      "batteryTonnes": 1562.408,
+      "batteryPacks": 3906.02,
+      "axleUnits": 3124.816,
+      "nominalIntervalMsInOperatingTime": {
+       "battery": 1843309,
+       "axle": 2304136
+      },
+      "requestIntervalMsInElapsedTime": {
+       "battery": 5529926,
+       "axle": 6912407
+      }
+     },
+     "equipment": {
+      "b-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.3255
+      },
+      "b-safety": {
+       "count": 1,
+       "workingShareOfShift": 0.3906
+      },
+      "b-prep": {
+       "count": 1,
+       "workingShareOfShift": 0.3255
+      },
+      "b-diagnose": {
+       "count": 3,
+       "workingShareOfShift": 0.7595
+      },
+      "b-sort": {
+       "count": 1,
+       "workingShareOfShift": 0.2604
+      },
+      "b-reuse-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.1002
+      },
+      "b-material-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.2253
+      },
+      "a-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.2083
+      },
+      "a-strip": {
+       "count": 1,
+       "workingShareOfShift": 0.7292
+      },
+      "a-wash": {
+       "count": 1,
+       "workingShareOfShift": 0.599
+      },
+      "a-parts": {
+       "count": 1,
+       "workingShareOfShift": 0.4686
+      },
+      "a-rebuild": {
+       "count": 1,
+       "workingShareOfShift": 0.9634
+      },
+      "a-test": {
+       "count": 1,
+       "workingShareOfShift": 0.6248
+      },
+      "a-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.2083
+      }
+     },
+     "staff": {
+      "directByPool": {
+       "handling": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.5338,
+        "calendarBusyShareIncludingReservations": 0.4515,
+        "calendarWalkShare": 0.0028
+       },
+       "battery-tech": {
+        "count": 1,
+        "estimatedWorkingShareOfShift": 0.9765,
+        "calendarBusyShareIncludingReservations": 0.9606,
+        "calendarWalkShare": 0.0057
+       },
+       "axle-tech": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.8463,
+        "calendarBusyShareIncludingReservations": 0.7568,
+        "calendarWalkShare": 0
+       },
+       "axle-qa": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.5467,
+        "calendarBusyShareIncludingReservations": 0.4869,
+        "calendarWalkShare": 0
+       }
+      },
+      "supportingStaff": [
+       {
+        "id": "floor-lead",
+        "name": "現場監督・安全管理",
+        "count": 1
+       },
+       {
+        "id": "site-support",
+        "name": "保守・拠点運営兼務",
+        "count": 1
+       }
+      ],
+      "directTotal": 7,
+      "total": 9
+     },
+     "transport": {
+      "id": "agv",
+      "count": 1,
+      "trips": 7031,
+      "haulingTravelAndHandlingShareOfElapsedTime": 0.0655,
+      "meanDispatchWaitSec": 70.91
+     },
+     "throughput": {
+      "operatingHours": 2000,
+      "simulatedElapsedHours": 6000,
+      "batteryTonnes": {
+       "countUnit": "パック",
+       "reportedCapacityUnit": "トン",
+       "plannedAnnual": 1562.408,
+       "plannedPerWorkingHour": 0.781204,
+       "observedArrivals": 3906,
+       "observedCompletions": 3906,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 0.7812,
+       "observedAnnualUnits": 1562.4,
+       "capacityTestArrivals": 3926,
+       "capacityTestCompletions": 3925,
+       "capacityTestChangeInPendingWork": 1,
+       "testedCapacityPerWorkingHour": 0.785,
+       "testedAnnualCapacity": 1570,
+       "capacityVsPlan": 1.00486,
+       "surplusInAnnualUnits": 7.592
+      },
+      "batteryPacks": {
+       "planned": 3906.02,
+       "testedCapacity": 3925,
+       "completedReuse": 1202,
+       "completedMaterialRecovery": 2704
+      },
+      "axleUnits": {
+       "countUnit": "台",
+       "reportedCapacityUnit": "台",
+       "plannedAnnual": 3124.816,
+       "plannedPerWorkingHour": 1.562408,
+       "observedArrivals": 3125,
+       "observedCompletions": 3125,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 1.5625,
+       "observedAnnualUnits": 3125,
+       "capacityTestArrivals": 3141,
+       "capacityTestCompletions": 3140,
+       "capacityTestChangeInPendingWork": 1,
+       "testedCapacityPerWorkingHour": 1.57,
+       "testedAnnualCapacity": 3140,
+       "capacityVsPlan": 1.00486,
+       "surplusInAnnualUnits": 15.184
+      },
+      "observedPeakExternalOrders": {
+       "battery": 11,
+       "axle": 9
+      },
+      "capacityTestPeakExternalOrders": {
+       "battery": 11,
+       "axle": 9
+      }
+     },
+     "bottlenecks": {
+      "marketSimulationTop": [
+       {
+        "id": "a-rebuild",
+        "shareOfElapsedTime": 0.3105
+       },
+       {
+        "id": "a-strip",
+        "shareOfElapsedTime": 0.2172
+       }
+      ],
+      "busiestStationByLine": {
+       "battery": {
+        "id": "b-diagnose",
+        "workingShareOfShift": 0.7595
+       },
+       "axle": {
+        "id": "a-rebuild",
+        "workingShareOfShift": 0.9634
+       }
+      },
+      "capacityLaborOrStationUpperBound": {
+       "id": "battery-tech",
+       "marketMultiple": 1.0241
+      },
+      "testedMarketMultiple": 1.005
+     },
+     "minimumSizing": {
+      "loadMinutesForScalableResources": {
+       "b-receive": 39060.2,
+       "handling": 128117.456,
+       "b-safety": 46872.24,
+       "battery-tech": 117180.6,
+       "b-prep": 39060.2,
+       "b-diagnose": 273421.4,
+       "b-sort": 31248.16,
+       "b-reuse-ship": 11718.06,
+       "b-material-ship": 27342.14,
+       "a-receive": 24998.528,
+       "a-strip": 87494.848,
+       "axle-tech": 203113.04,
+       "a-wash": 71870.768,
+       "a-parts": 56246.688,
+       "axle-qa": 131242.272,
+       "a-rebuild": 115618.192,
+       "a-test": 74995.584,
+       "a-ship": 24998.528
+      }
+     }
+    },
+    {
+     "year": 2032,
+     "marketCase": "market-2032",
+     "capacityCase": "capacity-2032",
+     "input": {
+      "batteryTonnes": 1921.806,
+      "batteryPacks": 4804.515,
+      "axleUnits": 3843.612,
+      "nominalIntervalMsInOperatingTime": {
+       "battery": 1498590,
+       "axle": 1873238
+      },
+      "requestIntervalMsInElapsedTime": {
+       "battery": 4495771,
+       "axle": 5619714
+      }
+     },
+     "equipment": {
+      "b-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.4004
+      },
+      "b-safety": {
+       "count": 1,
+       "workingShareOfShift": 0.4804
+      },
+      "b-prep": {
+       "count": 1,
+       "workingShareOfShift": 0.4003
+      },
+      "b-diagnose": {
+       "count": 3,
+       "workingShareOfShift": 0.9342
+      },
+      "b-sort": {
+       "count": 1,
+       "workingShareOfShift": 0.3203
+      },
+      "b-reuse-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.1224
+      },
+      "b-material-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.2779
+      },
+      "a-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.2562
+      },
+      "a-strip": {
+       "count": 1,
+       "workingShareOfShift": 0.8969
+      },
+      "a-wash": {
+       "count": 1,
+       "workingShareOfShift": 0.7368
+      },
+      "a-parts": {
+       "count": 1,
+       "workingShareOfShift": 0.5765
+      },
+      "a-rebuild": {
+       "count": 2,
+       "workingShareOfShift": 0.5926
+      },
+      "a-test": {
+       "count": 1,
+       "workingShareOfShift": 0.7688
+      },
+      "a-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.2563
+      }
+     },
+     "staff": {
+      "directByPool": {
+       "handling": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.6566,
+        "calendarBusyShareIncludingReservations": 0.5575,
+        "calendarWalkShare": 0.0039
+       },
+       "battery-tech": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.6005,
+        "calendarBusyShareIncludingReservations": 0.4919,
+        "calendarWalkShare": 0.0017
+       },
+       "axle-tech": {
+        "count": 3,
+        "estimatedWorkingShareOfShift": 0.6941,
+        "calendarBusyShareIncludingReservations": 0.6091,
+        "calendarWalkShare": 0
+       },
+       "axle-qa": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.6726,
+        "calendarBusyShareIncludingReservations": 0.5782,
+        "calendarWalkShare": 0
+       }
+      },
+      "supportingStaff": [
+       {
+        "id": "floor-lead",
+        "name": "現場監督・安全管理",
+        "count": 1
+       },
+       {
+        "id": "site-support",
+        "name": "保守・拠点運営兼務",
+        "count": 1
+       }
+      ],
+      "directTotal": 9,
+      "total": 11
+     },
+     "transport": {
+      "id": "agv",
+      "count": 1,
+      "trips": 8649,
+      "haulingTravelAndHandlingShareOfElapsedTime": 0.0805,
+      "meanDispatchWaitSec": 70.79
+     },
+     "throughput": {
+      "operatingHours": 2000,
+      "simulatedElapsedHours": 6000,
+      "batteryTonnes": {
+       "countUnit": "パック",
+       "reportedCapacityUnit": "トン",
+       "plannedAnnual": 1921.806,
+       "plannedPerWorkingHour": 0.960903,
+       "observedArrivals": 4804,
+       "observedCompletions": 4804,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 0.9608,
+       "observedAnnualUnits": 1921.6,
+       "capacityTestArrivals": 5141,
+       "capacityTestCompletions": 5141,
+       "capacityTestChangeInPendingWork": 0,
+       "testedCapacityPerWorkingHour": 1.0281662,
+       "testedAnnualCapacity": 2056.332,
+       "capacityVsPlan": 1.07,
+       "surplusInAnnualUnits": 134.526
+      },
+      "batteryPacks": {
+       "planned": 4804.515,
+       "testedCapacity": 5140.831,
+       "completedReuse": 1469,
+       "completedMaterialRecovery": 3335
+      },
+      "axleUnits": {
+       "countUnit": "台",
+       "reportedCapacityUnit": "台",
+       "plannedAnnual": 3843.612,
+       "plannedPerWorkingHour": 1.921806,
+       "observedArrivals": 3843,
+       "observedCompletions": 3844,
+       "changeInPendingWork": -1,
+       "observedCompletionsPerWorkingHour": 1.922,
+       "observedAnnualUnits": 3844,
+       "capacityTestArrivals": 4112,
+       "capacityTestCompletions": 4112,
+       "capacityTestChangeInPendingWork": 0,
+       "testedCapacityPerWorkingHour": 2.056,
+       "testedAnnualCapacity": 4112,
+       "capacityVsPlan": 1.06983,
+       "surplusInAnnualUnits": 268.388
+      },
+      "observedPeakExternalOrders": {
+       "battery": 13,
+       "axle": 11
+      },
+      "capacityTestPeakExternalOrders": {
+       "battery": 14,
+       "axle": 11
+      }
+     },
+     "bottlenecks": {
+      "marketSimulationTop": [
+       {
+        "id": "a-strip",
+        "shareOfElapsedTime": 0.291
+       },
+       {
+        "id": "b-diagnose",
+        "shareOfElapsedTime": 0.2801
+       },
+       {
+        "id": "a-test",
+        "shareOfElapsedTime": 0.0254
+       }
+      ],
+      "busiestStationByLine": {
+       "battery": {
+        "id": "b-diagnose",
+        "workingShareOfShift": 0.9342
+       },
+       "axle": {
+        "id": "a-strip",
+        "workingShareOfShift": 0.8969
+       }
+      },
+      "capacityLaborOrStationUpperBound": {
+       "id": "b-diagnose",
+       "marketMultiple": 1.0704
+      },
+      "testedMarketMultiple": 1.07
+     },
+     "minimumSizing": {
+      "loadMinutesForScalableResources": {
+       "b-receive": 48045.15,
+       "handling": 157588.092,
+       "b-safety": 57654.18,
+       "battery-tech": 144135.45,
+       "b-prep": 48045.15,
+       "b-diagnose": 336316.05,
+       "b-sort": 38436.12,
+       "b-reuse-ship": 14413.545,
+       "b-material-ship": 33631.605,
+       "a-receive": 30748.896,
+       "a-strip": 107621.136,
+       "axle-tech": 249834.78,
+       "a-wash": 88403.076,
+       "a-parts": 69185.016,
+       "axle-qa": 161431.704,
+       "a-rebuild": 142213.644,
+       "a-test": 92246.688,
+       "a-ship": 30748.896
+      }
+     }
+    },
+    {
+     "year": 2033,
+     "marketCase": "market-2033",
+     "capacityCase": "capacity-2033",
+     "input": {
+      "batteryTonnes": 2281.204,
+      "batteryPacks": 5703.01,
+      "axleUnits": 4562.408,
+      "nominalIntervalMsInOperatingTime": {
+       "battery": 1262491,
+       "axle": 1578114
+      },
+      "requestIntervalMsInElapsedTime": {
+       "battery": 3787474,
+       "axle": 4734342
+      }
+     },
+     "equipment": {
+      "b-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.4753
+      },
+      "b-safety": {
+       "count": 1,
+       "workingShareOfShift": 0.5703
+      },
+      "b-prep": {
+       "count": 1,
+       "workingShareOfShift": 0.4753
+      },
+      "b-diagnose": {
+       "count": 4,
+       "workingShareOfShift": 0.8317
+      },
+      "b-sort": {
+       "count": 1,
+       "workingShareOfShift": 0.3803
+      },
+      "b-reuse-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.1457
+      },
+      "b-material-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.3295
+      },
+      "a-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.3041
+      },
+      "a-strip": {
+       "count": 2,
+       "workingShareOfShift": 0.5323
+      },
+      "a-wash": {
+       "count": 1,
+       "workingShareOfShift": 0.8745
+      },
+      "a-parts": {
+       "count": 1,
+       "workingShareOfShift": 0.6843
+      },
+      "a-rebuild": {
+       "count": 2,
+       "workingShareOfShift": 0.7034
+      },
+      "a-test": {
+       "count": 1,
+       "workingShareOfShift": 0.9125
+      },
+      "a-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.3042
+      }
+     },
+     "staff": {
+      "directByPool": {
+       "handling": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.7794,
+        "calendarBusyShareIncludingReservations": 0.6323,
+        "calendarWalkShare": 0.0051
+       },
+       "battery-tech": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.7129,
+        "calendarBusyShareIncludingReservations": 0.3822,
+        "calendarWalkShare": 0.0026
+       },
+       "axle-tech": {
+        "count": 3,
+        "estimatedWorkingShareOfShift": 0.8238,
+        "calendarBusyShareIncludingReservations": 0.6441,
+        "calendarWalkShare": 0.0006
+       },
+       "axle-qa": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.7984,
+        "calendarBusyShareIncludingReservations": 0.6688,
+        "calendarWalkShare": 0
+       }
+      },
+      "supportingStaff": [
+       {
+        "id": "floor-lead",
+        "name": "現場監督・安全管理",
+        "count": 1
+       },
+       {
+        "id": "site-support",
+        "name": "保守・拠点運営兼務",
+        "count": 1
+       }
+      ],
+      "directTotal": 9,
+      "total": 11
+     },
+     "transport": {
+      "id": "agv",
+      "count": 1,
+      "trips": 10265,
+      "haulingTravelAndHandlingShareOfElapsedTime": 0.0956,
+      "meanDispatchWaitSec": 69.1
+     },
+     "throughput": {
+      "operatingHours": 2000,
+      "simulatedElapsedHours": 6000,
+      "batteryTonnes": {
+       "countUnit": "パック",
+       "reportedCapacityUnit": "トン",
+       "plannedAnnual": 2281.204,
+       "plannedPerWorkingHour": 1.140602,
+       "observedArrivals": 5703,
+       "observedCompletions": 5703,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 1.1406,
+       "observedAnnualUnits": 2281.2,
+       "capacityTestArrivals": 6245,
+       "capacityTestCompletions": 6244,
+       "capacityTestChangeInPendingWork": 1,
+       "testedCapacityPerWorkingHour": 1.2488,
+       "testedAnnualCapacity": 2497.6,
+       "capacityVsPlan": 1.09486,
+       "surplusInAnnualUnits": 216.396
+      },
+      "batteryPacks": {
+       "planned": 5703.01,
+       "testedCapacity": 6244,
+       "completedReuse": 1749,
+       "completedMaterialRecovery": 3954
+      },
+      "axleUnits": {
+       "countUnit": "台",
+       "reportedCapacityUnit": "台",
+       "plannedAnnual": 4562.408,
+       "plannedPerWorkingHour": 2.281204,
+       "observedArrivals": 4562,
+       "observedCompletions": 4562,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 2.281,
+       "observedAnnualUnits": 4562,
+       "capacityTestArrivals": 4996,
+       "capacityTestCompletions": 4995,
+       "capacityTestChangeInPendingWork": 1,
+       "testedCapacityPerWorkingHour": 2.4975,
+       "testedAnnualCapacity": 4995,
+       "capacityVsPlan": 1.09482,
+       "surplusInAnnualUnits": 432.592
+      },
+      "observedPeakExternalOrders": {
+       "battery": 16,
+       "axle": 13
+      },
+      "capacityTestPeakExternalOrders": {
+       "battery": 17,
+       "axle": 14
+      }
+     },
+     "bottlenecks": {
+      "marketSimulationTop": [
+       {
+        "id": "a-wash",
+        "shareOfElapsedTime": 0.2784
+       },
+       {
+        "id": "a-test",
+        "shareOfElapsedTime": 0.2514
+       },
+       {
+        "id": "a-strip",
+        "shareOfElapsedTime": 0.0121
+       }
+      ],
+      "busiestStationByLine": {
+       "battery": {
+        "id": "b-diagnose",
+        "workingShareOfShift": 0.8317
+       },
+       "axle": {
+        "id": "a-test",
+        "workingShareOfShift": 0.9125
+       }
+      },
+      "capacityLaborOrStationUpperBound": {
+       "id": "a-test",
+       "marketMultiple": 1.0959
+      },
+      "testedMarketMultiple": 1.095
+     },
+     "minimumSizing": {
+      "loadMinutesForScalableResources": {
+       "b-receive": 57030.1,
+       "handling": 187058.728,
+       "b-safety": 68436.12,
+       "battery-tech": 171090.3,
+       "b-prep": 57030.1,
+       "b-diagnose": 399210.7,
+       "b-sort": 45624.08,
+       "b-reuse-ship": 17109.03,
+       "b-material-ship": 39921.07,
+       "a-receive": 36499.264,
+       "a-strip": 127747.424,
+       "axle-tech": 296556.52,
+       "a-wash": 104935.384,
+       "a-parts": 82123.344,
+       "axle-qa": 191621.136,
+       "a-rebuild": 168809.096,
+       "a-test": 109497.792,
+       "a-ship": 36499.264
+      }
+     }
+    },
+    {
+     "year": 2034,
+     "marketCase": "market-2034",
+     "capacityCase": "capacity-2034",
+     "input": {
+      "batteryTonnes": 2640.602,
+      "batteryPacks": 6601.505,
+      "axleUnits": 5281.204,
+      "nominalIntervalMsInOperatingTime": {
+       "battery": 1090660,
+       "axle": 1363325
+      },
+      "requestIntervalMsInElapsedTime": {
+       "battery": 3271981,
+       "axle": 4089976
+      }
+     },
+     "equipment": {
+      "b-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.5502
+      },
+      "b-safety": {
+       "count": 1,
+       "workingShareOfShift": 0.6602
+      },
+      "b-prep": {
+       "count": 1,
+       "workingShareOfShift": 0.5502
+      },
+      "b-diagnose": {
+       "count": 4,
+       "workingShareOfShift": 0.9628
+      },
+      "b-sort": {
+       "count": 1,
+       "workingShareOfShift": 0.4402
+      },
+      "b-reuse-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.1668
+      },
+      "b-material-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.3834
+      },
+      "a-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.3521
+      },
+      "a-strip": {
+       "count": 2,
+       "workingShareOfShift": 0.6161
+      },
+      "a-wash": {
+       "count": 2,
+       "workingShareOfShift": 0.5061
+      },
+      "a-parts": {
+       "count": 1,
+       "workingShareOfShift": 0.7921
+      },
+      "a-rebuild": {
+       "count": 2,
+       "workingShareOfShift": 0.8144
+      },
+      "a-test": {
+       "count": 2,
+       "workingShareOfShift": 0.5282
+      },
+      "a-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.3522
+      }
+     },
+     "staff": {
+      "directByPool": {
+       "handling": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.9023,
+        "calendarBusyShareIncludingReservations": 0.7198,
+        "calendarWalkShare": 0.0077
+       },
+       "battery-tech": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.8253,
+        "calendarBusyShareIncludingReservations": 0.6279,
+        "calendarWalkShare": 0.0041
+       },
+       "axle-tech": {
+        "count": 3,
+        "estimatedWorkingShareOfShift": 0.9537,
+        "calendarBusyShareIncludingReservations": 0.8575,
+        "calendarWalkShare": 0.0014
+       },
+       "axle-qa": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.9243,
+        "calendarBusyShareIncludingReservations": 0.9412,
+        "calendarWalkShare": 0.0011
+       }
+      },
+      "supportingStaff": [
+       {
+        "id": "floor-lead",
+        "name": "現場監督・安全管理",
+        "count": 1
+       },
+       {
+        "id": "site-support",
+        "name": "保守・拠点運営兼務",
+        "count": 1
+       }
+      ],
+      "directTotal": 9,
+      "total": 11
+     },
+     "transport": {
+      "id": "agv",
+      "count": 1,
+      "trips": 11883,
+      "haulingTravelAndHandlingShareOfElapsedTime": 0.1106,
+      "meanDispatchWaitSec": 67.51
+     },
+     "throughput": {
+      "operatingHours": 2000,
+      "simulatedElapsedHours": 6000,
+      "batteryTonnes": {
+       "countUnit": "パック",
+       "reportedCapacityUnit": "トン",
+       "plannedAnnual": 2640.602,
+       "plannedPerWorkingHour": 1.320301,
+       "observedArrivals": 6602,
+       "observedCompletions": 6602,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 1.3204,
+       "observedAnnualUnits": 2640.8,
+       "capacityTestArrivals": 6800,
+       "capacityTestCompletions": 6799,
+       "capacityTestChangeInPendingWork": 1,
+       "testedCapacityPerWorkingHour": 1.3598,
+       "testedAnnualCapacity": 2719.6,
+       "capacityVsPlan": 1.02992,
+       "surplusInAnnualUnits": 78.998
+      },
+      "batteryPacks": {
+       "planned": 6601.505,
+       "testedCapacity": 6799,
+       "completedReuse": 2001,
+       "completedMaterialRecovery": 4601
+      },
+      "axleUnits": {
+       "countUnit": "台",
+       "reportedCapacityUnit": "台",
+       "plannedAnnual": 5281.204,
+       "plannedPerWorkingHour": 2.640602,
+       "observedArrivals": 5281,
+       "observedCompletions": 5283,
+       "changeInPendingWork": -2,
+       "observedCompletionsPerWorkingHour": 2.6415,
+       "observedAnnualUnits": 5283,
+       "capacityTestArrivals": 5440,
+       "capacityTestCompletions": 5439,
+       "capacityTestChangeInPendingWork": 1,
+       "testedCapacityPerWorkingHour": 2.7195,
+       "testedAnnualCapacity": 5439,
+       "capacityVsPlan": 1.02988,
+       "surplusInAnnualUnits": 157.796
+      },
+      "observedPeakExternalOrders": {
+       "battery": 18,
+       "axle": 15
+      },
+      "capacityTestPeakExternalOrders": {
+       "battery": 19,
+       "axle": 15
+      }
+     },
+     "bottlenecks": {
+      "marketSimulationTop": [
+       {
+        "id": "b-diagnose",
+        "shareOfElapsedTime": 0.2309
+       },
+       {
+        "id": "a-parts",
+        "shareOfElapsedTime": 0.103
+       },
+       {
+        "id": "a-rebuild",
+        "shareOfElapsedTime": 0.0362
+       }
+      ],
+      "busiestStationByLine": {
+       "battery": {
+        "id": "b-diagnose",
+        "workingShareOfShift": 0.9628
+       },
+       "axle": {
+        "id": "a-rebuild",
+        "workingShareOfShift": 0.8144
+       }
+      },
+      "capacityLaborOrStationUpperBound": {
+       "id": "b-diagnose",
+       "marketMultiple": 1.0387
+      },
+      "testedMarketMultiple": 1.03
+     },
+     "minimumSizing": {
+      "loadMinutesForScalableResources": {
+       "b-receive": 66015.05,
+       "handling": 216529.364,
+       "b-safety": 79218.06,
+       "battery-tech": 198045.15,
+       "b-prep": 66015.05,
+       "b-diagnose": 462105.35,
+       "b-sort": 52812.04,
+       "b-reuse-ship": 19804.515,
+       "b-material-ship": 46210.535,
+       "a-receive": 42249.632,
+       "a-strip": 147873.712,
+       "axle-tech": 343278.26,
+       "a-wash": 121467.692,
+       "a-parts": 95061.672,
+       "axle-qa": 221810.568,
+       "a-rebuild": 195404.548,
+       "a-test": 126748.896,
+       "a-ship": 42249.632
+      }
+     }
+    },
+    {
+     "year": 2035,
+     "marketCase": "market-2035",
+     "capacityCase": "capacity-2035",
+     "input": {
+      "batteryTonnes": 3000,
+      "batteryPacks": 7500,
+      "axleUnits": 6000,
+      "nominalIntervalMsInOperatingTime": {
+       "battery": 960000,
+       "axle": 1200000
+      },
+      "requestIntervalMsInElapsedTime": {
+       "battery": 2880000,
+       "axle": 3600000
+      }
+     },
+     "equipment": {
+      "b-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.625
+      },
+      "b-safety": {
+       "count": 1,
+       "workingShareOfShift": 0.75
+      },
+      "b-prep": {
+       "count": 1,
+       "workingShareOfShift": 0.625
+      },
+      "b-diagnose": {
+       "count": 5,
+       "workingShareOfShift": 0.875
+      },
+      "b-sort": {
+       "count": 1,
+       "workingShareOfShift": 0.5
+      },
+      "b-reuse-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.1887
+      },
+      "b-material-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.4363
+      },
+      "a-receive": {
+       "count": 1,
+       "workingShareOfShift": 0.4
+      },
+      "a-strip": {
+       "count": 2,
+       "workingShareOfShift": 0.7
+      },
+      "a-wash": {
+       "count": 2,
+       "workingShareOfShift": 0.575
+      },
+      "a-parts": {
+       "count": 1,
+       "workingShareOfShift": 0.9
+      },
+      "a-rebuild": {
+       "count": 2,
+       "workingShareOfShift": 0.925
+      },
+      "a-test": {
+       "count": 2,
+       "workingShareOfShift": 0.6
+      },
+      "a-ship": {
+       "count": 1,
+       "workingShareOfShift": 0.4
+      }
+     },
+     "staff": {
+      "directByPool": {
+       "handling": {
+        "count": 3,
+        "estimatedWorkingShareOfShift": 0.6833,
+        "calendarBusyShareIncludingReservations": 0.6747,
+        "calendarWalkShare": 0.0025
+       },
+       "battery-tech": {
+        "count": 2,
+        "estimatedWorkingShareOfShift": 0.9375,
+        "calendarBusyShareIncludingReservations": 0.3175,
+        "calendarWalkShare": 0.005
+       },
+       "axle-tech": {
+        "count": 4,
+        "estimatedWorkingShareOfShift": 0.8125,
+        "calendarBusyShareIncludingReservations": 0.6042,
+        "calendarWalkShare": 0
+       },
+       "axle-qa": {
+        "count": 3,
+        "estimatedWorkingShareOfShift": 0.7,
+        "calendarBusyShareIncludingReservations": 0.6778,
+        "calendarWalkShare": 0
+       }
+      },
+      "supportingStaff": [
+       {
+        "id": "floor-lead",
+        "name": "現場監督・安全管理",
+        "count": 1
+       },
+       {
+        "id": "site-support",
+        "name": "保守・拠点運営兼務",
+        "count": 1
+       }
+      ],
+      "directTotal": 12,
+      "total": 14
+     },
+     "transport": {
+      "id": "agv",
+      "count": 1,
+      "trips": 13500,
+      "haulingTravelAndHandlingShareOfElapsedTime": 0.1257,
+      "meanDispatchWaitSec": 84.91
+     },
+     "throughput": {
+      "operatingHours": 2000,
+      "simulatedElapsedHours": 6000,
+      "batteryTonnes": {
+       "countUnit": "パック",
+       "reportedCapacityUnit": "トン",
+       "plannedAnnual": 3000,
+       "plannedPerWorkingHour": 1.5,
+       "observedArrivals": 7500,
+       "observedCompletions": 7500,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 1.5,
+       "observedAnnualUnits": 3000,
+       "capacityTestArrivals": 7800,
+       "capacityTestCompletions": 7800,
+       "capacityTestChangeInPendingWork": 0,
+       "testedCapacityPerWorkingHour": 1.56,
+       "testedAnnualCapacity": 3120,
+       "capacityVsPlan": 1.04,
+       "surplusInAnnualUnits": 120
+      },
+      "batteryPacks": {
+       "planned": 7500,
+       "testedCapacity": 7800,
+       "completedReuse": 2264,
+       "completedMaterialRecovery": 5236
+      },
+      "axleUnits": {
+       "countUnit": "台",
+       "reportedCapacityUnit": "台",
+       "plannedAnnual": 6000,
+       "plannedPerWorkingHour": 3,
+       "observedArrivals": 6000,
+       "observedCompletions": 6000,
+       "changeInPendingWork": 0,
+       "observedCompletionsPerWorkingHour": 3,
+       "observedAnnualUnits": 6000,
+       "capacityTestArrivals": 6240,
+       "capacityTestCompletions": 6240,
+       "capacityTestChangeInPendingWork": 0,
+       "testedCapacityPerWorkingHour": 3.12,
+       "testedAnnualCapacity": 6240,
+       "capacityVsPlan": 1.04,
+       "surplusInAnnualUnits": 240
+      },
+      "observedPeakExternalOrders": {
+       "battery": 20,
+       "axle": 16
+      },
+      "capacityTestPeakExternalOrders": {
+       "battery": 21,
+       "axle": 17
+      }
+     },
+     "bottlenecks": {
+      "marketSimulationTop": [
+       {
+        "id": "a-parts",
+        "shareOfElapsedTime": 0.2863
+       },
+       {
+        "id": "a-strip",
+        "shareOfElapsedTime": 0.1944
+       },
+       {
+        "id": "a-rebuild",
+        "shareOfElapsedTime": 0.0346
+       }
+      ],
+      "busiestStationByLine": {
+       "battery": {
+        "id": "b-diagnose",
+        "workingShareOfShift": 0.875
+       },
+       "axle": {
+        "id": "a-rebuild",
+        "workingShareOfShift": 0.925
+       }
+      },
+      "capacityLaborOrStationUpperBound": {
+       "id": "battery-tech",
+       "marketMultiple": 1.0667
+      },
+      "testedMarketMultiple": 1.04
+     },
+     "minimumSizing": {
+      "loadMinutesForScalableResources": {
+       "b-receive": 75000,
+       "handling": 246000,
+       "b-safety": 90000,
+       "battery-tech": 225000,
+       "b-prep": 75000,
+       "b-diagnose": 525000,
+       "b-sort": 60000,
+       "b-reuse-ship": 22500,
+       "b-material-ship": 52500,
+       "a-receive": 48000,
+       "a-strip": 168000,
+       "axle-tech": 390000,
+       "a-wash": 138000,
+       "a-parts": 108000,
+       "axle-qa": 252000,
+       "a-rebuild": 222000,
+       "a-test": 144000,
+       "a-ship": 48000
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "TR-03",
+   "title": "2030〜2035年の年間運営費の積み上げ",
+   "description": "年間運営費は2030年の109,326,204円から2035年の222,905,038円へ増える試算。人件費、保守、賃料、電力、物流、消耗品・交換部品、電池の外部処理、施設サービスを年別に積み上げる。",
+   "modelVersion": "1.0.0",
+   "calculationBasis": "年別の市場投入量を使い、人員と稼働設備はTR-01・TR-02、保守対象の取得額はTR-04の設備投資に基づく。費用の対象外はTR-05を参照。",
+   "costAssumptions": {
+    "currency": {
+     "display": "JPY",
+     "rateJpyPerThb": 4.3,
+     "source": "FA-04（仮定）",
+     "formula": "円＝THB×4.3。価格は見積時点の一定単価を2030〜2035年に適用し、各費目の円を四捨五入する。"
+    },
+    "labor": {
+     "kind": "仮定",
+     "monthlyBaseThbByRole": {
+      "handling": 22000,
+      "battery-tech": 35000,
+      "axle-tech": 33000,
+      "axle-qa": 35000,
+      "floor-lead": 55000,
+      "site-support": 32000
+     },
+     "employerAndAllowanceFactor": 1.25,
+     "months": 12,
+     "formula": "職種別人数 × 月額基本給（THB） × 12か月 × 1.25 × 4.3 円/THB。",
+     "basis": "技術職は技能と経験差、荷役職は荷受技能、監督は安全責任を反映。1.25には社会保険・手当・賞与の概算を含む。",
+     "source": {
+      "title": "Adecco Thailand Salary Guide 2026, Industrial & Manufacturing",
+      "url": "https://www.adecco.com/-/jssmedia/Project/Adecco/AdeccoTH/adeccothailand_salaryguide2026",
+      "reference": "Technicianの月額基本給は経験0〜3年で15,000〜35,000 THB、3〜5年で25,000〜50,000 THB。生産・運営部門の工程改善管理職は経験3〜5年で40,000〜80,000 THB。"
+     }
+    },
+    "maintenance": {
+     "kind": "仮定",
+     "annualRate": 0.04,
+     "formula": "稼働中の全設備の取得額（診断機・搬送・ラック・ITを含み建屋改装を除く）×4％。",
+     "basis": "保守契約・校正・補修部品を設備取得額に比例させた概算。"
+    },
+    "rent": {
+     "kind": "仮定",
+     "floorAreaM2": 2000,
+     "monthlyThbPerM2": 200,
+     "months": 12,
+     "formula": "2,000 m² × 200 THB/m²/月 × 12か月 × 4.3 円/THB。",
+     "basis": "タイの賃貸工場の募集水準を丸めた。2,000 m²は増設枠、荷さばき、電池の隔離区画と共用部を含む50 m×40 mの仮定。",
+     "source": {
+      "title": "Cushman & Wakefield, Inside Thailand’s Logistics & Industrial Market Q2 2026",
+      "url": "https://www.cushmanwakefield.com/en/thailand/insights/inside-thailands-logistics-and-industrial-market?sort=latest_update",
+      "reference": "既製賃貸工場の募集平均196 THB/m²/月。"
+     }
+    },
+    "electricity": {
+     "kind": "仮定",
+     "thbPerKwh": 4.5,
+     "fixedKwInShift": 20,
+     "fixedKwOffShift": 4,
+     "annualClockHours": 8760,
+     "avgBatteryDiagnosticKw": 12,
+     "avgAxleWasherKw": 8,
+     "avgAxleBenchKw": 16,
+     "kwhPerAgvTrip": 0.15,
+     "formula": "照明・空調等（20 kW×2,000時間＋4 kW×6,760時間）＋電池診断（投入パック×70/60時間×12 kW）＋洗浄（投入台×23/60時間×8 kW）＋最終検査（投入台×24/60時間×16 kW）＋AGV（両系列の投入合計×0.15 kWh）。合計kWh×4.5 THB/kWh×4.3 円/THB。",
+     "basis": "診断の平均正味電力と構内負荷は仮置きし、電力単価には時間帯差・需要料金・調整額相当を一括で織り込んだ。",
+     "source": {
+      "title": "Provincial Electricity Authority, Electricity Tariffs (May 2023 Onward), 3.2.2",
+      "url": "https://www.pea.co.th/sites/default/files/documents/tariff/EN_Electricity_Tariffs_May_2023.pdf",
+      "reference": "22〜33 kVの中規模一般契約の電力量料金の目安はピーク4.1839、オフピーク2.6037 THB/kWh。需要料金、調整額、基本料は別。"
+     }
+    },
+    "logistics": {
+     "kind": "仮定",
+     "baseThbPerTrip": 1950,
+     "thbPerKm": 15.5,
+     "kmPerTrip": 100,
+     "batteryHandlingFactor": 1.8,
+     "batteryPacksPerTrip": 10,
+     "axleUnitsPerTrip": 32,
+     "formula": "（1,950 THB＋15.5 THB/km×100 km）×4.3 円/THB。電池は単価を1.8倍。必要便数は回収・行先別の計画個数÷積載個数をそれぞれ切り上げ。",
+     "basis": "6輪車の一般運賃を目安とする。電池には専用荷姿・受け入れ調整の割増を仮置きし、各便4トン・10パック、e-Axle は0.1トン/台（仮定）として各便32台を想定。",
+     "source": {
+      "title": "Deliveree Thailand, 6輪車の一般貨物料金表",
+      "url": "https://www.deliveree.com/th/logistics/cargo-truck-delivery-company/",
+      "reference": "基本1,950 THB、平均15.5 THB/km。使用済み電池の専用便は別途見積もる。"
+     }
+    },
+    "consumables": {
+     "kind": "仮定",
+     "jpyPerBatteryPack": 900,
+     "jpyPerAxleKit": 14000,
+     "jpyPerAxleWash": 750,
+     "formula": "電池投入パック×900円＋e-Axle投入台数×（14,000円＋750円）。",
+     "basis": "電池は絶縁・識別・包装材、e-Axle は交換ベアリング・シール等の標準キット、洗浄剤・油剤を概算。高額部品交換・不良品再処理は未算定。"
+    },
+    "batteryExternalProcessing": {
+     "kind": "仮定",
+     "jpyPerMaterialTonne": 8000,
+     "formula": "電池の計画重量×材料回収向け70％×8,000円/トン。",
+     "basis": "外部処理先への引き渡し以降の処理費を仮置き。物流費と別建て。回収材の販売対価は収支の売上側で扱う。"
+    },
+    "facilityServices": {
+     "kind": "仮定",
+     "jpyPerYear": 2400000,
+     "formula": "240万円/年。",
+     "basis": "立地未確定のため水道・施設警備・安全教育・工場保険を年額で概算。"
+    }
+   },
+   "annual": [
+    {
+     "year": 2030,
+     "input": {
+      "batteryTonnes": 1203.01,
+      "batteryPacks": 3007.525,
+      "axleUnits": 2406.02
+     },
+     "operatingCost": {
+      "annualOpex": {
+       "laborJpy": 15802500,
+       "equipmentMaintenanceJpy": 4360000,
+       "rentJpy": 20640000,
+       "electricityJpy": 2568410,
+       "logisticsJpy": 18622870,
+       "consumablesAndPartsJpy": 38195568,
+       "batteryExternalProcessingJpy": 6736856,
+       "facilityServicesJpy": 2400000,
+       "totalJpy": 109326204
+      },
+      "annualLaborByRole": {
+       "handling": {
+        "count": 1,
+        "annualJpy": 1419000
+       },
+       "battery-tech": {
+        "count": 1,
+        "annualJpy": 2257500
+       },
+       "axle-tech": {
+        "count": 2,
+        "annualJpy": 4257000
+       },
+       "axle-qa": {
+        "count": 1,
+        "annualJpy": 2257500
+       },
+       "floor-lead": {
+        "count": 1,
+        "annualJpy": 3547500
+       },
+       "site-support": {
+        "count": 1,
+        "annualJpy": 2064000
+       }
+      },
+      "maintainedEquipmentAcquisitionJpy": 109000000,
+      "estimatedKwhByUse": {
+       "building": 67040,
+       "batteryDiagnosis": 42105.35,
+       "axleWash": 7378.461,
+       "axleFinalTest": 15398.528,
+       "agv": 812.032
+      },
+      "estimatedTotalKwh": 132734.371,
+      "truckTrips": {
+       "batteryCollection": 301,
+       "batteryReuseShipment": 91,
+       "batteryMaterialShipment": 211,
+       "axleCollection": 76,
+       "axleShipment": 76
+      },
+      "truckUnitJpy": {
+       "battery": 27090,
+       "axle": 15050
+      },
+      "batteryMaterialTonnesForProcessing": 842.107
+     }
+    },
+    {
+     "year": 2031,
+     "input": {
+      "batteryTonnes": 1562.408,
+      "batteryPacks": 3906.02,
+      "axleUnits": 3124.816
+     },
+     "operatingCost": {
+      "annualOpex": {
+       "laborJpy": 19479000,
+       "equipmentMaintenanceJpy": 4704000,
+       "rentJpy": 20640000,
+       "electricityJpy": 2948176,
+       "logisticsJpy": 24161270,
+       "consumablesAndPartsJpy": 49606454,
+       "batteryExternalProcessingJpy": 8749485,
+       "facilityServicesJpy": 2400000,
+       "totalJpy": 132688385
+      },
+      "annualLaborByRole": {
+       "handling": {
+        "count": 2,
+        "annualJpy": 2838000
+       },
+       "battery-tech": {
+        "count": 1,
+        "annualJpy": 2257500
+       },
+       "axle-tech": {
+        "count": 2,
+        "annualJpy": 4257000
+       },
+       "axle-qa": {
+        "count": 2,
+        "annualJpy": 4515000
+       },
+       "floor-lead": {
+        "count": 1,
+        "annualJpy": 3547500
+       },
+       "site-support": {
+        "count": 1,
+        "annualJpy": 2064000
+       }
+      },
+      "maintainedEquipmentAcquisitionJpy": 117600000,
+      "estimatedKwhByUse": {
+       "building": 67040,
+       "batteryDiagnosis": 54684.28,
+       "axleWash": 9582.769,
+       "axleFinalTest": 19998.822,
+       "agv": 1054.625
+      },
+      "estimatedTotalKwh": 152360.497,
+      "truckTrips": {
+       "batteryCollection": 391,
+       "batteryReuseShipment": 118,
+       "batteryMaterialShipment": 274,
+       "axleCollection": 98,
+       "axleShipment": 98
+      },
+      "truckUnitJpy": {
+       "battery": 27090,
+       "axle": 15050
+      },
+      "batteryMaterialTonnesForProcessing": 1093.6856
+     }
+    },
+    {
+     "year": 2032,
+     "input": {
+      "batteryTonnes": 1921.806,
+      "batteryPacks": 4804.515,
+      "axleUnits": 3843.612
+     },
+     "operatingCost": {
+      "annualOpex": {
+       "laborJpy": 23865000,
+       "equipmentMaintenanceJpy": 5044000,
+       "rentJpy": 20640000,
+       "electricityJpy": 3327941,
+       "logisticsJpy": 29729770,
+       "consumablesAndPartsJpy": 61017341,
+       "batteryExternalProcessingJpy": 10762114,
+       "facilityServicesJpy": 2400000,
+       "totalJpy": 156786166
+      },
+      "annualLaborByRole": {
+       "handling": {
+        "count": 2,
+        "annualJpy": 2838000
+       },
+       "battery-tech": {
+        "count": 2,
+        "annualJpy": 4515000
+       },
+       "axle-tech": {
+        "count": 3,
+        "annualJpy": 6385500
+       },
+       "axle-qa": {
+        "count": 2,
+        "annualJpy": 4515000
+       },
+       "floor-lead": {
+        "count": 1,
+        "annualJpy": 3547500
+       },
+       "site-support": {
+        "count": 1,
+        "annualJpy": 2064000
+       }
+      },
+      "maintainedEquipmentAcquisitionJpy": 126100000,
+      "estimatedKwhByUse": {
+       "building": 67040,
+       "batteryDiagnosis": 67263.21,
+       "axleWash": 11787.077,
+       "axleFinalTest": 24599.117,
+       "agv": 1297.219
+      },
+      "estimatedTotalKwh": 171986.623,
+      "truckTrips": {
+       "batteryCollection": 481,
+       "batteryReuseShipment": 145,
+       "batteryMaterialShipment": 337,
+       "axleCollection": 121,
+       "axleShipment": 121
+      },
+      "truckUnitJpy": {
+       "battery": 27090,
+       "axle": 15050
+      },
+      "batteryMaterialTonnesForProcessing": 1345.2642
+     }
+    },
+    {
+     "year": 2033,
+     "input": {
+      "batteryTonnes": 2281.204,
+      "batteryPacks": 5703.01,
+      "axleUnits": 4562.408
+     },
+     "operatingCost": {
+      "annualOpex": {
+       "laborJpy": 23865000,
+       "equipmentMaintenanceJpy": 5648000,
+       "rentJpy": 20640000,
+       "electricityJpy": 3707707,
+       "logisticsJpy": 35268170,
+       "consumablesAndPartsJpy": 72428227,
+       "batteryExternalProcessingJpy": 12774742,
+       "facilityServicesJpy": 2400000,
+       "totalJpy": 176731846
+      },
+      "annualLaborByRole": {
+       "handling": {
+        "count": 2,
+        "annualJpy": 2838000
+       },
+       "battery-tech": {
+        "count": 2,
+        "annualJpy": 4515000
+       },
+       "axle-tech": {
+        "count": 3,
+        "annualJpy": 6385500
+       },
+       "axle-qa": {
+        "count": 2,
+        "annualJpy": 4515000
+       },
+       "floor-lead": {
+        "count": 1,
+        "annualJpy": 3547500
+       },
+       "site-support": {
+        "count": 1,
+        "annualJpy": 2064000
+       }
+      },
+      "maintainedEquipmentAcquisitionJpy": 141200000,
+      "estimatedKwhByUse": {
+       "building": 67040,
+       "batteryDiagnosis": 79842.14,
+       "axleWash": 13991.385,
+       "axleFinalTest": 29199.411,
+       "agv": 1539.813
+      },
+      "estimatedTotalKwh": 191612.748,
+      "truckTrips": {
+       "batteryCollection": 571,
+       "batteryReuseShipment": 172,
+       "batteryMaterialShipment": 400,
+       "axleCollection": 143,
+       "axleShipment": 143
+      },
+      "truckUnitJpy": {
+       "battery": 27090,
+       "axle": 15050
+      },
+      "batteryMaterialTonnesForProcessing": 1596.8428
+     }
+    },
+    {
+     "year": 2034,
+     "input": {
+      "batteryTonnes": 2640.602,
+      "batteryPacks": 6601.505,
+      "axleUnits": 5281.204
+     },
+     "operatingCost": {
+      "annualOpex": {
+       "laborJpy": 23865000,
+       "equipmentMaintenanceJpy": 7040000,
+       "rentJpy": 20640000,
+       "electricityJpy": 4087472,
+       "logisticsJpy": 40836670,
+       "consumablesAndPartsJpy": 83839114,
+       "batteryExternalProcessingJpy": 14787371,
+       "facilityServicesJpy": 2400000,
+       "totalJpy": 197495627
+      },
+      "annualLaborByRole": {
+       "handling": {
+        "count": 2,
+        "annualJpy": 2838000
+       },
+       "battery-tech": {
+        "count": 2,
+        "annualJpy": 4515000
+       },
+       "axle-tech": {
+        "count": 3,
+        "annualJpy": 6385500
+       },
+       "axle-qa": {
+        "count": 2,
+        "annualJpy": 4515000
+       },
+       "floor-lead": {
+        "count": 1,
+        "annualJpy": 3547500
+       },
+       "site-support": {
+        "count": 1,
+        "annualJpy": 2064000
+       }
+      },
+      "maintainedEquipmentAcquisitionJpy": 176000000,
+      "estimatedKwhByUse": {
+       "building": 67040,
+       "batteryDiagnosis": 92421.07,
+       "axleWash": 16195.692,
+       "axleFinalTest": 33799.706,
+       "agv": 1782.406
+      },
+      "estimatedTotalKwh": 211238.874,
+      "truckTrips": {
+       "batteryCollection": 661,
+       "batteryReuseShipment": 199,
+       "batteryMaterialShipment": 463,
+       "axleCollection": 166,
+       "axleShipment": 166
+      },
+      "truckUnitJpy": {
+       "battery": 27090,
+       "axle": 15050
+      },
+      "batteryMaterialTonnesForProcessing": 1848.4214
+     }
+    },
+    {
+     "year": 2035,
+     "input": {
+      "batteryTonnes": 3000,
+      "batteryPacks": 7500,
+      "axleUnits": 6000
+     },
+     "operatingCost": {
+      "annualOpex": {
+       "laborJpy": 29670000,
+       "equipmentMaintenanceJpy": 7384000,
+       "rentJpy": 20640000,
+       "electricityJpy": 4467238,
+       "logisticsJpy": 46293800,
+       "consumablesAndPartsJpy": 95250000,
+       "batteryExternalProcessingJpy": 16800000,
+       "facilityServicesJpy": 2400000,
+       "totalJpy": 222905038
+      },
+      "annualLaborByRole": {
+       "handling": {
+        "count": 3,
+        "annualJpy": 4257000
+       },
+       "battery-tech": {
+        "count": 2,
+        "annualJpy": 4515000
+       },
+       "axle-tech": {
+        "count": 4,
+        "annualJpy": 8514000
+       },
+       "axle-qa": {
+        "count": 3,
+        "annualJpy": 6772500
+       },
+       "floor-lead": {
+        "count": 1,
+        "annualJpy": 3547500
+       },
+       "site-support": {
+        "count": 1,
+        "annualJpy": 2064000
+       }
+      },
+      "maintainedEquipmentAcquisitionJpy": 184600000,
+      "estimatedKwhByUse": {
+       "building": 67040,
+       "batteryDiagnosis": 105000,
+       "axleWash": 18400,
+       "axleFinalTest": 38400,
+       "agv": 2025
+      },
+      "estimatedTotalKwh": 230865,
+      "truckTrips": {
+       "batteryCollection": 750,
+       "batteryReuseShipment": 225,
+       "batteryMaterialShipment": 525,
+       "axleCollection": 188,
+       "axleShipment": 188
+      },
+      "truckUnitJpy": {
+       "battery": 27090,
+       "axle": 15050
+      },
+      "batteryMaterialTonnesForProcessing": 2100
+     }
+    }
+   ]
+  },
+  {
+   "id": "TR-04",
+   "title": "2030〜2035年の設備投資の積み上げ",
+   "description": "2030年に設備・診断機器・建屋改装などで136,000,000円、以降は設備増設分を計上する。2035年までの累計は211,600,000円。",
+   "modelVersion": "1.0.0",
+   "calculationBasis": "年別の市場投入量に対応するTR-01・TR-02の設備構成を使う。投資時期の仮定と試算の対象外はTR-05を参照。",
+   "costAssumptions": {
+    "currency": {
+     "display": "JPY",
+     "rateJpyPerThb": 4.3,
+     "source": "FA-04（仮定）",
+     "formula": "円＝THB×4.3。価格は見積時点の一定単価を2030〜2035年に適用し、各費目の円を四捨五入する。"
+    },
+    "capex": {
+     "kind": "仮定",
+     "formula": "初年度は台数・数量×単価の全額。翌年以降は前年度からの増設分×同じ単価。累計は初年度からの投資を加算。",
+     "equipment": {
+      "b-receive": {
+       "name": "電池荷受台・計量器・搬入治具",
+       "unitJpy": 1800000,
+       "basis": "計量器とパレット受け治具を含む1式。"
+      },
+      "b-safety": {
+       "name": "電池外観・安全検査台",
+       "unitJpy": 3200000,
+       "basis": "絶縁計・温度監視・作業台を含む1式。"
+      },
+      "b-prep": {
+       "name": "電池診断準備台",
+       "unitJpy": 1500000,
+       "basis": "車種別アダプタ・絶縁工具を含む1式。"
+      },
+      "b-diagnose": {
+       "name": "電池自動診断機",
+       "unitJpy": 8600000,
+       "basis": "1パック用の短時間診断ベンチ。2,000,000 THBを置き、専門診断台の公開価格帯を目安にした。",
+       "source": {
+        "title": "IndexBox, Battery Diagnostics Repair Market in Thailand",
+        "url": "https://www.indexbox.io/store/thailand-battery-diagnostics-repair-market-analysis-forecast-size-trends-and-insights/",
+        "reference": "専門診断ベンチの市場資料上の目安は500,000〜3,000,000 THB/台。設備の試験方式と仕様は実証で決める。"
+       }
+      },
+      "b-sort": {
+       "name": "電池選別台",
+       "unitJpy": 1600000,
+       "basis": "照合端末・行先ラベル機・荷姿保持具を含む1式。"
+      },
+      "b-reuse-ship": {
+       "name": "再利用向け出荷台",
+       "unitJpy": 1300000,
+       "basis": "梱包台・荷姿確認用の治具を含む1式。"
+      },
+      "b-material-ship": {
+       "name": "材料回収向け出荷台",
+       "unitJpy": 1300000,
+       "basis": "梱包台・引渡し用ラベル設備を含む1式。"
+      },
+      "a-receive": {
+       "name": "e-Axle 荷受台",
+       "unitJpy": 1200000,
+       "basis": "識別端末・搬入治具を含む1式。"
+      },
+      "a-strip": {
+       "name": "e-Axle 分解台",
+       "unitJpy": 6500000,
+       "basis": "専用治具・リフト・分解工具を含む1式。"
+      },
+      "a-wash": {
+       "name": "e-Axle 自動洗浄機",
+       "unitJpy": 9000000,
+       "basis": "工業用自動洗浄機と付帯設備を含む1式。"
+      },
+      "a-parts": {
+       "name": "部品検査台",
+       "unitJpy": 5300000,
+       "basis": "寸法・電気検査機器と治具を含む1式。"
+      },
+      "a-rebuild": {
+       "name": "e-Axle 再組立台",
+       "unitJpy": 8500000,
+       "basis": "締結管理工具・圧入機・車種別治具を含む1式。"
+      },
+      "a-test": {
+       "name": "e-Axle 最終検査ベンチ",
+       "unitJpy": 25800000,
+       "basis": "負荷・電気計測・記録の検査設備。6,000,000 THBを置き、工場向けベンチの公開価格帯を目安にした。",
+       "source": {
+        "title": "IndexBox, EV Diagnostic Equipment Market in Thailand",
+        "url": "https://www.indexbox.io/store/thailand-ev-diagnostic-equipment-market-analysis-forecast-size-trends-and-insights/",
+        "reference": "EOL等の検査ベンチの市場資料上の目安は1,500,000〜8,000,000 THB超/式。e-Axle 専用設備の実見積もりは未取得。"
+       }
+      },
+      "a-ship": {
+       "name": "e-Axle 出荷台",
+       "unitJpy": 1200000,
+       "basis": "出荷照合端末・固定治具を含む1式。"
+      },
+      "agv": {
+       "name": "共用パレット AGV",
+       "unitJpy": 12900000,
+       "basis": "パレット搬送機と誘導・充電・立ち上げを含む1式。3,000,000 THB/式を置いた。",
+       "source": {
+        "title": "You Should Automate That, タイ自動車部品工場向け AGV・AMR の価格目安",
+        "url": "https://www.youshouldautomatethat.tech/blog/agv-amr-automotive-ev-parts-thailand-2026/",
+        "reference": "パレット AMR 本体2,000,000〜4,000,000 THB、導入費は本体の25〜40％が目安。固定経路のAGV一式への参考。"
+       }
+      },
+      "racks": {
+       "name": "仮置き・仕掛けラック及び構内器材",
+       "unitJpy": 6500000,
+       "basis": "2035年までの両系列の仕掛け棚、保管台、パレットと構内器材を初年度にまとめて整備する1式。"
+      },
+      "traceability": {
+       "name": "受け入れ・品質の記録設備",
+       "unitJpy": 4200000,
+       "basis": "端末・構内ネットワーク・履歴管理の初期設定を含む1式。"
+      }
+     },
+     "fitout": [
+      {
+       "id": "lease-fitout",
+       "name": "賃貸建屋の工場改装",
+       "quantity": 2000,
+       "unit": "m²",
+       "unitJpy": 6500,
+       "basis": "床・受電配線・換気・作業区画を面積単価で仮置き。"
+      },
+      {
+       "id": "battery-area",
+       "name": "電池保管・隔離区画の追加工事",
+       "quantity": 1,
+       "unit": "式",
+       "unitJpy": 14000000,
+       "basis": "専用区画・監視設備・工事費の予算枠。現地の消防・保険条件に応じて再見積もり。"
+      }
+     ]
+    }
+   },
+   "annual": [
+    {
+     "year": 2030,
+     "input": {
+      "batteryTonnes": 1203.01,
+      "batteryPacks": 3007.525,
+      "axleUnits": 2406.02
+     },
+     "capex": {
+      "equipmentAdditions": [
+       {
+        "id": "b-receive",
+        "added": 1,
+        "unitJpy": 1800000,
+        "jpy": 1800000
+       },
+       {
+        "id": "b-safety",
+        "added": 1,
+        "unitJpy": 3200000,
+        "jpy": 3200000
+       },
+       {
+        "id": "b-prep",
+        "added": 1,
+        "unitJpy": 1500000,
+        "jpy": 1500000
+       },
+       {
+        "id": "b-diagnose",
+        "added": 2,
+        "unitJpy": 8600000,
+        "jpy": 17200000
+       },
+       {
+        "id": "b-sort",
+        "added": 1,
+        "unitJpy": 1600000,
+        "jpy": 1600000
+       },
+       {
+        "id": "b-reuse-ship",
+        "added": 1,
+        "unitJpy": 1300000,
+        "jpy": 1300000
+       },
+       {
+        "id": "b-material-ship",
+        "added": 1,
+        "unitJpy": 1300000,
+        "jpy": 1300000
+       },
+       {
+        "id": "a-receive",
+        "added": 1,
+        "unitJpy": 1200000,
+        "jpy": 1200000
+       },
+       {
+        "id": "a-strip",
+        "added": 1,
+        "unitJpy": 6500000,
+        "jpy": 6500000
+       },
+       {
+        "id": "a-wash",
+        "added": 1,
+        "unitJpy": 9000000,
+        "jpy": 9000000
+       },
+       {
+        "id": "a-parts",
+        "added": 1,
+        "unitJpy": 5300000,
+        "jpy": 5300000
+       },
+       {
+        "id": "a-rebuild",
+        "added": 1,
+        "unitJpy": 8500000,
+        "jpy": 8500000
+       },
+       {
+        "id": "a-test",
+        "added": 1,
+        "unitJpy": 25800000,
+        "jpy": 25800000
+       },
+       {
+        "id": "a-ship",
+        "added": 1,
+        "unitJpy": 1200000,
+        "jpy": 1200000
+       },
+       {
+        "id": "agv",
+        "added": 1,
+        "unitJpy": 12900000,
+        "jpy": 12900000
+       },
+       {
+        "id": "racks",
+        "added": 1,
+        "unitJpy": 6500000,
+        "jpy": 6500000
+       },
+       {
+        "id": "traceability",
+        "added": 1,
+        "unitJpy": 4200000,
+        "jpy": 4200000
+       }
+      ],
+      "fitout": [
+       {
+        "id": "lease-fitout",
+        "quantity": 2000,
+        "unitJpy": 6500,
+        "jpy": 13000000
+       },
+       {
+        "id": "battery-area",
+        "quantity": 1,
+        "unitJpy": 14000000,
+        "jpy": 14000000
+       }
+      ],
+      "annualJpy": 136000000,
+      "cumulativeJpy": 136000000
+     }
+    },
+    {
+     "year": 2031,
+     "input": {
+      "batteryTonnes": 1562.408,
+      "batteryPacks": 3906.02,
+      "axleUnits": 3124.816
+     },
+     "capex": {
+      "equipmentAdditions": [
+       {
+        "id": "b-diagnose",
+        "added": 1,
+        "unitJpy": 8600000,
+        "jpy": 8600000
+       }
+      ],
+      "fitout": [],
+      "annualJpy": 8600000,
+      "cumulativeJpy": 144600000
+     }
+    },
+    {
+     "year": 2032,
+     "input": {
+      "batteryTonnes": 1921.806,
+      "batteryPacks": 4804.515,
+      "axleUnits": 3843.612
+     },
+     "capex": {
+      "equipmentAdditions": [
+       {
+        "id": "a-rebuild",
+        "added": 1,
+        "unitJpy": 8500000,
+        "jpy": 8500000
+       }
+      ],
+      "fitout": [],
+      "annualJpy": 8500000,
+      "cumulativeJpy": 153100000
+     }
+    },
+    {
+     "year": 2033,
+     "input": {
+      "batteryTonnes": 2281.204,
+      "batteryPacks": 5703.01,
+      "axleUnits": 4562.408
+     },
+     "capex": {
+      "equipmentAdditions": [
+       {
+        "id": "b-diagnose",
+        "added": 1,
+        "unitJpy": 8600000,
+        "jpy": 8600000
+       },
+       {
+        "id": "a-strip",
+        "added": 1,
+        "unitJpy": 6500000,
+        "jpy": 6500000
+       }
+      ],
+      "fitout": [],
+      "annualJpy": 15100000,
+      "cumulativeJpy": 168200000
+     }
+    },
+    {
+     "year": 2034,
+     "input": {
+      "batteryTonnes": 2640.602,
+      "batteryPacks": 6601.505,
+      "axleUnits": 5281.204
+     },
+     "capex": {
+      "equipmentAdditions": [
+       {
+        "id": "a-wash",
+        "added": 1,
+        "unitJpy": 9000000,
+        "jpy": 9000000
+       },
+       {
+        "id": "a-test",
+        "added": 1,
+        "unitJpy": 25800000,
+        "jpy": 25800000
+       }
+      ],
+      "fitout": [],
+      "annualJpy": 34800000,
+      "cumulativeJpy": 203000000
+     }
+    },
+    {
+     "year": 2035,
+     "input": {
+      "batteryTonnes": 3000,
+      "batteryPacks": 7500,
+      "axleUnits": 6000
+     },
+     "capex": {
+      "equipmentAdditions": [
+       {
+        "id": "b-diagnose",
+        "added": 1,
+        "unitJpy": 8600000,
+        "jpy": 8600000
+       }
+      ],
+      "fitout": [],
+      "annualJpy": 8600000,
+      "cumulativeJpy": 211600000
+     }
+    }
+   ]
+  },
+  {
+   "id": "TR-05",
+   "title": "模型の限界と実証で確かめること",
+   "description": "2030〜2035年の市場推計を投入したときの処理能力と費用の試算。実証で得る歩留まり、取引条件、作業実績を使って再審査用の収支を更新する。",
+   "modelVersion": "1.0.0",
+   "calculationBasis": {
+    "market": "電池は2030年1,203.01トンから2035年3,000トン、e-Axle は2,406.02台分から6,000台分。途中年の直線補間と年別投入量はTR-01・TR-02を参照。",
+    "yields": {
+     "kind": "仮定",
+     "batteryReuseShare": 0.3,
+     "batteryMaterialRecoveryShare": 0.7,
+     "axleModeledProcessPassShare": 1,
+     "basis": "電池は投入時に30対70の確率で潜在区分を付け、診断後の選別で区分別に出荷する。安全受入条件を満たす電池を対象とする。e-Axle は標準の部品交換で処理できる台分を全量流し、出荷可否の再検査・不合格の戻り工程は実測待ち。模型の処理量をそのまま売上に使うには歩留まりと契約可能量が必要。"
+    },
+    "exclusions": "設備故障、欠勤、ばらつき、廃棄・再加工、AGVの実充電計画は見込んでいない。見積は税抜で、回収品の仕入れ、土地購入、減価償却、運転資金、金利、本社費用、保証費、予備費は含めない。投資は2030年を初年度として計上し、実際の発注・工事の支払年は収支計画で合わせる。"
+   },
+   "validation": [
+    {
+     "topic": "使用済み電池の契約可能量と買い手の購入条件",
+     "evidence": "回収先別に契約可能な量を確認し、買い手から購入数量・価格・支払意向の裏付けを得る。",
+     "use": "市場推計を契約で裏付けられた年量と取引条件に置き換え、投入量と売上の前提を更新する。"
+    },
+    {
+     "topic": "電池の受け入れと選別の歩留まり",
+     "evidence": "電池の受け入れ可否と、診断後の再利用・材料回収・処理対象外の内訳を確認する。",
+     "use": "電池の処理対象量と行先別の出荷量を更新し、物流・外部処理費に反映する。"
+    },
+    {
+     "topic": "電池の工程時間と稼働の制約",
+     "evidence": "診断準備・自動診断・選別の所要時間、再検査があれば戻り先・発生頻度・追加工数、設備停止や搬送待ちを確認する。",
+     "use": "実測した工程時間と停止・戻りによる追加負荷を模型に入れ、特に2031年の能力余裕を再評価する。"
+    },
+    {
+     "topic": "e-Axle の歩留まりと再検査の戻り",
+     "evidence": "別途確認する際は、最終検査の初回合格率、不合格の戻り先、再作業と再検査の時間、処理対象外となる台数を把握する。",
+     "use": "再組立・検査の負荷と出荷可能台数を更新する。"
+    }
+   ],
+   "validationScope": "MD-01で費用が承認された2027年度の小規模実証は、使用済み電池の回収・輸送、診断・選別、処理・資源回収先への引き渡しが対象。e-Axle の確認は別途扱う。"
+  }
+ ],
+ "verification": {
+  "revision": "0d7812418f147c0c27acdbd6330a8b33e22785aa",
+  "modelVersion": "1.0.0",
+  "runAt": "2026-11-23T06:55:27.334Z",
+  "finishedAt": "2026-11-23T06:55:30.488Z",
+  "exitCode": 0,
+  "totalCases": 12,
+  "matchedCases": 12,
+  "matchedYears": 6,
+  "method": "2030〜2035年の市場量・能力試験を再実行し、全12ケースの出荷先別の処理完了数を含む出力が保存済みの結果と一致した。電池は再利用向けと材料回収向けの完了パック数を合算して0.4トン/パックを掛け、e-Axleは完了台数を用いる。完了量を観測中の2,000稼働時間で割って年2,000稼働時間を掛け、市場計画年量×試験倍率との小さい方を同時処理能力とした。年別の完了数と年換算能力は各報告項目の年別明細、年換算能力は年別一覧とも一致した。",
+  "annual": [
+   {
+    "year": 2030,
+    "result": "TR-01",
+    "marketCompletions": {
+     "batteryPacks": 3006,
+     "axleUnits": 2406
+    },
+    "capacityTestCompletions": {
+     "batteryPacks": 3413,
+     "axleUnits": 2730
+    },
+    "testedAnnualCapacity": {
+     "batteryTonnes": 1365.2,
+     "axleUnits": 2730
+    }
+   },
+   {
+    "year": 2031,
+    "result": "TR-02",
+    "marketCompletions": {
+     "batteryPacks": 3906,
+     "axleUnits": 3125
+    },
+    "capacityTestCompletions": {
+     "batteryPacks": 3925,
+     "axleUnits": 3140
+    },
+    "testedAnnualCapacity": {
+     "batteryTonnes": 1570,
+     "axleUnits": 3140
+    }
+   },
+   {
+    "year": 2032,
+    "result": "TR-02",
+    "marketCompletions": {
+     "batteryPacks": 4804,
+     "axleUnits": 3844
+    },
+    "capacityTestCompletions": {
+     "batteryPacks": 5141,
+     "axleUnits": 4112
+    },
+    "testedAnnualCapacity": {
+     "batteryTonnes": 2056.332,
+     "axleUnits": 4112
+    }
+   },
+   {
+    "year": 2033,
+    "result": "TR-02",
+    "marketCompletions": {
+     "batteryPacks": 5703,
+     "axleUnits": 4562
+    },
+    "capacityTestCompletions": {
+     "batteryPacks": 6244,
+     "axleUnits": 4995
+    },
+    "testedAnnualCapacity": {
+     "batteryTonnes": 2497.6,
+     "axleUnits": 4995
+    }
+   },
+   {
+    "year": 2034,
+    "result": "TR-02",
+    "marketCompletions": {
+     "batteryPacks": 6602,
+     "axleUnits": 5283
+    },
+    "capacityTestCompletions": {
+     "batteryPacks": 6799,
+     "axleUnits": 5439
+    },
+    "testedAnnualCapacity": {
+     "batteryTonnes": 2719.6,
+     "axleUnits": 5439
+    }
+   },
+   {
+    "year": 2035,
+    "result": "TR-02",
+    "marketCompletions": {
+     "batteryPacks": 7500,
+     "axleUnits": 6000
+    },
+    "capacityTestCompletions": {
+     "batteryPacks": 7800,
+     "axleUnits": 6240
+    },
+    "testedAnnualCapacity": {
+     "batteryTonnes": 3120,
+     "axleUnits": 6240
+    }
+   }
+  ],
+  "gateOutput": [
+   "TR-01 2030年 市場量・能力試験の完了数と年換算能力が一致（電池 1365.2トン/年、e-Axle 2730台/年）",
+   "TR-02 2031年 市場量・能力試験の完了数と年換算能力が一致（電池 1570トン/年、e-Axle 3140台/年）",
+   "TR-02 2032年 市場量・能力試験の完了数と年換算能力が一致（電池 2056.332トン/年、e-Axle 4112台/年）",
+   "TR-02 2033年 市場量・能力試験の完了数と年換算能力が一致（電池 2497.6トン/年、e-Axle 4995台/年）",
+   "TR-02 2034年 市場量・能力試験の完了数と年換算能力が一致（電池 2719.6トン/年、e-Axle 5439台/年）",
+   "TR-02 2035年 市場量・能力試験の完了数と年換算能力が一致（電池 3120トン/年、e-Axle 6240台/年）"
+  ]
+ },
+ "runs": [
+  {
+   "case": "market-2030",
+   "year": 2030,
+   "label": "市場量・2030年",
+   "hours": 6000,
+   "produced": {
+    "e-axle": 2406,
+    "battery-material": 2068,
+    "battery-reuse": 938
+   },
+   "perHour": 0.9,
+   "leadTimeMinP50": 763.1,
+   "utilization": {
+    "b-receive": 0.251,
+    "b-safety": 0.301,
+    "b-prep": 0.251,
+    "b-diagnose": 0.877,
+    "b-sort": 0.2,
+    "b-reuse-ship": 0.078,
+    "b-material-ship": 0.172,
+    "a-receive": 0.16,
+    "a-strip": 0.561,
+    "a-wash": 0.461,
+    "a-parts": 0.361,
+    "a-rebuild": 0.742,
+    "a-test": 0.481,
+    "a-ship": 0.16
+   },
+   "workers": {
+    "handling": {
+     "count": 1,
+     "busy": 0.755
+    },
+    "battery-tech": {
+     "count": 1,
+     "busy": 0.47
+    },
+    "axle-tech": {
+     "count": 2,
+     "busy": 0.363
+    },
+    "axle-qa": {
+     "count": 1,
+     "busy": 0.81
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 5413
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "b-diagnose",
+     "share": 0.263
+    },
+    {
+     "id": "a-strip",
+     "share": 0.144
+    },
+    {
+     "id": "a-rebuild",
+     "share": 0.042
+    }
+   ]
+  },
+  {
+   "case": "capacity-2030",
+   "year": 2030,
+   "label": "能力試験・2030年",
+   "hours": 6000,
+   "produced": {
+    "battery-material": 2359,
+    "e-axle": 2730,
+    "battery-reuse": 1054
+   },
+   "perHour": 1.02,
+   "leadTimeMinP50": 915.9,
+   "utilization": {
+    "b-receive": 0.284,
+    "b-safety": 0.341,
+    "b-prep": 0.284,
+    "b-diagnose": 0.996,
+    "b-sort": 0.228,
+    "b-reuse-ship": 0.088,
+    "b-material-ship": 0.197,
+    "a-receive": 0.182,
+    "a-strip": 0.637,
+    "a-wash": 0.523,
+    "a-parts": 0.41,
+    "a-rebuild": 0.842,
+    "a-test": 0.546,
+    "a-ship": 0.182
+   },
+   "workers": {
+    "handling": {
+     "count": 1,
+     "busy": 0.75
+    },
+    "battery-tech": {
+     "count": 1,
+     "busy": 0.64
+    },
+    "axle-tech": {
+     "count": 2,
+     "busy": 0.643
+    },
+    "axle-qa": {
+     "count": 1,
+     "busy": 0.987
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 6144
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "b-diagnose",
+     "share": 0.324
+    },
+    {
+     "id": "a-rebuild",
+     "share": 0.018
+    },
+    {
+     "id": "a-strip",
+     "share": 0.008
+    }
+   ]
+  },
+  {
+   "case": "market-2031",
+   "year": 2031,
+   "label": "市場量・2031年",
+   "hours": 6000,
+   "produced": {
+    "e-axle": 3125,
+    "battery-reuse": 1202,
+    "battery-material": 2704
+   },
+   "perHour": 1.17,
+   "leadTimeMinP50": 873.3,
+   "utilization": {
+    "b-receive": 0.326,
+    "b-safety": 0.391,
+    "b-prep": 0.326,
+    "b-diagnose": 0.76,
+    "b-sort": 0.26,
+    "b-reuse-ship": 0.1,
+    "b-material-ship": 0.225,
+    "a-receive": 0.208,
+    "a-strip": 0.729,
+    "a-wash": 0.599,
+    "a-parts": 0.469,
+    "a-rebuild": 0.963,
+    "a-test": 0.625,
+    "a-ship": 0.208
+   },
+   "workers": {
+    "handling": {
+     "count": 2,
+     "busy": 0.451
+    },
+    "battery-tech": {
+     "count": 1,
+     "busy": 0.961
+    },
+    "axle-tech": {
+     "count": 2,
+     "busy": 0.757
+    },
+    "axle-qa": {
+     "count": 2,
+     "busy": 0.487
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 7031
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "a-rebuild",
+     "share": 0.311
+    },
+    {
+     "id": "a-strip",
+     "share": 0.217
+    },
+    {
+     "id": "a-wash",
+     "share": 0
+    }
+   ]
+  },
+  {
+   "case": "capacity-2031",
+   "year": 2031,
+   "label": "能力試験・2031年",
+   "hours": 6000,
+   "produced": {
+    "battery-material": 2716,
+    "e-axle": 3140,
+    "battery-reuse": 1209
+   },
+   "perHour": 1.18,
+   "leadTimeMinP50": 881.7,
+   "utilization": {
+    "b-receive": 0.327,
+    "b-safety": 0.393,
+    "b-prep": 0.327,
+    "b-diagnose": 0.763,
+    "b-sort": 0.262,
+    "b-reuse-ship": 0.101,
+    "b-material-ship": 0.226,
+    "a-receive": 0.209,
+    "a-strip": 0.733,
+    "a-wash": 0.602,
+    "a-parts": 0.471,
+    "a-rebuild": 0.968,
+    "a-test": 0.628,
+    "a-ship": 0.209
+   },
+   "workers": {
+    "handling": {
+     "count": 2,
+     "busy": 0.516
+    },
+    "battery-tech": {
+     "count": 1,
+     "busy": 1
+    },
+    "axle-tech": {
+     "count": 2,
+     "busy": 0.701
+    },
+    "axle-qa": {
+     "count": 2,
+     "busy": 0.391
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 7066
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "a-rebuild",
+     "share": 0.317
+    },
+    {
+     "id": "a-strip",
+     "share": 0.204
+    },
+    {
+     "id": "a-test",
+     "share": 0
+    }
+   ]
+  },
+  {
+   "case": "market-2032",
+   "year": 2032,
+   "label": "市場量・2032年",
+   "hours": 6000,
+   "produced": {
+    "battery-material": 3335,
+    "e-axle": 3844,
+    "battery-reuse": 1469
+   },
+   "perHour": 1.44,
+   "leadTimeMinP50": 781.4,
+   "utilization": {
+    "b-receive": 0.4,
+    "b-safety": 0.48,
+    "b-prep": 0.4,
+    "b-diagnose": 0.934,
+    "b-sort": 0.32,
+    "b-reuse-ship": 0.122,
+    "b-material-ship": 0.278,
+    "a-receive": 0.256,
+    "a-strip": 0.897,
+    "a-wash": 0.737,
+    "a-parts": 0.576,
+    "a-rebuild": 0.593,
+    "a-test": 0.769,
+    "a-ship": 0.256
+   },
+   "workers": {
+    "handling": {
+     "count": 2,
+     "busy": 0.557
+    },
+    "battery-tech": {
+     "count": 2,
+     "busy": 0.492
+    },
+    "axle-tech": {
+     "count": 3,
+     "busy": 0.609
+    },
+    "axle-qa": {
+     "count": 2,
+     "busy": 0.578
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 8649
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "a-strip",
+     "share": 0.291
+    },
+    {
+     "id": "b-diagnose",
+     "share": 0.28
+    },
+    {
+     "id": "a-test",
+     "share": 0.025
+    }
+   ]
+  },
+  {
+   "case": "capacity-2032",
+   "year": 2032,
+   "label": "能力試験・2032年",
+   "hours": 6000,
+   "produced": {
+    "battery-material": 3559,
+    "e-axle": 4112,
+    "battery-reuse": 1582
+   },
+   "perHour": 1.54,
+   "leadTimeMinP50": 871.6,
+   "utilization": {
+    "b-receive": 0.428,
+    "b-safety": 0.514,
+    "b-prep": 0.428,
+    "b-diagnose": 1,
+    "b-sort": 0.343,
+    "b-reuse-ship": 0.132,
+    "b-material-ship": 0.297,
+    "a-receive": 0.274,
+    "a-strip": 0.96,
+    "a-wash": 0.788,
+    "a-parts": 0.617,
+    "a-rebuild": 0.634,
+    "a-test": 0.822,
+    "a-ship": 0.274
+   },
+   "workers": {
+    "handling": {
+     "count": 2,
+     "busy": 0.567
+    },
+    "battery-tech": {
+     "count": 2,
+     "busy": 0.46
+    },
+    "axle-tech": {
+     "count": 3,
+     "busy": 0.719
+    },
+    "axle-qa": {
+     "count": 2,
+     "busy": 0.551
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 9254
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "b-diagnose",
+     "share": 0.312
+    },
+    {
+     "id": "a-strip",
+     "share": 0.055
+    },
+    {
+     "id": "a-test",
+     "share": 0
+    }
+   ]
+  },
+  {
+   "case": "market-2033",
+   "year": 2033,
+   "label": "市場量・2033年",
+   "hours": 6000,
+   "produced": {
+    "e-axle": 4562,
+    "battery-material": 3954,
+    "battery-reuse": 1749
+   },
+   "perHour": 1.71,
+   "leadTimeMinP50": 762.3,
+   "utilization": {
+    "b-receive": 0.475,
+    "b-safety": 0.57,
+    "b-prep": 0.475,
+    "b-diagnose": 0.832,
+    "b-sort": 0.38,
+    "b-reuse-ship": 0.146,
+    "b-material-ship": 0.33,
+    "a-receive": 0.304,
+    "a-strip": 0.532,
+    "a-wash": 0.875,
+    "a-parts": 0.684,
+    "a-rebuild": 0.703,
+    "a-test": 0.913,
+    "a-ship": 0.304
+   },
+   "workers": {
+    "handling": {
+     "count": 2,
+     "busy": 0.632
+    },
+    "battery-tech": {
+     "count": 2,
+     "busy": 0.382
+    },
+    "axle-tech": {
+     "count": 3,
+     "busy": 0.644
+    },
+    "axle-qa": {
+     "count": 2,
+     "busy": 0.669
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 10265
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "a-wash",
+     "share": 0.278
+    },
+    {
+     "id": "a-test",
+     "share": 0.251
+    },
+    {
+     "id": "a-strip",
+     "share": 0.012
+    }
+   ]
+  },
+  {
+   "case": "capacity-2033",
+   "year": 2033,
+   "label": "能力試験・2033年",
+   "hours": 6000,
+   "produced": {
+    "battery-material": 4341,
+    "e-axle": 4995,
+    "battery-reuse": 1903
+   },
+   "perHour": 1.87,
+   "leadTimeMinP50": 896.1,
+   "utilization": {
+    "b-receive": 0.52,
+    "b-safety": 0.624,
+    "b-prep": 0.52,
+    "b-diagnose": 0.911,
+    "b-sort": 0.416,
+    "b-reuse-ship": 0.159,
+    "b-material-ship": 0.362,
+    "a-receive": 0.333,
+    "a-strip": 0.583,
+    "a-wash": 0.957,
+    "a-parts": 0.749,
+    "a-rebuild": 0.77,
+    "a-test": 0.999,
+    "a-ship": 0.333
+   },
+   "workers": {
+    "handling": {
+     "count": 2,
+     "busy": 0.556
+    },
+    "battery-tech": {
+     "count": 2,
+     "busy": 0.659
+    },
+    "axle-tech": {
+     "count": 3,
+     "busy": 0.81
+    },
+    "axle-qa": {
+     "count": 2,
+     "busy": 0.879
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 11240
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "a-test",
+     "share": 0.297
+    },
+    {
+     "id": "a-wash",
+     "share": 0.091
+    },
+    {
+     "id": "b-diagnose",
+     "share": 0
+    }
+   ]
+  },
+  {
+   "case": "market-2034",
+   "year": 2034,
+   "label": "市場量・2034年",
+   "hours": 6000,
+   "produced": {
+    "e-axle": 5283,
+    "battery-material": 4601,
+    "battery-reuse": 2001
+   },
+   "perHour": 1.98,
+   "leadTimeMinP50": 893.1,
+   "utilization": {
+    "b-receive": 0.55,
+    "b-safety": 0.66,
+    "b-prep": 0.55,
+    "b-diagnose": 0.963,
+    "b-sort": 0.44,
+    "b-reuse-ship": 0.167,
+    "b-material-ship": 0.383,
+    "a-receive": 0.352,
+    "a-strip": 0.616,
+    "a-wash": 0.506,
+    "a-parts": 0.792,
+    "a-rebuild": 0.814,
+    "a-test": 0.528,
+    "a-ship": 0.352
+   },
+   "workers": {
+    "handling": {
+     "count": 2,
+     "busy": 0.72
+    },
+    "battery-tech": {
+     "count": 2,
+     "busy": 0.628
+    },
+    "axle-tech": {
+     "count": 3,
+     "busy": 0.858
+    },
+    "axle-qa": {
+     "count": 2,
+     "busy": 0.941
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 11883
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "b-diagnose",
+     "share": 0.231
+    },
+    {
+     "id": "a-parts",
+     "share": 0.103
+    },
+    {
+     "id": "a-rebuild",
+     "share": 0.036
+    }
+   ]
+  },
+  {
+   "case": "capacity-2034",
+   "year": 2034,
+   "label": "能力試験・2034年",
+   "hours": 6000,
+   "produced": {
+    "battery-reuse": 2065,
+    "e-axle": 5439,
+    "battery-material": 4734
+   },
+   "perHour": 2.04,
+   "leadTimeMinP50": 973.1,
+   "utilization": {
+    "b-receive": 0.567,
+    "b-safety": 0.68,
+    "b-prep": 0.567,
+    "b-diagnose": 0.992,
+    "b-sort": 0.453,
+    "b-reuse-ship": 0.172,
+    "b-material-ship": 0.395,
+    "a-receive": 0.363,
+    "a-strip": 0.635,
+    "a-wash": 0.521,
+    "a-parts": 0.816,
+    "a-rebuild": 0.839,
+    "a-test": 0.544,
+    "a-ship": 0.363
+   },
+   "workers": {
+    "handling": {
+     "count": 2,
+     "busy": 0.741
+    },
+    "battery-tech": {
+     "count": 2,
+     "busy": 0.875
+    },
+    "axle-tech": {
+     "count": 3,
+     "busy": 0.945
+    },
+    "axle-qa": {
+     "count": 2,
+     "busy": 0.973
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 12239
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "b-diagnose",
+     "share": 0.303
+    },
+    {
+     "id": "a-parts",
+     "share": 0.042
+    },
+    {
+     "id": "a-rebuild",
+     "share": 0.017
+    }
+   ]
+  },
+  {
+   "case": "market-2035",
+   "year": 2035,
+   "label": "市場量・2035年",
+   "hours": 6000,
+   "produced": {
+    "battery-material": 5236,
+    "e-axle": 6000,
+    "battery-reuse": 2264
+   },
+   "perHour": 2.25,
+   "leadTimeMinP50": 825,
+   "utilization": {
+    "b-receive": 0.625,
+    "b-safety": 0.75,
+    "b-prep": 0.625,
+    "b-diagnose": 0.875,
+    "b-sort": 0.5,
+    "b-reuse-ship": 0.189,
+    "b-material-ship": 0.436,
+    "a-receive": 0.4,
+    "a-strip": 0.7,
+    "a-wash": 0.575,
+    "a-parts": 0.9,
+    "a-rebuild": 0.925,
+    "a-test": 0.6,
+    "a-ship": 0.4
+   },
+   "workers": {
+    "handling": {
+     "count": 3,
+     "busy": 0.675
+    },
+    "battery-tech": {
+     "count": 2,
+     "busy": 0.317
+    },
+    "axle-tech": {
+     "count": 4,
+     "busy": 0.604
+    },
+    "axle-qa": {
+     "count": 3,
+     "busy": 0.678
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 13500
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "a-parts",
+     "share": 0.286
+    },
+    {
+     "id": "a-strip",
+     "share": 0.194
+    },
+    {
+     "id": "a-rebuild",
+     "share": 0.035
+    }
+   ]
+  },
+  {
+   "case": "capacity-2035",
+   "year": 2035,
+   "label": "能力試験・2035年",
+   "hours": 6000,
+   "produced": {
+    "e-axle": 6240,
+    "battery-material": 5443,
+    "battery-reuse": 2357
+   },
+   "perHour": 2.34,
+   "leadTimeMinP50": 877.4,
+   "utilization": {
+    "b-receive": 0.65,
+    "b-safety": 0.78,
+    "b-prep": 0.65,
+    "b-diagnose": 0.91,
+    "b-sort": 0.52,
+    "b-reuse-ship": 0.196,
+    "b-material-ship": 0.454,
+    "a-receive": 0.416,
+    "a-strip": 0.728,
+    "a-wash": 0.598,
+    "a-parts": 0.936,
+    "a-rebuild": 0.962,
+    "a-test": 0.624,
+    "a-ship": 0.416
+   },
+   "workers": {
+    "handling": {
+     "count": 3,
+     "busy": 0.641
+    },
+    "battery-tech": {
+     "count": 2,
+     "busy": 0.997
+    },
+    "axle-tech": {
+     "count": 4,
+     "busy": 0.695
+    },
+    "axle-qa": {
+     "count": 3,
+     "busy": 0.752
+    }
+   },
+   "fleets": {
+    "agv": {
+     "count": 1,
+     "trips": 14040
+    }
+   },
+   "bottlenecks": [
+    {
+     "id": "a-parts",
+     "share": 0.29
+    },
+    {
+     "id": "a-strip",
+     "share": 0.206
+    },
+    {
+     "id": "a-rebuild",
+     "share": 0.039
+    }
+   ]
+  }
+ ],
+ "runsAt": "2026-11-23T06:44:22.000Z"
+}

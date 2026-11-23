@@ -1,0 +1,204 @@
+{
+  "source": "docs/business-map.json",
+  "phases": {
+    "process": [
+      "n-cd7edb282596516934e85994c2e0dffc"
+    ],
+    "opportunity": [
+      "n-12840ab7fb72a850fa29530ea098c328"
+    ],
+    "hypothesis": [
+      "n-2359f0f1f14180b959c0cf281a00ecdc"
+    ],
+    "market": [
+      "n-fd0dfde48cce4a2453e5576a58940874"
+    ],
+    "business-model": [
+      "n-2d9eb54e5f9758dc7f03302c6a4bd610"
+    ],
+    "execution": [
+      "n-24dbb82656190f0937661a775ceab769"
+    ],
+    "financial-plan": [
+      "n-f50f56679c071c34042c7e0824f00943"
+    ],
+    "risk": [
+      "n-91bb5a15e0d9199c738dc4b96234cc24"
+    ],
+    "investment": [
+      "n-9fb07de27f8e8a90770a5c4e88e411a6"
+    ],
+    "business-plan": [
+      "n-9ab688f1a59414239f08ff314271d13c"
+    ],
+    "presentation": [
+      "n-83c8bf871d71978090730538fb115a0f"
+    ],
+    "management-decision": [
+      "n-4231362cfa6e4a8e4ebc357ac9393b47"
+    ],
+    "learning": [
+      "n-2b732fc6e3ab1a62c5aa702e8846f546"
+    ]
+  },
+  "sections": {
+    "start": [
+      "n-16308079ecf2585b3af59d1a478597af"
+    ],
+    "assess": [
+      "n-e4603d941c0306c12bb12127d0272c8e"
+    ],
+    "build": [
+      "n-acc6e2a3048e69f675eea5a1b42aba7f"
+    ],
+    "decide": [
+      "n-e2ce0964b557cf2ca2b3138a77a0b341"
+    ],
+    "reflect": [
+      "n-84ecafc16c47d5ddefdc2927f9f9282a"
+    ]
+  },
+  "deliverables": {
+    "business-map": [
+      "n-3cf9ae2afb44ccc2d807a612be5a9713"
+    ],
+    "definition-draft": [
+      "n-c6752e4f874dd7611eb1413b08f4e769"
+    ],
+    "opportunity-map": [
+      "n-66d5d3e9f2442dc7392f4c6937d00df3"
+    ],
+    "business-hypothesis": [
+      "n-1666ef4879f184d3722dd70151383312"
+    ],
+    "market-research": [
+      "n-9df323ace47548ac042a7c1107635223"
+    ],
+    "business-model-map": [
+      "n-8083889c76d15438d52ad58b295fc8eb"
+    ],
+    "execution-plan": [
+      "n-8a804677fe75c8352dd932d33ba100ab"
+    ],
+    "financial-model": [
+      "n-62cfc3f105f5e7bb2340f62b36892e70"
+    ],
+    "risk-table": [
+      "n-9af5dcbf3207525b88869f0967037e72"
+    ],
+    "investment-record": [
+      "n-1eeacfb5fee1044f7da0f651e80b3854"
+    ],
+    "business-plan-document": [
+      "n-d64bad997417e4713a20e16f818e5b7b"
+    ],
+    "presentation-slides": [
+      "n-d3dd1368ff9f155acde0a875258d464f"
+    ],
+    "management-record": [
+      "n-244673aff7a31e55fe7fc89b3d2932fa"
+    ],
+    "learning-record": [
+      "n-1f978c3bb019531cce855fd13bd36df0"
+    ]
+  },
+  "items": {
+    "branch": [
+      "n-5b922c47f5b8d5da72440f469fd3e002"
+    ],
+    "workflow-phase": [
+      "n-df5f75aa0e629e2003e3e95432821364"
+    ],
+    "acceptance-condition": [
+      "n-beaf187576a97b9f8f2c1af445e2446a"
+    ],
+    "opportunity": [
+      "n-e2b65112ad3cbaa650e447432e8201cb"
+    ],
+    "customer-problem": [
+      "n-60adab57b20a876eb79395c6b1b03e2a"
+    ],
+    "hypothesis": [
+      "n-197a0cea3950ad7610717af628d9a329"
+    ],
+    "market-size": [
+      "n-a43f57a57f36ae2c5a527df2efc4d2aa"
+    ],
+    "customer-segment": [
+      "n-73c1dd2bf331970806a43bfea6db4afe"
+    ],
+    "value-flow": [
+      "n-fd5fe023813493b06ccd3f0f984aa18d",
+      "n-7a1ec780382e4dd66c336abee70e9cb0",
+      "n-a50fd6c8eab15212acec8ca366225897",
+      "n-18f693d9d7453b399e2b3438b9ae95e2",
+      "n-75d4bdf281723ebfe6a15160b8b2ac29"
+    ],
+    "revenue-stream": [
+      "n-10aca6f5fa06b520c7386ad437cf9b06"
+    ],
+    "organization": [
+      "n-18286406fed9ffda51d6636b7bff0d76"
+    ],
+    "milestone": [
+      "n-c6cb0ded464e02d3cb04b339922b0138"
+    ],
+    "financial-assumption": [
+      "n-b0780457449f2884fd4ebf3a61d81b8d"
+    ],
+    "scenario": [
+      "n-afac2a428f917366131b639b4430b5a8"
+    ],
+    "risk": [
+      "n-57c34856782d07df5133e6dee2f2e3ef"
+    ],
+    "mitigation": [
+      "n-b68567ac8de3d78a895cc8d14cd9a9dd"
+    ],
+    "investment-criterion": [
+      "n-cce21c62f1d0096527db161fa11f643f"
+    ],
+    "plan-chapter": [
+      "n-7192d5927802f193194ab91c8dd4000e"
+    ],
+    "slide": [
+      "n-150412290f92518a48042840e586c0ed"
+    ],
+    "management-decision": [
+      "n-a8c3fa28a3a7fe57366bd386e3774432"
+    ],
+    "learning": [
+      "n-255b48771e7b2a73747ff5eade7307e1"
+    ]
+  },
+  "requestAdditions": {
+    "source": "早川の依頼：規則の追加、工程ごとの AI による内容確認、法務の担当への表記変更。",
+    "rules": {
+      "hypothesis.evidence": "早川の依頼",
+      "mitigation.risk": "早川の依頼",
+      "risk.covered": "早川の依頼",
+      "scenario.assumption": "早川の依頼",
+      "criterion.basis": "早川の依頼",
+      "slide.chapter": "早川の依頼",
+      "decision.criterion": "早川の依頼"
+    },
+    "acceptance": {
+      "opportunity.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "hypothesis.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "market.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "business-model.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "execution.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "financial-plan.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "risk.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "investment.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "business-plan.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "presentation.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "management-decision.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化",
+      "learning.content": "早川の依頼に基づき、地図の成果物・項目に即して具体化"
+    },
+    "updatedAcceptance": {
+      "risk.review1": "早川の依頼：法務は法務の担当と表記",
+      "investment.review1": "早川の依頼：法務は法務の担当と表記"
+    }
+  }
+}

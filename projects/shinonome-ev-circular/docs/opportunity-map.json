@@ -1,0 +1,199 @@
+{
+  "artifactKind": "mindmap",
+  "schemaVersion": 1,
+  "id": "d-43f0208023032986a67975aadd542c1a",
+  "rootId": "n-972c25ee3ec7bc03c8aa978624780bd4",
+  "layout": "radial",
+  "nodes": {
+    "n-972c25ee3ec7bc03c8aa978624780bd4": {
+      "id": "n-972c25ee3ec7bc03c8aa978624780bd4",
+      "text": "EV e-Axle・電池 循環事業の機会",
+      "children": [
+        "n-650e7a4ccc50046b4a7314ce5eb353aa",
+        "n-d1251ef6d744c33f1ab68b89a0481ca6",
+        "n-02f5c45498a2efce074e1dbdf7add50e",
+        "n-af06333a64a95b975410fcd1d06b608c"
+      ]
+    },
+    "n-650e7a4ccc50046b4a7314ce5eb353aa": {
+      "id": "n-650e7a4ccc50046b4a7314ce5eb353aa",
+      "text": "市場の変化",
+      "children": [
+        "n-53c19a6886edce65a80696edcfb96b2b",
+        "n-ec983e4d5506ec6d519df907d59c4405"
+      ],
+      "note": "出所：タイ国家EV政策委員会の EV3.5（2024〜2027年の EV 支援策）。台数の見通しは公開の統計に当たる前なので仮定。"
+    },
+    "n-d1251ef6d744c33f1ab68b89a0481ca6": {
+      "id": "n-d1251ef6d744c33f1ab68b89a0481ca6",
+      "text": "社会の課題",
+      "children": [
+        "n-d9548716658037911e7d89a21a7d4c5b",
+        "n-dcd254bc1337a448d56e32a7382abbaf"
+      ]
+    },
+    "n-02f5c45498a2efce074e1dbdf7add50e": {
+      "id": "n-02f5c45498a2efce074e1dbdf7add50e",
+      "text": "自社の強み",
+      "children": [
+        "n-28e72a9ff13d15343eb2f154c2ea2cab",
+        "n-7f7ce7b0cbd5a78b3af15dc61e15eb27"
+      ]
+    },
+    "n-af06333a64a95b975410fcd1d06b608c": {
+      "id": "n-af06333a64a95b975410fcd1d06b608c",
+      "text": "捨てた案",
+      "children": [
+        "n-a445634b96653606b81214f3054490c5",
+        "n-fb899934133db7e6714293e4ff02261d"
+      ]
+    },
+    "n-53c19a6886edce65a80696edcfb96b2b": {
+      "id": "n-53c19a6886edce65a80696edcfb96b2b",
+      "text": "OP-01 使用済みEV電池の回収・選別",
+      "children": [
+        "n-d921e2af59091a8a3b08270d170f9e1e"
+      ],
+      "note": "根拠：石田さんのメモ。タイでEV生産が拡大し、将来、使用済み電池がまとまって出るという見立て。排出時期と量は要確認。",
+      "marks": [
+        "question",
+        "idea",
+        "star"
+      ]
+    },
+    "n-d921e2af59091a8a3b08270d170f9e1e": {
+      "id": "n-d921e2af59091a8a3b08270d170f9e1e",
+      "text": "CP-01 使用済み電池の回収先を確保したい",
+      "children": [],
+      "note": "根拠：石田さんのメモの使用済み電池の行き先に関する記述からの仮説。顧客への確認が必要。",
+      "marks": [
+        "question"
+      ]
+    },
+    "n-ec983e4d5506ec6d519df907d59c4405": {
+      "id": "n-ec983e4d5506ec6d519df907d59c4405",
+      "text": "OP-02 使用済みe-Axleの回収・再利用",
+      "children": [
+        "n-699a3ca604539f5146df92aa8f67424f"
+      ],
+      "note": "根拠：石田さんのメモ。将来、使用済みe-Axleがまとまって出るという見立て。排出時期、量、再利用先は要確認。",
+      "marks": [
+        "question",
+        "idea"
+      ]
+    },
+    "n-699a3ca604539f5146df92aa8f67424f": {
+      "id": "n-699a3ca604539f5146df92aa8f67424f",
+      "text": "CP-02 使用済みe-Axleの引き取り先を見つけたい",
+      "children": [],
+      "note": "根拠：石田さんのメモの将来の排出に関する記述からの仮説。顧客への確認が必要。",
+      "marks": [
+        "question"
+      ]
+    },
+    "n-d9548716658037911e7d89a21a7d4c5b": {
+      "id": "n-d9548716658037911e7d89a21a7d4c5b",
+      "text": "OP-03 電池の適正な解体・処理への接続",
+      "children": [
+        "n-73edbb032dec0da123d9418de6fed671"
+      ],
+      "note": "根拠：石田さんのメモ。使用済み電池の行き先が決まっておらず、埋め立てや不法な解体が懸念される。実態と適正な処理先は要確認。",
+      "marks": [
+        "question",
+        "risk"
+      ]
+    },
+    "n-73edbb032dec0da123d9418de6fed671": {
+      "id": "n-73edbb032dec0da123d9418de6fed671",
+      "text": "CP-03 使用済み電池を適正に処理できる先を探したい",
+      "children": [],
+      "note": "根拠：石田さんのメモの処理先に関する記述からの仮説。顧客への確認が必要。",
+      "marks": [
+        "question"
+      ]
+    },
+    "n-dcd254bc1337a448d56e32a7382abbaf": {
+      "id": "n-dcd254bc1337a448d56e32a7382abbaf",
+      "text": "OP-04 使用済み電池からの資源回収への接続",
+      "children": [
+        "n-6183f3fb240f5a72fd504991272ccd57"
+      ],
+      "note": "根拠：石田さんのメモ。リチウム・ニッケル・コバルトは輸入に頼るとの記述。資源回収の需要と実現性は要確認。",
+      "marks": [
+        "question",
+        "idea"
+      ]
+    },
+    "n-6183f3fb240f5a72fd504991272ccd57": {
+      "id": "n-6183f3fb240f5a72fd504991272ccd57",
+      "text": "CP-04 電池材料の調達先を確保したい",
+      "children": [],
+      "note": "根拠：石田さんのメモの資源輸入に関する記述からの仮説。顧客への確認が必要。",
+      "marks": [
+        "question"
+      ]
+    },
+    "n-28e72a9ff13d15343eb2f154c2ea2cab": {
+      "id": "n-28e72a9ff13d15343eb2f154c2ea2cab",
+      "text": "OP-05 タイの物流網を生かした回収・輸送",
+      "children": [
+        "n-c5d12d3e06286af9b8ea882cfabdadec"
+      ],
+      "note": "根拠：石田さんのメモ。自動車部品の商流、タイの物流網、工場運営の経験を持つとの記述。使用済み電池やe-Axleへの適用は要確認。",
+      "marks": [
+        "question",
+        "idea"
+      ]
+    },
+    "n-c5d12d3e06286af9b8ea882cfabdadec": {
+      "id": "n-c5d12d3e06286af9b8ea882cfabdadec",
+      "text": "CP-05 使用済み部品を回収先まで運びたい",
+      "children": [],
+      "note": "根拠：石田さんのメモの物流網と将来の排出に関する記述からの仮説。顧客への確認が必要。",
+      "marks": [
+        "question"
+      ]
+    },
+    "n-a445634b96653606b81214f3054490c5": {
+      "id": "n-a445634b96653606b81214f3054490c5",
+      "text": "RJ-01 電池セルの自社製造",
+      "children": [],
+      "note": "出所：石田さんのメモ。見送り候補の理由は投資が大きすぎるため。投資額の検証は要確認。",
+      "marks": [
+        "risk",
+        "question"
+      ]
+    },
+    "n-fb899934133db7e6714293e4ff02261d": {
+      "id": "n-fb899934133db7e6714293e4ff02261d",
+      "text": "RJ-02 日本国内だけの回収",
+      "children": [],
+      "note": "出所：石田さんのメモ。見送り候補の理由は量が足りないため。回収量の検証は要確認。",
+      "marks": [
+        "risk",
+        "question"
+      ]
+    },
+    "n-7f7ce7b0cbd5a78b3af15dc61e15eb27": {
+      "id": "n-7f7ce7b0cbd5a78b3af15dc61e15eb27",
+      "text": "OP-06 e-Axle 工場の見える化の経験を再製造に生かす",
+      "children": [
+        "n-ce39e0944cf06dab20867fdfddb316d7"
+      ],
+      "marks": [
+        "question",
+        "idea"
+      ],
+      "note": "根拠：東雲物産は e-Axle 工場の見える化（工場の写し）を運営した経験がある（社内の実績）。再製造ラインの立ち上げと品質の記録に使える見込み。数字は無い。"
+    },
+    "n-ce39e0944cf06dab20867fdfddb316d7": {
+      "id": "n-ce39e0944cf06dab20867fdfddb316d7",
+      "text": "CP-06 再製造品の品質を買い手に示したい",
+      "children": [],
+      "marks": [
+        "question"
+      ],
+      "note": "根拠：仮説。整備事業者・リース会社への聞き取りで確かめる（工程3）。"
+    }
+  }
+}

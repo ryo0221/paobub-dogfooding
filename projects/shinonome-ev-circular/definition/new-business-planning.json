@@ -1,0 +1,869 @@
+{
+  "format": 1,
+  "id": "new-business-planning",
+  "version": "1.0.0",
+  "title": "新規事業の企画",
+  "purpose": "事業機会を見立て、事業計画を組み立て、投資と経営の判断を経て学びを残す。",
+  "phases": [
+    {
+      "id": "process",
+      "name": "進め方",
+      "purpose": "事業の地図（柱→工程→成果物→項目）をマインドマップで描き、それをもとに工程定義の JSON を作り、検査を通して承認する。",
+      "after": [],
+      "deliverables": [
+        "business-map",
+        "definition-draft"
+      ],
+      "acceptance": [
+        "process.map",
+        "process.check",
+        "process.approved"
+      ]
+    },
+    {
+      "id": "opportunity",
+      "name": "機会の探索",
+      "purpose": "機会の地図をまとめる。",
+      "after": [
+        "process"
+      ],
+      "deliverables": [
+        "opportunity-map"
+      ],
+      "acceptance": [
+        "opportunity.review1",
+        "opportunity.content"
+      ]
+    },
+    {
+      "id": "hypothesis",
+      "name": "事業の仮説",
+      "purpose": "事業の仮説をまとめる。",
+      "after": [
+        "opportunity"
+      ],
+      "deliverables": [
+        "business-hypothesis"
+      ],
+      "acceptance": [
+        "hypothesis.review1",
+        "hypothesis.content"
+      ]
+    },
+    {
+      "id": "market",
+      "name": "市場と顧客",
+      "purpose": "市場と顧客の調べをまとめる。",
+      "after": [
+        "hypothesis"
+      ],
+      "deliverables": [
+        "market-research"
+      ],
+      "acceptance": [
+        "market.review1",
+        "market.review2",
+        "market.content"
+      ]
+    },
+    {
+      "id": "business-model",
+      "name": "事業モデル",
+      "purpose": "事業モデルの地図をまとめる。",
+      "after": [
+        "market"
+      ],
+      "deliverables": [
+        "business-model-map"
+      ],
+      "acceptance": [
+        "business-model.review1",
+        "business-model.content"
+      ]
+    },
+    {
+      "id": "execution",
+      "name": "実行の計画",
+      "purpose": "実行の計画をまとめる。",
+      "after": [
+        "business-model"
+      ],
+      "deliverables": [
+        "execution-plan"
+      ],
+      "acceptance": [
+        "execution.review1",
+        "execution.content"
+      ]
+    },
+    {
+      "id": "financial-plan",
+      "name": "収支計画",
+      "purpose": "収支のモデル（NPV・IRR、3つのシナリオ、10年・年次）をまとめる。",
+      "after": [
+        "execution"
+      ],
+      "deliverables": [
+        "financial-model"
+      ],
+      "acceptance": [
+        "financial-plan.review1",
+        "financial-plan.content"
+      ]
+    },
+    {
+      "id": "risk",
+      "name": "リスクと対策",
+      "purpose": "リスクの表をまとめる。",
+      "after": [
+        "financial-plan"
+      ],
+      "deliverables": [
+        "risk-table"
+      ],
+      "acceptance": [
+        "risk.review1",
+        "risk.content"
+      ]
+    },
+    {
+      "id": "investment",
+      "name": "投資の判断",
+      "purpose": "投資の判断の記録をまとめる。",
+      "after": [
+        "risk"
+      ],
+      "deliverables": [
+        "investment-record"
+      ],
+      "acceptance": [
+        "investment.review1",
+        "investment.content"
+      ]
+    },
+    {
+      "id": "business-plan",
+      "name": "事業計画書",
+      "purpose": "事業計画書をまとめる。",
+      "after": [
+        "investment"
+      ],
+      "deliverables": [
+        "business-plan-document"
+      ],
+      "acceptance": [
+        "business-plan.review1",
+        "business-plan.content"
+      ]
+    },
+    {
+      "id": "presentation",
+      "name": "説明の資料",
+      "purpose": "アニメーション付きのスライドをまとめる。",
+      "after": [
+        "business-plan"
+      ],
+      "deliverables": [
+        "presentation-slides"
+      ],
+      "acceptance": [
+        "presentation.review1",
+        "presentation.content"
+      ]
+    },
+    {
+      "id": "management-decision",
+      "name": "経営の判断",
+      "purpose": "経営の判断の記録をまとめる。",
+      "after": [
+        "presentation"
+      ],
+      "deliverables": [
+        "management-record"
+      ],
+      "acceptance": [
+        "management-decision.review1",
+        "management-decision.content"
+      ]
+    },
+    {
+      "id": "learning",
+      "name": "学び",
+      "purpose": "学びの記録をまとめる。",
+      "after": [
+        "management-decision"
+      ],
+      "deliverables": [
+        "learning-record"
+      ],
+      "acceptance": [
+        "learning.review1",
+        "learning.content"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "start",
+      "name": "はじめる",
+      "phases": [
+        "process"
+      ]
+    },
+    {
+      "id": "assess",
+      "name": "見立てる",
+      "phases": [
+        "opportunity",
+        "hypothesis",
+        "market"
+      ]
+    },
+    {
+      "id": "build",
+      "name": "組み立てる",
+      "phases": [
+        "business-model",
+        "execution",
+        "financial-plan",
+        "risk"
+      ]
+    },
+    {
+      "id": "decide",
+      "name": "決める",
+      "phases": [
+        "investment",
+        "business-plan",
+        "presentation",
+        "management-decision"
+      ]
+    },
+    {
+      "id": "reflect",
+      "name": "振り返る",
+      "phases": [
+        "learning"
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "business-map",
+      "name": "事業の地図",
+      "form": "マインドマップ",
+      "outline": [
+        {
+          "heading": "事業の地図",
+          "describe": "中心に事業、枝に柱・工程・成果物・項目。枝のメモに仮説・数字の出所・担当。mindmap@1。"
+        },
+        {
+          "heading": "枝",
+          "describe": "枝を記す。",
+          "item": "branch"
+        }
+      ]
+    },
+    {
+      "id": "definition-draft",
+      "name": "工程定義の下書き",
+      "form": "データ",
+      "outline": [
+        {
+          "heading": "工程定義",
+          "describe": "open-workflow-definitions の format 1 の定義 JSON。工程・成果物・項目は事業の地図の枝から作り、どの枝から作ったかを残す。"
+        },
+        {
+          "heading": "工程",
+          "describe": "工程を記す。",
+          "item": "workflow-phase"
+        },
+        {
+          "heading": "受け入れの条件",
+          "describe": "受け入れの条件を記す。",
+          "item": "acceptance-condition"
+        }
+      ]
+    },
+    {
+      "id": "opportunity-map",
+      "name": "機会の地図",
+      "form": "図",
+      "outline": [
+        {
+          "heading": "機会の地図",
+          "describe": "機会の地図をまとめる。"
+        },
+        {
+          "heading": "機会",
+          "describe": "機会を記す。",
+          "item": "opportunity"
+        },
+        {
+          "heading": "顧客の困りごと",
+          "describe": "顧客の困りごとを記す。",
+          "item": "customer-problem"
+        }
+      ]
+    },
+    {
+      "id": "business-hypothesis",
+      "name": "事業の仮説",
+      "form": "文書",
+      "outline": [
+        {
+          "heading": "事業の仮説",
+          "describe": "事業の仮説をまとめる。"
+        },
+        {
+          "heading": "仮説",
+          "describe": "仮説ごとに確かめ方と数字の出所を付ける",
+          "item": "hypothesis"
+        }
+      ]
+    },
+    {
+      "id": "market-research",
+      "name": "市場と顧客の調べ",
+      "form": "文書",
+      "outline": [
+        {
+          "heading": "市場と顧客の調べ",
+          "describe": "市場と顧客の調べをまとめる。"
+        },
+        {
+          "heading": "市場の大きさ",
+          "describe": "出所：公開統計（タイ工業省・IEA など）、無いときは（仮定）と書く",
+          "item": "market-size"
+        },
+        {
+          "heading": "顧客の区分",
+          "describe": "顧客の区分を記す。",
+          "item": "customer-segment"
+        }
+      ]
+    },
+    {
+      "id": "business-model-map",
+      "name": "事業モデルの地図",
+      "form": "図",
+      "outline": [
+        {
+          "heading": "価値の流れ",
+          "describe": "見本：回収と診断・再生・再製造・販売とリース・資金と提携",
+          "item": "value-flow"
+        },
+        {
+          "heading": "収益の柱",
+          "describe": "収益の柱を記す。",
+          "item": "revenue-stream"
+        }
+      ]
+    },
+    {
+      "id": "execution-plan",
+      "name": "実行の計画",
+      "form": "文書",
+      "outline": [
+        {
+          "heading": "実行の計画",
+          "describe": "実行の計画をまとめる。"
+        },
+        {
+          "heading": "体制",
+          "describe": "体制を記す。",
+          "item": "organization"
+        },
+        {
+          "heading": "日程の節目",
+          "describe": "日程の節目を記す。",
+          "item": "milestone"
+        }
+      ]
+    },
+    {
+      "id": "financial-model",
+      "name": "収支のモデル（NPV・IRR、3つのシナリオ、10年・年次）",
+      "form": "表",
+      "outline": [
+        {
+          "heading": "収支のモデル（NPV・IRR、3つのシナリオ、10年・年次）",
+          "describe": "収支のモデル（NPV・IRR、3つのシナリオ、10年・年次）をまとめる。"
+        },
+        {
+          "heading": "前提",
+          "describe": "実績・予測・仮定・計算の4種を付ける。為替（THB）は前提",
+          "item": "financial-assumption"
+        },
+        {
+          "heading": "シナリオ",
+          "describe": "シナリオを記す。",
+          "item": "scenario"
+        }
+      ]
+    },
+    {
+      "id": "risk-table",
+      "name": "リスクの表",
+      "form": "表",
+      "outline": [
+        {
+          "heading": "リスクの表",
+          "describe": "リスクの表をまとめる。"
+        },
+        {
+          "heading": "リスク",
+          "describe": "リスクを記す。",
+          "item": "risk"
+        },
+        {
+          "heading": "対策",
+          "describe": "対策を記す。",
+          "item": "mitigation"
+        }
+      ]
+    },
+    {
+      "id": "investment-record",
+      "name": "投資の判断の記録",
+      "form": "文書",
+      "outline": [
+        {
+          "heading": "投資の判断の記録",
+          "describe": "投資の判断の記録をまとめる。"
+        },
+        {
+          "heading": "判断の条件",
+          "describe": "判断の条件を記す。",
+          "item": "investment-criterion"
+        }
+      ]
+    },
+    {
+      "id": "business-plan-document",
+      "name": "事業計画書",
+      "form": "文書",
+      "outline": [
+        {
+          "heading": "事業計画書",
+          "describe": "事業計画書をまとめる。"
+        },
+        {
+          "heading": "章",
+          "describe": "章を記す。",
+          "item": "plan-chapter"
+        }
+      ]
+    },
+    {
+      "id": "presentation-slides",
+      "name": "アニメーション付きのスライド",
+      "form": "スライド",
+      "outline": [
+        {
+          "heading": "アニメーション付きのスライド",
+          "describe": "アニメーション付きのスライドをまとめる。"
+        },
+        {
+          "heading": "スライド",
+          "describe": "スライドを記す。",
+          "item": "slide"
+        }
+      ]
+    },
+    {
+      "id": "management-record",
+      "name": "経営の判断の記録",
+      "form": "文書",
+      "outline": [
+        {
+          "heading": "経営の判断の記録",
+          "describe": "経営の判断の記録をまとめる。"
+        },
+        {
+          "heading": "判断",
+          "describe": "判断を記す。",
+          "item": "management-decision"
+        }
+      ]
+    },
+    {
+      "id": "learning-record",
+      "name": "学びの記録",
+      "form": "文書",
+      "outline": [
+        {
+          "heading": "学びの記録",
+          "describe": "学びの記録をまとめる。"
+        },
+        {
+          "heading": "学び",
+          "describe": "学びを記す。",
+          "item": "learning"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "branch",
+      "name": "枝",
+      "idForm": "BR-{nn}"
+    },
+    {
+      "id": "workflow-phase",
+      "name": "工程",
+      "idForm": "WP-{nn}"
+    },
+    {
+      "id": "acceptance-condition",
+      "name": "受け入れの条件",
+      "idForm": "AC-{nn}"
+    },
+    {
+      "id": "opportunity",
+      "name": "機会",
+      "idForm": "OP-{nn}"
+    },
+    {
+      "id": "customer-problem",
+      "name": "顧客の困りごと",
+      "idForm": "CP-{nn}"
+    },
+    {
+      "id": "hypothesis",
+      "name": "仮説",
+      "idForm": "HY-{nn}"
+    },
+    {
+      "id": "market-size",
+      "name": "市場の大きさ",
+      "idForm": "MS-{nn}"
+    },
+    {
+      "id": "customer-segment",
+      "name": "顧客の区分",
+      "idForm": "CS-{nn}"
+    },
+    {
+      "id": "value-flow",
+      "name": "価値の流れ",
+      "idForm": "VF-{nn}"
+    },
+    {
+      "id": "revenue-stream",
+      "name": "収益の柱",
+      "idForm": "RS-{nn}"
+    },
+    {
+      "id": "organization",
+      "name": "体制",
+      "idForm": "OR-{nn}"
+    },
+    {
+      "id": "milestone",
+      "name": "日程の節目",
+      "idForm": "ML-{nn}"
+    },
+    {
+      "id": "financial-assumption",
+      "name": "前提",
+      "idForm": "FA-{nn}"
+    },
+    {
+      "id": "scenario",
+      "name": "シナリオ",
+      "idForm": "SC-{nn}"
+    },
+    {
+      "id": "risk",
+      "name": "リスク",
+      "idForm": "RK-{nn}"
+    },
+    {
+      "id": "mitigation",
+      "name": "対策",
+      "idForm": "MT-{nn}"
+    },
+    {
+      "id": "investment-criterion",
+      "name": "判断の条件",
+      "idForm": "IC-{nn}"
+    },
+    {
+      "id": "plan-chapter",
+      "name": "章",
+      "idForm": "PC-{nn}"
+    },
+    {
+      "id": "slide",
+      "name": "スライド",
+      "idForm": "SL-{nn}"
+    },
+    {
+      "id": "management-decision",
+      "name": "判断",
+      "idForm": "MD-{nn}"
+    },
+    {
+      "id": "learning",
+      "name": "学び",
+      "idForm": "LE-{nn}"
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "process.map",
+      "text": "事業の地図に、事業の柱・工程・成果物・項目が枝として並び、工程ごとに確かめる人がメモにある。",
+      "checkedBy": "AI",
+      "target": "business-map"
+    },
+    {
+      "id": "process.check",
+      "text": "工程定義の下書きが open-workflow-definitions の検査を通り、どの工程・成果物も事業の地図の枝に結び付いている。",
+      "checkedBy": "AI",
+      "target": "definition-draft"
+    },
+    {
+      "id": "process.approved",
+      "text": "早川が事業の地図と工程定義を読み、この定義で企画を進めると承認する。",
+      "checkedBy": "人",
+      "target": "definition-draft"
+    },
+    {
+      "id": "opportunity.review1",
+      "text": "早川が機会の地図を承認する。",
+      "checkedBy": "人",
+      "target": "opportunity-map"
+    },
+    {
+      "id": "hypothesis.review1",
+      "text": "早川が事業の仮説を承認し、石田が数字の出所を確認する。",
+      "checkedBy": "人",
+      "target": "business-hypothesis"
+    },
+    {
+      "id": "market.review1",
+      "text": "石田が市場と顧客の調べを承認する。",
+      "checkedBy": "人",
+      "target": "market-research"
+    },
+    {
+      "id": "market.review2",
+      "text": "G1 企画会議：ここまでで続けるか決める。",
+      "checkedBy": "人",
+      "target": "market-research"
+    },
+    {
+      "id": "business-model.review1",
+      "text": "早川が事業モデルの地図を承認する。",
+      "checkedBy": "人",
+      "target": "business-model-map"
+    },
+    {
+      "id": "execution.review1",
+      "text": "中川が体制・システムを確認する。",
+      "checkedBy": "人",
+      "target": "execution-plan"
+    },
+    {
+      "id": "financial-plan.review1",
+      "text": "佐藤が経理の観点から収支のモデルを承認する。",
+      "checkedBy": "人",
+      "target": "financial-model"
+    },
+    {
+      "id": "risk.review1",
+      "text": "法務の担当がリスクの表を承認する。",
+      "checkedBy": "人",
+      "target": "risk-table"
+    },
+    {
+      "id": "investment.review1",
+      "text": "G2 投資委員会で財務の佐藤と法務の担当の両方が投資の判断を承認する。",
+      "checkedBy": "人",
+      "target": "investment-record"
+    },
+    {
+      "id": "business-plan.review1",
+      "text": "早川が事業計画書を承認する。",
+      "checkedBy": "人",
+      "target": "business-plan-document"
+    },
+    {
+      "id": "presentation.review1",
+      "text": "早川がアニメーション付きのスライドを承認する。",
+      "checkedBy": "人",
+      "target": "presentation-slides"
+    },
+    {
+      "id": "management-decision.review1",
+      "text": "G3 経営会議で早川が説明し、経営会議が経営の判断を承認する。",
+      "checkedBy": "人",
+      "target": "management-record"
+    },
+    {
+      "id": "learning.review1",
+      "text": "早川が学びの記録を承認する。",
+      "checkedBy": "人",
+      "target": "learning-record"
+    },
+    {
+      "id": "opportunity.content",
+      "text": "機会と顧客の困りごとがそれぞれ記載されている。",
+      "checkedBy": "AI",
+      "target": "opportunity-map"
+    },
+    {
+      "id": "hypothesis.content",
+      "text": "どの仮説にも確かめ方があり、市場の大きさまたは前提を1件以上引用する。後工程で市場の大きさや前提を作成した際にも引用を補い確認する。",
+      "checkedBy": "AI",
+      "target": "business-hypothesis",
+      "rules": [
+        "hypothesis.evidence"
+      ]
+    },
+    {
+      "id": "market.content",
+      "text": "市場の大きさには出所を記し、出所がない場合は「仮定」と記す。顧客の区分が記載されている。",
+      "checkedBy": "AI",
+      "target": "market-research"
+    },
+    {
+      "id": "business-model.content",
+      "text": "価値の流れと収益の柱がそれぞれ記載されている。",
+      "checkedBy": "AI",
+      "target": "business-model-map"
+    },
+    {
+      "id": "execution.content",
+      "text": "体制と日程の節目がそれぞれ記載されている。",
+      "checkedBy": "AI",
+      "target": "execution-plan"
+    },
+    {
+      "id": "financial-plan.content",
+      "text": "収支は10年・年次・3シナリオでNPVとIRRを示す。前提には実績・予測・仮定・計算の種類を付け、為替（THB）を置く。各シナリオは前提を引用する。",
+      "checkedBy": "AI",
+      "target": "financial-model",
+      "rules": [
+        "scenario.assumption"
+      ]
+    },
+    {
+      "id": "risk.content",
+      "text": "どのリスクも対策に引用され、覆われている。",
+      "checkedBy": "AI",
+      "target": "risk-table",
+      "rules": [
+        "mitigation.risk",
+        "risk.covered"
+      ]
+    },
+    {
+      "id": "investment.content",
+      "text": "どの判断の条件も前提またはリスクを引用する。",
+      "checkedBy": "AI",
+      "target": "investment-record",
+      "rules": [
+        "criterion.basis"
+      ]
+    },
+    {
+      "id": "business-plan.content",
+      "text": "事業計画書に章が記載されている。",
+      "checkedBy": "AI",
+      "target": "business-plan-document"
+    },
+    {
+      "id": "presentation.content",
+      "text": "どのスライドも事業計画書の章を引用する。",
+      "checkedBy": "AI",
+      "target": "presentation-slides",
+      "rules": [
+        "slide.chapter"
+      ]
+    },
+    {
+      "id": "management-decision.content",
+      "text": "どの経営の判断も判断の条件を引用する。",
+      "checkedBy": "AI",
+      "target": "management-record",
+      "rules": [
+        "decision.criterion"
+      ]
+    },
+    {
+      "id": "learning.content",
+      "text": "学びが記載されている。",
+      "checkedBy": "AI",
+      "target": "learning-record"
+    }
+  ],
+  "rules": [
+    {
+      "id": "hypothesis.evidence",
+      "type": "cites",
+      "from": "hypothesis",
+      "to": [
+        "market-size",
+        "financial-assumption"
+      ],
+      "min": 1
+    },
+    {
+      "id": "mitigation.risk",
+      "type": "cites",
+      "from": "mitigation",
+      "to": [
+        "risk"
+      ],
+      "min": 0
+    },
+    {
+      "id": "risk.covered",
+      "type": "covered",
+      "of": "risk",
+      "by": [
+        "mitigation"
+      ]
+    },
+    {
+      "id": "scenario.assumption",
+      "type": "cites",
+      "from": "scenario",
+      "to": [
+        "financial-assumption"
+      ],
+      "min": 1
+    },
+    {
+      "id": "criterion.basis",
+      "type": "cites",
+      "from": "investment-criterion",
+      "to": [
+        "financial-assumption",
+        "risk"
+      ],
+      "min": 1
+    },
+    {
+      "id": "slide.chapter",
+      "type": "cites",
+      "from": "slide",
+      "to": [
+        "plan-chapter"
+      ],
+      "min": 1
+    },
+    {
+      "id": "decision.criterion",
+      "type": "cites",
+      "from": "management-decision",
+      "to": [
+        "investment-criterion"
+      ],
+      "min": 1
+    }
+  ]
+}
