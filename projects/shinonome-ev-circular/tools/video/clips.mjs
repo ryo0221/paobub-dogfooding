@@ -3,7 +3,7 @@ const exit_ = () => { throw new Error('VIDEO_WORK（作業フォルダー）を�
 import { createRequire } from 'node:module';
 import { renameSync, mkdirSync, rmSync } from 'node:fs';
 const { chromium } = createRequire(''+(process.env.PAOBUB_DIR??'/home/user/paobub')+'/package.json')('playwright');
-const SRC=(process.env.VIDEO_WORK??exit_())+'/src/', TMP=(process.env.VIDEO_WORK??exit_())+'/rec/'; mkdirSync(TMP,{recursive:true});
+const SRC=(process.env.VIDEO_WORK??exit_())+'/src/', TMP=(process.env.VIDEO_WORK??exit_())+'/rec/'; mkdirSync(TMP,{recursive:true}); mkdirSync(SRC,{recursive:true});
 const cookie = await login('hayakawa@shinonome.example'); const [name, value] = cookie.split('=');
 const b = await chromium.launch();
 const P='http://127.0.0.1:4840/r/rprj_36ddff67adb24297';
