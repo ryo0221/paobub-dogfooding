@@ -313,7 +313,7 @@
   },
   {
    "name": "模型の検算",
-   "run": "node tools/twin/run.mjs docs/plant-model.json --check",
+   "run": "node tools/twin/run.mjs docs/plant-model.json --check && node tools/twin/run.mjs docs/plant-model.json | node tools/twin/check-results.mjs",
    "limitSeconds": 300
   }
  ]
