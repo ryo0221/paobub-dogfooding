@@ -1,0 +1,35 @@
+{
+ "applies": true,
+ "lines": [
+  {
+   "from": "BE-01",
+   "to": "FC-01",
+   "status": "ok",
+   "current": "0f34e8b0",
+   "basis": {
+    "kind": "provisional",
+    "commit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "contentCommit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "fingerprint": "0f34e8b0",
+    "evidence": "selection",
+    "at": "2026-11-25T06:54:55+00:00"
+   }
+  },
+  {
+   "from": "BE-02",
+   "to": "FC-02",
+   "status": "ok",
+   "current": "377a5430",
+   "basis": {
+    "kind": "provisional",
+    "commit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "contentCommit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "fingerprint": "377a5430",
+    "evidence": "selection",
+    "at": "2026-11-25T06:54:55+00:00"
+   }
+  }
+ ],
+ "others": [],
+ "candidates": []
+}

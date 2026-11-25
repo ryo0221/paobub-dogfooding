@@ -15,6 +15,7 @@
 | [projects/factory-twin](projects/factory-twin/) | 生産システム計画（production-system-planning 1.0.0） | 架空の e-Axle の工場のデジタルツイン（実在の会社・工場・製品とは関係なし）。1 本の組立ラインを建屋に置き、物の流れ・作業者・AGV・PLC を模擬。計画案 13.8 台/時（律速は AGV）→ 実験 40 回 → 採用案 34.4 台/時 |
 | [projects/shiraha](projects/shiraha/) | アニメのメカデザインと玩具化（mecha-design 1.2.0） | オリジナルの可変機「白羽」。白鳥のような飛ぶ形から人の形へ変わり、兜を外すと素顔。進め方〜配色の 10 工程。作業役（Codex）が CAD で組んだ 152 部品・21 姿勢の 3D モデル（干渉 0 件）、東京駅のデジタルツインでの絵 |
 | [projects/shinonome-ev-circular](projects/shinonome-ev-circular/) | 新規事業の企画（new-business-planning 1.0.0 を元にした Project 内の定義 3.6.1） | 架空の総合商社「東雲物産」が、タイで EV の e-Axle と電池を集めて生かす循環事業を企画（実在の会社とは関係なし）。全 14 工程を受け入れ。最初の判断は見送り（NPV −12.8 億円）→ 再製造の拠点を工場のデジタルツインで組んで収支の道具で入れ直し（NPV +0.37 億円）→ 再審査で保留の継続。マインドマップ・収支の道具・生きた引用も PaoBub で作って使用 |
+| [projects/accident-analysis-kr7](projects/accident-analysis-kr7/) | 故障の原因解析と対策（failure-analysis 1.1.0） | 架空の協働ロボット KR-7 の肘関節の停止遅れ（ヒヤリハット）。特性要因図・FMEA・FTA を明示した引用でつなぐ。FMEA と FTA は 2 社の担当者が共同編集で同時に開き、「候補から選ぶ」で根拠を選んだ（選んだ人と版が残る） |
 
 ## Project を PaoBub で開く
 
