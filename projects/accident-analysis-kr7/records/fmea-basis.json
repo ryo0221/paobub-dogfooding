@@ -1,0 +1,88 @@
+{
+ "applies": true,
+ "lines": [
+  {
+   "from": "FC-01",
+   "to": "FM-01",
+   "status": "ok",
+   "current": "b8882001",
+   "basis": {
+    "kind": "provisional",
+    "commit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "fingerprint": "b8882001",
+    "at": "2026-11-25T06:53:41+00:00"
+   }
+  },
+  {
+   "from": "FC-01",
+   "to": "CC-01",
+   "status": "ok",
+   "current": "21f8fc44",
+   "basis": {
+    "kind": "provisional",
+    "commit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "contentCommit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "fingerprint": "21f8fc44",
+    "evidence": "selection",
+    "at": "2026-11-25T06:54:28+00:00"
+   }
+  },
+  {
+   "from": "FC-01",
+   "to": "CC-05",
+   "status": "ok",
+   "current": "f086f1ca",
+   "basis": {
+    "kind": "provisional",
+    "commit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "contentCommit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "fingerprint": "f086f1ca",
+    "evidence": "selection",
+    "at": "2026-11-25T06:54:28+00:00"
+   }
+  },
+  {
+   "from": "FC-02",
+   "to": "FM-01",
+   "status": "ok",
+   "current": "b8882001",
+   "basis": {
+    "kind": "provisional",
+    "commit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "fingerprint": "b8882001",
+    "at": "2026-11-25T06:53:41+00:00"
+   }
+  },
+  {
+   "from": "FC-02",
+   "to": "CC-03",
+   "status": "ok",
+   "current": "888ce02a",
+   "basis": {
+    "kind": "provisional",
+    "commit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "contentCommit": "a69f7c450369b604a761ab27ee759af4c391f8a0",
+    "fingerprint": "888ce02a",
+    "evidence": "selection",
+    "at": "2026-11-25T06:54:28+00:00"
+   }
+  }
+ ],
+ "others": [],
+ "candidates": [
+  {
+   "from": "FC-01",
+   "to": "CC-01",
+   "status": "candidate",
+   "text": "FC-01 は確定前（仮説）の原因の候補 CC-01 を引いています",
+   "current": "21f8fc44"
+  },
+  {
+   "from": "FC-01",
+   "to": "CC-05",
+   "status": "candidate",
+   "text": "FC-01 は確定前（仮説）の原因の候補 CC-05 を引いています",
+   "current": "f086f1ca"
+  }
+ ]
+}

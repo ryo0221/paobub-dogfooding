@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 3,
+  "columns": [
+    {
+      "id": "item",
+      "name": "対象 / 工程",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "functionRef",
+      "name": "要求機能の ID",
+      "type": "text"
+    },
+    {
+      "id": "function",
+      "name": "要求機能",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "fmId",
+      "name": "故障モードの ID",
+      "type": "text"
+    },
+    {
+      "id": "failure",
+      "name": "故障モード",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "effect",
+      "name": "故障影響",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "fcId",
+      "name": "故障原因の ID",
+      "type": "text"
+    },
+    {
+      "id": "cause",
+      "name": "故障原因",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "prevention",
+      "name": "予防管理",
+      "type": "text"
+    },
+    {
+      "id": "detectionControl",
+      "name": "検出管理",
+      "type": "text"
+    },
+    {
+      "id": "s",
+      "name": "S",
+      "type": "number",
+      "required": true
+    },
+    {
+      "id": "o",
+      "name": "O",
+      "type": "number",
+      "required": true
+    },
+    {
+      "id": "d",
+      "name": "D",
+      "type": "number",
+      "required": true
+    },
+    {
+      "id": "rpn",
+      "name": "RPN（参考）",
+      "type": "formula",
+      "formula": "S * O * D"
+    },
+    {
+      "id": "ap",
+      "name": "AP（要評価）",
+      "type": "select",
+      "options": [
+        "未評価",
+        "H",
+        "M",
+        "L"
+      ],
+      "defaultValue": "未評価"
+    },
+    {
+      "id": "action",
+      "name": "推奨対策",
+      "type": "text"
+    },
+    {
+      "id": "owner",
+      "name": "担当",
+      "type": "text"
+    },
+    {
+      "id": "due",
+      "name": "期限",
+      "type": "date"
+    },
+    {
+      "id": "status",
+      "name": "対応状態",
+      "type": "select",
+      "options": [
+        "未着手",
+        "対応中",
+        "検証待ち",
+        "完了"
+      ],
+      "defaultValue": "未着手"
+    },
+    {
+      "id": "evidence",
+      "name": "根拠・参照メモ",
+      "type": "text"
+    }
+  ],
+  "rows": [
+    {
+      "id": "dfmea-001",
+      "values": {
+        "item": "KR-7 肘関節 / 保持ブレーキ",
+        "functionRef": null,
+        "function": "停止指令から 0.2 秒以内に関節を止める",
+        "fmId": "FM-01",
+        "failure": "停止指令の後も関節が動き続ける",
+        "effect": "作業者が治具との間に挟まれる（重傷のおそれ）",
+        "fcId": "FC-01",
+        "cause": "ブレーキの保持力が摩耗で落ちる",
+        "prevention": "摩擦材の寿命設計",
+        "detectionControl": "月 1 回の制動距離の点検",
+        "s": 9,
+        "o": 4,
+        "d": 5,
+        "ap": "H",
+        "action": "摩擦材の交換周期を稼働時間で決める",
+        "owner": "品質保証部",
+        "due": null,
+        "status": "対応中",
+        "evidence": ""
+      },
+      "refs": {
+        "causeCandidates": [
+          "CC-01",
+          "CC-05"
+        ]
+      }
+    },
+    {
+      "id": "dfmea-002",
+      "values": {
+        "item": "KR-7 肘関節 / 保持ブレーキ",
+        "functionRef": null,
+        "function": "停止指令から 0.2 秒以内に関節を止める",
+        "fmId": "FM-01",
+        "failure": "停止指令の後も関節が動き続ける",
+        "effect": "作業者が治具との間に挟まれる（重傷のおそれ）",
+        "fcId": "FC-02",
+        "cause": "停止信号が遅れて届く",
+        "prevention": "安全 PLC の周期設計",
+        "detectionControl": "出荷時の停止時間試験",
+        "s": 9,
+        "o": 3,
+        "d": 4,
+        "ap": "H",
+        "action": "安全 PLC の周期を 10 ms に",
+        "owner": "品質保証部",
+        "due": null,
+        "status": "対応中",
+        "evidence": ""
+      },
+      "refs": {
+        "causeCandidates": [
+          "CC-03"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "kind": "failure-cause",
+      "id": "fcId",
+      "title": "cause",
+      "refs": [
+        "fmId",
+        "refs.causeCandidates"
+      ]
+    },
+    {
+      "kind": "failure-mode",
+      "id": "fmId",
+      "title": "failure",
+      "refs": [
+        "functionRef"
+      ],
+      "merge": {
+        "equal": [
+          "failure",
+          "effect",
+          "s",
+          "function"
+        ]
+      }
+    }
+  ],
+  "views": [
+    {
+      "id": "fmea-risk",
+      "name": "リスク分析",
+      "projection": "Grid",
+      "search": "",
+      "sorts": [],
+      "filters": [],
+      "filterMode": "and",
+      "groupBy": "",
+      "hidden": [],
+      "widths": {
+        "item": 180,
+        "functionRef": 120,
+        "function": 180,
+        "fmId": 120,
+        "failure": 180,
+        "effect": 200,
+        "fcId": 120,
+        "cause": 200,
+        "prevention": 180,
+        "detectionControl": 180,
+        "s": 90,
+        "o": 90,
+        "d": 90,
+        "rpn": 130,
+        "ap": 135,
+        "action": 220,
+        "owner": 130,
+        "due": 115,
+        "status": 120,
+        "evidence": 250
+      },
+      "frozen": 3,
+      "chart": {
+        "type": "bar",
+        "x": "ap",
+        "y": "rpn",
+        "aggregate": "sum",
+        "sort": "label",
+        "legend": true,
+        "labels": true,
+        "format": "number"
+      },
+      "timeline": {
+        "start": "due",
+        "end": "due",
+        "group": "ap",
+        "scale": "week",
+        "from": "",
+        "to": ""
+      },
+      "summary": {
+        "columnId": "rpn",
+        "aggregate": "sum"
+      },
+      "cardFields": [
+        "item",
+        "rpn"
+      ],
+      "widgets": []
+    },
+    {
+      "id": "fmea-action",
+      "name": "対策管理",
+      "projection": "Grid",
+      "search": "",
+      "sorts": [],
+      "filters": [],
+      "filterMode": "and",
+      "groupBy": "status",
+      "hidden": [
+        "functionRef",
+        "function",
+        "fmId",
+        "prevention",
+        "detectionControl"
+      ],
+      "widths": {
+        "item": 180,
+        "functionRef": 120,
+        "function": 180,
+        "fmId": 120,
+        "failure": 180,
+        "effect": 200,
+        "fcId": 120,
+        "cause": 200,
+        "prevention": 180,
+        "detectionControl": 180,
+        "s": 90,
+        "o": 90,
+        "d": 90,
+        "rpn": 130,
+        "ap": 135,
+        "action": 220,
+        "owner": 130,
+        "due": 115,
+        "status": 120,
+        "evidence": 250
+      },
+      "frozen": 2,
+      "chart": {
+        "type": "bar",
+        "x": "ap",
+        "y": "rpn",
+        "aggregate": "sum",
+        "sort": "label",
+        "legend": true,
+        "labels": true,
+        "format": "number"
+      },
+      "timeline": {
+        "start": "due",
+        "end": "due",
+        "group": "ap",
+        "scale": "week",
+        "from": "",
+        "to": ""
+      },
+      "summary": {
+        "columnId": "rpn",
+        "aggregate": "sum"
+      },
+      "cardFields": [
+        "item",
+        "rpn"
+      ],
+      "widgets": []
+    }
+  ]
+}

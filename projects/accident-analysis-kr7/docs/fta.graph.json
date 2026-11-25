@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 3,
+  "id": "graph_ee6abd8a-3629-474d-a62a-2b90f2019f3c",
+  "profile": {
+    "id": "analysis-fault-tree",
+    "version": 2
+  },
+  "attributes": {
+    "title": "停止指令の後も関節が動き続ける",
+    "assumptions": "基本事象は独立と仮定。確率は説明用の仮定値（1 年あたり）。"
+  },
+  "nodes": [
+    {
+      "id": "top",
+      "type": "top",
+      "attributes": {
+        "itemId": "TE-01",
+        "name": "停止指令の後も関節が動き続ける"
+      }
+    },
+    {
+      "id": "or",
+      "type": "or",
+      "attributes": {
+        "name": "OR"
+      }
+    },
+    {
+      "id": "be1",
+      "type": "basic",
+      "attributes": {
+        "evidence": "説明用の仮定値",
+        "failureCauseRefs": [
+          "FC-01"
+        ],
+        "itemId": "BE-01",
+        "name": "ブレーキの保持力が足りない",
+        "probability": 0.002
+      }
+    },
+    {
+      "id": "be2",
+      "type": "basic",
+      "attributes": {
+        "evidence": "説明用の仮定値",
+        "failureCauseRefs": [
+          "FC-02"
+        ],
+        "itemId": "BE-02",
+        "name": "停止信号が遅れて届く",
+        "probability": 0.001
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "link-1",
+      "type": "input",
+      "from": "be1",
+      "to": "or",
+      "attributes": {}
+    },
+    {
+      "id": "link-2",
+      "type": "input",
+      "from": "be2",
+      "to": "or",
+      "attributes": {}
+    },
+    {
+      "id": "link-3",
+      "type": "input",
+      "from": "or",
+      "to": "top",
+      "attributes": {}
+    }
+  ],
+  "sections": [],
+  "presentation": {
+    "nodes": {
+      "top": {
+        "x": 600,
+        "y": 40
+      },
+      "or": {
+        "x": 600,
+        "y": 210
+      },
+      "be1": {
+        "x": 330,
+        "y": 390
+      },
+      "be2": {
+        "x": 870,
+        "y": 390
+      }
+    },
+    "sections": {}
+  }
+}

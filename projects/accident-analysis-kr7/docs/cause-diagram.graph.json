@@ -1,0 +1,209 @@
+{
+ "schemaVersion": 3,
+ "id": "graph_2401f1b2-e0fe-49c0-8177-19315bd72085",
+ "profile": {
+  "id": "analysis-fishbone",
+  "version": 2
+ },
+ "attributes": {
+  "title": "停止指令の後も肘関節が動き続けた"
+ },
+ "nodes": [
+  {
+   "id": "problem",
+   "type": "problem",
+   "attributes": {
+    "name": "停止指令の後も肘関節が動き続けた",
+    "metric": "停止までの時間 0.4 秒（基準 0.2 秒）"
+   }
+  },
+  {
+   "id": "machine",
+   "type": "category",
+   "attributes": {
+    "name": "機械"
+   }
+  },
+  {
+   "id": "control",
+   "type": "category",
+   "attributes": {
+    "name": "電気・制御"
+   }
+  },
+  {
+   "id": "measure",
+   "type": "category",
+   "attributes": {
+    "name": "計測"
+   }
+  },
+  {
+   "id": "method",
+   "type": "category",
+   "attributes": {
+    "name": "方法"
+   }
+  },
+  {
+   "id": "brake",
+   "type": "cause",
+   "attributes": {
+    "itemId": "CC-01",
+    "name": "ブレーキ摩擦材の摩耗",
+    "status": "candidate",
+    "evidence": "分解して摩耗量を測る"
+   }
+  },
+  {
+   "id": "backlash",
+   "type": "cause",
+   "attributes": {
+    "itemId": "CC-02",
+    "name": "減速機のバックラッシ増大",
+    "status": "excluded",
+    "evidence": "測定で規格内（0.8 分）"
+   }
+  },
+  {
+   "id": "signal",
+   "type": "cause",
+   "attributes": {
+    "itemId": "CC-03",
+    "name": "停止信号の遅れ（安全 PLC の周期）",
+    "status": "confirmed",
+    "evidence": "ログで 60 ms の遅れを確認"
+   }
+  },
+  {
+   "id": "sensor",
+   "type": "cause",
+   "attributes": {
+    "itemId": "CC-04",
+    "name": "トルクセンサのゼロ点ずれ",
+    "status": "candidate",
+    "evidence": "校正記録を確かめる"
+   }
+  },
+  {
+   "id": "interval",
+   "type": "cause",
+   "attributes": {
+    "itemId": "CC-05",
+    "name": "ブレーキ点検の周期が稼働時間に合っていない",
+    "status": "candidate"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "id": "link-1",
+   "type": "contributes",
+   "from": "brake",
+   "to": "machine",
+   "attributes": {}
+  },
+  {
+   "id": "link-2",
+   "type": "contributes",
+   "from": "backlash",
+   "to": "machine",
+   "attributes": {}
+  },
+  {
+   "id": "link-3",
+   "type": "contributes",
+   "from": "signal",
+   "to": "control",
+   "attributes": {}
+  },
+  {
+   "id": "link-4",
+   "type": "contributes",
+   "from": "sensor",
+   "to": "measure",
+   "attributes": {}
+  },
+  {
+   "id": "link-5",
+   "type": "contributes",
+   "from": "interval",
+   "to": "method",
+   "attributes": {}
+  },
+  {
+   "id": "link-6",
+   "type": "contributes",
+   "from": "machine",
+   "to": "problem",
+   "attributes": {}
+  },
+  {
+   "id": "link-7",
+   "type": "contributes",
+   "from": "control",
+   "to": "problem",
+   "attributes": {}
+  },
+  {
+   "id": "link-8",
+   "type": "contributes",
+   "from": "measure",
+   "to": "problem",
+   "attributes": {}
+  },
+  {
+   "id": "link-9",
+   "type": "contributes",
+   "from": "method",
+   "to": "problem",
+   "attributes": {}
+  }
+ ],
+ "sections": [],
+ "presentation": {
+  "nodes": {
+   "problem": {
+    "x": 760,
+    "y": 330
+   },
+   "machine": {
+    "x": 400,
+    "y": 60
+   },
+   "control": {
+    "x": 400,
+    "y": 260
+   },
+   "measure": {
+    "x": 400,
+    "y": 430
+   },
+   "method": {
+    "x": 400,
+    "y": 600
+   },
+   "brake": {
+    "x": 40,
+    "y": 0
+   },
+   "backlash": {
+    "x": 40,
+    "y": 120
+   },
+   "signal": {
+    "x": 40,
+    "y": 260
+   },
+   "sensor": {
+    "x": 40,
+    "y": 430
+   },
+   "interval": {
+    "x": 40,
+    "y": 600
+   }
+  },
+  "sections": {}
+ }
+}

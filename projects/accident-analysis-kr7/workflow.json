@@ -1,0 +1,115 @@
+{
+ "format": 1,
+ "name": "KR-7 肘関節の停止遅れ（ヒヤリハット）",
+ "definition": {
+  "id": "failure-analysis",
+  "version": "1.1.0"
+ },
+ "citations": "trace/citations.json",
+ "deliverables": {
+  "problem-statement": [
+   {
+    "path": "docs/problem-statement.md",
+    "as": "markdown",
+    "rules": [
+     {
+      "kind": "function",
+      "match": "^### (FN-\\d+)\\b"
+     },
+     {
+      "kind": "problem",
+      "match": "^### (PB-\\d+)\\b"
+     }
+    ]
+   }
+  ],
+  "cause-diagram": [
+   {
+    "path": "docs/cause-diagram.graph.json",
+    "as": "items",
+    "analysis": "graph",
+    "kinds": [
+     {
+      "kind": "cause-candidate",
+      "idForm": "CC-{nn}"
+     }
+    ]
+   }
+  ],
+  "fmea": [
+   {
+    "path": "docs/fmea.data.json",
+    "as": "items",
+    "analysis": "data",
+    "kinds": [
+     {
+      "kind": "failure-mode",
+      "idForm": "FM-{nn}"
+     },
+     {
+      "kind": "failure-cause",
+      "idForm": "FC-{nn}"
+     }
+    ]
+   }
+  ],
+  "fault-tree": [
+   {
+    "path": "docs/fta.graph.json",
+    "as": "items",
+    "analysis": "graph",
+    "kinds": [
+     {
+      "kind": "top-event",
+      "idForm": "TE-{nn}"
+     },
+     {
+      "kind": "basic-event",
+      "idForm": "BE-{nn}"
+     }
+    ]
+   }
+  ],
+  "action-plan": [
+   {
+    "path": "docs/action-plan.json",
+    "as": "json",
+    "kind": "action",
+    "at": "action"
+   },
+   {
+    "path": "docs/action-plan.json",
+    "as": "json",
+    "kind": "verification",
+    "at": "verification"
+   }
+  ],
+  "analysis-report": [
+   {
+    "path": "docs/analysis-report.md",
+    "as": "markdown",
+    "rules": []
+   }
+  ]
+ },
+ "phases": {
+  "scope": {
+   "state": "進行中"
+  },
+  "cause-analysis": {
+   "state": "未着手"
+  },
+  "fmea-analysis": {
+   "state": "未着手"
+  },
+  "fta-analysis": {
+   "state": "未着手"
+  },
+  "actions": {
+   "state": "未着手"
+  },
+  "close": {
+   "state": "未着手"
+  }
+ }
+}
